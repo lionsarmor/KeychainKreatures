@@ -1,0 +1,94 @@
+ESP32-C3 Super Mini → 1.69" ST7789
+ST7789	ESP32-C3
+GND	GND
+VCC	3V3
+BLK	3V3
+SCL	GPIO4
+SDA	GPIO6
+RES	GPIO7
+DC	GPIO2
+CS	GPIO10
+
+
+MAX98357A minimum wiring
+Amp Pin	Connect To
+VIN  -> 3.3V
+GND  -> GND
+
+DIN  -> GPIO20
+BCLK -> GPIO21
+LRC  -> GPIO0
+SD   -> GPIO5
+
+GAIN -> NC
+
+
+buttons
+PCF8574	ESP32-C3
+VCC	3.3V
+GND	GND
+SDA	GPIO8
+SCL	GPIO9
+
+
+The other side goes to a PCF8574 pin:
+
+Button	PCF8574 Pin
+UP	P0
+DOWN	P1
+LEFT	P2
+RIGHT	P3
+A	P4
+B	P5
+
+
+IR Blaster / Receiver
+IR Transmitter
+IR Module	Pin	Connect To
+Transmitter	VCC	3.3V
+Transmitter	GND	GND
+Transmitter	DATA	GPIO1
+IR Receiver
+IR Module	Pin	Connect To
+Receiver	VCC	3.3V
+Receiver	GND	GND
+Receiver	OUT	PCF8574 P7
+
+Battery +
+    │
+    ▼
+      +
+
+Battery -
+    │
+    ▼
+     B-
+Power to your Keychain Kreatures
+OUT+
+   │
+   ├── ESP32 3.3V regulator input (or battery input if your design has one)
+
+OUT-
+   │
+   └── GND
+
+For an on/off battery switch:
+
+Battery +
+        │
+        ▼
+       Pin 2 (Common)
+
+Pin 1
+        │
+        ▼
+ Charger OUT+
+
+Pin 3
+        (leave unconnected)
+
+Vibrator Module	ESP32-C3 Super Mini
+GND	GND
+VCC	3V3
+IN	GPIO3
+
