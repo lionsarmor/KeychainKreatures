@@ -370,36 +370,6 @@ Set the Serial Monitor to:
 
 ---
 
-# 📂 Repository Layout
-
-```
-KeychainKreatures/
-
-│
-├── firmware/
-│   ├── factory_test/
-│   └── creature_os/
-│
-├── hardware/
-│   ├── KiCad/
-│   ├── Gerbers/
-│   └── BOM/
-│
-├── docs/
-│   ├── Wiring.md
-│   ├── Pinout.md
-│   └── FactoryTest.md
-│
-├── images/
-│
-├── README.md
-│
-├── LICENSE
-│
-└── .gitignore
-```
-
----
 
 # 🛣️ Roadmap
 
