@@ -1,54 +1,134 @@
-# Keychain Kreatures
+# 🐣 Keychain Kreatures
 
-**Keychain Kreatures** is an ESP32-C3-powered virtual-pet and tiny handheld game platform.
+> **A tiny open-source virtual pet, handheld game system, and embedded learning platform powered by the ESP32-C3.**
 
-The current Rev. A prototype includes:
+![Status](https://img.shields.io/badge/Status-Active-success)
+![License](https://img.shields.io/badge/License-Open%20Source-blue)
+![Platform](https://img.shields.io/badge/Platform-ESP32--C3-orange)
+![IDE](https://img.shields.io/badge/IDE-Arduino-blue)
+
+---
+
+# 🌟 About
+
+**Keychain Kreatures** is an open hardware and open source handheld designed to bring together the nostalgia of classic virtual pets with modern electronics.
+
+Rather than being a closed toy, Keychain Kreatures is designed to be:
+
+- 🐣 A Virtual Pet
+- 🎮 A Tiny Game Console
+- 💻 A Programming Platform
+- 📚 A Learning Tool
+- 🛠️ Completely Hackable
+
+The project is intended for makers, students, hobbyists, and anyone interested in learning embedded systems.
+
+---
+
+# ✨ Features
+
+- 🧠 ESP32-C3 Super Mini
+- 🖥️ 1.69" 240×280 IPS Display
+- 🔊 MAX98357A I²S Audio
+- 🔈 Speaker Output
+- 🎮 Six-Button Game Controls
+- 📡 Infrared Transmitter
+- 📡 Infrared Receiver
+- 📳 Vibration Feedback
+- 🔋 Rechargeable LiPo Battery
+- 🔌 USB Charging
+- 🛠️ Open Hardware
+- 💻 Open Source Firmware
+
+---
+
+# 📦 Hardware
+
+## 🧠 Microcontroller
 
 - ESP32-C3 Super Mini
-- 1.69-inch 240×280 ST7789 IPS display
-- MAX98357A I²S audio amplifier
-- PCF8574 I²C button expander
-- Six game buttons
-- Infrared transmitter and receiver
-- Vibration feedback
-- Rechargeable battery power
+- RISC-V CPU
+- Wi-Fi
+- Bluetooth LE
+- USB Programming
+- 4 MB Flash
 
-This repository currently contains the hardware test firmware used to verify an assembled unit.
+---
 
-## Factory Test
+## 🖥️ Display
 
-The factory test checks:
+- 1.69" IPS LCD
+- ST7789 Controller
+- Resolution: **240 × 280**
+- SPI Interface
 
-- ST7789 display output
-- MAX98357A audio output
-- PCF8574 detection
-- Direction buttons
-- A and B buttons
-- Vibration module
-- IR transmission
-- IR receiver activity
-- Serial logging
-- On-screen event logging
+---
 
-### Factory Test Controls
+## 🔊 Audio
 
-| Control | Test action |
-|---|---|
-| UP | Logs the button and plays a tone |
-| DOWN | Logs the button and plays a tone |
-| LEFT | Logs the button and plays a tone |
-| RIGHT | Logs the button and plays a tone |
-| A | Plays a tone and activates vibration |
-| B | Plays a tone and sends an IR test burst |
+- MAX98357A Digital I²S Amplifier
+- Mono Speaker
+- Sound Effects
+- Music Playback
 
-> The IR receiver is connected through PCF8574 P7. This is suitable for detecting IR activity, but it is not ideal for decoding fast consumer remote-control protocols.
+---
 
-## Wiring
+## 🎮 Controls
 
-### ST7789 Display
+Buttons are connected using a **PCF8574 I²C GPIO Expander**.
 
-| ST7789 | ESP32-C3 Super Mini |
-|---|---|
+| Button | PCF8574 Pin |
+|---------|-------------|
+| ⬆️ UP | P0 |
+| ⬇️ DOWN | P1 |
+| ⬅️ LEFT | P2 |
+| ➡️ RIGHT | P3 |
+| 🅰️ A | P4 |
+| 🅱️ B | P5 |
+| ⭐ Spare | P6 |
+| 📡 IR Receiver | P7 |
+
+---
+
+## 📳 Haptic Feedback
+
+A vibration module provides feedback for:
+
+- Battle hits
+- Menu selection
+- Notifications
+- Creature reactions
+
+---
+
+## 📡 Infrared
+
+### 📤 Transmitter
+
+GPIO1
+
+### 📥 Receiver
+
+Connected to:
+
+PCF8574 P7
+
+Future firmware will support:
+
+- Creature Battles
+- Creature Trading
+- Multiplayer
+- Secret Codes
+- Mini Games
+
+---
+
+# 🔌 Wiring
+
+## 🖥️ ST7789 Display
+
+| Display Pin | ESP32-C3 |
+|--------------|-----------|
 | GND | GND |
 | VCC | 3V3 |
 | BLK | 3V3 |
@@ -58,196 +138,377 @@ The factory test checks:
 | DC | GPIO2 |
 | CS | GPIO10 |
 
-### MAX98357A Audio Amplifier
+---
 
-| MAX98357A | ESP32-C3 Super Mini |
-|---|---|
+## 🔊 MAX98357A Audio
+
+| Amplifier Pin | ESP32-C3 |
+|---------------|-----------|
 | VIN | 3.3V |
 | GND | GND |
 | DIN | GPIO20 |
 | BCLK | GPIO21 |
 | LRC / WS | GPIO0 |
 | SD | GPIO5 |
-| GAIN | Not connected |
+| GAIN | NC |
 
-### PCF8574
+---
 
-| PCF8574 | ESP32-C3 Super Mini |
-|---|---|
+## 🎮 PCF8574
+
+| PCF8574 Pin | ESP32-C3 |
+|--------------|-----------|
 | VCC | 3.3V |
 | GND | GND |
 | SDA | GPIO8 |
 | SCL | GPIO9 |
 
-### Buttons and IR Receiver
+---
 
-Each button connects between its assigned PCF8574 pin and GND.
+## 📡 IR Transmitter
 
-| Function | PCF8574 pin |
-|---|---|
-| UP | P0 |
-| DOWN | P1 |
-| LEFT | P2 |
-| RIGHT | P3 |
-| A | P4 |
-| B | P5 |
-| Spare | P6 |
-| IR receiver OUT | P7 |
-
-### IR Transmitter
-
-| IR transmitter | Connect to |
-|---|---|
+| Pin | Connect To |
+|------|------------|
 | VCC | 3.3V |
 | GND | GND |
 | DATA | GPIO1 |
 
-### IR Receiver
+---
 
-| IR receiver | Connect to |
-|---|---|
+## 📡 IR Receiver
+
+| Pin | Connect To |
+|------|------------|
 | VCC | 3.3V |
 | GND | GND |
 | OUT | PCF8574 P7 |
 
-### Vibration Module
+---
 
-| Vibration module | Connect to |
-|---|---|
-| VCC | 3V3 |
+## 📳 Vibration Module
+
+| Pin | Connect To |
+|------|------------|
+| VCC | 3.3V |
 | GND | GND |
 | IN | GPIO3 |
 
-## PlatformIO Setup
+---
 
-PlatformIO automatically installs the required display libraries from `platformio.ini`.
+# 🔋 Power
 
-Required libraries:
+The device is powered from a single-cell LiPo battery.
 
-- Adafruit GFX Library
-- Adafruit ST7735 and ST7789 Library
-
-### Repository layout
-
-```text
-KeychainKreatures/
-├── platformio.ini
-├── README.md
-└── src/
-    └── main.cpp
+```
+🔋 Battery
+      │
+      ▼
+⚡ Charger Board
+      │
+      ▼
+🔘 Power Switch
+      │
+      ▼
+🧠 ESP32-C3
 ```
 
-Place the factory-test source in:
+---
 
-```text
-src/main.cpp
+# 📌 GPIO Assignment
+
+| GPIO | Function |
+|------|----------|
+| GPIO0 | Audio LRC |
+| GPIO1 | IR Transmitter |
+| GPIO2 | TFT DC |
+| GPIO3 | Vibration Motor |
+| GPIO4 | TFT Clock |
+| GPIO5 | Amplifier Shutdown |
+| GPIO6 | TFT MOSI |
+| GPIO7 | TFT Reset |
+| GPIO8 | I²C SDA |
+| GPIO9 | I²C SCL |
+| GPIO10 | TFT Chip Select |
+| GPIO20 | Audio DIN |
+| GPIO21 | Audio BCLK |
+
+---
+
+# 🧪 Factory Test Firmware
+
+Every assembled board should first run the **Factory Test**.
+
+The test verifies:
+
+✅ Display
+
+✅ Speaker
+
+✅ Audio Amplifier
+
+✅ Buttons
+
+✅ PCF8574
+
+✅ IR Transmitter
+
+✅ IR Receiver Activity
+
+✅ Vibration Motor
+
+✅ GPIO Operation
+
+All events are displayed on the LCD and logged to the Serial Monitor.
+
+---
+
+## 🎮 Factory Test Controls
+
+| Button | Action |
+|---------|--------|
+| ⬆️ UP | Button Test |
+| ⬇️ DOWN | Button Test |
+| ⬅️ LEFT | Button Test |
+| ➡️ RIGHT | Button Test |
+| 🅰️ A | Vibration Test |
+| 🅱️ B | IR Transmission Test |
+
+---
+
+# 🚀 Quick Start
+
+## 1️⃣ Install Arduino IDE
+
+Download the latest version:
+
+https://www.arduino.cc/en/software
+
+---
+
+## 2️⃣ Install ESP32 Support
+
+Open:
+
+```
+Tools
+    ↓
+Board
+    ↓
+Boards Manager
 ```
 
-If the code currently exists as an Arduino `.ino` sketch, copy it into `src/main.cpp`.
+Search for:
 
-PlatformIO accepts Arduino-style `setup()` and `loop()` functions inside `main.cpp`, but the file should contain:
-
-```cpp
-#include <Arduino.h>
+```
+ESP32
+by Espressif Systems
 ```
 
-The generated factory-test source already includes this header.
+Install the latest version.
 
-## Build and Upload
+---
 
-Install the PlatformIO extension in Visual Studio Code, open the repository folder, and use the PlatformIO toolbar.
+## 3️⃣ Install Required Libraries
 
-Or use the terminal:
+Open:
 
-```bash
-pio run
 ```
-
-Upload over USB:
-
-```bash
-pio run --target upload
+Sketch
+    ↓
+Include Library
+    ↓
+Manage Libraries...
 ```
-
-Open the serial monitor:
-
-```bash
-pio device monitor
-```
-
-Build, upload, and monitor:
-
-```bash
-pio run --target upload && pio device monitor
-```
-
-The serial monitor runs at:
-
-```text
-115200 baud
-```
-
-## Finding the USB Port
-
-On Linux:
-
-```bash
-pio device list
-```
-
-The ESP32-C3 commonly appears as:
-
-```text
-/dev/ttyACM0
-```
-
-If automatic port detection fails, add this under the environment in `platformio.ini`:
-
-```ini
-upload_port = /dev/ttyACM0
-monitor_port = /dev/ttyACM0
-```
-
-## Arduino IDE
-
-The same firmware can also be compiled with Arduino IDE.
 
 Install:
 
-- ESP32 board support by Espressif Systems
-- Adafruit GFX Library
-- Adafruit ST7735 and ST7789 Library
+✅ Adafruit GFX Library
 
-Select:
+✅ Adafruit ST7735 and ST7789 Library
 
-```text
+These are the **only external libraries** currently required.
+
+---
+
+## 4️⃣ Select Your Board
+
+```
 ESP32C3 Dev Module
 ```
 
+---
+
+## 5️⃣ Open
+
+```
+factory_test.ino
+```
+
+---
+
+## 6️⃣ Upload
+
+Click:
+
+```
+➡ Upload
+```
+
+Wait for the upload to finish.
+
+Done! 🎉
+
+---
+
+## 📺 Serial Monitor
+
 Set the Serial Monitor to:
 
-```text
+```
 115200 baud
 ```
 
-## Project Goals
+---
 
-Keychain Kreatures is intended to become:
+# 📂 Repository Layout
 
-- A virtual-pet platform
-- A tiny game system
-- A beginner-friendly embedded programming device
-- A hackable open hardware project
-- A home for WonderBasic Mini applications
-- An IR-enabled creature trading and battle platform
+```
+KeychainKreatures/
 
-## Hardware Revision
-
-This pinout currently targets:
-
-```text
-Keychain Kreatures Rev. A
-ESP32-C3 Super Mini
+│
+├── firmware/
+│   ├── factory_test/
+│   └── creature_os/
+│
+├── hardware/
+│   ├── KiCad/
+│   ├── Gerbers/
+│   └── BOM/
+│
+├── docs/
+│   ├── Wiring.md
+│   ├── Pinout.md
+│   └── FactoryTest.md
+│
+├── images/
+│
+├── README.md
+│
+├── LICENSE
+│
+└── .gitignore
 ```
 
-Future revisions should keep their own documented pin maps and factory-test environments.
+---
+
+# 🛣️ Roadmap
+
+## 🟢 Phase 1
+
+- ✅ Factory Test
+- ✅ Display
+- ✅ Audio
+- ✅ Buttons
+- ✅ IR
+- ✅ Vibration
+
+---
+
+## 🟡 Phase 2
+
+- Creature Engine
+- Save Files
+- Animation System
+- Menus
+- Sound Engine
+
+---
+
+## 🔵 Phase 3
+
+- Creature Trading
+- Creature Battles
+- IR Multiplayer
+- OTA Updates
+- Sleep Mode
+- Battery Monitoring
+
+---
+
+## 🟣 Future Ideas
+
+- 💾 SD Card Support
+- 📶 Bluetooth Multiplayer
+- 🌈 RGB Status LED
+- 🌡️ Temperature Sensor
+- ☀️ Light Sensor
+- 🎲 Mini Games
+- 🧩 Puzzle Games
+- 🐉 Creature Evolution
+- 📚 WonderBasic Mini Runtime
+
+---
+
+# 🎯 Project Goals
+
+Keychain Kreatures is designed to be:
+
+- 🎮 Fun
+- 📚 Educational
+- 🔓 Open Source
+- 🛠️ Repairable
+- 💰 Affordable
+- 👨‍💻 Beginner Friendly
+- 🧠 Easy to Learn From
+- 🔧 Easy to Modify
+
+---
+
+# 🤝 Contributing
+
+Contributions are always welcome!
+
+Ideas include:
+
+- Firmware
+- Games
+- New Creatures
+- PCB Improvements
+- Documentation
+- Artwork
+- Sound Effects
+- Bug Fixes
+
+If you build your own Keychain Kreatures, we'd love to see it!
+
+---
+
+# ❤️ Acknowledgements
+
+Special thanks to the amazing open-source communities behind:
+
+- Espressif
+- Arduino
+- Adafruit
+- KiCad
+- GitHub
+
+Without these projects, Keychain Kreatures would not exist.
+
+---
+
+# 📜 License
+
+This project is intended to be released under an open-source license.
+
+License selection is currently in progress.
+
+---
+
+# 🐣 Build One. Learn Something. Make It Your Own.
+
+Keychain Kreatures isn't just another virtual pet.
+
+It's a tiny computer designed to teach programming, electronics, hardware design, and creativity—all while being fun to play.
+
+**Hack it. Improve it. Share it.**
