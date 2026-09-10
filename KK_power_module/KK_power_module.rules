@@ -1,0 +1,45 @@
+
+(rules PCB KK_power_module.dsn
+  (snap_angle 
+    fortyfive_degree
+  )
+  (rule
+    (width 200.0)
+    (clearance 200.0)
+    (clearance 100.0 (type smd_to_turn_gap))
+    (clearance 50.0 (type smd))
+    (clearance 500.0 (type "board_edge"))
+  )
+  (padstack "Via[0-1]_600:300_um"
+    (shape
+      (circle F.Cu 600.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 600.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_600:300_um" "Via[0-1]_600:300_um" default
+  )
+  (via_rule
+    default "Via[0-1]_600:300_um"
+  )
+  (via_rule
+    default "Via[0-1]_600:300_um"
+  )
+  (class default
+    GND /SYS "/SYS_OUT" "/BAT_NEG" "/DRAIN_COMMON" /OC /OD "Net-(U2-CS)"
+    "Net-(JP1-B)" /STAT1{slash}LBO "Net-(LED2-K)" /PG /STAT2 /VBAT "Net-(U2-VCC)" /THERM
+    "Net-(U1-VPCC)" /VBUS "Net-(J1-CC2)" "Net-(U1-PROG1)" "Net-(LED1-K)" "Net-(LED3-K)" "Net-(J1-CC1)" "unconnected-(J1-D+-PadA6)"
+    "unconnected-(J1-D--PadA7)" "unconnected-(J1-SBU1-PadA8)" "unconnected-(J1-D+-PadB6)" "unconnected-(J1-D--PadB7)" "unconnected-(J1-SBU2-PadB8)" "Net-(U1-PROG3)" "unconnected-(U2-TD-Pad4)" "unconnected-(SW1-A-Pad1)"
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
