@@ -1,0 +1,176 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-12T02:15:46",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "KK_main_module.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad 2 [Net-(D1-A)] of R24",
+                    "pos": {
+                        "x": 5.5,
+                        "y": 7.92
+                    },
+                    "uuid": "b4f0170d-6208-4c33-8a72-b4d00bd60f66"
+                },
+                {
+                    "description": "PTH pad 2 [Net-(D1-A)] of D1",
+                    "pos": {
+                        "x": 20.265,
+                        "y": 8.0
+                    },
+                    "uuid": "83cf3fd9-d533-45ab-b782-a59f56f061b4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad 1 [Net-(Q3-C)] of Q3",
+                    "pos": {
+                        "x": 32.96,
+                        "y": 76.25
+                    },
+                    "uuid": "67f67cda-aa21-4db0-a549-2a401ce4681a"
+                },
+                {
+                    "description": "PTH pad 1 [Net-(Q3-C)] of R23",
+                    "pos": {
+                        "x": 87.08,
+                        "y": 63.0
+                    },
+                    "uuid": "d88264be-6c84-488a-b7f6-2759b39baaa5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Thermal relief connection to zone incomplete (layer F.Cu; 1 spokes connected to isolated island)",
+            "items": [
+                {
+                    "description": "Zone 'C6_GND' [/GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "5d797d8a-01ab-43e0-a6b8-997c268cb31e"
+                },
+                {
+                    "description": "PTH pad C [/GND] of SW7",
+                    "pos": {
+                        "x": 66.0,
+                        "y": 62.25
+                    },
+                    "uuid": "e4c7dead-1d65-4a33-93f5-b7f1eeb69f32"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer F.Cu; 3 spokes connected to isolated island)",
+            "items": [
+                {
+                    "description": "Zone 'C6_GND' [/GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "5d797d8a-01ab-43e0-a6b8-997c268cb31e"
+                },
+                {
+                    "description": "PTH pad 2 [/GND] of C18",
+                    "pos": {
+                        "x": 61.5,
+                        "y": 46.23
+                    },
+                    "uuid": "19ae65c8-92e8-4672-a087-5ad8e5179ef7"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone 'C6_GND' [/GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "5d797d8a-01ab-43e0-a6b8-997c268cb31e"
+                },
+                {
+                    "description": "PTH pad 2 [/GND] of C12",
+                    "pos": {
+                        "x": 31.77,
+                        "y": 39.5
+                    },
+                    "uuid": "162ad900-853b-4170-95b7-709fe5946122"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone 'C6_GND' [/GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "5d797d8a-01ab-43e0-a6b8-997c268cb31e"
+                },
+                {
+                    "description": "PTH pad 2 [/GND] of R34",
+                    "pos": {
+                        "x": 44.0,
+                        "y": 69.58
+                    },
+                    "uuid": "154f0602-1ec7-4d43-b38f-1b54ae1c5b69"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        }
+    ]
+}

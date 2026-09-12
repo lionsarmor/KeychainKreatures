@@ -1,0 +1,14 @@
+{
+  "reference": "D3",
+  "center_mm": [
+    69,
+    37.75
+  ],
+  "pad1_mm": [
+    69,
+    41.56
+  ],
+  "angle_degrees": 90,
+  "socket": "PPTC041LFBN-RC",
+  "socket_contact_qualification": "PENDING actual LED retention and lead-dimension check"
+}

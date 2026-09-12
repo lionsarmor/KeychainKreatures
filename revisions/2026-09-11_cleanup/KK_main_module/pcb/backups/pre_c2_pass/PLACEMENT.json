@@ -1,0 +1,1197 @@
+{
+  "status": "UNROUTED placement study; module geometry holds",
+  "outline_mm": [
+    80,
+    100
+  ],
+  "corner_radius_mm": 4,
+  "ground_pour_layers": [
+    "F.Cu",
+    "B.Cu"
+  ],
+  "components": [
+    {
+      "reference": "J1",
+      "footprint": "KK_Main:JST_XH_B4B_4",
+      "side": "back",
+      "courtyard_mm": [
+        61.275,
+        48.6,
+        74.725,
+        55.4
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "C2",
+      "footprint": "KK_Main:KEMET_C315_P2p54",
+      "side": "back",
+      "courtyard_mm": [
+        50.57,
+        28.205,
+        55.43,
+        31.795
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "MOD1",
+      "footprint": "KK_Main:ESP32-S3-SuperMini",
+      "side": "front",
+      "courtyard_mm": [
+        56.725,
+        6.475,
+        75.275,
+        31.725
+      ],
+      "angle": 180.0,
+      "status": "USER_SUPPLIED_FOOTPRINT"
+    },
+    {
+      "reference": "J2",
+      "footprint": "KK_Main:Sullins_PPTC081_LFB",
+      "side": "front",
+      "courtyard_mm": [
+        28.315,
+        9.205,
+        49.685,
+        12.795
+      ],
+      "angle": 90.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "J3",
+      "footprint": "KK_Main:Sullins_PPTC061_LFB",
+      "side": "front",
+      "courtyard_mm": [
+        3.205,
+        35.855,
+        6.795,
+        52.145
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "C10",
+      "footprint": "KK_Main:KEMET_C315_P2p54",
+      "side": "back",
+      "courtyard_mm": [
+        2.57,
+        31.205,
+        7.43,
+        34.795
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "C12",
+      "footprint": "KK_Main:KEMET_C315_P2p54",
+      "side": "back",
+      "courtyard_mm": [
+        42.57,
+        5.205,
+        47.43,
+        8.795
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "Q3",
+      "footprint": "KK_Main:TO92_LeadFormed_P2p54",
+      "side": "back",
+      "courtyard_mm": [
+        47.425,
+        21.605,
+        54.575,
+        26.395
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "Q2",
+      "footprint": "KK_Main:TO92_LeadFormed_P2p54",
+      "side": "back",
+      "courtyard_mm": [
+        40.425,
+        14.605,
+        47.575,
+        19.395
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "U1",
+      "footprint": "KK_Main:ED281DT_DIP28_Socket",
+      "side": "back",
+      "courtyard_mm": [
+        8.645,
+        16.875,
+        19.355,
+        53.125
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "C8",
+      "footprint": "KK_Main:KEMET_C315_P2p54",
+      "side": "back",
+      "courtyard_mm": [
+        2.57,
+        27.205,
+        7.43,
+        30.795
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "SW1",
+      "footprint": "KK_Main:Adafruit3101_ABCD",
+      "side": "front",
+      "courtyard_mm": [
+        13.775,
+        62.575,
+        24.225,
+        71.425
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "SW2",
+      "footprint": "KK_Main:Adafruit3101_ABCD",
+      "side": "front",
+      "courtyard_mm": [
+        13.775,
+        86.575,
+        24.225,
+        95.425
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "SW3",
+      "footprint": "KK_Main:Adafruit3101_ABCD",
+      "side": "front",
+      "courtyard_mm": [
+        1.775,
+        74.575,
+        12.225,
+        83.425
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "SW4",
+      "footprint": "KK_Main:Adafruit3101_ABCD",
+      "side": "front",
+      "courtyard_mm": [
+        25.775,
+        74.575,
+        36.225,
+        83.425
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "SW5",
+      "footprint": "KK_Main:Adafruit3101_ABCD",
+      "side": "front",
+      "courtyard_mm": [
+        67.775,
+        74.575,
+        78.225,
+        83.425
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "SW6",
+      "footprint": "KK_Main:Adafruit3101_ABCD",
+      "side": "front",
+      "courtyard_mm": [
+        55.775,
+        86.575,
+        66.225,
+        95.425
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "SW7",
+      "footprint": "KK_Main:Adafruit3101_ABCD",
+      "side": "front",
+      "courtyard_mm": [
+        55.775,
+        62.575,
+        66.225,
+        71.425
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "SW8",
+      "footprint": "KK_Main:Adafruit3101_ABCD",
+      "side": "front",
+      "courtyard_mm": [
+        43.775,
+        74.575,
+        54.225,
+        83.425
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "SW9",
+      "footprint": "KK_Main:Adafruit3101_ABCD",
+      "side": "front",
+      "courtyard_mm": [
+        34.775,
+        89.575,
+        45.225,
+        98.425
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "Q1",
+      "footprint": "KK_Main:TO92_LeadFormed_P2p54",
+      "side": "back",
+      "courtyard_mm": [
+        22.425,
+        14.605,
+        29.575,
+        19.395
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "D1",
+      "footprint": "KK_Main:TSAL6200_LED5",
+      "side": "front",
+      "courtyard_mm": [
+        4.76,
+        8.765,
+        11.24,
+        15.235
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "U2",
+      "footprint": "KK_Main:TSOP38238_Vertical",
+      "side": "front",
+      "courtyard_mm": [
+        14.325,
+        7.075,
+        21.675,
+        12.925
+      ],
+      "angle": 180.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "C14",
+      "footprint": "KK_Main:KEMET_C315_P2p54",
+      "side": "back",
+      "courtyard_mm": [
+        12.57,
+        2.705,
+        17.43,
+        6.295
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "Q4",
+      "footprint": "KK_Main:TO92_LeadFormed_P2p54",
+      "side": "back",
+      "courtyard_mm": [
+        58.425,
+        41.605,
+        65.575,
+        46.395
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "J4",
+      "footprint": "KK_Main:JST_PH_S2B_2",
+      "side": "back",
+      "courtyard_mm": [
+        66.675,
+        35.525,
+        75.325,
+        42.475
+      ],
+      "angle": 90.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "U3",
+      "footprint": "KK_Main:ED08DT_DIP8_Socket",
+      "side": "back",
+      "courtyard_mm": [
+        37.645,
+        51.585,
+        48.355,
+        62.415
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "J5",
+      "footprint": "KK_Main:JST_PH_S2B_2",
+      "side": "back",
+      "courtyard_mm": [
+        1.675,
+        57.525,
+        10.325,
+        64.475
+      ],
+      "angle": -90.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "Q6",
+      "footprint": "KK_Main:TO92_LeadFormed_P2p54",
+      "side": "back",
+      "courtyard_mm": [
+        51.425,
+        54.605,
+        58.575,
+        59.395
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "Q5",
+      "footprint": "KK_Main:TO92_LeadFormed_P2p54",
+      "side": "back",
+      "courtyard_mm": [
+        46.425,
+        45.605,
+        53.575,
+        50.395
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "C26",
+      "footprint": "KK_Main:KEMET_C315_P2p54",
+      "side": "back",
+      "courtyard_mm": [
+        31.205,
+        54.57,
+        34.795,
+        59.43
+      ],
+      "angle": 90.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "D2",
+      "footprint": "KK_Main:1N5819_DO41",
+      "side": "back",
+      "courtyard_mm": [
+        53.545,
+        37.875,
+        66.455,
+        41.125
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "R17",
+      "footprint": "KK_Main:MFR25_10p16",
+      "side": "back",
+      "courtyard_mm": [
+        43.975,
+        19.845,
+        47.025,
+        32.155
+      ],
+      "angle": 90.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "R18",
+      "footprint": "KK_Main:MFR25_10p16",
+      "side": "back",
+      "courtyard_mm": [
+        40.475,
+        19.845,
+        43.525,
+        32.155
+      ],
+      "angle": 90.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "R14",
+      "footprint": "KK_Main:MFR25_10p16",
+      "side": "back",
+      "courtyard_mm": [
+        36.975,
+        18.845,
+        40.025,
+        31.155
+      ],
+      "angle": 90.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "R16",
+      "footprint": "KK_Main:MFR25_10p16",
+      "side": "back",
+      "courtyard_mm": [
+        40.845,
+        32.475,
+        53.155,
+        35.525
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "R15",
+      "footprint": "KK_Main:MFR25_10p16",
+      "side": "back",
+      "courtyard_mm": [
+        49.975,
+        8.845,
+        53.025,
+        21.155
+      ],
+      "angle": 90.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "R19",
+      "footprint": "KK_Main:MFR25_10p16",
+      "side": "back",
+      "courtyard_mm": [
+        33.475,
+        18.845,
+        36.525,
+        31.155
+      ],
+      "angle": 90.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "R20",
+      "footprint": "KK_Main:MFR25_10p16",
+      "side": "back",
+      "courtyard_mm": [
+        40.845,
+        35.975,
+        53.155,
+        39.025
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "R21",
+      "footprint": "KK_Main:MFR25_10p16",
+      "side": "back",
+      "courtyard_mm": [
+        27.845,
+        31.475,
+        40.155,
+        34.525
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "R22",
+      "footprint": "KK_Main:MFR25_10p16",
+      "side": "back",
+      "courtyard_mm": [
+        29.975,
+        18.845,
+        33.025,
+        31.155
+      ],
+      "angle": 90.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "R23",
+      "footprint": "KK_Main:MFR25_10p16",
+      "side": "back",
+      "courtyard_mm": [
+        40.845,
+        39.475,
+        53.155,
+        42.525
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "R2",
+      "footprint": "KK_Main:MFR25_10p16",
+      "side": "back",
+      "courtyard_mm": [
+        20.475,
+        45.845,
+        23.525,
+        58.155
+      ],
+      "angle": 90.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "R1",
+      "footprint": "KK_Main:MFR25_10p16",
+      "side": "back",
+      "courtyard_mm": [
+        23.975,
+        45.845,
+        27.025,
+        58.155
+      ],
+      "angle": 90.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "R3",
+      "footprint": "KK_Main:MFR25_10p16",
+      "side": "back",
+      "courtyard_mm": [
+        27.475,
+        45.845,
+        30.525,
+        58.155
+      ],
+      "angle": 90.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "R4",
+      "footprint": "KK_Main:MFR25_10p16",
+      "side": "back",
+      "courtyard_mm": [
+        15.845,
+        58.475,
+        28.155,
+        61.525
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "R5",
+      "footprint": "KK_Main:MFR25_10p16",
+      "side": "back",
+      "courtyard_mm": [
+        7.845,
+        53.475,
+        20.155,
+        56.525
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "R6",
+      "footprint": "KK_Main:MFR25_10p16",
+      "side": "back",
+      "courtyard_mm": [
+        19.845,
+        42.475,
+        32.155,
+        45.525
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "R7",
+      "footprint": "KK_Main:MFR25_10p16",
+      "side": "back",
+      "courtyard_mm": [
+        19.845,
+        38.975,
+        32.155,
+        42.025
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "R8",
+      "footprint": "KK_Main:MFR25_10p16",
+      "side": "back",
+      "courtyard_mm": [
+        32.475,
+        41.845,
+        35.525,
+        54.155
+      ],
+      "angle": 90.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "R9",
+      "footprint": "KK_Main:MFR25_10p16",
+      "side": "back",
+      "courtyard_mm": [
+        24.845,
+        61.975,
+        37.155,
+        65.025
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "R10",
+      "footprint": "KK_Main:MFR25_10p16",
+      "side": "back",
+      "courtyard_mm": [
+        19.845,
+        35.475,
+        32.155,
+        38.525
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "R11",
+      "footprint": "KK_Main:MFR25_10p16",
+      "side": "back",
+      "courtyard_mm": [
+        35.975,
+        38.845,
+        39.025,
+        51.155
+      ],
+      "angle": 90.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "R12",
+      "footprint": "KK_Main:MFR25_10p16",
+      "side": "back",
+      "courtyard_mm": [
+        24.845,
+        65.475,
+        37.155,
+        68.525
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "R13",
+      "footprint": "KK_Main:MFR25_10p16",
+      "side": "back",
+      "courtyard_mm": [
+        24.845,
+        68.975,
+        37.155,
+        72.025
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "R25",
+      "footprint": "KK_Main:MFR25_10p16",
+      "side": "back",
+      "courtyard_mm": [
+        21.475,
+        19.845,
+        24.525,
+        32.155
+      ],
+      "angle": 90.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "R26",
+      "footprint": "KK_Main:MFR25_10p16",
+      "side": "back",
+      "courtyard_mm": [
+        53.845,
+        34.475,
+        66.155,
+        37.525
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "R24",
+      "footprint": "KK_Main:MFR25_10p16",
+      "side": "back",
+      "courtyard_mm": [
+        53.975,
+        41.345,
+        57.025,
+        53.655
+      ],
+      "angle": 90.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "R27",
+      "footprint": "KK_Main:MFR25_10p16",
+      "side": "back",
+      "courtyard_mm": [
+        37.845,
+        62.975,
+        50.155,
+        66.025
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "R28",
+      "footprint": "KK_Main:MFR25_10p16",
+      "side": "back",
+      "courtyard_mm": [
+        65.845,
+        42.975,
+        78.155,
+        46.025
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "R29",
+      "footprint": "KK_Main:MFR25_10p16",
+      "side": "back",
+      "courtyard_mm": [
+        59.845,
+        55.975,
+        72.155,
+        59.025
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "R30",
+      "footprint": "KK_Main:MFR25_10p16",
+      "side": "back",
+      "courtyard_mm": [
+        37.845,
+        66.475,
+        50.155,
+        69.525
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "R31",
+      "footprint": "KK_Main:MFR25_10p16",
+      "side": "back",
+      "courtyard_mm": [
+        50.475,
+        59.845,
+        53.525,
+        72.155
+      ],
+      "angle": 90.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "R32",
+      "footprint": "KK_Main:MFR25_10p16",
+      "side": "back",
+      "courtyard_mm": [
+        37.845,
+        69.975,
+        50.155,
+        73.025
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "R33",
+      "footprint": "KK_Main:MFR25_10p16",
+      "side": "back",
+      "courtyard_mm": [
+        40.475,
+        73.345,
+        43.525,
+        85.655
+      ],
+      "angle": 90.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "R34",
+      "footprint": "KK_Main:MFR25_10p16",
+      "side": "back",
+      "courtyard_mm": [
+        36.975,
+        73.345,
+        40.025,
+        85.655
+      ],
+      "angle": 90.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "R35",
+      "footprint": "KK_Main:MFR25_10p16",
+      "side": "back",
+      "courtyard_mm": [
+        54.845,
+        71.975,
+        67.155,
+        75.025
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "R36",
+      "footprint": "KK_Main:MFR25_10p16",
+      "side": "back",
+      "courtyard_mm": [
+        66.475,
+        59.345,
+        69.525,
+        71.655
+      ],
+      "angle": 90.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "R37",
+      "footprint": "KK_Main:MFR25_10p16",
+      "side": "back",
+      "courtyard_mm": [
+        54.845,
+        75.475,
+        67.155,
+        78.525
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "R38",
+      "footprint": "KK_Main:MFR25_10p16",
+      "side": "back",
+      "courtyard_mm": [
+        22.475,
+        72.345,
+        25.525,
+        84.655
+      ],
+      "angle": 90.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "R39",
+      "footprint": "KK_Main:MFR25_10p16",
+      "side": "back",
+      "courtyard_mm": [
+        18.975,
+        71.845,
+        22.025,
+        84.155
+      ],
+      "angle": 90.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "C1",
+      "footprint": "KK_Main:Nichicon_UVR_D5_P2",
+      "side": "back",
+      "courtyard_mm": [
+        70.225,
+        63.225,
+        75.775,
+        68.775
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "C3",
+      "footprint": "KK_Main:Nichicon_UVR_D5_P2",
+      "side": "back",
+      "courtyard_mm": [
+        40.225,
+        45.725,
+        45.775,
+        51.275
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "C5",
+      "footprint": "KK_Main:Nichicon_UVR_D5_P2",
+      "side": "back",
+      "courtyard_mm": [
+        61.225,
+        79.225,
+        66.775,
+        84.775
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "C11",
+      "footprint": "KK_Main:Nichicon_UVR_D5_P2",
+      "side": "back",
+      "courtyard_mm": [
+        22.225,
+        8.725,
+        27.775,
+        14.275
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "C13",
+      "footprint": "KK_Main:Nichicon_UVR_D5_P2",
+      "side": "back",
+      "courtyard_mm": [
+        2.725,
+        19.225,
+        8.275,
+        24.775
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "C9",
+      "footprint": "KK_Main:Nichicon_UVR_D5_P2",
+      "side": "back",
+      "courtyard_mm": [
+        7.725,
+        64.725,
+        13.275,
+        70.275
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "C15",
+      "footprint": "KK_Main:Nichicon_UVR_D5_P2",
+      "side": "back",
+      "courtyard_mm": [
+        1.725,
+        64.725,
+        7.275,
+        70.275
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "C17",
+      "footprint": "KK_Main:Nichicon_UVR_D5_P2",
+      "side": "back",
+      "courtyard_mm": [
+        55.225,
+        79.225,
+        60.775,
+        84.775
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "C21",
+      "footprint": "KK_Main:Nichicon_UVR_D5_P2",
+      "side": "back",
+      "courtyard_mm": [
+        43.725,
+        83.725,
+        49.275,
+        89.275
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "C25",
+      "footprint": "KK_Main:Nichicon_UVR_D5_P2",
+      "side": "back",
+      "courtyard_mm": [
+        31.225,
+        83.725,
+        36.775,
+        89.275
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "C4",
+      "footprint": "KK_Main:KEMET_C315_P2p54",
+      "side": "back",
+      "courtyard_mm": [
+        48.57,
+        50.705,
+        53.43,
+        54.295
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "C6",
+      "footprint": "KK_Main:KEMET_C315_P2p54",
+      "side": "back",
+      "courtyard_mm": [
+        70.07,
+        69.205,
+        74.93,
+        72.795
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "C7",
+      "footprint": "KK_Main:KEMET_C315_P2p54",
+      "side": "back",
+      "courtyard_mm": [
+        25.205,
+        26.07,
+        28.795,
+        30.93
+      ],
+      "angle": 90.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "C16",
+      "footprint": "KK_Main:KEMET_C315_P2p54",
+      "side": "back",
+      "courtyard_mm": [
+        36.205,
+        13.57,
+        39.795,
+        18.43
+      ],
+      "angle": 90.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "C18",
+      "footprint": "KK_Main:KEMET_C315_P2p54",
+      "side": "back",
+      "courtyard_mm": [
+        11.705,
+        57.07,
+        15.295,
+        61.93
+      ],
+      "angle": 90.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "C19",
+      "footprint": "KK_Main:KEMET_C315_P2p54",
+      "side": "back",
+      "courtyard_mm": [
+        49.57,
+        83.705,
+        54.43,
+        87.295
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "C20",
+      "footprint": "KK_Main:KEMET_C315_P2p54",
+      "side": "back",
+      "courtyard_mm": [
+        13.57,
+        71.705,
+        18.43,
+        75.295
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "C22",
+      "footprint": "KK_Main:KEMET_C315_P2p54",
+      "side": "back",
+      "courtyard_mm": [
+        26.07,
+        83.705,
+        30.93,
+        87.295
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "C23",
+      "footprint": "KK_Main:KEMET_C315_P2p54",
+      "side": "back",
+      "courtyard_mm": [
+        14.705,
+        75.57,
+        18.295,
+        80.43
+      ],
+      "angle": 90.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    },
+    {
+      "reference": "C24",
+      "footprint": "KK_Main:KEMET_C315_P2p54",
+      "side": "back",
+      "courtyard_mm": [
+        49.57,
+        87.705,
+        54.43,
+        91.295
+      ],
+      "angle": 0.0,
+      "status": "DATASHEET_DIMENSIONS_CHECKED"
+    }
+  ]
+}

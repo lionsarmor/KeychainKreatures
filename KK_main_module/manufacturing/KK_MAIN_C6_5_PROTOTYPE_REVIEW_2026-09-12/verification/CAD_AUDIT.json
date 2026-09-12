@@ -1,0 +1,552 @@
+{
+  "source_sha256": {
+    "KK_main_module.kicad_pcb": "c7dc3028d36d8b80aca6357518118377b29c746b93822521c5e1624194e7dc07",
+    "KK_main_module.kicad_sch": "104eb7410e0ab1c02d0f4165e05dfe0b5cb877af682d92bae5d93ed3ea8294cf",
+    "KK_main_module.kicad_pro": "185931477ba1d0fbd3b95b6b7e53d36276e4c2e65f3632a730628156dd6dabf9"
+  },
+  "fitted": 98,
+  "test_pads": 25,
+  "copper_layers": 2,
+  "tracks": 1052,
+  "vias": 35,
+  "models": [
+    {
+      "reference": "SW5",
+      "path": "${KIPRJMOD}/3dmodels/Adafruit3101_soft.wrl",
+      "sha256": "1aeb6a14e54c620b04f8b97a3eb9a04af564c327e317ef901b9a02147adca22a"
+    },
+    {
+      "reference": "SW3",
+      "path": "${KIPRJMOD}/3dmodels/Adafruit3101_soft.wrl",
+      "sha256": "1aeb6a14e54c620b04f8b97a3eb9a04af564c327e317ef901b9a02147adca22a"
+    },
+    {
+      "reference": "SW8",
+      "path": "${KIPRJMOD}/3dmodels/Adafruit3101_soft.wrl",
+      "sha256": "1aeb6a14e54c620b04f8b97a3eb9a04af564c327e317ef901b9a02147adca22a"
+    },
+    {
+      "reference": "SW7",
+      "path": "${KIPRJMOD}/3dmodels/Adafruit3101_soft.wrl",
+      "sha256": "1aeb6a14e54c620b04f8b97a3eb9a04af564c327e317ef901b9a02147adca22a"
+    },
+    {
+      "reference": "D3",
+      "path": "${KIPRJMOD}/3dmodels/Kingbright_RGB_socketed.wrl",
+      "sha256": "eabfbbe253cefd2e262c5b873096b190467606fcf1cd325f2c6d8ae4663688bf"
+    },
+    {
+      "reference": "J2",
+      "path": "${KIPRJMOD}/3dmodels/XIITIA_screen_socketed_envelope.wrl",
+      "sha256": "835ac6094206874c1417a0a1ee31a25ae01366821eb63f115de277802b7ee0df"
+    },
+    {
+      "reference": "SW4",
+      "path": "${KIPRJMOD}/3dmodels/Adafruit3101_soft.wrl",
+      "sha256": "1aeb6a14e54c620b04f8b97a3eb9a04af564c327e317ef901b9a02147adca22a"
+    },
+    {
+      "reference": "SW2",
+      "path": "${KIPRJMOD}/3dmodels/Adafruit3101_soft.wrl",
+      "sha256": "1aeb6a14e54c620b04f8b97a3eb9a04af564c327e317ef901b9a02147adca22a"
+    },
+    {
+      "reference": "SW9",
+      "path": "${KIPRJMOD}/3dmodels/Adafruit3101_soft.wrl",
+      "sha256": "1aeb6a14e54c620b04f8b97a3eb9a04af564c327e317ef901b9a02147adca22a"
+    },
+    {
+      "reference": "SW6",
+      "path": "${KIPRJMOD}/3dmodels/Adafruit3101_soft.wrl",
+      "sha256": "1aeb6a14e54c620b04f8b97a3eb9a04af564c327e317ef901b9a02147adca22a"
+    },
+    {
+      "reference": "SW1",
+      "path": "${KIPRJMOD}/3dmodels/Adafruit3101_soft.wrl",
+      "sha256": "1aeb6a14e54c620b04f8b97a3eb9a04af564c327e317ef901b9a02147adca22a"
+    },
+    {
+      "reference": "R43",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "R38",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "C2",
+      "path": "${KIPRJMOD}/3dmodels/KEMET_C315_max.wrl",
+      "sha256": "a1cea38487b84022b1abbc18d3e1dc88fcb740ebeb77b7493d9c7fe0691b53c7"
+    },
+    {
+      "reference": "MOD1",
+      "path": "${KIPRJMOD}/3dmodels/SuperMini_socketed_envelope.wrl",
+      "sha256": "f0db703419367502298a92bb03fe5049402a18ce6acc1dc14b5422d6efd519eb"
+    },
+    {
+      "reference": "Q2",
+      "path": "${KIPRJMOD}/3dmodels/TO92_horizontal_envelope.wrl",
+      "sha256": "4c3f6a7432bf896858b2afab574d1917461de6635c535de80441ac7304552b64"
+    },
+    {
+      "reference": "C17",
+      "path": "${KIPRJMOD}/3dmodels/KA_100u_horizontal_max.wrl",
+      "sha256": "2342d0b43afd0a886b6f91313071ed882ba09318c5a62cfc2b6c0bc31b87879b"
+    },
+    {
+      "reference": "C22",
+      "path": "${KIPRJMOD}/3dmodels/KEMET_C315_max.wrl",
+      "sha256": "a1cea38487b84022b1abbc18d3e1dc88fcb740ebeb77b7493d9c7fe0691b53c7"
+    },
+    {
+      "reference": "J5",
+      "path": "${KICAD10_3DMODEL_DIR}/Connector_JST.3dshapes/JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical.step",
+      "sha256": "cab512a9b16c7568ed6e0047c17de04c4dd11893cdee71cb33fb51768543f927"
+    },
+    {
+      "reference": "R22",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "Q4",
+      "path": "${KIPRJMOD}/3dmodels/TO92_horizontal_envelope.wrl",
+      "sha256": "4c3f6a7432bf896858b2afab574d1917461de6635c535de80441ac7304552b64"
+    },
+    {
+      "reference": "C21",
+      "path": "${KIPRJMOD}/3dmodels/KA_10u_horizontal_max.wrl",
+      "sha256": "4bba9e05a1ea9553ff4f6d97558bf84460df9a44d44e6e3fe668f9fa0dffc384"
+    },
+    {
+      "reference": "C18",
+      "path": "${KIPRJMOD}/3dmodels/KEMET_C315_max.wrl",
+      "sha256": "a1cea38487b84022b1abbc18d3e1dc88fcb740ebeb77b7493d9c7fe0691b53c7"
+    },
+    {
+      "reference": "R36",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "R30",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "C8",
+      "path": "${KIPRJMOD}/3dmodels/KEMET_C315_max.wrl",
+      "sha256": "a1cea38487b84022b1abbc18d3e1dc88fcb740ebeb77b7493d9c7fe0691b53c7"
+    },
+    {
+      "reference": "R10",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "Q6",
+      "path": "${KIPRJMOD}/3dmodels/TO92_horizontal_envelope.wrl",
+      "sha256": "4c3f6a7432bf896858b2afab574d1917461de6635c535de80441ac7304552b64"
+    },
+    {
+      "reference": "R35",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "C15",
+      "path": "${KIPRJMOD}/3dmodels/KA_10u_horizontal_max.wrl",
+      "sha256": "4bba9e05a1ea9553ff4f6d97558bf84460df9a44d44e6e3fe668f9fa0dffc384"
+    },
+    {
+      "reference": "R7",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "R5",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "R8",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "U2",
+      "path": "${KIPRJMOD}/3dmodels/TSOP38238.wrl",
+      "sha256": "b96226b4039634f4979d368f232217afae1b445fdb6a65b6e7314cfa0dcaa591"
+    },
+    {
+      "reference": "R33",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "U3",
+      "path": "${KIPRJMOD}/3dmodels/Socketed_DIP8.wrl",
+      "sha256": "975bb63615623d14baf3fc9eeb2a5b33b4a2d844097762390f216eca8f983ee2"
+    },
+    {
+      "reference": "R26",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "R39",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "J1",
+      "path": "${KICAD10_3DMODEL_DIR}/Connector_JST.3dshapes/JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical.step",
+      "sha256": "7eb17ded8ec4a3216753a234254e22a2d8e07826f0816045bfb803a19cac75ea"
+    },
+    {
+      "reference": "R40",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "D1",
+      "path": "${KIPRJMOD}/3dmodels/TSAL6200_C5_edge_formed.wrl",
+      "sha256": "21305f1e46b87f1b5581e82219b39d8a48a229547a6caa1ed4afd837cd8348ea"
+    },
+    {
+      "reference": "Q1",
+      "path": "${KIPRJMOD}/3dmodels/TO92_horizontal_envelope.wrl",
+      "sha256": "4c3f6a7432bf896858b2afab574d1917461de6635c535de80441ac7304552b64"
+    },
+    {
+      "reference": "R41",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "R16",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "C27",
+      "path": "${KIPRJMOD}/3dmodels/KEMET_C315_max.wrl",
+      "sha256": "a1cea38487b84022b1abbc18d3e1dc88fcb740ebeb77b7493d9c7fe0691b53c7"
+    },
+    {
+      "reference": "C25",
+      "path": "${KIPRJMOD}/3dmodels/KA_100u_horizontal_max.wrl",
+      "sha256": "2342d0b43afd0a886b6f91313071ed882ba09318c5a62cfc2b6c0bc31b87879b"
+    },
+    {
+      "reference": "R4",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "D2",
+      "path": "${KICAD10_3DMODEL_DIR}/Diode_THT.3dshapes/D_DO-41_SOD81_P10.16mm_Horizontal.step",
+      "sha256": "c3e23d4b276811b74eecb329bd4480209ad3dbc8cf6e6e3f2a5b542c5ca343c1"
+    },
+    {
+      "reference": "C10",
+      "path": "${KIPRJMOD}/3dmodels/KEMET_C315_max.wrl",
+      "sha256": "a1cea38487b84022b1abbc18d3e1dc88fcb740ebeb77b7493d9c7fe0691b53c7"
+    },
+    {
+      "reference": "C16",
+      "path": "${KIPRJMOD}/3dmodels/KEMET_C315_max.wrl",
+      "sha256": "a1cea38487b84022b1abbc18d3e1dc88fcb740ebeb77b7493d9c7fe0691b53c7"
+    },
+    {
+      "reference": "R28",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "C7",
+      "path": "${KIPRJMOD}/3dmodels/KEMET_C315_max.wrl",
+      "sha256": "a1cea38487b84022b1abbc18d3e1dc88fcb740ebeb77b7493d9c7fe0691b53c7"
+    },
+    {
+      "reference": "C23",
+      "path": "${KIPRJMOD}/3dmodels/KEMET_C315_max.wrl",
+      "sha256": "a1cea38487b84022b1abbc18d3e1dc88fcb740ebeb77b7493d9c7fe0691b53c7"
+    },
+    {
+      "reference": "R14",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "J4",
+      "path": "${KICAD10_3DMODEL_DIR}/Connector_JST.3dshapes/JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical.step",
+      "sha256": "cab512a9b16c7568ed6e0047c17de04c4dd11893cdee71cb33fb51768543f927"
+    },
+    {
+      "reference": "R18",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "C13",
+      "path": "${KIPRJMOD}/3dmodels/KA_100u_horizontal_max.wrl",
+      "sha256": "2342d0b43afd0a886b6f91313071ed882ba09318c5a62cfc2b6c0bc31b87879b"
+    },
+    {
+      "reference": "C11",
+      "path": "${KIPRJMOD}/3dmodels/KA_10u_horizontal_max.wrl",
+      "sha256": "4bba9e05a1ea9553ff4f6d97558bf84460df9a44d44e6e3fe668f9fa0dffc384"
+    },
+    {
+      "reference": "C6",
+      "path": "${KIPRJMOD}/3dmodels/KEMET_C315_max.wrl",
+      "sha256": "a1cea38487b84022b1abbc18d3e1dc88fcb740ebeb77b7493d9c7fe0691b53c7"
+    },
+    {
+      "reference": "R42",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "R24",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "C14",
+      "path": "${KIPRJMOD}/3dmodels/KEMET_C315_max.wrl",
+      "sha256": "a1cea38487b84022b1abbc18d3e1dc88fcb740ebeb77b7493d9c7fe0691b53c7"
+    },
+    {
+      "reference": "R6",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "R20",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "R32",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "R2",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "C3",
+      "path": "${KIPRJMOD}/3dmodels/KA_100u_horizontal_max.wrl",
+      "sha256": "2342d0b43afd0a886b6f91313071ed882ba09318c5a62cfc2b6c0bc31b87879b"
+    },
+    {
+      "reference": "C5",
+      "path": "${KIPRJMOD}/3dmodels/KA_100u_horizontal_max.wrl",
+      "sha256": "2342d0b43afd0a886b6f91313071ed882ba09318c5a62cfc2b6c0bc31b87879b"
+    },
+    {
+      "reference": "R17",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "C19",
+      "path": "${KIPRJMOD}/3dmodels/KEMET_C315_max.wrl",
+      "sha256": "a1cea38487b84022b1abbc18d3e1dc88fcb740ebeb77b7493d9c7fe0691b53c7"
+    },
+    {
+      "reference": "R3",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "C24",
+      "path": "${KIPRJMOD}/3dmodels/KEMET_C315_max.wrl",
+      "sha256": "a1cea38487b84022b1abbc18d3e1dc88fcb740ebeb77b7493d9c7fe0691b53c7"
+    },
+    {
+      "reference": "R1",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "R9",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "R12",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "U1",
+      "path": "${KIPRJMOD}/3dmodels/Socketed_DIP28.wrl",
+      "sha256": "14e9ac92c7992531885869daad1df57106d6729e0f8bd0ad7977fa877c3cd196"
+    },
+    {
+      "reference": "J3",
+      "path": "${KIPRJMOD}/3dmodels/GODIYMODULES_SD_socketed_envelope.wrl",
+      "sha256": "be79f82721f0f3fd2f78dde88573782026216d14c512e305fb9550b5d00babb3"
+    },
+    {
+      "reference": "R11",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "C1",
+      "path": "${KIPRJMOD}/3dmodels/KA_100u_horizontal_max.wrl",
+      "sha256": "2342d0b43afd0a886b6f91313071ed882ba09318c5a62cfc2b6c0bc31b87879b"
+    },
+    {
+      "reference": "Q5",
+      "path": "${KIPRJMOD}/3dmodels/TO92_horizontal_envelope.wrl",
+      "sha256": "4c3f6a7432bf896858b2afab574d1917461de6635c535de80441ac7304552b64"
+    },
+    {
+      "reference": "R13",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "C9",
+      "path": "${KIPRJMOD}/3dmodels/KA_10u_horizontal_max.wrl",
+      "sha256": "4bba9e05a1ea9553ff4f6d97558bf84460df9a44d44e6e3fe668f9fa0dffc384"
+    },
+    {
+      "reference": "R31",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "R15",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "C12",
+      "path": "${KIPRJMOD}/3dmodels/KEMET_C315_max.wrl",
+      "sha256": "a1cea38487b84022b1abbc18d3e1dc88fcb740ebeb77b7493d9c7fe0691b53c7"
+    },
+    {
+      "reference": "U4",
+      "path": "${KIPRJMOD}/3dmodels/Socketed_DIP16.wrl",
+      "sha256": "8e7bf320098ca8a7d2e8cf13a6968df5dc7570097b602052d57eb074f46c4dd9"
+    },
+    {
+      "reference": "Q3",
+      "path": "${KIPRJMOD}/3dmodels/TO92_horizontal_envelope.wrl",
+      "sha256": "4c3f6a7432bf896858b2afab574d1917461de6635c535de80441ac7304552b64"
+    },
+    {
+      "reference": "C26",
+      "path": "${KIPRJMOD}/3dmodels/KEMET_C315_max.wrl",
+      "sha256": "a1cea38487b84022b1abbc18d3e1dc88fcb740ebeb77b7493d9c7fe0691b53c7"
+    },
+    {
+      "reference": "C20",
+      "path": "${KIPRJMOD}/3dmodels/KEMET_C315_max.wrl",
+      "sha256": "a1cea38487b84022b1abbc18d3e1dc88fcb740ebeb77b7493d9c7fe0691b53c7"
+    },
+    {
+      "reference": "R27",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "R29",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "R21",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "R25",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "R37",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "R19",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "R23",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "R34",
+      "path": "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.step",
+      "sha256": "85bdadc9190739c38429da06b1d9c76ccf33aef9a0794a2e7a9dd5b58d9d05fe"
+    },
+    {
+      "reference": "C4",
+      "path": "${KIPRJMOD}/3dmodels/KEMET_C315_max.wrl",
+      "sha256": "a1cea38487b84022b1abbc18d3e1dc88fcb740ebeb77b7493d9c7fe0691b53c7"
+    }
+  ],
+  "via_centers_in_smd_pads": 0,
+  "holes": {
+    "H1": {
+      "xy_mm": [
+        4.0,
+        4.0
+      ],
+      "drill_mm": [
+        2.2,
+        2.2
+      ]
+    },
+    "H4": {
+      "xy_mm": [
+        92.0,
+        101.0
+      ],
+      "drill_mm": [
+        2.2,
+        2.2
+      ]
+    },
+    "H3": {
+      "xy_mm": [
+        4.0,
+        101.0
+      ],
+      "drill_mm": [
+        2.2,
+        2.2
+      ]
+    },
+    "H2": {
+      "xy_mm": [
+        92.0,
+        4.0
+      ],
+      "drill_mm": [
+        2.2,
+        2.2
+      ]
+    }
+  },
+  "outline_mm": [
+    96,
+    105
+  ],
+  "status": "PASS; static geometry/BOM/net checks, not physical or powered qualification"
+}

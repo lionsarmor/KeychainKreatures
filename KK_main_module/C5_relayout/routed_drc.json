@@ -1,0 +1,275 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-11T14:55:35",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "KK_main_module.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad 11 [/SPI_MOSI] of MOD1",
+                    "pos": {
+                        "x": 49.62,
+                        "y": 14.86
+                    },
+                    "uuid": "243c6192-19d7-44cd-97da-af023fc3a5f8"
+                },
+                {
+                    "description": "Track [/SPI_MOSI] on B.Cu, length 15.9244 mm",
+                    "pos": {
+                        "x": 31.0779,
+                        "y": 36.3505
+                    },
+                    "uuid": "8eb0dde0-4da9-46b9-8a3d-0c6fb3a01f7e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad 1 [/I2C_SDA] of TP9",
+                    "pos": {
+                        "x": 78.0,
+                        "y": 24.5
+                    },
+                    "uuid": "7ac8dfe0-2b48-43ca-8a85-7d6fae1dd01d"
+                },
+                {
+                    "description": "Track [/I2C_SDA] on F.Cu, length 3.9626 mm",
+                    "pos": {
+                        "x": 34.38,
+                        "y": 14.86
+                    },
+                    "uuid": "e3b3639d-ef8c-4c89-b51d-c2a0cfe53938"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad 1 [Net-(U2-VS)] of TP32",
+                    "pos": {
+                        "x": 78.0,
+                        "y": 20.5
+                    },
+                    "uuid": "583f3016-38c4-4fdc-aeee-cde8112d6300"
+                },
+                {
+                    "description": "Track [Net-(U2-VS)] on B.Cu, length 1.1767 mm",
+                    "pos": {
+                        "x": 27.23,
+                        "y": 7.5
+                    },
+                    "uuid": "9624542d-a66a-4d48-8b9a-cf66039185b9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad 2 [Net-(J5--)] of J5",
+                    "pos": {
+                        "x": 33.0,
+                        "y": 90.55
+                    },
+                    "uuid": "e7a65729-b1ed-452a-9cbb-62e4c53d8a90"
+                },
+                {
+                    "description": "Track [Net-(J5--)] on F.Cu, length 1.6600 mm",
+                    "pos": {
+                        "x": 36.5383,
+                        "y": 45.73
+                    },
+                    "uuid": "6b794b8c-8d28-443b-81f4-65045813d152"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [Net-(Q3-C)] on B.Cu, length 1.1652 mm",
+                    "pos": {
+                        "x": 29.3417,
+                        "y": 16.54
+                    },
+                    "uuid": "30d92b6b-aeb3-40e1-9cf0-ab38ee644a6e"
+                },
+                {
+                    "description": "PTH pad 1 [Net-(Q3-C)] of R23",
+                    "pos": {
+                        "x": 63.5,
+                        "y": 19.92
+                    },
+                    "uuid": "a46ab112-d120-4019-bfd6-0be7f6c3a5af"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Thermal relief connection to zone incomplete (layer B.Cu; 2 spokes connected to isolated island)",
+            "items": [
+                {
+                    "description": "Zone 'MAIN_GND_BACK' [/GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "58985de8-0e97-49c0-b739-82610d6b02d9"
+                },
+                {
+                    "description": "PTH pad 1 [/GND] of Q2",
+                    "pos": {
+                        "x": 25.46,
+                        "y": 27.14
+                    },
+                    "uuid": "fec516e4-85b9-4c01-9ec4-43b4de3e9233"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer B.Cu; 3 spokes connected to isolated island)",
+            "items": [
+                {
+                    "description": "Zone 'MAIN_GND_BACK' [/GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "58985de8-0e97-49c0-b739-82610d6b02d9"
+                },
+                {
+                    "description": "PTH pad 2 [/GND] of R20",
+                    "pos": {
+                        "x": 47.005,
+                        "y": 32.5
+                    },
+                    "uuid": "95ce7a4e-2c08-4da3-8536-7f661a1693ce"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer B.Cu; 1 spokes connected to isolated island)",
+            "items": [
+                {
+                    "description": "Zone 'MAIN_GND_BACK' [/GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "58985de8-0e97-49c0-b739-82610d6b02d9"
+                },
+                {
+                    "description": "PTH pad 16 [/GND] of U1",
+                    "pos": {
+                        "x": 15.31,
+                        "y": 23.03
+                    },
+                    "uuid": "5d9606bd-6582-4da5-ab54-ae9d0b1f23c5"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone 'MAIN_GND_FRONT' [/GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "4bcabad9-0ee8-4d32-8f4a-9d302b7c89c8"
+                },
+                {
+                    "description": "PTH pad 2 [/GND] of C7",
+                    "pos": {
+                        "x": 4.0,
+                        "y": 30.27
+                    },
+                    "uuid": "73b3f447-7241-4bfa-9ec7-c4fa5a1dd0ad"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/RGB_LATCH] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 65.4002,
+                        "y": 20.9151
+                    },
+                    "uuid": "9a907d5e-4917-4b7e-ba80-ec3d029e87f5"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [Net-(Q3-C)] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 30.1656,
+                        "y": 17.3639
+                    },
+                    "uuid": "7125bdc8-65be-4700-8ce7-914b72b8d76b"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        }
+    ]
+}

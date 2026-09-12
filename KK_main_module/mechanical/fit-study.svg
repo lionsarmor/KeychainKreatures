@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="210mm" height="160mm" viewBox="0 0 210 160">
+  <title>KEYCHAIN KREATURES — 1:1 dimensional feasibility worksheet</title>
+  <desc>Unverified ergonomic sketch at 46 by 62 millimeters, a depth lower-bound calculation and overlapping power-board/battery plan. Not enclosure CAD or manufacturing geometry.</desc>
+  <rect width="210" height="160" fill="white"/>
+  <g font-family="DejaVu Sans, sans-serif" fill="#222">
+    <text x="10" y="10" font-size="4.6" font-weight="bold">RODDY.WORLD / KEYCHAIN KREATURES</text>
+    <text x="10" y="16" font-size="3">FIT STUDY · 2026-09-10 · NOT A FABRICATION DRAWING</text>
+    <text x="10" y="22" font-size="2.7">Print at 100% / actual size. Disable “fit to page”. Confirm the 20 mm calibration line below.</text>
+    <text x="13" y="31" font-size="3" font-weight="bold">FRONT · 1:1</text>
+    <g transform="translate(15,39)">
+      <rect width="46" height="62" rx="6" fill="#eceaf0" stroke="#26232d" stroke-width="0.4"/>
+      <rect x="2" y="8.5" width="42" height="52" rx="4" fill="none" stroke="#6858a2" stroke-width="0.25" stroke-dasharray="1,1"/>
+      <rect x="7.2" y="3.7" width="31.6" height="36.2" rx="2.5" fill="#bbb7c4"/>
+      <rect x="9.032" y="5.5" width="27.936" height="32.592" rx="0.8" fill="#273b3b"/>
+      <g text-anchor="middle" fill="#dcebc9" font-size="2.6">
+        <text x="23" y="18">240 × 280</text><text x="23" y="23">ACTIVE AREA</text>
+        <text x="23" y="28" font-size="2.1">nominal estimate only</text>
+      </g>
+      <path d="M10 40 H16 V44 H21 V50 H16 V55 H10 V50 H5 V44 H10 Z" fill="#35323e"/>
+      <circle cx="13" cy="47" r="1.1" fill="#716a7c"/>
+      <g fill="#716196" stroke="#35323e" stroke-width="0.25">
+        <circle cx="30" cy="44" r="2.5"/><circle cx="38" cy="44" r="2.5"/>
+        <circle cx="30" cy="52" r="2.5"/><circle cx="38" cy="52" r="2.5"/>
+        <rect x="20" y="55" width="6" height="4" rx="1.8"/>
+      </g>
+      <g text-anchor="middle" font-size="2.3" fill="white">
+        <text x="30" y="44.8">X</text><text x="38" y="44.8">Y</text>
+        <text x="30" y="52.8">A</text><text x="38" y="52.8">B</text>
+        <text x="23" y="57.8" font-size="1.5">FN</text>
+      </g>
+      <g fill="none" stroke="#333" stroke-width="0.2">
+        <path d="M0 -3 V-7 M46 -3 V-7 M0 -5 H46 M-3 0 H-7 M-3 62 H-7 M-5 0 V62"/>
+      </g>
+      <text x="23" y="-6" text-anchor="middle" font-size="2.5">46 mm</text>
+      <text transform="translate(-7,31) rotate(-90)" text-anchor="middle" font-size="2.5">62 mm · ring excluded</text>
+    </g>
+    <text x="10" y="108" font-size="2.5">Dashed: trial 42 × 52 mm PCB, R4.</text>
+    <text x="10" y="112" font-size="2.5">Caps/bezel/PCB position are illustrative.</text>
+    <text x="10" y="116" font-size="2.5">Glass, flex, bosses and travel NOT fitted.</text>
+    <text x="78" y="31" font-size="3" font-weight="bold">19 mm DEPTH BUDGET · 4:1 diagram</text>
+    <text x="78" y="36" font-size="2.4">Arithmetic lower bound at a four-assembly overlap.</text>
+    <g transform="translate(78,40)">
+      <rect x="0" y="0" width="9.6" height="14" fill="#ddd"/>
+      <rect x="9.6" y="0" width="40" height="14" fill="#eab963"/>
+      <rect x="49.6" y="0" width="12.8" height="14" fill="#9dc9bc"/>
+      <rect x="62.4" y="0" width="13.6" height="14" fill="#f4c3c3"/>
+      <rect width="76" height="14" fill="none" stroke="#333" stroke-width="0.25"/>
+      <text x="29.6" y="8" text-anchor="middle" font-size="2.8">10 mm cell</text>
+      <text x="3" y="20" font-size="2.5">Gray: two 1.2 mm trial face skins = 2.4 mm</text>
+      <text x="3" y="25" font-size="2.5">Green: two 1.6 mm PCB laminates = 3.2 mm</text>
+      <text x="3" y="30" font-size="2.5" fill="#9a2828">Red: ONLY 3.4 mm left for everything else</text>
+      <text x="3" y="35" font-size="2.5">Display, parts, solder, insulation and gaps omitted.</text>
+      <text x="3" y="40" font-size="2.5">This is not a physical layer-order drawing.</text>
+    </g>
+    <text x="78" y="88" font-size="3" font-weight="bold">OFFSET PLAN · 1:1 envelopes, NOT fitted</text>
+    <g transform="translate(81,92)">
+      <rect width="46" height="62" rx="6" fill="#fafafa" stroke="#333" stroke-width="0.3"/>
+      <rect x="2" y="6" width="20" height="50" rx="1" fill="#eab963" fill-opacity="0.65" stroke="#b47713" stroke-width="0.25"/>
+      <rect x="13" y="11" width="30" height="40" rx="4" fill="#79b6a3" fill-opacity="0.5" stroke="#397966" stroke-width="0.25"/>
+      <path d="M17.5 32 H55" fill="none" stroke="#ad3030" stroke-width="0.3"/>
+      <text x="58" y="27" font-size="2.6">Overlap remains.</text>
+      <text x="58" y="32" font-size="2.6">Must occupy different</text>
+      <text x="58" y="37" font-size="2.6">depths or nest in voids.</text>
+      <text x="58" y="44" font-size="2.4">Orange: battery 20 × 50</text>
+      <text x="58" y="49" font-size="2.4">Green: power PCB 30 × 40</text>
+      <text x="58" y="56" font-size="2.4">Mated connectors not shown.</text>
+    </g>
+    <path d="M12 132 V136 M32 132 V136 M12 134 H32" fill="none" stroke="#222" stroke-width="0.3"/>
+    <text x="12" y="141" font-size="2.6">20 mm calibration</text>
+    <text x="10" y="151" font-size="2.4">No screen reduction or housing growth approved.</text>
+  </g>
+</svg>

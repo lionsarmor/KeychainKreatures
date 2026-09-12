@@ -1,0 +1,25 @@
+Quantity per kit,Part / specification,Description,Source / drawing,Assembly note
+1,KK MAIN C.4 RGB PROTOTYPE,80 x 115 x 1.6 mm two-layer through-hole prototype PCB,../manufacturing/README.md,Engineering prototype only; powered qualification required.
+2,PPTC091LFBN-RC,Sullins 1x9 MCU sockets,../component_review/datasheets/sullins-female-headers.pdf,MOD1 is already counted in the PCB BOM; these sockets are additional.
+1,ED281DT,On Shore narrow 28-pin DIP socket,../component_review/datasheets/dip-sockets.pdf,"For U1; 7.62 mm rows, not wide ED28DT."
+1,ED08DT,On Shore 8-pin DIP socket,../component_review/datasheets/dip-sockets.pdf,For U3; notch matches pin-1 marking.
+1,ED16DT,On Shore 16-pin narrow DIP socket for U4,../component_review/datasheets/dip-sockets.pdf,"7.62mm rows, 2.54mm pitch; match the U4 pin-1 notch. Not a wide socket."
+1,PPTC041LFBN-RC,Sullins four-pin socket for removable D3 RGB LED,../component_review/datasheets/sullins-female-headers.pdf,"Prototype contact fit/retention with actual LED leads is PENDING; do not force or tin mating leads. 8.5mm housing; formed LED leads to 2.54mm pitch. Pin1 R,2 A+,3 B,4 G."
+1,XIITIA / Amazon B0DFWL25RB,240 x 280 ST7789V2 screen module,https://www.amazon.com/dp/B0DFWL25RB,J2 socket is already counted. Retain R23=100 ohm until BLK current is measured.
+1,GODIYMODULES / Amazon B0F82XWT4F,3.3 V six-pin microSD module,https://www.amazon.com/dp/B0F82XWT4F,J3 socket is already counted. Card not included with reader.
+1,TS32GUSD300S,Transcend 32 GB microSDHC card,../component_review/datasheets/transcend-usd300s.pdf,FAT32; actual SPI-mode read/write and power-loss tests required. Not extra RAM.
+1,LCM0827A3038F,LEADER 3 V coin vibration motor,../component_review/datasheets/motor.pdf,Prepare wired harness before giving kit to students; do not crimp 24-AWG terminals onto its AWG32 leads.
+1,FS1511P08-H3.0 wired / 8 ohm,FUET prototype speaker,../component_review/MODULE_SOURCE_NOTES.md,Prototype selection only: exact continuous power rating remains undocumented. Start volume low; do not release a student product on a guessed rating.
+2 if absent from MCU bundle,TSW-109-07-G-S,Samtec 1x9 male module headers,https://www.samtec.com/products/tsw-109-07-g-s,"Optional replacement, do not count twice. Check contact engagement in the selected female sockets."
+1 if absent from screen bundle,TSW-108-07-G-S,Samtec 1x8 male screen header,https://www.samtec.com/products/tsw-108-07-g-s,Optional replacement. Solder on the correct side of the display module.
+1 if absent from SD bundle,TSW-106-07-G-S,Samtec 1x6 male SD header,https://www.samtec.com/products/tsw-106-07-g-s,"Optional replacement, do not count twice."
+1,XHP-4,JST-XH four-way mating SYS_IN housing,../component_review/datasheets/jst-xh.pdf,For J1. Future power-board connector at other cable end is deliberately excluded.
+4,SXH-001T-P0.6,JST-XH crimp contacts,../component_review/datasheets/jst-xh.pdf,"For 24-AWG SYS_IN wires. Use specified crimp tool and pull-test, not solder-filled crimps."
+2,PHR-2,JST-PH motor and speaker mating housings,../component_review/datasheets/jst-ph.pdf,Label MOTOR and SPEAKER; identical keys do not prevent swapping.
+4,SPH-002T-P0.5S,JST-PH contacts for 24-AWG pigtails,../component_review/datasheets/jst-ph.pdf,"These go on added Alpha 3050 pigtails, NOT directly on the motor AWG32 leads."
+8 x 150 mm cut lengths,"Alpha Wire 3050, 24 AWG stranded, color-coded",SYS_IN 4 conductors; speaker 2; motor 2,https://www.alphawire.com/products/wire/hook-up-wire/premium/3050,"1.2 m total before trimming; OD 0.056 +/-0.002 in fits selected PH/XH contact ranges. Prototype harness lengths, adjust to shell later."
+4 x 15 mm cut lengths,RNF-100-1/16-0-STK / TE 5052892055,Insulation for four actuator-lead/pigtail splices,https://www.te.com/en/product-5052892055.html,"Adult-prepared harnesses. Check sleeve fits joint, covers insulation at both ends, and add separate strain relief; not battery insulation."
+4,M2 x 15 mm nylon female/female standoff,Prototype bench supports,Commodity dimensional specification,Provides rear-component clearance; not final enclosure hardware.
+4,M2 x 5 mm nylon screw,Attach board to bench standoffs,Commodity dimensional specification,Four 2.2 mm NPTH mounting holes. Do not overtighten.
+4,M2 nylon flat washer,Mounting washers,Commodity dimensional specification,Keep hardware within reserved mounting area.
+As fitted,Nonconductive display support and motor/speaker retention,Prototype mechanical support / strain relief,Measure assembled stack,Do not suspend screen mechanically by its header alone. Final shell/support dimensions remain an enclosure task.

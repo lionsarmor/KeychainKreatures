@@ -1,0 +1,604 @@
+{
+  "files": [
+    {
+      "path": "BOM_AND_PLACEMENT.csv",
+      "sha256": "19238c3786e4e835f7b1fba0d4d36335d56cd9bc8aae8aea5328c8bec790afbc",
+      "bytes": 16419
+    },
+    {
+      "path": "BOM_GROUPED_5_BOARDS.csv",
+      "sha256": "7605f1915da3147b9c79785f0137c96a0859561c2f66b6eb34cd5590ae97fcff",
+      "bytes": 4711
+    },
+    {
+      "path": "CAD_AUDIT.json",
+      "sha256": "3e1f1dbe79082d6746504b48358c4fe959e9cf7ca1e912907e6cbc3fec77d689",
+      "bytes": 12651
+    },
+    {
+      "path": "POSITIONS_NATIVE.csv",
+      "sha256": "9d3c68c8a38996f8428a190757cd67e4c1a4af8a0d6e88a507464fbdff1210f7",
+      "bytes": 7471
+    },
+    {
+      "path": "READ_FIRST_REVIEW_AND_TEST.md",
+      "sha256": "a64f80c33b00d066258281cd959a322d039bf16dc6c0ed5f6f3d8623f54f0501",
+      "bytes": 13086
+    },
+    {
+      "path": "TEST_POINTS.csv",
+      "sha256": "40982fb157388e715a4e35971daba926a9939d5d0efccf232fac4476f4c389ad",
+      "bytes": 877
+    },
+    {
+      "path": "cad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "bytes": 43450
+    },
+    {
+      "path": "cad/3dmodels/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "bytes": 43618
+    },
+    {
+      "path": "cad/3dmodels/Connector_JST.3dshapes/JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical.step",
+      "sha256": "cab512a9b16c7568ed6e0047c17de04c4dd11893cdee71cb33fb51768543f927",
+      "bytes": 151559
+    },
+    {
+      "path": "cad/3dmodels/Connector_JST.3dshapes/JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical.step",
+      "sha256": "7eb17ded8ec4a3216753a234254e22a2d8e07826f0816045bfb803a19cac75ea",
+      "bytes": 222777
+    },
+    {
+      "path": "cad/3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x05_P2.54mm_Vertical.step",
+      "sha256": "f03b716e453f6d4f2a111a227c671d96f92708e72a5a663cd4889296d021f4c3",
+      "bytes": 180757
+    },
+    {
+      "path": "cad/3dmodels/Diode_SMD.3dshapes/D_SMA.step",
+      "sha256": "1cfddd4e3b1bf22b8fc6ee3258c2aade882ed7b85b528e23b9db42437775a1db",
+      "bytes": 70794
+    },
+    {
+      "path": "cad/3dmodels/Fuse.3dshapes/Fuse_1206_3216Metric.step",
+      "sha256": "5e6dcbe286696143d35a8ea37d91eef4b54ff3d1bd7c2c2b4dedda83d3f8e203",
+      "bytes": 40429
+    },
+    {
+      "path": "cad/3dmodels/LED_SMD.3dshapes/LED_1206_3216Metric.step",
+      "sha256": "9de47a5de5d40bcdc5dcc40d5b9d41fc41af90bbd37d25c17d211285e1c63a6e",
+      "bytes": 76962
+    },
+    {
+      "path": "cad/3dmodels/MANIFEST.json",
+      "sha256": "96fa699d19f5958f40533f2675a0dcb1140ab3813b0e773386b951dd50a9bc72",
+      "bytes": 5941
+    },
+    {
+      "path": "cad/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
+      "sha256": "720a6eab0024069bbee68e7cb4c3ff1149468a34611225cdc852662c5d0ec2b7",
+      "bytes": 87532
+    },
+    {
+      "path": "cad/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+      "sha256": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635",
+      "bytes": 99639
+    },
+    {
+      "path": "cad/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+      "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+      "bytes": 60296
+    },
+    {
+      "path": "cad/3dmodels/README.md",
+      "sha256": "752e200e1bfef2771676b488a9358847f2432b297b6f2fd8d519dc85a269d669",
+      "bytes": 373
+    },
+    {
+      "path": "cad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618
+    },
+    {
+      "path": "cad/KK_Power.kicad_sym",
+      "sha256": "e62bbc490891ae1f922a358ec94bca9607b65fbc3ea021bc84b67729e24923e2",
+      "bytes": 51770
+    },
+    {
+      "path": "cad/KK_Power.pretty/C_0603_1608Metric.kicad_mod",
+      "sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+      "bytes": 1928
+    },
+    {
+      "path": "cad/KK_Power.pretty/C_0805_2012Metric.kicad_mod",
+      "sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "bytes": 2030
+    },
+    {
+      "path": "cad/KK_Power.pretty/D_SMA.kicad_mod",
+      "sha256": "f7cba3b52ed8b34dce89170722de58324eac04e9e61a095e0eab37b9ca93cb7f",
+      "bytes": 4551
+    },
+    {
+      "path": "cad/KK_Power.pretty/FS8205.kicad_mod",
+      "sha256": "7bb6e225d44c8f4a9eb4d7df22c8ab1db67ad1d3982db4543327034300fcac7b",
+      "bytes": 5867
+    },
+    {
+      "path": "cad/KK_Power.pretty/Fuse_1206_3216Metric.kicad_mod",
+      "sha256": "8f4307d8c771db71526ed8ccf7c762824636660adec3635905932cc5e1d02280",
+      "bytes": 1879
+    },
+    {
+      "path": "cad/KK_Power.pretty/JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical.kicad_mod",
+      "sha256": "dd59286748b9a6fa9174237072608f811cf3169dddf00eab54a5c196fcb6f7e8",
+      "bytes": 4473
+    },
+    {
+      "path": "cad/KK_Power.pretty/JST_VH_B2P-VH_1x02_P3.96mm_Vertical.kicad_mod",
+      "sha256": "db267aa991d5a9d6f37a7118ea3649762027773687cf65df88339d984a25edb3",
+      "bytes": 3524
+    },
+    {
+      "path": "cad/KK_Power.pretty/JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical.kicad_mod",
+      "sha256": "fa93a9f49b03c4caad76b643da2473903ee645833aa1d0ae65afd97740431d86",
+      "bytes": 3624
+    },
+    {
+      "path": "cad/KK_Power.pretty/LED_1206_3216Metric.kicad_mod",
+      "sha256": "c33a71d97035dd5335a65c4f68a595a18526b89a94756de0ed764f5ccdea961d",
+      "bytes": 2427
+    },
+    {
+      "path": "cad/KK_Power.pretty/L_Coilcraft_XxL4020.kicad_mod",
+      "sha256": "58bbe508cee2d928b1645cec09fc191db48328b3f9f47dd75cecaea5e746ffb1",
+      "bytes": 3332
+    },
+    {
+      "path": "cad/KK_Power.pretty/MountingHole_2.2mm_M2.kicad_mod",
+      "sha256": "1b38bd9b2279c528f6e6bd4cf43f4aea04facae04f4afb1649dae640330a7178",
+      "bytes": 1287
+    },
+    {
+      "path": "cad/KK_Power.pretty/PinHeader_1x05_P2.54mm_Vertical.kicad_mod",
+      "sha256": "4b62e226ec163657a79acde1229c1fca2b2453ff75fddcbc038fc7484bbc2711",
+      "bytes": 3204
+    },
+    {
+      "path": "cad/KK_Power.pretty/R_0603_1608Metric.kicad_mod",
+      "sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "bytes": 1943
+    },
+    {
+      "path": "cad/KK_Power.pretty/SOT-23-5.kicad_mod",
+      "sha256": "455a3f7c3e5eb5b8847eaa5df23e18651e78ab9f75afd09a0883758a0d901761",
+      "bytes": 4745
+    },
+    {
+      "path": "cad/KK_Power.pretty/SOT-23-6.kicad_mod",
+      "sha256": "f341c73aac9dcb553456f68bf3fee3d26eb14acf6d8a1cae82b50418fe1d71ca",
+      "bytes": 4280
+    },
+    {
+      "path": "cad/KK_Power.pretty/SOT-23.kicad_mod",
+      "sha256": "0d88c86c1b6d8c1aae4aa8c09386264c089d4451a128b6ccd63ed253f4300b15",
+      "bytes": 4485
+    },
+    {
+      "path": "cad/KK_Power.pretty/SW_SPDT_CK_JS102011SAQN.kicad_mod",
+      "sha256": "95c91aa5cb5fb730cf4db077b512c0fa02725edbe92ccc85350d819e56eabc28",
+      "bytes": 8431
+    },
+    {
+      "path": "cad/KK_Power.pretty/TPS22950_YBH.kicad_mod",
+      "sha256": "3a9f5f7a225a3fa63cbd413128a2bb91f42c09f979678a9bcfef9615240909e1",
+      "bytes": 1507
+    },
+    {
+      "path": "cad/KK_Power.pretty/TestPoint_Pad_D1.5mm.kicad_mod",
+      "sha256": "d7ae230b69d8c3dad5082515a51aac9e4840360c8f4324a00673353676d43042",
+      "bytes": 1756
+    },
+    {
+      "path": "cad/KK_Power.pretty/Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm.kicad_mod",
+      "sha256": "8beb57ce756ebcab32109aa9aa075151b42ebfd5f490614407832d761d1a314d",
+      "bytes": 4480
+    },
+    {
+      "path": "cad/KK_Power.pretty/Texas_RGP0020D_VQFN-20-1EP_4x4mm_P0.5mm_EP2.7x2.7mm.kicad_mod",
+      "sha256": "13a18db10d0ba88c72a15e938c5549dacfb5893c5636f44d2fcc1b2555543694",
+      "bytes": 7966
+    },
+    {
+      "path": "cad/KK_Power.pretty/Texas_S-PWSON-N10.kicad_mod",
+      "sha256": "e290ad4082535e8d7affcc9a567c0a24072f6540f42df8fe64a0f75021ce79ba",
+      "bytes": 11000
+    },
+    {
+      "path": "cad/KK_Power.pretty/Texas_S-PWSON-N10_ThermalVias.kicad_mod",
+      "sha256": "d74c436ce7f2f4653e6e3ba8706d8c2f18c52fdc26951b81c42fe158e41a791f",
+      "bytes": 11108
+    },
+    {
+      "path": "cad/KK_Power.pretty/Texas_X2QFN-12_1.6x1.6mm_P0.4mm.kicad_mod",
+      "sha256": "ea89ce5e84cfea79eeccc18b0b7b704402a1584d2bb3227d1a9471c96a109771",
+      "bytes": 5656
+    },
+    {
+      "path": "cad/KK_Power.pretty/USB_C_HCTL.kicad_mod",
+      "sha256": "c7a7b76b6bc8c389fdadc07e5a7081abce85e1ed52c5192324226793ab14ba46",
+      "bytes": 7509
+    },
+    {
+      "path": "cad/KK_Power.pretty/VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm.kicad_mod",
+      "sha256": "7fdab49c7dbcf0fb228d3ce4dbedf954d48674111b621f75a0885c56fe3855fc",
+      "bytes": 7424
+    },
+    {
+      "path": "cad/KK_power_module.kicad_pcb",
+      "sha256": "ef71e3b4a0f05603184a53cf7c51afa34b4d4e24cfe0e7fc95925c64fad9ed56",
+      "bytes": 2069825
+    },
+    {
+      "path": "cad/KK_power_module.kicad_pro",
+      "sha256": "4686f8fadaadc3940c43beb52b4d06a29e0cbd1d7ebbd8e124cd7b7f6b689ca3",
+      "bytes": 19726
+    },
+    {
+      "path": "cad/KK_power_module.kicad_sch",
+      "sha256": "064e30e6751f75dcc967ce15bc210325a30fea53b031fc53b5e3d44c9ca6bc26",
+      "bytes": 290596
+    },
+    {
+      "path": "cad/datasheets/103AT-2.pdf",
+      "sha256": "389dc527ed8d783cbbf94db460504e26d17993020d8d3627056499a9264b3262",
+      "bytes": 102736
+    },
+    {
+      "path": "cad/datasheets/103AT-2.txt",
+      "sha256": "6298f00c2adb6fafdd34ed785ad24ebe0f7a4c1df5fbf4665aa7229c86b06f39",
+      "bytes": 26854
+    },
+    {
+      "path": "cad/datasheets/AO3400A.pdf",
+      "sha256": "9c60d0b6c1ddc7609a4b788a91181468d8ffe6c3e9ba425c3d8ffc5ba88c5033",
+      "bytes": 317848
+    },
+    {
+      "path": "cad/datasheets/AO3400A.txt",
+      "sha256": "39f205116896b7e2c2a6eb092f80fd848b2e93c0e64a3eea659df3803d5f7aa8",
+      "bytes": 28336
+    },
+    {
+      "path": "cad/datasheets/BQ24074RGTR.pdf",
+      "sha256": "3c8a0a906dc305bccc4eb5f83f27a9df7d8db441ee304e204650f5e7b43c4e56",
+      "bytes": 3731441
+    },
+    {
+      "path": "cad/datasheets/BQ24074RGTR.txt",
+      "sha256": "6cf18cdb860c04a8bea8e65cc1a419ce850645b79819506036799f3765101e20",
+      "bytes": 222308
+    },
+    {
+      "path": "cad/datasheets/BQ24075TRGTR.pdf",
+      "sha256": "6f09e139e13a7bca407b4e8608ed0c387e43ba8c1d3705b4f9872b82495ea71c",
+      "bytes": 2745986
+    },
+    {
+      "path": "cad/datasheets/BQ24075TRGTR.txt",
+      "sha256": "a82f06dbf09a0d371530033ae4d7f0aca6a0f24d29da2129b5c75d43bf82a9a3",
+      "bytes": 191084
+    },
+    {
+      "path": "cad/datasheets/DW01A.pdf",
+      "sha256": "cdba0ec05698cf629e4a23269f8c0371a0583cc132ec6730ef204aa04e886569",
+      "bytes": 1276278
+    },
+    {
+      "path": "cad/datasheets/DW01A.txt",
+      "sha256": "d67959ee74ad4eef78c4fde2264480749d642d5ea4338c516f69a958c029bdaf",
+      "bytes": 12564
+    },
+    {
+      "path": "cad/datasheets/FS8205-pinout.png",
+      "sha256": "06e09204462e7e2078ae994cf0d108f42357ddb77194fb52bd5e8afc88b7b89e",
+      "bytes": 187751
+    },
+    {
+      "path": "cad/datasheets/FS8205_rev1_7.pdf",
+      "sha256": "73b88824e7a65b233f1e5c9b5c226baa753aa4224bb12b5464a09f60c2c0e7e4",
+      "bytes": 410678
+    },
+    {
+      "path": "cad/datasheets/HC-TYPE-C-16P-01A.pdf",
+      "sha256": "04ab3e90eaf6e0b58f40b96a7c19856537c8b04eb55f401a877d2633fc6bfc5b",
+      "bytes": 141863
+    },
+    {
+      "path": "cad/datasheets/JST_VH-header.png",
+      "sha256": "886dc1fe0af209eaa4b58f98251a461f5b27f6dc91839ed1b9e3f4e275164228",
+      "bytes": 199812
+    },
+    {
+      "path": "cad/datasheets/JST_VH.pdf",
+      "sha256": "d51e669c597988b20c0963daf5bef7356cbd2104c1f867e9107c6fa6cd2b899c",
+      "bytes": 122881
+    },
+    {
+      "path": "cad/datasheets/JST_VH.txt",
+      "sha256": "9d315dec55a94ab8a37c2bf4f22ff751396adf9eb66020b9b6b4b25f881cc6f5",
+      "bytes": 39318
+    },
+    {
+      "path": "cad/datasheets/SN74AUP1G17DBVR.pdf",
+      "sha256": "b59bfa5c4d9d6b4cd91efd46edec046b94670ebe894f3a46ce8089801ac3f36a",
+      "bytes": 2727870
+    },
+    {
+      "path": "cad/datasheets/SN74AUP1G17DBVR.txt",
+      "sha256": "d5433b08e8588fcfe6afabdf0ad860f3325ff34a0e01ca2c7bc4b02ce704c485",
+      "bytes": 183809
+    },
+    {
+      "path": "cad/datasheets/TLV75533PDBVR.pdf",
+      "sha256": "7eb7bc6935bf6c1d247b2fce62c9e5a49a474fd94359ddc390a4baf0ac1f5293",
+      "bytes": 3072349
+    },
+    {
+      "path": "cad/datasheets/TLV75533PDBVR.txt",
+      "sha256": "e1f39efec463d3b5781f730978d71b5b6b462e9b6a833817219978d53d92cd40",
+      "bytes": 219698
+    },
+    {
+      "path": "cad/datasheets/TPS22918DBVR.pdf",
+      "sha256": "1b28eb58003d28b18bf919a15734056f296a499bebee2bd493a1e4358c4dfb1c",
+      "bytes": 1072926
+    },
+    {
+      "path": "cad/datasheets/TPS22918DBVR.txt",
+      "sha256": "8db8efa4d2e82d6ffd8017f94d0865baeefe4affba7cb120a9396a580b713fc8",
+      "bytes": 106626
+    },
+    {
+      "path": "cad/datasheets/TPS22950YBHR.pdf",
+      "sha256": "e0f4f5766ba30309af96287e20345b34b38986da59bb0e644bf5401e009c0c66",
+      "bytes": 1649886
+    },
+    {
+      "path": "cad/datasheets/TPS22950YBHR.txt",
+      "sha256": "00a1d59af4d06ceb9ad1913815e51af8210f900f7ab9edfa66a0b4f1c122e37c",
+      "bytes": 94439
+    },
+    {
+      "path": "cad/datasheets/TPS259530DSGR.pdf",
+      "sha256": "6a8b67ad925b6fa88d7f3fccd94a3fc4f7c8d3f8a22abecbdfdc3c33f63f0d25",
+      "bytes": 5415611
+    },
+    {
+      "path": "cad/datasheets/TPS259530DSGR.txt",
+      "sha256": "d39df42a2eb3280f6d1280d0d32a6efd547d154589b25cb873ce405f9d070500",
+      "bytes": 191818
+    },
+    {
+      "path": "cad/datasheets/TPS386000RGPR.pdf",
+      "sha256": "02e788626e1d8d546ada465dc63703635834e41ee109d6c9fc6970a26fb62e98",
+      "bytes": 1310184
+    },
+    {
+      "path": "cad/datasheets/TPS386000RGPR.txt",
+      "sha256": "7f449ba7ba8e5f68c9e53f6c4dedb6037c4f7cdd07e486332443195ae29c5127",
+      "bytes": 153462
+    },
+    {
+      "path": "cad/datasheets/TPS63060DSCR.pdf",
+      "sha256": "d2818015ba4b0d7c384e8a0b8a9ad04ebbabe9092aee89643715bcb88cd5af20",
+      "bytes": 3203281
+    },
+    {
+      "path": "cad/datasheets/TPS63060DSCR.txt",
+      "sha256": "87b1dae18d94802cd0f07261ed3bf6bfec26cff662e3df8ba23f804b77f36b25",
+      "bytes": 109320
+    },
+    {
+      "path": "cad/datasheets/TUSB320LAIRWBR.pdf",
+      "sha256": "62f7b3f65338e25ebd6fd46ef04474ba806b06b1cc04bc0b3d7b8191b01ca87d",
+      "bytes": 1313743
+    },
+    {
+      "path": "cad/datasheets/TUSB320LAIRWBR.txt",
+      "sha256": "61baf4ef955b9fdb2e5345464d86a7c1385b39e7842ef11b392841fa7b4e07c8",
+      "bytes": 172953
+    },
+    {
+      "path": "cad/datasheets/USB-drawing.png",
+      "sha256": "7f988147b204f81249b809988b0369a2a7a66efb7b8a3bbb7e20adada8df5973",
+      "bytes": 130695
+    },
+    {
+      "path": "cad/datasheets/XFL4020-102MEC.pdf",
+      "sha256": "6dca915ac1daa47210f7708a7540221ffef4f34a88a8621c94bd50cdf48647e6",
+      "bytes": 232753
+    },
+    {
+      "path": "cad/datasheets/XFL4020-102MEC.txt",
+      "sha256": "cf0d9d0f192f474bcd66b205a0d303fb464a07dfa3fa8aaef59dcac9ee9fd61d",
+      "bytes": 18552
+    },
+    {
+      "path": "cad/datasheets/download_log.json",
+      "sha256": "15838891883169549062665080b1c05a85453f9ff723a0d1f0697819abd5b770",
+      "bytes": 2289
+    },
+    {
+      "path": "cad/datasheets/sources.json",
+      "sha256": "b835a70996fa6a1a86b752e85ed7ca1985a79c54cc7aa7943d8e9aba7508c174",
+      "bytes": 1274
+    },
+    {
+      "path": "cad/fp-lib-table",
+      "sha256": "fa870f73861b1dad2491facecd591a570b7140d125c4c0526b708a21f85f2f38",
+      "bytes": 149
+    },
+    {
+      "path": "cad/sym-lib-table",
+      "sha256": "a135110f2c1dd61cbbf5ead3089cdcffea757296f4de5de6883bd2a5b267764d",
+      "bytes": 152
+    },
+    {
+      "path": "drawings/KK_power_module-assembly_bottom.svg",
+      "sha256": "982526547a64956d076d6e1752eb2402f645e29909e4d9012e12efc625a84ed0",
+      "bytes": 63265
+    },
+    {
+      "path": "drawings/KK_power_module-assembly_top.svg",
+      "sha256": "a5e2b1a0f9c24e74c9ee963aa50151caf6c9c5b85af3925213471c7a7f580d0b",
+      "bytes": 197084
+    },
+    {
+      "path": "drawings/KK_power_module-component_bodies_bottom.svg",
+      "sha256": "fcb0fd64706170cc55a1302cd84e58eba7baebd5347cf0c5d42f7c60e38f9252",
+      "bytes": 108779
+    },
+    {
+      "path": "drawings/KK_power_module-component_bodies_top.svg",
+      "sha256": "25dded2598310e7076abd3638b8859fc53c86a690e59a977ac00774f10d9eec6",
+      "bytes": 420690
+    },
+    {
+      "path": "drawings/KK_power_module-copper_back.svg",
+      "sha256": "6429ca8e928b89dc1d6f1a5ab6decb058eae44b09432ddb467cde75b678abe59",
+      "bytes": 257647
+    },
+    {
+      "path": "drawings/KK_power_module-copper_front.svg",
+      "sha256": "dcc8259b871428318aa2efd7b5f0f78bb31cddd63ad519d48b0d16e1a6dbcae2",
+      "bytes": 509884
+    },
+    {
+      "path": "drawings/KK_power_module-copper_inner1.svg",
+      "sha256": "ee5c6baccdb39ea410889210df523ac2456fc57f4dae55a0d003c21ec1d29be8",
+      "bytes": 183714
+    },
+    {
+      "path": "drawings/KK_power_module-copper_inner2.svg",
+      "sha256": "a726bccd30051c38916d04720da23014fbc756820dc94982a01a1d4852660460",
+      "bytes": 129012
+    },
+    {
+      "path": "fabrication/KK_power_module-B_Cu.gbl",
+      "sha256": "b941204a812f485e92c278fae831b05cd41c4333c8e84143b12fd3ced290b48c",
+      "bytes": 281529
+    },
+    {
+      "path": "fabrication/KK_power_module-B_Mask.gbs",
+      "sha256": "cc41eefca1024c26120cbc00ce9d3fead4e50d283d661bf621ed3bedbb245360",
+      "bytes": 3420
+    },
+    {
+      "path": "fabrication/KK_power_module-B_Paste.gbp",
+      "sha256": "2b3bcdf920d7c39d8fedef17fd2293997d477a9caeb70e78fa83330096ed4472",
+      "bytes": 460
+    },
+    {
+      "path": "fabrication/KK_power_module-B_Silkscreen.gbo",
+      "sha256": "7bc9fb5cd60dccc734ca8b83ebab41e84fe40d2b6f05e667b487c01240b1774e",
+      "bytes": 53723
+    },
+    {
+      "path": "fabrication/KK_power_module-Edge_Cuts.gm1",
+      "sha256": "c0868593f69b95b25fec4ab336659726b179dc1fbb4d3ad74592c67d896eb79d",
+      "bytes": 908
+    },
+    {
+      "path": "fabrication/KK_power_module-F_Cu.gtl",
+      "sha256": "4888d1ff20fb7b858b5e67390b09aede9eee29af216936593b73fdc4f12969c6",
+      "bytes": 411713
+    },
+    {
+      "path": "fabrication/KK_power_module-F_Mask.gts",
+      "sha256": "e8ccd19dc9160d566d5d75d8c728b263120605f10e84d7e52edbfc16d82d8543",
+      "bytes": 18528
+    },
+    {
+      "path": "fabrication/KK_power_module-F_Paste.gtp",
+      "sha256": "181a082e731a56d30df7cc051edb74a9f181102d33d6600687e886a03c449b32",
+      "bytes": 16847
+    },
+    {
+      "path": "fabrication/KK_power_module-F_Silkscreen.gto",
+      "sha256": "402cc1a0b62dbbceb515bc50df09858c9b6017428125b98370175dc0e99afd3a",
+      "bytes": 167839
+    },
+    {
+      "path": "fabrication/KK_power_module-In1_Cu.g1",
+      "sha256": "caaa06a39109aef23c522197de862485604d64559e91d1e28082b7baf76d3624",
+      "bytes": 237669
+    },
+    {
+      "path": "fabrication/KK_power_module-In2_Cu.g2",
+      "sha256": "a1036d215831f0c8a7357c20dbf3f1416cd5763aeda8acc29bf7effb270a8bb4",
+      "bytes": 144015
+    },
+    {
+      "path": "fabrication/KK_power_module-NPTH-drl_map.pdf",
+      "sha256": "3c6b05feb0c27549fd9b420c49fcfd1333dfc81084cf0f941eab330e694f94a7",
+      "bytes": 13965
+    },
+    {
+      "path": "fabrication/KK_power_module-NPTH.drl",
+      "sha256": "219c4397a4c4c16fe5b7b9d0a0f43cd941903dd4132e8e0587853d5e9c3f4b61",
+      "bytes": 554
+    },
+    {
+      "path": "fabrication/KK_power_module-PTH-drl_map.pdf",
+      "sha256": "96fb418045965504b8b14312e1b639afc4b7e3fa47f10c8c862998a4c426f254",
+      "bytes": 25038
+    },
+    {
+      "path": "fabrication/KK_power_module-PTH.drl",
+      "sha256": "58d6a540292899cca716d40614fd0a7c7f3e38faa7c3faa5d561fad2b9ea48e0",
+      "bytes": 4006
+    },
+    {
+      "path": "fabrication/KK_power_module-drill.rpt",
+      "sha256": "067f7e26bf7b3fdde4651b6c699df53ef22a0916e9ff2dbab65eaf5c13d8c928",
+      "bytes": 1028
+    },
+    {
+      "path": "fabrication/KK_power_module-job.gbrjob",
+      "sha256": "7713f41989028cf2b9c62cadd54c142fbb897b9ce1e508531a80b3e521989247",
+      "bytes": 3764
+    },
+    {
+      "path": "schematic.pdf",
+      "sha256": "97edee7ebfabf47c6e433eb07054f0bd307d0f43f7f7e94ba6d3b2070de90e84",
+      "bytes": 412432
+    },
+    {
+      "path": "verification/PLANE_AUDIT_POWER_WIDTH.json",
+      "sha256": "8c31afab6a56a34a8f91a0ba1fe2af8a0a55c56a0ce8617777e6642b723cbd0d",
+      "bytes": 4213
+    },
+    {
+      "path": "verification/VERIFICATION.json",
+      "sha256": "992d098de46fa374a8fd9148490358d5dbd9d4b2d99f1794004661da47475026",
+      "bytes": 970
+    },
+    {
+      "path": "verification/electrical_screening.json",
+      "sha256": "0346dd3e6d3d49d21b4b397c910130685987fad865f95a72d56bc03c1ec4da4f",
+      "bytes": 2639
+    },
+    {
+      "path": "verification/final_erc.json",
+      "sha256": "6756fa6e1417f221b62dfe9f1f09345ed81541554cd2234703d92719cae11973",
+      "bytes": 988
+    },
+    {
+      "path": "verification/review_drc.json",
+      "sha256": "08338767f6b9d8e5f5d3635fdf847976cd3999dc4ceda23a1e1c2a68bd6415b6",
+      "bytes": 797
+    }
+  ]
+}

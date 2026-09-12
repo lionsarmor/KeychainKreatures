@@ -1,0 +1,146 @@
+(footprint "KA_100u_Flat"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Panasonic ECEA1CKA101, 100u 16V, horizontal radial; D6.3+0.5 x L7+1 max; pin1 positive; form supported leads, insulated body support 0.5mm.")
+	(property "Reference" "REF**"
+		(at 1.25 -2 0)
+		(layer "F.SilkS")
+		(uuid "28c52d0c-bf3b-4329-81c9-e2ceda90e132")
+		(effects
+			(font
+				(size 0.85 0.85)
+				(thickness 0.13)
+			)
+		)
+	)
+	(property "Value" "KA_100u_Flat"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5a60b8a3-02a1-4eec-aacf-e2be459c002e")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2a4b04ec-8fa6-4b6a-8052-e35e8494a216")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "92e13396-66d1-4f40-af80-3ab599e420ef")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -2.3 2.85)
+		(end 4.8 11.15)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "8c7d07e2-b79f-4f98-82ba-6a109f0b5024")
+	)
+	(fp_rect
+		(start -2.65 -1.4)
+		(end 5.15 11.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "e0c49746-e379-491f-9e11-0ac8511924f6")
+	)
+	(fp_line
+		(start 0 1.05)
+		(end 0 3)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "578d78be-fef5-4c8e-8cbe-2876d4c2f754")
+	)
+	(fp_line
+		(start 2.5 1.05)
+		(end 2.5 3)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "b2722d7a-96b8-43c0-b029-30b5c7d70b51")
+	)
+	(fp_rect
+		(start -2.15 3)
+		(end 4.65 11)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "253b8201-f6f4-49db-9b55-809483341f7a")
+	)
+	(fp_text user "+"
+		(at 1.25 7 0)
+		(layer "F.SilkS")
+		(uuid "9d0cda93-b1e7-4e77-964c-24060f60d21f")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.7 1.7)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 45)
+		(uuid "2ffc32fb-a0f8-4216-9aaa-52e7057fd165")
+	)
+	(pad "2" thru_hole circle
+		(at 2.5 0)
+		(size 1.7 1.7)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "576a4e66-4434-4190-82e8-ad919ff09e08")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/KA_100u_horizontal_max.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

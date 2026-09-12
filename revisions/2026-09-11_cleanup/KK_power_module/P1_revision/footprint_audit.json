@@ -1,0 +1,2245 @@
+{
+  "issues": [],
+  "components": [
+    {
+      "ref": "J1",
+      "footprint": "KK_Power:USB_C_HCTL",
+      "pads": [
+        "A1",
+        "A12",
+        "A4",
+        "A5",
+        "A6",
+        "A7",
+        "A8",
+        "A9",
+        "B1",
+        "B12",
+        "B4",
+        "B5",
+        "B6",
+        "B7",
+        "B8",
+        "B9",
+        "S1"
+      ],
+      "symbol_pins": [
+        "A1",
+        "A12",
+        "A4",
+        "A5",
+        "A6",
+        "A7",
+        "A8",
+        "A9",
+        "B1",
+        "B12",
+        "B4",
+        "B5",
+        "B6",
+        "B7",
+        "B8",
+        "B9",
+        "S1"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_HCTL_HC-TYPE-C-16P-01A.step"
+      ]
+    },
+    {
+      "ref": "U14",
+      "footprint": "KK_Power:SOT-23-5",
+      "pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "symbol_pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step"
+      ]
+    },
+    {
+      "ref": "C72",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "U3",
+      "footprint": "KK_Power:Texas_X2QFN-12_1.6x1.6mm_P0.4mm",
+      "pads": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "symbol_pins": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/Texas_X2QFN-12_1.6x1.6mm_P0.4mm.step"
+      ]
+    },
+    {
+      "ref": "R1",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "R2",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "Q4",
+      "footprint": "KK_Power:SOT-23",
+      "pads": [
+        "1",
+        "2",
+        "3"
+      ],
+      "symbol_pins": [
+        "1",
+        "2",
+        "3"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+      ]
+    },
+    {
+      "ref": "R3",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "C1",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "C2",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "D1",
+      "footprint": "KK_Power:D_SMA",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMA.step"
+      ]
+    },
+    {
+      "ref": "U1",
+      "footprint": "KK_Power:VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm",
+      "pads": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "symbol_pins": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm.step"
+      ]
+    },
+    {
+      "ref": "R4",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "R5",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "C3",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+      ]
+    },
+    {
+      "ref": "C4",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+      ]
+    },
+    {
+      "ref": "C5",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+      ]
+    },
+    {
+      "ref": "J4",
+      "footprint": "KK_Power:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Connector_JST.3dshapes/JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical.step"
+      ]
+    },
+    {
+      "ref": "LED1",
+      "footprint": "KK_Power:LED_1206_3216Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_1206_3216Metric.step"
+      ]
+    },
+    {
+      "ref": "R6",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "LED2",
+      "footprint": "KK_Power:LED_1206_3216Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_1206_3216Metric.step"
+      ]
+    },
+    {
+      "ref": "R7",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "J2",
+      "footprint": "KK_Power:JST_VH_B2P-VH_1x02_P3.96mm_Vertical",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Connector_JST.3dshapes/JST_VH_B2P-VH_1x02_P3.96mm_Vertical.step"
+      ]
+    },
+    {
+      "ref": "F1",
+      "footprint": "KK_Power:Fuse_1206_3216Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Fuse.3dshapes/Fuse_1206_3216Metric.step"
+      ]
+    },
+    {
+      "ref": "U2",
+      "footprint": "KK_Power:SOT-23-6",
+      "pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "symbol_pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
+      ]
+    },
+    {
+      "ref": "Q1",
+      "footprint": "KK_Power:FS8205",
+      "pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "symbol_pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "models": []
+    },
+    {
+      "ref": "Q2",
+      "footprint": "KK_Power:FS8205",
+      "pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "symbol_pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "models": []
+    },
+    {
+      "ref": "Q3",
+      "footprint": "KK_Power:FS8205",
+      "pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "symbol_pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "models": []
+    },
+    {
+      "ref": "R8",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "R9",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "C6",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "SW1",
+      "footprint": "KK_Power:SW_SPDT_CK_JS102011SAQN",
+      "pads": [
+        "1",
+        "2",
+        "3"
+      ],
+      "symbol_pins": [
+        "1",
+        "2",
+        "3"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPDT_CK_JS102011SAQN.step"
+      ]
+    },
+    {
+      "ref": "U4",
+      "footprint": "KK_Power:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm",
+      "pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "symbol_pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Package_SON.3dshapes/Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm.step"
+      ]
+    },
+    {
+      "ref": "R10",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "R11",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "R12",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "C7",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "C8",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+      ]
+    },
+    {
+      "ref": "C9",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "R13",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "R14",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "U5",
+      "footprint": "KK_Power:Texas_S-PWSON-N10_ThermalVias",
+      "pads": [
+        "1",
+        "10",
+        "11",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "symbol_pins": [
+        "1",
+        "10",
+        "11",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Package_SON.3dshapes/Texas_S-PWSON-N10.step"
+      ]
+    },
+    {
+      "ref": "L1",
+      "footprint": "KK_Power:L_Coilcraft_XxL4020",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Coilcraft_XxL4020.step"
+      ]
+    },
+    {
+      "ref": "C20",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+      ]
+    },
+    {
+      "ref": "C21",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+      ]
+    },
+    {
+      "ref": "C22",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+      ]
+    },
+    {
+      "ref": "C23",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+      ]
+    },
+    {
+      "ref": "C24",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+      ]
+    },
+    {
+      "ref": "C25",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "C26",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "C27",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "R20",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "R21",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "C28",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "U6",
+      "footprint": "KK_Power:Texas_S-PWSON-N10_ThermalVias",
+      "pads": [
+        "1",
+        "10",
+        "11",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "symbol_pins": [
+        "1",
+        "10",
+        "11",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Package_SON.3dshapes/Texas_S-PWSON-N10.step"
+      ]
+    },
+    {
+      "ref": "L2",
+      "footprint": "KK_Power:L_Coilcraft_XxL4020",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Coilcraft_XxL4020.step"
+      ]
+    },
+    {
+      "ref": "C30",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+      ]
+    },
+    {
+      "ref": "C31",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+      ]
+    },
+    {
+      "ref": "C32",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+      ]
+    },
+    {
+      "ref": "C33",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+      ]
+    },
+    {
+      "ref": "C34",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+      ]
+    },
+    {
+      "ref": "C35",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "C36",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "C37",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "R30",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "R31",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "C38",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "U7",
+      "footprint": "KK_Power:Texas_S-PWSON-N10_ThermalVias",
+      "pads": [
+        "1",
+        "10",
+        "11",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "symbol_pins": [
+        "1",
+        "10",
+        "11",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Package_SON.3dshapes/Texas_S-PWSON-N10.step"
+      ]
+    },
+    {
+      "ref": "L3",
+      "footprint": "KK_Power:L_Coilcraft_XxL4020",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Coilcraft_XxL4020.step"
+      ]
+    },
+    {
+      "ref": "C40",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+      ]
+    },
+    {
+      "ref": "C41",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+      ]
+    },
+    {
+      "ref": "C42",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+      ]
+    },
+    {
+      "ref": "C43",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+      ]
+    },
+    {
+      "ref": "C44",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+      ]
+    },
+    {
+      "ref": "C45",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "C46",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "C47",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "R40",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "R43",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "R41",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "C48",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "U11",
+      "footprint": "KK_Power:SOT-23-5",
+      "pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "symbol_pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step"
+      ]
+    },
+    {
+      "ref": "R50",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "C51",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "R51",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "U8",
+      "footprint": "KK_Power:SOT-23-6",
+      "pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "symbol_pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
+      ]
+    },
+    {
+      "ref": "R52",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "C52",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "U9",
+      "footprint": "KK_Power:SOT-23-6",
+      "pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "symbol_pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
+      ]
+    },
+    {
+      "ref": "R53",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "C53",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "U10",
+      "footprint": "KK_Power:SOT-23-6",
+      "pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "symbol_pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
+      ]
+    },
+    {
+      "ref": "R54",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "C54",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "U12",
+      "footprint": "KK_Power:Texas_RGP0020D_VQFN-20-1EP_4x4mm_P0.5mm_EP2.7x2.7mm",
+      "pads": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "2",
+        "20",
+        "21",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "symbol_pins": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "2",
+        "20",
+        "21",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/Texas_RGP0020D_VQFN-20-1EP_4x4mm_P0.5mm_EP2.7x2.7mm.step"
+      ]
+    },
+    {
+      "ref": "R60",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "R61",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "R62",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "R63",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "R64",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "R65",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "R66",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "C60",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "U13",
+      "footprint": "KK_Power:TPS22950_YBH",
+      "pads": [
+        "A1",
+        "A2",
+        "B1",
+        "B2",
+        "C1",
+        "C2"
+      ],
+      "symbol_pins": [
+        "A1",
+        "A2",
+        "B1",
+        "B2",
+        "C1",
+        "C2"
+      ],
+      "models": []
+    },
+    {
+      "ref": "R70",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "R71",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "Q5",
+      "footprint": "KK_Power:SOT-23",
+      "pads": [
+        "1",
+        "2",
+        "3"
+      ],
+      "symbol_pins": [
+        "1",
+        "2",
+        "3"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+      ]
+    },
+    {
+      "ref": "R72",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "R73",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "C70",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "C71",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "symbol_pins": [
+        "1",
+        "2"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+      ]
+    },
+    {
+      "ref": "J3",
+      "footprint": "KK_Power:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical",
+      "pads": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "symbol_pins": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Connector_JST.3dshapes/JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical.step"
+      ]
+    },
+    {
+      "ref": "J5",
+      "footprint": "KK_Power:PinHeader_1x05_P2.54mm_Vertical",
+      "pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "symbol_pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x05_P2.54mm_Vertical.step"
+      ]
+    },
+    {
+      "ref": "TP1",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "pads": [
+        "1"
+      ],
+      "symbol_pins": [
+        "1"
+      ],
+      "models": []
+    },
+    {
+      "ref": "TP2",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "pads": [
+        "1"
+      ],
+      "symbol_pins": [
+        "1"
+      ],
+      "models": []
+    },
+    {
+      "ref": "TP3",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "pads": [
+        "1"
+      ],
+      "symbol_pins": [
+        "1"
+      ],
+      "models": []
+    },
+    {
+      "ref": "TP4",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "pads": [
+        "1"
+      ],
+      "symbol_pins": [
+        "1"
+      ],
+      "models": []
+    },
+    {
+      "ref": "TP5",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "pads": [
+        "1"
+      ],
+      "symbol_pins": [
+        "1"
+      ],
+      "models": []
+    },
+    {
+      "ref": "TP6",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "pads": [
+        "1"
+      ],
+      "symbol_pins": [
+        "1"
+      ],
+      "models": []
+    },
+    {
+      "ref": "TP7",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "pads": [
+        "1"
+      ],
+      "symbol_pins": [
+        "1"
+      ],
+      "models": []
+    },
+    {
+      "ref": "TP8",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "pads": [
+        "1"
+      ],
+      "symbol_pins": [
+        "1"
+      ],
+      "models": []
+    },
+    {
+      "ref": "TP9",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "pads": [
+        "1"
+      ],
+      "symbol_pins": [
+        "1"
+      ],
+      "models": []
+    },
+    {
+      "ref": "TP10",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "pads": [
+        "1"
+      ],
+      "symbol_pins": [
+        "1"
+      ],
+      "models": []
+    },
+    {
+      "ref": "TP11",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "pads": [
+        "1"
+      ],
+      "symbol_pins": [
+        "1"
+      ],
+      "models": []
+    },
+    {
+      "ref": "TP12",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "pads": [
+        "1"
+      ],
+      "symbol_pins": [
+        "1"
+      ],
+      "models": []
+    },
+    {
+      "ref": "TP13",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "pads": [
+        "1"
+      ],
+      "symbol_pins": [
+        "1"
+      ],
+      "models": []
+    },
+    {
+      "ref": "TP14",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "pads": [
+        "1"
+      ],
+      "symbol_pins": [
+        "1"
+      ],
+      "models": []
+    },
+    {
+      "ref": "TP15",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "pads": [
+        "1"
+      ],
+      "symbol_pins": [
+        "1"
+      ],
+      "models": []
+    },
+    {
+      "ref": "TP16",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "pads": [
+        "1"
+      ],
+      "symbol_pins": [
+        "1"
+      ],
+      "models": []
+    },
+    {
+      "ref": "TP17",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "pads": [
+        "1"
+      ],
+      "symbol_pins": [
+        "1"
+      ],
+      "models": []
+    },
+    {
+      "ref": "TP18",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "pads": [
+        "1"
+      ],
+      "symbol_pins": [
+        "1"
+      ],
+      "models": []
+    },
+    {
+      "ref": "TP19",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "pads": [
+        "1"
+      ],
+      "symbol_pins": [
+        "1"
+      ],
+      "models": []
+    },
+    {
+      "ref": "TP20",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "pads": [
+        "1"
+      ],
+      "symbol_pins": [
+        "1"
+      ],
+      "models": []
+    },
+    {
+      "ref": "TP21",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "pads": [
+        "1"
+      ],
+      "symbol_pins": [
+        "1"
+      ],
+      "models": []
+    },
+    {
+      "ref": "TP22",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "pads": [
+        "1"
+      ],
+      "symbol_pins": [
+        "1"
+      ],
+      "models": []
+    },
+    {
+      "ref": "TP23",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "pads": [
+        "1"
+      ],
+      "symbol_pins": [
+        "1"
+      ],
+      "models": []
+    },
+    {
+      "ref": "TP24",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "pads": [
+        "1"
+      ],
+      "symbol_pins": [
+        "1"
+      ],
+      "models": []
+    },
+    {
+      "ref": "TP25",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "pads": [
+        "1"
+      ],
+      "symbol_pins": [
+        "1"
+      ],
+      "models": []
+    }
+  ]
+}

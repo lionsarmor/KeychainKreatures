@@ -1,0 +1,65 @@
+[
+  {
+    "reference": "U4",
+    "side": "back",
+    "center": [
+      41,
+      106
+    ],
+    "angle": 90
+  },
+  {
+    "reference": "D3",
+    "side": "front",
+    "center": [
+      16,
+      106
+    ],
+    "angle": 0
+  },
+  {
+    "reference": "R40",
+    "side": "back",
+    "center": [
+      58,
+      104
+    ],
+    "angle": 0
+  },
+  {
+    "reference": "R41",
+    "side": "back",
+    "center": [
+      69,
+      106
+    ],
+    "angle": 90
+  },
+  {
+    "reference": "C27",
+    "side": "back",
+    "center": [
+      54.5,
+      100
+    ],
+    "angle": 0
+  },
+  {
+    "reference": "R42",
+    "side": "back",
+    "center": [
+      16,
+      101
+    ],
+    "angle": 0
+  },
+  {
+    "reference": "R43",
+    "side": "back",
+    "center": [
+      16,
+      111
+    ],
+    "angle": 0
+  }
+]

@@ -1,0 +1,2218 @@
+{
+  "status": "UNROUTED ENGINEERING STUDY",
+  "outline_mm": [
+    70,
+    65
+  ],
+  "copper_layers": 4,
+  "components": [
+    {
+      "ref": "J1",
+      "footprint": "KK_Power:USB_C_HCTL",
+      "courtyard_mm": [
+        7.655,
+        -0.865,
+        18.345,
+        8.265
+      ],
+      "position_mm": [
+        13.0,
+        3.34
+      ],
+      "angle": 180.0,
+      "group": "USB-C CHARGING ONLY"
+    },
+    {
+      "ref": "J2",
+      "footprint": "KK_Power:JST_VH_B2P-VH_1x02_P3.96mm_Vertical",
+      "courtyard_mm": [
+        10.545,
+        53.225,
+        19.455,
+        62.775
+      ],
+      "position_mm": [
+        16.98,
+        58.55
+      ],
+      "angle": 180.0,
+      "group": "CELL PROTECTION / FUSE"
+    },
+    {
+      "ref": "J3",
+      "footprint": "KK_Power:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical",
+      "courtyard_mm": [
+        44.275,
+        54.6,
+        57.725,
+        61.4
+      ],
+      "position_mm": [
+        54.75,
+        58.525
+      ],
+      "angle": 180.0,
+      "group": "MAIN BOARD HARNESS / DEBUG"
+    },
+    {
+      "ref": "J4",
+      "footprint": "KK_Power:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical",
+      "courtyard_mm": [
+        23.525,
+        55.225,
+        30.475,
+        60.775
+      ],
+      "position_mm": [
+        28.0,
+        58.55
+      ],
+      "angle": 180.0,
+      "group": "CELL CHARGER / POWER PATH"
+    },
+    {
+      "ref": "J5",
+      "footprint": "KK_Power:PinHeader_1x05_P2.54mm_Vertical",
+      "courtyard_mm": [
+        54.125,
+        41.205,
+        67.875,
+        44.795
+      ],
+      "position_mm": [
+        55.92,
+        43.0
+      ],
+      "angle": 90.0,
+      "group": "MAIN BOARD HARNESS / DEBUG"
+    },
+    {
+      "ref": "SW1",
+      "footprint": "KK_Power:SW_SPDT_CK_JS102011SAQN",
+      "courtyard_mm": [
+        61.6,
+        11.975,
+        70.4,
+        22.025
+      ],
+      "position_mm": [
+        66.125,
+        17.0
+      ],
+      "angle": 90.0,
+      "group": "SYSTEM SWITCH / INRUSH / UVLO"
+    },
+    {
+      "ref": "U3",
+      "footprint": "KK_Power:Texas_X2QFN-12_1.6x1.6mm_P0.4mm",
+      "courtyard_mm": [
+        12.575,
+        11.575,
+        15.425,
+        14.425
+      ],
+      "position_mm": [
+        14.0,
+        13.0
+      ],
+      "angle": 0.0,
+      "group": "USB-C CHARGING ONLY"
+    },
+    {
+      "ref": "U14",
+      "footprint": "KK_Power:SOT-23-5",
+      "courtyard_mm": [
+        19.925,
+        8.275,
+        24.075,
+        11.725
+      ],
+      "position_mm": [
+        22.0,
+        10.0
+      ],
+      "angle": 0.0,
+      "group": "USB-C CHARGING ONLY"
+    },
+    {
+      "ref": "U1",
+      "footprint": "KK_Power:VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm",
+      "courtyard_mm": [
+        25.845,
+        9.845,
+        30.155,
+        14.155
+      ],
+      "position_mm": [
+        28.0,
+        12.0
+      ],
+      "angle": 0.0,
+      "group": "CELL CHARGER / POWER PATH"
+    },
+    {
+      "ref": "U2",
+      "footprint": "KK_Power:SOT-23-6",
+      "courtyard_mm": [
+        6.925,
+        46.275,
+        11.075,
+        49.725
+      ],
+      "position_mm": [
+        9.0,
+        48.0
+      ],
+      "angle": 0.0,
+      "group": "CELL PROTECTION / FUSE"
+    },
+    {
+      "ref": "U4",
+      "footprint": "KK_Power:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm",
+      "courtyard_mm": [
+        46.475,
+        10.725,
+        49.525,
+        13.275
+      ],
+      "position_mm": [
+        48.0,
+        12.0
+      ],
+      "angle": 0.0,
+      "group": "SYSTEM SWITCH / INRUSH / UVLO"
+    },
+    {
+      "ref": "U12",
+      "footprint": "KK_Power:Texas_RGP0020D_VQFN-20-1EP_4x4mm_P0.5mm_EP2.7x2.7mm",
+      "courtyard_mm": [
+        40.345,
+        41.345,
+        45.655,
+        46.655
+      ],
+      "position_mm": [
+        43.0,
+        44.0
+      ],
+      "angle": 0.0,
+      "group": "VOLTAGE SUPERVISION / STARTUP"
+    },
+    {
+      "ref": "U11",
+      "footprint": "KK_Power:SOT-23-5",
+      "courtyard_mm": [
+        48.925,
+        46.275,
+        53.075,
+        49.725
+      ],
+      "position_mm": [
+        51.0,
+        48.0
+      ],
+      "angle": 0.0,
+      "group": "ALL-RAIL READY / SOFT OUTPUTS"
+    },
+    {
+      "ref": "U13",
+      "footprint": "KK_Power:TPS22950_YBH",
+      "courtyard_mm": [
+        38.325,
+        6.125,
+        39.675,
+        7.875
+      ],
+      "position_mm": [
+        39.0,
+        7.0
+      ],
+      "angle": 0.0,
+      "group": "USB-A / USB-C INPUT CURRENT"
+    },
+    {
+      "ref": "U5",
+      "footprint": "KK_Power:Texas_S-PWSON-N10_ThermalVias",
+      "courtyard_mm": [
+        11.825,
+        26.945,
+        16.175,
+        31.055
+      ],
+      "position_mm": [
+        14.0,
+        29.0
+      ],
+      "angle": 0.0,
+      "group": "5 V BUCK-BOOST"
+    },
+    {
+      "ref": "U6",
+      "footprint": "KK_Power:Texas_S-PWSON-N10_ThermalVias",
+      "courtyard_mm": [
+        31.825,
+        26.945,
+        36.175,
+        31.055
+      ],
+      "position_mm": [
+        34.0,
+        29.0
+      ],
+      "angle": 0.0,
+      "group": "3.3 V BUCK-BOOST"
+    },
+    {
+      "ref": "U7",
+      "footprint": "KK_Power:Texas_S-PWSON-N10_ThermalVias",
+      "courtyard_mm": [
+        51.825,
+        26.945,
+        56.175,
+        31.055
+      ],
+      "position_mm": [
+        54.0,
+        29.0
+      ],
+      "angle": 0.0,
+      "group": "3.2 V BUCK-BOOST"
+    },
+    {
+      "ref": "L1",
+      "footprint": "KK_Power:L_Coilcraft_XxL4020",
+      "courtyard_mm": [
+        11.715,
+        21.215,
+        16.285,
+        25.785
+      ],
+      "position_mm": [
+        14.0,
+        23.5
+      ],
+      "angle": 90.0,
+      "group": "5 V BUCK-BOOST"
+    },
+    {
+      "ref": "L2",
+      "footprint": "KK_Power:L_Coilcraft_XxL4020",
+      "courtyard_mm": [
+        31.715,
+        21.215,
+        36.285,
+        25.785
+      ],
+      "position_mm": [
+        34.0,
+        23.5
+      ],
+      "angle": 90.0,
+      "group": "3.3 V BUCK-BOOST"
+    },
+    {
+      "ref": "L3",
+      "footprint": "KK_Power:L_Coilcraft_XxL4020",
+      "courtyard_mm": [
+        51.715,
+        21.215,
+        56.285,
+        25.785
+      ],
+      "position_mm": [
+        54.0,
+        23.5
+      ],
+      "angle": 90.0,
+      "group": "3.2 V BUCK-BOOST"
+    },
+    {
+      "ref": "U8",
+      "footprint": "KK_Power:SOT-23-6",
+      "courtyard_mm": [
+        17.925,
+        41.275,
+        22.075,
+        44.725
+      ],
+      "position_mm": [
+        20.0,
+        43.0
+      ],
+      "angle": 0.0,
+      "group": "ALL-RAIL READY / SOFT OUTPUTS"
+    },
+    {
+      "ref": "U9",
+      "footprint": "KK_Power:SOT-23-6",
+      "courtyard_mm": [
+        24.925,
+        41.275,
+        29.075,
+        44.725
+      ],
+      "position_mm": [
+        27.0,
+        43.0
+      ],
+      "angle": 0.0,
+      "group": "ALL-RAIL READY / SOFT OUTPUTS"
+    },
+    {
+      "ref": "U10",
+      "footprint": "KK_Power:SOT-23-6",
+      "courtyard_mm": [
+        31.925,
+        41.275,
+        36.075,
+        44.725
+      ],
+      "position_mm": [
+        34.0,
+        43.0
+      ],
+      "angle": 0.0,
+      "group": "ALL-RAIL READY / SOFT OUTPUTS"
+    },
+    {
+      "ref": "Q1",
+      "footprint": "KK_Power:FS8205",
+      "courtyard_mm": [
+        4.365,
+        52.275,
+        8.635,
+        55.725
+      ],
+      "position_mm": [
+        6.5,
+        54.0
+      ],
+      "angle": 0.0,
+      "group": "CELL PROTECTION / FUSE"
+    },
+    {
+      "ref": "Q2",
+      "footprint": "KK_Power:FS8205",
+      "courtyard_mm": [
+        11.865,
+        47.275,
+        16.135,
+        50.725
+      ],
+      "position_mm": [
+        14.0,
+        49.0
+      ],
+      "angle": 0.0,
+      "group": "CELL PROTECTION / FUSE"
+    },
+    {
+      "ref": "Q3",
+      "footprint": "KK_Power:FS8205",
+      "courtyard_mm": [
+        16.865,
+        47.275,
+        21.135,
+        50.725
+      ],
+      "position_mm": [
+        19.0,
+        49.0
+      ],
+      "angle": 0.0,
+      "group": "CELL PROTECTION / FUSE"
+    },
+    {
+      "ref": "C20",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "courtyard_mm": [
+        8.995,
+        27.275,
+        11.005,
+        30.725
+      ],
+      "position_mm": [
+        10.0,
+        29.0
+      ],
+      "angle": 90.0,
+      "group": "5 V BUCK-BOOST"
+    },
+    {
+      "ref": "C21",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "courtyard_mm": [
+        7.775,
+        30.995,
+        11.225,
+        33.005
+      ],
+      "position_mm": [
+        9.5,
+        32.0
+      ],
+      "angle": 0.0,
+      "group": "5 V BUCK-BOOST"
+    },
+    {
+      "ref": "C22",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "courtyard_mm": [
+        16.995,
+        25.275,
+        19.005,
+        28.725
+      ],
+      "position_mm": [
+        18.0,
+        27.0
+      ],
+      "angle": 90.0,
+      "group": "5 V BUCK-BOOST"
+    },
+    {
+      "ref": "C23",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "courtyard_mm": [
+        16.775,
+        28.995,
+        20.225,
+        31.005
+      ],
+      "position_mm": [
+        18.5,
+        30.0
+      ],
+      "angle": 0.0,
+      "group": "5 V BUCK-BOOST"
+    },
+    {
+      "ref": "C24",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "courtyard_mm": [
+        16.275,
+        31.495,
+        19.725,
+        33.505
+      ],
+      "position_mm": [
+        18.0,
+        32.5
+      ],
+      "angle": 0.0,
+      "group": "5 V BUCK-BOOST"
+    },
+    {
+      "ref": "C25",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "courtyard_mm": [
+        10.495,
+        33.745,
+        13.505,
+        35.255
+      ],
+      "position_mm": [
+        12.0,
+        34.5
+      ],
+      "angle": 0.0,
+      "group": "5 V BUCK-BOOST"
+    },
+    {
+      "ref": "C26",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "courtyard_mm": [
+        11.495,
+        31.745,
+        14.505,
+        33.255
+      ],
+      "position_mm": [
+        13.0,
+        32.5
+      ],
+      "angle": 0.0,
+      "group": "5 V BUCK-BOOST"
+    },
+    {
+      "ref": "C27",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "courtyard_mm": [
+        19.745,
+        25.495,
+        21.255,
+        28.505
+      ],
+      "position_mm": [
+        20.5,
+        27.0
+      ],
+      "angle": 90.0,
+      "group": "5 V BUCK-BOOST"
+    },
+    {
+      "ref": "C28",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "courtyard_mm": [
+        15.495,
+        34.245,
+        18.505,
+        35.755
+      ],
+      "position_mm": [
+        17.0,
+        35.0
+      ],
+      "angle": 0.0,
+      "group": "5 V BUCK-BOOST"
+    },
+    {
+      "ref": "C30",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "courtyard_mm": [
+        28.995,
+        27.275,
+        31.005,
+        30.725
+      ],
+      "position_mm": [
+        30.0,
+        29.0
+      ],
+      "angle": 90.0,
+      "group": "3.3 V BUCK-BOOST"
+    },
+    {
+      "ref": "C31",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "courtyard_mm": [
+        27.775,
+        30.995,
+        31.225,
+        33.005
+      ],
+      "position_mm": [
+        29.5,
+        32.0
+      ],
+      "angle": 0.0,
+      "group": "3.3 V BUCK-BOOST"
+    },
+    {
+      "ref": "C32",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "courtyard_mm": [
+        36.995,
+        25.275,
+        39.005,
+        28.725
+      ],
+      "position_mm": [
+        38.0,
+        27.0
+      ],
+      "angle": 90.0,
+      "group": "3.3 V BUCK-BOOST"
+    },
+    {
+      "ref": "C33",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "courtyard_mm": [
+        36.775,
+        28.995,
+        40.225,
+        31.005
+      ],
+      "position_mm": [
+        38.5,
+        30.0
+      ],
+      "angle": 0.0,
+      "group": "3.3 V BUCK-BOOST"
+    },
+    {
+      "ref": "C34",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "courtyard_mm": [
+        36.275,
+        31.495,
+        39.725,
+        33.505
+      ],
+      "position_mm": [
+        38.0,
+        32.5
+      ],
+      "angle": 0.0,
+      "group": "3.3 V BUCK-BOOST"
+    },
+    {
+      "ref": "C35",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "courtyard_mm": [
+        30.495,
+        33.745,
+        33.505,
+        35.255
+      ],
+      "position_mm": [
+        32.0,
+        34.5
+      ],
+      "angle": 0.0,
+      "group": "3.3 V BUCK-BOOST"
+    },
+    {
+      "ref": "C36",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "courtyard_mm": [
+        31.495,
+        31.745,
+        34.505,
+        33.255
+      ],
+      "position_mm": [
+        33.0,
+        32.5
+      ],
+      "angle": 0.0,
+      "group": "3.3 V BUCK-BOOST"
+    },
+    {
+      "ref": "C37",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "courtyard_mm": [
+        39.745,
+        25.495,
+        41.255,
+        28.505
+      ],
+      "position_mm": [
+        40.5,
+        27.0
+      ],
+      "angle": 90.0,
+      "group": "3.3 V BUCK-BOOST"
+    },
+    {
+      "ref": "C38",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "courtyard_mm": [
+        35.495,
+        34.245,
+        38.505,
+        35.755
+      ],
+      "position_mm": [
+        37.0,
+        35.0
+      ],
+      "angle": 0.0,
+      "group": "3.3 V BUCK-BOOST"
+    },
+    {
+      "ref": "C40",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "courtyard_mm": [
+        48.995,
+        27.275,
+        51.005,
+        30.725
+      ],
+      "position_mm": [
+        50.0,
+        29.0
+      ],
+      "angle": 90.0,
+      "group": "3.2 V BUCK-BOOST"
+    },
+    {
+      "ref": "C41",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "courtyard_mm": [
+        47.775,
+        30.995,
+        51.225,
+        33.005
+      ],
+      "position_mm": [
+        49.5,
+        32.0
+      ],
+      "angle": 0.0,
+      "group": "3.2 V BUCK-BOOST"
+    },
+    {
+      "ref": "C42",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "courtyard_mm": [
+        56.995,
+        25.275,
+        59.005,
+        28.725
+      ],
+      "position_mm": [
+        58.0,
+        27.0
+      ],
+      "angle": 90.0,
+      "group": "3.2 V BUCK-BOOST"
+    },
+    {
+      "ref": "C43",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "courtyard_mm": [
+        56.775,
+        28.995,
+        60.225,
+        31.005
+      ],
+      "position_mm": [
+        58.5,
+        30.0
+      ],
+      "angle": 0.0,
+      "group": "3.2 V BUCK-BOOST"
+    },
+    {
+      "ref": "C44",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "courtyard_mm": [
+        56.275,
+        31.495,
+        59.725,
+        33.505
+      ],
+      "position_mm": [
+        58.0,
+        32.5
+      ],
+      "angle": 0.0,
+      "group": "3.2 V BUCK-BOOST"
+    },
+    {
+      "ref": "C45",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "courtyard_mm": [
+        50.495,
+        33.745,
+        53.505,
+        35.255
+      ],
+      "position_mm": [
+        52.0,
+        34.5
+      ],
+      "angle": 0.0,
+      "group": "3.2 V BUCK-BOOST"
+    },
+    {
+      "ref": "C46",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "courtyard_mm": [
+        51.495,
+        31.745,
+        54.505,
+        33.255
+      ],
+      "position_mm": [
+        53.0,
+        32.5
+      ],
+      "angle": 0.0,
+      "group": "3.2 V BUCK-BOOST"
+    },
+    {
+      "ref": "C47",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "courtyard_mm": [
+        59.745,
+        25.495,
+        61.255,
+        28.505
+      ],
+      "position_mm": [
+        60.5,
+        27.0
+      ],
+      "angle": 90.0,
+      "group": "3.2 V BUCK-BOOST"
+    },
+    {
+      "ref": "C48",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "courtyard_mm": [
+        55.495,
+        34.245,
+        58.505,
+        35.755
+      ],
+      "position_mm": [
+        57.0,
+        35.0
+      ],
+      "angle": 0.0,
+      "group": "3.2 V BUCK-BOOST"
+    },
+    {
+      "ref": "R20",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "courtyard_mm": [
+        20.245,
+        31.495,
+        21.755,
+        34.505
+      ],
+      "position_mm": [
+        21.0,
+        33.0
+      ],
+      "angle": 90.0,
+      "group": "5 V BUCK-BOOST"
+    },
+    {
+      "ref": "R21",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "courtyard_mm": [
+        16.495,
+        36.245,
+        19.505,
+        37.755
+      ],
+      "position_mm": [
+        18.0,
+        37.0
+      ],
+      "angle": 0.0,
+      "group": "5 V BUCK-BOOST"
+    },
+    {
+      "ref": "R30",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "courtyard_mm": [
+        40.245,
+        31.495,
+        41.755,
+        34.505
+      ],
+      "position_mm": [
+        41.0,
+        33.0
+      ],
+      "angle": 90.0,
+      "group": "3.3 V BUCK-BOOST"
+    },
+    {
+      "ref": "R31",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "courtyard_mm": [
+        36.495,
+        36.245,
+        39.505,
+        37.755
+      ],
+      "position_mm": [
+        38.0,
+        37.0
+      ],
+      "angle": 0.0,
+      "group": "3.3 V BUCK-BOOST"
+    },
+    {
+      "ref": "R40",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "courtyard_mm": [
+        60.245,
+        31.495,
+        61.755,
+        34.505
+      ],
+      "position_mm": [
+        61.0,
+        33.0
+      ],
+      "angle": 90.0,
+      "group": "3.2 V BUCK-BOOST"
+    },
+    {
+      "ref": "R43",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "courtyard_mm": [
+        58.995,
+        35.245,
+        62.005,
+        36.755
+      ],
+      "position_mm": [
+        60.5,
+        36.0
+      ],
+      "angle": 0.0,
+      "group": "3.2 V BUCK-BOOST"
+    },
+    {
+      "ref": "R41",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "courtyard_mm": [
+        55.495,
+        36.245,
+        58.505,
+        37.755
+      ],
+      "position_mm": [
+        57.0,
+        37.0
+      ],
+      "angle": 0.0,
+      "group": "3.2 V BUCK-BOOST"
+    },
+    {
+      "ref": "C72",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "courtyard_mm": [
+        10.745,
+        12.495,
+        12.255,
+        15.505
+      ],
+      "position_mm": [
+        11.5,
+        14.0
+      ],
+      "angle": 90.0,
+      "group": "USB-C CHARGING ONLY"
+    },
+    {
+      "ref": "C1",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "courtyard_mm": [
+        12.995,
+        14.745,
+        16.005,
+        16.255
+      ],
+      "position_mm": [
+        14.5,
+        15.5
+      ],
+      "angle": 0.0,
+      "group": "USB-C CHARGING ONLY"
+    },
+    {
+      "ref": "C2",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "courtyard_mm": [
+        8.745,
+        12.495,
+        10.255,
+        15.505
+      ],
+      "position_mm": [
+        9.5,
+        14.0
+      ],
+      "angle": 90.0,
+      "group": "USB-C CHARGING ONLY"
+    },
+    {
+      "ref": "C3",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "courtyard_mm": [
+        30.495,
+        10.275,
+        32.505,
+        13.725
+      ],
+      "position_mm": [
+        31.5,
+        12.0
+      ],
+      "angle": 90.0,
+      "group": "CELL CHARGER / POWER PATH"
+    },
+    {
+      "ref": "C4",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "courtyard_mm": [
+        28.275,
+        7.495,
+        31.725,
+        9.505
+      ],
+      "position_mm": [
+        30.0,
+        8.5
+      ],
+      "angle": 0.0,
+      "group": "CELL CHARGER / POWER PATH"
+    },
+    {
+      "ref": "C5",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "courtyard_mm": [
+        28.275,
+        14.495,
+        31.725,
+        16.505
+      ],
+      "position_mm": [
+        30.0,
+        15.5
+      ],
+      "angle": 0.0,
+      "group": "CELL CHARGER / POWER PATH"
+    },
+    {
+      "ref": "C6",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "courtyard_mm": [
+        11.495,
+        45.245,
+        14.505,
+        46.755
+      ],
+      "position_mm": [
+        13.0,
+        46.0
+      ],
+      "angle": 0.0,
+      "group": "CELL PROTECTION / FUSE"
+    },
+    {
+      "ref": "C7",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "courtyard_mm": [
+        46.495,
+        13.745,
+        49.505,
+        15.255
+      ],
+      "position_mm": [
+        48.0,
+        14.5
+      ],
+      "angle": 0.0,
+      "group": "SYSTEM SWITCH / INRUSH / UVLO"
+    },
+    {
+      "ref": "C8",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "courtyard_mm": [
+        43.995,
+        11.275,
+        46.005,
+        14.725
+      ],
+      "position_mm": [
+        45.0,
+        13.0
+      ],
+      "angle": 90.0,
+      "group": "SYSTEM SWITCH / INRUSH / UVLO"
+    },
+    {
+      "ref": "C9",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "courtyard_mm": [
+        50.245,
+        11.495,
+        51.755,
+        14.505
+      ],
+      "position_mm": [
+        51.0,
+        13.0
+      ],
+      "angle": 90.0,
+      "group": "SYSTEM SWITCH / INRUSH / UVLO"
+    },
+    {
+      "ref": "C51",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "courtyard_mm": [
+        29.745,
+        41.495,
+        31.255,
+        44.505
+      ],
+      "position_mm": [
+        30.5,
+        43.0
+      ],
+      "angle": 90.0,
+      "group": "ALL-RAIL READY / SOFT OUTPUTS"
+    },
+    {
+      "ref": "C52",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "courtyard_mm": [
+        26.495,
+        39.245,
+        29.505,
+        40.755
+      ],
+      "position_mm": [
+        28.0,
+        40.0
+      ],
+      "angle": 0.0,
+      "group": "ALL-RAIL READY / SOFT OUTPUTS"
+    },
+    {
+      "ref": "C53",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "courtyard_mm": [
+        26.495,
+        45.245,
+        29.505,
+        46.755
+      ],
+      "position_mm": [
+        28.0,
+        46.0
+      ],
+      "angle": 0.0,
+      "group": "ALL-RAIL READY / SOFT OUTPUTS"
+    },
+    {
+      "ref": "C54",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "courtyard_mm": [
+        22.745,
+        41.495,
+        24.255,
+        44.505
+      ],
+      "position_mm": [
+        23.5,
+        43.0
+      ],
+      "angle": 90.0,
+      "group": "ALL-RAIL READY / SOFT OUTPUTS"
+    },
+    {
+      "ref": "C60",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "courtyard_mm": [
+        42.495,
+        47.245,
+        45.505,
+        48.755
+      ],
+      "position_mm": [
+        44.0,
+        48.0
+      ],
+      "angle": 0.0,
+      "group": "VOLTAGE SUPERVISION / STARTUP"
+    },
+    {
+      "ref": "C70",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "courtyard_mm": [
+        37.495,
+        9.245,
+        40.505,
+        10.755
+      ],
+      "position_mm": [
+        39.0,
+        10.0
+      ],
+      "angle": 0.0,
+      "group": "USB-A / USB-C INPUT CURRENT"
+    },
+    {
+      "ref": "C71",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "courtyard_mm": [
+        37.495,
+        11.245,
+        40.505,
+        12.755
+      ],
+      "position_mm": [
+        39.0,
+        12.0
+      ],
+      "angle": 0.0,
+      "group": "USB-A / USB-C INPUT CURRENT"
+    },
+    {
+      "ref": "R1",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "courtyard_mm": [
+        11.495,
+        9.745,
+        14.505,
+        11.255
+      ],
+      "position_mm": [
+        13.0,
+        10.5
+      ],
+      "angle": 0.0,
+      "group": "USB-C CHARGING ONLY"
+    },
+    {
+      "ref": "R2",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "courtyard_mm": [
+        11.495,
+        16.745,
+        14.505,
+        18.255
+      ],
+      "position_mm": [
+        13.0,
+        17.5
+      ],
+      "angle": 0.0,
+      "group": "USB-C CHARGING ONLY"
+    },
+    {
+      "ref": "Q4",
+      "footprint": "KK_Power:SOT-23",
+      "courtyard_mm": [
+        15.775,
+        10.545,
+        19.225,
+        14.455
+      ],
+      "position_mm": [
+        17.5,
+        12.5
+      ],
+      "angle": 90.0,
+      "group": "USB-C CHARGING ONLY"
+    },
+    {
+      "ref": "R3",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "courtyard_mm": [
+        7.995,
+        10.245,
+        11.005,
+        11.755
+      ],
+      "position_mm": [
+        9.5,
+        11.0
+      ],
+      "angle": 0.0,
+      "group": "USB-C CHARGING ONLY"
+    },
+    {
+      "ref": "D1",
+      "footprint": "KK_Power:D_SMA",
+      "courtyard_mm": [
+        4.725,
+        12.475,
+        8.275,
+        19.525
+      ],
+      "position_mm": [
+        6.5,
+        16.0
+      ],
+      "angle": 90.0,
+      "group": "USB-C CHARGING ONLY"
+    },
+    {
+      "ref": "R4",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "courtyard_mm": [
+        33.245,
+        10.495,
+        34.755,
+        13.505
+      ],
+      "position_mm": [
+        34.0,
+        12.0
+      ],
+      "angle": 90.0,
+      "group": "CELL CHARGER / POWER PATH"
+    },
+    {
+      "ref": "R5",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "courtyard_mm": [
+        32.245,
+        6.995,
+        33.755,
+        10.005
+      ],
+      "position_mm": [
+        33.0,
+        8.5
+      ],
+      "angle": 90.0,
+      "group": "CELL CHARGER / POWER PATH"
+    },
+    {
+      "ref": "LED1",
+      "footprint": "KK_Power:LED_1206_3216Metric",
+      "courtyard_mm": [
+        32.345,
+        14.195,
+        34.655,
+        18.805
+      ],
+      "position_mm": [
+        33.5,
+        16.5
+      ],
+      "angle": 90.0,
+      "group": "CELL CHARGER / POWER PATH"
+    },
+    {
+      "ref": "R6",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "courtyard_mm": [
+        24.995,
+        7.745,
+        28.005,
+        9.255
+      ],
+      "position_mm": [
+        26.5,
+        8.5
+      ],
+      "angle": 0.0,
+      "group": "CELL CHARGER / POWER PATH"
+    },
+    {
+      "ref": "LED2",
+      "footprint": "KK_Power:LED_1206_3216Metric",
+      "courtyard_mm": [
+        23.195,
+        14.845,
+        27.805,
+        17.155
+      ],
+      "position_mm": [
+        25.5,
+        16.0
+      ],
+      "angle": 0.0,
+      "group": "CELL CHARGER / POWER PATH"
+    },
+    {
+      "ref": "R7",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "courtyard_mm": [
+        28.495,
+        5.245,
+        31.505,
+        6.755
+      ],
+      "position_mm": [
+        30.0,
+        6.0
+      ],
+      "angle": 0.0,
+      "group": "CELL CHARGER / POWER PATH"
+    },
+    {
+      "ref": "F1",
+      "footprint": "KK_Power:Fuse_1206_3216Metric",
+      "courtyard_mm": [
+        9.695,
+        42.345,
+        14.305,
+        44.655
+      ],
+      "position_mm": [
+        12.0,
+        43.5
+      ],
+      "angle": 0.0,
+      "group": "CELL PROTECTION / FUSE"
+    },
+    {
+      "ref": "R8",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "courtyard_mm": [
+        15.245,
+        43.995,
+        16.755,
+        47.005
+      ],
+      "position_mm": [
+        16.0,
+        45.5
+      ],
+      "angle": 90.0,
+      "group": "CELL PROTECTION / FUSE"
+    },
+    {
+      "ref": "R9",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "courtyard_mm": [
+        7.745,
+        42.995,
+        9.255,
+        46.005
+      ],
+      "position_mm": [
+        8.5,
+        44.5
+      ],
+      "angle": 90.0,
+      "group": "CELL PROTECTION / FUSE"
+    },
+    {
+      "ref": "R10",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "courtyard_mm": [
+        46.495,
+        8.745,
+        49.505,
+        10.255
+      ],
+      "position_mm": [
+        48.0,
+        9.5
+      ],
+      "angle": 0.0,
+      "group": "SYSTEM SWITCH / INRUSH / UVLO"
+    },
+    {
+      "ref": "R11",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "courtyard_mm": [
+        46.495,
+        15.745,
+        49.505,
+        17.255
+      ],
+      "position_mm": [
+        48.0,
+        16.5
+      ],
+      "angle": 0.0,
+      "group": "SYSTEM SWITCH / INRUSH / UVLO"
+    },
+    {
+      "ref": "R12",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "courtyard_mm": [
+        42.995,
+        9.245,
+        46.005,
+        10.755
+      ],
+      "position_mm": [
+        44.5,
+        10.0
+      ],
+      "angle": 0.0,
+      "group": "SYSTEM SWITCH / INRUSH / UVLO"
+    },
+    {
+      "ref": "R13",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "courtyard_mm": [
+        42.995,
+        15.245,
+        46.005,
+        16.755
+      ],
+      "position_mm": [
+        44.5,
+        16.0
+      ],
+      "angle": 0.0,
+      "group": "SYSTEM SWITCH / INRUSH / UVLO"
+    },
+    {
+      "ref": "R14",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "courtyard_mm": [
+        50.245,
+        7.995,
+        51.755,
+        11.005
+      ],
+      "position_mm": [
+        51.0,
+        9.5
+      ],
+      "angle": 90.0,
+      "group": "SYSTEM SWITCH / INRUSH / UVLO"
+    },
+    {
+      "ref": "R50",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "courtyard_mm": [
+        22.995,
+        39.245,
+        26.005,
+        40.755
+      ],
+      "position_mm": [
+        24.5,
+        40.0
+      ],
+      "angle": 0.0,
+      "group": "ALL-RAIL READY / SOFT OUTPUTS"
+    },
+    {
+      "ref": "R51",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "courtyard_mm": [
+        22.995,
+        45.245,
+        26.005,
+        46.755
+      ],
+      "position_mm": [
+        24.5,
+        46.0
+      ],
+      "angle": 0.0,
+      "group": "ALL-RAIL READY / SOFT OUTPUTS"
+    },
+    {
+      "ref": "R52",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "courtyard_mm": [
+        30.245,
+        37.995,
+        31.755,
+        41.005
+      ],
+      "position_mm": [
+        31.0,
+        39.5
+      ],
+      "angle": 90.0,
+      "group": "ALL-RAIL READY / SOFT OUTPUTS"
+    },
+    {
+      "ref": "R53",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "courtyard_mm": [
+        30.245,
+        44.995,
+        31.755,
+        48.005
+      ],
+      "position_mm": [
+        31.0,
+        46.5
+      ],
+      "angle": 90.0,
+      "group": "ALL-RAIL READY / SOFT OUTPUTS"
+    },
+    {
+      "ref": "R54",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "courtyard_mm": [
+        26.495,
+        37.245,
+        29.505,
+        38.755
+      ],
+      "position_mm": [
+        28.0,
+        38.0
+      ],
+      "angle": 0.0,
+      "group": "ALL-RAIL READY / SOFT OUTPUTS"
+    },
+    {
+      "ref": "R60",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "courtyard_mm": [
+        46.245,
+        44.495,
+        47.755,
+        47.505
+      ],
+      "position_mm": [
+        47.0,
+        46.0
+      ],
+      "angle": 90.0,
+      "group": "VOLTAGE SUPERVISION / STARTUP"
+    },
+    {
+      "ref": "R61",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "courtyard_mm": [
+        40.245,
+        46.995,
+        41.755,
+        50.005
+      ],
+      "position_mm": [
+        41.0,
+        48.5
+      ],
+      "angle": 90.0,
+      "group": "VOLTAGE SUPERVISION / STARTUP"
+    },
+    {
+      "ref": "R62",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "courtyard_mm": [
+        42.495,
+        49.245,
+        45.505,
+        50.755
+      ],
+      "position_mm": [
+        44.0,
+        50.0
+      ],
+      "angle": 0.0,
+      "group": "VOLTAGE SUPERVISION / STARTUP"
+    },
+    {
+      "ref": "R63",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "courtyard_mm": [
+        46.245,
+        40.995,
+        47.755,
+        44.005
+      ],
+      "position_mm": [
+        47.0,
+        42.5
+      ],
+      "angle": 90.0,
+      "group": "VOLTAGE SUPERVISION / STARTUP"
+    },
+    {
+      "ref": "R64",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "courtyard_mm": [
+        46.245,
+        47.995,
+        47.755,
+        51.005
+      ],
+      "position_mm": [
+        47.0,
+        49.5
+      ],
+      "angle": 90.0,
+      "group": "VOLTAGE SUPERVISION / STARTUP"
+    },
+    {
+      "ref": "R65",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "courtyard_mm": [
+        38.245,
+        44.495,
+        39.755,
+        47.505
+      ],
+      "position_mm": [
+        39.0,
+        46.0
+      ],
+      "angle": 90.0,
+      "group": "VOLTAGE SUPERVISION / STARTUP"
+    },
+    {
+      "ref": "R66",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "courtyard_mm": [
+        48.245,
+        42.995,
+        49.755,
+        46.005
+      ],
+      "position_mm": [
+        49.0,
+        44.5
+      ],
+      "angle": 90.0,
+      "group": "VOLTAGE SUPERVISION / STARTUP"
+    },
+    {
+      "ref": "R70",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "courtyard_mm": [
+        35.245,
+        8.495,
+        36.755,
+        11.505
+      ],
+      "position_mm": [
+        36.0,
+        10.0
+      ],
+      "angle": 90.0,
+      "group": "USB-A / USB-C INPUT CURRENT"
+    },
+    {
+      "ref": "R71",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "courtyard_mm": [
+        39.995,
+        7.245,
+        43.005,
+        8.755
+      ],
+      "position_mm": [
+        41.5,
+        8.0
+      ],
+      "angle": 0.0,
+      "group": "USB-A / USB-C INPUT CURRENT"
+    },
+    {
+      "ref": "Q5",
+      "footprint": "KK_Power:SOT-23",
+      "courtyard_mm": [
+        34.045,
+        4.775,
+        37.955,
+        8.225
+      ],
+      "position_mm": [
+        36.0,
+        6.5
+      ],
+      "angle": 0.0,
+      "group": "USB-A / USB-C INPUT CURRENT"
+    },
+    {
+      "ref": "R72",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "courtyard_mm": [
+        37.495,
+        13.245,
+        40.505,
+        14.755
+      ],
+      "position_mm": [
+        39.0,
+        14.0
+      ],
+      "angle": 0.0,
+      "group": "USB-A / USB-C INPUT CURRENT"
+    },
+    {
+      "ref": "R73",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "courtyard_mm": [
+        41.245,
+        11.495,
+        42.755,
+        14.505
+      ],
+      "position_mm": [
+        42.0,
+        13.0
+      ],
+      "angle": 90.0,
+      "group": "USB-A / USB-C INPUT CURRENT"
+    },
+    {
+      "ref": "TP1",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "courtyard_mm": [
+        6.225,
+        59.725,
+        8.775,
+        62.275
+      ],
+      "position_mm": [
+        7.5,
+        61.0
+      ],
+      "angle": 0.0,
+      "group": "MAIN BOARD HARNESS / DEBUG"
+    },
+    {
+      "ref": "TP2",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "courtyard_mm": [
+        7.725,
+        56.725,
+        10.275,
+        59.275
+      ],
+      "position_mm": [
+        9.0,
+        58.0
+      ],
+      "angle": 0.0,
+      "group": "MAIN BOARD HARNESS / DEBUG"
+    },
+    {
+      "ref": "TP3",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "courtyard_mm": [
+        4.725,
+        56.225,
+        7.275,
+        58.775
+      ],
+      "position_mm": [
+        6.0,
+        57.5
+      ],
+      "angle": 0.0,
+      "group": "MAIN BOARD HARNESS / DEBUG"
+    },
+    {
+      "ref": "TP4",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "courtyard_mm": [
+        19.725,
+        59.725,
+        22.275,
+        62.275
+      ],
+      "position_mm": [
+        21.0,
+        61.0
+      ],
+      "angle": 0.0,
+      "group": "MAIN BOARD HARNESS / DEBUG"
+    },
+    {
+      "ref": "TP5",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "courtyard_mm": [
+        19.725,
+        56.725,
+        22.275,
+        59.275
+      ],
+      "position_mm": [
+        21.0,
+        58.0
+      ],
+      "angle": 0.0,
+      "group": "MAIN BOARD HARNESS / DEBUG"
+    },
+    {
+      "ref": "TP6",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "courtyard_mm": [
+        19.725,
+        53.725,
+        22.275,
+        56.275
+      ],
+      "position_mm": [
+        21.0,
+        55.0
+      ],
+      "angle": 0.0,
+      "group": "MAIN BOARD HARNESS / DEBUG"
+    },
+    {
+      "ref": "TP7",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "courtyard_mm": [
+        22.725,
+        52.225,
+        25.275,
+        54.775
+      ],
+      "position_mm": [
+        24.0,
+        53.5
+      ],
+      "angle": 0.0,
+      "group": "MAIN BOARD HARNESS / DEBUG"
+    },
+    {
+      "ref": "TP8",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "courtyard_mm": [
+        31.225,
+        59.725,
+        33.775,
+        62.275
+      ],
+      "position_mm": [
+        32.5,
+        61.0
+      ],
+      "angle": 0.0,
+      "group": "MAIN BOARD HARNESS / DEBUG"
+    },
+    {
+      "ref": "TP9",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "courtyard_mm": [
+        31.225,
+        56.725,
+        33.775,
+        59.275
+      ],
+      "position_mm": [
+        32.5,
+        58.0
+      ],
+      "angle": 0.0,
+      "group": "MAIN BOARD HARNESS / DEBUG"
+    },
+    {
+      "ref": "TP10",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "courtyard_mm": [
+        34.225,
+        59.725,
+        36.775,
+        62.275
+      ],
+      "position_mm": [
+        35.5,
+        61.0
+      ],
+      "angle": 0.0,
+      "group": "MAIN BOARD HARNESS / DEBUG"
+    },
+    {
+      "ref": "TP11",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "courtyard_mm": [
+        34.225,
+        56.725,
+        36.775,
+        59.275
+      ],
+      "position_mm": [
+        35.5,
+        58.0
+      ],
+      "angle": 0.0,
+      "group": "MAIN BOARD HARNESS / DEBUG"
+    },
+    {
+      "ref": "TP12",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "courtyard_mm": [
+        37.225,
+        59.725,
+        39.775,
+        62.275
+      ],
+      "position_mm": [
+        38.5,
+        61.0
+      ],
+      "angle": 0.0,
+      "group": "MAIN BOARD HARNESS / DEBUG"
+    },
+    {
+      "ref": "TP13",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "courtyard_mm": [
+        40.225,
+        59.725,
+        42.775,
+        62.275
+      ],
+      "position_mm": [
+        41.5,
+        61.0
+      ],
+      "angle": 0.0,
+      "group": "MAIN BOARD HARNESS / DEBUG"
+    },
+    {
+      "ref": "TP14",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "courtyard_mm": [
+        41.225,
+        56.725,
+        43.775,
+        59.275
+      ],
+      "position_mm": [
+        42.5,
+        58.0
+      ],
+      "angle": 0.0,
+      "group": "MAIN BOARD HARNESS / DEBUG"
+    },
+    {
+      "ref": "TP15",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "courtyard_mm": [
+        38.225,
+        56.725,
+        40.775,
+        59.275
+      ],
+      "position_mm": [
+        39.5,
+        58.0
+      ],
+      "angle": 0.0,
+      "group": "MAIN BOARD HARNESS / DEBUG"
+    },
+    {
+      "ref": "TP16",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "courtyard_mm": [
+        41.225,
+        53.725,
+        43.775,
+        56.275
+      ],
+      "position_mm": [
+        42.5,
+        55.0
+      ],
+      "angle": 0.0,
+      "group": "MAIN BOARD HARNESS / DEBUG"
+    },
+    {
+      "ref": "TP17",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "courtyard_mm": [
+        58.225,
+        59.725,
+        60.775,
+        62.275
+      ],
+      "position_mm": [
+        59.5,
+        61.0
+      ],
+      "angle": 0.0,
+      "group": "MAIN BOARD HARNESS / DEBUG"
+    },
+    {
+      "ref": "TP18",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "courtyard_mm": [
+        58.225,
+        56.725,
+        60.775,
+        59.275
+      ],
+      "position_mm": [
+        59.5,
+        58.0
+      ],
+      "angle": 0.0,
+      "group": "MAIN BOARD HARNESS / DEBUG"
+    },
+    {
+      "ref": "TP19",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "courtyard_mm": [
+        61.225,
+        59.725,
+        63.775,
+        62.275
+      ],
+      "position_mm": [
+        62.5,
+        61.0
+      ],
+      "angle": 0.0,
+      "group": "MAIN BOARD HARNESS / DEBUG"
+    },
+    {
+      "ref": "TP20",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "courtyard_mm": [
+        61.225,
+        56.725,
+        63.775,
+        59.275
+      ],
+      "position_mm": [
+        62.5,
+        58.0
+      ],
+      "angle": 0.0,
+      "group": "MAIN BOARD HARNESS / DEBUG"
+    },
+    {
+      "ref": "TP21",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "courtyard_mm": [
+        64.225,
+        56.225,
+        66.775,
+        58.775
+      ],
+      "position_mm": [
+        65.5,
+        57.5
+      ],
+      "angle": 0.0,
+      "group": "MAIN BOARD HARNESS / DEBUG"
+    },
+    {
+      "ref": "TP22",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "courtyard_mm": [
+        1.725,
+        56.225,
+        4.275,
+        58.775
+      ],
+      "position_mm": [
+        3.0,
+        57.5
+      ],
+      "angle": 0.0,
+      "group": "MAIN BOARD HARNESS / DEBUG"
+    },
+    {
+      "ref": "TP23",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "courtyard_mm": [
+        3.725,
+        49.225,
+        6.275,
+        51.775
+      ],
+      "position_mm": [
+        5.0,
+        50.5
+      ],
+      "angle": 0.0,
+      "group": "MAIN BOARD HARNESS / DEBUG"
+    },
+    {
+      "ref": "TP24",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "courtyard_mm": [
+        3.725,
+        46.225,
+        6.275,
+        48.775
+      ],
+      "position_mm": [
+        5.0,
+        47.5
+      ],
+      "angle": 0.0,
+      "group": "MAIN BOARD HARNESS / DEBUG"
+    },
+    {
+      "ref": "TP25",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "courtyard_mm": [
+        21.725,
+        49.225,
+        24.275,
+        51.775
+      ],
+      "position_mm": [
+        23.0,
+        50.5
+      ],
+      "angle": 0.0,
+      "group": "MAIN BOARD HARNESS / DEBUG"
+    }
+  ]
+}

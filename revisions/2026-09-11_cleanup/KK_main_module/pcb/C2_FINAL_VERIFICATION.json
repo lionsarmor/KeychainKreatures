@@ -1,0 +1,121 @@
+{
+  "status": "C.2 ROUTED ENGINEERING PROTOTYPE",
+  "schematic_components": 91,
+  "component_pads": 267,
+  "npth_mounting_holes": 4,
+  "mismatches": [],
+  "import_coordinate_rounding": [
+    {
+      "ref": "C2",
+      "delta_nm": [
+        0,
+        1
+      ]
+    },
+    {
+      "ref": "C22",
+      "delta_nm": [
+        0,
+        1
+      ]
+    },
+    {
+      "ref": "Q6",
+      "delta_nm": [
+        1,
+        0
+      ]
+    },
+    {
+      "ref": "Q1",
+      "delta_nm": [
+        0,
+        1
+      ]
+    },
+    {
+      "ref": "J4",
+      "delta_nm": [
+        1,
+        0
+      ]
+    },
+    {
+      "ref": "C19",
+      "delta_nm": [
+        0,
+        1
+      ]
+    },
+    {
+      "ref": "U1",
+      "delta_nm": [
+        1,
+        1
+      ]
+    },
+    {
+      "ref": "Q3",
+      "delta_nm": [
+        1,
+        0
+      ]
+    },
+    {
+      "ref": "C26",
+      "delta_nm": [
+        0,
+        1
+      ]
+    },
+    {
+      "ref": "C4",
+      "delta_nm": [
+        0,
+        1
+      ]
+    }
+  ],
+  "zones": [
+    {
+      "name": "MAIN_GND_FRONT",
+      "rule_area": false,
+      "net": "/GND",
+      "layers": [
+        0
+      ],
+      "filled": true
+    },
+    {
+      "name": "PROVISIONAL_SUPERMINI_ANTENNA",
+      "rule_area": true,
+      "net": "",
+      "layers": [
+        0,
+        2
+      ],
+      "filled": false
+    },
+    {
+      "name": "SUPERMINI_ANTENNA_UNDER_MODULE",
+      "rule_area": true,
+      "net": "",
+      "layers": [
+        0,
+        2
+      ],
+      "filled": false
+    },
+    {
+      "name": "MAIN_GND_BACK",
+      "rule_area": false,
+      "net": "/GND",
+      "layers": [
+        2
+      ],
+      "filled": true
+    }
+  ],
+  "board_sha256": "7b524ae66fa735af34b175a71e6e3094923426299ec1f5f596e5c348cea1cf1e",
+  "tracks_and_vias": 864
+}

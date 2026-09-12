@@ -1,0 +1,170 @@
+[
+  {
+    "connection": "C26:1 -> U3:2",
+    "direct_mm": 3.823
+  },
+  {
+    "connection": "C26:2 -> U3:4",
+    "direct_mm": 3.998
+  },
+  {
+    "connection": "C25:1 -> U3:2",
+    "direct_mm": 4.904
+  },
+  {
+    "connection": "C21:1 -> U3:8",
+    "direct_mm": 5.467
+  },
+  {
+    "connection": "C21:2 -> U3:5",
+    "direct_mm": 5.467
+  },
+  {
+    "connection": "C22:1 -> U3:5",
+    "direct_mm": 3.153
+  },
+  {
+    "connection": "C23:1 -> U3:1",
+    "direct_mm": 3.434
+  },
+  {
+    "connection": "C24:1 -> U3:3",
+    "direct_mm": 5.14
+  },
+  {
+    "connection": "R34:1 -> C23:2",
+    "direct_mm": 2.65
+  },
+  {
+    "connection": "R35:1 -> C24:2",
+    "direct_mm": 3.231
+  },
+  {
+    "connection": "R33:1 -> U3:7",
+    "direct_mm": 4.484
+  },
+  {
+    "connection": "R32:2 -> U3:7",
+    "direct_mm": 5.653
+  },
+  {
+    "connection": "J5:1 -> U3:1",
+    "direct_mm": 40.385
+  },
+  {
+    "connection": "J5:2 -> U3:3",
+    "direct_mm": 45.119
+  },
+  {
+    "connection": "C16:1 -> J4:1",
+    "direct_mm": 5.557
+  },
+  {
+    "connection": "C16:2 -> J4:2",
+    "direct_mm": 5.557
+  },
+  {
+    "connection": "D2:1 -> J4:1",
+    "direct_mm": 12.51
+  },
+  {
+    "connection": "D2:2 -> J4:2",
+    "direct_mm": 9.55
+  },
+  {
+    "connection": "Q4:3 -> J4:2",
+    "direct_mm": 3.965
+  },
+  {
+    "connection": "C17:1 -> J4:1",
+    "direct_mm": 17.753
+  },
+  {
+    "connection": "C15:1 -> U2:3",
+    "direct_mm": 4.283
+  },
+  {
+    "connection": "C14:1 -> U2:3",
+    "direct_mm": 2.879
+  },
+  {
+    "connection": "C8:1 -> U1:9",
+    "direct_mm": 3.69
+  },
+  {
+    "connection": "C9:1 -> U1:9",
+    "direct_mm": 16.313
+  },
+  {
+    "connection": "C10:1 -> J3:1",
+    "direct_mm": 5.469
+  },
+  {
+    "connection": "C11:1 -> J3:1",
+    "direct_mm": 10.0
+  },
+  {
+    "connection": "C12:1 -> J2:2",
+    "direct_mm": 3.249
+  },
+  {
+    "connection": "C13:1 -> J2:2",
+    "direct_mm": 6.134
+  },
+  {
+    "connection": "C1:1 -> J1:1",
+    "direct_mm": 5.25
+  },
+  {
+    "connection": "C3:1 -> J1:3",
+    "direct_mm": 7.75
+  },
+  {
+    "connection": "C5:1 -> J1:4",
+    "direct_mm": 10.053
+  },
+  {
+    "connection": "C27:1 -> U4:16",
+    "direct_mm": 2.946
+  },
+  {
+    "connection": "R40:1 -> U4:15",
+    "direct_mm": 3.902
+  },
+  {
+    "connection": "R41:2 -> U4:13",
+    "direct_mm": 9.805
+  },
+  {
+    "connection": "R39:2 -> Q6:2",
+    "direct_mm": 20.56
+  },
+  {
+    "connection": "R38:1 -> Q6:2",
+    "direct_mm": 4.676
+  },
+  {
+    "connection": "R37:1 -> Q5:2",
+    "direct_mm": 15.844
+  },
+  {
+    "connection": "R36:2 -> Q5:2",
+    "direct_mm": 4.633
+  },
+  {
+    "connection": "R24:2 -> D1:2",
+    "direct_mm": 11.608
+  },
+  {
+    "connection": "Q1:3 -> D1:1",
+    "direct_mm": 3.857
+  },
+  {
+    "connection": "R25:2 -> Q1:2",
+    "direct_mm": 16.561
+  },
+  {
+    "connection": "R26:1 -> Q1:2",
+    "direct_mm": 5.238
+  }
+]

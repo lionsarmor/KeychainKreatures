@@ -1,0 +1,122 @@
+{
+  "component_pads": 267,
+  "logical_net_partitions_preserved": true,
+  "non_module_footprints_unchanged": 94,
+  "module_position_mm": [
+    66.0,
+    18.5
+  ],
+  "angle_degrees": 180.0,
+  "source_geometry_preserved": true,
+  "pad_net_mismatches": [],
+  "module_pads": [
+    {
+      "pad": "1",
+      "net": "/BUTTON_INT_N",
+      "x_mm": 73.62,
+      "y_mm": 23.58
+    },
+    {
+      "pad": "2",
+      "net": "/BUTTON_FN_N",
+      "x_mm": 73.62,
+      "y_mm": 21.04
+    },
+    {
+      "pad": "3",
+      "net": "unconnected-(MOD1-GPIO3_{slash}_STRAP-Pad3)",
+      "x_mm": 73.62,
+      "y_mm": 18.5
+    },
+    {
+      "pad": "3V3",
+      "net": "unconnected-(MOD1-3V3_OUT-Pad3V3)",
+      "x_mm": 58.38,
+      "y_mm": 23.58
+    },
+    {
+      "pad": "4",
+      "net": "/I2C_SDA",
+      "x_mm": 73.62,
+      "y_mm": 15.96
+    },
+    {
+      "pad": "5",
+      "net": "/I2C_SCL",
+      "x_mm": 73.62,
+      "y_mm": 13.42
+    },
+    {
+      "pad": "5V",
+      "net": "/MCU_5V",
+      "x_mm": 58.38,
+      "y_mm": 28.66
+    },
+    {
+      "pad": "6",
+      "net": "/IR_RX",
+      "x_mm": 73.62,
+      "y_mm": 10.88
+    },
+    {
+      "pad": "7",
+      "net": "/IR_TX",
+      "x_mm": 73.62,
+      "y_mm": 8.34
+    },
+    {
+      "pad": "8",
+      "net": "/AUDIO_PWM",
+      "x_mm": 58.38,
+      "y_mm": 8.34
+    },
+    {
+      "pad": "9",
+      "net": "/BL_PWM",
+      "x_mm": 58.38,
+      "y_mm": 10.88
+    },
+    {
+      "pad": "10",
+      "net": "/SD_CS",
+      "x_mm": 58.38,
+      "y_mm": 13.42
+    },
+    {
+      "pad": "11",
+      "net": "/SPI_MOSI",
+      "x_mm": 58.38,
+      "y_mm": 15.96
+    },
+    {
+      "pad": "12",
+      "net": "/SPI_MISO",
+      "x_mm": 58.38,
+      "y_mm": 18.5
+    },
+    {
+      "pad": "13",
+      "net": "/SPI_SCK",
+      "x_mm": 58.38,
+      "y_mm": 21.0
+    },
+    {
+      "pad": "GND",
+      "net": "/GND",
+      "x_mm": 58.38,
+      "y_mm": 26.12
+    },
+    {
+      "pad": "RX",
+      "net": "/TFT_CS",
+      "x_mm": 73.62,
+      "y_mm": 26.12
+    },
+    {
+      "pad": "TX",
+      "net": "/TFT_DC",
+      "x_mm": 73.62,
+      "y_mm": 28.66
+    }
+  ]
+}

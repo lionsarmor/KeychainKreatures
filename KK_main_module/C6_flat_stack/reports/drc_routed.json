@@ -1,0 +1,4127 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-12T02:08:47",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "KK_main_module.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad 2 [Net-(U1-GPA0_{slash}_UP)] of R5",
+                    "pos": {
+                        "x": 88.0,
+                        "y": 65.92
+                    },
+                    "uuid": "23ac60ef-d3e5-417c-9d08-873b7d7c2412"
+                },
+                {
+                    "description": "PTH pad B [Net-(U1-GPA0_{slash}_UP)] of SW1",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 57.75
+                    },
+                    "uuid": "1f32aed2-40a3-4853-93a5-6eac40a00a00"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad 2 [/BUTTON_INT_N] of R3",
+                    "pos": {
+                        "x": 88.0,
+                        "y": 24.42
+                    },
+                    "uuid": "30cb5f3f-76e5-4c9f-9400-d226d29632f6"
+                },
+                {
+                    "description": "Track [/BUTTON_INT_N] on F.Cu, length 6.4347 mm",
+                    "pos": {
+                        "x": 40.38,
+                        "y": 22.48
+                    },
+                    "uuid": "ffb88d74-74e2-47fe-9009-5f671d6f4936"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(U1-GPB0_{slash}_A)] on F.Cu, length 2.4036 mm",
+                    "pos": {
+                        "x": 92.0,
+                        "y": 82.42
+                    },
+                    "uuid": "0c983c52-bd3a-4b0d-b47b-ee6b042b3dbe"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(U1-GPB0_{slash}_A)] on F.Cu, length 7.4959 mm",
+                    "pos": {
+                        "x": 90.3004,
+                        "y": 73.0504
+                    },
+                    "uuid": "922f1b01-ea0c-43b9-a5af-1bab71006bf7"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(U1-GPB0_{slash}_A)] on F.Cu, length 7.6700 mm",
+                    "pos": {
+                        "x": 90.3004,
+                        "y": 80.7204
+                    },
+                    "uuid": "a911714b-6d91-4fa9-96f0-871033496b9e"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(U1-GPB0_{slash}_A)] on B.Cu, length 1.1070 mm",
+                    "pos": {
+                        "x": 20.2148,
+                        "y": 57.7836
+                    },
+                    "uuid": "09031e4c-296d-43f5-bffb-d82893db9bab"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(U1-GPB0_{slash}_A)] on B.Cu, length 0.5680 mm",
+                    "pos": {
+                        "x": 21.1267,
+                        "y": 59.8025
+                    },
+                    "uuid": "13179ba9-051c-455f-82d6-8d58b9f1cbb6"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(U1-GPB0_{slash}_A)] on B.Cu, length 2.8723 mm",
+                    "pos": {
+                        "x": 67.5522,
+                        "y": 65.7817
+                    },
+                    "uuid": "2d4f0665-30f6-4b75-83c3-d42807f0241a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(U1-GPB0_{slash}_A)] on B.Cu, length 8.0000 mm",
+                    "pos": {
+                        "x": 85.0,
+                        "y": 67.75
+                    },
+                    "uuid": "47cd6257-c841-4952-9382-f11c9086b84d"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(U1-GPB0_{slash}_A)] on B.Cu, length 6.1024 mm",
+                    "pos": {
+                        "x": 69.5832,
+                        "y": 67.8127
+                    },
+                    "uuid": "5d93c421-8522-4ad8-b5be-f358f734b5f6"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(U1-GPB0_{slash}_A)] on B.Cu, length 1.1582 mm",
+                    "pos": {
+                        "x": 21.6947,
+                        "y": 59.8025
+                    },
+                    "uuid": "7e85ff72-a12f-41a9-97cb-1233820e0266"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(U1-GPB0_{slash}_A)] on B.Cu, length 6.0438 mm",
+                    "pos": {
+                        "x": 15.9412,
+                        "y": 53.51
+                    },
+                    "uuid": "902fca8c-6010-48d8-9fcf-3d749c516a46"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(U1-GPB0_{slash}_A)] on B.Cu, length 6.7295 mm",
+                    "pos": {
+                        "x": 40.9298,
+                        "y": 60.6215
+                    },
+                    "uuid": "9234a4e2-7529-46ab-952e-320020393b65"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(U1-GPB0_{slash}_A)] on B.Cu, length 2.2512 mm",
+                    "pos": {
+                        "x": 13.69,
+                        "y": 53.51
+                    },
+                    "uuid": "9c60bef3-1bdf-4c2d-ab30-1751b3a8591a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(U1-GPB0_{slash}_A)] on B.Cu, length 1.2896 mm",
+                    "pos": {
+                        "x": 20.2148,
+                        "y": 58.8906
+                    },
+                    "uuid": "a04ad260-5a43-4d32-b9a9-0e68402d5a95"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(U1-GPB0_{slash}_A)] on B.Cu, length 0.0887 mm",
+                    "pos": {
+                        "x": 75.6856,
+                        "y": 67.8127
+                    },
+                    "uuid": "c69b0a62-20b9-4379-abe5-40036023b0dc"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(U1-GPB0_{slash}_A)] on B.Cu, length 0.5681 mm",
+                    "pos": {
+                        "x": 50.2524,
+                        "y": 65.38
+                    },
+                    "uuid": "d80ff978-7b82-4216-988c-a437d7623acc"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(U1-GPB0_{slash}_A)] on B.Cu, length 18.4161 mm",
+                    "pos": {
+                        "x": 22.5137,
+                        "y": 60.6215
+                    },
+                    "uuid": "e5658244-d300-4f92-93ac-64849d4587a4"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(U1-GPB0_{slash}_A)] on B.Cu, length 4.5641 mm",
+                    "pos": {
+                        "x": 45.6883,
+                        "y": 65.38
+                    },
+                    "uuid": "f87d44c8-f228-498d-89c7-e46b2b291532"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(U1-GPB0_{slash}_A)] on B.Cu, length 1.2517 mm",
+                    "pos": {
+                        "x": 77.0,
+                        "y": 67.75
+                    },
+                    "uuid": "fa985aea-4492-4f7d-8e5f-737e56ef54c2"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(U1-GPB0_{slash}_A)] on B.Cu, length 16.8981 mm",
+                    "pos": {
+                        "x": 50.6541,
+                        "y": 65.7817
+                    },
+                    "uuid": "fb26107e-a75a-431f-b203-95acc2530fd1"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 1.4101 mm",
+                    "pos": {
+                        "x": 68.92,
+                        "y": 5.5
+                    },
+                    "uuid": "01985b84-d346-43ed-9d36-b09a0793b436"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 1.5017 mm",
+                    "pos": {
+                        "x": 21.31,
+                        "y": 20.49
+                    },
+                    "uuid": "0982ab0b-c9b0-440b-9a0d-5c38559d6dca"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 9.4583 mm",
+                    "pos": {
+                        "x": 50.3083,
+                        "y": 45.73
+                    },
+                    "uuid": "0ec5f8c4-ee97-4660-9887-dba599873d01"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 3.7500 mm",
+                    "pos": {
+                        "x": 55.5,
+                        "y": 76.5
+                    },
+                    "uuid": "0f44d999-c25f-4d62-8531-e52cbe6b34a9"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 1.5017 mm",
+                    "pos": {
+                        "x": 21.31,
+                        "y": 20.49
+                    },
+                    "uuid": "122158bc-753a-4706-bf9a-7a45d8ba100a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 2.4749 mm",
+                    "pos": {
+                        "x": 14.08,
+                        "y": 84.0
+                    },
+                    "uuid": "16d7ac8f-fa69-4203-9337-960245d3dfab"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 16.6092 mm",
+                    "pos": {
+                        "x": 31.2204,
+                        "y": 100.0796
+                    },
+                    "uuid": "176c09bf-c3e9-4733-90cc-ea7ce0db9fbb"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 6.1700 mm",
+                    "pos": {
+                        "x": 15.83,
+                        "y": 82.25
+                    },
+                    "uuid": "1925baff-0d74-49d3-8679-75286c979883"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 1.2555 mm",
+                    "pos": {
+                        "x": 4.1117,
+                        "y": 64.9621
+                    },
+                    "uuid": "1a6ebf2d-ad92-4b9c-81bb-9ddac0028bf2"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 3.8469 mm",
+                    "pos": {
+                        "x": 28.0048,
+                        "y": 11.45
+                    },
+                    "uuid": "1ea5fc72-e47e-4f0f-94ed-636cce5313e3"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 4.9783 mm",
+                    "pos": {
+                        "x": 14.08,
+                        "y": 88.9783
+                    },
+                    "uuid": "1f9c0b63-b291-4736-9274-9b1b8a883d1c"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 3.9600 mm",
+                    "pos": {
+                        "x": 7.73,
+                        "y": 36.27
+                    },
+                    "uuid": "1fa4b796-e2f3-4bdc-94a2-2f47123f7c88"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 0.2879 mm",
+                    "pos": {
+                        "x": 4.1117,
+                        "y": 65.25
+                    },
+                    "uuid": "22766a5b-4a8f-400f-8968-6e723d3da8d2"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 0.8161 mm",
+                    "pos": {
+                        "x": 67.9229,
+                        "y": 25.8429
+                    },
+                    "uuid": "24ab0d87-e2e5-4f8d-a66c-da1bbf64853f"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 4.9352 mm",
+                    "pos": {
+                        "x": 27.99,
+                        "y": 6.5
+                    },
+                    "uuid": "2a8f18e3-b7af-4812-81e2-80fd3ea220ce"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 1.1762 mm",
+                    "pos": {
+                        "x": 66.6017,
+                        "y": 94.3317
+                    },
+                    "uuid": "2d84d088-ed1f-41d5-8d8d-83e8d9fc7905"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 6.4800 mm",
+                    "pos": {
+                        "x": 64.96,
+                        "y": 39.75
+                    },
+                    "uuid": "33efd20d-9c9d-4e64-be9d-90730ff9008a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 2.5573 mm",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 82.25
+                    },
+                    "uuid": "389909cc-8e22-4716-a1f7-09a24c46f0e8"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 2.2700 mm",
+                    "pos": {
+                        "x": 10.0,
+                        "y": 36.27
+                    },
+                    "uuid": "39f25042-14ad-4946-bec9-82230ca0630a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 1.1517 mm",
+                    "pos": {
+                        "x": 13.75,
+                        "y": 90.46
+                    },
+                    "uuid": "3b9d6e15-1d8c-4275-9d66-bd9d667d77b4"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 3.9800 mm",
+                    "pos": {
+                        "x": 67.5,
+                        "y": 87.73
+                    },
+                    "uuid": "3db91847-6576-4599-92e9-173f078bb53d"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 3.3313 mm",
+                    "pos": {
+                        "x": 26.161,
+                        "y": 43.7777
+                    },
+                    "uuid": "3f13e12f-d22e-4133-b31c-fccffa1e986c"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 4.1267 mm",
+                    "pos": {
+                        "x": 56.9017,
+                        "y": 100.525
+                    },
+                    "uuid": "48a3f662-c2fc-4f4b-8efd-fbd5dc05f52b"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 0.2277 mm",
+                    "pos": {
+                        "x": 26.0,
+                        "y": 43.6167
+                    },
+                    "uuid": "4adfa6b0-f526-4326-acdf-fdca4b088e9f"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 6.5500 mm",
+                    "pos": {
+                        "x": 52.0,
+                        "y": 90.3
+                    },
+                    "uuid": "512b9eea-9ef5-46c6-8434-0fe8e9d27177"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 7.0400 mm",
+                    "pos": {
+                        "x": 91.5,
+                        "y": 20.54
+                    },
+                    "uuid": "559d0c90-7301-4fad-87de-568787bee2bc"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 7.3100 mm",
+                    "pos": {
+                        "x": 87.77,
+                        "y": 9.5
+                    },
+                    "uuid": "5922e7a5-46bf-4799-ba6e-0cadd95cb972"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 0.6652 mm",
+                    "pos": {
+                        "x": 30.75,
+                        "y": 100.55
+                    },
+                    "uuid": "5ec7cc53-4217-4c14-ae85-dada33f32710"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 0.7071 mm",
+                    "pos": {
+                        "x": 55.5,
+                        "y": 72.75
+                    },
+                    "uuid": "60636ace-d689-4b71-8686-a7b0be89a64e"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 1.2267 mm",
+                    "pos": {
+                        "x": 26.0,
+                        "y": 42.39
+                    },
+                    "uuid": "68edf434-6970-4137-a2a5-11615019eb80"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 1.5017 mm",
+                    "pos": {
+                        "x": 51.81,
+                        "y": 45.73
+                    },
+                    "uuid": "6a032b92-3226-44c5-83c9-1f3f872eb4a0"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 1.1533 mm",
+                    "pos": {
+                        "x": 5.9545,
+                        "y": 64.0743
+                    },
+                    "uuid": "6b56bd55-9807-405f-90c8-4ae46045a04e"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 2.5400 mm",
+                    "pos": {
+                        "x": 19.8083,
+                        "y": 25.57
+                    },
+                    "uuid": "6d3cca45-a908-4828-aa1e-b6030cae2731"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 1.7395 mm",
+                    "pos": {
+                        "x": 7.73,
+                        "y": 32.31
+                    },
+                    "uuid": "716229dd-ef4f-4c06-81aa-bbbea0081550"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 5.2666 mm",
+                    "pos": {
+                        "x": 66.6017,
+                        "y": 99.5983
+                    },
+                    "uuid": "7292e07c-09e4-4ebd-994e-3c4a32ec87da"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 0.9550 mm",
+                    "pos": {
+                        "x": 4.9995,
+                        "y": 64.0743
+                    },
+                    "uuid": "741cdd03-6e9e-43eb-a908-f9240f7a9c11"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 1.1517 mm",
+                    "pos": {
+                        "x": 55.75,
+                        "y": 100.525
+                    },
+                    "uuid": "744b034b-f411-4b37-b5c7-4aeefe4e8fc4"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 7.0000 mm",
+                    "pos": {
+                        "x": 74.0,
+                        "y": 62.25
+                    },
+                    "uuid": "753c1b34-325e-497b-8fa8-03a9b48d499c"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 1.1517 mm",
+                    "pos": {
+                        "x": 8.96,
+                        "y": 8.25
+                    },
+                    "uuid": "7620a7ef-2c75-4932-aa7b-cb27e801fa37"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 1.5017 mm",
+                    "pos": {
+                        "x": 21.31,
+                        "y": 25.57
+                    },
+                    "uuid": "7740dc1d-bf48-4dd6-82c6-798fd631d489"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 2.6751 mm",
+                    "pos": {
+                        "x": 8.3916,
+                        "y": 29.1884
+                    },
+                    "uuid": "7990a2ec-214c-4231-8473-1603d5741f86"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 1.1517 mm",
+                    "pos": {
+                        "x": 2.96,
+                        "y": 65.25
+                    },
+                    "uuid": "7bdb2b45-38e2-427b-a119-a5f5bf8ed289"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 0.5000 mm",
+                    "pos": {
+                        "x": 61.0,
+                        "y": 46.23
+                    },
+                    "uuid": "7ebcfc34-e015-49ee-adc6-df86ee3ccac6"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 5.3033 mm",
+                    "pos": {
+                        "x": 36.75,
+                        "y": 48.48
+                    },
+                    "uuid": "86454ee4-f719-411e-8f89-a5587e35f66a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 1.7252 mm",
+                    "pos": {
+                        "x": 28.0048,
+                        "y": 11.45
+                    },
+                    "uuid": "891048db-3631-4c2c-abf2-b25b8579c04e"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 1.6287 mm",
+                    "pos": {
+                        "x": 66.1117,
+                        "y": 37.4466
+                    },
+                    "uuid": "8c75e962-170e-4be4-88a3-6cdae14220b0"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 1.6287 mm",
+                    "pos": {
+                        "x": 65.45,
+                        "y": 100.75
+                    },
+                    "uuid": "8cd03baf-382a-4cae-a24d-68591e895cd1"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 3.3776 mm",
+                    "pos": {
+                        "x": 68.5,
+                        "y": 26.42
+                    },
+                    "uuid": "95448ef2-8504-4bce-8997-1131b393e532"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 0.0209 mm",
+                    "pos": {
+                        "x": 27.99,
+                        "y": 11.4352
+                    },
+                    "uuid": "954e7650-b963-4830-95bf-f7c7ea589e57"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 5.2750 mm",
+                    "pos": {
+                        "x": 69.73,
+                        "y": 58.52
+                    },
+                    "uuid": "95501566-b02c-4066-a093-503bd0e3f4f4"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 0.4667 mm",
+                    "pos": {
+                        "x": 13.75,
+                        "y": 89.3083
+                    },
+                    "uuid": "96f55968-6724-4dd6-b4a5-c1fce4ae4a09"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 8.6383 mm",
+                    "pos": {
+                        "x": 66.1117,
+                        "y": 28.8083
+                    },
+                    "uuid": "993a0a2f-8f4d-4acf-8345-5264364f3903"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 7.3442 mm",
+                    "pos": {
+                        "x": 28.0048,
+                        "y": 15.2969
+                    },
+                    "uuid": "9cd82b33-ae10-44fe-a0d2-59dcc117781b"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 4.5679 mm",
+                    "pos": {
+                        "x": 57.77,
+                        "y": 43.0
+                    },
+                    "uuid": "a1b37d78-af1f-4ce7-9f74-70213a31afe5"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 2.1213 mm",
+                    "pos": {
+                        "x": 67.5,
+                        "y": 83.75
+                    },
+                    "uuid": "a3ac037f-74ba-406a-bae6-d8ca200f85cb"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 3.4600 mm",
+                    "pos": {
+                        "x": 64.96,
+                        "y": 46.23
+                    },
+                    "uuid": "a752eded-553c-4ad7-8297-6acb93754a52"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 6.5200 mm",
+                    "pos": {
+                        "x": 69.73,
+                        "y": 52.0
+                    },
+                    "uuid": "ac727907-6632-4a93-9371-4c1e7600d332"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 5.9821 mm",
+                    "pos": {
+                        "x": 6.77,
+                        "y": 68.02
+                    },
+                    "uuid": "ae302b46-2e95-4b5b-85ce-e786eed21341"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 3.1800 mm",
+                    "pos": {
+                        "x": 7.73,
+                        "y": 39.45
+                    },
+                    "uuid": "b26d03e6-26c1-479f-8a7d-0136c3b4fb12"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 1.6419 mm",
+                    "pos": {
+                        "x": 26.161,
+                        "y": 47.109
+                    },
+                    "uuid": "b680e0f3-2634-4ae7-bd90-21083dd2afda"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 1.5017 mm",
+                    "pos": {
+                        "x": 21.31,
+                        "y": 23.03
+                    },
+                    "uuid": "bad1b1a7-2f17-4bb3-9cb6-211c8f207da4"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 1.0000 mm",
+                    "pos": {
+                        "x": 64.96,
+                        "y": 46.23
+                    },
+                    "uuid": "c409621d-156c-475a-a0bf-e15bf41b4ee2"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 5.8800 mm",
+                    "pos": {
+                        "x": 81.89,
+                        "y": 16.81
+                    },
+                    "uuid": "c67fdce8-ee68-4836-b0f6-3863f0edc8e6"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 4.2426 mm",
+                    "pos": {
+                        "x": 25.0,
+                        "y": 59.25
+                    },
+                    "uuid": "cbcbe9ff-8b96-40d4-85f1-b203857756d7"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 19.3458 mm",
+                    "pos": {
+                        "x": 67.9229,
+                        "y": 6.4971
+                    },
+                    "uuid": "cbf4b8dd-966d-43b7-83e0-4e123cc3afa1"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 0.8038 mm",
+                    "pos": {
+                        "x": 8.96,
+                        "y": 9.4017
+                    },
+                    "uuid": "cfbee2e3-d0d0-425c-a9be-749a6220096c"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 4.3558 mm",
+                    "pos": {
+                        "x": 14.08,
+                        "y": 84.0
+                    },
+                    "uuid": "d3b7a007-9933-4075-8412-7c965c69a2f5"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 7.0000 mm",
+                    "pos": {
+                        "x": 31.8083,
+                        "y": 80.4417
+                    },
+                    "uuid": "d5225ac6-3f45-46f4-b0c4-4da584086b9d"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 3.1302 mm",
+                    "pos": {
+                        "x": 6.77,
+                        "y": 64.8898
+                    },
+                    "uuid": "d74a65b0-7eb0-4584-a4df-e26d9b9ad991"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 1.7259 mm",
+                    "pos": {
+                        "x": 31.2204,
+                        "y": 83.4704
+                    },
+                    "uuid": "dba11abc-76ac-4be1-9ac0-6be85141a571"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 4.0000 mm",
+                    "pos": {
+                        "x": 55.5,
+                        "y": 80.5
+                    },
+                    "uuid": "dda86bac-beb5-4bef-af3b-7a62dc3b97fa"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 1.9700 mm",
+                    "pos": {
+                        "x": 36.75,
+                        "y": 50.45
+                    },
+                    "uuid": "e16929ee-87fe-48d3-8a8b-3003916742b2"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 8.6700 mm",
+                    "pos": {
+                        "x": 11.0,
+                        "y": 80.92
+                    },
+                    "uuid": "e4a00aff-6f74-4623-80df-63431b8c5a18"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 19.2183 mm",
+                    "pos": {
+                        "x": 8.3916,
+                        "y": 9.9701
+                    },
+                    "uuid": "e5996bb5-7f28-4b31-8bf5-e9347492a4dc"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 1.6853 mm",
+                    "pos": {
+                        "x": 31.8083,
+                        "y": 73.4417
+                    },
+                    "uuid": "e59f4921-387f-446f-9f44-eb1ce7e8686a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 0.3842 mm",
+                    "pos": {
+                        "x": 50.3083,
+                        "y": 36.2717
+                    },
+                    "uuid": "e8ec1f38-8834-4f77-95c0-0ad9a10de3b5"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 2.6139 mm",
+                    "pos": {
+                        "x": 56.9017,
+                        "y": 96.3983
+                    },
+                    "uuid": "e9fecbeb-2e81-48d0-bc25-87098cc4cbe8"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 4.2426 mm",
+                    "pos": {
+                        "x": 74.0,
+                        "y": 69.25
+                    },
+                    "uuid": "f00056ec-0be9-4d89-ab86-c2e390332a1a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 6.7458 mm",
+                    "pos": {
+                        "x": 64.96,
+                        "y": 47.23
+                    },
+                    "uuid": "f327e3d9-9c4b-4c9f-9bbf-2689dcacf942"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 10.9800 mm",
+                    "pos": {
+                        "x": 25.0,
+                        "y": 48.27
+                    },
+                    "uuid": "f65459ab-687f-4ea0-89c3-abdb502d83c9"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 5.2750 mm",
+                    "pos": {
+                        "x": 87.77,
+                        "y": 16.81
+                    },
+                    "uuid": "f71df826-a5af-47a4-9b91-ae98e6648201"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 1.1517 mm",
+                    "pos": {
+                        "x": 64.96,
+                        "y": 39.75
+                    },
+                    "uuid": "faa59570-08af-4487-93d6-a2f31f40b764"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 0.6364 mm",
+                    "pos": {
+                        "x": 51.55,
+                        "y": 90.75
+                    },
+                    "uuid": "fae38517-55a4-4ca7-bb13-697698b50fa3"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 2.5400 mm",
+                    "pos": {
+                        "x": 19.8083,
+                        "y": 23.03
+                    },
+                    "uuid": "fc270338-3f14-49c8-8135-fe3934d18da5"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 11.0738 mm",
+                    "pos": {
+                        "x": 55.8231,
+                        "y": 24.8169
+                    },
+                    "uuid": "01b9f1f0-927d-46a9-a633-f9cca88216e3"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 0.3300 mm",
+                    "pos": {
+                        "x": 43.67,
+                        "y": 69.58
+                    },
+                    "uuid": "0266d779-c238-47bf-8afb-6300c5b6d04a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 2.1213 mm",
+                    "pos": {
+                        "x": 44.0,
+                        "y": 83.75
+                    },
+                    "uuid": "032006f7-ad0f-4aa5-8310-e57ef48d6ffa"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 2.0900 mm",
+                    "pos": {
+                        "x": 31.705,
+                        "y": 9.475
+                    },
+                    "uuid": "0a4b9320-f2b2-4fd8-8ab1-dedf8cd1afc6"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 2.7931 mm",
+                    "pos": {
+                        "x": 33.795,
+                        "y": 9.475
+                    },
+                    "uuid": "0abf36f2-d2c6-4b3b-bd9f-83b11791907f"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 12.5000 mm",
+                    "pos": {
+                        "x": 42.5,
+                        "y": 82.25
+                    },
+                    "uuid": "0c4c5e04-c463-40ab-a560-49771a01e478"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 1.5017 mm",
+                    "pos": {
+                        "x": 51.81,
+                        "y": 45.73
+                    },
+                    "uuid": "0e421b34-3dca-4179-81de-f5f02e386cff"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 8.0000 mm",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 82.25
+                    },
+                    "uuid": "1133d510-2346-414c-90b0-293952a0eb30"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 1.0062 mm",
+                    "pos": {
+                        "x": 22.0,
+                        "y": 61.2438
+                    },
+                    "uuid": "136146f7-a440-4861-ac7a-f9aa34067b8b"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 0.7071 mm",
+                    "pos": {
+                        "x": 61.0,
+                        "y": 45.73
+                    },
+                    "uuid": "14847c31-9bbb-4645-90a2-4ed3c5b9d3b6"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 0.0438 mm",
+                    "pos": {
+                        "x": 19.05,
+                        "y": 58.25
+                    },
+                    "uuid": "1866cebd-9cdf-4cbc-b040-6a94d4d5d521"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 0.2872 mm",
+                    "pos": {
+                        "x": 55.62,
+                        "y": 25.02
+                    },
+                    "uuid": "18805bbb-0ff2-42d9-92b5-186c2a0c7f04"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 4.0000 mm",
+                    "pos": {
+                        "x": 67.5,
+                        "y": 87.73
+                    },
+                    "uuid": "19177ca5-a6b5-49f4-bd12-6a850c98d340"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 7.9238 mm",
+                    "pos": {
+                        "x": 56.2781,
+                        "y": 60.4519
+                    },
+                    "uuid": "1bf74bb9-e475-41ec-a67d-fd7c4b190bfe"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 3.0830 mm",
+                    "pos": {
+                        "x": 36.75,
+                        "y": 50.45
+                    },
+                    "uuid": "1c52b91b-f5d3-4893-a926-1a2ba3c34a2f"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 0.6493 mm",
+                    "pos": {
+                        "x": 63.4591,
+                        "y": 71.7909
+                    },
+                    "uuid": "1f611190-258d-4b57-a586-d6f0f74a5018"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 0.2500 mm",
+                    "pos": {
+                        "x": 52.0,
+                        "y": 83.75
+                    },
+                    "uuid": "2047911c-8f5b-4620-a7ec-b9e8626a53fd"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 2.0365 mm",
+                    "pos": {
+                        "x": 53.56,
+                        "y": 70.81
+                    },
+                    "uuid": "222a9340-ced4-4998-b814-e55b4bd516da"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 2.7649 mm",
+                    "pos": {
+                        "x": 45.6917,
+                        "y": 40.4251
+                    },
+                    "uuid": "22400979-7872-46d4-9307-d75b1d5ba5bf"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 2.2671 mm",
+                    "pos": {
+                        "x": 66.8969,
+                        "y": 24.8169
+                    },
+                    "uuid": "25535a1d-b280-4f32-aa80-c13ef24c1700"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 2.7931 mm",
+                    "pos": {
+                        "x": 29.73,
+                        "y": 11.45
+                    },
+                    "uuid": "255c7bc6-89e2-404f-b481-f40750de1922"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 4.5962 mm",
+                    "pos": {
+                        "x": 52.25,
+                        "y": 83.75
+                    },
+                    "uuid": "2657d004-a5b3-4bb9-90f8-d1cb7434660f"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 1.7120 mm",
+                    "pos": {
+                        "x": 65.77,
+                        "y": 93.5
+                    },
+                    "uuid": "26865cbb-ce26-459d-a4e3-1df3f287bc67"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 4.1719 mm",
+                    "pos": {
+                        "x": 76.95,
+                        "y": 59.27
+                    },
+                    "uuid": "28a7cdc6-5025-4c6b-88d6-7289f73da1e2"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 1.2215 mm",
+                    "pos": {
+                        "x": 66.9754,
+                        "y": 38.5983
+                    },
+                    "uuid": "2c46dc3d-c72e-41ad-8689-684298ec0a12"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 6.5289 mm",
+                    "pos": {
+                        "x": 19.8083,
+                        "y": 25.57
+                    },
+                    "uuid": "393fd822-78e2-4115-a7b9-57dbb81b0a15"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 0.1665 mm",
+                    "pos": {
+                        "x": 6.6177,
+                        "y": 31.1977
+                    },
+                    "uuid": "3a4e4a58-ccd0-438d-95df-27d973955f45"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 4.0000 mm",
+                    "pos": {
+                        "x": 55.5,
+                        "y": 76.5
+                    },
+                    "uuid": "3c9f070c-1b52-4cbe-85d6-81d8b763e453"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 1.6119 mm",
+                    "pos": {
+                        "x": 50.3083,
+                        "y": 45.73
+                    },
+                    "uuid": "41278b82-5c9d-4ee1-a1bf-e89366355963"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 5.7773 mm",
+                    "pos": {
+                        "x": 90.7773,
+                        "y": 72.25
+                    },
+                    "uuid": "430d57f6-b46a-487f-bbec-56507fa69da8"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 1.1517 mm",
+                    "pos": {
+                        "x": 64.96,
+                        "y": 39.75
+                    },
+                    "uuid": "43f43b0e-3678-45cc-8b37-9811338d3e4f"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 5.0229 mm",
+                    "pos": {
+                        "x": 11.6406,
+                        "y": 31.1977
+                    },
+                    "uuid": "48638c0f-41a0-4015-97fa-ea18fabc100c"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 8.0000 mm",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 62.25
+                    },
+                    "uuid": "5040514f-c028-468b-b66d-89bce1803c65"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 5.6488 mm",
+                    "pos": {
+                        "x": 64.5594,
+                        "y": 94.7106
+                    },
+                    "uuid": "52bbf720-77bb-49fa-a3ff-689324d3e921"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 3.0261 mm",
+                    "pos": {
+                        "x": 42.6398,
+                        "y": 46.8698
+                    },
+                    "uuid": "52fd6ed5-2bfb-4eea-8654-d58630e6bfd0"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 2.4749 mm",
+                    "pos": {
+                        "x": 57.25,
+                        "y": 82.25
+                    },
+                    "uuid": "590a0b47-28ef-466e-8e77-d9f7f290e9b1"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 3.7760 mm",
+                    "pos": {
+                        "x": 41.0,
+                        "y": 72.25
+                    },
+                    "uuid": "59515a75-cee9-40b9-8ee6-8f6f714b189f"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 2.5429 mm",
+                    "pos": {
+                        "x": 64.2019,
+                        "y": 60.4519
+                    },
+                    "uuid": "5d441df3-2492-4fe2-8467-93c5d6f7690b"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 0.7746 mm",
+                    "pos": {
+                        "x": 12.1883,
+                        "y": 30.65
+                    },
+                    "uuid": "5f45ae0f-b4c0-434d-b1d9-9517cebe16c6"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 8.0000 mm",
+                    "pos": {
+                        "x": 19.0,
+                        "y": 72.25
+                    },
+                    "uuid": "652c26d2-bf62-451e-8222-b78560f71da7"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 5.3740 mm",
+                    "pos": {
+                        "x": 58.75,
+                        "y": 94.55
+                    },
+                    "uuid": "691d5bba-f0da-4fd9-8275-6cde382c64dc"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 8.3300 mm",
+                    "pos": {
+                        "x": 45.23,
+                        "y": 70.81
+                    },
+                    "uuid": "6cf801bf-a1ed-47a1-8e01-c339b5b8f366"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 0.2271 mm",
+                    "pos": {
+                        "x": 58.9106,
+                        "y": 94.7106
+                    },
+                    "uuid": "6fa66770-53eb-4a32-bf25-a451c4badc6f"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 0.4634 mm",
+                    "pos": {
+                        "x": 15.1917,
+                        "y": 30.1866
+                    },
+                    "uuid": "730ebb60-8dcf-4206-ab5a-133eb513d9b8"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 8.0000 mm",
+                    "pos": {
+                        "x": 63.0,
+                        "y": 72.25
+                    },
+                    "uuid": "76912483-2ad7-41c8-b075-d01f13904dea"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 4.0305 mm",
+                    "pos": {
+                        "x": 54.35,
+                        "y": 61.23
+                    },
+                    "uuid": "89ec5910-87a9-479a-86e0-6ef49dcdac64"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 3.2975 mm",
+                    "pos": {
+                        "x": 93.109,
+                        "y": 69.9183
+                    },
+                    "uuid": "8a47216a-abbd-40f8-ac0a-44473677ca37"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 0.9924 mm",
+                    "pos": {
+                        "x": 75.5,
+                        "y": 39.3
+                    },
+                    "uuid": "8c31dfdf-8664-42a6-bcec-16b5a146e122"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 3.4000 mm",
+                    "pos": {
+                        "x": 54.95,
+                        "y": 90.75
+                    },
+                    "uuid": "8e2ac98a-e047-4c4f-980a-1c63284b5869"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 6.5287 mm",
+                    "pos": {
+                        "x": 49.1685,
+                        "y": 46.8698
+                    },
+                    "uuid": "8e8bc08d-8f8e-4c2d-b801-20cc6ff2a7e8"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 3.7194 mm",
+                    "pos": {
+                        "x": 7.73,
+                        "y": 39.45
+                    },
+                    "uuid": "928b0ea0-15b2-4dc7-b91b-4c019cbae7e2"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 1.5017 mm",
+                    "pos": {
+                        "x": 13.69,
+                        "y": 30.65
+                    },
+                    "uuid": "9416b4d5-772b-44f9-8204-d0c94e28d192"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 1.5017 mm",
+                    "pos": {
+                        "x": 13.69,
+                        "y": 30.65
+                    },
+                    "uuid": "99c35bf9-a47c-47c8-9979-8644f48d3d24"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 6.2580 mm",
+                    "pos": {
+                        "x": 50.1168,
+                        "y": 36.0
+                    },
+                    "uuid": "a2471af8-94aa-43ea-bd9b-f23e64f7244c"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 4.0871 mm",
+                    "pos": {
+                        "x": 28.88,
+                        "y": 42.39
+                    },
+                    "uuid": "a2a5d064-cdba-4c89-9fde-cde63ae1e429"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 8.0000 mm",
+                    "pos": {
+                        "x": 44.0,
+                        "y": 83.75
+                    },
+                    "uuid": "a6332c2d-a994-43a2-be89-ff5097081ac5"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 2.8800 mm",
+                    "pos": {
+                        "x": 26.0,
+                        "y": 42.39
+                    },
+                    "uuid": "a96e779f-ae3a-4f1a-b6e9-2a4aa3c3f244"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 9.5700 mm",
+                    "pos": {
+                        "x": 34.57,
+                        "y": 48.27
+                    },
+                    "uuid": "acd7ff68-0370-441a-aec2-0c1db6872079"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 2.2755 mm",
+                    "pos": {
+                        "x": 91.5,
+                        "y": 66.58
+                    },
+                    "uuid": "ad321d5b-336f-4375-a37c-bbae5bf89326"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 7.8229 mm",
+                    "pos": {
+                        "x": 74.7983,
+                        "y": 38.5983
+                    },
+                    "uuid": "ae0749ca-86b6-479c-8dd7-c41c2427325d"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 13.0818 mm",
+                    "pos": {
+                        "x": 76.5409,
+                        "y": 71.7909
+                    },
+                    "uuid": "aea31c96-73f4-4224-a2a5-4886a061347e"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 8.0000 mm",
+                    "pos": {
+                        "x": 74.0,
+                        "y": 82.25
+                    },
+                    "uuid": "af41cc66-58c4-4102-8a70-9ad310e54356"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 1.5655 mm",
+                    "pos": {
+                        "x": 68.92,
+                        "y": 5.5
+                    },
+                    "uuid": "b31a3ec1-99f1-457b-b6d8-88a07d87e554"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 8.0000 mm",
+                    "pos": {
+                        "x": 74.0,
+                        "y": 62.25
+                    },
+                    "uuid": "b50d4d91-c582-4f61-9275-8bdc926ba558"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 9.1900 mm",
+                    "pos": {
+                        "x": 51.81,
+                        "y": 45.73
+                    },
+                    "uuid": "b67fae77-3d5b-42db-896c-3b166d10d95e"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 1.7395 mm",
+                    "pos": {
+                        "x": 44.0,
+                        "y": 69.58
+                    },
+                    "uuid": "b6f1cf36-c983-48b9-9e0d-dede7a408fe9"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 1.5017 mm",
+                    "pos": {
+                        "x": 21.31,
+                        "y": 25.57
+                    },
+                    "uuid": "b831b83e-a6bf-4256-a790-abd97f6b37e5"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 0.4384 mm",
+                    "pos": {
+                        "x": 24.4633,
+                        "y": 42.08
+                    },
+                    "uuid": "bbd73240-8271-49f8-a6b7-53adbc12d062"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 0.6493 mm",
+                    "pos": {
+                        "x": 77.0,
+                        "y": 72.25
+                    },
+                    "uuid": "beced319-72d3-4977-b3c7-d4ee5d7d65dc"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 4.0913 mm",
+                    "pos": {
+                        "x": 84.877,
+                        "y": 6.607
+                    },
+                    "uuid": "c35067e8-f306-40e7-903f-5dee9db4c69f"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 0.0300 mm",
+                    "pos": {
+                        "x": 74.0,
+                        "y": 62.22
+                    },
+                    "uuid": "c49197e0-0250-4206-b7b2-547b39e443fa"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 4.1719 mm",
+                    "pos": {
+                        "x": 19.05,
+                        "y": 58.2938
+                    },
+                    "uuid": "c563a34b-c1cf-4e96-9aa1-41804d381dba"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 1.8809 mm",
+                    "pos": {
+                        "x": 66.78,
+                        "y": 102.08
+                    },
+                    "uuid": "c591e53e-006b-4171-8bce-a47c2c10f29a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 1.7293 mm",
+                    "pos": {
+                        "x": 93.109,
+                        "y": 68.189
+                    },
+                    "uuid": "c7216113-8450-4f76-92cb-cd30f042de0f"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 1.1004 mm",
+                    "pos": {
+                        "x": 55.5,
+                        "y": 61.23
+                    },
+                    "uuid": "cf02c749-1ad5-463e-be90-478dff57c6f2"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 8.0000 mm",
+                    "pos": {
+                        "x": 85.0,
+                        "y": 72.25
+                    },
+                    "uuid": "dccc2662-a39b-4adb-b43a-8178122ae1db"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 1.1500 mm",
+                    "pos": {
+                        "x": 55.5,
+                        "y": 61.23
+                    },
+                    "uuid": "df5bfeff-88a8-4e3d-8ed7-efdeb8416b78"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 0.2880 mm",
+                    "pos": {
+                        "x": 66.1117,
+                        "y": 39.462
+                    },
+                    "uuid": "e104003e-5147-47e4-aae2-37c5ef64d825"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 1.2267 mm",
+                    "pos": {
+                        "x": 26.0,
+                        "y": 42.39
+                    },
+                    "uuid": "e8b7fa93-0e3b-49e0-a33f-f30f8ab8c064"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 14.1033 mm",
+                    "pos": {
+                        "x": 10.36,
+                        "y": 42.08
+                    },
+                    "uuid": "ea9e24f7-99fe-4c4c-ae28-a64ccf0b965a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 8.7500 mm",
+                    "pos": {
+                        "x": 66.0,
+                        "y": 82.25
+                    },
+                    "uuid": "eeb26fc6-7fe0-48a0-9181-ac12680937ef"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 14.8500 mm",
+                    "pos": {
+                        "x": 70.027,
+                        "y": 6.607
+                    },
+                    "uuid": "f53d67fb-4271-48e6-8596-390de7b76e21"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 14.7200 mm",
+                    "pos": {
+                        "x": 81.5,
+                        "y": 102.08
+                    },
+                    "uuid": "f90a9cc5-9810-47d1-a522-24491ddc9354"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 0.4632 mm",
+                    "pos": {
+                        "x": 50.58,
+                        "y": 36.0
+                    },
+                    "uuid": "fadf9b7b-8143-4c67-851a-c6cc59a77797"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on B.Cu, length 1.5017 mm",
+                    "pos": {
+                        "x": 44.19,
+                        "y": 43.19
+                    },
+                    "uuid": "ffeb11b1-b9ed-406c-8af9-5da4b1d026d1"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(U1-GPA2_{slash}_LEFT)] on F.Cu, length 13.9762 mm",
+                    "pos": {
+                        "x": 19.8083,
+                        "y": 40.81
+                    },
+                    "uuid": "2b33ba21-6eca-4b30-b2c0-05ac445b1a80"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(U1-GPA2_{slash}_LEFT)] on F.Cu, length 1.5017 mm",
+                    "pos": {
+                        "x": 21.31,
+                        "y": 40.81
+                    },
+                    "uuid": "6ef18487-84f8-4ec6-8682-d00648172880"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(U1-GPA2_{slash}_LEFT)] on F.Cu, length 0.5568 mm",
+                    "pos": {
+                        "x": 19.8083,
+                        "y": 54.7862
+                    },
+                    "uuid": "7d3fc191-38c5-458c-babd-7a1462ca4799"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(U1-GPA2_{slash}_LEFT)] on F.Cu, length 1.6999 mm",
+                    "pos": {
+                        "x": 20.202,
+                        "y": 66.548
+                    },
+                    "uuid": "85f82a00-5cd0-4feb-9d52-b2f126f41981"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(U1-GPA2_{slash}_LEFT)] on F.Cu, length 11.3681 mm",
+                    "pos": {
+                        "x": 20.202,
+                        "y": 55.1799
+                    },
+                    "uuid": "c6001889-4658-454f-9b6e-27549838467a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(U1-GPA2_{slash}_LEFT)] on B.Cu, length 0.9349 mm",
+                    "pos": {
+                        "x": 53.3815,
+                        "y": 77.282
+                    },
+                    "uuid": "00c31f1a-350b-49f3-992f-0060b10d9271"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(U1-GPA2_{slash}_LEFT)] on B.Cu, length 9.7015 mm",
+                    "pos": {
+                        "x": 54.0426,
+                        "y": 77.9431
+                    },
+                    "uuid": "04ce4042-1a2d-4cf2-a246-0e0cc166d4ba"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(U1-GPA2_{slash}_LEFT)] on B.Cu, length 8.7959 mm",
+                    "pos": {
+                        "x": 44.5856,
+                        "y": 77.282
+                    },
+                    "uuid": "0ed6ef91-af15-4491-8eae-689001d25fe3"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(U1-GPA2_{slash}_LEFT)] on B.Cu, length 7.6591 mm",
+                    "pos": {
+                        "x": 19.0,
+                        "y": 67.75
+                    },
+                    "uuid": "167bead6-b586-44df-8500-6e511953b06b"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(U1-GPA2_{slash}_LEFT)] on B.Cu, length 8.3945 mm",
+                    "pos": {
+                        "x": 33.1146,
+                        "y": 74.2055
+                    },
+                    "uuid": "25012436-7ecc-4281-bd97-251028efc00a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track width (rule 'C5 default minimum track' min width 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(U1-GPA2_{slash}_LEFT)] on B.Cu, length 0.1223 mm",
+                    "pos": {
+                        "x": 88.4135,
+                        "y": 79.0065
+                    },
+                    "uuid": "3af0e503-d0a6-4613-93c2-c08242ffb08d"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer B.Cu; 4 spokes connected to isolated island)",
+            "items": [
+                {
+                    "description": "Zone 'C6_GND' [/GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "c7ba3fef-dd49-4188-8617-7bd7d93db049"
+                },
+                {
+                    "description": "PTH pad 2 [/GND] of C10",
+                    "pos": {
+                        "x": 69.73,
+                        "y": 52.0
+                    },
+                    "uuid": "c1fea73f-980d-4a9b-b71c-2fddea6520ce"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer F.Cu; 2 spokes connected to isolated island)",
+            "items": [
+                {
+                    "description": "Zone 'C6_GND' [/GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "5d797d8a-01ab-43e0-a6b8-997c268cb31e"
+                },
+                {
+                    "description": "PTH pad 2 [/GND] of R34",
+                    "pos": {
+                        "x": 44.0,
+                        "y": 69.58
+                    },
+                    "uuid": "154f0602-1ec7-4d43-b38f-1b54ae1c5b69"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "PCB text 'TP31' on B.Silkscreen",
+                    "pos": {
+                        "x": 20.0,
+                        "y": 10.0
+                    },
+                    "uuid": "10d40555-d810-41e1-839f-531efc6d1591"
+                },
+                {
+                    "description": "Circle of D1 on B.Silkscreen",
+                    "pos": {
+                        "x": 18.995,
+                        "y": 8.0
+                    },
+                    "uuid": "859820fd-7774-481d-b55e-7d7521535ccf"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "PCB text 'TP31' on B.Silkscreen",
+                    "pos": {
+                        "x": 20.0,
+                        "y": 10.0
+                    },
+                    "uuid": "10d40555-d810-41e1-839f-531efc6d1591"
+                },
+                {
+                    "description": "Arc of D1 on B.Silkscreen",
+                    "pos": {
+                        "x": 18.995,
+                        "y": 8.0
+                    },
+                    "uuid": "76d19ad3-a32f-4c46-820a-e47ac970b409"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "PCB text 'R1' on B.Silkscreen",
+                    "pos": {
+                        "x": 36.0,
+                        "y": 15.824999
+                    },
+                    "uuid": "7997aa1d-f006-4b1d-8e07-cf198324eff9"
+                },
+                {
+                    "description": "Rectangle of R1 on B.Silkscreen",
+                    "pos": {
+                        "x": 37.37,
+                        "y": 22.27
+                    },
+                    "uuid": "bc175b0a-3071-44e2-9503-d8e599a73f13"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "PCB text 'R30' on B.Silkscreen",
+                    "pos": {
+                        "x": 61.5,
+                        "y": 23.325
+                    },
+                    "uuid": "0acd3374-e156-4383-ae64-a00a9e1f732b"
+                },
+                {
+                    "description": "Segment of R14 on B.Silkscreen",
+                    "pos": {
+                        "x": 59.96,
+                        "y": 23.0
+                    },
+                    "uuid": "b1b29316-cec9-4e00-999b-3885bfbba0c0"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "PCB text 'R30' on B.Silkscreen",
+                    "pos": {
+                        "x": 61.5,
+                        "y": 23.325
+                    },
+                    "uuid": "0acd3374-e156-4383-ae64-a00a9e1f732b"
+                },
+                {
+                    "description": "Rectangle of R14 on B.Silkscreen",
+                    "pos": {
+                        "x": 67.27,
+                        "y": 21.63
+                    },
+                    "uuid": "71ce8e6e-221f-4c34-b2db-b7038f2f42f6"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Rectangle of R37 on B.Silkscreen",
+                    "pos": {
+                        "x": 69.87,
+                        "y": 34.77
+                    },
+                    "uuid": "56a7fd44-1e07-4d5d-95e3-361c2bced4d6"
+                },
+                {
+                    "description": "PCB text 'Q5' on B.Silkscreen",
+                    "pos": {
+                        "x": 68.5,
+                        "y": 34.805
+                    },
+                    "uuid": "59803b3c-1208-4ef1-827d-36573df6167f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "PCB text 'Q5' on B.Silkscreen",
+                    "pos": {
+                        "x": 68.5,
+                        "y": 34.805
+                    },
+                    "uuid": "59803b3c-1208-4ef1-827d-36573df6167f"
+                },
+                {
+                    "description": "Segment of R37 on B.Silkscreen",
+                    "pos": {
+                        "x": 68.5,
+                        "y": 35.54
+                    },
+                    "uuid": "ad7b732b-cfd7-4f50-9ce5-7244b5e8c028"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "PCB text 'R19' on B.Silkscreen",
+                    "pos": {
+                        "x": 7.5,
+                        "y": 73.955
+                    },
+                    "uuid": "180d8537-4daf-4c16-9d25-c9418c546cf0"
+                },
+                {
+                    "description": "Rectangle of Q2 on B.Silkscreen",
+                    "pos": {
+                        "x": 2.65,
+                        "y": 74.8
+                    },
+                    "uuid": "70bca86e-a1a2-40c2-a99c-535f413f3c35"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "PCB text '1' on B.Silkscreen",
+                    "pos": {
+                        "x": 15.5,
+                        "y": 100.55
+                    },
+                    "uuid": "42f174e9-d14c-42ca-8c2d-08490ad70e29"
+                },
+                {
+                    "description": "Segment of J4 on B.Silkscreen",
+                    "pos": {
+                        "x": 15.55,
+                        "y": 101.75
+                    },
+                    "uuid": "b0a9dd20-7385-4563-8392-81a9ed1a4bd9"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "PCB text 'MOTOR' on B.Silkscreen",
+                    "pos": {
+                        "x": 18.0,
+                        "y": 98.795
+                    },
+                    "uuid": "a4ea4850-097b-4073-bfeb-1eb69564245a"
+                },
+                {
+                    "description": "Segment of J4 on B.Silkscreen",
+                    "pos": {
+                        "x": 15.55,
+                        "y": 98.25
+                    },
+                    "uuid": "d93f090a-3ccf-4723-a97f-687f25b9e07d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "PCB text 'MOTOR' on B.Silkscreen",
+                    "pos": {
+                        "x": 18.0,
+                        "y": 98.795
+                    },
+                    "uuid": "a4ea4850-097b-4073-bfeb-1eb69564245a"
+                },
+                {
+                    "description": "Segment of J4 on B.Silkscreen",
+                    "pos": {
+                        "x": 17.9,
+                        "y": 98.25
+                    },
+                    "uuid": "bac3c64d-59ab-4d6a-854c-9d733b839366"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment of J4 on B.Silkscreen",
+                    "pos": {
+                        "x": 17.9,
+                        "y": 98.75
+                    },
+                    "uuid": "a474f684-dd16-4e98-8445-f0751088b4c3"
+                },
+                {
+                    "description": "PCB text 'MOTOR' on B.Silkscreen",
+                    "pos": {
+                        "x": 18.0,
+                        "y": 98.795
+                    },
+                    "uuid": "a4ea4850-097b-4073-bfeb-1eb69564245a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "PCB text 'MOTOR' on B.Silkscreen",
+                    "pos": {
+                        "x": 18.0,
+                        "y": 98.795
+                    },
+                    "uuid": "a4ea4850-097b-4073-bfeb-1eb69564245a"
+                },
+                {
+                    "description": "Segment of J4 on B.Silkscreen",
+                    "pos": {
+                        "x": 18.0,
+                        "y": 98.25
+                    },
+                    "uuid": "c9f0664d-18e1-45f5-8999-8c203f216036"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment of J4 on B.Silkscreen",
+                    "pos": {
+                        "x": 18.1,
+                        "y": 98.75
+                    },
+                    "uuid": "1ef3ddb3-fea7-41e5-926d-822977ecb808"
+                },
+                {
+                    "description": "PCB text 'MOTOR' on B.Silkscreen",
+                    "pos": {
+                        "x": 18.0,
+                        "y": 98.795
+                    },
+                    "uuid": "a4ea4850-097b-4073-bfeb-1eb69564245a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "PCB text 'C17' on B.Silkscreen",
+                    "pos": {
+                        "x": 27.5,
+                        "y": 86.505
+                    },
+                    "uuid": "12a47349-6f72-416c-a16d-7f6aa3c155ae"
+                },
+                {
+                    "description": "Rectangle of R13 on B.Silkscreen",
+                    "pos": {
+                        "x": 21.73,
+                        "y": 87.87
+                    },
+                    "uuid": "d8ee506c-ad08-4946-868b-8044eac83b5d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "PCB text 'C17' on B.Silkscreen",
+                    "pos": {
+                        "x": 27.5,
+                        "y": 86.505
+                    },
+                    "uuid": "12a47349-6f72-416c-a16d-7f6aa3c155ae"
+                },
+                {
+                    "description": "Segment of R13 on B.Silkscreen",
+                    "pos": {
+                        "x": 29.04,
+                        "y": 86.5
+                    },
+                    "uuid": "6ca3345b-896c-4c58-87a7-23586d61fcdc"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "PCB text 'SPEAKER' on B.Silkscreen",
+                    "pos": {
+                        "x": 38.0,
+                        "y": 98.795
+                    },
+                    "uuid": "9be732cb-bb00-4feb-9b15-1d84cec80844"
+                },
+                {
+                    "description": "Segment of J5 on B.Silkscreen",
+                    "pos": {
+                        "x": 37.9,
+                        "y": 98.75
+                    },
+                    "uuid": "ec962d0a-1ebf-4603-b145-ee601c5c8511"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "PCB text 'SPEAKER' on B.Silkscreen",
+                    "pos": {
+                        "x": 38.0,
+                        "y": 98.795
+                    },
+                    "uuid": "9be732cb-bb00-4feb-9b15-1d84cec80844"
+                },
+                {
+                    "description": "Segment of J5 on B.Silkscreen",
+                    "pos": {
+                        "x": 38.1,
+                        "y": 98.75
+                    },
+                    "uuid": "d0ae9227-7f8e-4307-9e59-5c59bca68f12"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "PCB text 'SPEAKER' on B.Silkscreen",
+                    "pos": {
+                        "x": 38.0,
+                        "y": 98.795
+                    },
+                    "uuid": "9be732cb-bb00-4feb-9b15-1d84cec80844"
+                },
+                {
+                    "description": "Segment of J5 on B.Silkscreen",
+                    "pos": {
+                        "x": 37.9,
+                        "y": 98.25
+                    },
+                    "uuid": "b3bff93b-373d-4c06-8388-e373e50b142d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment of J5 on B.Silkscreen",
+                    "pos": {
+                        "x": 38.0,
+                        "y": 98.25
+                    },
+                    "uuid": "4f7d4fe9-e2c7-4834-85ff-6209d881df3c"
+                },
+                {
+                    "description": "PCB text 'SPEAKER' on B.Silkscreen",
+                    "pos": {
+                        "x": 38.0,
+                        "y": 98.795
+                    },
+                    "uuid": "9be732cb-bb00-4feb-9b15-1d84cec80844"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "PCB text 'SPEAKER' on B.Silkscreen",
+                    "pos": {
+                        "x": 38.0,
+                        "y": 98.795
+                    },
+                    "uuid": "9be732cb-bb00-4feb-9b15-1d84cec80844"
+                },
+                {
+                    "description": "Segment of J5 on B.Silkscreen",
+                    "pos": {
+                        "x": 35.55,
+                        "y": 98.25
+                    },
+                    "uuid": "f9d591ca-52bb-48c0-8604-462713aed998"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "PCB text 'SPEAKER' on B.Silkscreen",
+                    "pos": {
+                        "x": 38.0,
+                        "y": 98.795
+                    },
+                    "uuid": "9be732cb-bb00-4feb-9b15-1d84cec80844"
+                },
+                {
+                    "description": "Segment of J5 on B.Silkscreen",
+                    "pos": {
+                        "x": 35.55,
+                        "y": 101.75
+                    },
+                    "uuid": "de6db6b7-4629-4a2d-b33d-5993b0a9feb8"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment of J5 on B.Silkscreen",
+                    "pos": {
+                        "x": 40.45,
+                        "y": 98.25
+                    },
+                    "uuid": "6b018ebb-e7d2-4320-b9ab-8fcb69dad249"
+                },
+                {
+                    "description": "PCB text 'SPEAKER' on B.Silkscreen",
+                    "pos": {
+                        "x": 38.0,
+                        "y": 98.795
+                    },
+                    "uuid": "9be732cb-bb00-4feb-9b15-1d84cec80844"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "PCB text '1' on B.Silkscreen",
+                    "pos": {
+                        "x": 35.5,
+                        "y": 100.55
+                    },
+                    "uuid": "b84e63d7-e669-46b6-b6e3-9f089a138a5d"
+                },
+                {
+                    "description": "Segment of J5 on B.Silkscreen",
+                    "pos": {
+                        "x": 35.55,
+                        "y": 101.75
+                    },
+                    "uuid": "de6db6b7-4629-4a2d-b33d-5993b0a9feb8"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "PCB text 'C3' on B.Silkscreen",
+                    "pos": {
+                        "x": 70.5,
+                        "y": 93.555
+                    },
+                    "uuid": "8e0aa6bc-31f1-4b69-9f64-c3c9054b3b13"
+                },
+                {
+                    "description": "Rectangle of R21 on B.Silkscreen",
+                    "pos": {
+                        "x": 76.77,
+                        "y": 92.13
+                    },
+                    "uuid": "acacf577-fef8-44f2-ad39-edb54ef7406e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment of R21 on B.Silkscreen",
+                    "pos": {
+                        "x": 69.46,
+                        "y": 93.5
+                    },
+                    "uuid": "05bd0175-5529-4918-95cf-edcdec044bd9"
+                },
+                {
+                    "description": "PCB text 'C3' on B.Silkscreen",
+                    "pos": {
+                        "x": 70.5,
+                        "y": 93.555
+                    },
+                    "uuid": "8e0aa6bc-31f1-4b69-9f64-c3c9054b3b13"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Rectangle of R28 on B.Silkscreen",
+                    "pos": {
+                        "x": 72.73,
+                        "y": 90.37
+                    },
+                    "uuid": "11fb9c2b-9222-4f68-b35b-753c1ecac710"
+                },
+                {
+                    "description": "PCB text 'R21' on B.Silkscreen",
+                    "pos": {
+                        "x": 73.5,
+                        "y": 89.455
+                    },
+                    "uuid": "916d2b2c-54c2-4a38-b0c5-5cc2be8220fe"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment of R28 on B.Silkscreen",
+                    "pos": {
+                        "x": 71.96,
+                        "y": 89.0
+                    },
+                    "uuid": "16ce6643-3bd0-422a-a3cd-1552467e55e6"
+                },
+                {
+                    "description": "PCB text 'R21' on B.Silkscreen",
+                    "pos": {
+                        "x": 73.5,
+                        "y": 89.455
+                    },
+                    "uuid": "916d2b2c-54c2-4a38-b0c5-5cc2be8220fe"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Rectangle of R28 on B.Silkscreen",
+                    "pos": {
+                        "x": 72.73,
+                        "y": 90.37
+                    },
+                    "uuid": "11fb9c2b-9222-4f68-b35b-753c1ecac710"
+                },
+                {
+                    "description": "PCB text 'R29' on B.Silkscreen",
+                    "pos": {
+                        "x": 78.5,
+                        "y": 89.325
+                    },
+                    "uuid": "13ba285a-d20f-41b8-99e2-12698c8813ec"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "PCB text 'R29' on B.Silkscreen",
+                    "pos": {
+                        "x": 78.5,
+                        "y": 89.325
+                    },
+                    "uuid": "13ba285a-d20f-41b8-99e2-12698c8813ec"
+                },
+                {
+                    "description": "Segment of R28 on B.Silkscreen",
+                    "pos": {
+                        "x": 80.04,
+                        "y": 89.0
+                    },
+                    "uuid": "17efd8cd-54b3-43f9-8e63-49dc5a60bb0e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Rectangle of R4 on B.Silkscreen",
+                    "pos": {
+                        "x": 85.37,
+                        "y": 84.27
+                    },
+                    "uuid": "a2aacbb9-6264-48a8-b77c-86bca4852861"
+                },
+                {
+                    "description": "PCB text 'R6' on B.Silkscreen",
+                    "pos": {
+                        "x": 84.0,
+                        "y": 84.325
+                    },
+                    "uuid": "ad3c02c5-2024-4a91-ba14-3413d0904fdc"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Footprint text of C9 (+)",
+                    "pos": {
+                        "x": 9.0,
+                        "y": 47.45
+                    },
+                    "uuid": "7e11640b-1fbc-4327-8dbf-e5d6c8ef8e51"
+                },
+                {
+                    "description": "PCB text 'R11' on B.Silkscreen",
+                    "pos": {
+                        "x": 8.0,
+                        "y": 48.324999
+                    },
+                    "uuid": "ce18532f-b6b4-4d97-ad62-b95e33e9b910"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment of R35 on B.Silkscreen",
+                    "pos": {
+                        "x": 41.46,
+                        "y": 36.0
+                    },
+                    "uuid": "729640e5-2822-4534-92a2-80a735fb62f4"
+                },
+                {
+                    "description": "PCB text 'C24' on B.Silkscreen",
+                    "pos": {
+                        "x": 43.0,
+                        "y": 36.05
+                    },
+                    "uuid": "ce0c99c7-0708-4b99-9365-6b7535dac1e2"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Rectangle of R35 on B.Silkscreen",
+                    "pos": {
+                        "x": 42.23,
+                        "y": 37.37
+                    },
+                    "uuid": "702d9f72-e35e-4cfc-8f03-34d324b00c8b"
+                },
+                {
+                    "description": "PCB text 'C24' on B.Silkscreen",
+                    "pos": {
+                        "x": 43.0,
+                        "y": 36.05
+                    },
+                    "uuid": "ce0c99c7-0708-4b99-9365-6b7535dac1e2"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Arc of U3 on B.Silkscreen",
+                    "pos": {
+                        "x": 48.0,
+                        "y": 52.14
+                    },
+                    "uuid": "23a27af6-0a21-4866-a111-1b473bffda55"
+                },
+                {
+                    "description": "PCB text 'R33' on B.Silkscreen",
+                    "pos": {
+                        "x": 49.0,
+                        "y": 51.325
+                    },
+                    "uuid": "8e5fd9dc-9fcd-4e4b-9793-1d3fafc0988c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "PCB text 'R38' on B.Silkscreen",
+                    "pos": {
+                        "x": 45.0,
+                        "y": 29.455
+                    },
+                    "uuid": "60f77cdd-324d-420e-b5c3-f97df5a65cbe"
+                },
+                {
+                    "description": "Segment of MOD1 on B.Silkscreen",
+                    "pos": {
+                        "x": 43.39,
+                        "y": 29.15
+                    },
+                    "uuid": "ca5e5fb9-cbeb-4371-9b01-b70b88548230"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "PCB text 'TP1' on B.Silkscreen",
+                    "pos": {
+                        "x": 54.0,
+                        "y": 29.5
+                    },
+                    "uuid": "3e64fa61-f4a6-4262-a656-43f851072ea7"
+                },
+                {
+                    "description": "Segment of MOD1 on B.Silkscreen",
+                    "pos": {
+                        "x": 52.33,
+                        "y": 29.15
+                    },
+                    "uuid": "a0bdbe89-368e-48bb-82ab-be19ee5f90ca"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "PCB text 'TP14' on B.Silkscreen",
+                    "pos": {
+                        "x": 66.0,
+                        "y": 48.5
+                    },
+                    "uuid": "623d88d8-5af1-43cb-97f7-d502a5b33f0b"
+                },
+                {
+                    "description": "Rectangle of Q5 on B.Silkscreen",
+                    "pos": {
+                        "x": 64.65,
+                        "y": 49.3
+                    },
+                    "uuid": "96d3f45b-d1b0-450b-8095-d79e77b77698"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Rectangle of Q5 on B.Silkscreen",
+                    "pos": {
+                        "x": 64.65,
+                        "y": 49.3
+                    },
+                    "uuid": "96d3f45b-d1b0-450b-8095-d79e77b77698"
+                },
+                {
+                    "description": "PCB text 'C10' on B.Silkscreen",
+                    "pos": {
+                        "x": 69.5,
+                        "y": 48.185
+                    },
+                    "uuid": "c1cbc515-a994-49ce-afe1-7931786771c2"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Rectangle of R23 on B.Silkscreen",
+                    "pos": {
+                        "x": 85.27,
+                        "y": 61.63
+                    },
+                    "uuid": "03dda056-7e06-4e12-a992-ed3e96f67b39"
+                },
+                {
+                    "description": "PCB text 'R5' on B.Silkscreen",
+                    "pos": {
+                        "x": 85.0,
+                        "y": 63.325
+                    },
+                    "uuid": "22f4c40d-658e-4a70-a910-bed28e9c2525"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "PCB text 'R5' on B.Silkscreen",
+                    "pos": {
+                        "x": 85.0,
+                        "y": 63.325
+                    },
+                    "uuid": "22f4c40d-658e-4a70-a910-bed28e9c2525"
+                },
+                {
+                    "description": "Segment of R23 on B.Silkscreen",
+                    "pos": {
+                        "x": 86.04,
+                        "y": 63.0
+                    },
+                    "uuid": "fc6c20a7-3561-4a68-b6c1-aa6a86b4d4e3"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Rectangle of R5 on B.Silkscreen",
+                    "pos": {
+                        "x": 89.37,
+                        "y": 74.27
+                    },
+                    "uuid": "9d1393de-0a29-4e2e-938b-ac455b8fbb8f"
+                },
+                {
+                    "description": "PCB text 'R7' on B.Silkscreen",
+                    "pos": {
+                        "x": 88.0,
+                        "y": 74.325
+                    },
+                    "uuid": "d02c4968-a73c-4264-9e23-cb7bbb88b974"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Rectangle of R43 on B.Silkscreen",
+                    "pos": {
+                        "x": 90.13,
+                        "y": 58.23
+                    },
+                    "uuid": "42de63c2-fd58-40b6-a850-5ed185833839"
+                },
+                {
+                    "description": "PCB text 'R8' on B.Silkscreen",
+                    "pos": {
+                        "x": 91.5,
+                        "y": 64.825
+                    },
+                    "uuid": "f2263eaa-be51-4629-8145-450dbb899c68"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Rectangle of R8 on B.Silkscreen",
+                    "pos": {
+                        "x": 93.37,
+                        "y": 77.77
+                    },
+                    "uuid": "599af3d5-1894-424a-88e8-f270dfa075ea"
+                },
+                {
+                    "description": "PCB text 'R9' on B.Silkscreen",
+                    "pos": {
+                        "x": 92.0,
+                        "y": 77.825
+                    },
+                    "uuid": "aba3655e-2530-4cea-b374-728da4b912e2"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        }
+    ]
+}

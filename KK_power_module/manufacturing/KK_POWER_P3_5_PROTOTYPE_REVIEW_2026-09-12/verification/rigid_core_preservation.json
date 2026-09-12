@@ -1,0 +1,30 @@
+{
+  "result": "PASS: rigid power pad/trace transform preserved",
+  "transform_mm": "x = 51 - old_x; y = 104 - old_y; rotation 180 degrees; layers unchanged",
+  "board_mm": [
+    96,
+    105,
+    1.6
+  ],
+  "mounting_holes": {
+    "H1": [
+      4,
+      4
+    ],
+    "H2": [
+      92,
+      4
+    ],
+    "H3": [
+      4,
+      101
+    ],
+    "H4": [
+      92,
+      101
+    ]
+  },
+  "tracks_and_vias": 3775,
+  "component_pads": 487,
+  "scope": "Pad/net/size/drill identity and every trace/via coordinate, layer, width, drill. Hole relocation and zone refills require native DRC. Not powered qualification."
+}

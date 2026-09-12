@@ -1,0 +1,28 @@
+{
+  "date": "2026-09-12T04:42:24.609Z",
+  "status": "CAD CHECKED — FIVE ENGINEERING SAMPLES / DFM REVIEW; BENCH AND ASSEMBLY APPROVAL REQUIRED",
+  "PCB_SHA256": "ef71e3b4a0f05603184a53cf7c51afa34b4d4e24cfe0e7fc95925c64fad9ed56",
+  "SCHEMATIC_SHA256": "064e30e6751f75dcc967ce15bc210325a30fea53b031fc53b5e3d44c9ca6bc26",
+  "PROJECT_SHA256": "4686f8fadaadc3940c43beb52b4d06a29e0cbd1d7ebbd8e124cd7b7f6b689ca3",
+  "main_board_unchanged": true,
+  "DRC": {
+    "date": "2026-09-11T22:38:02",
+    "violations": 0,
+    "unconnected_items": 0,
+    "schematic_parity": 0
+  },
+  "ERC": {
+    "date": "2026-09-11T21:44:30",
+    "violations": 0
+  },
+  "fitted_components": 108,
+  "test_pads": 28,
+  "tracks": 3515,
+  "vias": 260,
+  "manufacturer_approval": false,
+  "powered_testing": false,
+  "battery_selected": false,
+  "externally_submitted": false,
+  "archive": "revisions/2026-09-11_power_routing/P2_compact",
+  "package": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW"
+}

@@ -1,0 +1,43 @@
+{
+  "revision": "C.3 RGB ENGINEERING PROTOTYPE",
+  "board_mm": [
+    80,
+    115,
+    1.6
+  ],
+  "schematic_components": 98,
+  "test_points": 25,
+  "original_routes_and_electrical_placements_retained": true,
+  "mounting_hole_change": "bottom two holes moved 15mm down",
+  "track_segments": 1356,
+  "vias": 40,
+  "plated_holes": 362,
+  "npth_holes": 4,
+  "zones": [
+    {
+      "rule_area": false,
+      "name": "MAIN_GND_FRONT",
+      "filled": true,
+      "net": "/GND"
+    },
+    {
+      "rule_area": true,
+      "name": "PROVISIONAL_SUPERMINI_ANTENNA",
+      "filled": false,
+      "net": ""
+    },
+    {
+      "rule_area": true,
+      "name": "SUPERMINI_ANTENNA_UNDER_MODULE",
+      "filled": false,
+      "net": ""
+    },
+    {
+      "rule_area": false,
+      "name": "MAIN_GND_BACK",
+      "filled": true,
+      "net": "/GND"
+    }
+  ],
+  "board_sha256": "7a0e4a3aa1921e1daa31491d45ac67747631b972a4ec9943dafa7d101f8dc293"
+}

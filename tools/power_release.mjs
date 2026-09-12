@@ -1,0 +1,51 @@
+// Promote only the checked board; archive the preceding draft and hash outputs.
+// No routing, no deletion, no external submission. Run after native exports.
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import {fileURLToPath} from 'node:url';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const candidate=path.join(root,'KK_power_module/work/P2_review');
+const current=path.join(root,'KK_power_module/P2_compact');
+const output=path.join(root,'KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW');
+const archive=path.join(root,'revisions/2026-09-11_power_routing/P2_compact');
+const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+const hash=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+const drc=read(path.join(candidate,'review_drc.json')),erc=read(path.join(candidate,'final_erc.json'));
+const audit=read(path.join(candidate,'prototype_package/CAD_AUDIT.json'));
+const plane=read(path.join(candidate,'PLANE_AUDIT_POWER_WIDTH.json'));
+if(drc.violations.length||drc.unconnected_items.length||drc.schematic_parity.length||erc.sheets.some(s=>s.violations.length)||audit.errors.length)throw Error('Native checks are not clean');
+if(hash(path.join(candidate,'KK_power_module.kicad_pcb'))!==audit.PCB_SHA256)throw Error('PCB changed after native export audit');
+for(const pin of ['U4:5','U5:2','U6:2','U7:2','C8:1','C20:1','C21:1','C30:1','C31:1','C40:1','C41:1'])if(!plane['/SYS_SW'].some(c=>c.main&&c.pads.includes(pin)))throw Error('Wide supply path not established for '+pin);
+if(plane['/GND'].some(c=>!c.main&&c.pads.length))throw Error('Ground island in plane audit');
+const main=path.join(root,'KK_main_module/KK_main_module.kicad_pcb');
+if(hash(main)!=='b840262c37afad89ec5307568ace5b6acb4406f89c44c91f1579771642a89003')throw Error('Main board changed: stop for review');
+const expected={F_Cu:'gtl',In1_Cu:'g1',In2_Cu:'g2',B_Cu:'gbl',F_Mask:'gts',B_Mask:'gbs',F_Silkscreen:'gto',B_Silkscreen:'gbo',Edge_Cuts:'gm1',F_Paste:'gtp',B_Paste:'gbp'};
+const fab=path.join(candidate,'prototype_package/fabrication');
+for(const [n,ext] of Object.entries(expected))if(!fs.existsSync(path.join(fab,`KK_power_module-${n}.${ext}`)))throw Error('Missing Gerber '+n);
+for(const n of ['KK_power_module-PTH.drl','KK_power_module-NPTH.drl'])if(!fs.existsSync(path.join(fab,n)))throw Error('Missing drill '+n);
+if(!fs.existsSync(path.join(candidate,'prototype_package/schematic.pdf')))throw Error('Missing schematic PDF');
+if(fs.existsSync(output))throw Error('Release directory exists; do not overwrite a issued package');
+if(fs.existsSync(archive))throw Error('Archive already exists; resolve rather than overwrite');
+fs.mkdirSync(path.dirname(archive),{recursive:true});fs.cpSync(current,archive,{recursive:true,errorOnExist:true});
+fs.mkdirSync(path.dirname(output),{recursive:true});fs.cpSync(path.join(candidate,'prototype_package'),output,{recursive:true,errorOnExist:true});
+const copy=(from,to)=>{fs.mkdirSync(path.dirname(to),{recursive:true});fs.copyFileSync(from,to);};
+for(const name of ['review_drc.json','final_erc.json','PLANE_AUDIT_POWER_WIDTH.json','electrical_screening.json'])copy(path.join(candidate,name),path.join(output,'verification',name));
+copy(path.join(root,'docs/POWER_PROTOTYPE_REVIEW.md'),path.join(output,'READ_FIRST_REVIEW_AND_TEST.md'));
+for(const name of ['KK_power_module.kicad_pcb','KK_power_module.kicad_sch','KK_power_module.kicad_pro','KK_Power.kicad_sym','fp-lib-table','sym-lib-table'])copy(path.join(candidate,name),path.join(output,'cad',name));
+for(const name of ['KK_Power.pretty','3dmodels','datasheets'])fs.cpSync(path.join(candidate,name),path.join(output,'cad',name),{recursive:true});
+// Only the PCB has changed electrically/geometrically; schematic/libraries stay put.
+if(hash(path.join(current,'KK_power_module.kicad_sch'))!==hash(path.join(candidate,'KK_power_module.kicad_sch')))throw Error('Unexpected schematic change');
+copy(path.join(candidate,'KK_power_module.kicad_pcb'),path.join(current,'KK_power_module.kicad_pcb'));
+for(const name of ['review_drc.json','final_erc.json','PLANE_AUDIT_POWER_WIDTH.json'])copy(path.join(candidate,name),path.join(current,'review',name));
+copy(path.join(output,'CAD_AUDIT.json'),path.join(current,'review/CAD_AUDIT.json'));
+const verification={date:new Date().toISOString(),status:'CAD CHECKED — FIVE ENGINEERING SAMPLES / DFM REVIEW; BENCH AND ASSEMBLY APPROVAL REQUIRED',PCB_SHA256:hash(path.join(current,'KK_power_module.kicad_pcb')),SCHEMATIC_SHA256:hash(path.join(current,'KK_power_module.kicad_sch')),PROJECT_SHA256:hash(path.join(current,'KK_power_module.kicad_pro')),main_board_unchanged:true,DRC:{date:drc.date,violations:0,unconnected_items:0,schematic_parity:0},ERC:{date:erc.date,violations:0},fitted_components:audit.fitted_components,test_pads:audit.bare_test_pads,tracks:audit.tracks,vias:audit.vias,manufacturer_approval:false,powered_testing:false,battery_selected:false,externally_submitted:false,archive:path.relative(root,archive),package:path.relative(root,output)};
+copy(path.join(root,'docs/POWER_PROTOTYPE_REVIEW.md'),path.join(current,'review/POWER_PROTOTYPE_REVIEW.md'));
+fs.writeFileSync(path.join(current,'review/VERIFICATION.json'),JSON.stringify(verification,null,2)+'\n');
+fs.writeFileSync(path.join(output,'verification/VERIFICATION.json'),JSON.stringify(verification,null,2)+'\n');
+const mapping={date:verification.date,baseline_directory:path.relative(root,archive),current_directory:path.relative(root,current),changed_files:[{path:path.relative(root,path.join(current,'KK_power_module.kicad_pcb')),baseline:path.relative(root,path.join(archive,'KK_power_module.kicad_pcb')),before_sha256:hash(path.join(archive,'KK_power_module.kicad_pcb')),after_sha256:verification.PCB_SHA256}],package:path.relative(root,output)};
+fs.writeFileSync(path.join(root,'revisions/2026-09-11_power_routing/PROMOTION.json'),JSON.stringify(mapping,null,2)+'\n');
+function walk(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(path.join(dir,e.name)):[path.join(dir,e.name)]);}
+const files=walk(output).map(p=>({path:path.relative(output,p),sha256:hash(p),bytes:fs.statSync(p).size}));
+fs.writeFileSync(path.join(output,'SHA256_MANIFEST.json'),JSON.stringify({files},null,2)+'\n');
+console.log(JSON.stringify(verification,null,2));

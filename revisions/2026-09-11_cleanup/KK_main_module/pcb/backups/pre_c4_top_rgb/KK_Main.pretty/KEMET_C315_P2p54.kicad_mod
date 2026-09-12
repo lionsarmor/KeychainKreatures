@@ -1,0 +1,5 @@
+(footprint "KEMET_C315_P2p54"(version 20240108)(generator "pcbnew")(layer "F.Cu")(descr "KEMET exact C315C104K5R5TA / C315C103J1G5TA / C315C105K5R5TA sheets: 3.81 x 2.54 mm max body, 2.54 mm pitch, wire <=0.61 mm")(attr through_hole)
+ (property "Reference" "REF**"(at 0 -2.77 0)(layer "F.SilkS")(effects(font(size 1 1)(thickness 0.15))))
+ (property "Value" "KEMET_C315_P2p54"(at 0 2.77 0)(layer "F.Fab")(effects(font(size 1 1)(thickness 0.15))))
+ (fp_rect(start -0.635 -1.27)(end 3.175 1.27)(stroke(width 0.1)(type default))(fill none)(layer "F.Fab"))
+ (fp_rect(start -1.135 -1.77)(end 3.675 1.77)(stroke(width 0.05)(type default))(fill none)(layer "F.CrtYd"))(pad "1" thru_hole rect(at 0 0)(size 1.7 1.7)(drill 0.9)(layers "*.Cu" "*.Mask"))(pad "2" thru_hole circle(at 2.54 0)(size 1.7 1.7)(drill 0.9)(layers "*.Cu" "*.Mask")))

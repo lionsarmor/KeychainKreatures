@@ -1,0 +1,1449 @@
+{
+  "revision": "C.0 draft",
+  "pages": [
+    "KK_main_module",
+    "controls",
+    "display_sd",
+    "ir_motor",
+    "audio"
+  ],
+  "components": [
+    {
+      "ref": "MOD1",
+      "page": "KK_main_module",
+      "value": "ESP32-S3 SuperMini",
+      "mpn": "Teyleten B0D47HBFDY",
+      "symbol": "SuperMini_ASSUMED",
+      "nets": {
+        "1": "MCU_5V",
+        "2": "GND",
+        "3": null,
+        "4": "BUTTON_INT_N",
+        "5": "BUTTON_FN_N",
+        "6": null,
+        "7": "I2C_SDA",
+        "8": "I2C_SCL",
+        "9": "IR_RX",
+        "10": "IR_TX",
+        "11": "AUDIO_PWM",
+        "12": "BL_PWM",
+        "13": "SD_CS",
+        "14": "SPI_MOSI",
+        "15": "SPI_MISO",
+        "16": "SPI_SCK",
+        "17": "TFT_DC",
+        "18": "TFT_CS"
+      },
+      "datasheet": "https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf",
+      "footprint": "",
+      "note": "Carrier pad numbering/voltage path requires delivered-module qualification"
+    },
+    {
+      "ref": "J1",
+      "page": "KK_main_module",
+      "value": "SYS_IN / JST-XH",
+      "mpn": "B4B-XH-A(LF)(SN)",
+      "symbol": "Header4",
+      "nets": {
+        "1": "MCU_5V",
+        "2": "GND",
+        "3": "LOGIC_3V3",
+        "4": "ACT_3V2"
+      },
+      "datasheet": "https://www.jst-mfg.com/product/pdf/eng/eXH.pdf",
+      "footprint": "",
+      "note": "4-rail-interface pins include ground; future supply must sequence rails together"
+    },
+    {
+      "ref": "C1",
+      "page": "KK_main_module",
+      "value": "100u",
+      "mpn": "UVR1C101MDD",
+      "symbol": "C_Polarized",
+      "nets": {
+        "1": "MCU_5V",
+        "2": "GND"
+      },
+      "datasheet": "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf",
+      "footprint": "",
+      "note": ""
+    },
+    {
+      "ref": "C2",
+      "page": "KK_main_module",
+      "value": "100n",
+      "mpn": "C315C104K5R5TA",
+      "symbol": "C",
+      "nets": {
+        "1": "MCU_5V",
+        "2": "GND"
+      },
+      "datasheet": "https://yageogroup.com/download/specsheet/C315C104K5R5TA",
+      "footprint": "",
+      "note": ""
+    },
+    {
+      "ref": "C3",
+      "page": "KK_main_module",
+      "value": "100u",
+      "mpn": "UVR1C101MDD",
+      "symbol": "C_Polarized",
+      "nets": {
+        "1": "LOGIC_3V3",
+        "2": "GND"
+      },
+      "datasheet": "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf",
+      "footprint": "",
+      "note": ""
+    },
+    {
+      "ref": "C4",
+      "page": "KK_main_module",
+      "value": "100n",
+      "mpn": "C315C104K5R5TA",
+      "symbol": "C",
+      "nets": {
+        "1": "LOGIC_3V3",
+        "2": "GND"
+      },
+      "datasheet": "https://yageogroup.com/download/specsheet/C315C104K5R5TA",
+      "footprint": "",
+      "note": ""
+    },
+    {
+      "ref": "C5",
+      "page": "KK_main_module",
+      "value": "100u",
+      "mpn": "UVR1C101MDD",
+      "symbol": "C_Polarized",
+      "nets": {
+        "1": "ACT_3V2",
+        "2": "GND"
+      },
+      "datasheet": "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf",
+      "footprint": "",
+      "note": ""
+    },
+    {
+      "ref": "C6",
+      "page": "KK_main_module",
+      "value": "100n",
+      "mpn": "C315C104K5R5TA",
+      "symbol": "C",
+      "nets": {
+        "1": "ACT_3V2",
+        "2": "GND"
+      },
+      "datasheet": "https://yageogroup.com/download/specsheet/C315C104K5R5TA",
+      "footprint": "",
+      "note": ""
+    },
+    {
+      "ref": "U1",
+      "page": "controls",
+      "value": "MCP23017-E/SP",
+      "mpn": "MCP23017-E/SP",
+      "symbol": "MCP23017_E_SP",
+      "nets": {
+        "1": "BTN_A_N",
+        "2": "BTN_B_N",
+        "3": "BTN_X_N",
+        "4": "BTN_Y_N",
+        "5": "AMP_EN",
+        "6": "MOTOR_EN",
+        "7": "TFT_RST_N",
+        "8": null,
+        "9": "LOGIC_3V3",
+        "10": "GND",
+        "11": null,
+        "12": "I2C_SCL",
+        "13": "I2C_SDA",
+        "14": null,
+        "15": "GND",
+        "16": "GND",
+        "17": "GND",
+        "18": "EXP_RESET_N",
+        "19": null,
+        "20": "BUTTON_INT_N",
+        "21": "BTN_UP_N",
+        "22": "BTN_DOWN_N",
+        "23": "BTN_LEFT_N",
+        "24": "BTN_RIGHT_N",
+        "25": null,
+        "26": null,
+        "27": null,
+        "28": null
+      },
+      "datasheet": "https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP23017-Data-Sheet-DS20001952.pdf",
+      "footprint": "Package_DIP:DIP-28_W7.62mm",
+      "note": ""
+    },
+    {
+      "ref": "SW1",
+      "page": "controls",
+      "value": "UP",
+      "mpn": "Adafruit 3101",
+      "symbol": "SoftSwitch3101",
+      "nets": {
+        "A": "BTN_UP_N",
+        "B": "BTN_UP_N",
+        "C": "GND",
+        "D": "GND"
+      },
+      "datasheet": "https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png",
+      "footprint": "",
+      "note": "200 ohm maximum closed contact resistance; custom footprint pending"
+    },
+    {
+      "ref": "SW2",
+      "page": "controls",
+      "value": "DOWN",
+      "mpn": "Adafruit 3101",
+      "symbol": "SoftSwitch3101",
+      "nets": {
+        "A": "BTN_DOWN_N",
+        "B": "BTN_DOWN_N",
+        "C": "GND",
+        "D": "GND"
+      },
+      "datasheet": "https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png",
+      "footprint": "",
+      "note": "200 ohm maximum closed contact resistance; custom footprint pending"
+    },
+    {
+      "ref": "SW3",
+      "page": "controls",
+      "value": "LEFT",
+      "mpn": "Adafruit 3101",
+      "symbol": "SoftSwitch3101",
+      "nets": {
+        "A": "BTN_LEFT_N",
+        "B": "BTN_LEFT_N",
+        "C": "GND",
+        "D": "GND"
+      },
+      "datasheet": "https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png",
+      "footprint": "",
+      "note": "200 ohm maximum closed contact resistance; custom footprint pending"
+    },
+    {
+      "ref": "SW4",
+      "page": "controls",
+      "value": "RIGHT",
+      "mpn": "Adafruit 3101",
+      "symbol": "SoftSwitch3101",
+      "nets": {
+        "A": "BTN_RIGHT_N",
+        "B": "BTN_RIGHT_N",
+        "C": "GND",
+        "D": "GND"
+      },
+      "datasheet": "https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png",
+      "footprint": "",
+      "note": "200 ohm maximum closed contact resistance; custom footprint pending"
+    },
+    {
+      "ref": "SW5",
+      "page": "controls",
+      "value": "A",
+      "mpn": "Adafruit 3101",
+      "symbol": "SoftSwitch3101",
+      "nets": {
+        "A": "BTN_A_N",
+        "B": "BTN_A_N",
+        "C": "GND",
+        "D": "GND"
+      },
+      "datasheet": "https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png",
+      "footprint": "",
+      "note": "200 ohm maximum closed contact resistance; custom footprint pending"
+    },
+    {
+      "ref": "SW6",
+      "page": "controls",
+      "value": "B",
+      "mpn": "Adafruit 3101",
+      "symbol": "SoftSwitch3101",
+      "nets": {
+        "A": "BTN_B_N",
+        "B": "BTN_B_N",
+        "C": "GND",
+        "D": "GND"
+      },
+      "datasheet": "https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png",
+      "footprint": "",
+      "note": "200 ohm maximum closed contact resistance; custom footprint pending"
+    },
+    {
+      "ref": "SW7",
+      "page": "controls",
+      "value": "X",
+      "mpn": "Adafruit 3101",
+      "symbol": "SoftSwitch3101",
+      "nets": {
+        "A": "BTN_X_N",
+        "B": "BTN_X_N",
+        "C": "GND",
+        "D": "GND"
+      },
+      "datasheet": "https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png",
+      "footprint": "",
+      "note": "200 ohm maximum closed contact resistance; custom footprint pending"
+    },
+    {
+      "ref": "SW8",
+      "page": "controls",
+      "value": "Y",
+      "mpn": "Adafruit 3101",
+      "symbol": "SoftSwitch3101",
+      "nets": {
+        "A": "BTN_Y_N",
+        "B": "BTN_Y_N",
+        "C": "GND",
+        "D": "GND"
+      },
+      "datasheet": "https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png",
+      "footprint": "",
+      "note": "200 ohm maximum closed contact resistance; custom footprint pending"
+    },
+    {
+      "ref": "SW9",
+      "page": "controls",
+      "value": "FN",
+      "mpn": "Adafruit 3101",
+      "symbol": "SoftSwitch3101",
+      "nets": {
+        "A": "BUTTON_FN_N",
+        "B": "BUTTON_FN_N",
+        "C": "GND",
+        "D": "GND"
+      },
+      "datasheet": "https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png",
+      "footprint": "",
+      "note": "200 ohm maximum closed contact resistance; custom footprint pending"
+    },
+    {
+      "ref": "R1",
+      "page": "controls",
+      "value": "4.7k",
+      "mpn": "MFR-25FBF52-4K7",
+      "symbol": "R",
+      "nets": {
+        "1": "LOGIC_3V3",
+        "2": "I2C_SDA"
+      },
+      "datasheet": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "note": ""
+    },
+    {
+      "ref": "R2",
+      "page": "controls",
+      "value": "4.7k",
+      "mpn": "MFR-25FBF52-4K7",
+      "symbol": "R",
+      "nets": {
+        "1": "LOGIC_3V3",
+        "2": "I2C_SCL"
+      },
+      "datasheet": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "note": ""
+    },
+    {
+      "ref": "R3",
+      "page": "controls",
+      "value": "10k",
+      "mpn": "MFR-25FBF52-10K",
+      "symbol": "R",
+      "nets": {
+        "1": "LOGIC_3V3",
+        "2": "BUTTON_INT_N"
+      },
+      "datasheet": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "note": ""
+    },
+    {
+      "ref": "R4",
+      "page": "controls",
+      "value": "10k",
+      "mpn": "MFR-25FBF52-10K",
+      "symbol": "R",
+      "nets": {
+        "1": "LOGIC_3V3",
+        "2": "EXP_RESET_N"
+      },
+      "datasheet": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "note": ""
+    },
+    {
+      "ref": "C7",
+      "page": "controls",
+      "value": "100n",
+      "mpn": "C315C104K5R5TA",
+      "symbol": "C",
+      "nets": {
+        "1": "EXP_RESET_N",
+        "2": "GND"
+      },
+      "datasheet": "https://yageogroup.com/download/specsheet/C315C104K5R5TA",
+      "footprint": "",
+      "note": ""
+    },
+    {
+      "ref": "C8",
+      "page": "controls",
+      "value": "100n",
+      "mpn": "C315C104K5R5TA",
+      "symbol": "C",
+      "nets": {
+        "1": "LOGIC_3V3",
+        "2": "GND"
+      },
+      "datasheet": "https://yageogroup.com/download/specsheet/C315C104K5R5TA",
+      "footprint": "",
+      "note": ""
+    },
+    {
+      "ref": "C9",
+      "page": "controls",
+      "value": "10u",
+      "mpn": "UVR1C100MDD",
+      "symbol": "C_Polarized",
+      "nets": {
+        "1": "LOGIC_3V3",
+        "2": "GND"
+      },
+      "datasheet": "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf",
+      "footprint": "",
+      "note": ""
+    },
+    {
+      "ref": "R5",
+      "page": "controls",
+      "value": "10k",
+      "mpn": "MFR-25FBF52-10K",
+      "symbol": "R",
+      "nets": {
+        "1": "LOGIC_3V3",
+        "2": "BTN_UP_N"
+      },
+      "datasheet": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "note": ""
+    },
+    {
+      "ref": "R6",
+      "page": "controls",
+      "value": "10k",
+      "mpn": "MFR-25FBF52-10K",
+      "symbol": "R",
+      "nets": {
+        "1": "LOGIC_3V3",
+        "2": "BTN_DOWN_N"
+      },
+      "datasheet": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "note": ""
+    },
+    {
+      "ref": "R7",
+      "page": "controls",
+      "value": "10k",
+      "mpn": "MFR-25FBF52-10K",
+      "symbol": "R",
+      "nets": {
+        "1": "LOGIC_3V3",
+        "2": "BTN_LEFT_N"
+      },
+      "datasheet": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "note": ""
+    },
+    {
+      "ref": "R8",
+      "page": "controls",
+      "value": "10k",
+      "mpn": "MFR-25FBF52-10K",
+      "symbol": "R",
+      "nets": {
+        "1": "LOGIC_3V3",
+        "2": "BTN_RIGHT_N"
+      },
+      "datasheet": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "note": ""
+    },
+    {
+      "ref": "R9",
+      "page": "controls",
+      "value": "10k",
+      "mpn": "MFR-25FBF52-10K",
+      "symbol": "R",
+      "nets": {
+        "1": "LOGIC_3V3",
+        "2": "BTN_A_N"
+      },
+      "datasheet": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "note": ""
+    },
+    {
+      "ref": "R10",
+      "page": "controls",
+      "value": "10k",
+      "mpn": "MFR-25FBF52-10K",
+      "symbol": "R",
+      "nets": {
+        "1": "LOGIC_3V3",
+        "2": "BTN_B_N"
+      },
+      "datasheet": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "note": ""
+    },
+    {
+      "ref": "R11",
+      "page": "controls",
+      "value": "10k",
+      "mpn": "MFR-25FBF52-10K",
+      "symbol": "R",
+      "nets": {
+        "1": "LOGIC_3V3",
+        "2": "BTN_X_N"
+      },
+      "datasheet": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "note": ""
+    },
+    {
+      "ref": "R12",
+      "page": "controls",
+      "value": "10k",
+      "mpn": "MFR-25FBF52-10K",
+      "symbol": "R",
+      "nets": {
+        "1": "LOGIC_3V3",
+        "2": "BTN_Y_N"
+      },
+      "datasheet": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "note": ""
+    },
+    {
+      "ref": "R13",
+      "page": "controls",
+      "value": "10k",
+      "mpn": "MFR-25FBF52-10K",
+      "symbol": "R",
+      "nets": {
+        "1": "LOGIC_3V3",
+        "2": "BUTTON_FN_N"
+      },
+      "datasheet": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "note": ""
+    },
+    {
+      "ref": "J2",
+      "page": "display_sd",
+      "value": "XIITIA TFT header",
+      "mpn": "PPTC081LFBN-RC",
+      "symbol": "Header8",
+      "nets": {
+        "1": "GND",
+        "2": "LOGIC_3V3",
+        "3": "SPI_SCK",
+        "4": "SPI_MOSI",
+        "5": "TFT_RST_N",
+        "6": "TFT_DC",
+        "7": "TFT_CS",
+        "8": "BLK"
+      },
+      "datasheet": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/937/Female_Headers.100_DS.pdf",
+      "footprint": "",
+      "note": "Display module B0DFWL25RB is a separate assembly item"
+    },
+    {
+      "ref": "J3",
+      "page": "display_sd",
+      "value": "GODIYMODULES SD",
+      "mpn": "PPTC061LFBN-RC",
+      "symbol": "Header6",
+      "nets": {
+        "1": "LOGIC_3V3",
+        "2": "SD_CS",
+        "3": "SPI_MOSI",
+        "4": "SPI_SCK",
+        "5": "SPI_MISO",
+        "6": "GND"
+      },
+      "datasheet": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/937/Female_Headers.100_DS.pdf",
+      "footprint": "",
+      "note": "SD module B0F82XWT4F is a separate assembly item"
+    },
+    {
+      "ref": "Q2",
+      "page": "display_sd",
+      "value": "KSP2222ABU",
+      "mpn": "KSP2222ABU",
+      "symbol": "KSP2222ABU",
+      "nets": {
+        "1": "GND",
+        "2": "BL_BASE",
+        "3": "BL_SINK"
+      },
+      "datasheet": "https://www.onsemi.com/pdf/datasheet/ksp2222a-d.pdf",
+      "footprint": "",
+      "note": ""
+    },
+    {
+      "ref": "Q3",
+      "page": "display_sd",
+      "value": "BC32725BU",
+      "mpn": "BC32725BU",
+      "symbol": "BC32725BU",
+      "nets": {
+        "1": "BL_SUPPLY",
+        "2": "BL_PNP_BASE",
+        "3": "LOGIC_3V3"
+      },
+      "datasheet": "https://www.onsemi.com/pub/Collateral/BC327-D.PDF",
+      "footprint": "",
+      "note": ""
+    },
+    {
+      "ref": "R14",
+      "page": "display_sd",
+      "value": "10k",
+      "mpn": "MFR-25FBF52-10K",
+      "symbol": "R",
+      "nets": {
+        "1": "LOGIC_3V3",
+        "2": "TFT_CS"
+      },
+      "datasheet": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "note": ""
+    },
+    {
+      "ref": "R15",
+      "page": "display_sd",
+      "value": "10k",
+      "mpn": "MFR-25FBF52-10K",
+      "symbol": "R",
+      "nets": {
+        "1": "LOGIC_3V3",
+        "2": "SD_CS"
+      },
+      "datasheet": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "note": ""
+    },
+    {
+      "ref": "R16",
+      "page": "display_sd",
+      "value": "10k",
+      "mpn": "MFR-25FBF52-10K",
+      "symbol": "R",
+      "nets": {
+        "1": "LOGIC_3V3",
+        "2": "TFT_RST_N"
+      },
+      "datasheet": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "note": ""
+    },
+    {
+      "ref": "R17",
+      "page": "display_sd",
+      "value": "10k",
+      "mpn": "MFR-25FBF52-10K",
+      "symbol": "R",
+      "nets": {
+        "1": "LOGIC_3V3",
+        "2": "SPI_MOSI"
+      },
+      "datasheet": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "note": ""
+    },
+    {
+      "ref": "R18",
+      "page": "display_sd",
+      "value": "10k",
+      "mpn": "MFR-25FBF52-10K",
+      "symbol": "R",
+      "nets": {
+        "1": "LOGIC_3V3",
+        "2": "SPI_MISO"
+      },
+      "datasheet": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "note": ""
+    },
+    {
+      "ref": "C10",
+      "page": "display_sd",
+      "value": "100n",
+      "mpn": "C315C104K5R5TA",
+      "symbol": "C",
+      "nets": {
+        "1": "LOGIC_3V3",
+        "2": "GND"
+      },
+      "datasheet": "https://yageogroup.com/download/specsheet/C315C104K5R5TA",
+      "footprint": "",
+      "note": ""
+    },
+    {
+      "ref": "C11",
+      "page": "display_sd",
+      "value": "10u",
+      "mpn": "UVR1C100MDD",
+      "symbol": "C_Polarized",
+      "nets": {
+        "1": "LOGIC_3V3",
+        "2": "GND"
+      },
+      "datasheet": "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf",
+      "footprint": "",
+      "note": ""
+    },
+    {
+      "ref": "C12",
+      "page": "display_sd",
+      "value": "100n",
+      "mpn": "C315C104K5R5TA",
+      "symbol": "C",
+      "nets": {
+        "1": "LOGIC_3V3",
+        "2": "GND"
+      },
+      "datasheet": "https://yageogroup.com/download/specsheet/C315C104K5R5TA",
+      "footprint": "",
+      "note": ""
+    },
+    {
+      "ref": "C13",
+      "page": "display_sd",
+      "value": "100u",
+      "mpn": "UVR1C101MDD",
+      "symbol": "C_Polarized",
+      "nets": {
+        "1": "LOGIC_3V3",
+        "2": "GND"
+      },
+      "datasheet": "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf",
+      "footprint": "",
+      "note": ""
+    },
+    {
+      "ref": "R19",
+      "page": "display_sd",
+      "value": "4.7k",
+      "mpn": "MFR-25FBF52-4K7",
+      "symbol": "R",
+      "nets": {
+        "1": "BL_PWM",
+        "2": "BL_BASE"
+      },
+      "datasheet": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "note": ""
+    },
+    {
+      "ref": "R20",
+      "page": "display_sd",
+      "value": "100k",
+      "mpn": "MFR-25FBF52-100K",
+      "symbol": "R",
+      "nets": {
+        "1": "BL_BASE",
+        "2": "GND"
+      },
+      "datasheet": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "note": ""
+    },
+    {
+      "ref": "R21",
+      "page": "display_sd",
+      "value": "220",
+      "mpn": "MFR-25FBF52-220R",
+      "symbol": "R",
+      "nets": {
+        "1": "BL_PNP_BASE",
+        "2": "BL_SINK"
+      },
+      "datasheet": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "note": ""
+    },
+    {
+      "ref": "R22",
+      "page": "display_sd",
+      "value": "100k",
+      "mpn": "MFR-25FBF52-100K",
+      "symbol": "R",
+      "nets": {
+        "1": "LOGIC_3V3",
+        "2": "BL_PNP_BASE"
+      },
+      "datasheet": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "note": ""
+    },
+    {
+      "ref": "R23",
+      "page": "display_sd",
+      "value": "100",
+      "mpn": "MFR-25FBF52-100R",
+      "symbol": "R",
+      "nets": {
+        "1": "BL_SUPPLY",
+        "2": "BLK"
+      },
+      "datasheet": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "note": "Bring-up current limit; bright-screen qualification required"
+    },
+    {
+      "ref": "D1",
+      "page": "ir_motor",
+      "value": "TSAL6200",
+      "mpn": "TSAL6200",
+      "symbol": "LED",
+      "nets": {
+        "1": "IR_LED_K",
+        "2": "IR_LED_A"
+      },
+      "datasheet": "https://www.vishay.com/docs/81010/tsal6200.pdf",
+      "footprint": "LED_THT:LED_D5.0mm",
+      "note": ""
+    },
+    {
+      "ref": "Q1",
+      "page": "ir_motor",
+      "value": "KSP2222ABU",
+      "mpn": "KSP2222ABU",
+      "symbol": "KSP2222ABU",
+      "nets": {
+        "1": "GND",
+        "2": "IR_BASE",
+        "3": "IR_LED_K"
+      },
+      "datasheet": "https://www.onsemi.com/pdf/datasheet/ksp2222a-d.pdf",
+      "footprint": "",
+      "note": ""
+    },
+    {
+      "ref": "U2",
+      "page": "ir_motor",
+      "value": "TSOP38238",
+      "mpn": "TSOP38238",
+      "symbol": "TSOP38238",
+      "nets": {
+        "1": "IR_RX",
+        "2": "GND",
+        "3": "IR_RX_3V3"
+      },
+      "datasheet": "https://www.vishay.com/docs/82491/tsop382.pdf",
+      "footprint": "",
+      "note": ""
+    },
+    {
+      "ref": "Q4",
+      "page": "ir_motor",
+      "value": "TN0702N3-G",
+      "mpn": "TN0702N3-G",
+      "symbol": "TN0702N3_G",
+      "nets": {
+        "1": "GND",
+        "2": "MOTOR_GATE",
+        "3": "MOTOR_RETURN"
+      },
+      "datasheet": "https://ww1.microchip.com/downloads/en/DeviceDoc/TN0702-N-Channel-Enhancement-Mode-Vertical-DMOS-FET-Data-Sheet-20005941A.pdf",
+      "footprint": "",
+      "note": ""
+    },
+    {
+      "ref": "J4",
+      "page": "ir_motor",
+      "value": "LCM0827A3038F motor",
+      "mpn": "S2B-PH-K-S(LF)(SN)",
+      "symbol": "Header2",
+      "nets": {
+        "1": "ACT_3V2",
+        "2": "MOTOR_RETURN"
+      },
+      "datasheet": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf",
+      "footprint": "",
+      "note": ""
+    },
+    {
+      "ref": "D2",
+      "page": "ir_motor",
+      "value": "1N5819",
+      "mpn": "1N5819-E3/54",
+      "symbol": "D_Schottky",
+      "nets": {
+        "1": "ACT_3V2",
+        "2": "MOTOR_RETURN"
+      },
+      "datasheet": "https://www.vishay.com/docs/88525/1n5817.pdf",
+      "footprint": "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal",
+      "note": ""
+    },
+    {
+      "ref": "R24",
+      "page": "ir_motor",
+      "value": "100",
+      "mpn": "MFR-25FBF52-100R",
+      "symbol": "R",
+      "nets": {
+        "1": "LOGIC_3V3",
+        "2": "IR_LED_A"
+      },
+      "datasheet": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "note": ""
+    },
+    {
+      "ref": "R25",
+      "page": "ir_motor",
+      "value": "1k",
+      "mpn": "MFR-25FBF52-1K",
+      "symbol": "R",
+      "nets": {
+        "1": "IR_TX",
+        "2": "IR_BASE"
+      },
+      "datasheet": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "note": ""
+    },
+    {
+      "ref": "R26",
+      "page": "ir_motor",
+      "value": "100k",
+      "mpn": "MFR-25FBF52-100K",
+      "symbol": "R",
+      "nets": {
+        "1": "IR_BASE",
+        "2": "GND"
+      },
+      "datasheet": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "note": ""
+    },
+    {
+      "ref": "R27",
+      "page": "ir_motor",
+      "value": "100",
+      "mpn": "MFR-25FBF52-100R",
+      "symbol": "R",
+      "nets": {
+        "1": "LOGIC_3V3",
+        "2": "IR_RX_3V3"
+      },
+      "datasheet": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "note": ""
+    },
+    {
+      "ref": "C14",
+      "page": "ir_motor",
+      "value": "100n",
+      "mpn": "C315C104K5R5TA",
+      "symbol": "C",
+      "nets": {
+        "1": "IR_RX_3V3",
+        "2": "GND"
+      },
+      "datasheet": "https://yageogroup.com/download/specsheet/C315C104K5R5TA",
+      "footprint": "",
+      "note": ""
+    },
+    {
+      "ref": "C15",
+      "page": "ir_motor",
+      "value": "10u",
+      "mpn": "UVR1C100MDD",
+      "symbol": "C_Polarized",
+      "nets": {
+        "1": "IR_RX_3V3",
+        "2": "GND"
+      },
+      "datasheet": "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf",
+      "footprint": "",
+      "note": ""
+    },
+    {
+      "ref": "R28",
+      "page": "ir_motor",
+      "value": "100",
+      "mpn": "MFR-25FBF52-100R",
+      "symbol": "R",
+      "nets": {
+        "1": "MOTOR_EN",
+        "2": "MOTOR_GATE"
+      },
+      "datasheet": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "note": ""
+    },
+    {
+      "ref": "R29",
+      "page": "ir_motor",
+      "value": "100k",
+      "mpn": "MFR-25FBF52-100K",
+      "symbol": "R",
+      "nets": {
+        "1": "MOTOR_GATE",
+        "2": "GND"
+      },
+      "datasheet": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "note": ""
+    },
+    {
+      "ref": "C16",
+      "page": "ir_motor",
+      "value": "100n",
+      "mpn": "C315C104K5R5TA",
+      "symbol": "C",
+      "nets": {
+        "1": "ACT_3V2",
+        "2": "MOTOR_RETURN"
+      },
+      "datasheet": "https://yageogroup.com/download/specsheet/C315C104K5R5TA",
+      "footprint": "",
+      "note": "Suppression physically close to motor leads"
+    },
+    {
+      "ref": "C17",
+      "page": "ir_motor",
+      "value": "100u",
+      "mpn": "UVR1C101MDD",
+      "symbol": "C_Polarized",
+      "nets": {
+        "1": "ACT_3V2",
+        "2": "GND"
+      },
+      "datasheet": "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf",
+      "footprint": "",
+      "note": ""
+    },
+    {
+      "ref": "U3",
+      "page": "audio",
+      "value": "TDA2822L-D08-T",
+      "mpn": "TDA2822L-D08-T",
+      "symbol": "TDA2822_DIP8",
+      "nets": {
+        "1": "SPK_P",
+        "2": "AMP_VCC",
+        "3": "SPK_N",
+        "4": "GND",
+        "5": "AMP_NP2",
+        "6": "GND",
+        "7": "AMP_IN",
+        "8": "AMP_NP1"
+      },
+      "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/8599ab4088134d37b4be13f0dc390034.pdf",
+      "footprint": "Package_DIP:DIP-8_W7.62mm",
+      "note": ""
+    },
+    {
+      "ref": "J5",
+      "page": "audio",
+      "value": "8 ohm speaker",
+      "mpn": "S2B-PH-K-S(LF)(SN)",
+      "symbol": "Header2",
+      "nets": {
+        "1": "SPK_P",
+        "2": "SPK_N"
+      },
+      "datasheet": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf",
+      "footprint": "",
+      "note": ""
+    },
+    {
+      "ref": "Q5",
+      "page": "audio",
+      "value": "KSP2222ABU",
+      "mpn": "KSP2222ABU",
+      "symbol": "KSP2222ABU",
+      "nets": {
+        "1": "GND",
+        "2": "AMP_BASE",
+        "3": "AMP_SINK"
+      },
+      "datasheet": "https://www.onsemi.com/pdf/datasheet/ksp2222a-d.pdf",
+      "footprint": "",
+      "note": ""
+    },
+    {
+      "ref": "Q6",
+      "page": "audio",
+      "value": "BC32725BU",
+      "mpn": "BC32725BU",
+      "symbol": "BC32725BU",
+      "nets": {
+        "1": "AMP_VCC",
+        "2": "AMP_PNP_BASE",
+        "3": "ACT_3V2"
+      },
+      "datasheet": "https://www.onsemi.com/pub/Collateral/BC327-D.PDF",
+      "footprint": "",
+      "note": ""
+    },
+    {
+      "ref": "R30",
+      "page": "audio",
+      "value": "1k",
+      "mpn": "MFR-25FBF52-1K",
+      "symbol": "R",
+      "nets": {
+        "1": "AUDIO_PWM",
+        "2": "AUDIO_LP1"
+      },
+      "datasheet": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "note": ""
+    },
+    {
+      "ref": "C18",
+      "page": "audio",
+      "value": "10n",
+      "mpn": "C315C103J1G5TA",
+      "symbol": "C",
+      "nets": {
+        "1": "AUDIO_LP1",
+        "2": "GND"
+      },
+      "datasheet": "https://yageogroup.com/download/specsheet/C315C103J1G5TA",
+      "footprint": "",
+      "note": ""
+    },
+    {
+      "ref": "R31",
+      "page": "audio",
+      "value": "1k",
+      "mpn": "MFR-25FBF52-1K",
+      "symbol": "R",
+      "nets": {
+        "1": "AUDIO_LP1",
+        "2": "AUDIO_LP2"
+      },
+      "datasheet": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "note": ""
+    },
+    {
+      "ref": "C19",
+      "page": "audio",
+      "value": "10n",
+      "mpn": "C315C103J1G5TA",
+      "symbol": "C",
+      "nets": {
+        "1": "AUDIO_LP2",
+        "2": "GND"
+      },
+      "datasheet": "https://yageogroup.com/download/specsheet/C315C103J1G5TA",
+      "footprint": "",
+      "note": ""
+    },
+    {
+      "ref": "C20",
+      "page": "audio",
+      "value": "1u",
+      "mpn": "C315C105K5R5TA",
+      "symbol": "C",
+      "nets": {
+        "1": "AUDIO_LP2",
+        "2": "AUDIO_AC"
+      },
+      "datasheet": "https://yageogroup.com/download/specsheet/C315C105K5R5TA",
+      "footprint": "",
+      "note": ""
+    },
+    {
+      "ref": "R32",
+      "page": "audio",
+      "value": "100k",
+      "mpn": "MFR-25FBF52-100K",
+      "symbol": "R",
+      "nets": {
+        "1": "AUDIO_AC",
+        "2": "AMP_IN"
+      },
+      "datasheet": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "note": ""
+    },
+    {
+      "ref": "R33",
+      "page": "audio",
+      "value": "1k",
+      "mpn": "MFR-25FBF52-1K",
+      "symbol": "R",
+      "nets": {
+        "1": "AMP_IN",
+        "2": "GND"
+      },
+      "datasheet": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "note": "Conservative fixed attenuation; prototype gain check"
+    },
+    {
+      "ref": "C21",
+      "page": "audio",
+      "value": "10u",
+      "mpn": "UVR1C100MDD",
+      "symbol": "C_Polarized",
+      "nets": {
+        "1": "AMP_NP1",
+        "2": "AMP_NP2"
+      },
+      "datasheet": "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf",
+      "footprint": "",
+      "note": ""
+    },
+    {
+      "ref": "C22",
+      "page": "audio",
+      "value": "10n",
+      "mpn": "C315C103J1G5TA",
+      "symbol": "C",
+      "nets": {
+        "1": "AMP_NP2",
+        "2": "GND"
+      },
+      "datasheet": "https://yageogroup.com/download/specsheet/C315C103J1G5TA",
+      "footprint": "",
+      "note": ""
+    },
+    {
+      "ref": "C23",
+      "page": "audio",
+      "value": "100n",
+      "mpn": "C315C104K5R5TA",
+      "symbol": "C",
+      "nets": {
+        "1": "SPK_P",
+        "2": "ZOBEL_P"
+      },
+      "datasheet": "https://yageogroup.com/download/specsheet/C315C104K5R5TA",
+      "footprint": "",
+      "note": ""
+    },
+    {
+      "ref": "R34",
+      "page": "audio",
+      "value": "4.7",
+      "mpn": "MFR-25FBF52-4R7",
+      "symbol": "R",
+      "nets": {
+        "1": "ZOBEL_P",
+        "2": "GND"
+      },
+      "datasheet": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "note": ""
+    },
+    {
+      "ref": "C24",
+      "page": "audio",
+      "value": "100n",
+      "mpn": "C315C104K5R5TA",
+      "symbol": "C",
+      "nets": {
+        "1": "SPK_N",
+        "2": "ZOBEL_N"
+      },
+      "datasheet": "https://yageogroup.com/download/specsheet/C315C104K5R5TA",
+      "footprint": "",
+      "note": ""
+    },
+    {
+      "ref": "R35",
+      "page": "audio",
+      "value": "4.7",
+      "mpn": "MFR-25FBF52-4R7",
+      "symbol": "R",
+      "nets": {
+        "1": "ZOBEL_N",
+        "2": "GND"
+      },
+      "datasheet": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "note": ""
+    },
+    {
+      "ref": "C25",
+      "page": "audio",
+      "value": "100u",
+      "mpn": "UVR1C101MDD",
+      "symbol": "C_Polarized",
+      "nets": {
+        "1": "AMP_VCC",
+        "2": "GND"
+      },
+      "datasheet": "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf",
+      "footprint": "",
+      "note": ""
+    },
+    {
+      "ref": "C26",
+      "page": "audio",
+      "value": "100n",
+      "mpn": "C315C104K5R5TA",
+      "symbol": "C",
+      "nets": {
+        "1": "AMP_VCC",
+        "2": "GND"
+      },
+      "datasheet": "https://yageogroup.com/download/specsheet/C315C104K5R5TA",
+      "footprint": "",
+      "note": ""
+    },
+    {
+      "ref": "R36",
+      "page": "audio",
+      "value": "4.7k",
+      "mpn": "MFR-25FBF52-4K7",
+      "symbol": "R",
+      "nets": {
+        "1": "AMP_EN",
+        "2": "AMP_BASE"
+      },
+      "datasheet": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "note": ""
+    },
+    {
+      "ref": "R37",
+      "page": "audio",
+      "value": "100k",
+      "mpn": "MFR-25FBF52-100K",
+      "symbol": "R",
+      "nets": {
+        "1": "AMP_BASE",
+        "2": "GND"
+      },
+      "datasheet": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "note": ""
+    },
+    {
+      "ref": "R38",
+      "page": "audio",
+      "value": "100",
+      "mpn": "MFR-25FBF52-100R",
+      "symbol": "R",
+      "nets": {
+        "1": "AMP_PNP_BASE",
+        "2": "AMP_SINK"
+      },
+      "datasheet": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "note": ""
+    },
+    {
+      "ref": "R39",
+      "page": "audio",
+      "value": "100k",
+      "mpn": "MFR-25FBF52-100K",
+      "symbol": "R",
+      "nets": {
+        "1": "ACT_3V2",
+        "2": "AMP_PNP_BASE"
+      },
+      "datasheet": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "note": ""
+    },
+    {
+      "ref": "#FLG00",
+      "page": "KK_main_module",
+      "value": "External source",
+      "mpn": "",
+      "symbol": "ExternalPowerSource",
+      "nets": {
+        "1": "MCU_5V"
+      },
+      "datasheet": "",
+      "footprint": "",
+      "note": "ERC declaration, not a fitted component"
+    },
+    {
+      "ref": "#FLG01",
+      "page": "KK_main_module",
+      "value": "External source",
+      "mpn": "",
+      "symbol": "ExternalPowerSource",
+      "nets": {
+        "1": "LOGIC_3V3"
+      },
+      "datasheet": "",
+      "footprint": "",
+      "note": "ERC declaration, not a fitted component"
+    },
+    {
+      "ref": "#FLG02",
+      "page": "KK_main_module",
+      "value": "External source",
+      "mpn": "",
+      "symbol": "ExternalPowerSource",
+      "nets": {
+        "1": "ACT_3V2"
+      },
+      "datasheet": "",
+      "footprint": "",
+      "note": "ERC declaration, not a fitted component"
+    },
+    {
+      "ref": "#FLG03",
+      "page": "KK_main_module",
+      "value": "External source",
+      "mpn": "",
+      "symbol": "ExternalPowerSource",
+      "nets": {
+        "1": "GND"
+      },
+      "datasheet": "",
+      "footprint": "",
+      "note": "ERC declaration, not a fitted component"
+    },
+    {
+      "ref": "#FLG04",
+      "page": "ir_motor",
+      "value": "Via R27 filter",
+      "mpn": "",
+      "symbol": "ExternalPowerSource",
+      "nets": {
+        "1": "IR_RX_3V3"
+      },
+      "datasheet": "",
+      "footprint": "",
+      "note": "Power derived from LOGIC_3V3 through receiver filter resistor; analytical drop checked"
+    },
+    {
+      "ref": "#FLG05",
+      "page": "audio",
+      "value": "Via Q6 switch",
+      "mpn": "",
+      "symbol": "ExternalPowerSource",
+      "nets": {
+        "1": "AMP_VCC"
+      },
+      "datasheet": "",
+      "footprint": "",
+      "note": "Switched rail derived from ACT_3V2 via Q6; power flag does not assert always-on"
+    }
+  ]
+}

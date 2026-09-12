@@ -1,0 +1,7 @@
+(version 1)
+(rule "C2 Power minimum track" (condition "A.Type == 'Track' && A.NetClass == 'Power'") (constraint track_width (min 0.8mm)))
+(rule "C2 Motor minimum track" (condition "A.Type == 'Track' && A.NetClass == 'Motor'") (constraint track_width (min 0.8mm)))
+(rule "C2 Speaker minimum track" (condition "A.Type == 'Track' && A.NetClass == 'Speaker'") (constraint track_width (min 0.5mm)))
+(rule "C2 Audio minimum track" (condition "A.Type == 'Track' && A.NetClass == 'Audio'") (constraint track_width (min 0.3mm)))
+(rule "C2 Ground minimum track" (condition "A.Type == 'Track' && A.NetClass == 'Ground'") (constraint track_width (min 0.6mm)))
+(rule "C2 AuxLoad minimum track" (condition "A.Type == 'Track' && A.NetClass == 'AuxLoad'") (constraint track_width (min 0.5mm)))

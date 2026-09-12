@@ -1,0 +1,29 @@
+function,signal_count,connection,selection_status,notes
+DPAD_UP,1,PCF8574_P0,candidate,Direct GPIO alternative if module exposure allows
+DPAD_DOWN,1,PCF8574_P1,candidate,Digital gameplay input
+DPAD_LEFT,1,PCF8574_P2,candidate,Digital gameplay input
+DPAD_RIGHT,1,PCF8574_P3,candidate,Digital gameplay input
+BUTTON_A,1,PCF8574_P4,candidate,Digital gameplay input
+BUTTON_B,1,PCF8574_P5,candidate,Digital gameplay input
+BUTTON_X,1,PCF8574_P6,candidate,Digital gameplay input
+BUTTON_Y,1,PCF8574_P7,candidate,Digital gameplay input
+FUNCTION_WAKE,1,MCU,candidate,Non-strapping wake-capable pin; ninth gameplay input
+BUTTON_I2C,2,MCU,candidate,SDA and SCL; omitted for all-direct buttons
+LCD_SPI_CONTROL,4,MCU,candidate,SCLK MOSI CS DC
+LCD_RESET,1,MCU,candidate,Exact display electrical interface pending
+LCD_BACKLIGHT,1,MCU,candidate,PWM or appropriate backlight driver
+IR_RX,1,MCU,candidate,Direct RMT; never button expander
+IR_TX,1,MCU,candidate,RMT via current-limited default-off driver
+HAPTIC_CONTROL,1,MCU,candidate,Actuator type and driver pending
+AUDIO_PWM,1,MCU,candidate,Analog filter and amplifier interface needed
+AUDIO_ENABLE,1,MCU,candidate,Default disabled; polarity depends on amplifier
+PERIPHERAL_POWER_ENABLE,1,MCU,candidate,Off-state isolation required
+VBAT_ADC,1,MCU,candidate,Protected switched divider
+VBAT_SENSE_ENABLE,1,MCU,candidate,Default off and safe when MCU unpowered
+POWER_STATUS,3,MCU,candidate,PG STAT1 STAT2 via safe conditioning
+EXPANDER_INTERRUPT,1,MCU,optional,Not counted in base 20 signals
+NATIVE_USB,2,MCU,reserved_candidate,GPIO19 and GPIO20 if native USB used
+RECOVERY_UART,2,MCU,optional,UART0 test access if retained
+BOOT_AND_EN,2,SERVICE_ACCESS,reserved_candidate,Not gameplay inputs; exact core circuit controls implementation
+I2S_ALTERNATIVE,3,MCU,alternative,Replaces single PWM signal; adds two net GPIOs
+HARD_POWER_SWITCH,0,RODDY,fixed_scope,Existing separate power control; not gameplay input

@@ -1,0 +1,43 @@
+{
+  "date": "2026-09-12T05:17:01.511824+00:00",
+  "status": "CAD CHECKED \u2014 FIVE ENGINEERING SAMPLES / DFM REVIEW; BENCH AND ASSEMBLY APPROVAL REQUIRED",
+  "PCB_SHA256": "839d8741c2216db98f9ec57497ce1cea194b21feef1c5f35c01dc377655d2540",
+  "SCHEMATIC_SHA256": "064e30e6751f75dcc967ce15bc210325a30fea53b031fc53b5e3d44c9ca6bc26",
+  "PROJECT_SHA256": "4686f8fadaadc3940c43beb52b4d06a29e0cbd1d7ebbd8e124cd7b7f6b689ca3",
+  "main_board_unchanged": true,
+  "DRC": {
+    "date": "2026-09-12T00:13:14",
+    "violations": 0,
+    "unconnected_items": 0,
+    "schematic_parity": 0
+  },
+  "ERC": {
+    "date": "2026-09-12T00:11:28",
+    "violations": 0
+  },
+  "fitted_components": 108,
+  "test_pads": 28,
+  "tracks": 3515,
+  "vias": 260,
+  "manufacturer_approval": false,
+  "powered_testing": false,
+  "battery_selected": false,
+  "externally_submitted": false,
+  "archive": "revisions/2026-09-12_power_final",
+  "package": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12",
+  "logos": 2,
+  "copper_unchanged_by_artwork": true,
+  "fabrication_files_unchanged_except_silkscreen": [
+    "KK_power_module-F_Cu.gtl",
+    "KK_power_module-In1_Cu.g1",
+    "KK_power_module-In2_Cu.g2",
+    "KK_power_module-B_Cu.gbl",
+    "KK_power_module-F_Mask.gts",
+    "KK_power_module-B_Mask.gbs",
+    "KK_power_module-F_Paste.gtp",
+    "KK_power_module-B_Paste.gbp",
+    "KK_power_module-Edge_Cuts.gm1",
+    "KK_power_module-PTH.drl",
+    "KK_power_module-NPTH.drl"
+  ]
+}

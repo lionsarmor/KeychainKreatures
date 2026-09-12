@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="210mm" height="297mm" viewBox="0 0 210 297"><text x="12" y="13" font-family="sans-serif" font-size="5.29167" fill="black">Keychain Kreatures - flat, removable board stack</text>
+<text x="12" y="21" font-family="sans-serif" font-size="3.1750019999999997" fill="black">C.6 / P.3 PROTOTYPE REVIEW - PHYSICAL / BENCH QUALIFICATION PENDING</text>
+<text x="12" y="32" font-family="sans-serif" font-size="3.52778" fill="black">Shared outline: 96 x 105 mm; 4 mm corner radius; 1.6 mm PCB.</text>
+<text x="12" y="38" font-family="sans-serif" font-size="3.52778" fill="black">Four 2.2 mm clearance holes: (4,4), (92,4), (4,101), (92,101) mm.</text>
+<text x="12" y="44" font-family="sans-serif" font-size="3.1750019999999997" fill="black">Coordinates below: top-left origin, X right, Y down. Both boards use this pattern.</text>
+<rect x="55" y="61" width="96" height="105" rx="4" fill="none" stroke="black" stroke-width="0.2" stroke-dasharray=""/>
+<circle cx="59" cy="65" r="1.1" fill="none" stroke="black" stroke-width="0.2" stroke-dasharray=""/>
+<circle cx="147" cy="65" r="1.1" fill="none" stroke="black" stroke-width="0.2" stroke-dasharray=""/>
+<circle cx="59" cy="162" r="1.1" fill="none" stroke="black" stroke-width="0.2" stroke-dasharray=""/>
+<circle cx="147" cy="162" r="1.1" fill="none" stroke="black" stroke-width="0.2" stroke-dasharray=""/>
+<rect x="73" y="61" width="60" height="38" rx="0" fill="none" stroke="rgb(178,26,26)" stroke-width="0.2" stroke-dasharray="2,2"/>
+<text x="77" y="79" font-family="sans-serif" font-size="2.469446" fill="black">ANTENNA: NO METAL / CELL / WIRES</text>
+<text x="70" y="123" font-family="sans-serif" font-size="3.1750019999999997" fill="black">Common mounting template - 1:1</text>
+<text x="12" y="176" font-family="sans-serif" font-size="3.1750019999999997" fill="black">100 mm calibration line:</text>
+<line x1="12" y1="181" x2="112" y2="181" fill="none" stroke="rgb(0,0,0)" stroke-width="0.2" stroke-dasharray=""/>
+<line x1="12" y1="183" x2="12" y2="179" fill="none" stroke="rgb(0,0,0)" stroke-width="0.2" stroke-dasharray=""/>
+<line x1="112" y1="183" x2="112" y2="179" fill="none" stroke="rgb(0,0,0)" stroke-width="0.2" stroke-dasharray=""/>
+<text x="12" y="190" font-family="sans-serif" font-size="3.1750019999999997" fill="black">PRINT AT 100% / ACTUAL SIZE. Disable fit-to-page. Measure the line first.</text>
+<text x="12" y="203" font-family="sans-serif" font-size="3.1750019999999997" fill="black">Stack orientation: main display/buttons outward at the front of the case.</text>
+<text x="12" y="209" font-family="sans-serif" font-size="3.1750019999999997" fill="black">Power component side faces the rear cover; its test-pad face points toward main.</text>
+<text x="12" y="215" font-family="sans-serif" font-size="3.1750019999999997" fill="black">Power-board front view is X-mirrored relative to main-front physical coordinates.</text>
+<text x="12" y="221" font-family="sans-serif" font-size="3.1750019999999997" fill="black">Start a fit mock-up with FOUR 20 mm M2 insulating standoffs between PCB faces.</text>
+<text x="12" y="227" font-family="sans-serif" font-size="3.1750019999999997" fill="black">This spacing is provisional: check plugged JST bodies, cable bends and solder tails.</text>
+<text x="12" y="233" font-family="sans-serif" font-size="3.1750019999999997" fill="black">Clip solder tails to &lt;=2.5 mm, inspect every joint, and keep loose wires restrained.</text>
+<text x="12" y="239" font-family="sans-serif" font-size="3.1750019999999997" fill="black">Unscrew and unplug the rear power board to expose the student main-board parts.</text>
+<text x="12" y="245" font-family="sans-serif" font-size="3.1750019999999997" fill="black">Do not trap a battery between solder tails and components. Cell position is not frozen.</text>
+<text x="12" y="251" font-family="sans-serif" font-size="3.1750019999999997" fill="black">Keep a protective insulating barrier; never use battery foil as an electrical insulator.</text></svg>

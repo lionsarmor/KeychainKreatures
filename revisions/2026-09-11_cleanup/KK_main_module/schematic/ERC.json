@@ -1,0 +1,56 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-10T13:45:14",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/d50adddf-cf24-49c6-a5c7-6d7cbdcac675",
+            "violations": []
+        },
+        {
+            "path": "/02 / Nine soft buttons and GPIO expander/",
+            "uuid_path": "/d50adddf-cf24-49c6-a5c7-6d7cbdcac675/1e2135d1-b50f-44d3-a3d6-cbe24a4294bc",
+            "violations": []
+        },
+        {
+            "path": "/03 / Display, microSD and backlight/",
+            "uuid_path": "/d50adddf-cf24-49c6-a5c7-6d7cbdcac675/c4d564d8-265c-46fb-a47d-d6b8387680c4",
+            "violations": []
+        },
+        {
+            "path": "/04 / IR transmit / receive and vibration/",
+            "uuid_path": "/d50adddf-cf24-49c6-a5c7-6d7cbdcac675/14def3b1-7a61-401a-af44-466b76fc82e3",
+            "violations": []
+        },
+        {
+            "path": "/05 / Filtered PWM, bridge amplifier and speaker/",
+            "uuid_path": "/d50adddf-cf24-49c6-a5c7-6d7cbdcac675/6ed8919c-e204-40a5-a3ad-8630a4fab694",
+            "violations": []
+        }
+    ],
+    "source": "KK_main_module.kicad_sch"
+}

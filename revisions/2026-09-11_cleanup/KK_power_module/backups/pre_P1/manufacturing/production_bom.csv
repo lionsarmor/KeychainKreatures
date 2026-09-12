@@ -1,0 +1,27 @@
+Designator,Quantity,Populate,Assembly,Value/Description,Footprint,Manufacturer,Manufacturer Part Number,Controlled Requirements,Approved Alternate
+C1,1,YES,SMT,10 uF,1206,Murata,GRM31CR71C106KA12L,"MLCC; 16 V minimum; X7R; +/-10% or better",Equivalent 1206 X7R meeting all requirements
+"C2,C3",2,YES,SMT,4.7 uF,1206,Murata,GRM31CR71C475KA01L,"MLCC; 16 V minimum; X7R; +/-10% or better",Equivalent 1206 X7R meeting all requirements
+C4,1,YES,SMT,0.1 uF,1206,Murata,GRM31CR71E104KA01L,"MLCC; 25 V minimum; X7R; +/-10% or better",Equivalent 1206 X7R meeting all requirements
+D1,1,YES,SMT,5.0 V unidirectional TVS,SMA,Littelfuse,SMAJ5.0A,"Unidirectional; 400 W class; polarity controlled",None without engineering approval
+J1,1,YES,SMT + hand solder,USB-C 16-pin receptacle,HC-TYPE-C-16P-01A,HCTL,HC-TYPE-C-16P-01A,"LCSC C2894897; signal pins reflowed; shield tabs hand soldered",None without footprint and mechanical approval
+J2,1,YES,Hand solder,Battery connector; right-angle; 2 positions; 2.00 mm,JST PH,JST,S2B-PH-K-S(LF)(SN),"Bottom-side mounting; polarity controlled",None without mechanical approval
+J3,1,YES,Hand solder,System-output connector; right-angle; 2 positions; 2.00 mm,JST PH,JST,S2B-PH-K-S(LF)(SN),"Top-side mounting; polarity controlled",None without mechanical approval
+J4,1,YES,Hand solder,Battery-temperature header; 2 positions; 2.54 mm,1x02 vertical,Samtec,TSW-102-07-G-S,"0.025 inch square post; mating system must be confirmed",Equivalent header meeting drawing
+J5,1,YES,Hand solder,Status header; 5 positions; 2.54 mm,1x05 vertical,Samtec,TSW-105-07-G-S,"0.025 inch square post; mating system must be confirmed",Equivalent header meeting drawing
+JP1,1,YES,Hand solder,NO_NTC configuration header; 2 positions; 2.54 mm,1x02 vertical,Samtec,TSW-102-07-G-S,"Fit shunt only for NO_NTC configuration",Equivalent header meeting drawing
+LED1,1,YES,SMT,Blue POWER GOOD LED,1206,Kingbright,APT3216QBC/D,"Blue; standard polarity; 1206",None without color/polarity approval
+LED2,1,YES,SMT,Red CHARGE/LBO LED,1206,Kingbright,APT3216SURCK,"Red; standard polarity; 1206",None without color/polarity approval
+LED3,1,YES,SMT,Green STATUS2 LED,1206,Kingbright,APT3216LZGCK,"Low-current green; standard polarity; 1206",None without color/polarity approval
+Q1,1,YES,SMT,Dual N-channel battery-protection MOSFET,SOT-23-6 / SOT95P280X145-6N,Fortune Semiconductor,FS8205,"Pinout and package controlled to project-local footprint",None without engineering approval
+R1,1,YES,SMT,5.1 kOhm,1206,Yageo,RC1206FR-075K1L,"1%; 0.25 W minimum",Equivalent meeting all requirements
+R2,1,YES,SMT,5.1 kOhm,1206,Yageo,RC1206FR-075K1L,"1%; 0.25 W minimum",Equivalent meeting all requirements
+R3,1,YES,SMT,330 kOhm,1206,Yageo,RC1206FR-07330KL,"1%; 0.25 W minimum",Equivalent meeting all requirements
+R4,1,YES,SMT,110 kOhm,1206,Yageo,RC1206FR-07110KL,"1%; 0.25 W minimum",Equivalent meeting all requirements
+R5,1,YES,SMT,3.3 kOhm,1206,Yageo,RC1206FR-073K3L,"1%; 0.25 W minimum",Equivalent meeting all requirements
+R6,1,YES,SMT,47 kOhm,1206,Yageo,RC1206FR-0747KL,"1%; 0.25 W minimum",Equivalent meeting all requirements
+"R7,R8,R9,R11",4,YES,SMT,470 Ohm,1206,Yageo,RC1206FR-07470RL,"1%; 0.25 W minimum",Equivalent meeting all requirements
+R10,1,YES,SMT,10 kOhm,1206,Yageo,RC1206FR-0710KL,"1%; 0.25 W minimum",Equivalent meeting all requirements
+R12,1,YES,SMT,1 kOhm,1206,Yageo,RC1206FR-071KL,"1%; 0.25 W minimum",Equivalent meeting all requirements
+SW1,1,YES,SMT,SPDT right-angle slide switch,JS102011SAQN,C&K,JS102011SAQN,"Mechanical outline and actuator position controlled",None without mechanical approval
+U1,1,YES,SMT,4.2 V Li-ion charger with power-path; 2CC option,QFN-20 4x4 mm EP,Microchip Technology,MCP73871-2CCI/ML,"Industrial temperature; 4.2 V; 6-hour timer; LBO enabled",MCP73871T-2CCI/ML tape-and-reel equivalent
+U2,1,YES,SMT,Single-cell Li-ion protection controller,SOT-23-6,H&M Semiconductor,DW01A,"Use only datasheet-compatible DW01A pinout and thresholds",None without engineering approval

@@ -1,0 +1,20 @@
+[
+  {
+    "name": "TSAL6200_C5_edge_formed",
+    "source": "Vishay TSAL6200 body drawing; proposed hand-formed leads",
+    "confidence": "PROVISIONAL assembly geometry",
+    "notes": "Rear footprint angle 0: lens points to board top (-Y). 5mm axis height from rear surface, 1mm horizontal base offset. Do not bend at epoxy; qualify sample and optical opening. Not a factory lead-form variant.",
+    "local_bounds_mm": [
+      -1.63,
+      -0.24992229550020406,
+      -2.5,
+      4.17,
+      9.7,
+      7.899098627802367
+    ],
+    "sha256": {
+      ".wrl": "21305f1e46b87f1b5581e82219b39d8a48a229547a6caa1ed4afd837cd8348ea",
+      ".step": "f642c283871d249a0345931125058e3fa29d9805fbc732f0a45de903f5738e55"
+    }
+  }
+]

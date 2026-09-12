@@ -1,0 +1,99 @@
+Reference,Quantity,Value,MPN,Footprint,Side,Datasheet,Notes
+C1,1,100u,UVR1C101MDD,KK_Main:Nichicon_UVR_D5_P2,back,https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf,
+C2,1,100n,C315C104K5R5TA,KK_Main:KEMET_C315_P2p54,back,https://yageogroup.com/download/specsheet/C315C104K5R5TA,
+C3,1,100u,UVR1C101MDD,KK_Main:Nichicon_UVR_D5_P2,back,https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf,
+C4,1,100n,C315C104K5R5TA,KK_Main:KEMET_C315_P2p54,back,https://yageogroup.com/download/specsheet/C315C104K5R5TA,
+C5,1,100u,UVR1C101MDD,KK_Main:Nichicon_UVR_D5_P2,back,https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf,
+C6,1,100n,C315C104K5R5TA,KK_Main:KEMET_C315_P2p54,back,https://yageogroup.com/download/specsheet/C315C104K5R5TA,
+C7,1,100n,C315C104K5R5TA,KK_Main:KEMET_C315_P2p54,back,https://yageogroup.com/download/specsheet/C315C104K5R5TA,
+C8,1,100n,C315C104K5R5TA,KK_Main:KEMET_C315_P2p54,back,https://yageogroup.com/download/specsheet/C315C104K5R5TA,
+C9,1,10u,UVR1C100MDD,KK_Main:Nichicon_UVR_D5_P2,back,https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf,
+C10,1,100n,C315C104K5R5TA,KK_Main:KEMET_C315_P2p54,back,https://yageogroup.com/download/specsheet/C315C104K5R5TA,
+C11,1,10u,UVR1C100MDD,KK_Main:Nichicon_UVR_D5_P2,back,https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf,
+C12,1,100n,C315C104K5R5TA,KK_Main:KEMET_C315_P2p54,back,https://yageogroup.com/download/specsheet/C315C104K5R5TA,
+C13,1,100u,UVR1C101MDD,KK_Main:Nichicon_UVR_D5_P2,back,https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf,
+C14,1,100n,C315C104K5R5TA,KK_Main:KEMET_C315_P2p54,back,https://yageogroup.com/download/specsheet/C315C104K5R5TA,
+C15,1,10u,UVR1C100MDD,KK_Main:Nichicon_UVR_D5_P2,back,https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf,
+C16,1,100n,C315C104K5R5TA,KK_Main:KEMET_C315_P2p54,back,https://yageogroup.com/download/specsheet/C315C104K5R5TA,Suppression physically close to motor leads
+C17,1,100u,UVR1C101MDD,KK_Main:Nichicon_UVR_D5_P2,back,https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf,
+C18,1,10n,C315C103J1G5TA,KK_Main:KEMET_C315_P2p54,back,https://yageogroup.com/download/specsheet/C315C103J1G5TA,
+C19,1,10n,C315C103J1G5TA,KK_Main:KEMET_C315_P2p54,back,https://yageogroup.com/download/specsheet/C315C103J1G5TA,
+C20,1,1u,C315C105K5R5TA,KK_Main:KEMET_C315_P2p54,back,https://yageogroup.com/download/specsheet/C315C105K5R5TA,
+C21,1,10u,UVR1C100MDD,KK_Main:Nichicon_UVR_D5_P2,back,https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf,
+C22,1,10n,C315C103J1G5TA,KK_Main:KEMET_C315_P2p54,back,https://yageogroup.com/download/specsheet/C315C103J1G5TA,
+C23,1,100n,C315C104K5R5TA,KK_Main:KEMET_C315_P2p54,back,https://yageogroup.com/download/specsheet/C315C104K5R5TA,
+C24,1,100n,C315C104K5R5TA,KK_Main:KEMET_C315_P2p54,back,https://yageogroup.com/download/specsheet/C315C104K5R5TA,
+C25,1,100u,UVR1C101MDD,KK_Main:Nichicon_UVR_D5_P2,back,https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf,
+C26,1,100n,C315C104K5R5TA,KK_Main:KEMET_C315_P2p54,back,https://yageogroup.com/download/specsheet/C315C104K5R5TA,
+C27,1,100n,C315C104K5R5TA,KK_Main:KEMET_C315_P2p54,back,https://yageogroup.com/download/specsheet/C315C104K5R5TA,C.5 local U4 bypass.
+D1,1,TSAL6200,TSAL6200,KK_Main:TSAL6200_C5_EdgeFormed,back,https://www.vishay.com/docs/81010/tsal6200.pdf,C.5 rear top-facing formed leads: nominal lens axis 5mm off rear PCB. Verify optical direction and lead form.
+D2,1,1N5819,1N5819-E3/54,KK_Main:1N5819_DO41,back,https://www.vishay.com/docs/88525/1n5817.pdf,
+D3,1,RGB mood / common anode,WP154A4SEJ3VBDZGW/CA,KK_Main:RGB_CA_5mm_Socketed,front,https://www.kingbrightusa.com/images/catalog/SPEC/WP154A4SEJ3VBDZGW-CA.pdf,"C.5: Sullins PPTC041LFBN-RC socket, formed LED leads at 2.54mm. Actual lead retention qualification required. 1=R, 2=A+, 3=B, 4=G."
+J1,1,SYS_IN / JST-XH,B4B-XH-A(LF)(SN),KK_Main:JST_XH_B4B_4,back,https://www.jst-mfg.com/product/pdf/eng/eXH.pdf,4-rail-interface pins include ground; future supply must sequence rails together
+J2,1,XIITIA TFT header,PPTC081LFBN-RC,KK_Main:Sullins_PPTC081_LFB,front,https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/937/Female_Headers.100_DS.pdf,Display module B0DFWL25RB is a separate assembly item
+J3,1,GODIYMODULES SD,PPTC061LFBN-RC,KK_Main:Sullins_PPTC061_LFB,back,https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/937/Female_Headers.100_DS.pdf,SD module B0F82XWT4F is a separate assembly item
+J4,1,LCM0827A3038F motor,B2B-PH-K-S(LF)(SN),KK_Main:JST_PH_B2B_2,back,https://www.jst-mfg.com/product/pdf/eng/ePH.pdf,C.5 top-entry connector: mating plug inserts perpendicular to rear PCB.
+J5,1,8 ohm speaker,B2B-PH-K-S(LF)(SN),KK_Main:JST_PH_B2B_2,back,https://www.jst-mfg.com/product/pdf/eng/ePH.pdf,C.5 top-entry connector: mating plug inserts perpendicular to rear PCB.
+MOD1,1,ESP32-S3 SuperMini,Teyleten B0D47HBFDY,KK_Main:ESP32-S3-SuperMini,back,https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf,Carrier pad numbering/voltage path requires delivered-module qualification
+Q1,1,KSP2222ABU,KSP2222ABU,KK_Main:TO92_LeadFormed_P2p54,back,https://www.onsemi.com/pdf/datasheet/ksp2222a-d.pdf,
+Q2,1,KSP2222ABU,KSP2222ABU,KK_Main:TO92_LeadFormed_P2p54,back,https://www.onsemi.com/pdf/datasheet/ksp2222a-d.pdf,
+Q3,1,BC32725BU,BC32725BU,KK_Main:TO92_LeadFormed_P2p54,back,https://www.onsemi.com/pub/Collateral/BC327-D.PDF,
+Q4,1,TN0702N3-G,TN0702N3-G,KK_Main:TO92_LeadFormed_P2p54,back,https://ww1.microchip.com/downloads/en/DeviceDoc/TN0702-N-Channel-Enhancement-Mode-Vertical-DMOS-FET-Data-Sheet-20005941A.pdf,
+Q5,1,TN0702N3-G,TN0702N3-G,KK_Main:TO92_LeadFormed_P2p54,back,https://ww1.microchip.com/downloads/en/DeviceDoc/TN0702-N-Channel-Enhancement-Mode-Vertical-DMOS-FET-Data-Sheet-20005941A.pdf,"C.2: NMOS gate driver, S-G-D pins 1-2-3."
+Q6,1,LP0701N3-G,LP0701N3-G,KK_Main:TO92_LeadFormed_P2p54,back,https://ww1.microchip.com/downloads/en/DeviceDoc/LP0701-P-Channel-Enhancement-Mode-Lateral-MOSFET-Data-Sheet-20005447A.pdf,C.2: PMOS S-G-D pins 1-2-3. Do not fit former BC327 here.
+R1,1,4.7k,MFR-25FBF52-4K7,KK_Main:MFR25_Upright_P2p54,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,"C.5 upright resistor, 2.54mm pitch. Same MPN/value; form long return lead with clearance."
+R2,1,4.7k,MFR-25FBF52-4K7,KK_Main:MFR25_Upright_P2p54,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,"C.5 upright resistor, 2.54mm pitch. Same MPN/value; form long return lead with clearance."
+R3,1,10k,MFR-25FBF52-10K,KK_Main:MFR25_Upright_P2p54,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,"C.5 upright resistor, 2.54mm pitch. Same MPN/value; form long return lead with clearance."
+R4,1,10k,MFR-25FBF52-10K,KK_Main:MFR25_Upright_P2p54,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,"C.5 upright resistor, 2.54mm pitch. Same MPN/value; form long return lead with clearance."
+R5,1,10k,MFR-25FBF52-10K,KK_Main:MFR25_Upright_P2p54,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,"C.5 upright resistor, 2.54mm pitch. Same MPN/value; form long return lead with clearance."
+R6,1,10k,MFR-25FBF52-10K,KK_Main:MFR25_Upright_P2p54,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,"C.5 upright resistor, 2.54mm pitch. Same MPN/value; form long return lead with clearance."
+R7,1,10k,MFR-25FBF52-10K,KK_Main:MFR25_Upright_P2p54,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,"C.5 upright resistor, 2.54mm pitch. Same MPN/value; form long return lead with clearance."
+R8,1,10k,MFR-25FBF52-10K,KK_Main:MFR25_Upright_P2p54,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,"C.5 upright resistor, 2.54mm pitch. Same MPN/value; form long return lead with clearance."
+R9,1,10k,MFR-25FBF52-10K,KK_Main:MFR25_Upright_P2p54,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,"C.5 upright resistor, 2.54mm pitch. Same MPN/value; form long return lead with clearance."
+R10,1,10k,MFR-25FBF52-10K,KK_Main:MFR25_Upright_P2p54,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,"C.5 upright resistor, 2.54mm pitch. Same MPN/value; form long return lead with clearance."
+R11,1,10k,MFR-25FBF52-10K,KK_Main:MFR25_Upright_P2p54,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,"C.5 upright resistor, 2.54mm pitch. Same MPN/value; form long return lead with clearance."
+R12,1,10k,MFR-25FBF52-10K,KK_Main:MFR25_Upright_P2p54,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,"C.5 upright resistor, 2.54mm pitch. Same MPN/value; form long return lead with clearance."
+R13,1,10k,MFR-25FBF52-10K,KK_Main:MFR25_Upright_P2p54,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,"C.5 upright resistor, 2.54mm pitch. Same MPN/value; form long return lead with clearance."
+R14,1,10k,MFR-25FBF52-10K,KK_Main:MFR25_Upright_P2p54,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,"C.5 upright resistor, 2.54mm pitch. Same MPN/value; form long return lead with clearance."
+R15,1,10k,MFR-25FBF52-10K,KK_Main:MFR25_Upright_P2p54,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,"C.5 upright resistor, 2.54mm pitch. Same MPN/value; form long return lead with clearance."
+R16,1,10k,MFR-25FBF52-10K,KK_Main:MFR25_Upright_P2p54,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,"C.5 upright resistor, 2.54mm pitch. Same MPN/value; form long return lead with clearance."
+R17,1,10k,MFR-25FBF52-10K,KK_Main:MFR25_Upright_P2p54,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,"C.5 upright resistor, 2.54mm pitch. Same MPN/value; form long return lead with clearance."
+R18,1,10k,MFR-25FBF52-10K,KK_Main:MFR25_Upright_P2p54,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,"C.5 upright resistor, 2.54mm pitch. Same MPN/value; form long return lead with clearance."
+R19,1,4.7k,MFR-25FBF52-4K7,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,
+R20,1,100k,MFR-25FBF52-100K,KK_Main:MFR25_Upright_P2p54,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,"C.5 upright resistor, 2.54mm pitch. Same MPN/value; form long return lead with clearance."
+R21,1,220,MFR-25FBF52-220R,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,
+R22,1,100k,MFR-25FBF52-100K,KK_Main:MFR25_Upright_P2p54,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,"C.5 upright resistor, 2.54mm pitch. Same MPN/value; form long return lead with clearance."
+R23,1,100,MFR-25FBF52-100R,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Bring-up current limit; bright-screen qualification required
+R24,1,100,MFR-25FBF52-100R,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,
+R25,1,1k,MFR-25FBF52-1K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,
+R26,1,100k,MFR-25FBF52-100K,KK_Main:MFR25_Upright_P2p54,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,"C.5 upright resistor, 2.54mm pitch. Same MPN/value; form long return lead with clearance."
+R27,1,100,MFR-25FBF52-100R,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,
+R28,1,100,MFR-25FBF52-100R,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,
+R29,1,100k,MFR-25FBF52-100K,KK_Main:MFR25_Upright_P2p54,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,"C.5 upright resistor, 2.54mm pitch. Same MPN/value; form long return lead with clearance."
+R30,1,1k,MFR-25FBF52-1K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,
+R31,1,1k,MFR-25FBF52-1K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,
+R32,1,100k,MFR-25FBF52-100K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,
+R33,1,1k,MFR-25FBF52-1K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Conservative fixed attenuation; prototype gain check
+R34,1,4.7,MFR-25FBF52-4R7,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,
+R35,1,4.7,MFR-25FBF52-4R7,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,
+R36,1,1k,MFR-25FBF52-1K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,C.2 gate series resistor; no bipolar base current.
+R37,1,100k,MFR-25FBF52-100K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,
+R38,1,1k,MFR-25FBF52-1K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,C.2 gate series resistor; no bipolar base current.
+R39,1,100k,MFR-25FBF52-100K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,
+R40,1,1.8k,MFR-25FBF52-1K8,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,C.5 RGB driver: Approx. 10.4mA/channel default; program low-current mode for dimming.
+R41,1,10k,MFR-25FBF52-10K,KK_Main:MFR25_Upright_P2p54,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,"C.5 RGB driver: Output blanking pull-up. C.5 upright resistor, 2.54mm pitch. Same MPN/value; form long return lead with clearance."
+R42,1,100k,MFR-25FBF52-100K,KK_Main:MFR25_Upright_P2p54,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,"C.5 hold RGB CMOS input low while expander is reset/high impedance. C.5 upright resistor, 2.54mm pitch. Same MPN/value; form long return lead with clearance."
+R43,1,100k,MFR-25FBF52-100K,KK_Main:MFR25_Upright_P2p54,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,"C.5 hold RGB CMOS input low while expander is reset/high impedance. C.5 upright resistor, 2.54mm pitch. Same MPN/value; form long return lead with clearance."
+SW1,1,UP,Adafruit 3101,KK_Main:Adafruit3101_ABCD,front,https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png,200 ohm maximum closed contact resistance; custom footprint pending
+SW2,1,DOWN,Adafruit 3101,KK_Main:Adafruit3101_ABCD,front,https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png,200 ohm maximum closed contact resistance; custom footprint pending
+SW3,1,LEFT,Adafruit 3101,KK_Main:Adafruit3101_ABCD,front,https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png,200 ohm maximum closed contact resistance; custom footprint pending
+SW4,1,RIGHT,Adafruit 3101,KK_Main:Adafruit3101_ABCD,front,https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png,200 ohm maximum closed contact resistance; custom footprint pending
+SW5,1,A,Adafruit 3101,KK_Main:Adafruit3101_ABCD,front,https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png,200 ohm maximum closed contact resistance; custom footprint pending
+SW6,1,B,Adafruit 3101,KK_Main:Adafruit3101_ABCD,front,https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png,200 ohm maximum closed contact resistance; custom footprint pending
+SW7,1,X,Adafruit 3101,KK_Main:Adafruit3101_ABCD,front,https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png,200 ohm maximum closed contact resistance; custom footprint pending
+SW8,1,Y,Adafruit 3101,KK_Main:Adafruit3101_ABCD,front,https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png,200 ohm maximum closed contact resistance; custom footprint pending
+SW9,1,FN,Adafruit 3101,KK_Main:Adafruit3101_ABCD,front,https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png,200 ohm maximum closed contact resistance; custom footprint pending
+U1,1,MCP23017-E/SP,MCP23017-E/SP,KK_Main:ED281DT_DIP28_Socket,back,https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP23017-Data-Sheet-DS20001952.pdf,
+U2,1,TSOP38238,TSOP38238,KK_Main:TSOP38238_Vertical,back,https://www.vishay.com/docs/82491/tsop382.pdf,
+U3,1,TDA2822L-D08-T,TDA2822L-D08-T,KK_Main:ED08DT_DIP8_Socket,back,https://datasheet.lcsc.com/datasheet/pdf/8599ab4088134d37b4be13f0dc390034.pdf,
+U4,1,TLC5916IN,TLC5916IN,KK_Main:ED16DT_DIP16_Socket,back,https://www.ti.com/lit/ds/symlink/tlc5916.pdf,"C.5: 3.3 V logic, 5 V common-anode LED. OE high until zero data is latched."

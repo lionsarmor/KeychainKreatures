@@ -1,0 +1,164 @@
+(footprint "TO92_Flat_P2p54"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Horizontal TO-92; body toward local -Y; 2.54mm formed pin pitch, flat marked face away from PCB, 4mm lead-form run. Per-device pin numbering unchanged; confirm delivered package and bending fixture.")
+	(property "Reference" "REF**"
+		(at 2.54 -2 0)
+		(layer "F.SilkS")
+		(uuid "20159b20-9a67-48aa-98b3-6d90ff651169")
+		(effects
+			(font
+				(size 0.85 0.85)
+				(thickness 0.13)
+			)
+		)
+	)
+	(property "Value" "TO92_Flat_P2p54"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a84bc1b8-4e28-4904-b1f3-603853505dd0")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "696d95f5-e108-4b03-8586-dd9600334927")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "187af019-b669-4add-a86e-70a59b194e51")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -0.31 -9.55)
+		(end 5.39 -3.85)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "8b41eb5e-ab1a-448a-86ff-953b7d08851c")
+	)
+	(fp_rect
+		(start -1.4 -9.9)
+		(end 6.48 1.4)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "096236aa-72e8-4344-8af9-5742d1b18a83")
+	)
+	(fp_line
+		(start 0 -1.05)
+		(end 1.27 -4)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "7b55513c-4e54-4f5d-a9a7-432fc7d0ab79")
+	)
+	(fp_line
+		(start 2.54 -1.05)
+		(end 2.54 -4)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "01e72987-7a99-4918-9d0d-965e2856bda4")
+	)
+	(fp_line
+		(start 5.08 -1.05)
+		(end 3.81 -4)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "fb1266c0-d840-46c2-8800-b487149d8a5b")
+	)
+	(fp_rect
+		(start -0.16 -9.4)
+		(end 5.24 -4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "9df66334-8981-4265-b841-f1a6bd7b23c8")
+	)
+	(fp_text user "FLAT UP"
+		(at 2.54 -6.7 0)
+		(layer "F.SilkS")
+		(uuid "a9b6efe2-29a4-4451-a357-d96d96c014fc")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.7 1.7)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 45)
+		(uuid "fe412a4c-ccb1-405b-bb8d-858868919b33")
+	)
+	(pad "2" thru_hole circle
+		(at 2.54 0)
+		(size 1.7 1.7)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "af9267bc-861a-4e57-bb27-4ac065ddcf5d")
+	)
+	(pad "3" thru_hole circle
+		(at 5.08 0)
+		(size 1.7 1.7)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "4482c5e8-fe14-4edc-825d-842d10f51230")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/TO92_horizontal_envelope.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

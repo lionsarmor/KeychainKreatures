@@ -1,0 +1,214 @@
+[
+  {
+    "file": "esp32-s3.pdf",
+    "url": "https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf",
+    "status": "archived",
+    "type": "PDF",
+    "pages": 87,
+    "bytes": 1098115,
+    "sha256": "2d5a7cb7fd559d8d972bd88db32669c0196d23f22d7afaafb0f63d099b589a3f"
+  },
+  {
+    "file": "mcp23017.pdf",
+    "url": "https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP23017-Data-Sheet-DS20001952.pdf",
+    "status": "archived",
+    "type": "PDF",
+    "pages": 40,
+    "bytes": 1019348,
+    "sha256": "63cb5f2bec44434cdeeada1790d0316c9dc06b33febb489ad87bb0e2d540496a"
+  },
+  {
+    "file": "tsal6200.pdf",
+    "url": "https://www.vishay.com/docs/81010/tsal6200.pdf",
+    "status": "archived",
+    "type": "PDF",
+    "pages": 5,
+    "bytes": 105484,
+    "sha256": "a891a00a4cfd187f145b1ae36ddb40cff74891b872628f9efdbc59daa4ec4f8c"
+  },
+  {
+    "file": "tsop382.pdf",
+    "url": "https://www.vishay.com/docs/82491/tsop382.pdf",
+    "status": "archived",
+    "type": "PDF",
+    "pages": 8,
+    "bytes": 228319,
+    "sha256": "5f81c36aa02e9901e51c749d03aee75a23a29b8195b30bf1cba95f536c865074"
+  },
+  {
+    "file": "ksp2222a.pdf",
+    "url": "https://www.onsemi.com/pdf/datasheet/ksp2222a-d.pdf",
+    "status": "archived",
+    "type": "PDF",
+    "pages": 5,
+    "bytes": 198204,
+    "sha256": "c7190c4bb430e0261d02a8c2e9cdc6c74b710f791c43159b009fb4cdf16b08c7"
+  },
+  {
+    "file": "bc327.pdf",
+    "url": "https://www.onsemi.com/pub/Collateral/BC327-D.PDF",
+    "status": "archived",
+    "type": "PDF",
+    "pages": 6,
+    "bytes": 250649,
+    "sha256": "8d6436a99d9e28f5ec38b68a155bd317cdd79633192464e693d2b0aeed60c6a2"
+  },
+  {
+    "file": "1n5819.pdf",
+    "url": "https://www.vishay.com/docs/88525/1n5817.pdf",
+    "status": "archived",
+    "type": "PDF",
+    "pages": 4,
+    "bytes": 70784,
+    "sha256": "4465c825da3be36cc8a180c252d5d80e7651d9dc237cd3d09822a759f39c970b"
+  },
+  {
+    "file": "jst-ph.pdf",
+    "url": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf",
+    "status": "archived",
+    "type": "PDF",
+    "pages": 5,
+    "bytes": 103369,
+    "sha256": "447624f4f2f7d37c58c1eaa7ee314ad757fe7aff48f6186491ef6f69fbc00b96"
+  },
+  {
+    "file": "ntcle100.pdf",
+    "url": "https://www.vishay.com/docs/29049/ntcle100.pdf",
+    "status": "archived",
+    "type": "PDF",
+    "pages": 17,
+    "bytes": 243300,
+    "sha256": "f9d6153738198dc705ed681c3b55e70a6571f8fee13a4ed7b2b41e49973cb9c9"
+  },
+  {
+    "file": "mcp1826s.pdf",
+    "url": "https://ww1.microchip.com/downloads/en/DeviceDoc/22057B.pdf",
+    "status": "archived",
+    "type": "PDF",
+    "pages": 38,
+    "bytes": 846253,
+    "sha256": "86245f7017985fac98582b77b370b587db317a8b983d90fc8393f110435e5725"
+  },
+  {
+    "file": "mfr-resistors.pdf",
+    "url": "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf",
+    "status": "archived",
+    "type": "PDF",
+    "pages": 17,
+    "bytes": 1045274,
+    "sha256": "b460acdb476469774e0785a8ef85aec79e2d95fe41beaa79c5a414e4e95e3fe0"
+  },
+  {
+    "file": "tda2822.pdf",
+    "url": "https://datasheet.lcsc.com/datasheet/pdf/8599ab4088134d37b4be13f0dc390034.pdf",
+    "status": "archived",
+    "type": "PDF",
+    "pages": 6,
+    "bytes": 143337,
+    "sha256": "6d3c2ad5947477215db896a4099452aa7e699eb85c774aa3f47348c0056d8ed0"
+  },
+  {
+    "file": "dip-sockets.pdf",
+    "url": "https://www.on-shore.com/wp-content/uploads/EDXXXDT-1.pdf",
+    "status": "archived",
+    "type": "PDF",
+    "pages": 1,
+    "bytes": 108772,
+    "sha256": "a195b5b2865273d5d75033e7aa2a7c8365408985a0397f6177edd25d1ac7d0c4"
+  },
+  {
+    "file": "sullins-female-headers.pdf",
+    "url": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/937/Female_Headers.100_DS.pdf",
+    "status": "archived",
+    "type": "PDF",
+    "pages": 2,
+    "bytes": 472486,
+    "sha256": "e2e3037508eb5455117b72af6a305be9fca91da9ad3a94928b06deef33e53998"
+  },
+  {
+    "file": "nichicon-uvr.pdf",
+    "url": "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf",
+    "status": "archived",
+    "type": "PDF",
+    "pages": 4,
+    "bytes": 621390,
+    "sha256": "77ade7b9c76bb6e81b6233502327d29e0f8500ef624494000079148ec407db76"
+  },
+  {
+    "file": "lt1512.pdf",
+    "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/1512fc.pdf",
+    "status": "online-only; download unsuccessful"
+  },
+  {
+    "file": "soft-buttons.png",
+    "url": "https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png",
+    "status": "archived",
+    "type": "PNG",
+    "pages": null,
+    "bytes": 837264,
+    "sha256": "faddb6ffcfd12b8957f600dccdfbeaed4970d8a7d8f9f23aa9f30555df1cc6d0"
+  },
+  {
+    "file": "motor.pdf",
+    "url": "https://atta.szlcsc.com/upload/public/pdf/source/20251110/A6D51E996DED36DE7FC15C3D341F1E6E.pdf",
+    "status": "archived",
+    "type": "PDF",
+    "pages": 12,
+    "bytes": 2394719,
+    "sha256": "bae8db209db8bf58e3c350d589865894483a42ee0562f9399e0ff79d298179d5"
+  },
+  {
+    "file": "kemet-100nf.pdf",
+    "url": "https://yageogroup.com/download/specsheet/C315C104K5R5TA",
+    "status": "archived",
+    "type": "PDF",
+    "pages": 4,
+    "bytes": 287622,
+    "sha256": "f1309830ce54439f8dce963da5c2f27cbd1806bb43287e6c22bdd25fe6841719"
+  },
+  {
+    "file": "kemet-10nf.pdf",
+    "url": "https://yageogroup.com/download/specsheet/C315C103J1G5TA",
+    "status": "archived",
+    "type": "PDF",
+    "pages": 1,
+    "bytes": 67943,
+    "sha256": "dff8fbd92811fd3960f61534a728353ff04167f6a49c3c3e2546df9b63bed989"
+  },
+  {
+    "file": "mcp1700.pdf",
+    "url": "https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP1700-Data-Sheet-20001826F.pdf",
+    "status": "archived",
+    "type": "PDF",
+    "pages": 32,
+    "bytes": 1337355,
+    "sha256": "44919ee695b5d6ef69aeb81f6b1b50a2d3d7197accd5db08a8a0d83f15d10918"
+  },
+  {
+    "file": "kemet-1uf.pdf",
+    "url": "https://yageogroup.com/download/specsheet/C315C105K5R5TA",
+    "status": "archived",
+    "type": "PDF",
+    "pages": 1,
+    "bytes": 67910,
+    "sha256": "6bbdc574d8259823b386dfce135ef06102de4597829689a985f364a0feca1252"
+  },
+  {
+    "file": "me6217.pdf",
+    "url": "https://www.huazhoucn.com/upFiles/common/2022/12/ME6217%20Series_E5.0.pdf",
+    "status": "archived",
+    "type": "PDF",
+    "pages": 13,
+    "bytes": 456331,
+    "sha256": "fb290308c013d99b28fadf015a3830800cedbae65ac977f0b7d7679bead9edd4"
+  },
+  {
+    "file": "nologo-reference-schematic.png",
+    "url": "https://wiki.nologo.tech/assets/img/esp32/esp32s3supermini/1.png",
+    "status": "archived",
+    "type": "PNG",
+    "pages": null,
+    "bytes": 667223,
+    "sha256": "9bc7256b41384fde1007402fd187477b499f2ae2f265ead181a3a765e6b40201"
+  }
+]

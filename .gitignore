@@ -1,0 +1,18 @@
+# Local editor state and regeneration caches, not project source.
+__pycache__/
+*.py[cod]
+.DS_Store
+*.kicad_prl
+*.lck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+_autosave-*
+*.zip.building
+# Private configuration must never be published.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+# Local KiCad history can contain nested repositories and machine state.
+.history/

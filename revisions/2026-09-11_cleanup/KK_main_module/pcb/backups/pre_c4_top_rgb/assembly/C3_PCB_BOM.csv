@@ -1,0 +1,40 @@
+Quantity,References,MPN,Value,Footprint,Datasheet
+6,"C1, C3, C5, C13, C17, C25",UVR1C101MDD,100u,KK_Main:Nichicon_UVR_D5_P2,https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf
+13,"C2, C4, C6, C7, C8, C10, C12, C14, C16, C23, C24, C26, C27",C315C104K5R5TA,100n,KK_Main:KEMET_C315_P2p54,https://yageogroup.com/download/specsheet/C315C104K5R5TA
+4,"C9, C11, C15, C21",UVR1C100MDD,10u,KK_Main:Nichicon_UVR_D5_P2,https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf
+3,"C18, C19, C22",C315C103J1G5TA,10n,KK_Main:KEMET_C315_P2p54,https://yageogroup.com/download/specsheet/C315C103J1G5TA
+1,C20,C315C105K5R5TA,1u,KK_Main:KEMET_C315_P2p54,https://yageogroup.com/download/specsheet/C315C105K5R5TA
+1,D1,TSAL6200,TSAL6200,KK_Main:TSAL6200_LED5,https://www.vishay.com/docs/81010/tsal6200.pdf
+1,D2,1N5819-E3/54,1N5819,KK_Main:1N5819_DO41,https://www.vishay.com/docs/88525/1n5817.pdf
+1,J1,B4B-XH-A(LF)(SN),SYS_IN / JST-XH,KK_Main:JST_XH_B4B_4,https://www.jst-mfg.com/product/pdf/eng/eXH.pdf
+1,J2,PPTC081LFBN-RC,XIITIA TFT header,KK_Main:Sullins_PPTC081_LFB,https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/937/Female_Headers.100_DS.pdf
+1,J3,PPTC061LFBN-RC,GODIYMODULES SD,KK_Main:Sullins_PPTC061_LFB,https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/937/Female_Headers.100_DS.pdf
+1,J4,B2B-PH-K-S(LF)(SN),LCM0827A3038F motor,KK_Main:JST_PH_B2B_2,https://www.jst-mfg.com/product/pdf/eng/ePH.pdf
+1,J5,B2B-PH-K-S(LF)(SN),8 ohm speaker,KK_Main:JST_PH_B2B_2,https://www.jst-mfg.com/product/pdf/eng/ePH.pdf
+1,MOD1,Teyleten B0D47HBFDY,ESP32-S3 SuperMini,KK_Main:ESP32-S3-SuperMini,https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf
+2,"Q1, Q2",KSP2222ABU,KSP2222ABU,KK_Main:TO92_LeadFormed_P2p54,https://www.onsemi.com/pdf/datasheet/ksp2222a-d.pdf
+1,Q3,BC32725BU,BC32725BU,KK_Main:TO92_LeadFormed_P2p54,https://www.onsemi.com/pub/Collateral/BC327-D.PDF
+2,"Q4, Q5",TN0702N3-G,TN0702N3-G,KK_Main:TO92_LeadFormed_P2p54,https://ww1.microchip.com/downloads/en/DeviceDoc/TN0702-N-Channel-Enhancement-Mode-Vertical-DMOS-FET-Data-Sheet-20005941A.pdf
+1,Q6,LP0701N3-G,LP0701N3-G,KK_Main:TO92_LeadFormed_P2p54,https://ww1.microchip.com/downloads/en/DeviceDoc/LP0701-P-Channel-Enhancement-Mode-Lateral-MOSFET-Data-Sheet-20005447A.pdf
+3,"R1, R2, R19",MFR-25FBF52-4K7,4.7k,KK_Main:MFR25_10p16,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf
+17,"R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13, R14, R15, R16, R17, R18, R41",MFR-25FBF52-10K,10k,KK_Main:MFR25_10p16,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf
+9,"R20, R22, R26, R29, R32, R37, R39, R42, R43",MFR-25FBF52-100K,100k,KK_Main:MFR25_10p16,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf
+1,R21,MFR-25FBF52-220R,220,KK_Main:MFR25_10p16,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf
+4,"R23, R24, R27, R28",MFR-25FBF52-100R,100,KK_Main:MFR25_10p16,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf
+6,"R25, R30, R31, R33, R36, R38",MFR-25FBF52-1K,1k,KK_Main:MFR25_10p16,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf
+2,"R34, R35",MFR-25FBF52-4R7,4.7,KK_Main:MFR25_10p16,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf
+1,SW1,Adafruit 3101,UP,KK_Main:Adafruit3101_ABCD,https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png
+1,SW2,Adafruit 3101,DOWN,KK_Main:Adafruit3101_ABCD,https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png
+1,SW3,Adafruit 3101,LEFT,KK_Main:Adafruit3101_ABCD,https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png
+1,SW4,Adafruit 3101,RIGHT,KK_Main:Adafruit3101_ABCD,https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png
+1,SW5,Adafruit 3101,A,KK_Main:Adafruit3101_ABCD,https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png
+1,SW6,Adafruit 3101,B,KK_Main:Adafruit3101_ABCD,https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png
+1,SW7,Adafruit 3101,X,KK_Main:Adafruit3101_ABCD,https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png
+1,SW8,Adafruit 3101,Y,KK_Main:Adafruit3101_ABCD,https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png
+1,SW9,Adafruit 3101,FN,KK_Main:Adafruit3101_ABCD,https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png
+1,U1,MCP23017-E/SP,MCP23017-E/SP,KK_Main:ED281DT_DIP28_Socket,https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP23017-Data-Sheet-DS20001952.pdf
+1,U2,TSOP38238,TSOP38238,KK_Main:TSOP38238_Vertical,https://www.vishay.com/docs/82491/tsop382.pdf
+1,U3,TDA2822L-D08-T,TDA2822L-D08-T,KK_Main:ED08DT_DIP8_Socket,https://datasheet.lcsc.com/datasheet/pdf/8599ab4088134d37b4be13f0dc390034.pdf
+1,D3,WP154A4SEJ3VBDZGW/CA,RGB mood / common anode,KK_Main:RGB_CA_5mm_LeadFormed,https://www.kingbrightusa.com/images/catalog/SPEC/WP154A4SEJ3VBDZGW-CA.pdf
+1,R40,MFR-25FBF52-1K8,1.8k,KK_Main:MFR25_10p16,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf
+1,U4,TLC5916IN,TLC5916IN,KK_Main:ED16DT_DIP16_Socket,https://www.ti.com/lit/ds/symlink/tlc5916.pdf

@@ -1,0 +1,1006 @@
+{
+  "status": "C.2 electrical placement, unrouted",
+  "components": [
+    {
+      "reference": "J1",
+      "side": "back",
+      "courtyard_mm": [
+        61.275,
+        48.6,
+        74.725,
+        55.4
+      ],
+      "angle": 0.0
+    },
+    {
+      "reference": "C1",
+      "side": "back",
+      "courtyard_mm": [
+        61.225,
+        55.725,
+        66.775,
+        61.275
+      ],
+      "angle": -90.0
+    },
+    {
+      "reference": "C2",
+      "side": "back",
+      "courtyard_mm": [
+        57.205,
+        50.569999,
+        60.795,
+        55.429999
+      ],
+      "angle": 90.0
+    },
+    {
+      "reference": "C3",
+      "side": "back",
+      "courtyard_mm": [
+        67.225,
+        55.725,
+        72.775,
+        61.275
+      ],
+      "angle": -90.0
+    },
+    {
+      "reference": "C4",
+      "side": "back",
+      "courtyard_mm": [
+        67.705,
+        43.569999,
+        71.295,
+        48.429999
+      ],
+      "angle": 90.0
+    },
+    {
+      "reference": "C5",
+      "side": "back",
+      "courtyard_mm": [
+        67.225,
+        61.725,
+        72.775,
+        67.275
+      ],
+      "angle": -90.0
+    },
+    {
+      "reference": "C6",
+      "side": "back",
+      "courtyard_mm": [
+        52.57,
+        43.205,
+        57.43,
+        46.795
+      ],
+      "angle": 0.0
+    },
+    {
+      "reference": "MOD1",
+      "side": "front",
+      "courtyard_mm": [
+        56.725,
+        6.475,
+        75.275,
+        31.725
+      ],
+      "angle": 180.0
+    },
+    {
+      "reference": "J2",
+      "side": "front",
+      "courtyard_mm": [
+        28.315,
+        9.205,
+        49.685,
+        12.795
+      ],
+      "angle": 90.0
+    },
+    {
+      "reference": "J3",
+      "side": "front",
+      "courtyard_mm": [
+        3.205,
+        35.855,
+        6.795,
+        52.145
+      ],
+      "angle": 0.0
+    },
+    {
+      "reference": "R17",
+      "side": "back",
+      "courtyard_mm": [
+        35.845,
+        2.475,
+        48.155,
+        5.525
+      ],
+      "angle": 180.0
+    },
+    {
+      "reference": "R18",
+      "side": "back",
+      "courtyard_mm": [
+        3.975,
+        52.345,
+        7.025,
+        64.655
+      ],
+      "angle": 90.0
+    },
+    {
+      "reference": "R14",
+      "side": "back",
+      "courtyard_mm": [
+        42.345,
+        12.975,
+        54.655,
+        16.025
+      ],
+      "angle": 180.0
+    },
+    {
+      "reference": "R16",
+      "side": "back",
+      "courtyard_mm": [
+        37.845,
+        5.975,
+        50.155,
+        9.025
+      ],
+      "angle": 180.0
+    },
+    {
+      "reference": "R15",
+      "side": "back",
+      "courtyard_mm": [
+        49.475,
+        16.345,
+        52.525,
+        28.655
+      ],
+      "angle": 90.0
+    },
+    {
+      "reference": "C10",
+      "side": "back",
+      "courtyard_mm": [
+        3.205,
+        24.57,
+        6.795,
+        29.43
+      ],
+      "angle": 90.0
+    },
+    {
+      "reference": "C11",
+      "side": "back",
+      "courtyard_mm": [
+        2.225,
+        29.725,
+        7.775,
+        35.275
+      ],
+      "angle": 90.0
+    },
+    {
+      "reference": "C12",
+      "side": "back",
+      "courtyard_mm": [
+        30.705,
+        13.07,
+        34.295,
+        17.93
+      ],
+      "angle": -90.0
+    },
+    {
+      "reference": "C13",
+      "side": "back",
+      "courtyard_mm": [
+        29.725,
+        3.225,
+        35.275,
+        8.775
+      ],
+      "angle": 90.0
+    },
+    {
+      "reference": "Q3",
+      "side": "back",
+      "courtyard_mm": [
+        24.424999,
+        18.105,
+        31.574999,
+        22.895
+      ],
+      "angle": 0.0
+    },
+    {
+      "reference": "Q2",
+      "side": "back",
+      "courtyard_mm": [
+        34.925,
+        14.105,
+        42.075,
+        18.895
+      ],
+      "angle": 0.0
+    },
+    {
+      "reference": "R19",
+      "side": "back",
+      "courtyard_mm": [
+        75.475,
+        7.845,
+        78.525,
+        20.155
+      ],
+      "angle": -90.0
+    },
+    {
+      "reference": "R20",
+      "side": "back",
+      "courtyard_mm": [
+        75.475,
+        20.345,
+        78.525,
+        32.655
+      ],
+      "angle": -90.0
+    },
+    {
+      "reference": "R21",
+      "side": "back",
+      "courtyard_mm": [
+        21.345,
+        58.975,
+        33.655,
+        62.025
+      ],
+      "angle": 0.0
+    },
+    {
+      "reference": "R22",
+      "side": "back",
+      "courtyard_mm": [
+        24.845,
+        67.475,
+        37.155,
+        70.525
+      ],
+      "angle": 180.0
+    },
+    {
+      "reference": "R23",
+      "side": "back",
+      "courtyard_mm": [
+        37.345,
+        62.475,
+        49.655,
+        65.525
+      ],
+      "angle": 0.0
+    },
+    {
+      "reference": "U1",
+      "side": "back",
+      "courtyard_mm": [
+        8.644999,
+        16.874999,
+        19.354999,
+        53.124999
+      ],
+      "angle": 0.0
+    },
+    {
+      "reference": "R2",
+      "side": "back",
+      "courtyard_mm": [
+        23.475,
+        45.845,
+        26.525,
+        58.155
+      ],
+      "angle": 90.0
+    },
+    {
+      "reference": "R1",
+      "side": "back",
+      "courtyard_mm": [
+        1.475,
+        7.845,
+        4.525,
+        20.155
+      ],
+      "angle": -90.0
+    },
+    {
+      "reference": "R3",
+      "side": "back",
+      "courtyard_mm": [
+        12.845,
+        75.475,
+        25.155,
+        78.525
+      ],
+      "angle": 180.0
+    },
+    {
+      "reference": "R4",
+      "side": "back",
+      "courtyard_mm": [
+        12.845,
+        78.975,
+        25.155,
+        82.025
+      ],
+      "angle": 180.0
+    },
+    {
+      "reference": "C7",
+      "side": "back",
+      "courtyard_mm": [
+        19.705,
+        19.57,
+        23.295,
+        24.43
+      ],
+      "angle": 90.0
+    },
+    {
+      "reference": "C8",
+      "side": "back",
+      "courtyard_mm": [
+        3.57,
+        20.705,
+        8.43,
+        24.295
+      ],
+      "angle": 180.0
+    },
+    {
+      "reference": "C9",
+      "side": "back",
+      "courtyard_mm": [
+        19.725,
+        28.225,
+        25.275,
+        33.775
+      ],
+      "angle": 0.0
+    },
+    {
+      "reference": "SW1",
+      "side": "front",
+      "courtyard_mm": [
+        13.775,
+        62.575,
+        24.225,
+        71.425
+      ],
+      "angle": 0.0
+    },
+    {
+      "reference": "R5",
+      "side": "back",
+      "courtyard_mm": [
+        12.845,
+        82.475,
+        25.155,
+        85.525
+      ],
+      "angle": 0.0
+    },
+    {
+      "reference": "SW2",
+      "side": "front",
+      "courtyard_mm": [
+        13.775,
+        86.575,
+        24.225,
+        95.425
+      ],
+      "angle": 0.0
+    },
+    {
+      "reference": "R6",
+      "side": "back",
+      "courtyard_mm": [
+        25.475,
+        83.845,
+        28.525,
+        96.155
+      ],
+      "angle": 90.0
+    },
+    {
+      "reference": "SW3",
+      "side": "front",
+      "courtyard_mm": [
+        1.775,
+        74.575,
+        12.225,
+        83.425
+      ],
+      "angle": 0.0
+    },
+    {
+      "reference": "R7",
+      "side": "back",
+      "courtyard_mm": [
+        9.475,
+        83.845,
+        12.525,
+        96.155
+      ],
+      "angle": 90.0
+    },
+    {
+      "reference": "SW4",
+      "side": "front",
+      "courtyard_mm": [
+        25.775,
+        74.575,
+        36.225,
+        83.425
+      ],
+      "angle": 0.0
+    },
+    {
+      "reference": "R8",
+      "side": "back",
+      "courtyard_mm": [
+        39.975,
+        74.345,
+        43.025,
+        86.655
+      ],
+      "angle": 90.0
+    },
+    {
+      "reference": "SW5",
+      "side": "front",
+      "courtyard_mm": [
+        67.775,
+        74.575,
+        78.225,
+        83.425
+      ],
+      "angle": 0.0
+    },
+    {
+      "reference": "R9",
+      "side": "back",
+      "courtyard_mm": [
+        54.845,
+        72.475,
+        67.155,
+        75.525
+      ],
+      "angle": 0.0
+    },
+    {
+      "reference": "SW6",
+      "side": "front",
+      "courtyard_mm": [
+        55.775,
+        86.575,
+        66.225,
+        95.425
+      ],
+      "angle": 0.0
+    },
+    {
+      "reference": "R10",
+      "side": "back",
+      "courtyard_mm": [
+        10.845,
+        53.475,
+        23.155,
+        56.525
+      ],
+      "angle": 180.0
+    },
+    {
+      "reference": "SW7",
+      "side": "front",
+      "courtyard_mm": [
+        55.775,
+        62.575,
+        66.225,
+        71.425
+      ],
+      "angle": 0.0
+    },
+    {
+      "reference": "R11",
+      "side": "back",
+      "courtyard_mm": [
+        7.475,
+        53.345,
+        10.525,
+        65.655
+      ],
+      "angle": 90.0
+    },
+    {
+      "reference": "SW8",
+      "side": "front",
+      "courtyard_mm": [
+        43.775,
+        74.575,
+        54.225,
+        83.425
+      ],
+      "angle": 0.0
+    },
+    {
+      "reference": "R12",
+      "side": "back",
+      "courtyard_mm": [
+        31.345,
+        70.975,
+        43.655,
+        74.025
+      ],
+      "angle": 0.0
+    },
+    {
+      "reference": "SW9",
+      "side": "front",
+      "courtyard_mm": [
+        34.775,
+        89.575,
+        45.225,
+        98.425
+      ],
+      "angle": 0.0
+    },
+    {
+      "reference": "R13",
+      "side": "back",
+      "courtyard_mm": [
+        36.475,
+        76.345,
+        39.525,
+        88.655
+      ],
+      "angle": -90.0
+    },
+    {
+      "reference": "Q1",
+      "side": "back",
+      "courtyard_mm": [
+        19.925,
+        2.104999,
+        27.075,
+        6.894999
+      ],
+      "angle": 180.0
+    },
+    {
+      "reference": "R25",
+      "side": "back",
+      "courtyard_mm": [
+        39.845,
+        65.975,
+        52.155,
+        69.025
+      ],
+      "angle": 180.0
+    },
+    {
+      "reference": "R26",
+      "side": "back",
+      "courtyard_mm": [
+        52.475,
+        59.345,
+        55.525,
+        71.655
+      ],
+      "angle": 90.0
+    },
+    {
+      "reference": "D1",
+      "side": "front",
+      "courtyard_mm": [
+        4.76,
+        8.765,
+        11.24,
+        15.235
+      ],
+      "angle": 0.0
+    },
+    {
+      "reference": "R24",
+      "side": "back",
+      "courtyard_mm": [
+        12.845,
+        71.975,
+        25.155,
+        75.025
+      ],
+      "angle": 180.0
+    },
+    {
+      "reference": "U2",
+      "side": "front",
+      "courtyard_mm": [
+        14.325,
+        7.075,
+        21.675,
+        12.925
+      ],
+      "angle": 180.0
+    },
+    {
+      "reference": "R27",
+      "side": "back",
+      "courtyard_mm": [
+        14.845,
+        13.475,
+        27.155,
+        16.525
+      ],
+      "angle": 180.0
+    },
+    {
+      "reference": "C14",
+      "side": "back",
+      "courtyard_mm": [
+        10.205,
+        3.57,
+        13.795,
+        8.43
+      ],
+      "angle": 90.0
+    },
+    {
+      "reference": "C15",
+      "side": "back",
+      "courtyard_mm": [
+        14.225,
+        1.225,
+        19.775,
+        6.775
+      ],
+      "angle": 90.0
+    },
+    {
+      "reference": "Q4",
+      "side": "back",
+      "courtyard_mm": [
+        56.425,
+        34.605,
+        63.575,
+        39.395
+      ],
+      "angle": 0.0
+    },
+    {
+      "reference": "R28",
+      "side": "back",
+      "courtyard_mm": [
+        31.845,
+        19.475,
+        44.155,
+        22.525
+      ],
+      "angle": 0.0
+    },
+    {
+      "reference": "R29",
+      "side": "back",
+      "courtyard_mm": [
+        45.475,
+        21.345,
+        48.525,
+        33.655
+      ],
+      "angle": -90.0
+    },
+    {
+      "reference": "J4",
+      "side": "back",
+      "courtyard_mm": [
+        67.674999,
+        34.525,
+        76.324999,
+        41.475
+      ],
+      "angle": 90.0
+    },
+    {
+      "reference": "D2",
+      "side": "back",
+      "courtyard_mm": [
+        63.875,
+        32.045,
+        67.125,
+        44.955
+      ],
+      "angle": 90.0
+    },
+    {
+      "reference": "C16",
+      "side": "back",
+      "courtyard_mm": [
+        72.07,
+        41.705,
+        76.93,
+        45.295
+      ],
+      "angle": 180.0
+    },
+    {
+      "reference": "C17",
+      "side": "back",
+      "courtyard_mm": [
+        57.725,
+        39.725,
+        63.275,
+        45.275
+      ],
+      "angle": 180.0
+    },
+    {
+      "reference": "R30",
+      "side": "back",
+      "courtyard_mm": [
+        52.975,
+        26.345,
+        56.025,
+        38.655
+      ],
+      "angle": -90.0
+    },
+    {
+      "reference": "C18",
+      "side": "back",
+      "courtyard_mm": [
+        50.07,
+        52.205,
+        54.93,
+        55.795
+      ],
+      "angle": 180.0
+    },
+    {
+      "reference": "R31",
+      "side": "back",
+      "courtyard_mm": [
+        44.845,
+        55.975,
+        57.155,
+        59.025
+      ],
+      "angle": 180.0
+    },
+    {
+      "reference": "C19",
+      "side": "back",
+      "courtyard_mm": [
+        44.705,
+        50.569999,
+        48.295,
+        55.429999
+      ],
+      "angle": 90.0
+    },
+    {
+      "reference": "C20",
+      "side": "back",
+      "courtyard_mm": [
+        37.705,
+        54.57,
+        41.295,
+        59.43
+      ],
+      "angle": -90.0
+    },
+    {
+      "reference": "R32",
+      "side": "back",
+      "courtyard_mm": [
+        41.475,
+        49.845,
+        44.525,
+        62.155
+      ],
+      "angle": 90.0
+    },
+    {
+      "reference": "R33",
+      "side": "back",
+      "courtyard_mm": [
+        44.845,
+        46.975,
+        57.155,
+        50.025
+      ],
+      "angle": 0.0
+    },
+    {
+      "reference": "U3",
+      "side": "back",
+      "courtyard_mm": [
+        33.645,
+        38.585,
+        44.355,
+        49.415
+      ],
+      "angle": 0.0
+    },
+    {
+      "reference": "J5",
+      "side": "back",
+      "courtyard_mm": [
+        19.675,
+        38.525,
+        28.325,
+        45.475
+      ],
+      "angle": 90.0
+    },
+    {
+      "reference": "C21",
+      "side": "back",
+      "courtyard_mm": [
+        44.725,
+        41.225,
+        50.275,
+        46.775
+      ],
+      "angle": 90.0
+    },
+    {
+      "reference": "C22",
+      "side": "back",
+      "courtyard_mm": [
+        41.205,
+        33.569999,
+        44.795,
+        38.429999
+      ],
+      "angle": 90.0
+    },
+    {
+      "reference": "C23",
+      "side": "back",
+      "courtyard_mm": [
+        33.705,
+        49.57,
+        37.295,
+        54.43
+      ],
+      "angle": -90.0
+    },
+    {
+      "reference": "R34",
+      "side": "back",
+      "courtyard_mm": [
+        33.975,
+        54.845,
+        37.025,
+        67.155
+      ],
+      "angle": -90.0
+    },
+    {
+      "reference": "C24",
+      "side": "back",
+      "courtyard_mm": [
+        28.57,
+        36.705,
+        33.43,
+        40.295
+      ],
+      "angle": 180.0
+    },
+    {
+      "reference": "R35",
+      "side": "back",
+      "courtyard_mm": [
+        28.345,
+        33.475,
+        40.655,
+        36.525
+      ],
+      "angle": 0.0
+    },
+    {
+      "reference": "Q6",
+      "side": "back",
+      "courtyard_mm": [
+        28.604999,
+        51.425,
+        33.394999,
+        58.575
+      ],
+      "angle": 90.0
+    },
+    {
+      "reference": "Q5",
+      "side": "back",
+      "courtyard_mm": [
+        45.105,
+        33.925,
+        49.895,
+        41.075
+      ],
+      "angle": 90.0
+    },
+    {
+      "reference": "R36",
+      "side": "back",
+      "courtyard_mm": [
+        20.345,
+        24.975,
+        32.655,
+        28.025
+      ],
+      "angle": 0.0
+    },
+    {
+      "reference": "R37",
+      "side": "back",
+      "courtyard_mm": [
+        32.845,
+        22.975,
+        45.155,
+        26.025
+      ],
+      "angle": 0.0
+    },
+    {
+      "reference": "R38",
+      "side": "back",
+      "courtyard_mm": [
+        32.845,
+        29.975,
+        45.155,
+        33.025
+      ],
+      "angle": 0.0
+    },
+    {
+      "reference": "R39",
+      "side": "back",
+      "courtyard_mm": [
+        32.845,
+        26.475,
+        45.155,
+        29.525
+      ],
+      "angle": 180.0
+    },
+    {
+      "reference": "C25",
+      "side": "back",
+      "courtyard_mm": [
+        27.725,
+        45.725,
+        33.275,
+        51.275
+      ],
+      "angle": 180.0
+    },
+    {
+      "reference": "C26",
+      "side": "back",
+      "courtyard_mm": [
+        29.705,
+        40.569999,
+        33.295,
+        45.429999
+      ],
+      "angle": 90.0
+    }
+  ]
+}

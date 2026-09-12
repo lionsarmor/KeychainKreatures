@@ -1,0 +1,2575 @@
+{
+  "revision": "P.2 PROTOTYPE DRAFT",
+  "sheet_uuid": "58f17ffb-ec03-5adb-9163-f7a9250ce9a1",
+  "components": [
+    {
+      "ref": "J1",
+      "symbol": "USB_C_Receptacle_USB2.0",
+      "value": "USB-C CHARGE ONLY",
+      "mpn": "HC-TYPE-C-16P-01A",
+      "nets": {
+        "A1": "GND",
+        "A4": "VBUS",
+        "A5": "CC1",
+        "A6": null,
+        "A7": null,
+        "A8": null,
+        "A9": "VBUS",
+        "A12": "GND",
+        "B1": "GND",
+        "B4": "VBUS",
+        "B5": "CC2",
+        "B6": null,
+        "B7": null,
+        "B8": null,
+        "B9": "VBUS",
+        "B12": "GND",
+        "S1": "GND"
+      },
+      "group": "USB-C CHARGING ONLY",
+      "footprint": "KK_Power:USB_C_HCTL",
+      "note": "All USB D+/D- and SBU pins intentionally NC. Shield grounded.",
+      "uuid": "a3f4ba5b-a196-5a47-920b-44c0cf901c16",
+      "datasheet": "https://datasheet.lcsc.com/lcsc/2211161000_HCTL-HC-TYPE-C-16P-01A_C2894897.pdf",
+      "source_footprint": "KK_Power:USB_C_HCTL",
+      "sch_x": 54.61,
+      "sch_y": 55.88
+    },
+    {
+      "ref": "U14",
+      "symbol": "TLV75533PDBV",
+      "value": "TLV75533PDBVR",
+      "mpn": "TLV75533PDBVR",
+      "nets": {
+        "1": "VBUS",
+        "2": "GND",
+        "3": "VBUS",
+        "4": null,
+        "5": "CC_3V3"
+      },
+      "group": "USB-C CHARGING ONLY",
+      "footprint": "KK_Power:SOT-23-5",
+      "note": "Dedicated USB-powered CC supply: TUSB320 VDD recommended maximum is 5V, so do not feed it raw USB. Not connected to main-board 3V3.",
+      "uuid": "890e562f-87d0-5209-9bac-975a88a96566",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/tlv755p.pdf",
+      "source_footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "sch_x": 153.67000000000002,
+      "sch_y": 55.88
+    },
+    {
+      "ref": "C72",
+      "symbol": "C",
+      "value": "1u",
+      "mpn": "GRM188R71C105KA12D",
+      "nets": {
+        "1": "CC_3V3",
+        "2": "GND"
+      },
+      "group": "USB-C CHARGING ONLY",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "note": "Check effective capacitance at operating bias; 16V minimum for bulk.",
+      "uuid": "8659ac98-6db6-58e8-8def-de94eb497399",
+      "datasheet": "",
+      "source_footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "sch_x": 31.75,
+      "sch_y": 139.7
+    },
+    {
+      "ref": "U3",
+      "symbol": "TUSB320LAI",
+      "value": "TUSB320LAIRWBR",
+      "mpn": "TUSB320LAIRWBR",
+      "nets": {
+        "1": "CC1",
+        "2": "CC2",
+        "3": "GND",
+        "4": "VBUS_DET",
+        "5": null,
+        "6": null,
+        "7": "CC_DEFAULT_N",
+        "8": null,
+        "9": null,
+        "10": "GND",
+        "11": "GND",
+        "12": "CC_3V3"
+      },
+      "group": "USB-C CHARGING ONLY",
+      "footprint": "KK_Power:Texas_X2QFN-12_1.6x1.6mm_P0.4mm",
+      "note": "Sink/GPIO mode; internal Rd. Pullups use the same regulated supply to avoid backpowering. Not a USB data controller.",
+      "uuid": "0426c53e-fe81-59ef-99f0-449f9ea25bc3",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/tusb320lai.pdf",
+      "source_footprint": "Package_DFN_QFN:Texas_X2QFN-12_1.6x1.6mm_P0.4mm",
+      "sch_x": 54.61,
+      "sch_y": 110.49
+    },
+    {
+      "ref": "R1",
+      "symbol": "R",
+      "value": "887k",
+      "mpn": "RC0603FR07887KL",
+      "nets": {
+        "1": "VBUS",
+        "2": "VBUS_DET"
+      },
+      "group": "USB-C CHARGING ONLY",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "note": "1%; standard E96 value. TUSB320LAI rev D recommended VBUS resistor range 855..920kohm, nominal 887kohm.",
+      "uuid": "4b2f523d-712e-5af9-8f11-cfeea759f344",
+      "datasheet": "",
+      "source_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "sch_x": 68.58,
+      "sch_y": 139.7
+    },
+    {
+      "ref": "R2",
+      "symbol": "R",
+      "value": "4.7k",
+      "mpn": "RC0603FR074K7L",
+      "nets": {
+        "1": "CC_3V3",
+        "2": "CC_DEFAULT_N"
+      },
+      "group": "USB-C CHARGING ONLY",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "note": "1% thick film",
+      "uuid": "b63071e2-7b95-5913-b72b-53ddbc0fbfd3",
+      "datasheet": "",
+      "source_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "sch_x": 104.14,
+      "sch_y": 139.7
+    },
+    {
+      "ref": "Q4",
+      "symbol": "AO3400A",
+      "value": "AO3400A",
+      "mpn": "AO3400A",
+      "nets": {
+        "1": "CC_DEFAULT_N",
+        "2": "GND",
+        "3": "USB_HIGH_CURRENT"
+      },
+      "group": "USB-C CHARGING ONLY",
+      "footprint": "KK_Power:SOT-23",
+      "note": "Logic-level FET specified at 2.5V gate drive; clamps high-current request in default/unattached state.",
+      "uuid": "4aaf6619-1b67-5b08-be11-135f4c1609f1",
+      "datasheet": "https://www.aosmd.com/sites/default/files/res/datasheets/AO3400A.pdf",
+      "source_footprint": "Package_TO_SOT_SMD:SOT-23",
+      "sch_x": 139.7,
+      "sch_y": 139.7
+    },
+    {
+      "ref": "R3",
+      "symbol": "R",
+      "value": "10k",
+      "mpn": "RC0603FR0710KL",
+      "nets": {
+        "1": "CC_3V3",
+        "2": "USB_HIGH_CURRENT"
+      },
+      "group": "USB-C CHARGING ONLY",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "note": "1% thick film",
+      "uuid": "0cee8a7b-eabe-557a-aa59-940bc705066c",
+      "datasheet": "",
+      "source_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "sch_x": 176.53,
+      "sch_y": 139.7
+    },
+    {
+      "ref": "C1",
+      "symbol": "C",
+      "value": "1u",
+      "mpn": "GRM188R71C105KA12D",
+      "nets": {
+        "1": "VBUS",
+        "2": "GND"
+      },
+      "group": "USB-C CHARGING ONLY",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "note": "Check effective capacitance at operating bias; 16V minimum for bulk.",
+      "uuid": "1f614d9c-7420-586d-b9c6-d2af7849d352",
+      "datasheet": "",
+      "source_footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "sch_x": 31.75,
+      "sch_y": 161.29
+    },
+    {
+      "ref": "C2",
+      "symbol": "C",
+      "value": "100n",
+      "mpn": "GRM188R71C104KA01D",
+      "nets": {
+        "1": "CC_3V3",
+        "2": "GND"
+      },
+      "group": "USB-C CHARGING ONLY",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "note": "Check effective capacitance at operating bias; 16V minimum for bulk.",
+      "uuid": "f427c39f-37bf-56cf-bb7b-99c00d92b854",
+      "datasheet": "",
+      "source_footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "sch_x": 68.58,
+      "sch_y": 161.29
+    },
+    {
+      "ref": "D1",
+      "symbol": "D",
+      "value": "SMAJ5.0A",
+      "mpn": "SMAJ5.0A",
+      "nets": {
+        "1": "VBUS",
+        "2": "GND"
+      },
+      "group": "USB-C CHARGING ONLY",
+      "footprint": "KK_Power:D_SMA",
+      "note": "Unidirectional input TVS; pin 1 cathode.",
+      "uuid": "63b0cc36-da70-5e4a-a719-21fb5d5d7603",
+      "datasheet": "",
+      "source_footprint": "Diode_SMD:D_SMA",
+      "sch_x": 104.14,
+      "sch_y": 161.29
+    },
+    {
+      "ref": "U1",
+      "symbol": "BQ24075T",
+      "value": "BQ24075TRGTR",
+      "mpn": "BQ24075TRGTR",
+      "nets": {
+        "1": "NTC",
+        "2": "VBAT",
+        "3": "VBAT",
+        "4": "GND",
+        "5": "USB_HIGH_CURRENT",
+        "6": "GND",
+        "7": "PGOOD_N",
+        "8": "GND",
+        "9": "CHARGE_N",
+        "10": "SYS_RAW",
+        "11": "SYS_RAW",
+        "12": "CHG_ILIM",
+        "13": "USB_CHG",
+        "14": null,
+        "15": "GND",
+        "16": "CHG_ISET",
+        "17": "GND"
+      },
+      "group": "CELL CHARGER / POWER PATH",
+      "footprint": "KK_Power:VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm",
+      "note": "Voltage-based TS network; only the T variant is valid. SYSOFF pin 15 grounded. Approx. 300mA charge target. No NTC bypass.",
+      "uuid": "a0c380e7-d349-51fc-89b5-2dd5000be680",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/bq24075t.pdf",
+      "source_footprint": "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm",
+      "sch_x": 257.81,
+      "sch_y": 55.88
+    },
+    {
+      "ref": "R4",
+      "symbol": "R",
+      "value": "2.94k",
+      "mpn": "RT0603BRD072K94L",
+      "nets": {
+        "1": "CHG_ISET",
+        "2": "GND"
+      },
+      "group": "CELL CHARGER / POWER PATH",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "note": "0.1%; below the 3kohm maximum programming resistance including tolerance.",
+      "uuid": "be36275f-eeaf-5c01-8ece-a1887bac1897",
+      "datasheet": "",
+      "source_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "sch_x": 236.22,
+      "sch_y": 100.33
+    },
+    {
+      "ref": "R5",
+      "symbol": "R",
+      "value": "1.3k",
+      "mpn": "RC0603FR071K3L",
+      "nets": {
+        "1": "CHG_ILIM",
+        "2": "GND"
+      },
+      "group": "CELL CHARGER / POWER PATH",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "note": "1% thick film",
+      "uuid": "3bc03d69-ede2-55f1-bd4c-a577b9108a27",
+      "datasheet": "",
+      "source_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "sch_x": 271.78000000000003,
+      "sch_y": 100.33
+    },
+    {
+      "ref": "C3",
+      "symbol": "C",
+      "value": "4.7u",
+      "mpn": "GRM21BR71C475KA73L",
+      "nets": {
+        "1": "USB_CHG",
+        "2": "GND"
+      },
+      "group": "CELL CHARGER / POWER PATH",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "note": "Check effective capacitance at operating bias; 16V minimum for bulk.",
+      "uuid": "9bee53b3-b579-5a34-bcd6-2813f7e6a9f4",
+      "datasheet": "",
+      "source_footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sch_x": 308.61,
+      "sch_y": 100.33
+    },
+    {
+      "ref": "C4",
+      "symbol": "C",
+      "value": "10u",
+      "mpn": "GRM21BR61C106KE15L",
+      "nets": {
+        "1": "VBAT",
+        "2": "GND"
+      },
+      "group": "CELL CHARGER / POWER PATH",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "note": "Check effective capacitance at operating bias; 16V minimum for bulk.",
+      "uuid": "07f9870f-a174-53b4-96f4-0bbd7a016c3f",
+      "datasheet": "",
+      "source_footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sch_x": 344.17,
+      "sch_y": 100.33
+    },
+    {
+      "ref": "C5",
+      "symbol": "C",
+      "value": "22u",
+      "mpn": "GRM21BR61C226ME44L",
+      "nets": {
+        "1": "SYS_RAW",
+        "2": "GND"
+      },
+      "group": "CELL CHARGER / POWER PATH",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "note": "Check effective capacitance at operating bias; 16V minimum for bulk.",
+      "uuid": "cfec8374-b413-55e7-9030-f6ea9772fc54",
+      "datasheet": "",
+      "source_footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sch_x": 379.73,
+      "sch_y": 100.33
+    },
+    {
+      "ref": "J4",
+      "symbol": "Temperature",
+      "value": "BATTERY NTC",
+      "mpn": "B2B-PH-K-S(LF)(SN)",
+      "nets": {
+        "1": "NTC",
+        "2": "GND"
+      },
+      "group": "CELL CHARGER / POWER PATH",
+      "footprint": "KK_Power:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical",
+      "note": "10k NTC thermally bonded to cell. No fitted NO_NTC bypass.",
+      "uuid": "efedbd0b-42e2-5690-b849-9192f831aefe",
+      "datasheet": "",
+      "source_footprint": "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical",
+      "sch_x": 358.14,
+      "sch_y": 55.88
+    },
+    {
+      "ref": "LED1",
+      "symbol": "LED",
+      "value": "POWER GOOD",
+      "mpn": "APT3216LZGCK",
+      "nets": {
+        "1": "LED1_K",
+        "2": "VBUS"
+      },
+      "group": "CELL CHARGER / POWER PATH",
+      "footprint": "KK_Power:LED_1206_3216Metric",
+      "note": "",
+      "uuid": "9904edff-7262-5a48-9fdd-8e2db15f7944",
+      "datasheet": "",
+      "source_footprint": "LED_SMD:LED_1206_3216Metric",
+      "sch_x": 236.22,
+      "sch_y": 120.65
+    },
+    {
+      "ref": "R6",
+      "symbol": "R",
+      "value": "4.7k",
+      "mpn": "RC0603FR074K7L",
+      "nets": {
+        "1": "LED1_K",
+        "2": "PGOOD_N"
+      },
+      "group": "CELL CHARGER / POWER PATH",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "note": "1% thick film",
+      "uuid": "683c5eda-12e4-545c-94c7-29b23ceef37c",
+      "datasheet": "",
+      "source_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "sch_x": 271.78000000000003,
+      "sch_y": 120.65
+    },
+    {
+      "ref": "LED2",
+      "symbol": "LED",
+      "value": "CHARGING",
+      "mpn": "APT3216SURCK",
+      "nets": {
+        "1": "LED2_K",
+        "2": "VBUS"
+      },
+      "group": "CELL CHARGER / POWER PATH",
+      "footprint": "KK_Power:LED_1206_3216Metric",
+      "note": "",
+      "uuid": "5e91ae19-df04-56a0-9f20-23e4b66c103c",
+      "datasheet": "",
+      "source_footprint": "LED_SMD:LED_1206_3216Metric",
+      "sch_x": 308.61,
+      "sch_y": 120.65
+    },
+    {
+      "ref": "R7",
+      "symbol": "R",
+      "value": "4.7k",
+      "mpn": "RC0603FR074K7L",
+      "nets": {
+        "1": "LED2_K",
+        "2": "CHARGE_N"
+      },
+      "group": "CELL CHARGER / POWER PATH",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "note": "1% thick film",
+      "uuid": "4abd14e3-29d7-54bf-85d1-861118e8f8cf",
+      "datasheet": "",
+      "source_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "sch_x": 344.17,
+      "sch_y": 120.65
+    },
+    {
+      "ref": "J2",
+      "symbol": "Battery",
+      "value": "1S CELL / VH",
+      "mpn": "B2P-VH(LF)(SN)",
+      "nets": {
+        "1": "CELL_PLUS",
+        "2": "BAT_NEG"
+      },
+      "group": "CELL PROTECTION / FUSE",
+      "footprint": "KK_Power:JST_VH_B2P-VH_1x02_P3.96mm_Vertical",
+      "note": "Higher-current polarity-controlled cell harness. Requires a cell rated at least 4A continuous; not interchangeable with old PH or main-board XH harnesses.",
+      "uuid": "f7ad5fe5-80ce-5bcf-8a76-56393d9110a1",
+      "datasheet": "",
+      "source_footprint": "Connector_JST:JST_VH_B2P-VH_1x02_P3.96mm_Vertical",
+      "sch_x": 462.28000000000003,
+      "sch_y": 55.88
+    },
+    {
+      "ref": "F1",
+      "symbol": "Fuse",
+      "value": "4A FAST",
+      "mpn": "0451004.MRL",
+      "nets": {
+        "1": "CELL_PLUS",
+        "2": "VBAT"
+      },
+      "group": "CELL PROTECTION / FUSE",
+      "footprint": "KK_Power:Fuse_1206_3216Metric",
+      "note": "Secondary fault fuse; not a substitute for cell protection. Cell and fuse I-squared-t coordination still required.",
+      "uuid": "f49851de-1233-595a-92e2-23f095cdb28e",
+      "datasheet": "",
+      "source_footprint": "Fuse:Fuse_1206_3216Metric",
+      "sch_x": 439.42,
+      "sch_y": 154.94
+    },
+    {
+      "ref": "U2",
+      "symbol": "DW01A",
+      "value": "DW01A / H&M",
+      "mpn": "DW01A",
+      "nets": {
+        "1": "OD",
+        "2": "PROTECT_CS",
+        "3": "OC",
+        "4": null,
+        "5": "PROTECT_VCC",
+        "6": "BAT_NEG"
+      },
+      "group": "CELL PROTECTION / FUSE",
+      "footprint": "KK_Power:SOT-23-6",
+      "note": "H&M Semiconductor DW01A per linked manufacturer sheet. No generic substitutions. Parallel-FET trip thresholds, cell limits and fuse coordination remain release holds.",
+      "uuid": "198e2657-6b4a-5859-a7f5-3b8c64727543",
+      "datasheet": "https://hmsemi.com/downfile/DW01A.PDF",
+      "source_footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "sch_x": 562.61,
+      "sch_y": 55.88
+    },
+    {
+      "ref": "Q1",
+      "symbol": "FS8205",
+      "value": "FS8205",
+      "mpn": "FS8205",
+      "nets": {
+        "1": "BAT_NEG",
+        "2": "DRAIN_COMMON",
+        "3": "GND",
+        "4": "OC",
+        "5": "DRAIN_COMMON",
+        "6": "OD"
+      },
+      "group": "CELL PROTECTION / FUSE",
+      "footprint": "KK_Power:FS8205",
+      "note": "Three parallel matched dual-MOSFET banks. Must qualify current sharing and trip thresholds.",
+      "uuid": "81546de3-73b2-507f-b613-6fef3be2d7e2",
+      "datasheet": "https://www.ic-fortune.com/upload/Download/FS8205-DS-19_EN.pdf",
+      "source_footprint": "KK_Power:FS8205",
+      "sch_x": 463.55,
+      "sch_y": 111.76
+    },
+    {
+      "ref": "Q2",
+      "symbol": "FS8205",
+      "value": "FS8205",
+      "mpn": "FS8205",
+      "nets": {
+        "1": "BAT_NEG",
+        "2": "DRAIN_COMMON",
+        "3": "GND",
+        "4": "OC",
+        "5": "DRAIN_COMMON",
+        "6": "OD"
+      },
+      "group": "CELL PROTECTION / FUSE",
+      "footprint": "KK_Power:FS8205",
+      "note": "Three parallel matched dual-MOSFET banks. Must qualify current sharing and trip thresholds.",
+      "uuid": "c92b66de-92ec-52ce-b44e-8014d309ef30",
+      "datasheet": "https://www.ic-fortune.com/upload/Download/FS8205-DS-19_EN.pdf",
+      "source_footprint": "KK_Power:FS8205",
+      "sch_x": 524.51,
+      "sch_y": 111.76
+    },
+    {
+      "ref": "Q3",
+      "symbol": "FS8205",
+      "value": "FS8205",
+      "mpn": "FS8205",
+      "nets": {
+        "1": "BAT_NEG",
+        "2": "DRAIN_COMMON",
+        "3": "GND",
+        "4": "OC",
+        "5": "DRAIN_COMMON",
+        "6": "OD"
+      },
+      "group": "CELL PROTECTION / FUSE",
+      "footprint": "KK_Power:FS8205",
+      "note": "Three parallel matched dual-MOSFET banks. Must qualify current sharing and trip thresholds.",
+      "uuid": "aba522d8-ed8e-552e-8aaa-7e6978806578",
+      "datasheet": "https://www.ic-fortune.com/upload/Download/FS8205-DS-19_EN.pdf",
+      "source_footprint": "KK_Power:FS8205",
+      "sch_x": 586.74,
+      "sch_y": 111.76
+    },
+    {
+      "ref": "R8",
+      "symbol": "R",
+      "value": "470",
+      "mpn": "RC0603FR07470RL",
+      "nets": {
+        "1": "VBAT",
+        "2": "PROTECT_VCC"
+      },
+      "group": "CELL PROTECTION / FUSE",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "note": "1% thick film",
+      "uuid": "d34449c3-e9f9-5b16-97ba-65fae69629cb",
+      "datasheet": "",
+      "source_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "sch_x": 476.25,
+      "sch_y": 154.94
+    },
+    {
+      "ref": "R9",
+      "symbol": "R",
+      "value": "1k",
+      "mpn": "RC0603FR071KL",
+      "nets": {
+        "1": "GND",
+        "2": "PROTECT_CS"
+      },
+      "group": "CELL PROTECTION / FUSE",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "note": "1% thick film",
+      "uuid": "f7d672bd-c99e-5948-b5fa-21fba1edb52a",
+      "datasheet": "",
+      "source_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "sch_x": 511.81,
+      "sch_y": 154.94
+    },
+    {
+      "ref": "C6",
+      "symbol": "C",
+      "value": "100n",
+      "mpn": "GRM188R71C104KA01D",
+      "nets": {
+        "1": "PROTECT_VCC",
+        "2": "BAT_NEG"
+      },
+      "group": "CELL PROTECTION / FUSE",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "note": "Check effective capacitance at operating bias; 16V minimum for bulk.",
+      "uuid": "9dcac7ec-4170-5230-8eff-04c73ad8fce3",
+      "datasheet": "",
+      "source_footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "sch_x": 547.37,
+      "sch_y": 154.94
+    },
+    {
+      "ref": "SW1",
+      "symbol": "SW_SPDT",
+      "value": "OFF / ON",
+      "mpn": "JS102011SAQN",
+      "nets": {
+        "1": "GND",
+        "2": "RUN_CTL",
+        "3": "SYS_RAW"
+      },
+      "group": "SYSTEM SWITCH / INRUSH / UVLO",
+      "footprint": "KK_Power:SW_SPDT_CK_JS102011SAQN",
+      "note": "Signal-level switch only; charging remains on when toy off.",
+      "uuid": "c1d3bf53-0a0d-53b0-a40f-e903abd0715d",
+      "datasheet": "https://www.ckswitches.com/media/1422/js.pdf",
+      "source_footprint": "Button_Switch_SMD:SW_SPDT_CK_JS102011SAQN",
+      "sch_x": 643.89,
+      "sch_y": 100.33
+    },
+    {
+      "ref": "U4",
+      "symbol": "TPS259530",
+      "value": "TPS259530DSGR",
+      "mpn": "TPS259530DSGR",
+      "nets": {
+        "1": "EF_SLEW",
+        "2": "EF_UVLO",
+        "3": "SYS_RAW",
+        "4": "SYS_RAW",
+        "5": "SYS_SW",
+        "6": "EF_FAULT_N",
+        "7": "EF_ILIM",
+        "8": "GND",
+        "9": "GND"
+      },
+      "group": "SYSTEM SWITCH / INRUSH / UVLO",
+      "footprint": "KK_Power:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm",
+      "note": "Latch-off on thermal fault; cycle switch to recover.",
+      "uuid": "45977362-ea25-5d1c-bf11-4a6b63befbf9",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/tps2595.pdf",
+      "source_footprint": "Package_SON:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm",
+      "sch_x": 665.48,
+      "sch_y": 55.88
+    },
+    {
+      "ref": "R10",
+      "symbol": "R",
+      "value": "182k",
+      "mpn": "RT0603BRD07182KL",
+      "nets": {
+        "1": "RUN_CTL",
+        "2": "EF_UVLO"
+      },
+      "group": "SYSTEM SWITCH / INRUSH / UVLO",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "note": "0.1% thin film",
+      "uuid": "b817aade-239d-51ea-9a0c-efc3b7a93ad1",
+      "datasheet": "",
+      "source_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "sch_x": 679.45,
+      "sch_y": 100.33
+    },
+    {
+      "ref": "R11",
+      "symbol": "R",
+      "value": "100k",
+      "mpn": "RT0603BRD07100KL",
+      "nets": {
+        "1": "EF_UVLO",
+        "2": "GND"
+      },
+      "group": "SYSTEM SWITCH / INRUSH / UVLO",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "note": "0.1% thin film",
+      "uuid": "00c74bcd-284f-5efa-b090-347e456192a4",
+      "datasheet": "",
+      "source_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "sch_x": 716.28,
+      "sch_y": 100.33
+    },
+    {
+      "ref": "R12",
+      "symbol": "R",
+      "value": "620",
+      "mpn": "RC0603FR07620RL",
+      "nets": {
+        "1": "EF_ILIM",
+        "2": "GND"
+      },
+      "group": "SYSTEM SWITCH / INRUSH / UVLO",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "note": "1% thick film",
+      "uuid": "6b93b25b-677a-550d-8fc6-a08ab77bd277",
+      "datasheet": "",
+      "source_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "sch_x": 751.84,
+      "sch_y": 100.33
+    },
+    {
+      "ref": "C7",
+      "symbol": "C",
+      "value": "10n",
+      "mpn": "GRM188R71H103KA01D",
+      "nets": {
+        "1": "EF_SLEW",
+        "2": "GND"
+      },
+      "group": "SYSTEM SWITCH / INRUSH / UVLO",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "note": "Check effective capacitance at operating bias; 16V minimum for bulk.",
+      "uuid": "ee404296-5c48-58f0-93d4-b84993c150a2",
+      "datasheet": "",
+      "source_footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "sch_x": 787.4,
+      "sch_y": 100.33
+    },
+    {
+      "ref": "C8",
+      "symbol": "C",
+      "value": "22u",
+      "mpn": "GRM21BR61C226ME44L",
+      "nets": {
+        "1": "SYS_SW",
+        "2": "GND"
+      },
+      "group": "SYSTEM SWITCH / INRUSH / UVLO",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "note": "Check effective capacitance at operating bias; 16V minimum for bulk.",
+      "uuid": "ac4eeb6e-10de-5460-bfe8-6870e9128476",
+      "datasheet": "",
+      "source_footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sch_x": 643.89,
+      "sch_y": 120.65
+    },
+    {
+      "ref": "C9",
+      "symbol": "C",
+      "value": "100n",
+      "mpn": "GRM188R71C104KA01D",
+      "nets": {
+        "1": "SYS_RAW",
+        "2": "GND"
+      },
+      "group": "SYSTEM SWITCH / INRUSH / UVLO",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "note": "Check effective capacitance at operating bias; 16V minimum for bulk.",
+      "uuid": "4616f854-c0d2-5e0b-a414-2f598b3ea5a7",
+      "datasheet": "",
+      "source_footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "sch_x": 679.45,
+      "sch_y": 120.65
+    },
+    {
+      "ref": "R13",
+      "symbol": "R",
+      "value": "100k",
+      "mpn": "RC0603FR07100KL",
+      "nets": {
+        "1": "SYS_RAW",
+        "2": "EF_FAULT_N"
+      },
+      "group": "SYSTEM SWITCH / INRUSH / UVLO",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "note": "1% thick film",
+      "uuid": "d5b40240-34f5-55db-a03a-eb0798e63487",
+      "datasheet": "",
+      "source_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "sch_x": 716.28,
+      "sch_y": 120.65
+    },
+    {
+      "ref": "R14",
+      "symbol": "R",
+      "value": "10k",
+      "mpn": "RC0603FR0710KL",
+      "nets": {
+        "1": "RUN_CTL",
+        "2": "REG_ENABLE"
+      },
+      "group": "SYSTEM SWITCH / INRUSH / UVLO",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "note": "1% thick film",
+      "uuid": "8db0325a-dece-5a8b-9358-134aa6180ecc",
+      "datasheet": "",
+      "source_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "sch_x": 751.84,
+      "sch_y": 120.65
+    },
+    {
+      "ref": "U5",
+      "symbol": "TPS63060",
+      "value": "TPS63060DSCR",
+      "mpn": "TPS63060DSCR",
+      "nets": {
+        "1": "U5_L1",
+        "2": "SYS_SW",
+        "3": "REG_ENABLE",
+        "4": "REG_ENABLE",
+        "5": "PG_ALL",
+        "6": "U5_AUX",
+        "7": "GND",
+        "8": "U5_FB",
+        "9": "REG_5V",
+        "10": "U5_L2",
+        "11": "GND"
+      },
+      "group": "5 V BUCK-BOOST",
+      "footprint": "KK_Power:Texas_S-PWSON-N10",
+      "note": "Forced PWM for controlled rail accuracy/ripple. PG shared open-drain.",
+      "uuid": "11b1f154-1fdc-5dc7-96ef-a25c5e0f2044",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/tps63060.pdf",
+      "source_footprint": "Package_SON:Texas_S-PWSON-N10",
+      "sch_x": 54.61,
+      "sch_y": 236.22
+    },
+    {
+      "ref": "L1",
+      "symbol": "L",
+      "value": "1uH",
+      "mpn": "XFL4020-102MEC",
+      "nets": {
+        "1": "U5_L1",
+        "2": "U5_L2"
+      },
+      "group": "5 V BUCK-BOOST",
+      "footprint": "KK_Power:L_Coilcraft_XxL4020",
+      "note": "TI-recommended family; 5.1A Isat at 20% loss, manufacturer limits apply.",
+      "uuid": "f90822c2-ccb7-5bcb-a0ff-47dbbba6855b",
+      "datasheet": "https://www.coilcraft.com/getmedia/50632d43-da1b-4cdb-8ab4-3029cab51df3/xfl4020.pdf",
+      "source_footprint": "Inductor_SMD:L_Coilcraft_XxL4020",
+      "sch_x": 31.75,
+      "sch_y": 279.4
+    },
+    {
+      "ref": "C20",
+      "symbol": "C",
+      "value": "10u",
+      "mpn": "GRM21BR61C106KE15L",
+      "nets": {
+        "1": "SYS_SW",
+        "2": "GND"
+      },
+      "group": "5 V BUCK-BOOST",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "note": "Check effective capacitance at operating bias; 16V minimum for bulk.",
+      "uuid": "dded2445-77d8-5677-9c41-44919451ea91",
+      "datasheet": "",
+      "source_footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sch_x": 68.58,
+      "sch_y": 279.4
+    },
+    {
+      "ref": "C21",
+      "symbol": "C",
+      "value": "10u",
+      "mpn": "GRM21BR61C106KE15L",
+      "nets": {
+        "1": "SYS_SW",
+        "2": "GND"
+      },
+      "group": "5 V BUCK-BOOST",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "note": "Check effective capacitance at operating bias; 16V minimum for bulk.",
+      "uuid": "4fdc3af2-eb5c-5f77-8260-10a1dda9e2cd",
+      "datasheet": "",
+      "source_footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sch_x": 104.14,
+      "sch_y": 279.4
+    },
+    {
+      "ref": "C22",
+      "symbol": "C",
+      "value": "22u",
+      "mpn": "GRM21BR61C226ME44L",
+      "nets": {
+        "1": "REG_5V",
+        "2": "GND"
+      },
+      "group": "5 V BUCK-BOOST",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "note": "Check effective capacitance at operating bias; 16V minimum for bulk.",
+      "uuid": "1f81e910-c401-5a87-a299-590cfb4f38fb",
+      "datasheet": "",
+      "source_footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sch_x": 139.7,
+      "sch_y": 279.4
+    },
+    {
+      "ref": "C23",
+      "symbol": "C",
+      "value": "22u",
+      "mpn": "GRM21BR61C226ME44L",
+      "nets": {
+        "1": "REG_5V",
+        "2": "GND"
+      },
+      "group": "5 V BUCK-BOOST",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "note": "Check effective capacitance at operating bias; 16V minimum for bulk.",
+      "uuid": "1891d77b-a31a-57db-adeb-2b91dabdbf0f",
+      "datasheet": "",
+      "source_footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sch_x": 176.53,
+      "sch_y": 279.4
+    },
+    {
+      "ref": "C24",
+      "symbol": "C",
+      "value": "22u",
+      "mpn": "GRM21BR61C226ME44L",
+      "nets": {
+        "1": "REG_5V",
+        "2": "GND"
+      },
+      "group": "5 V BUCK-BOOST",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "note": "Check effective capacitance at operating bias; 16V minimum for bulk.",
+      "uuid": "268335e8-39cd-5171-8583-6bde80ff1233",
+      "datasheet": "",
+      "source_footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sch_x": 31.75,
+      "sch_y": 300.99
+    },
+    {
+      "ref": "C25",
+      "symbol": "C",
+      "value": "100n",
+      "mpn": "GRM188R71C104KA01D",
+      "nets": {
+        "1": "U5_AUX",
+        "2": "GND"
+      },
+      "group": "5 V BUCK-BOOST",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "note": "Check effective capacitance at operating bias; 16V minimum for bulk.",
+      "uuid": "18dfd7a7-8de5-56f2-abab-3892de11ca41",
+      "datasheet": "",
+      "source_footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "sch_x": 68.58,
+      "sch_y": 300.99
+    },
+    {
+      "ref": "R20",
+      "symbol": "R",
+      "value": "909k",
+      "mpn": "RT0603BRD07909KL",
+      "nets": {
+        "1": "REG_5V",
+        "2": "U5_FB"
+      },
+      "group": "5 V BUCK-BOOST",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "note": "0.1% thin film",
+      "uuid": "e688a271-92c9-515e-9936-1daa4f342bff",
+      "datasheet": "",
+      "source_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "sch_x": 104.14,
+      "sch_y": 300.99
+    },
+    {
+      "ref": "R21",
+      "symbol": "R",
+      "value": "101k",
+      "mpn": "RT0603BRD07101KL",
+      "nets": {
+        "1": "U5_FB",
+        "2": "GND"
+      },
+      "group": "5 V BUCK-BOOST",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "note": "0.1% thin film",
+      "uuid": "cb4cec89-1812-5452-818f-a7b013d0969a",
+      "datasheet": "",
+      "source_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "sch_x": 139.7,
+      "sch_y": 300.99
+    },
+    {
+      "ref": "C28",
+      "symbol": "C",
+      "value": "10p",
+      "mpn": "GRM1885C1H100JA01D",
+      "nets": {
+        "1": "U5_FB",
+        "2": "GND"
+      },
+      "group": "5 V BUCK-BOOST",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "note": "10pF across the lower feedback resistor per TPS63060 datasheet, not an upper-divider feedforward capacitor.",
+      "uuid": "af04c1bb-616d-5685-a0fb-a6debbb7803b",
+      "datasheet": "",
+      "source_footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "sch_x": 176.53,
+      "sch_y": 300.99
+    },
+    {
+      "ref": "U6",
+      "symbol": "TPS63060",
+      "value": "TPS63060DSCR",
+      "mpn": "TPS63060DSCR",
+      "nets": {
+        "1": "U6_L1",
+        "2": "SYS_SW",
+        "3": "REG_ENABLE",
+        "4": "REG_ENABLE",
+        "5": "PG_ALL",
+        "6": "U6_AUX",
+        "7": "GND",
+        "8": "U6_FB",
+        "9": "REG_3V3",
+        "10": "U6_L2",
+        "11": "GND"
+      },
+      "group": "3.3 V BUCK-BOOST",
+      "footprint": "KK_Power:Texas_S-PWSON-N10",
+      "note": "Forced PWM for controlled rail accuracy/ripple. PG shared open-drain.",
+      "uuid": "5564a426-93e4-5e3a-93e4-75c0b183f3ad",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/tps63060.pdf",
+      "source_footprint": "Package_SON:Texas_S-PWSON-N10",
+      "sch_x": 257.81,
+      "sch_y": 236.22
+    },
+    {
+      "ref": "L2",
+      "symbol": "L",
+      "value": "1uH",
+      "mpn": "XFL4020-102MEC",
+      "nets": {
+        "1": "U6_L1",
+        "2": "U6_L2"
+      },
+      "group": "3.3 V BUCK-BOOST",
+      "footprint": "KK_Power:L_Coilcraft_XxL4020",
+      "note": "TI-recommended family; 5.1A Isat at 20% loss, manufacturer limits apply.",
+      "uuid": "f53cf121-4041-54d4-a98e-1fd74bd6b5a1",
+      "datasheet": "https://www.coilcraft.com/getmedia/50632d43-da1b-4cdb-8ab4-3029cab51df3/xfl4020.pdf",
+      "source_footprint": "Inductor_SMD:L_Coilcraft_XxL4020",
+      "sch_x": 236.22,
+      "sch_y": 279.4
+    },
+    {
+      "ref": "C30",
+      "symbol": "C",
+      "value": "10u",
+      "mpn": "GRM21BR61C106KE15L",
+      "nets": {
+        "1": "SYS_SW",
+        "2": "GND"
+      },
+      "group": "3.3 V BUCK-BOOST",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "note": "Check effective capacitance at operating bias; 16V minimum for bulk.",
+      "uuid": "a66617b1-7f36-5494-ae1e-cea1e0797ea5",
+      "datasheet": "",
+      "source_footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sch_x": 271.78000000000003,
+      "sch_y": 279.4
+    },
+    {
+      "ref": "C31",
+      "symbol": "C",
+      "value": "10u",
+      "mpn": "GRM21BR61C106KE15L",
+      "nets": {
+        "1": "SYS_SW",
+        "2": "GND"
+      },
+      "group": "3.3 V BUCK-BOOST",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "note": "Check effective capacitance at operating bias; 16V minimum for bulk.",
+      "uuid": "ec558ad6-18b1-55b7-afe8-0ecf21191ef1",
+      "datasheet": "",
+      "source_footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sch_x": 308.61,
+      "sch_y": 279.4
+    },
+    {
+      "ref": "C32",
+      "symbol": "C",
+      "value": "22u",
+      "mpn": "GRM21BR61C226ME44L",
+      "nets": {
+        "1": "REG_3V3",
+        "2": "GND"
+      },
+      "group": "3.3 V BUCK-BOOST",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "note": "Check effective capacitance at operating bias; 16V minimum for bulk.",
+      "uuid": "c6e344a1-27d3-530d-a4bc-4d9102084bc8",
+      "datasheet": "",
+      "source_footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sch_x": 344.17,
+      "sch_y": 279.4
+    },
+    {
+      "ref": "C33",
+      "symbol": "C",
+      "value": "22u",
+      "mpn": "GRM21BR61C226ME44L",
+      "nets": {
+        "1": "REG_3V3",
+        "2": "GND"
+      },
+      "group": "3.3 V BUCK-BOOST",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "note": "Check effective capacitance at operating bias; 16V minimum for bulk.",
+      "uuid": "4f42371d-a805-588d-aa53-ba18be778d0b",
+      "datasheet": "",
+      "source_footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sch_x": 379.73,
+      "sch_y": 279.4
+    },
+    {
+      "ref": "C34",
+      "symbol": "C",
+      "value": "22u",
+      "mpn": "GRM21BR61C226ME44L",
+      "nets": {
+        "1": "REG_3V3",
+        "2": "GND"
+      },
+      "group": "3.3 V BUCK-BOOST",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "note": "Check effective capacitance at operating bias; 16V minimum for bulk.",
+      "uuid": "1418c7a0-7bb2-5859-8d84-ec2b10822cd6",
+      "datasheet": "",
+      "source_footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sch_x": 236.22,
+      "sch_y": 300.99
+    },
+    {
+      "ref": "C35",
+      "symbol": "C",
+      "value": "100n",
+      "mpn": "GRM188R71C104KA01D",
+      "nets": {
+        "1": "U6_AUX",
+        "2": "GND"
+      },
+      "group": "3.3 V BUCK-BOOST",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "note": "Check effective capacitance at operating bias; 16V minimum for bulk.",
+      "uuid": "29ee7aae-4c0f-5ae1-9339-cecde47060c0",
+      "datasheet": "",
+      "source_footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "sch_x": 271.78000000000003,
+      "sch_y": 300.99
+    },
+    {
+      "ref": "R30",
+      "symbol": "R",
+      "value": "560k",
+      "mpn": "RT0603BRD07560KL",
+      "nets": {
+        "1": "REG_3V3",
+        "2": "U6_FB"
+      },
+      "group": "3.3 V BUCK-BOOST",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "note": "0.1% thin film",
+      "uuid": "7b9ad63e-b5fb-553e-961c-e8bf6b8702ef",
+      "datasheet": "",
+      "source_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "sch_x": 308.61,
+      "sch_y": 300.99
+    },
+    {
+      "ref": "R31",
+      "symbol": "R",
+      "value": "100k",
+      "mpn": "RT0603BRD07100KL",
+      "nets": {
+        "1": "U6_FB",
+        "2": "GND"
+      },
+      "group": "3.3 V BUCK-BOOST",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "note": "0.1% thin film",
+      "uuid": "899962cb-6b17-5d5c-9cec-8b86e1665b51",
+      "datasheet": "",
+      "source_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "sch_x": 344.17,
+      "sch_y": 300.99
+    },
+    {
+      "ref": "C38",
+      "symbol": "C",
+      "value": "10p",
+      "mpn": "GRM1885C1H100JA01D",
+      "nets": {
+        "1": "U6_FB",
+        "2": "GND"
+      },
+      "group": "3.3 V BUCK-BOOST",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "note": "10pF across the lower feedback resistor per TPS63060 datasheet, not an upper-divider feedforward capacitor.",
+      "uuid": "d71640a7-416e-5bc5-8ddd-1588a8b65d5a",
+      "datasheet": "",
+      "source_footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "sch_x": 379.73,
+      "sch_y": 300.99
+    },
+    {
+      "ref": "U7",
+      "symbol": "TPS63060",
+      "value": "TPS63060DSCR",
+      "mpn": "TPS63060DSCR",
+      "nets": {
+        "1": "U7_L1",
+        "2": "SYS_SW",
+        "3": "REG_ENABLE",
+        "4": "REG_ENABLE",
+        "5": "PG_ALL",
+        "6": "U7_AUX",
+        "7": "GND",
+        "8": "U7_FB",
+        "9": "REG_3V2",
+        "10": "U7_L2",
+        "11": "GND"
+      },
+      "group": "3.2 V BUCK-BOOST",
+      "footprint": "KK_Power:Texas_S-PWSON-N10",
+      "note": "Forced PWM for controlled rail accuracy/ripple. PG shared open-drain.",
+      "uuid": "1cc70d58-c82d-5a95-ad7a-373be91d5cf2",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/tps63060.pdf",
+      "source_footprint": "Package_SON:Texas_S-PWSON-N10",
+      "sch_x": 462.28000000000003,
+      "sch_y": 236.22
+    },
+    {
+      "ref": "L3",
+      "symbol": "L",
+      "value": "1uH",
+      "mpn": "XFL4020-102MEC",
+      "nets": {
+        "1": "U7_L1",
+        "2": "U7_L2"
+      },
+      "group": "3.2 V BUCK-BOOST",
+      "footprint": "KK_Power:L_Coilcraft_XxL4020",
+      "note": "TI-recommended family; 5.1A Isat at 20% loss, manufacturer limits apply.",
+      "uuid": "d6f10773-32ba-5e94-b758-9fd41c1d59f9",
+      "datasheet": "https://www.coilcraft.com/getmedia/50632d43-da1b-4cdb-8ab4-3029cab51df3/xfl4020.pdf",
+      "source_footprint": "Inductor_SMD:L_Coilcraft_XxL4020",
+      "sch_x": 439.42,
+      "sch_y": 279.4
+    },
+    {
+      "ref": "C40",
+      "symbol": "C",
+      "value": "10u",
+      "mpn": "GRM21BR61C106KE15L",
+      "nets": {
+        "1": "SYS_SW",
+        "2": "GND"
+      },
+      "group": "3.2 V BUCK-BOOST",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "note": "Check effective capacitance at operating bias; 16V minimum for bulk.",
+      "uuid": "8fb39951-46b9-5a8c-807d-63cc475a0a92",
+      "datasheet": "",
+      "source_footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sch_x": 476.25,
+      "sch_y": 279.4
+    },
+    {
+      "ref": "C41",
+      "symbol": "C",
+      "value": "10u",
+      "mpn": "GRM21BR61C106KE15L",
+      "nets": {
+        "1": "SYS_SW",
+        "2": "GND"
+      },
+      "group": "3.2 V BUCK-BOOST",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "note": "Check effective capacitance at operating bias; 16V minimum for bulk.",
+      "uuid": "c51c8e4c-891e-5a6f-b7e0-ae024c0efd5b",
+      "datasheet": "",
+      "source_footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sch_x": 511.81,
+      "sch_y": 279.4
+    },
+    {
+      "ref": "C42",
+      "symbol": "C",
+      "value": "22u",
+      "mpn": "GRM21BR61C226ME44L",
+      "nets": {
+        "1": "REG_3V2",
+        "2": "GND"
+      },
+      "group": "3.2 V BUCK-BOOST",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "note": "Check effective capacitance at operating bias; 16V minimum for bulk.",
+      "uuid": "d10de0a1-29c5-5f40-b0da-c3dd0ce66854",
+      "datasheet": "",
+      "source_footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sch_x": 547.37,
+      "sch_y": 279.4
+    },
+    {
+      "ref": "C43",
+      "symbol": "C",
+      "value": "22u",
+      "mpn": "GRM21BR61C226ME44L",
+      "nets": {
+        "1": "REG_3V2",
+        "2": "GND"
+      },
+      "group": "3.2 V BUCK-BOOST",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "note": "Check effective capacitance at operating bias; 16V minimum for bulk.",
+      "uuid": "7a2fb4d2-ea4b-5edd-8cc6-6e4252cdc59d",
+      "datasheet": "",
+      "source_footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sch_x": 584.2,
+      "sch_y": 279.4
+    },
+    {
+      "ref": "C44",
+      "symbol": "C",
+      "value": "22u",
+      "mpn": "GRM21BR61C226ME44L",
+      "nets": {
+        "1": "REG_3V2",
+        "2": "GND"
+      },
+      "group": "3.2 V BUCK-BOOST",
+      "footprint": "KK_Power:C_0805_2012Metric",
+      "note": "Check effective capacitance at operating bias; 16V minimum for bulk.",
+      "uuid": "db863648-6a8f-5b3e-aa33-5b97a177559e",
+      "datasheet": "",
+      "source_footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sch_x": 439.42,
+      "sch_y": 300.99
+    },
+    {
+      "ref": "C45",
+      "symbol": "C",
+      "value": "100n",
+      "mpn": "GRM188R71C104KA01D",
+      "nets": {
+        "1": "U7_AUX",
+        "2": "GND"
+      },
+      "group": "3.2 V BUCK-BOOST",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "note": "Check effective capacitance at operating bias; 16V minimum for bulk.",
+      "uuid": "d4b4e1ef-24b4-59ea-accc-61dba4546e43",
+      "datasheet": "",
+      "source_footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "sch_x": 476.25,
+      "sch_y": 300.99
+    },
+    {
+      "ref": "R40",
+      "symbol": "R",
+      "value": "270k",
+      "mpn": "RT0603BRD07270KL",
+      "nets": {
+        "1": "REG_3V2",
+        "2": "U7_FB_MID"
+      },
+      "group": "3.2 V BUCK-BOOST",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "note": "0.1% thin film",
+      "uuid": "f2f18680-2d5a-52dc-8fa5-500e6daf8edc",
+      "datasheet": "",
+      "source_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "sch_x": 511.81,
+      "sch_y": 300.99
+    },
+    {
+      "ref": "R43",
+      "symbol": "R",
+      "value": "270k",
+      "mpn": "RT0603BRD07270KL",
+      "nets": {
+        "1": "U7_FB_MID",
+        "2": "U7_FB"
+      },
+      "group": "3.2 V BUCK-BOOST",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "note": "0.1% thin film",
+      "uuid": "1d462baa-4ab5-5ef9-9bfc-69f2d4d9b710",
+      "datasheet": "",
+      "source_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "sch_x": 547.37,
+      "sch_y": 300.99
+    },
+    {
+      "ref": "R41",
+      "symbol": "R",
+      "value": "100k",
+      "mpn": "RT0603BRD07100KL",
+      "nets": {
+        "1": "U7_FB",
+        "2": "GND"
+      },
+      "group": "3.2 V BUCK-BOOST",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "note": "0.1% thin film",
+      "uuid": "ff702050-6e3e-5bb6-a5a1-a60bbd5b4256",
+      "datasheet": "",
+      "source_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "sch_x": 584.2,
+      "sch_y": 300.99
+    },
+    {
+      "ref": "C48",
+      "symbol": "C",
+      "value": "10p",
+      "mpn": "GRM1885C1H100JA01D",
+      "nets": {
+        "1": "U7_FB",
+        "2": "GND"
+      },
+      "group": "3.2 V BUCK-BOOST",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "note": "10pF across the lower feedback resistor per TPS63060 datasheet, not an upper-divider feedforward capacitor.",
+      "uuid": "6e6650ed-2dae-5a7e-abb7-a17ebe5e0b27",
+      "datasheet": "",
+      "source_footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "sch_x": 439.42,
+      "sch_y": 322.58
+    },
+    {
+      "ref": "U11",
+      "symbol": "SN74AUP1G17",
+      "value": "SN74AUP1G17DBVR",
+      "mpn": "SN74AUP1G17DBVR",
+      "nets": {
+        "1": null,
+        "2": "VOLTAGES_OK",
+        "3": "GND",
+        "4": "RAILS_EN",
+        "5": "REG_3V3"
+      },
+      "group": "ALL-RAIL READY / SOFT OUTPUTS",
+      "footprint": "KK_Power:SOT-23-5",
+      "note": "Buffers the independent voltage-supervisor outputs; not converter current-limit PG.",
+      "uuid": "51df40e9-c38e-5a4d-892a-fd5f7446d849",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/sn74aup1g17.pdf",
+      "source_footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "sch_x": 665.48,
+      "sch_y": 236.22
+    },
+    {
+      "ref": "R50",
+      "symbol": "R",
+      "value": "470k",
+      "mpn": "RC0603FR07470KL",
+      "nets": {
+        "1": "REG_3V3",
+        "2": "PG_ALL"
+      },
+      "group": "ALL-RAIL READY / SOFT OUTPUTS",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "note": "1% thick film",
+      "uuid": "79b58a24-d529-50f5-8150-83230e128739",
+      "datasheet": "",
+      "source_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "sch_x": 643.89,
+      "sch_y": 320.04
+    },
+    {
+      "ref": "C51",
+      "symbol": "C",
+      "value": "100n",
+      "mpn": "GRM188R71C104KA01D",
+      "nets": {
+        "1": "REG_3V3",
+        "2": "GND"
+      },
+      "group": "ALL-RAIL READY / SOFT OUTPUTS",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "note": "Check effective capacitance at operating bias; 16V minimum for bulk.",
+      "uuid": "ee5660c8-3b5f-5c18-8281-9d5ea0ff64fa",
+      "datasheet": "",
+      "source_footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "sch_x": 679.45,
+      "sch_y": 320.04
+    },
+    {
+      "ref": "R51",
+      "symbol": "R",
+      "value": "100k",
+      "mpn": "RC0603FR07100KL",
+      "nets": {
+        "1": "RAILS_EN",
+        "2": "GND"
+      },
+      "group": "ALL-RAIL READY / SOFT OUTPUTS",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "note": "1% thick film",
+      "uuid": "4a8cace6-d88e-515a-ab41-7497438b853a",
+      "datasheet": "",
+      "source_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "sch_x": 716.28,
+      "sch_y": 320.04
+    },
+    {
+      "ref": "U8",
+      "symbol": "TPS22918",
+      "value": "TPS22918DBVR",
+      "mpn": "TPS22918DBVR",
+      "nets": {
+        "1": "REG_5V",
+        "2": "GND",
+        "3": "RAILS_EN",
+        "4": "U8_CT",
+        "5": "U8_QOD",
+        "6": "MCU_5V"
+      },
+      "group": "ALL-RAIL READY / SOFT OUTPUTS",
+      "footprint": "KK_Power:SOT-23-6",
+      "note": "Resistor-limited output discharge. Qualify ramp/fall timing with actual C.5 load capacitance.",
+      "uuid": "54a1a3fa-e2dd-5628-a6e2-d146bb4115cc",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/tps22918.pdf",
+      "source_footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "sch_x": 765.8100000000001,
+      "sch_y": 236.22
+    },
+    {
+      "ref": "R52",
+      "symbol": "R",
+      "value": "100",
+      "mpn": "RC0603FR07100RL",
+      "nets": {
+        "1": "MCU_5V",
+        "2": "U8_QOD"
+      },
+      "group": "ALL-RAIL READY / SOFT OUTPUTS",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "note": "1% thick film",
+      "uuid": "556d14d2-e327-517d-8d10-a91866d94920",
+      "datasheet": "",
+      "source_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "sch_x": 751.84,
+      "sch_y": 320.04
+    },
+    {
+      "ref": "C52",
+      "symbol": "C",
+      "value": "10n",
+      "mpn": "GRM188R71H103KA01D",
+      "nets": {
+        "1": "U8_CT",
+        "2": "GND"
+      },
+      "group": "ALL-RAIL READY / SOFT OUTPUTS",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "note": "Check effective capacitance at operating bias; 16V minimum for bulk.",
+      "uuid": "2d61a60a-750d-5c68-9454-1ef2c2e61722",
+      "datasheet": "",
+      "source_footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "sch_x": 787.4,
+      "sch_y": 320.04
+    },
+    {
+      "ref": "U9",
+      "symbol": "TPS22918",
+      "value": "TPS22918DBVR",
+      "mpn": "TPS22918DBVR",
+      "nets": {
+        "1": "REG_3V3",
+        "2": "GND",
+        "3": "RAILS_EN",
+        "4": "U9_CT",
+        "5": "U9_QOD",
+        "6": "LOGIC_3V3"
+      },
+      "group": "ALL-RAIL READY / SOFT OUTPUTS",
+      "footprint": "KK_Power:SOT-23-6",
+      "note": "Resistor-limited output discharge. Qualify ramp/fall timing with actual C.5 load capacitance.",
+      "uuid": "cf2fdaa6-d34a-5090-a2a9-73fee03ce7f0",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/tps22918.pdf",
+      "source_footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "sch_x": 665.48,
+      "sch_y": 290.83
+    },
+    {
+      "ref": "R53",
+      "symbol": "R",
+      "value": "100",
+      "mpn": "RC0603FR07100RL",
+      "nets": {
+        "1": "LOGIC_3V3",
+        "2": "U9_QOD"
+      },
+      "group": "ALL-RAIL READY / SOFT OUTPUTS",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "note": "1% thick film",
+      "uuid": "ddc6b3c8-14bf-513f-8f44-2eb77ca108e7",
+      "datasheet": "",
+      "source_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "sch_x": 643.89,
+      "sch_y": 341.63
+    },
+    {
+      "ref": "C53",
+      "symbol": "C",
+      "value": "10n",
+      "mpn": "GRM188R71H103KA01D",
+      "nets": {
+        "1": "U9_CT",
+        "2": "GND"
+      },
+      "group": "ALL-RAIL READY / SOFT OUTPUTS",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "note": "Check effective capacitance at operating bias; 16V minimum for bulk.",
+      "uuid": "99fb82dc-9ba9-5305-a6b3-3e8ff873f99d",
+      "datasheet": "",
+      "source_footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "sch_x": 679.45,
+      "sch_y": 341.63
+    },
+    {
+      "ref": "U10",
+      "symbol": "TPS22918",
+      "value": "TPS22918DBVR",
+      "mpn": "TPS22918DBVR",
+      "nets": {
+        "1": "REG_3V2",
+        "2": "GND",
+        "3": "RAILS_EN",
+        "4": "U10_CT",
+        "5": "U10_QOD",
+        "6": "ACT_3V2"
+      },
+      "group": "ALL-RAIL READY / SOFT OUTPUTS",
+      "footprint": "KK_Power:SOT-23-6",
+      "note": "Resistor-limited output discharge. Qualify ramp/fall timing with actual C.5 load capacitance.",
+      "uuid": "656ffd08-199b-5a54-802c-89f38c88526b",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/tps22918.pdf",
+      "source_footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "sch_x": 765.8100000000001,
+      "sch_y": 290.83
+    },
+    {
+      "ref": "R54",
+      "symbol": "R",
+      "value": "100",
+      "mpn": "RC0603FR07100RL",
+      "nets": {
+        "1": "ACT_3V2",
+        "2": "U10_QOD"
+      },
+      "group": "ALL-RAIL READY / SOFT OUTPUTS",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "note": "1% thick film",
+      "uuid": "0f8e3c41-6d79-5778-8b4f-eef8bb45391d",
+      "datasheet": "",
+      "source_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "sch_x": 716.28,
+      "sch_y": 341.63
+    },
+    {
+      "ref": "C54",
+      "symbol": "C",
+      "value": "10n",
+      "mpn": "GRM188R71H103KA01D",
+      "nets": {
+        "1": "U10_CT",
+        "2": "GND"
+      },
+      "group": "ALL-RAIL READY / SOFT OUTPUTS",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "note": "Check effective capacitance at operating bias; 16V minimum for bulk.",
+      "uuid": "85b9caba-d852-5a7e-9502-5cb8239f999a",
+      "datasheet": "",
+      "source_footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "sch_x": 751.84,
+      "sch_y": 341.63
+    },
+    {
+      "ref": "U12",
+      "symbol": "TPS386000",
+      "value": "TPS386000RGPR",
+      "mpn": "TPS386000RGPR",
+      "nets": {
+        "1": "RUN_CTL",
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null,
+        "6": "GND",
+        "7": "SYS_SW",
+        "8": "SENSE_3V2",
+        "9": "SENSE_3V3",
+        "10": "SENSE_5V",
+        "11": "GND",
+        "12": "GND",
+        "13": null,
+        "14": "SYS_RAW",
+        "15": "VOLTAGES_OK",
+        "16": "VOLTAGES_OK",
+        "17": "VOLTAGES_OK",
+        "18": null,
+        "19": null,
+        "20": "GND",
+        "21": "GND"
+      },
+      "group": "VOLTAGE SUPERVISION / STARTUP",
+      "footprint": "KK_Power:Texas_RGP0020D_VQFN-20-1EP_4x4mm_P0.5mm_EP2.7x2.7mm",
+      "note": "Powered before the eFuse so MR does not exceed its recommended VDD limit during normal switching. CT floating: default delay. MR switches off output gates. Unused channel 4/watchdog do not drive enables.",
+      "uuid": "23c8919a-bff3-51e4-9cb8-21959825f48d",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/tps386000.pdf",
+      "source_footprint": "Package_DFN_QFN:Texas_RGP0020D_VQFN-20-1EP_4x4mm_P0.5mm_EP2.7x2.7mm",
+      "sch_x": 54.61,
+      "sch_y": 416.56
+    },
+    {
+      "ref": "R60",
+      "symbol": "R",
+      "value": "10k",
+      "mpn": "RC0603FR0710KL",
+      "nets": {
+        "1": "REG_3V3",
+        "2": "VOLTAGES_OK"
+      },
+      "group": "VOLTAGE SUPERVISION / STARTUP",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "note": "1% thick film",
+      "uuid": "2547cce2-e38b-56f0-874a-497606cd9475",
+      "datasheet": "",
+      "source_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "sch_x": 31.75,
+      "sch_y": 459.74
+    },
+    {
+      "ref": "R61",
+      "symbol": "R",
+      "value": "1060k",
+      "mpn": "RT0603BRD071M06L",
+      "nets": {
+        "1": "REG_5V",
+        "2": "SENSE_5V"
+      },
+      "group": "VOLTAGE SUPERVISION / STARTUP",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "note": "0.1% thin film",
+      "uuid": "efe528db-67d7-58e6-8d71-3d91d825e3fb",
+      "datasheet": "",
+      "source_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "sch_x": 68.58,
+      "sch_y": 459.74
+    },
+    {
+      "ref": "R62",
+      "symbol": "R",
+      "value": "100k",
+      "mpn": "RT0603BRD07100KL",
+      "nets": {
+        "1": "SENSE_5V",
+        "2": "GND"
+      },
+      "group": "VOLTAGE SUPERVISION / STARTUP",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "note": "0.1% thin film",
+      "uuid": "22c77b2d-3d57-57ac-8d98-5c3432c543f6",
+      "datasheet": "",
+      "source_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "sch_x": 104.14,
+      "sch_y": 459.74
+    },
+    {
+      "ref": "R63",
+      "symbol": "R",
+      "value": "665k",
+      "mpn": "RT0603BRD07665KL",
+      "nets": {
+        "1": "REG_3V3",
+        "2": "SENSE_3V3"
+      },
+      "group": "VOLTAGE SUPERVISION / STARTUP",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "note": "0.1% thin film",
+      "uuid": "ebe5bd7c-59f0-553c-9388-ee34be827df9",
+      "datasheet": "",
+      "source_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "sch_x": 139.7,
+      "sch_y": 459.74
+    },
+    {
+      "ref": "R64",
+      "symbol": "R",
+      "value": "100k",
+      "mpn": "RT0603BRD07100KL",
+      "nets": {
+        "1": "SENSE_3V3",
+        "2": "GND"
+      },
+      "group": "VOLTAGE SUPERVISION / STARTUP",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "note": "0.1% thin film",
+      "uuid": "46ed18a3-da89-57bd-a642-c45681429e04",
+      "datasheet": "",
+      "source_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "sch_x": 176.53,
+      "sch_y": 459.74
+    },
+    {
+      "ref": "R65",
+      "symbol": "R",
+      "value": "649k",
+      "mpn": "RT0603BRD07649KL",
+      "nets": {
+        "1": "REG_3V2",
+        "2": "SENSE_3V2"
+      },
+      "group": "VOLTAGE SUPERVISION / STARTUP",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "note": "0.1% thin film",
+      "uuid": "7ad00ebf-aeef-513f-b733-d413cdda67d8",
+      "datasheet": "",
+      "source_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "sch_x": 31.75,
+      "sch_y": 481.33
+    },
+    {
+      "ref": "R66",
+      "symbol": "R",
+      "value": "100k",
+      "mpn": "RT0603BRD07100KL",
+      "nets": {
+        "1": "SENSE_3V2",
+        "2": "GND"
+      },
+      "group": "VOLTAGE SUPERVISION / STARTUP",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "note": "0.1% thin film",
+      "uuid": "9d02e3ff-d08a-56e2-bbd6-56634c2dda35",
+      "datasheet": "",
+      "source_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "sch_x": 68.58,
+      "sch_y": 481.33
+    },
+    {
+      "ref": "C60",
+      "symbol": "C",
+      "value": "100n",
+      "mpn": "GRM188R71C104KA01D",
+      "nets": {
+        "1": "SYS_RAW",
+        "2": "GND"
+      },
+      "group": "VOLTAGE SUPERVISION / STARTUP",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "note": "Check effective capacitance at operating bias; 16V minimum for bulk.",
+      "uuid": "7e759aeb-9ac4-56b9-85ed-e6d8f8fecb04",
+      "datasheet": "",
+      "source_footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "sch_x": 104.14,
+      "sch_y": 481.33
+    },
+    {
+      "ref": "U13",
+      "symbol": "TPS22950",
+      "value": "TPS22950YBHR",
+      "mpn": "TPS22950YBHR",
+      "nets": {
+        "A1": "VBUS",
+        "A2": "USB_LIMIT_FAULT_N",
+        "B1": "VBUS",
+        "B2": "USB_CHG",
+        "C1": "GND",
+        "C2": "USB_PORT_ILIM"
+      },
+      "group": "USB-A / USB-C INPUT CURRENT",
+      "footprint": "KK_Power:TPS22950_YBH",
+      "note": "Use base TPS22950, not C/L variants: only base supports 50mA setting. Factory-assembled 0.4mm-pitch six-ball WCSP.",
+      "uuid": "dcdaf716-018f-5b6e-b85e-3cfef3825b48",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/tps22950.pdf",
+      "source_footprint": "KK_Power:TPS22950_YBH",
+      "sch_x": 257.81,
+      "sch_y": 416.56
+    },
+    {
+      "ref": "R70",
+      "symbol": "R",
+      "value": "19.2k",
+      "mpn": "RT0603BRD0719K2L",
+      "nets": {
+        "1": "USB_PORT_ILIM",
+        "2": "GND"
+      },
+      "group": "USB-A / USB-C INPUT CURRENT",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "note": "0.1% thin film",
+      "uuid": "e20244f4-e80a-5924-a8bb-1228800ac74f",
+      "datasheet": "",
+      "source_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "sch_x": 236.22,
+      "sch_y": 459.74
+    },
+    {
+      "ref": "R71",
+      "symbol": "R",
+      "value": "634",
+      "mpn": "RT0603BRD07634RL",
+      "nets": {
+        "1": "USB_PORT_ILIM",
+        "2": "USB_PORT_ILIM_FAST"
+      },
+      "group": "USB-A / USB-C INPUT CURRENT",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "note": "0.1%; high-mode external limiter near 2A, above the charger internal 1.23A limit. Prevents two current limiters fighting. Charger sets the advertised-source ceiling.",
+      "uuid": "d494771f-6964-584f-9b1f-4f1d99944a92",
+      "datasheet": "",
+      "source_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "sch_x": 271.78000000000003,
+      "sch_y": 459.74
+    },
+    {
+      "ref": "Q5",
+      "symbol": "AO3400A",
+      "value": "AO3400A",
+      "mpn": "AO3400A",
+      "nets": {
+        "1": "USB_HIGH_CURRENT",
+        "2": "GND",
+        "3": "USB_PORT_ILIM_FAST"
+      },
+      "group": "USB-A / USB-C INPUT CURRENT",
+      "footprint": "KK_Power:SOT-23",
+      "note": "Logic-level FET specified at 2.5V gate drive; enables the extra ILIM resistor only in advertised higher-current mode.",
+      "uuid": "967a1a1d-05d5-510d-af9e-5d8edb2f7c87",
+      "datasheet": "https://www.aosmd.com/sites/default/files/res/datasheets/AO3400A.pdf",
+      "source_footprint": "Package_TO_SOT_SMD:SOT-23",
+      "sch_x": 308.61,
+      "sch_y": 459.74
+    },
+    {
+      "ref": "R72",
+      "symbol": "R",
+      "value": "100k",
+      "mpn": "RC0603FR07100KL",
+      "nets": {
+        "1": "USB_HIGH_CURRENT",
+        "2": "GND"
+      },
+      "group": "USB-A / USB-C INPUT CURRENT",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "note": "1% thick film",
+      "uuid": "edc171c7-ee99-574e-8984-b752524baa30",
+      "datasheet": "",
+      "source_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "sch_x": 344.17,
+      "sch_y": 459.74
+    },
+    {
+      "ref": "R73",
+      "symbol": "R",
+      "value": "100k",
+      "mpn": "RC0603FR07100KL",
+      "nets": {
+        "1": "VBUS",
+        "2": "USB_LIMIT_FAULT_N"
+      },
+      "group": "USB-A / USB-C INPUT CURRENT",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "note": "1% thick film",
+      "uuid": "f2952bb0-5031-5e19-a166-fe87e83e2232",
+      "datasheet": "",
+      "source_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "sch_x": 379.73,
+      "sch_y": 459.74
+    },
+    {
+      "ref": "C70",
+      "symbol": "C",
+      "value": "100n",
+      "mpn": "GRM188R71C104KA01D",
+      "nets": {
+        "1": "VBUS",
+        "2": "GND"
+      },
+      "group": "USB-A / USB-C INPUT CURRENT",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "note": "Check effective capacitance at operating bias; 16V minimum for bulk.",
+      "uuid": "87569a80-bcf6-5472-b912-11751b160a02",
+      "datasheet": "",
+      "source_footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "sch_x": 236.22,
+      "sch_y": 481.33
+    },
+    {
+      "ref": "C71",
+      "symbol": "C",
+      "value": "1u",
+      "mpn": "GRM188R71C105KA12D",
+      "nets": {
+        "1": "USB_CHG",
+        "2": "GND"
+      },
+      "group": "USB-A / USB-C INPUT CURRENT",
+      "footprint": "KK_Power:C_0603_1608Metric",
+      "note": "Check effective capacitance at operating bias; 16V minimum for bulk.",
+      "uuid": "769b75a6-0867-54b2-a9e1-42905534ae70",
+      "datasheet": "",
+      "source_footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "sch_x": 271.78000000000003,
+      "sch_y": 481.33
+    },
+    {
+      "ref": "J3",
+      "symbol": "Output",
+      "value": "C.5 SYS_IN / XH",
+      "mpn": "B4B-XH-A(LF)(SN)",
+      "nets": {
+        "1": "MCU_5V",
+        "2": "GND",
+        "3": "LOGIC_3V3",
+        "4": "ACT_3V2"
+      },
+      "group": "MAIN BOARD HARNESS / DEBUG",
+      "footprint": "KK_Power:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical",
+      "note": "Straight pin-number-to-pin-number four-wire harness; do not trust wire colors.",
+      "uuid": "c8430551-7c43-5689-9e63-ef9bb1acd298",
+      "datasheet": "",
+      "source_footprint": "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical",
+      "sch_x": 462.28000000000003,
+      "sch_y": 416.56
+    },
+    {
+      "ref": "TP1",
+      "symbol": "TestPoint",
+      "value": "VBUS",
+      "mpn": "BARE PCB PAD",
+      "nets": {
+        "1": "VBUS"
+      },
+      "group": "MAIN BOARD HARNESS / DEBUG",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "note": "Bare pad, not a purchased component.",
+      "uuid": "87bc37cf-b6cb-54d0-bff2-a06c3176ca4b",
+      "datasheet": "",
+      "source_footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "sch_x": 439.42,
+      "sch_y": 459.74
+    },
+    {
+      "ref": "TP2",
+      "symbol": "TestPoint",
+      "value": "VBAT",
+      "mpn": "BARE PCB PAD",
+      "nets": {
+        "1": "VBAT"
+      },
+      "group": "MAIN BOARD HARNESS / DEBUG",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "note": "Bare pad, not a purchased component.",
+      "uuid": "f1ce5229-e517-5924-a62e-cdd547981951",
+      "datasheet": "",
+      "source_footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "sch_x": 476.25,
+      "sch_y": 459.74
+    },
+    {
+      "ref": "TP3",
+      "symbol": "TestPoint",
+      "value": "BAT_NEG",
+      "mpn": "BARE PCB PAD",
+      "nets": {
+        "1": "BAT_NEG"
+      },
+      "group": "MAIN BOARD HARNESS / DEBUG",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "note": "Bare pad, not a purchased component.",
+      "uuid": "58e463b6-ec70-562c-b1e9-f2541a3c2f0b",
+      "datasheet": "",
+      "source_footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "sch_x": 511.81,
+      "sch_y": 459.74
+    },
+    {
+      "ref": "TP4",
+      "symbol": "TestPoint",
+      "value": "GND",
+      "mpn": "BARE PCB PAD",
+      "nets": {
+        "1": "GND"
+      },
+      "group": "MAIN BOARD HARNESS / DEBUG",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "note": "Bare pad, not a purchased component.",
+      "uuid": "36bca8ca-b49f-5462-afc6-55cc2838125e",
+      "datasheet": "",
+      "source_footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "sch_x": 547.37,
+      "sch_y": 459.74
+    },
+    {
+      "ref": "TP5",
+      "symbol": "TestPoint",
+      "value": "SYS_RAW",
+      "mpn": "BARE PCB PAD",
+      "nets": {
+        "1": "SYS_RAW"
+      },
+      "group": "MAIN BOARD HARNESS / DEBUG",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "note": "Bare pad, not a purchased component.",
+      "uuid": "5d18d046-ed98-5ffd-98f7-cd5863f5b0d3",
+      "datasheet": "",
+      "source_footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "sch_x": 584.2,
+      "sch_y": 459.74
+    },
+    {
+      "ref": "TP6",
+      "symbol": "TestPoint",
+      "value": "SYS_SW",
+      "mpn": "BARE PCB PAD",
+      "nets": {
+        "1": "SYS_SW"
+      },
+      "group": "MAIN BOARD HARNESS / DEBUG",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "note": "Bare pad, not a purchased component.",
+      "uuid": "858900d3-0997-5fe2-bc90-07cf1e518944",
+      "datasheet": "",
+      "source_footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "sch_x": 439.42,
+      "sch_y": 477.52
+    },
+    {
+      "ref": "TP7",
+      "symbol": "TestPoint",
+      "value": "RUN_CTL",
+      "mpn": "BARE PCB PAD",
+      "nets": {
+        "1": "RUN_CTL"
+      },
+      "group": "MAIN BOARD HARNESS / DEBUG",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "note": "Bare pad, not a purchased component.",
+      "uuid": "e7c17f43-dda1-561e-a48a-1b751e9422d6",
+      "datasheet": "",
+      "source_footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "sch_x": 476.25,
+      "sch_y": 477.52
+    },
+    {
+      "ref": "TP8",
+      "symbol": "TestPoint",
+      "value": "EF_UVLO",
+      "mpn": "BARE PCB PAD",
+      "nets": {
+        "1": "EF_UVLO"
+      },
+      "group": "MAIN BOARD HARNESS / DEBUG",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "note": "Bare pad, not a purchased component.",
+      "uuid": "595d6a73-ca74-50b8-be33-479e097467a3",
+      "datasheet": "",
+      "source_footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "sch_x": 511.81,
+      "sch_y": 477.52
+    },
+    {
+      "ref": "TP9",
+      "symbol": "TestPoint",
+      "value": "EF_ILIM",
+      "mpn": "BARE PCB PAD",
+      "nets": {
+        "1": "EF_ILIM"
+      },
+      "group": "MAIN BOARD HARNESS / DEBUG",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "note": "Bare pad, not a purchased component.",
+      "uuid": "b2924deb-b80d-513c-8345-161e5bb6afa7",
+      "datasheet": "",
+      "source_footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "sch_x": 547.37,
+      "sch_y": 477.52
+    },
+    {
+      "ref": "TP10",
+      "symbol": "TestPoint",
+      "value": "EF_FAULT_N",
+      "mpn": "BARE PCB PAD",
+      "nets": {
+        "1": "EF_FAULT_N"
+      },
+      "group": "MAIN BOARD HARNESS / DEBUG",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "note": "Bare pad, not a purchased component.",
+      "uuid": "032a4fed-fcd3-5f48-87c7-b3e71f89c204",
+      "datasheet": "",
+      "source_footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "sch_x": 584.2,
+      "sch_y": 477.52
+    },
+    {
+      "ref": "TP11",
+      "symbol": "TestPoint",
+      "value": "PG_ALL",
+      "mpn": "BARE PCB PAD",
+      "nets": {
+        "1": "PG_ALL"
+      },
+      "group": "MAIN BOARD HARNESS / DEBUG",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "note": "Bare pad, not a purchased component.",
+      "uuid": "cb1dcd9a-915a-5a8d-839d-6f2bf995ebe5",
+      "datasheet": "",
+      "source_footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "sch_x": 439.42,
+      "sch_y": 496.57
+    },
+    {
+      "ref": "TP12",
+      "symbol": "TestPoint",
+      "value": "RAILS_EN",
+      "mpn": "BARE PCB PAD",
+      "nets": {
+        "1": "RAILS_EN"
+      },
+      "group": "MAIN BOARD HARNESS / DEBUG",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "note": "Bare pad, not a purchased component.",
+      "uuid": "798b5ca4-b9e2-5386-8bb1-9d1509504999",
+      "datasheet": "",
+      "source_footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "sch_x": 476.25,
+      "sch_y": 496.57
+    },
+    {
+      "ref": "TP13",
+      "symbol": "TestPoint",
+      "value": "REG_5V",
+      "mpn": "BARE PCB PAD",
+      "nets": {
+        "1": "REG_5V"
+      },
+      "group": "MAIN BOARD HARNESS / DEBUG",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "note": "Bare pad, not a purchased component.",
+      "uuid": "6b9a02cf-b04a-571e-9f1d-9dac34540eb0",
+      "datasheet": "",
+      "source_footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "sch_x": 511.81,
+      "sch_y": 496.57
+    },
+    {
+      "ref": "TP14",
+      "symbol": "TestPoint",
+      "value": "REG_3V3",
+      "mpn": "BARE PCB PAD",
+      "nets": {
+        "1": "REG_3V3"
+      },
+      "group": "MAIN BOARD HARNESS / DEBUG",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "note": "Bare pad, not a purchased component.",
+      "uuid": "36814d7c-2c2c-52f0-9439-3bb1fb66e96f",
+      "datasheet": "",
+      "source_footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "sch_x": 547.37,
+      "sch_y": 496.57
+    },
+    {
+      "ref": "TP15",
+      "symbol": "TestPoint",
+      "value": "REG_3V2",
+      "mpn": "BARE PCB PAD",
+      "nets": {
+        "1": "REG_3V2"
+      },
+      "group": "MAIN BOARD HARNESS / DEBUG",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "note": "Bare pad, not a purchased component.",
+      "uuid": "b4386d80-5ea2-52ea-b4cf-446478e49402",
+      "datasheet": "",
+      "source_footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "sch_x": 584.2,
+      "sch_y": 496.57
+    },
+    {
+      "ref": "TP16",
+      "symbol": "TestPoint",
+      "value": "MCU_5V",
+      "mpn": "BARE PCB PAD",
+      "nets": {
+        "1": "MCU_5V"
+      },
+      "group": "MAIN BOARD HARNESS / DEBUG",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "note": "Bare pad, not a purchased component.",
+      "uuid": "c6b11fa4-20b8-5129-89ec-e4afcce8185d",
+      "datasheet": "",
+      "source_footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "sch_x": 439.42,
+      "sch_y": 514.35
+    },
+    {
+      "ref": "TP17",
+      "symbol": "TestPoint",
+      "value": "LOGIC_3V3",
+      "mpn": "BARE PCB PAD",
+      "nets": {
+        "1": "LOGIC_3V3"
+      },
+      "group": "MAIN BOARD HARNESS / DEBUG",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "note": "Bare pad, not a purchased component.",
+      "uuid": "422e339f-3fd2-5e40-a379-7746515a97eb",
+      "datasheet": "",
+      "source_footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "sch_x": 476.25,
+      "sch_y": 514.35
+    },
+    {
+      "ref": "TP18",
+      "symbol": "TestPoint",
+      "value": "ACT_3V2",
+      "mpn": "BARE PCB PAD",
+      "nets": {
+        "1": "ACT_3V2"
+      },
+      "group": "MAIN BOARD HARNESS / DEBUG",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "note": "Bare pad, not a purchased component.",
+      "uuid": "81e2156d-7d53-5da0-8898-5a32772e3ac1",
+      "datasheet": "",
+      "source_footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "sch_x": 511.81,
+      "sch_y": 514.35
+    },
+    {
+      "ref": "TP19",
+      "symbol": "TestPoint",
+      "value": "NTC",
+      "mpn": "BARE PCB PAD",
+      "nets": {
+        "1": "NTC"
+      },
+      "group": "MAIN BOARD HARNESS / DEBUG",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "note": "Bare pad, not a purchased component.",
+      "uuid": "076ab90c-4a4d-57fb-88ef-cd8e9bbb4078",
+      "datasheet": "",
+      "source_footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "sch_x": 547.37,
+      "sch_y": 514.35
+    },
+    {
+      "ref": "TP20",
+      "symbol": "TestPoint",
+      "value": "CC_DEFAULT_N",
+      "mpn": "BARE PCB PAD",
+      "nets": {
+        "1": "CC_DEFAULT_N"
+      },
+      "group": "MAIN BOARD HARNESS / DEBUG",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "note": "Bare pad, not a purchased component.",
+      "uuid": "ddd361f8-6f91-5a77-b01a-252dddf8186b",
+      "datasheet": "",
+      "source_footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "sch_x": 584.2,
+      "sch_y": 514.35
+    },
+    {
+      "ref": "TP21",
+      "symbol": "TestPoint",
+      "value": "USB_HIGH_CURRENT",
+      "mpn": "BARE PCB PAD",
+      "nets": {
+        "1": "USB_HIGH_CURRENT"
+      },
+      "group": "MAIN BOARD HARNESS / DEBUG",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "note": "Bare pad, not a purchased component.",
+      "uuid": "52ed8745-fb09-5ce2-96ef-0912a6ac23a6",
+      "datasheet": "",
+      "source_footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "sch_x": 439.42,
+      "sch_y": 532.13
+    },
+    {
+      "ref": "TP22",
+      "symbol": "TestPoint",
+      "value": "USB_CHG",
+      "mpn": "BARE PCB PAD",
+      "nets": {
+        "1": "USB_CHG"
+      },
+      "group": "MAIN BOARD HARNESS / DEBUG",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "note": "Bare pad, not a purchased component.",
+      "uuid": "f90bb3d6-0255-59e0-9ea6-ccfed79c9483",
+      "datasheet": "",
+      "source_footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "sch_x": 476.25,
+      "sch_y": 532.13
+    },
+    {
+      "ref": "TP23",
+      "symbol": "TestPoint",
+      "value": "USB_PORT_ILIM",
+      "mpn": "BARE PCB PAD",
+      "nets": {
+        "1": "USB_PORT_ILIM"
+      },
+      "group": "MAIN BOARD HARNESS / DEBUG",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "note": "Bare pad, not a purchased component.",
+      "uuid": "9141dfd1-70f5-50cb-86bd-645000445275",
+      "datasheet": "",
+      "source_footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "sch_x": 511.81,
+      "sch_y": 532.13
+    },
+    {
+      "ref": "TP24",
+      "symbol": "TestPoint",
+      "value": "USB_LIMIT_FAULT_N",
+      "mpn": "BARE PCB PAD",
+      "nets": {
+        "1": "USB_LIMIT_FAULT_N"
+      },
+      "group": "MAIN BOARD HARNESS / DEBUG",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "note": "Bare pad, not a purchased component.",
+      "uuid": "ffaf604a-9477-5a01-a89c-1f7d8b0e42d1",
+      "datasheet": "",
+      "source_footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "sch_x": 547.37,
+      "sch_y": 532.13
+    },
+    {
+      "ref": "TP25",
+      "symbol": "TestPoint",
+      "value": "CC_3V3",
+      "mpn": "BARE PCB PAD",
+      "nets": {
+        "1": "CC_3V3"
+      },
+      "group": "MAIN BOARD HARNESS / DEBUG",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "note": "Bare pad, not a purchased component.",
+      "uuid": "e97241f4-db0b-5445-963e-49e970068c13",
+      "datasheet": "",
+      "source_footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "sch_x": 584.2,
+      "sch_y": 532.13
+    },
+    {
+      "ref": "R74",
+      "symbol": "R",
+      "value": "31.6k",
+      "mpn": "RT0603BRD0731K6L",
+      "nets": {
+        "1": "USB_CHG",
+        "2": "NTC"
+      },
+      "group": "CELL CHARGER / POWER PATH",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "note": "0.1% thin film",
+      "uuid": "a6f847c8-db83-5003-a0f5-85fd1149df08",
+      "datasheet": "",
+      "source_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "sch_x": 379.73,
+      "sch_y": 120.65
+    },
+    {
+      "ref": "R75",
+      "symbol": "R",
+      "value": "20k",
+      "mpn": "RT0603BRD0720KL",
+      "nets": {
+        "1": "NTC",
+        "2": "GND"
+      },
+      "group": "CELL CHARGER / POWER PATH",
+      "footprint": "KK_Power:R_0603_1608Metric",
+      "note": "0.1% thin film",
+      "uuid": "bb78252a-1660-5863-949f-697afaa5d35d",
+      "datasheet": "",
+      "source_footprint": "Resistor_SMD:R_0603_1608Metric",
+      "sch_x": 236.22,
+      "sch_y": 142.24
+    },
+    {
+      "ref": "TP26",
+      "symbol": "TestPoint",
+      "value": "PGOOD_N",
+      "mpn": "BARE PCB PAD",
+      "nets": {
+        "1": "PGOOD_N"
+      },
+      "group": "MAIN BOARD HARNESS / DEBUG",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "note": "Backside bare probe pad; replaces bulky service header.",
+      "uuid": "cfd173b6-7c85-5786-a8bf-a6b0b3227308",
+      "datasheet": "",
+      "source_footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "sch_x": 439.42,
+      "sch_y": 549.91
+    },
+    {
+      "ref": "TP27",
+      "symbol": "TestPoint",
+      "value": "CHARGE_N",
+      "mpn": "BARE PCB PAD",
+      "nets": {
+        "1": "CHARGE_N"
+      },
+      "group": "MAIN BOARD HARNESS / DEBUG",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "note": "Backside bare probe pad; replaces bulky service header.",
+      "uuid": "4fca87d3-448b-51bf-a027-d31b27a699f7",
+      "datasheet": "",
+      "source_footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "sch_x": 476.25,
+      "sch_y": 549.91
+    },
+    {
+      "ref": "TP28",
+      "symbol": "TestPoint",
+      "value": "VOLTAGES_OK",
+      "mpn": "BARE PCB PAD",
+      "nets": {
+        "1": "VOLTAGES_OK"
+      },
+      "group": "MAIN BOARD HARNESS / DEBUG",
+      "footprint": "KK_Power:TestPoint_Pad_D1.5mm",
+      "note": "Backside bare probe pad; replaces bulky service header.",
+      "uuid": "5b49ec21-8253-5aa4-b962-eef15de9d4ec",
+      "datasheet": "",
+      "source_footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "sch_x": 511.81,
+      "sch_y": 549.91
+    }
+  ],
+  "groups": [
+    "USB-C CHARGING ONLY",
+    "CELL CHARGER / POWER PATH",
+    "CELL PROTECTION / FUSE",
+    "SYSTEM SWITCH / INRUSH / UVLO",
+    "5 V BUCK-BOOST",
+    "3.3 V BUCK-BOOST",
+    "3.2 V BUCK-BOOST",
+    "ALL-RAIL READY / SOFT OUTPUTS",
+    "VOLTAGE SUPERVISION / STARTUP",
+    "USB-A / USB-C INPUT CURRENT",
+    "MAIN BOARD HARNESS / DEBUG"
+  ]
+}

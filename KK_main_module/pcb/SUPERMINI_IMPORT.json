@@ -1,0 +1,32 @@
+{
+  "source": "/home/legion/Desktop/ESP32-S3-SuperMini.kicad_mod",
+  "sha256": "0a80a099fc80dcf3f543604f6d5ce4894ebe5551ff17ce35d3d49ee3e0ad4684",
+  "project_footprint": "KK_Main:ESP32-S3-SuperMini",
+  "backup": "/home/legion/Desktop/KeychainKreatures/KK_main_module/pcb/backups/supermini-import-2026-09-11T00-02-31.271Z",
+  "pin_map": {
+    "1": "5V",
+    "2": "GND",
+    "3": "3V3",
+    "4": "1",
+    "5": "2",
+    "6": "3",
+    "7": "4",
+    "8": "5",
+    "9": "6",
+    "10": "7",
+    "11": "8",
+    "12": "9",
+    "13": "10",
+    "14": "11",
+    "15": "12",
+    "16": "13",
+    "17": "TX",
+    "18": "RX"
+  },
+  "geometry_preserved": true,
+  "row_spacing_mm": 15.24,
+  "nominal_pitch_mm": 2.54,
+  "drill_mm": 1,
+  "pad_size_mm": 1.508,
+  "note": "Supplied GPIO13 pad is at y=-2.50 mm, not -2.54; retained unchanged. User-supplied geometry, not a physical fit certification."
+}

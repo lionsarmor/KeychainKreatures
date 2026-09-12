@@ -1,0 +1,30 @@
+{
+  "scope": "Silkscreen-only logo addition",
+  "source_pcb_sha256": "ef71e3b4a0f05603184a53cf7c51afa34b4d4e24cfe0e7fc95925c64fad9ed56",
+  "candidate_pcb_sha256": "839d8741c2216db98f9ec57497ce1cea194b21feef1c5f35c01dc377655d2540",
+  "copper_signature_before": "036d83762907d75c48106ea4a3a1553aa1e3d9aafc620534a47381ffe65cacee",
+  "copper_signature_after": "036d83762907d75c48106ea4a3a1553aa1e3d9aafc620534a47381ffe65cacee",
+  "copper_unchanged": true,
+  "test_pads": 28,
+  "logos": [
+    {
+      "ref": "LOGO2",
+      "name": "OSHW-Logo_5.7x6mm_SilkScreen",
+      "layer": "B.Cu",
+      "xy_mm": [
+        32.0,
+        15.0
+      ]
+    },
+    {
+      "ref": "LOGO1",
+      "name": "KiCad-Logo_6mm_SilkScreen",
+      "layer": "B.Cu",
+      "xy_mm": [
+        17.0,
+        15.0
+      ]
+    }
+  ],
+  "note": "Standard KiCad/OSHW library artwork; no certification claim. Native DRC required."
+}

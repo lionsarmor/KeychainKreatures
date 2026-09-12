@@ -1,0 +1,37 @@
+obsolete_gpio,obsolete_signal,direction,historical_status,notes_DO_NOT_WIRE_FROM_THIS_FILE
+0,BOOT,input,reserved,Boot button and required strap bias
+1,VBAT_SENSE,input,candidate,ADC1 via switched protected divider
+2,SYS_SENSE,input,candidate,ADC1 divider for SYS_OUT range
+3,STRAP,input,reserved,Keep external circuitry away from strap function
+4,START_WAKE,input,candidate,Direct active-low button with external pull-up; RTC wake
+5,IR_RX,input,candidate,Direct demodulating receiver to RMT
+6,IR_TX,output,candidate,RMT to transistor driver; default off
+7,HAPTIC_PWM,output,candidate,Driver input; default off; actuator type pending
+8,I2C_SDA,bidirectional,candidate,3V3 pull-up; expander and optional sensors
+9,I2C_SCL,output,candidate,3V3 pull-up
+10,LCD_CS,output,candidate,Inactive pull-up
+11,SPI_MOSI,output,candidate,Display and optional SPI peripherals
+12,SPI_SCLK,output,candidate,Display and optional SPI peripherals
+13,SPI_MISO,input,optional,Reserved for radio or storage; not required by write-only screen
+14,LCD_DC,output,candidate,Display command/data
+15,LCD_RESET,output,candidate,Reset default defined by display data
+16,LCD_BL_PWM,output,candidate,Backlight driver control; circuit pending exact screen
+17,AUDIO_BCLK,output,candidate,I2S bit clock
+18,AUDIO_LRCLK,output,candidate,I2S word select
+19,USB_DM,bidirectional,reserved,Native USB programming
+20,USB_DP,bidirectional,reserved,Native USB programming
+21,AUDIO_DIN,output,candidate,I2S data to amplifier
+35,PSRAM,bidirectional,reserved,Unavailable on octal-PSRAM module
+36,PSRAM,bidirectional,reserved,Unavailable on octal-PSRAM module
+37,PSRAM,bidirectional,reserved,Unavailable on octal-PSRAM module
+38,AMP_ENABLE,output,candidate,Shutdown and channel network per amplifier data
+39,RADIO_CS,output,optional,Sub-GHz scope pending; external JTAG use conflicts
+40,RADIO_IRQ0,input,optional,Direct radio interrupt; external JTAG use conflicts
+41,RADIO_IRQ1,input,optional,Direct radio interrupt; external JTAG use conflicts
+42,EXPANDER_INT,input,candidate,Open-drain with pull-up; external JTAG use conflicts
+43,UART_TX,output,reserved,Recovery/test pads
+44,UART_RX,input,reserved,Recovery/test pads
+45,STRAP,input,reserved,Preserve reset requirements
+46,STRAP,input,reserved,Preserve reset requirements; input-only
+47,STORAGE_CS,output,optional,No microSD included until mechanical scope confirmed
+48,PERIPHERAL_ENABLE,output,candidate,Default-off rail control; off-state GPIO isolation required

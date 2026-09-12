@@ -1,0 +1,67 @@
+{
+  "revision": "P3",
+  "created_utc": "2026-09-12T08:45:28.244619+00:00",
+  "source_project": "KK_power_module/P3_matching_stack",
+  "source_sha256": {
+    "KK_power_module.kicad_pcb": "74cb2db7b740393391b8dd44e8d08ae518aa7f0c30e6ec798ab1123e056adbce",
+    "KK_power_module.kicad_sch": "d00c806dd6ff8be1ed24c51810f73974d369f2ff1ae1c66696304b85e0c0b545",
+    "KK_power_module.kicad_pro": "49b1bc169dcfc2a01afefded567e22c2cbdbc2c8118795234cd59feb53ebca81"
+  },
+  "native_checks": {
+    "ERC": 0,
+    "DRC": 0,
+    "opens": 0,
+    "schematic_parity": 0,
+    "ignored_DRC_checks": [
+      {
+        "description": "Track endpoint not centered on via",
+        "key": "track_not_centered_on_via"
+      },
+      {
+        "description": "Tuning profile track geometries",
+        "key": "tuning_profile_track_geometries"
+      },
+      {
+        "description": "Footprint doesn't match symbol's footprint filters",
+        "key": "footprint_filters_mismatch"
+      }
+    ]
+  },
+  "cad_audit_sha256": "07ba7c444e3744d5386b274c865b3547878a6df6aa47065051dde277f1ca1e3a",
+  "reports_sha256": {
+    "DRC.json": "fcc21cd7cf6399574588ef9398bbebb6c1bb79af1abf691d241b65bfaa95674e",
+    "ERC.json": "e016b2c63154ac104e27db08c9ad959c6a37fb5637eff538c1be2ae1237c5b0c"
+  },
+  "fabrication_sha256": {
+    "DRILL_REPORT.txt": "b2b0addf8ee0c69e4add696d26eb38231e88f4babc8bb4dab7118d06c80ed79e",
+    "KK_power_module-B_Cu.gbl": "8ff70dd9886d6dad2f99a5979268c4db9d117024e8b146d4cf83ae539de64c7e",
+    "KK_power_module-B_Mask.gbs": "3c7f81437bf5b01872be9a0e66f4e392281ef7c9003c3028336980d555d6ecce",
+    "KK_power_module-B_Paste.gbp": "fd8e0423b962c77d3a49f670835876e17de9cc73aa4a78864a5227e472b93ecd",
+    "KK_power_module-B_Silkscreen.gbo": "54319434468f304bdcb225871f7fa8a066e6e8da501eb962415b0fad3a7409b6",
+    "KK_power_module-Edge_Cuts.gm1": "3ea355e54f9d079ccf9acfe99a907dc2e016de2b7425fb3ae6a69415c958a4a8",
+    "KK_power_module-F_Cu.gtl": "aa70fbbb44d8eb29ff3ebb9ddc75af4d44ebc03e4d6dcf408e24312a9698c7c3",
+    "KK_power_module-F_Mask.gts": "d5ba87de6004959643e781adb84c311c08acbf6a7e2fcb4aca79e3a227ec4ad9",
+    "KK_power_module-F_Paste.gtp": "efd6448110e1b5b31d839fa7e87c6416f737d30242017b0a41766ab737dd8dd3",
+    "KK_power_module-F_Silkscreen.gto": "d854be09b2bf5c87ec5a77a473bc32a471de5fd12f224c4f64994e18ed961c7d",
+    "KK_power_module-In1_Cu.g1": "eda1331377239caf64d74de84c2b71c46c2012d8d78828ffbfd8fe0c7566b99e",
+    "KK_power_module-In2_Cu.g2": "06fcbfd8e514f4bd3ae7534d405ffd38a5c55f4363cca43039e58a4551ed6d2a",
+    "KK_power_module-NPTH-drl_map.pdf": "a5b0c59e1ec0cd9c0945e5febc4511c43a426b8d32fc4eef18a2160801be1c44",
+    "KK_power_module-NPTH.drl": "e7a76258153abccc45291de081a27443a9de27d285cafc9591927afe501e84b6",
+    "KK_power_module-PTH-drl_map.pdf": "8c8a491842b3649611d4a590b1465af1c3a4592ea57e1599acc44f07cec28a52",
+    "KK_power_module-PTH.drl": "4f1e00788f7b3f7516e7c6039e7e8b51a7b347940e4b2d0f4d7379426dc2bdfd",
+    "KK_power_module-job.gbrjob": "dcce5fcc1d2085bc566b215460edc5c11617f935aac57259cc84e8cfdfb11f45",
+    "KK_power_module.ipc": "e292fa8ac4dd7dba02a5ece414b45f18c040f76382ce600a7c7f66abc3b1fea9"
+  },
+  "board_mm": [
+    96,
+    105,
+    1.6
+  ],
+  "copper_layers": 4,
+  "fitted": 108,
+  "bare_debug_points": 28,
+  "manufacturer_approved": false,
+  "physical_fit_qualified": false,
+  "powered_tested": false,
+  "status": "PROTOTYPE DFM / FABRICATION REVIEW FILES; physical, supply/process and bench approval pending"
+}

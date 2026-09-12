@@ -1,0 +1,56 @@
+[
+  {
+    "name": "KA_100u_horizontal_max",
+    "source": "datasheets/Panasonic_KA_A.pdf, 01-Sep-2025, pp1-2",
+    "confidence": "manufacturer MAXIMUM can envelope + proposed lead form",
+    "notes": "ECEA1CKA101 / ECEA1CKA100; unchanged 16V. Sideways D+0.5mm and L+1mm envelope, 0.5mm insulating support, 2.5mm trimmed tails. Native 1.5mm leads spread for 10u. Seal-supported forming and ripple qualification required.",
+    "local_bounds_mm": [
+      -2.148943218802776,
+      -0.22493006595018367,
+      -2.5,
+      4.665,
+      11.0,
+      7.3
+    ],
+    "sha256": {
+      ".wrl": "2342d0b43afd0a886b6f91313071ed882ba09318c5a62cfc2b6c0bc31b87879b",
+      ".step": "a21cdad78581745b48bb8c7d4119489d3fc8a41a39f649aaaa8e0f8390abb503"
+    }
+  },
+  {
+    "name": "KA_10u_horizontal_max",
+    "source": "datasheets/Panasonic_KA_A.pdf, 01-Sep-2025, pp1-2",
+    "confidence": "manufacturer MAXIMUM can envelope + proposed lead form",
+    "notes": "ECEA1CKA101 / ECEA1CKA100; unchanged 16V. Sideways D+0.5mm and L+1mm envelope, 0.5mm insulating support, 2.5mm trimmed tails. Native 1.5mm leads spread for 10u. Seal-supported forming and ripple qualification required.",
+    "local_bounds_mm": [
+      -0.979300659501837,
+      -0.22493006595018367,
+      -2.5,
+      3.534298264797986,
+      12.0,
+      5.0
+    ],
+    "sha256": {
+      ".wrl": "4bba9e05a1ea9553ff4f6d97558bf84460df9a44d44e6e3fe668f9fa0dffc384",
+      ".step": "7f00afdee79845968291ff53d87ce1dc9c9645638ef8d9f37dbd4af68c2a8ff5"
+    }
+  },
+  {
+    "name": "TO92_horizontal_envelope",
+    "source": "Existing per-device TO-92 datasheets; worst-case family envelope",
+    "confidence": "CONSERVATIVE envelope; sample lead forming required",
+    "notes": "Body local -Y, marked flat face up, no pin swapping; 4mm lead form run. Keep full body area free of copper exposure and other parts.",
+    "local_bounds_mm": [
+      -0.25,
+      -9.4,
+      -2.5,
+      5.33,
+      0.24992229550020412,
+      5.0
+    ],
+    "sha256": {
+      ".wrl": "4c3f6a7432bf896858b2afab574d1917461de6635c535de80441ac7304552b64",
+      ".step": "538d8ba8e354e9405617d37a7b78e53ef96016df8f49a4553bea41408f415c08"
+    }
+  }
+]

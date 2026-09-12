@@ -1,0 +1,16 @@
+{
+  "source_sha256": {
+    "KK_power_module.kicad_sch": "8a544722583fc994f665f53255b7053021f6a8add73af85a513a50f3e8a08506",
+    "KK_power_module.kicad_pcb": "36233b1973132dd5006cd06d59c546c395f8d20f4acbd6d0e8d46eba6b151277",
+    "KK_power_module.kicad_pro": "db2ec4b873d0d42f2de8ab5c1729d80227a7e3fc49c3ae256e2cf8555885e8ef",
+    "KK_power_module.kicad_sym": "f5de9aef56a0bdac8058160eea84fd699d10d4ff6a10d61d69097adef1e46a60",
+    "FS8205.kicad_sym": "5d8e177790f47a6cfbeca96f5a09e6cbc2f6184c77bbe27adce21e034d4a74ab",
+    "fp-lib-table": "d33b8b6eae4fc8f6ed956b72edf3604f981d95c7cda3bed20681a04659844498",
+    "sym-lib-table": "dc66464aa7bca062af0685c09cbe21fbb4b44732ffdffe464e38b114162d45da"
+  },
+  "libraries": {
+    "Symbols": "/home/legion/.local/share/flatpak/runtime/org.kicad.KiCad.Library.Symbols/x86_64/stable/3a924b56e06b39f412abb4658eb067570651f94fe9b0dbc3bc671fb75562d253/files/symbols",
+    "Footprints": "/home/legion/.local/share/flatpak/runtime/org.kicad.KiCad.Library.Footprints/x86_64/stable/a56ef6f3370ad1997739e050a2025b43893cc8ac3efaa1fff212806714f2d54f/files/footprints",
+    "Packages3D": "/home/legion/.local/share/flatpak/runtime/org.kicad.KiCad.Library.Packages3D/x86_64/stable/4a720cd3ed7140732b34b01b9d31c91978ef75d6a89e5144905529a17d247ac3/files/3dmodels"
+  }
+}

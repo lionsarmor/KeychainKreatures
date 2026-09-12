@@ -1,0 +1,23 @@
+Test,Status,Measured result,Acceptance / action
+Board serial and module markings,PENDING,,Record revision and exact module batch
+Outline and actual-size print,PENDING,,96 x 105 mm outline and mounting holes match
+MCU and screen and SD socket dry-fit,PENDING,,No forced pins or underside lead contact
+RGB formed leads and PPTC041LFBN-RC socket; U4 ED16DT socket,PENDING,,2.54 mm formed pitch and correct pin order without body stress
+J1 J4 J5 mating plugs and wires,PENDING,,Insertion access and rear wire bend clearance; label motor vs speaker
+Bare TP access,PENDING,,Follow probe-face map; do not populate posts
+Unpowered shorts and harness polarity,PENDING,,No sustained rail short; every harness checked by continuity
+Coordinated current-limited rails,PENDING,,5 V / 3.3 V / 3.2 V within guide tolerances; no USB attached
+Off-state and rail sequencing,PENDING,,Qualify with P.3 power module before product release
+MCU boot and recovery,PENDING,,Program removed MCU; boot repeatably on fixture
+Buttons and MCP23017,PENDING,,All nine controls; preserve output-only pin usage
+Display and backlight,PENDING,,Correct colors and orientation; measure backlight current with R23 retained
+SD read write and power-loss recovery,PENDING,,Checksum correct during display and Wi-Fi activity; interrupted saves recover
+RGB reset and each color,PENDING,,Boot blanked; red green blue correct; measure current and temperature
+IR transmitter and receiver,PENDING,,Known signal received and controlled pulse transmission verified
+Motor pulse and startup,PENDING,,Measure current and rail dip; no sustained stall
+Audio switch and inrush,PENDING,,Off with AMP_EN low; measure Q6 drop and temperature and C25 inrush
+Audio DC noise clipping and pops,PENDING,,Differential measurement; supplier speaker rating still required
+Wi-Fi upload and trade firmware,PENDING,,Not supplied by this hardware pass; qualify transfers and recovery
+Combined load and repeated starts,PENDING,,No brownout or overheating with worst-case intended loads
+Enclosure RF retention and drop,PENDING,,Check final battery and shell and wire positions
+Student product release,PENDING,,Power and battery protection plus mechanical and applicable compliance review

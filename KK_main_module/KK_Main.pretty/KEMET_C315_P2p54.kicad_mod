@@ -1,0 +1,103 @@
+(footprint "KEMET_C315_P2p54"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "KEMET exact C315C104K5R5TA / C315C103J1G5TA / C315C105K5R5TA sheets: 3.81 x 2.54 mm max body, 2.54 mm pitch, wire <=0.61 mm")
+	(property "Reference" "REF**"
+		(at 0 -2.77 0)
+		(layer "F.SilkS")
+		(uuid "ed338197-1c09-442b-834a-209c23ba579c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "KEMET_C315_P2p54"
+		(at 0 2.77 0)
+		(layer "F.Fab")
+		(uuid "8691bcd9-9746-4c89-b6c6-f85351fd834a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4c2ab262-4ec1-424a-ac08-070006bcdfd3")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e1107a47-1c53-44a7-952b-d39506a04516")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -1.135 -1.77)
+		(end 3.675 1.77)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "a907ed1c-9908-4bb9-8137-688ff7677371")
+	)
+	(fp_rect
+		(start -0.635 -1.27)
+		(end 3.175 1.27)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "07c1a493-9aa8-4a9f-8b8b-1e4e3cd2bdec")
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.7 1.7)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "4891c314-7022-41b9-9b24-1bdde4270d21")
+	)
+	(pad "2" thru_hole circle
+		(at 2.54 0)
+		(size 1.7 1.7)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e96bc723-5677-4cbc-99ef-eb1cae2fcb38")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/KEMET_C315_max.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

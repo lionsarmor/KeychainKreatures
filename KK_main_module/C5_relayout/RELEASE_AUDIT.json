@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "revision": "C.5",
+  "root_and_revision_snapshot_match": true,
+  "source_and_manufacturing_hashes_match": true,
+  "erc_drc_opens_parity": 0,
+  "electrical_positions": 98,
+  "checked_component_pads": 297,
+  "debug_points": 25,
+  "models": 98,
+  "plated_drills": 371,
+  "npth_drills": 4,
+  "board_sha256": "b840262c37afad89ec5307568ace5b6acb4406f89c44c91f1579771642a89003",
+  "documents_checked": [
+    "README.md",
+    "assembly/README.md",
+    "assembly/ASSEMBLY_GUIDE.md",
+    "routing/README.md",
+    "C5_relayout/README.md",
+    "C5_relayout/REPORT.md",
+    "C5_relayout/CIRCUIT_REVIEW.md",
+    "C5_relayout/assembly/ASSEMBLY_GUIDE.md"
+  ],
+  "hardware_qualification": "PENDING; not physically assembled or powered",
+  "important_limits": [
+    "J1 requires coordinated 5V/3.3V/3.2V, not raw battery",
+    "Nominal full front/rear component envelope ~39mm before case clearance",
+    "Module fit, RGB socket retention, speaker rating and powered tests pending"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "revision": "C.2",
+  "status": "ENGINEERING PROTOTYPE ONLY; no powered qualification",
+  "created_utc": "2026-09-11T01:00:43.418861+00:00",
+  "source_sha256": {
+    "KK_main_module.kicad_pcb": "7b524ae66fa735af34b175a71e6e3094923426299ec1f5f596e5c348cea1cf1e",
+    "KK_main_module.kicad_sch": "b5b4cf767f85a90d6c59ff93b7b5ee4a2698b68f717009a60fdbe66a68af722d",
+    "KK_main_module.kicad_pro": "7e0491e71711bbf6233cc96e928995c4d684a6edb4b6dfc545f04730e891d0b3",
+    "KK_main_module.kicad_dru": "fa6f8b6f5d424cd3e489f4e8b5205b6dc47df58dc7fd3246c0202d709b3826dd",
+    "KK_Main.kicad_sym": "04e7f338bfbf4e1c09e827a413873ce7513a4d939fdfc77b5e4d160694a42dcc",
+    "KK_Main.pretty/1N5819_DO41.kicad_mod": "1dd1b88cecb10287ce058f59c789d1f23510c71ed5e550c66676b6ded4957779",
+    "KK_Main.pretty/Adafruit3101_ABCD.kicad_mod": "bd68419f8f604e549cf84b305e473bd757c0441584e4d6b9ab96185e77a8349a",
+    "KK_Main.pretty/ED08DT_DIP8_Socket.kicad_mod": "5e4299abff1401d8c95d8c88252ff35e7b91ea3fd666c4242ca587463302bdd4",
+    "KK_Main.pretty/ED281DT_DIP28_Socket.kicad_mod": "f17099db22172571ae116182c7a825cb2ba364a3d7faf0b2d21380ae3c245eaf",
+    "KK_Main.pretty/ESP32-S3-SuperMini.kicad_mod": "0a80a099fc80dcf3f543604f6d5ce4894ebe5551ff17ce35d3d49ee3e0ad4684",
+    "KK_Main.pretty/JST_PH_S2B_2.kicad_mod": "a82c95eca0bdddc6a43c46dd17b677a37df9ab1f87dfb56f8de86aaf972a4478",
+    "KK_Main.pretty/JST_XH_B4B_4.kicad_mod": "295e06b05ff42283036b95a6d2a8f5a6c428115250a8ab0844bae6324ade3003",
+    "KK_Main.pretty/KEMET_C315_P2p54.kicad_mod": "cc33b826fd48cc71986453491a984b6fc606cc332160912e94781d83f76306a0",
+    "KK_Main.pretty/MFR25_10p16.kicad_mod": "aa6abd65bc3af76561c3e4b899f9886292749220ef68bea9daa5416afd22e56a",
+    "KK_Main.pretty/Nichicon_UVR_D5_P2.kicad_mod": "dd65a76085de57c60b307b493a33f8af60b01a5dbf16baee850e9d7ef2417ccf",
+    "KK_Main.pretty/Sullins_PPTC061_LFB.kicad_mod": "f88bff725bb1633eee1f48f28273683bbf2e7674e6126cf88f6154d3f0d8b8b7",
+    "KK_Main.pretty/Sullins_PPTC081_LFB.kicad_mod": "b8b4d9cb576b71648dd98709abcf396923cc8da00c3fb133db7545caa1ff2f6e",
+    "KK_Main.pretty/SuperMini_Socket_PAIR_PROVISIONAL.kicad_mod": "ca191360603b501439bbef6805b3ff1cf90398c973743ca4d26baffd294dd623",
+    "KK_Main.pretty/TO92_LeadFormed_P2p54.kicad_mod": "c3f11a26ef8e8bc308d8e1fd6dafc2b3225534e5887a5460db87e1e6f1286fe9",
+    "KK_Main.pretty/TSAL6200_LED5.kicad_mod": "1b5d2debacbcba414e55ad4bb7e25dedade4b63f131b00c2a32cb7ae692d188c",
+    "KK_Main.pretty/TSOP38238_Vertical.kicad_mod": "23091184b88988f86c2b28751a3aa73ec438ce0ce0513141068f62fe72c0b426"
+  },
+  "erc_violations": 0,
+  "drc_violations": 0,
+  "unconnected_items": 0,
+  "schematic_parity_issues": 0,
+  "ignored_drc_categories": [
+    {
+      "description": "Footprint has no courtyard defined",
+      "key": "missing_courtyard"
+    },
+    {
+      "description": "Track endpoint not centered on via",
+      "key": "track_not_centered_on_via"
+    },
+    {
+      "description": "Tuning profile track geometries",
+      "key": "tuning_profile_track_geometries"
+    },
+    {
+      "description": "Footprint doesn't match symbol's footprint filters",
+      "key": "footprint_filters_mismatch"
+    },
+    {
+      "description": "Footprint component type doesn't match footprint pads",
+      "key": "footprint_type_mismatch"
+    }
+  ],
+  "manufacturing_files": {
+    "gerbers/KK_main_module-B_Cu.gbl": "a9825964e743b858f3878ed6b36a5a7bfe20a6f1f569369c3158217b75c7b11c",
+    "gerbers/KK_main_module-B_Mask.gbs": "20df56f77d599a0516b9cb43ccd8b9256bade7ab12c1ff6b2f14d7a53005efe7",
+    "gerbers/KK_main_module-B_Silkscreen.gbo": "97d8940c1d7066cd3cb910fc1bd615f7af978183f121d383e0a2448fde11b1a8",
+    "gerbers/KK_main_module-Edge_Cuts.gm1": "efe308b7de7e04aca6db6a2b362306195db4df534b8487048636cf6beee0a69d",
+    "gerbers/KK_main_module-F_Cu.gtl": "94e8d81847c800dea815388a7a5ecc7ee526ed493d2c633c44da14bc776b45d9",
+    "gerbers/KK_main_module-F_Mask.gts": "97d4d2a4b5a56e4c2ce6cc3eb305073266346f39fae83a3186892c809339a5ba",
+    "gerbers/KK_main_module-F_Silkscreen.gto": "6d3834f4190b0454793186ebd81c578acbda8e4baeedbaa6b83b72b95ce30527",
+    "gerbers/KK_main_module-NPTH-drl_map.pdf": "3832a144694e8dadb57eea0e890340004fd43034a52c9716f32ccc11bf04f51d",
+    "gerbers/KK_main_module-NPTH.drl": "21a8b74fdd556fa3de919006f70871cf495bc970a0fad0ee79e856c37b57b8b0",
+    "gerbers/KK_main_module-PTH-drl_map.pdf": "24c2062b124fe5496b6a7a99ce8fa92e5597474d2a945957c507d9027b5bd4b5",
+    "gerbers/KK_main_module-PTH.drl": "33fd8696896bbd98d5e92d9a722813d8d7895b579bb1730904bbbb038144201d",
+    "gerbers/KK_main_module-job.gbrjob": "7a880a3616a29f9ad31a12e4c544b07cb7494da1841f39ecde54586a82dd54cb"
+  }
+}

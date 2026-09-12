@@ -1,0 +1,69 @@
+{
+  "classes": [
+    [
+      "Default",
+      0.25,
+      0.6,
+      0.3
+    ],
+    [
+      "Power",
+      0.8,
+      1,
+      0.5
+    ],
+    [
+      "Motor",
+      0.8,
+      1,
+      0.5
+    ],
+    [
+      "Speaker",
+      0.5,
+      0.8,
+      0.4
+    ],
+    [
+      "Audio",
+      0.3,
+      0.6,
+      0.3
+    ],
+    [
+      "Ground",
+      0.6,
+      1,
+      0.5
+    ],
+    [
+      "AuxLoad",
+      0.5,
+      0.8,
+      0.4
+    ]
+  ],
+  "assignments": {
+    "Net-(C18-Pad1)": "Audio",
+    "Net-(C19-Pad1)": "Audio",
+    "Net-(C20-Pad2)": "Audio",
+    "Net-(U3-IN1)": "Audio",
+    "Net-(U3-NP1)": "Audio",
+    "Net-(U3-NP2)": "Audio",
+    "Net-(C23-Pad2)": "Audio",
+    "Net-(C24-Pad2)": "Audio",
+    "Net-(J5-+)": "Speaker",
+    "Net-(J5--)": "Speaker",
+    "Net-(D1-K)": "AuxLoad",
+    "Net-(D1-A)": "AuxLoad",
+    "Net-(Q3-C)": "AuxLoad",
+    "Net-(J2-BLK)": "AuxLoad",
+    "/MCU_5V": "Power",
+    "/LOGIC_3V3": "Power",
+    "/ACT_3V2": "Power",
+    "Net-(Q6-D)": "Power",
+    "Net-(D2-A)": "Motor",
+    "/GND": "Ground"
+  },
+  "note": "Saved source had only Default class; restored from documented C2/C5 functional pin assignments using current native pad nets."
+}

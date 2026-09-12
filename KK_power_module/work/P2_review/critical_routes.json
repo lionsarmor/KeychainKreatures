@@ -1,0 +1,110 @@
+[
+  {
+    "from": "C20:1",
+    "to": "C21:1",
+    "width_mm": 0.65,
+    "layer": "F.Cu"
+  },
+  {
+    "from": "U5:8",
+    "to": "C28:1",
+    "width_mm": 0.15,
+    "layer": "F.Cu"
+  },
+  {
+    "from": "C28:1",
+    "to": "R20:2",
+    "width_mm": 0.15,
+    "layer": "F.Cu"
+  },
+  {
+    "from": "R20:2",
+    "to": "R21:1",
+    "width_mm": 0.15,
+    "layer": "F.Cu"
+  },
+  {
+    "from": "U5:6",
+    "to": "C25:1",
+    "width_mm": 0.15,
+    "layer": "F.Cu"
+  },
+  {
+    "from": "U5:7",
+    "to": "U5:11",
+    "width_mm": 0.2,
+    "layer": "F.Cu"
+  },
+  {
+    "from": "C30:1",
+    "to": "C31:1",
+    "width_mm": 0.65,
+    "layer": "F.Cu"
+  },
+  {
+    "from": "U6:8",
+    "to": "C38:1",
+    "width_mm": 0.15,
+    "layer": "F.Cu"
+  },
+  {
+    "from": "C38:1",
+    "to": "R30:2",
+    "width_mm": 0.15,
+    "layer": "F.Cu"
+  },
+  {
+    "from": "R30:2",
+    "to": "R31:1",
+    "width_mm": 0.15,
+    "layer": "F.Cu"
+  },
+  {
+    "from": "U6:6",
+    "to": "C35:1",
+    "width_mm": 0.15,
+    "layer": "F.Cu"
+  },
+  {
+    "from": "U6:7",
+    "to": "U6:11",
+    "width_mm": 0.2,
+    "layer": "F.Cu"
+  },
+  {
+    "from": "C40:1",
+    "to": "C41:1",
+    "width_mm": 0.65,
+    "layer": "F.Cu"
+  },
+  {
+    "from": "U7:8",
+    "to": "C48:1",
+    "width_mm": 0.15,
+    "layer": "F.Cu"
+  },
+  {
+    "from": "C48:1",
+    "to": "R41:1",
+    "width_mm": 0.15,
+    "layer": "F.Cu"
+  },
+  {
+    "from": "U7:6",
+    "to": "C45:1",
+    "width_mm": 0.15,
+    "layer": "F.Cu"
+  },
+  {
+    "from": "U7:7",
+    "to": "U7:11",
+    "width_mm": 0.2,
+    "layer": "F.Cu"
+  },
+  {
+    "from": "U13:A1",
+    "to": "U13:B1",
+    "width_mm": 0.2,
+    "layer": "F.Cu"
+  }
+]

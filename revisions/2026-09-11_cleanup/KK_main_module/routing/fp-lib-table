@@ -1,0 +1,4 @@
+(fp_lib_table
+ (version 7)
+ (lib (name "KK_Main") (type "KiCad") (uri "${KIPRJMOD}/../KK_Main.pretty") (options "") (descr "C.2 candidate verification against project library"))
+)

@@ -1,0 +1,109 @@
+Reference,Value,Candidate MPN - purchasing audit pending,Footprint,Group,Datasheet,Notes
+J1,USB-C CHARGE ONLY,HC-TYPE-C-16P-01A,KK_Power:USB_C_HCTL,USB-C CHARGING ONLY,https://datasheet.lcsc.com/lcsc/2211161000_HCTL-HC-TYPE-C-16P-01A_C2894897.pdf,All USB D+/D- and SBU pins intentionally NC. Shield grounded.
+U14,TLV75533PDBVR,TLV75533PDBVR,KK_Power:SOT-23-5,USB-C CHARGING ONLY,https://www.ti.com/lit/ds/symlink/tlv755p.pdf,"Dedicated USB-powered CC supply: TUSB320 VDD recommended maximum is 5V, so do not feed it raw USB. Not connected to main-board 3V3."
+C72,1u,GRM188R71C105KA12D,KK_Power:C_0603_1608Metric,USB-C CHARGING ONLY,,Check effective capacitance at operating bias; 16V minimum for bulk.
+U3,TUSB320LAIRWBR,TUSB320LAIRWBR,KK_Power:Texas_X2QFN-12_1.6x1.6mm_P0.4mm,USB-C CHARGING ONLY,https://www.ti.com/lit/ds/symlink/tusb320lai.pdf,Sink/GPIO mode; internal Rd. Pullups use the same regulated supply to avoid backpowering. Not a USB data controller.
+R1,887k,RC0603FR07887KL,KK_Power:R_0603_1608Metric,USB-C CHARGING ONLY,,"1%; standard E96 value. TUSB320LAI rev D recommended VBUS resistor range 855..920kohm, nominal 887kohm."
+R2,4.7k,RC0603FR074K7L,KK_Power:R_0603_1608Metric,USB-C CHARGING ONLY,,1% thick film
+Q4,AO3400A,AO3400A,KK_Power:SOT-23,USB-C CHARGING ONLY,https://www.aosmd.com/sites/default/files/res/datasheets/AO3400A.pdf,Logic-level FET specified at 2.5V gate drive; clamps high-current request in default/unattached state.
+R3,10k,RC0603FR0710KL,KK_Power:R_0603_1608Metric,USB-C CHARGING ONLY,,1% thick film
+C1,1u,GRM188R71C105KA12D,KK_Power:C_0603_1608Metric,USB-C CHARGING ONLY,,Check effective capacitance at operating bias; 16V minimum for bulk.
+C2,100n,GRM188R71C104KA01D,KK_Power:C_0603_1608Metric,USB-C CHARGING ONLY,,Check effective capacitance at operating bias; 16V minimum for bulk.
+D1,SMAJ5.0A,SMAJ5.0A,KK_Power:D_SMA,USB-C CHARGING ONLY,,Unidirectional input TVS; pin 1 cathode.
+U1,BQ24075TRGTR,BQ24075TRGTR,KK_Power:VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm,CELL CHARGER / POWER PATH,https://www.ti.com/lit/ds/symlink/bq24075t.pdf,Voltage-based TS network; only the T variant is valid. SYSOFF pin 15 grounded. Approx. 300mA charge target. No NTC bypass.
+R4,2.94k,RT0603BRD072K94L,KK_Power:R_0603_1608Metric,CELL CHARGER / POWER PATH,,0.1%; below the 3kohm maximum programming resistance including tolerance.
+R5,1.3k,RC0603FR071K3L,KK_Power:R_0603_1608Metric,CELL CHARGER / POWER PATH,,1% thick film
+C3,4.7u,GRM21BR71C475KA73L,KK_Power:C_0805_2012Metric,CELL CHARGER / POWER PATH,,Check effective capacitance at operating bias; 16V minimum for bulk.
+C4,10u,GRM21BR61C106KE15L,KK_Power:C_0805_2012Metric,CELL CHARGER / POWER PATH,,Check effective capacitance at operating bias; 16V minimum for bulk.
+C5,22u,GRM21BR61C226ME44L,KK_Power:C_0805_2012Metric,CELL CHARGER / POWER PATH,,Check effective capacitance at operating bias; 16V minimum for bulk.
+J4,BATTERY NTC,B2B-PH-K-S(LF)(SN),KK_Power:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical,CELL CHARGER / POWER PATH,,10k NTC thermally bonded to cell. No fitted NO_NTC bypass.
+LED1,POWER GOOD,APT3216LZGCK,KK_Power:LED_1206_3216Metric,CELL CHARGER / POWER PATH,,
+R6,4.7k,RC0603FR074K7L,KK_Power:R_0603_1608Metric,CELL CHARGER / POWER PATH,,1% thick film
+LED2,CHARGING,APT3216SURCK,KK_Power:LED_1206_3216Metric,CELL CHARGER / POWER PATH,,
+R7,4.7k,RC0603FR074K7L,KK_Power:R_0603_1608Metric,CELL CHARGER / POWER PATH,,1% thick film
+J2,1S CELL / VH,B2P-VH(LF)(SN),KK_Power:JST_VH_B2P-VH_1x02_P3.96mm_Vertical,CELL PROTECTION / FUSE,,Higher-current polarity-controlled cell harness. Requires a cell rated at least 4A continuous; not interchangeable with old PH or main-board XH harnesses.
+F1,4A FAST,0451004.MRL,KK_Power:Fuse_1206_3216Metric,CELL PROTECTION / FUSE,,Secondary fault fuse; not a substitute for cell protection. Cell and fuse I-squared-t coordination still required.
+U2,DW01A / H&M,DW01A,KK_Power:SOT-23-6,CELL PROTECTION / FUSE,https://hmsemi.com/downfile/DW01A.PDF,"H&M Semiconductor DW01A per linked manufacturer sheet. No generic substitutions. Parallel-FET trip thresholds, cell limits and fuse coordination remain release holds."
+Q1,FS8205,FS8205,KK_Power:FS8205,CELL PROTECTION / FUSE,https://www.ic-fortune.com/upload/Download/FS8205-DS-19_EN.pdf,Three parallel matched dual-MOSFET banks. Must qualify current sharing and trip thresholds.
+Q2,FS8205,FS8205,KK_Power:FS8205,CELL PROTECTION / FUSE,https://www.ic-fortune.com/upload/Download/FS8205-DS-19_EN.pdf,Three parallel matched dual-MOSFET banks. Must qualify current sharing and trip thresholds.
+Q3,FS8205,FS8205,KK_Power:FS8205,CELL PROTECTION / FUSE,https://www.ic-fortune.com/upload/Download/FS8205-DS-19_EN.pdf,Three parallel matched dual-MOSFET banks. Must qualify current sharing and trip thresholds.
+R8,470,RC0603FR07470RL,KK_Power:R_0603_1608Metric,CELL PROTECTION / FUSE,,1% thick film
+R9,1k,RC0603FR071KL,KK_Power:R_0603_1608Metric,CELL PROTECTION / FUSE,,1% thick film
+C6,100n,GRM188R71C104KA01D,KK_Power:C_0603_1608Metric,CELL PROTECTION / FUSE,,Check effective capacitance at operating bias; 16V minimum for bulk.
+SW1,OFF / ON,JS102011SAQN,KK_Power:SW_SPDT_CK_JS102011SAQN,SYSTEM SWITCH / INRUSH / UVLO,https://www.ckswitches.com/media/1422/js.pdf,Signal-level switch only; charging remains on when toy off.
+U4,TPS259530DSGR,TPS259530DSGR,KK_Power:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm,SYSTEM SWITCH / INRUSH / UVLO,https://www.ti.com/lit/ds/symlink/tps2595.pdf,Latch-off on thermal fault; cycle switch to recover.
+R10,182k,RT0603BRD07182KL,KK_Power:R_0603_1608Metric,SYSTEM SWITCH / INRUSH / UVLO,,0.1% thin film
+R11,100k,RT0603BRD07100KL,KK_Power:R_0603_1608Metric,SYSTEM SWITCH / INRUSH / UVLO,,0.1% thin film
+R12,620,RC0603FR07620RL,KK_Power:R_0603_1608Metric,SYSTEM SWITCH / INRUSH / UVLO,,1% thick film
+C7,10n,GRM188R71H103KA01D,KK_Power:C_0603_1608Metric,SYSTEM SWITCH / INRUSH / UVLO,,Check effective capacitance at operating bias; 16V minimum for bulk.
+C8,22u,GRM21BR61C226ME44L,KK_Power:C_0805_2012Metric,SYSTEM SWITCH / INRUSH / UVLO,,Check effective capacitance at operating bias; 16V minimum for bulk.
+C9,100n,GRM188R71C104KA01D,KK_Power:C_0603_1608Metric,SYSTEM SWITCH / INRUSH / UVLO,,Check effective capacitance at operating bias; 16V minimum for bulk.
+R13,100k,RC0603FR07100KL,KK_Power:R_0603_1608Metric,SYSTEM SWITCH / INRUSH / UVLO,,1% thick film
+R14,10k,RC0603FR0710KL,KK_Power:R_0603_1608Metric,SYSTEM SWITCH / INRUSH / UVLO,,1% thick film
+U5,TPS63060DSCR,TPS63060DSCR,KK_Power:Texas_S-PWSON-N10,5 V BUCK-BOOST,https://www.ti.com/lit/ds/symlink/tps63060.pdf,Forced PWM for controlled rail accuracy/ripple. PG shared open-drain.
+L1,1uH,XFL4020-102MEC,KK_Power:L_Coilcraft_XxL4020,5 V BUCK-BOOST,https://www.coilcraft.com/getmedia/50632d43-da1b-4cdb-8ab4-3029cab51df3/xfl4020.pdf,"TI-recommended family; 5.1A Isat at 20% loss, manufacturer limits apply."
+C20,10u,GRM21BR61C106KE15L,KK_Power:C_0805_2012Metric,5 V BUCK-BOOST,,Check effective capacitance at operating bias; 16V minimum for bulk.
+C21,10u,GRM21BR61C106KE15L,KK_Power:C_0805_2012Metric,5 V BUCK-BOOST,,Check effective capacitance at operating bias; 16V minimum for bulk.
+C22,22u,GRM21BR61C226ME44L,KK_Power:C_0805_2012Metric,5 V BUCK-BOOST,,Check effective capacitance at operating bias; 16V minimum for bulk.
+C23,22u,GRM21BR61C226ME44L,KK_Power:C_0805_2012Metric,5 V BUCK-BOOST,,Check effective capacitance at operating bias; 16V minimum for bulk.
+C24,22u,GRM21BR61C226ME44L,KK_Power:C_0805_2012Metric,5 V BUCK-BOOST,,Check effective capacitance at operating bias; 16V minimum for bulk.
+C25,100n,GRM188R71C104KA01D,KK_Power:C_0603_1608Metric,5 V BUCK-BOOST,,Check effective capacitance at operating bias; 16V minimum for bulk.
+R20,909k,RT0603BRD07909KL,KK_Power:R_0603_1608Metric,5 V BUCK-BOOST,,0.1% thin film
+R21,101k,RT0603BRD07101KL,KK_Power:R_0603_1608Metric,5 V BUCK-BOOST,,0.1% thin film
+C28,10p,GRM1885C1H100JA01D,KK_Power:C_0603_1608Metric,5 V BUCK-BOOST,,"10pF across the lower feedback resistor per TPS63060 datasheet, not an upper-divider feedforward capacitor."
+U6,TPS63060DSCR,TPS63060DSCR,KK_Power:Texas_S-PWSON-N10,3.3 V BUCK-BOOST,https://www.ti.com/lit/ds/symlink/tps63060.pdf,Forced PWM for controlled rail accuracy/ripple. PG shared open-drain.
+L2,1uH,XFL4020-102MEC,KK_Power:L_Coilcraft_XxL4020,3.3 V BUCK-BOOST,https://www.coilcraft.com/getmedia/50632d43-da1b-4cdb-8ab4-3029cab51df3/xfl4020.pdf,"TI-recommended family; 5.1A Isat at 20% loss, manufacturer limits apply."
+C30,10u,GRM21BR61C106KE15L,KK_Power:C_0805_2012Metric,3.3 V BUCK-BOOST,,Check effective capacitance at operating bias; 16V minimum for bulk.
+C31,10u,GRM21BR61C106KE15L,KK_Power:C_0805_2012Metric,3.3 V BUCK-BOOST,,Check effective capacitance at operating bias; 16V minimum for bulk.
+C32,22u,GRM21BR61C226ME44L,KK_Power:C_0805_2012Metric,3.3 V BUCK-BOOST,,Check effective capacitance at operating bias; 16V minimum for bulk.
+C33,22u,GRM21BR61C226ME44L,KK_Power:C_0805_2012Metric,3.3 V BUCK-BOOST,,Check effective capacitance at operating bias; 16V minimum for bulk.
+C34,22u,GRM21BR61C226ME44L,KK_Power:C_0805_2012Metric,3.3 V BUCK-BOOST,,Check effective capacitance at operating bias; 16V minimum for bulk.
+C35,100n,GRM188R71C104KA01D,KK_Power:C_0603_1608Metric,3.3 V BUCK-BOOST,,Check effective capacitance at operating bias; 16V minimum for bulk.
+R30,560k,RT0603BRD07560KL,KK_Power:R_0603_1608Metric,3.3 V BUCK-BOOST,,0.1% thin film
+R31,100k,RT0603BRD07100KL,KK_Power:R_0603_1608Metric,3.3 V BUCK-BOOST,,0.1% thin film
+C38,10p,GRM1885C1H100JA01D,KK_Power:C_0603_1608Metric,3.3 V BUCK-BOOST,,"10pF across the lower feedback resistor per TPS63060 datasheet, not an upper-divider feedforward capacitor."
+U7,TPS63060DSCR,TPS63060DSCR,KK_Power:Texas_S-PWSON-N10,3.2 V BUCK-BOOST,https://www.ti.com/lit/ds/symlink/tps63060.pdf,Forced PWM for controlled rail accuracy/ripple. PG shared open-drain.
+L3,1uH,XFL4020-102MEC,KK_Power:L_Coilcraft_XxL4020,3.2 V BUCK-BOOST,https://www.coilcraft.com/getmedia/50632d43-da1b-4cdb-8ab4-3029cab51df3/xfl4020.pdf,"TI-recommended family; 5.1A Isat at 20% loss, manufacturer limits apply."
+C40,10u,GRM21BR61C106KE15L,KK_Power:C_0805_2012Metric,3.2 V BUCK-BOOST,,Check effective capacitance at operating bias; 16V minimum for bulk.
+C41,10u,GRM21BR61C106KE15L,KK_Power:C_0805_2012Metric,3.2 V BUCK-BOOST,,Check effective capacitance at operating bias; 16V minimum for bulk.
+C42,22u,GRM21BR61C226ME44L,KK_Power:C_0805_2012Metric,3.2 V BUCK-BOOST,,Check effective capacitance at operating bias; 16V minimum for bulk.
+C43,22u,GRM21BR61C226ME44L,KK_Power:C_0805_2012Metric,3.2 V BUCK-BOOST,,Check effective capacitance at operating bias; 16V minimum for bulk.
+C44,22u,GRM21BR61C226ME44L,KK_Power:C_0805_2012Metric,3.2 V BUCK-BOOST,,Check effective capacitance at operating bias; 16V minimum for bulk.
+C45,100n,GRM188R71C104KA01D,KK_Power:C_0603_1608Metric,3.2 V BUCK-BOOST,,Check effective capacitance at operating bias; 16V minimum for bulk.
+R40,270k,RT0603BRD07270KL,KK_Power:R_0603_1608Metric,3.2 V BUCK-BOOST,,0.1% thin film
+R43,270k,RT0603BRD07270KL,KK_Power:R_0603_1608Metric,3.2 V BUCK-BOOST,,0.1% thin film
+R41,100k,RT0603BRD07100KL,KK_Power:R_0603_1608Metric,3.2 V BUCK-BOOST,,0.1% thin film
+C48,10p,GRM1885C1H100JA01D,KK_Power:C_0603_1608Metric,3.2 V BUCK-BOOST,,"10pF across the lower feedback resistor per TPS63060 datasheet, not an upper-divider feedforward capacitor."
+U11,SN74AUP1G17DBVR,SN74AUP1G17DBVR,KK_Power:SOT-23-5,ALL-RAIL READY / SOFT OUTPUTS,https://www.ti.com/lit/ds/symlink/sn74aup1g17.pdf,Buffers the independent voltage-supervisor outputs; not converter current-limit PG.
+R50,470k,RC0603FR07470KL,KK_Power:R_0603_1608Metric,ALL-RAIL READY / SOFT OUTPUTS,,1% thick film
+C51,100n,GRM188R71C104KA01D,KK_Power:C_0603_1608Metric,ALL-RAIL READY / SOFT OUTPUTS,,Check effective capacitance at operating bias; 16V minimum for bulk.
+R51,100k,RC0603FR07100KL,KK_Power:R_0603_1608Metric,ALL-RAIL READY / SOFT OUTPUTS,,1% thick film
+U8,TPS22918DBVR,TPS22918DBVR,KK_Power:SOT-23-6,ALL-RAIL READY / SOFT OUTPUTS,https://www.ti.com/lit/ds/symlink/tps22918.pdf,Resistor-limited output discharge. Qualify ramp/fall timing with actual C.5 load capacitance.
+R52,100,RC0603FR07100RL,KK_Power:R_0603_1608Metric,ALL-RAIL READY / SOFT OUTPUTS,,1% thick film
+C52,10n,GRM188R71H103KA01D,KK_Power:C_0603_1608Metric,ALL-RAIL READY / SOFT OUTPUTS,,Check effective capacitance at operating bias; 16V minimum for bulk.
+U9,TPS22918DBVR,TPS22918DBVR,KK_Power:SOT-23-6,ALL-RAIL READY / SOFT OUTPUTS,https://www.ti.com/lit/ds/symlink/tps22918.pdf,Resistor-limited output discharge. Qualify ramp/fall timing with actual C.5 load capacitance.
+R53,100,RC0603FR07100RL,KK_Power:R_0603_1608Metric,ALL-RAIL READY / SOFT OUTPUTS,,1% thick film
+C53,10n,GRM188R71H103KA01D,KK_Power:C_0603_1608Metric,ALL-RAIL READY / SOFT OUTPUTS,,Check effective capacitance at operating bias; 16V minimum for bulk.
+U10,TPS22918DBVR,TPS22918DBVR,KK_Power:SOT-23-6,ALL-RAIL READY / SOFT OUTPUTS,https://www.ti.com/lit/ds/symlink/tps22918.pdf,Resistor-limited output discharge. Qualify ramp/fall timing with actual C.5 load capacitance.
+R54,100,RC0603FR07100RL,KK_Power:R_0603_1608Metric,ALL-RAIL READY / SOFT OUTPUTS,,1% thick film
+C54,10n,GRM188R71H103KA01D,KK_Power:C_0603_1608Metric,ALL-RAIL READY / SOFT OUTPUTS,,Check effective capacitance at operating bias; 16V minimum for bulk.
+U12,TPS386000RGPR,TPS386000RGPR,KK_Power:Texas_RGP0020D_VQFN-20-1EP_4x4mm_P0.5mm_EP2.7x2.7mm,VOLTAGE SUPERVISION / STARTUP,https://www.ti.com/lit/ds/symlink/tps386000.pdf,Powered before the eFuse so MR does not exceed its recommended VDD limit during normal switching. CT floating: default delay. MR switches off output gates. Unused channel 4/watchdog do not drive enables.
+R60,10k,RC0603FR0710KL,KK_Power:R_0603_1608Metric,VOLTAGE SUPERVISION / STARTUP,,1% thick film
+R61,1060k,RT0603BRD071M06L,KK_Power:R_0603_1608Metric,VOLTAGE SUPERVISION / STARTUP,,0.1% thin film
+R62,100k,RT0603BRD07100KL,KK_Power:R_0603_1608Metric,VOLTAGE SUPERVISION / STARTUP,,0.1% thin film
+R63,665k,RT0603BRD07665KL,KK_Power:R_0603_1608Metric,VOLTAGE SUPERVISION / STARTUP,,0.1% thin film
+R64,100k,RT0603BRD07100KL,KK_Power:R_0603_1608Metric,VOLTAGE SUPERVISION / STARTUP,,0.1% thin film
+R65,649k,RT0603BRD07649KL,KK_Power:R_0603_1608Metric,VOLTAGE SUPERVISION / STARTUP,,0.1% thin film
+R66,100k,RT0603BRD07100KL,KK_Power:R_0603_1608Metric,VOLTAGE SUPERVISION / STARTUP,,0.1% thin film
+C60,100n,GRM188R71C104KA01D,KK_Power:C_0603_1608Metric,VOLTAGE SUPERVISION / STARTUP,,Check effective capacitance at operating bias; 16V minimum for bulk.
+U13,TPS22950YBHR,TPS22950YBHR,KK_Power:TPS22950_YBH,USB-A / USB-C INPUT CURRENT,https://www.ti.com/lit/ds/symlink/tps22950.pdf,"Use base TPS22950, not C/L variants: only base supports 50mA setting. Factory-assembled 0.4mm-pitch six-ball WCSP."
+R70,19.2k,RT0603BRD0719K2L,KK_Power:R_0603_1608Metric,USB-A / USB-C INPUT CURRENT,,0.1% thin film
+R71,634,RT0603BRD07634RL,KK_Power:R_0603_1608Metric,USB-A / USB-C INPUT CURRENT,,"0.1%; high-mode external limiter near 2A, above the charger internal 1.23A limit. Prevents two current limiters fighting. Charger sets the advertised-source ceiling."
+Q5,AO3400A,AO3400A,KK_Power:SOT-23,USB-A / USB-C INPUT CURRENT,https://www.aosmd.com/sites/default/files/res/datasheets/AO3400A.pdf,Logic-level FET specified at 2.5V gate drive; enables the extra ILIM resistor only in advertised higher-current mode.
+R72,100k,RC0603FR07100KL,KK_Power:R_0603_1608Metric,USB-A / USB-C INPUT CURRENT,,1% thick film
+R73,100k,RC0603FR07100KL,KK_Power:R_0603_1608Metric,USB-A / USB-C INPUT CURRENT,,1% thick film
+C70,100n,GRM188R71C104KA01D,KK_Power:C_0603_1608Metric,USB-A / USB-C INPUT CURRENT,,Check effective capacitance at operating bias; 16V minimum for bulk.
+C71,1u,GRM188R71C105KA12D,KK_Power:C_0603_1608Metric,USB-A / USB-C INPUT CURRENT,,Check effective capacitance at operating bias; 16V minimum for bulk.
+J3,C.5 SYS_IN / XH,B4B-XH-A(LF)(SN),KK_Power:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical,MAIN BOARD HARNESS / DEBUG,,Straight pin-number-to-pin-number four-wire harness; do not trust wire colors.
+R74,31.6k,RT0603BRD0731K6L,KK_Power:R_0603_1608Metric,CELL CHARGER / POWER PATH,,0.1% thin film
+R75,20k,RT0603BRD0720KL,KK_Power:R_0603_1608Metric,CELL CHARGER / POWER PATH,,0.1% thin film

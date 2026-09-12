@@ -1,0 +1,428 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-10T20:25:58",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "KK_main_module_C3_candidate.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "PTH inside courtyard",
+            "items": [
+                {
+                    "description": "PTH pad 1 [Net-(C19-Pad1)] of TP23",
+                    "pos": {
+                        "x": 46.0,
+                        "y": 56.0
+                    },
+                    "uuid": "a38f3460-2292-45d6-bd65-656539673c11"
+                },
+                {
+                    "description": "Footprint R31",
+                    "pos": {
+                        "x": 56.08,
+                        "y": 57.5
+                    },
+                    "uuid": "d4d998e8-3c2b-408c-906a-79dff8451b52"
+                }
+            ],
+            "severity": "error",
+            "type": "pth_inside_courtyard"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "items": [
+                {
+                    "description": "PTH pad 1 [/BUTTON_FN_N] of TP12",
+                    "pos": {
+                        "x": 71.0,
+                        "y": 24.0
+                    },
+                    "uuid": "4c6a1ca4-2fd1-4291-936d-aa92f8a9dceb"
+                },
+                {
+                    "description": "Footprint MOD1",
+                    "pos": {
+                        "x": 66.0,
+                        "y": 18.5
+                    },
+                    "uuid": "1462fafb-8d1b-4983-a325-40d8d71ee456"
+                }
+            ],
+            "severity": "error",
+            "type": "pth_inside_courtyard"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "items": [
+                {
+                    "description": "PTH pad 1 [/BUTTON_INT_N] of TP11",
+                    "pos": {
+                        "x": 69.0,
+                        "y": 22.0
+                    },
+                    "uuid": "04ec36ff-5aa3-45f3-8273-aa0850aca53e"
+                },
+                {
+                    "description": "Footprint MOD1",
+                    "pos": {
+                        "x": 66.0,
+                        "y": 18.5
+                    },
+                    "uuid": "1462fafb-8d1b-4983-a325-40d8d71ee456"
+                }
+            ],
+            "severity": "error",
+            "type": "pth_inside_courtyard"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "items": [
+                {
+                    "description": "PTH pad 1 [/I2C_SCL] of TP10",
+                    "pos": {
+                        "x": 60.5,
+                        "y": 23.5
+                    },
+                    "uuid": "04c586e5-1373-4b21-8a0b-90580083276f"
+                },
+                {
+                    "description": "Footprint MOD1",
+                    "pos": {
+                        "x": 66.0,
+                        "y": 18.5
+                    },
+                    "uuid": "1462fafb-8d1b-4983-a325-40d8d71ee456"
+                }
+            ],
+            "severity": "error",
+            "type": "pth_inside_courtyard"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "items": [
+                {
+                    "description": "PTH pad 1 [/TFT_DC] of TP18",
+                    "pos": {
+                        "x": 66.0,
+                        "y": 25.0
+                    },
+                    "uuid": "6674dbdd-3354-4515-b345-4a22ef72bdfd"
+                },
+                {
+                    "description": "Footprint MOD1",
+                    "pos": {
+                        "x": 66.0,
+                        "y": 18.5
+                    },
+                    "uuid": "1462fafb-8d1b-4983-a325-40d8d71ee456"
+                }
+            ],
+            "severity": "error",
+            "type": "pth_inside_courtyard"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "items": [
+                {
+                    "description": "PTH pad 1 [/IR_TX] of TP30",
+                    "pos": {
+                        "x": 66.0,
+                        "y": 28.0
+                    },
+                    "uuid": "61bf36c9-4c28-4f9d-820f-531e275c8249"
+                },
+                {
+                    "description": "Footprint MOD1",
+                    "pos": {
+                        "x": 66.0,
+                        "y": 18.5
+                    },
+                    "uuid": "1462fafb-8d1b-4983-a325-40d8d71ee456"
+                }
+            ],
+            "severity": "error",
+            "type": "pth_inside_courtyard"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "items": [
+                {
+                    "description": "PTH pad 1 [/GND] of TP8",
+                    "pos": {
+                        "x": 61.0,
+                        "y": 29.0
+                    },
+                    "uuid": "e81b3072-e76c-40a5-9ea0-269b39db014d"
+                },
+                {
+                    "description": "Footprint MOD1",
+                    "pos": {
+                        "x": 66.0,
+                        "y": 18.5
+                    },
+                    "uuid": "1462fafb-8d1b-4983-a325-40d8d71ee456"
+                }
+            ],
+            "severity": "error",
+            "type": "pth_inside_courtyard"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "items": [
+                {
+                    "description": "PTH pad 1 [/TFT_CS] of TP17",
+                    "pos": {
+                        "x": 71.5,
+                        "y": 28.5
+                    },
+                    "uuid": "566e2d93-65ca-4218-8d19-dc8f74d12da7"
+                },
+                {
+                    "description": "Footprint MOD1",
+                    "pos": {
+                        "x": 66.0,
+                        "y": 18.5
+                    },
+                    "uuid": "1462fafb-8d1b-4983-a325-40d8d71ee456"
+                }
+            ],
+            "severity": "error",
+            "type": "pth_inside_courtyard"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "items": [
+                {
+                    "description": "PTH pad 1 [/GND] of TP6",
+                    "pos": {
+                        "x": 41.0,
+                        "y": 35.0
+                    },
+                    "uuid": "f871e436-63aa-4077-8140-8377fabc17cb"
+                },
+                {
+                    "description": "Footprint C22",
+                    "pos": {
+                        "x": 43.0,
+                        "y": 37.27
+                    },
+                    "uuid": "2462b3e5-f817-4686-821b-51a7a795203b"
+                }
+            ],
+            "severity": "error",
+            "type": "pth_inside_courtyard"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "items": [
+                {
+                    "description": "PTH pad 1 [/GND] of TP6",
+                    "pos": {
+                        "x": 41.0,
+                        "y": 35.0
+                    },
+                    "uuid": "f871e436-63aa-4077-8140-8377fabc17cb"
+                },
+                {
+                    "description": "Footprint R35",
+                    "pos": {
+                        "x": 29.42,
+                        "y": 35.0
+                    },
+                    "uuid": "470de48a-d682-4250-9b48-7ec404e70ffc"
+                }
+            ],
+            "severity": "error",
+            "type": "pth_inside_courtyard"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "items": [
+                {
+                    "description": "PTH pad 1 [/LOGIC_3V3] of TP2",
+                    "pos": {
+                        "x": 58.5,
+                        "y": 71.0
+                    },
+                    "uuid": "2b253403-2800-4e79-8f7e-96584084db02"
+                },
+                {
+                    "description": "Footprint SW7",
+                    "pos": {
+                        "x": 61.0,
+                        "y": 67.0
+                    },
+                    "uuid": "5390c74c-368f-4c9c-aa57-1caf36014739"
+                }
+            ],
+            "severity": "error",
+            "type": "pth_inside_courtyard"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "items": [
+                {
+                    "description": "PTH pad 1 [/GND] of TP4",
+                    "pos": {
+                        "x": 66.0,
+                        "y": 68.0
+                    },
+                    "uuid": "12441cbd-f808-45bd-8ed8-4134e05e7146"
+                },
+                {
+                    "description": "Footprint SW7",
+                    "pos": {
+                        "x": 61.0,
+                        "y": 67.0
+                    },
+                    "uuid": "5390c74c-368f-4c9c-aa57-1caf36014739"
+                }
+            ],
+            "severity": "error",
+            "type": "pth_inside_courtyard"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "items": [
+                {
+                    "description": "PTH pad 1 [/AUDIO_PWM] of TP22",
+                    "pos": {
+                        "x": 53.5,
+                        "y": 26.5
+                    },
+                    "uuid": "72cd72b8-e588-42ea-90b0-3c4db939f824"
+                },
+                {
+                    "description": "Footprint R30",
+                    "pos": {
+                        "x": 54.5,
+                        "y": 27.42
+                    },
+                    "uuid": "3d815602-8db8-4052-a686-b8b20876081c"
+                }
+            ],
+            "severity": "error",
+            "type": "pth_inside_courtyard"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "items": [
+                {
+                    "description": "PTH pad 1 [Net-(U2-VS)] of TP32",
+                    "pos": {
+                        "x": 14.5,
+                        "y": 12.0
+                    },
+                    "uuid": "98f256b4-12c6-4342-bb62-b5f497b417e0"
+                },
+                {
+                    "description": "Footprint U2",
+                    "pos": {
+                        "x": 20.55,
+                        "y": 11.0
+                    },
+                    "uuid": "540fe3ab-d327-4635-add4-ea3fc418fff0"
+                }
+            ],
+            "severity": "error",
+            "type": "pth_inside_courtyard"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "items": [
+                {
+                    "description": "PTH pad 1 [/TFT_RST_N] of TP19",
+                    "pos": {
+                        "x": 28.0,
+                        "y": 12.5
+                    },
+                    "uuid": "06af2a62-ecb2-40ea-8409-9659fd25c44d"
+                },
+                {
+                    "description": "Footprint J2",
+                    "pos": {
+                        "x": 30.11,
+                        "y": 11.0
+                    },
+                    "uuid": "610d4468-ed60-4491-b26b-5b585bd67ff4"
+                }
+            ],
+            "severity": "error",
+            "type": "pth_inside_courtyard"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "items": [
+                {
+                    "description": "PTH pad 1 [Net-(D2-A)] of TP29",
+                    "pos": {
+                        "x": 72.5,
+                        "y": 42.5
+                    },
+                    "uuid": "1e603d9c-a161-43a7-97ac-9fa6fea0ec7a"
+                },
+                {
+                    "description": "Footprint C16",
+                    "pos": {
+                        "x": 75.77,
+                        "y": 43.5
+                    },
+                    "uuid": "7c42eb21-7e76-40e1-8d33-a3255734efcd"
+                }
+            ],
+            "severity": "error",
+            "type": "pth_inside_courtyard"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "items": [
+                {
+                    "description": "PTH pad 1 [Net-(U1-RESET_N)] of TP33",
+                    "pos": {
+                        "x": 21.0,
+                        "y": 24.5
+                    },
+                    "uuid": "382ee559-c0ae-4d8d-8ad0-a8e87b755626"
+                },
+                {
+                    "description": "Footprint C7",
+                    "pos": {
+                        "x": 21.5,
+                        "y": 23.27
+                    },
+                    "uuid": "81f4bfdd-4c64-4799-9fa3-7f5c073d4c53"
+                }
+            ],
+            "severity": "error",
+            "type": "pth_inside_courtyard"
+        }
+    ]
+}

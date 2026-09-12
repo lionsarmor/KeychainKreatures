@@ -1,0 +1,12 @@
+import fs from 'node:fs';import path from 'node:path';import {fileURLToPath} from 'node:url';
+const root=path.dirname(path.dirname(fileURLToPath(import.meta.url))),out=path.join(root,'C5_relayout');
+const file=path.join(out,'KK_main_module.kicad_pro'),pro=JSON.parse(fs.readFileSync(file)),rules=JSON.parse(fs.readFileSync(path.join(root,'pcb/C2_ROUTING_RULES.json')));
+const base=pro.net_settings.classes.find(c=>c.name==='Default');
+pro.net_settings.classes=rules.classes.map(([name,w,d,h],i)=>({...base,name,track_width:w,via_diameter:d,via_drill:h,clearance:.2,priority:name==='Default'?2147483647:i}));
+pro.net_settings.netclass_assignments=null;pro.net_settings.netclass_patterns=Object.entries(rules.assignments).map(([pattern,netclass])=>({pattern,netclass}));
+pro.board.design_settings.track_widths=[.25,.3,.5,.6,.8,1];pro.board.design_settings.via_dimensions=[{diameter:.6,drill:.3},{diameter:.8,drill:.4},{diameter:1,drill:.5}];
+fs.writeFileSync(file,JSON.stringify(pro,null,2)+'\n');
+let dru=fs.readFileSync(path.join(root,'KK_main_module.kicad_dru'),'utf8');dru+='\n(rule "C5 default minimum track" (condition "A.Type == \'Track\' && A.NetClass == \'Default\'") (constraint track_width (min 0.25mm)))\n';
+fs.writeFileSync(path.join(out,'KK_main_module.kicad_dru'),dru);
+fs.writeFileSync(path.join(out,'ROUTING_RULES.json'),JSON.stringify(rules,null,2)+'\n');
+console.log('Restored explicit netclasses in C.5 only; no rule relaxation.');

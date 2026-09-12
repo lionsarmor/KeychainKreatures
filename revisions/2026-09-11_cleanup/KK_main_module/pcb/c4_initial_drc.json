@@ -1,0 +1,544 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-11T13:29:47",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "KK_main_module_C4_unfinished.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [/MCU_5V] on F.Cu, length 3.6411 mm",
+                    "pos": {
+                        "x": 63.9261,
+                        "y": 35.5618
+                    },
+                    "uuid": "f401a1e7-26f0-4257-845f-762b0ec1b8eb"
+                },
+                {
+                    "description": "PTH pad 2 [/MCU_5V] of D3",
+                    "pos": {
+                        "x": 69.0,
+                        "y": 39.02
+                    },
+                    "uuid": "daa57c89-d08a-4122-a348-c5bbae02154a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad 5 [Net-(D3-RED_K)] of U4",
+                    "pos": {
+                        "x": 39.73,
+                        "y": 109.81
+                    },
+                    "uuid": "7d3006e2-c720-426a-8e55-b844e1a87733"
+                },
+                {
+                    "description": "PTH pad 1 [Net-(D3-RED_K)] of D3",
+                    "pos": {
+                        "x": 69.0,
+                        "y": 41.56
+                    },
+                    "uuid": "60cd0ef0-60f1-4b8d-aebf-99633b2c09e4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad 7 [Net-(D3-BLUE_K)] of U4",
+                    "pos": {
+                        "x": 34.65,
+                        "y": 109.81
+                    },
+                    "uuid": "10413a09-18d3-408a-8da9-900ce2508fee"
+                },
+                {
+                    "description": "PTH pad 3 [Net-(D3-BLUE_K)] of D3",
+                    "pos": {
+                        "x": 69.0,
+                        "y": 36.48
+                    },
+                    "uuid": "157d0573-76e5-43de-a331-4eb466ec432f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad 6 [Net-(D3-GREEN_K)] of U4",
+                    "pos": {
+                        "x": 37.19,
+                        "y": 109.81
+                    },
+                    "uuid": "9a13cf90-e5f3-4c73-8702-27a9f65fb3c8"
+                },
+                {
+                    "description": "PTH pad 4 [Net-(D3-GREEN_K)] of D3",
+                    "pos": {
+                        "x": 69.0,
+                        "y": 33.94
+                    },
+                    "uuid": "c47eb6b9-89d4-410d-96b2-be8519444c40"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.0417 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(Q2-B)] on B.Cu, length 15.4250 mm",
+                    "pos": {
+                        "x": 75.1161,
+                        "y": 37.9283
+                    },
+                    "uuid": "978f5e4f-eef7-4f5d-abcd-513c0dc0dc6d"
+                },
+                {
+                    "description": "PTH pad 2 [/MCU_5V] of D3",
+                    "pos": {
+                        "x": 69.0,
+                        "y": 39.02
+                    },
+                    "uuid": "daa57c89-d08a-4122-a348-c5bbae02154a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets /ACT_3V2 and /MCU_5V)",
+            "items": [
+                {
+                    "description": "Track [/ACT_3V2] on B.Cu, length 6.4771 mm",
+                    "pos": {
+                        "x": 65.5,
+                        "y": 43.58
+                    },
+                    "uuid": "cd64de34-6f44-450f-aa74-ae332a442d38"
+                },
+                {
+                    "description": "PTH pad 2 [/MCU_5V] of D3",
+                    "pos": {
+                        "x": 69.0,
+                        "y": 39.02
+                    },
+                    "uuid": "daa57c89-d08a-4122-a348-c5bbae02154a"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets Net-(D3-BLUE_K) and Net-(D2-A))",
+            "items": [
+                {
+                    "description": "PTH pad 3 [Net-(D3-BLUE_K)] of D3",
+                    "pos": {
+                        "x": 69.0,
+                        "y": 36.48
+                    },
+                    "uuid": "157d0573-76e5-43de-a331-4eb466ec432f"
+                },
+                {
+                    "description": "Track [Net-(D2-A)] on B.Cu, length 6.5717 mm",
+                    "pos": {
+                        "x": 74.45,
+                        "y": 35.7983
+                    },
+                    "uuid": "fc70d32a-2024-4cc3-b067-0e4c1145d3b7"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets /MCU_5V and /ACT_3V2)",
+            "items": [
+                {
+                    "description": "PTH pad 2 [/MCU_5V] of D3",
+                    "pos": {
+                        "x": 69.0,
+                        "y": 39.02
+                    },
+                    "uuid": "daa57c89-d08a-4122-a348-c5bbae02154a"
+                },
+                {
+                    "description": "Track [/ACT_3V2] on B.Cu, length 4.3700 mm",
+                    "pos": {
+                        "x": 70.08,
+                        "y": 39.0
+                    },
+                    "uuid": "fdb6595e-1a77-4e70-a6f6-77098f1e5771"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets Net-(D3-BLUE_K) and Net-(D2-A))",
+            "items": [
+                {
+                    "description": "PTH pad 3 [Net-(D3-BLUE_K)] of D3",
+                    "pos": {
+                        "x": 69.0,
+                        "y": 36.48
+                    },
+                    "uuid": "157d0573-76e5-43de-a331-4eb466ec432f"
+                },
+                {
+                    "description": "Track [Net-(D2-A)] on B.Cu, length 3.3634 mm",
+                    "pos": {
+                        "x": 67.8783,
+                        "y": 35.7983
+                    },
+                    "uuid": "35a6dd0f-1c1c-4896-87dd-8a2b7a296a4e"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "items": [
+                {
+                    "description": "PTH pad 1 [/ACT_3V2] of D2",
+                    "pos": {
+                        "x": 65.5,
+                        "y": 43.58
+                    },
+                    "uuid": "ed6d6c51-8bcf-4f8a-bd10-85d1ede92d37"
+                },
+                {
+                    "description": "Footprint D3",
+                    "pos": {
+                        "x": 69.0,
+                        "y": 41.56
+                    },
+                    "uuid": "5fbb10e1-d8cb-41bd-a6fc-13d1fcba9dc6"
+                }
+            ],
+            "severity": "error",
+            "type": "pth_inside_courtyard"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "items": [
+                {
+                    "description": "PTH pad 2 [Net-(D2-A)] of D2",
+                    "pos": {
+                        "x": 65.5,
+                        "y": 33.42
+                    },
+                    "uuid": "9f66aed3-0d75-48b3-bb24-35453ffb69ae"
+                },
+                {
+                    "description": "Footprint D3",
+                    "pos": {
+                        "x": 69.0,
+                        "y": 41.56
+                    },
+                    "uuid": "5fbb10e1-d8cb-41bd-a6fc-13d1fcba9dc6"
+                }
+            ],
+            "severity": "error",
+            "type": "pth_inside_courtyard"
+        },
+        {
+            "description": "Rear solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/ACT_3V2] on B.Cu, length 6.4771 mm",
+                    "pos": {
+                        "x": 65.5,
+                        "y": 43.58
+                    },
+                    "uuid": "cd64de34-6f44-450f-aa74-ae332a442d38"
+                },
+                {
+                    "description": "PTH pad 2 [/MCU_5V] of D3",
+                    "pos": {
+                        "x": 69.0,
+                        "y": 39.02
+                    },
+                    "uuid": "daa57c89-d08a-4122-a348-c5bbae02154a"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Rear solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/ACT_3V2] on B.Cu, length 6.4771 mm",
+                    "pos": {
+                        "x": 65.5,
+                        "y": 43.58
+                    },
+                    "uuid": "cd64de34-6f44-450f-aa74-ae332a442d38"
+                },
+                {
+                    "description": "PTH pad 1 [Net-(D3-RED_K)] of D3",
+                    "pos": {
+                        "x": 69.0,
+                        "y": 41.56
+                    },
+                    "uuid": "60cd0ef0-60f1-4b8d-aebf-99633b2c09e4"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Rear solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [/ACT_3V2] on B.Cu, length 4.3700 mm",
+                    "pos": {
+                        "x": 70.08,
+                        "y": 39.0
+                    },
+                    "uuid": "fdb6595e-1a77-4e70-a6f6-77098f1e5771"
+                },
+                {
+                    "description": "PTH pad 2 [/MCU_5V] of D3",
+                    "pos": {
+                        "x": 69.0,
+                        "y": 39.02
+                    },
+                    "uuid": "daa57c89-d08a-4122-a348-c5bbae02154a"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Rear solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [Net-(D2-A)] on B.Cu, length 3.3634 mm",
+                    "pos": {
+                        "x": 67.8783,
+                        "y": 35.7983
+                    },
+                    "uuid": "35a6dd0f-1c1c-4896-87dd-8a2b7a296a4e"
+                },
+                {
+                    "description": "PTH pad 3 [Net-(D3-BLUE_K)] of D3",
+                    "pos": {
+                        "x": 69.0,
+                        "y": 36.48
+                    },
+                    "uuid": "157d0573-76e5-43de-a331-4eb466ec432f"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Rear solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [Net-(D2-A)] on B.Cu, length 6.5717 mm",
+                    "pos": {
+                        "x": 74.45,
+                        "y": 35.7983
+                    },
+                    "uuid": "fc70d32a-2024-4cc3-b067-0e4c1145d3b7"
+                },
+                {
+                    "description": "PTH pad 3 [Net-(D3-BLUE_K)] of D3",
+                    "pos": {
+                        "x": 69.0,
+                        "y": 36.48
+                    },
+                    "uuid": "157d0573-76e5-43de-a331-4eb466ec432f"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "PCB text 'USB END' on F.Silkscreen",
+                    "pos": {
+                        "x": 66.75,
+                        "y": 35.75
+                    },
+                    "uuid": "3302ff48-3f0e-4af2-9cfc-2df8ff0a0ac5"
+                },
+                {
+                    "description": "Segment of D3 on F.Silkscreen",
+                    "pos": {
+                        "x": 67.5,
+                        "y": 43.085
+                    },
+                    "uuid": "452431c3-3217-4c18-bce0-d6740fa048be"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "PCB text 'TP29' on F.Silkscreen",
+                    "pos": {
+                        "x": 71.5,
+                        "y": 40.25
+                    },
+                    "uuid": "4b2199b8-15bb-43b2-8e83-f7a9bcc0be37"
+                },
+                {
+                    "description": "Segment of D3 on F.Silkscreen",
+                    "pos": {
+                        "x": 70.5,
+                        "y": 32.415
+                    },
+                    "uuid": "ee760bb4-a8c6-4703-ad59-7c319ed3c3de"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "PCB text 'USB END' on F.Silkscreen",
+                    "pos": {
+                        "x": 66.75,
+                        "y": 35.75
+                    },
+                    "uuid": "3302ff48-3f0e-4af2-9cfc-2df8ff0a0ac5"
+                },
+                {
+                    "description": "PTH pad 3 [Net-(D3-BLUE_K)] of D3",
+                    "pos": {
+                        "x": 69.0,
+                        "y": 36.48
+                    },
+                    "uuid": "157d0573-76e5-43de-a331-4eb466ec432f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "PCB text 'MOTOR' on B.Silkscreen",
+                    "pos": {
+                        "x": 71.0,
+                        "y": 33.0
+                    },
+                    "uuid": "36a104a6-5526-432e-91e8-b963400fdc18"
+                },
+                {
+                    "description": "PTH pad 4 [Net-(D3-GREEN_K)] of D3",
+                    "pos": {
+                        "x": 69.0,
+                        "y": 33.94
+                    },
+                    "uuid": "c47eb6b9-89d4-410d-96b2-be8519444c40"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of D2",
+                    "pos": {
+                        "x": 68.0,
+                        "y": 42.5
+                    },
+                    "uuid": "cc382c8e-d23d-4809-a0aa-de679adcaaae"
+                },
+                {
+                    "description": "PTH pad 1 [Net-(D3-RED_K)] of D3",
+                    "pos": {
+                        "x": 69.0,
+                        "y": 41.56
+                    },
+                    "uuid": "60cd0ef0-60f1-4b8d-aebf-99633b2c09e4"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "PCB text 'K' on B.Silkscreen",
+                    "pos": {
+                        "x": 70.0,
+                        "y": 42.83
+                    },
+                    "uuid": "9e743907-20e3-46b7-a9c0-6a0738111ca6"
+                },
+                {
+                    "description": "PTH pad 1 [Net-(D3-RED_K)] of D3",
+                    "pos": {
+                        "x": 69.0,
+                        "y": 41.56
+                    },
+                    "uuid": "60cd0ef0-60f1-4b8d-aebf-99633b2c09e4"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

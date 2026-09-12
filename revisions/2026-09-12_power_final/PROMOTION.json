@@ -1,0 +1,11 @@
+{
+  "changed_files": [
+    {
+      "path": "KK_power_module/P2_compact/KK_power_module.kicad_pcb",
+      "baseline": "revisions/2026-09-12_power_final/P2_compact/KK_power_module.kicad_pcb",
+      "before_sha256": "ef71e3b4a0f05603184a53cf7c51afa34b4d4e24cfe0e7fc95925c64fad9ed56",
+      "after_sha256": "839d8741c2216db98f9ec57497ce1cea194b21feef1c5f35c01dc377655d2540"
+    }
+  ],
+  "package": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12"
+}

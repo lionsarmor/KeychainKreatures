@@ -1,0 +1,16 @@
+Recovered from ext4 journal metadata and original data blocks after the 2026-09-09 deletion.
+Recovered core files: KK_power_module.kicad_pro, KK_power_module.kicad_sch, KK_power_module.kicad_pcb.
+Recovered supporting files: 22090a-52174.pdf, KK_power_module.dsn, KK_power_module.kicad_prl, KK_power_module.rules, KK_power_module.ses.
+
+Factory-readiness correction pass (2026-09-09):
+- Corrected D1 TVS polarity in schematic and PCB.
+- Corrected track-width, thermal-relief, isolated-copper, and ground-connectivity faults.
+- Added project-local FS8205 symbol and footprint libraries.
+- Replaced the mismatched full-featured USB-C symbol with a project-local power-only symbol matching the 16-pin footprint.
+- KiCad 10.0.6 final results: 0 ERC violations, 0 DRC violations, 0 unconnected items, and 0 schematic-parity issues.
+
+Low-run release preparation (2026-09-09, revision 0.2-LR1):
+- Corrected the R1 value text from "R5.1 kΩ" to "5.1 kΩ" in schematic and PCB.
+- Set the documented board surface finish to ENIG.
+- Added vendor-neutral fabrication, assembly, BOM, test, and release-report documents.
+- Generated and verified Gerber X2, PTH/NPTH drill, BOM, and placement outputs.

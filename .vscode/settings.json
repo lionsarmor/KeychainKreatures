@@ -1,0 +1,14 @@
+{
+  "files.watcherExclude": {
+    "**/revisions/**": true,
+    "**/KK_main_module/archive/**": true,
+    "**/KK_main_module/pcb/backups/**": true,
+    "**/KK_main_module/schematic/**": true
+  },
+  "search.exclude": {
+    "**/revisions/**": true,
+    "**/KK_main_module/archive/**": true,
+    "**/KK_main_module/pcb/backups/**": true,
+    "**/KK_main_module/schematic/**": true
+  }
+}

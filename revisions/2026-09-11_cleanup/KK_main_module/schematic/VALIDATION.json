@@ -1,0 +1,88 @@
+{
+  "status": "Draft capture validation passed; not hardware-qualified",
+  "checked_pin_records": 267,
+  "erc_violations": 0,
+  "schematic_symbols": 91,
+  "checks": {
+    "button_low_V": 0.0673069306930693,
+    "button_held_mA": 0.3433333333333333,
+    "i2c_sink_mA": 0.7304964539007092,
+    "ir_short_fault_mA": 34.333333333333336,
+    "ir_resistor_short_fault_W": 0.116699,
+    "ir_rx_min_supply_V": 3.1202,
+    "motor_terminal_start_25C_V": 2.8680000000000003,
+    "motor_fet_start_25C_W": 0.036,
+    "motor_terminal_hot_illustrative_V": 2.688,
+    "audio_ladder_ac": [
+      {
+        "hz": 100,
+        "magnitude": 0.009611062389413755,
+        "db": -40.34457207106512
+      },
+      {
+        "hz": 1000,
+        "magnitude": 0.009487827428006747,
+        "db": -40.456664463883754
+      },
+      {
+        "hz": 4000,
+        "magnitude": 0.00803866040693873,
+        "db": -41.896326354251514
+      },
+      {
+        "hz": 8000,
+        "magnitude": 0.005779515114064321,
+        "db": -44.762171924044985
+      },
+      {
+        "hz": 20000,
+        "magnitude": 0.002564129446716501,
+        "db": -51.821201076234395
+      },
+      {
+        "hz": 200000,
+        "magnitude": 0.00006074726897579214,
+        "db": -84.32946483867667
+      },
+      {
+        "hz": 250000,
+        "magnitude": 0.000039180028684048945,
+        "db": -88.13870500780594
+      }
+    ]
+  },
+  "files": [
+    {
+      "file": "KK_main_module.kicad_sch",
+      "sha256": "898e4f68e6ca14935bac519a77a0f58a1115634d139a140c018ea7ffea323950"
+    },
+    {
+      "file": "controls.kicad_sch",
+      "sha256": "07725958db8cc1b3c44084e3471313e7bdd85169299b0bc0d4c309b18ae9781d"
+    },
+    {
+      "file": "display_sd.kicad_sch",
+      "sha256": "4215aa2009c244cdedfaa4969c26d98f2e2a8954bc325902ac9618ec52043a6d"
+    },
+    {
+      "file": "ir_motor.kicad_sch",
+      "sha256": "a535fc71aee91a798a169fd67894776b6012990e0d7e431f2fcac88f9419805e"
+    },
+    {
+      "file": "audio.kicad_sch",
+      "sha256": "cde9c19b834b4a8217b7892c13879c88e9c17c2e1c639f33020090c8a04bdf71"
+    },
+    {
+      "file": "KK_Draft.kicad_sym",
+      "sha256": "c14e30cc862df5caa973ce33dd06353e8af0d6d639ed0904c7ce477775d93720"
+    },
+    {
+      "file": "KK_main_module.net",
+      "sha256": "21525c970e7d8d797d0b0ef426226b020dea2cfea2cd6abfcc67564000892a05"
+    },
+    {
+      "file": "ERC.json",
+      "sha256": "18cb55a30c3ea4d38bea07e27001f596973cb2cea7f88df3760b985bf85d12f2"
+    }
+  ]
+}

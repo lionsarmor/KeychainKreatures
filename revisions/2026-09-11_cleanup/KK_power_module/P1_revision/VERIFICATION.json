@@ -1,0 +1,160 @@
+{
+  "status": "ENGINEERING ONLY / RELEASE HELD",
+  "static_connectivity_issues": [],
+  "static_connectivity_pass": true,
+  "independent_USB_hole_clearance_issues": [
+    {
+      "pad": "A1",
+      "npth_center_mm": [
+        -2.89,
+        -2.605
+      ],
+      "copper_to_hole_mm": 0.18469690009882583,
+      "project_minimum_mm": 0.25
+    },
+    {
+      "pad": "A4",
+      "npth_center_mm": [
+        -2.89,
+        -2.605
+      ],
+      "copper_to_hole_mm": 0.2497068372797377,
+      "project_minimum_mm": 0.25
+    },
+    {
+      "pad": "B9",
+      "npth_center_mm": [
+        -2.89,
+        -2.605
+      ],
+      "copper_to_hole_mm": 0.2497068372797377,
+      "project_minimum_mm": 0.25
+    },
+    {
+      "pad": "B12",
+      "npth_center_mm": [
+        -2.89,
+        -2.605
+      ],
+      "copper_to_hole_mm": 0.18469690009882583,
+      "project_minimum_mm": 0.25
+    },
+    {
+      "pad": "A9",
+      "npth_center_mm": [
+        2.89,
+        -2.605
+      ],
+      "copper_to_hole_mm": 0.2497068372797377,
+      "project_minimum_mm": 0.25
+    },
+    {
+      "pad": "A12",
+      "npth_center_mm": [
+        2.89,
+        -2.605
+      ],
+      "copper_to_hole_mm": 0.18469690009882583,
+      "project_minimum_mm": 0.25
+    },
+    {
+      "pad": "B1",
+      "npth_center_mm": [
+        2.89,
+        -2.605
+      ],
+      "copper_to_hole_mm": 0.18469690009882583,
+      "project_minimum_mm": 0.25
+    },
+    {
+      "pad": "B4",
+      "npth_center_mm": [
+        2.89,
+        -2.605
+      ],
+      "copper_to_hole_mm": 0.2497068372797377,
+      "project_minimum_mm": 0.25
+    }
+  ],
+  "component_count": 138,
+  "test_pad_count": 25,
+  "source_hashes": {
+    "KK_power_module.kicad_sch": "8a544722583fc994f665f53255b7053021f6a8add73af85a513a50f3e8a08506",
+    "KK_power_module.kicad_pcb": "36233b1973132dd5006cd06d59c546c395f8d20f4acbd6d0e8d46eba6b151277",
+    "KK_power_module.kicad_pro": "db2ec4b873d0d42f2de8ab5c1729d80227a7e3fc49c3ae256e2cf8555885e8ef",
+    "KK_power_module.kicad_sym": "f5de9aef56a0bdac8058160eea84fd699d10d4ff6a10d61d69097adef1e46a60",
+    "FS8205.kicad_sym": "5d8e177790f47a6cfbeca96f5a09e6cbc2f6184c77bbe27adce21e034d4a74ab",
+    "fp-lib-table": "d33b8b6eae4fc8f6ed956b72edf3604f981d95c7cda3bed20681a04659844498",
+    "sym-lib-table": "dc66464aa7bca062af0685c09cbe21fbb4b44732ffdffe464e38b114162d45da",
+    "main_pcb": "b840262c37afad89ec5307568ace5b6acb4406f89c44c91f1579771642a89003"
+  },
+  "calculations_not_measurements": {
+    "usb_legacy_limiter_A_datasheet_at_exact_19k2": [
+      0.034,
+      0.05,
+      0.066
+    ],
+    "usb_legacy_limiter_A_screen_max_including_R_tolerance": 0.06607082537420673,
+    "usb_high_mode_parallel_ILIM_R_kohm": 1.164774951076321,
+    "usb_high_mode_limiter_A_typical_formula": 1.0020065472707822,
+    "usb_high_mode_logic_V_screen_min": 2.9495829514207146,
+    "usb_upstream_overhead_A_allocation_not_guarantee": 0.01,
+    "usb_legacy_total_A_screen_with_overhead_allocation": 0.07607082537420673,
+    "charge_A_nominal": 0.2966666666666667,
+    "charge_A_max_with_R_tolerance": 0.3282828282828283,
+    "usb_advertised_mode_input_limit_A_nominal": 1.2384615384615385,
+    "usb_advertised_mode_input_limit_A_max_with_R_tolerance": 1.3364413364413363,
+    "efuse_limit_A_nominal": 3.265806451612903,
+    "efuse_limit_A_screen_low": 2.9913276908335993,
+    "efuse_limit_A_screen_high": 3.54576963180189,
+    "uvlo_rise_V_nominal": 3.3840000000000003,
+    "uvlo_rise_V_low": 3.182490909090909,
+    "uvlo_rise_V_high": 3.5860274274274273,
+    "uvlo_fall_V_nominal": 3.1020000000000008,
+    "uvlo_fall_V_low": 2.9008545454545454,
+    "uvlo_fall_V_high": 3.3036630630630626,
+    "screening_output_power_W": 5.92,
+    "input_current_A_3V_85percent": 2.3215686274509806,
+    "input_current_A_2V7_80percent": 2.7407407407407405,
+    "raw_output_nominal_V": [
+      5.0,
+      3.3,
+      3.2
+    ],
+    "supervisor_falling_threshold_V_nominal": [
+      4.64,
+      3.0600000000000005,
+      2.9960000000000004
+    ],
+    "load_gate_rise_ms_typical_estimate": [
+      27.65,
+      18.249,
+      17.696
+    ],
+    "three_parallel_FET_pairs_R_ohm_25C_max_at_VGS_2V5": 0.024666666666666667
+  },
+  "release_holds": [
+    "This is an unrouted placement study, not a finished power board. No manufacturing release.",
+    "Full simultaneous 5.92 W screening load needs about 2.74 A at 2.7 V and 80% efficiency. The revised eFuse screening minimum is about 2.99 A; actual load/efficiency/drop/thermal envelope must still be closed before layout freeze.",
+    "H&M DW01A is selected, but parallel-FET current sharing, protection trip thresholds versus temperature, fuse coordination and cell discharge/pulse ratings remain unqualified.",
+    "Battery must be 1S 4.2 V Li-ion/LiPo rated at least 4 A continuous with an isolated cell-bonded 10k NTC; capacity, charge limits, connector polarity and temperature curve must be approved before fitting a cell. VH connector replaces the old PH/XH battery connector.",
+    "Legacy/default USB input is now limited separately, nominally 50mA. The 10mA upstream overhead allocation must be verified including TVS leakage, CC controller, LDO and LEDs; the screening total is not a guaranteed maximum. Verify plug-in inrush, attach/detach and current-advertisement transitions on the bench.",
+    "D+/D- remain unconnected: no enumeration, BC1.2 detection or USB suspend detection. Charging from an active powered USB-A port is targeted, not guaranteed from sleeping/disabled ports. No universal USB-host compatibility or USB certification claim.",
+    "The added CC LDO and pullup arrangement correct the raw-VBUS supply-range issue. Probe the high-current request during cold start: it must remain default-limited until a valid higher-current advertisement is decoded.",
+    "BQ24074 with a bare 103AT-2 NTC has a nominal charge-temperature window around 0 to 50C, with threshold/NTC tolerance. That is not approval for a cell requiring a narrower window: qualify or adjust before battery charging.",
+    "Three soft-start outputs do not prove safe ESP32/peripheral rail sequencing. Actual SuperMini regulator, GPIO backfeed, restart and brownout behavior need measurements. Never power the socketed ESP32 USB and main supply simultaneously before reverse-feed qualification.",
+    "Motor rail static tolerance, ripple and startup overshoot must remain within the actual motor rating; the nominal 3.2 V calculation alone does not guarantee this.",
+    "Manufacturer land-pattern dimensions, bulk-capacitance bias derating, component MPNs, USB ESD and thermal layout remain purchasing/layout review items.",
+    "3D models are incomplete; current rendering is not a complete assembly or enclosure-fit approval.",
+    "The 0.4mm-pitch TPS22950 WCSP, thermal-pad soldering and USB footprint drill clearances need explicit assembler/fabricator approval; this power board is factory SMT, not a student hand-soldering kit.",
+    "Independent USB footprint geometry check finds approximately 0.185mm copper-to-NPTH spacing, below the present 0.25mm project minimum. Native DRC no longer reports this after connector rotation; the physical gap did not change. This remains a manual manufacturing hold, not a waived or fixed clearance."
+  ],
+  "checked_artifact_sha256": {
+    "design.json": "88a88b8d91f579c427c27892c49d65a6aedf04f89936984ea797ef225f97a674",
+    "netlist.xml": "ac0c5cc9102060d477bc12c0cb34c3275921c2b67df134b5312ad9ed87f31caa",
+    "KK_power_module.kicad_sch": "b4e0b29c48dcb457085121bb85be5522d9244e3fcb9a5044685ea08bd0b5c298",
+    "KK_power_module.kicad_pcb": "7226184efc2adb50813e2823dbcc89380f6b54cd71ecf2f0d01ec4102e2d23cd",
+    "KK_power_module.kicad_pro": "9782f34f42cb56063c7db259cd7bd079957741fd475e77701555a0cec76c1aa5",
+    "KK_Power.pretty/USB_C_HCTL.kicad_mod": "83fc7b1240342197ddb4bf2e9c7723aef39a719e0baf0977dc5779cb9bfc4ba6"
+  }
+}

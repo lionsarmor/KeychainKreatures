@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "KK_Power") (type "KiCad") (uri "${KIPRJMOD}/KK_Power.kicad_sym") (options "") (descr "P.1 power symbols"))
+)

@@ -1,0 +1,14 @@
+{
+  "date": "2026-09-12T04:42:24.609Z",
+  "baseline_directory": "revisions/2026-09-11_power_routing/P2_compact",
+  "current_directory": "KK_power_module/P2_compact",
+  "changed_files": [
+    {
+      "path": "KK_power_module/P2_compact/KK_power_module.kicad_pcb",
+      "baseline": "revisions/2026-09-11_power_routing/P2_compact/KK_power_module.kicad_pcb",
+      "before_sha256": "3163cf7b17574def238a31a05c77854b9f980a3736a42b9bca33a9e1077eb208",
+      "after_sha256": "ef71e3b4a0f05603184a53cf7c51afa34b4d4e24cfe0e7fc95925c64fad9ed56"
+    }
+  ],
+  "package": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW"
+}

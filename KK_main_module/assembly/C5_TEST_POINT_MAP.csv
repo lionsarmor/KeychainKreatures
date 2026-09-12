@@ -1,0 +1,26 @@
+Reference,Net,X_mm,Y_mm,Probe_side,Notes
+TP1,/MCU_5V,50.5,79.0,rear preferred; bare through-hole,No fitted posts; see native board for adjacent nets.
+TP2,/LOGIC_3V3,54.0,63.0,rear preferred; bare through-hole,No fitted posts; see native board for adjacent nets.
+TP3,/ACT_3V2,28.5,79.0,rear preferred; bare through-hole,No fitted posts; see native board for adjacent nets.
+TP4,/GND,34.5,81.0,rear preferred; bare through-hole,No fitted posts; see native board for adjacent nets.
+TP6,/GND,34.5,85.0,rear preferred; bare through-hole,No fitted posts; see native board for adjacent nets.
+TP8,/GND,20.5,73.5,rear preferred; bare through-hole,No fitted posts; see native board for adjacent nets.
+TP9,/I2C_SDA,78.0,24.5,rear preferred; bare through-hole,No fitted posts; see native board for adjacent nets.
+TP10,/I2C_SCL,24.0,23.0,rear preferred; bare through-hole,No fitted posts; see native board for adjacent nets.
+TP11,/BUTTON_INT_N,30.0,45.5,rear preferred; bare through-hole,No fitted posts; see native board for adjacent nets.
+TP12,/BUTTON_FN_N,34.5,76.5,rear preferred; bare through-hole,No fitted posts; see native board for adjacent nets.
+TP13,/SPI_SCK,59.5,42.5,rear preferred; bare through-hole,No fitted posts; see native board for adjacent nets.
+TP14,/SPI_MOSI,55.5,48.0,rear preferred; bare through-hole,No fitted posts; see native board for adjacent nets.
+TP16,/SD_CS,56.5,55.0,rear preferred; bare through-hole,No fitted posts; see native board for adjacent nets.
+TP17,/TFT_CS,46.5,38.0,rear preferred; bare through-hole,No fitted posts; see native board for adjacent nets.
+TP18,/TFT_DC,54.5,42.0,rear preferred; bare through-hole,No fitted posts; see native board for adjacent nets.
+TP19,/TFT_RST_N,16.5,73.5,rear preferred; bare through-hole,No fitted posts; see native board for adjacent nets.
+TP20,/BL_PWM,54.0,13.0,rear preferred; bare through-hole,No fitted posts; see native board for adjacent nets.
+TP21,Net-(J2-BLK),59.5,38.0,rear preferred; bare through-hole,No fitted posts; see native board for adjacent nets.
+TP22,/AUDIO_PWM,54.0,9.0,rear preferred; bare through-hole,No fitted posts; see native board for adjacent nets.
+TP23,Net-(C19-Pad1),60.5,70.0,rear preferred; bare through-hole,No fitted posts; see native board for adjacent nets.
+TP29,Net-(D2-A),12.5,77.0,rear preferred; bare through-hole,No fitted posts; see native board for adjacent nets.
+TP30,/IR_TX,67.0,27.5,rear preferred; bare through-hole,No fitted posts; see native board for adjacent nets.
+TP31,/IR_RX,69.5,31.5,rear preferred; bare through-hole,No fitted posts; see native board for adjacent nets.
+TP32,Net-(U2-VS),78.0,20.5,rear preferred; bare through-hole,No fitted posts; see native board for adjacent nets.
+TP33,Net-(U1-RESET_N),8.0,76.5,rear preferred; bare through-hole,No fitted posts; see native board for adjacent nets.

@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "revision": "C.3 RGB",
+  "source_and_export_hashes_verified": true,
+  "fabrication_zip_matches_outputs": true,
+  "datasheet_zip_integrity_verified": true,
+  "bom_components": 98,
+  "kit_extra_rows": 23,
+  "local_document_links_checked": [
+    "README.md",
+    "C3_PROTOTYPE_REPORT.md",
+    "assembly/README.md",
+    "assembly/ASSEMBLY_GUIDE.md",
+    "pcb/README.md",
+    "routing/README.md"
+  ],
+  "physical_tests": "PENDING; no hardware test is claimed",
+  "board_sha256": "7a0e4a3aa1921e1daa31491d45ac67747631b972a4ec9943dafa7d101f8dc293"
+}

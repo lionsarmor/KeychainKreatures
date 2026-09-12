@@ -1,0 +1,13 @@
+{
+  "status": "UNROUTED PLACEMENT PROTOTYPE - NOT FOR FABRICATION",
+  "schematic_components": 91,
+  "component_pads": 267,
+  "schematic_pad_net_mismatches": [],
+  "unplaced_reference_labels": [],
+  "tracks": 0,
+  "holds": [
+    "Dry-fit actual SuperMini/socket against the user-supplied footprint; stack height unverified",
+    "Display and SD header offset, card extraction and stack height need a physical fit check",
+    "Placement is a packing study; routed power/SPI/audio performance not validated"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "boards": [
+    {
+      "kind": "main",
+      "revision": "C6",
+      "source": "KK_main_module/C6_flat_stack",
+      "directory": "KK_main_module/manufacturing/KK_MAIN_C6_5_PROTOTYPE_REVIEW_2026-09-12",
+      "zip": "KK_main_module/manufacturing/KK_MAIN_C6_5_PROTOTYPE_REVIEW_2026-09-12.zip",
+      "zip_sha256": "126b4ac43b72ba525b94dc627ecf030ab6b63450707442fa2ecb6f34260b3b28",
+      "file_count": 166,
+      "gerbers_zip": "KK_main_module/manufacturing/KK_MAIN_C6_GERBERS.zip",
+      "gerbers_sha256": "f8234c72ddca4c8a7c4f46a4bd2d86348e2229c781270c1840454aaa6f898783"
+    },
+    {
+      "kind": "power",
+      "revision": "P3",
+      "source": "KK_power_module/P3_matching_stack",
+      "directory": "KK_power_module/manufacturing/KK_POWER_P3_5_PROTOTYPE_REVIEW_2026-09-12",
+      "zip": "KK_power_module/manufacturing/KK_POWER_P3_5_PROTOTYPE_REVIEW_2026-09-12.zip",
+      "zip_sha256": "21d9a45ff792c1cb01b6de66bd07bbbf0478507e72855e093506680e15f1f61f",
+      "file_count": 161,
+      "gerbers_zip": "KK_power_module/manufacturing/KK_POWER_P3_GERBERS.zip",
+      "gerbers_sha256": "608834a2bc102b5649826d7f3e31f8f577f412215956fddbefbc841fb4ad04e6"
+    }
+  ],
+  "matching_outline_gerber_geometry": true,
+  "order_placed": false,
+  "qualified_product": false,
+  "final_preflight": {
+    "matching_NPTH_mounting_holes": true,
+    "CAD_and_fabrication_unchanged_by_documentation_seal": true,
+    "desktop_print_sheet": "/home/legion/Desktop/PRINT THIS.pdf",
+    "superseded_archive": "revisions/2026-09-12_C6_P3_release"
+  }
+}

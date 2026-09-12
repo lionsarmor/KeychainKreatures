@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "revision": "C.4 RGB",
+  "source_and_export_hashes_verified": true,
+  "fabrication_zip_matches_outputs": true,
+  "datasheet_zip_integrity_verified": true,
+  "bom_components": 98,
+  "kit_extra_rows": 24,
+  "local_document_links_checked": [
+    "README.md",
+    "C4_PROTOTYPE_REPORT.md",
+    "assembly/README.md",
+    "assembly/ASSEMBLY_GUIDE.md",
+    "pcb/README.md",
+    "routing/README.md"
+  ],
+  "physical_tests": "PENDING; no hardware test is claimed",
+  "board_sha256": "2bfba9114be6ec1b9d43d5f796df1b8e47c27dd986475d26a271dfbfccdbe55d"
+}

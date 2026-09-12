@@ -1,0 +1,82 @@
+{
+  "revision": "C.5",
+  "status": "ENGINEERING PROTOTYPE ONLY; no powered qualification",
+  "created_utc": "2026-09-11T20:05:44.470774+00:00",
+  "source_sha256": {
+    "KK_main_module.kicad_pcb": "b840262c37afad89ec5307568ace5b6acb4406f89c44c91f1579771642a89003",
+    "KK_main_module.kicad_sch": "c3dc6372e3e4a93e37bef022cd158d6c8d059b5449e67c5221fa5f5541462b2c",
+    "KK_main_module.kicad_pro": "b2f6274c6c517e283d4bd883d693605ffc6434d0ae127355dce015d9aafca326",
+    "KK_main_module.kicad_dru": "f544636423516c8c05f5399654630d77f2ec453178de82013a0b123c81491fb4",
+    "KK_Main.kicad_sym": "4933baafbab6bab6b270bf8fdcb8af361f997aaf2b2e714e34a292143f317364",
+    "KK_Main.pretty/1N5819_DO41.kicad_mod": "1dd1b88cecb10287ce058f59c789d1f23510c71ed5e550c66676b6ded4957779",
+    "KK_Main.pretty/Adafruit3101_ABCD.kicad_mod": "612f4392b52f7b13bae8c4d73927b47ea909a629b52f5fac39b8ee55e11d0d14",
+    "KK_Main.pretty/Debug_PTH_2mm.kicad_mod": "8ce6800c0b11e945b67693560744c3effff7aca0c03241b10312763525d2c1c1",
+    "KK_Main.pretty/ED08DT_DIP8_Socket.kicad_mod": "673f4f4c16e47a4186e270af1bbaefe307b5cb96767597a5903d54d4b719cf80",
+    "KK_Main.pretty/ED16DT_DIP16_Socket.kicad_mod": "876c0063d4de3ca7473d443baa8af39e77181919096622aae2377e51e917ff08",
+    "KK_Main.pretty/ED281DT_DIP28_Socket.kicad_mod": "b126938f68e1259b1866d67b3ccacded4d8c600b4ac21fdcb274524576bd01e6",
+    "KK_Main.pretty/ESP32-S3-SuperMini.kicad_mod": "a246fef51cb12389569755f4a20d8791cd7beefc4a3eb530799179581a22f283",
+    "KK_Main.pretty/JST_PH_B2B_2.kicad_mod": "2a4569e4bda8ff67f85be2713e8fbd33175b51f0d182059457da964466921d1b",
+    "KK_Main.pretty/JST_PH_S2B_2.kicad_mod": "a82c95eca0bdddc6a43c46dd17b677a37df9ab1f87dfb56f8de86aaf972a4478",
+    "KK_Main.pretty/JST_XH_B4B_4.kicad_mod": "295e06b05ff42283036b95a6d2a8f5a6c428115250a8ab0844bae6324ade3003",
+    "KK_Main.pretty/KEMET_C315_P2p54.kicad_mod": "2ccaaf956017bc249209adc563622c5d33bad74041f5e9f80613162f6be1792f",
+    "KK_Main.pretty/MFR25_10p16.kicad_mod": "aa6abd65bc3af76561c3e4b899f9886292749220ef68bea9daa5416afd22e56a",
+    "KK_Main.pretty/MFR25_Upright_P2p54.kicad_mod": "bfc0d92a91e866e50f145d1a3eeaf55d32f89a710c078fed4394d196c326a80a",
+    "KK_Main.pretty/Nichicon_UVR_D5_P2.kicad_mod": "3982ff1e8af0de8c2dc39bc81130e1f4088dd02467dd419efa8ca8e8666a67fe",
+    "KK_Main.pretty/RGB_CA_5mm_LeadFormed.kicad_mod": "749ee7464d8249bef93dde47aa0700d86e660297ac87318c0f5c2c7bda5a4916",
+    "KK_Main.pretty/RGB_CA_5mm_Socketed.kicad_mod": "329a2706069a31f352f040b9053aee090524f5d99b695a2da0d4f7447c405b72",
+    "KK_Main.pretty/Sullins_PPTC061_LFB.kicad_mod": "79fe9b880e37652cb88066bec7daa69ea0576a723ea00042f54cc6ab77306ccb",
+    "KK_Main.pretty/Sullins_PPTC081_LFB.kicad_mod": "42517d560e85d62219d1326e41c3b12cb53e8a41783ff33a14dce540b13b3246",
+    "KK_Main.pretty/SuperMini_Socket_PAIR_PROVISIONAL.kicad_mod": "ca191360603b501439bbef6805b3ff1cf90398c973743ca4d26baffd294dd623",
+    "KK_Main.pretty/TO92_LeadFormed_P2p54.kicad_mod": "c3f11a26ef8e8bc308d8e1fd6dafc2b3225534e5887a5460db87e1e6f1286fe9",
+    "KK_Main.pretty/TSAL6200_C5_EdgeFormed.kicad_mod": "13730adb77f8a47677505c55034771d1d26ed843f11717ba31c31bc3b1df627e",
+    "KK_Main.pretty/TSAL6200_LED5.kicad_mod": "d2f350c58b1cf9b90009585812995aae90f350232c9327f408c007e4b694c419",
+    "KK_Main.pretty/TSOP38238_Vertical.kicad_mod": "d02eaeaa019fa4e08851ff535695bb1654f1a129970b83decb9d2b90e21edf94"
+  },
+  "erc_violations": 0,
+  "drc_violations": 0,
+  "unconnected_items": 0,
+  "schematic_parity_issues": 0,
+  "ignored_drc_categories": [
+    {
+      "description": "Footprint has no courtyard defined",
+      "key": "missing_courtyard"
+    },
+    {
+      "description": "Track endpoint not centered on via",
+      "key": "track_not_centered_on_via"
+    },
+    {
+      "description": "Tuning profile track geometries",
+      "key": "tuning_profile_track_geometries"
+    },
+    {
+      "description": "Footprint doesn't match symbol's footprint filters",
+      "key": "footprint_filters_mismatch"
+    },
+    {
+      "description": "Footprint component type doesn't match footprint pads",
+      "key": "footprint_type_mismatch"
+    }
+  ],
+  "manufacturing_files": {
+    "gerbers/KK_main_module-B_Cu.gbl": "2247c9e720eae5ff9a1fa06931615c5a23ad5ea26e501e44d44418a81a926840",
+    "gerbers/KK_main_module-B_Mask.gbs": "1632d0f230bd1df80ae0c9c1ebef039ab077ff85dfe3311da9936a16b663b23b",
+    "gerbers/KK_main_module-B_Silkscreen.gbo": "e6a048b4ebdb6974e7fa8edf3086c2ebdce31095327ad95cf66a284db77cf160",
+    "gerbers/KK_main_module-Edge_Cuts.gm1": "85ef75cbb68d152a6da43dad1c172d3014b12bdb754e7a67acec49c342685a09",
+    "gerbers/KK_main_module-F_Cu.gtl": "937d283702eb6396c42963adacaab948de9b843d740dcd8ab8acef7c0980aa7e",
+    "gerbers/KK_main_module-F_Mask.gts": "e1a8ae6d0125a416a6548d749cfdca2a3a770667cd55e23e8431dc0e3bb77c88",
+    "gerbers/KK_main_module-F_Silkscreen.gto": "84b9b189342b4ba87d6b97b918eb36a8705760bf072f9eeb3f5d5836498fdcfb",
+    "gerbers/KK_main_module-NPTH-drl_map.pdf": "c547cf139512e10ed68c487e260455869889763ad843dcb3219924510ff1f617",
+    "gerbers/KK_main_module-NPTH.drl": "372d53e6e7c6a91b2f2cdadf4e5657d1d431d544d838599dfde38fafad867ba7",
+    "gerbers/KK_main_module-PTH-drl_map.pdf": "82ab411175259d15e9c237f130dd68d15299f5e7ae8452c80d1ba277f466cd60",
+    "gerbers/KK_main_module-PTH.drl": "b700cb0ad8f5fcdb8e4a9ef412e5c8235cf5d23f1b94379da1b8aad00d86e8a7",
+    "gerbers/KK_main_module-job.gbrjob": "5576f5d431b4942aa747bb8dc21a63164ca732702be5f593297f82c5fbe1bc0d"
+  },
+  "board_mm": [
+    84,
+    95,
+    1.6
+  ],
+  "specified_surface_finish": "Lead-free HASL; confirm with fabricator",
+  "intentional_rule": "Bare TP* holes have no fitted component body: courtyard exception only. Copper, drill and edge checks remain enabled."
+}

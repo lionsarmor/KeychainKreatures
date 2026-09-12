@@ -1,0 +1,36 @@
+Quantity per kit,Part / specification,Description,Source / drawing,Assembly note
+1,KK MAIN C.6 PROTOTYPE,"96 x 105 x 1.6 mm, 2-layer, R4, four 2.2 mm M2 holes",../FABRICATION_REQUIREMENTS.md,Engineering prototype only; powered qualification required.
+2,PPTC091LFBN-RC,Sullins 1x9 MCU sockets,../datasheets/sullins-female-headers.pdf,MOD1 is already counted in the PCB BOM; these sockets are additional.
+1,ED281DT,On Shore narrow 28-pin DIP socket,../datasheets/dip-sockets.pdf,"For U1; 7.62 mm rows, not wide ED28DT."
+1,ED08DT,On Shore 8-pin DIP socket,../datasheets/dip-sockets.pdf,For U3; notch matches pin-1 marking.
+1,ED16DT,On Shore 16-pin narrow DIP socket for U4,../datasheets/dip-sockets.pdf,"7.62mm rows, 2.54mm pitch; match the U4 pin-1 notch. Not a wide socket."
+1,PPTC041LFBN-RC,Sullins four-pin socket for removable D3 RGB LED,../datasheets/sullins-female-headers.pdf,"Prototype contact fit/retention with actual LED leads is PENDING; do not force or tin mating leads. 8.5mm housing; formed LED leads to 2.54mm pitch. Pin1 R,2 A+,3 B,4 G."
+1,XIITIA / Amazon B0DFWL25RB,240 x 280 ST7789V2 screen module,https://www.amazon.com/dp/B0DFWL25RB,J2 socket is already counted. Retain R23=100 ohm until BLK current is measured.
+1,GODIYMODULES / Amazon B0F82XWT4F,3.3 V six-pin microSD module,https://www.amazon.com/dp/B0F82XWT4F,J3 socket is already counted. Card not included with reader.
+1,TS32GUSD300S,Transcend 32 GB microSDHC card,../datasheets/transcend-usd300s.pdf,FAT32; actual SPI-mode read/write and power-loss tests required. Not extra RAM.
+1,LCM0827A3038F,LEADER 3 V coin vibration motor,../datasheets/motor.pdf,Prepare wired harness before giving kit to students; do not crimp 24-AWG terminals onto its AWG32 leads.
+1,FS1511P08-H3.0 wired / 8 ohm,FUET prototype speaker,ASSEMBLY_GUIDE.md,Prototype selection only: exact continuous power rating remains undocumented. Start volume low; do not release a student product on a guessed rating.
+2 if absent from MCU bundle,TSW-109-07-G-S,Samtec 1x9 male module headers,https://www.samtec.com/products/tsw-109-07-g-s,"Optional replacement, do not count twice. Check contact engagement in the selected female sockets."
+1 if absent from screen bundle,TSW-108-07-G-S,Samtec 1x8 male screen header,https://www.samtec.com/products/tsw-108-07-g-s,Optional replacement. Solder on the correct side of the display module.
+1 if absent from SD bundle,TSW-106-07-G-S,Samtec 1x6 male SD header,https://www.samtec.com/products/tsw-106-07-g-s,"Optional replacement, do not count twice."
+2,XHP-4,Two ends of power J3 to main J1 harness,../datasheets/jst-xh.pdf,"Pin-for-pin 1=5V, 2=GND, 3=3.3V, 4=3.2V. Check both ends with meter."
+8,SXH-001T-P0.6,JST-XH crimp contacts,../datasheets/jst-xh.pdf,"For 24-AWG SYS_IN wires. Use specified crimp tool and pull-test, not solder-filled crimps."
+2,PHR-2,JST-PH motor and speaker mating housings,../datasheets/jst-ph.pdf,Label MOTOR and SPEAKER; identical keys do not prevent swapping.
+4,SPH-002T-P0.5S,JST-PH contacts for 24-AWG pigtails,../datasheets/jst-ph.pdf,"These go on added Alpha 3050 pigtails, NOT directly on the motor AWG32 leads."
+8 x 150 mm cut lengths,"Alpha Wire 3050, 24 AWG stranded, color-coded",SYS_IN 4 conductors; speaker 2; motor 2,https://www.alphawire.com/products/wire/hook-up-wire/premium/3050,"1.2 m total before trimming; OD 0.056 +/-0.002 in fits selected PH/XH contact ranges. Prototype harness lengths, adjust to shell later."
+4 x 15 mm cut lengths,RNF-100-1/16-0-STK / TE 5052892055,Insulation for four actuator-lead/pigtail splices,https://www.te.com/en/product-5052892055.html,"Adult-prepared harnesses. Check sleeve fits joint, covers insulation at both ends, and add separate strain relief; not battery insulation."
+4,M2 x 20 mm nylon female/female standoff,Provisional removable-stack spacing,Commodity dimensional specification,"Four between board faces for MOCK-UP only; verify actual module, JST plug and wire bend clearance."
+8,M2 x 5 mm nylon screw,Attach board to bench standoffs,Commodity dimensional specification,Four 2.2 mm NPTH mounting holes. Do not overtighten.
+8,M2 nylon flat washer,Mounting washers,Commodity dimensional specification,Keep hardware within reserved mounting area.
+As fitted,Nonconductive display support and motor/speaker retention,Prototype mechanical support / strain relief,Measure assembled stack,Do not suspend screen mechanically by its header alone. Final shell/support dimensions remain an enclosure task.
+1,KK POWER P.3 assembled subassembly,96 x 105 x 1.6 mm four-layer power PCB with 108 fitted positions,Manufacturer drawing / dimensional specification; procurement approval pending,Separate power BOM covers those 108 positions. Do not double-count them or ask students to assemble its fine-pitch SMT.
+1,VHR-2N,JST VH battery mating housing,Manufacturer drawing / dimensional specification; procurement approval pending,"J2 pin1 CELL_PLUS; pin2 BAT_NEG, not GND. Cell choice and polarity require approval."
+2,SVH-21T-P1.1,JST VH battery contacts,Manufacturer drawing / dimensional specification; procurement approval pending,"20 AWG battery pigtails; qualified crimps, check insulation range against JST drawing."
+2 x provisional 150 mm,20 AWG stranded insulated battery pigtails,Battery connector wires,Manufacturer drawing / dimensional specification; procurement approval pending,Final length/insulation rating and battery termination await cell/case choice.
+1,103AT-2,Semitec 10k thermistor bonded to cell,Manufacturer drawing / dimensional specification; procurement approval pending,"Connect to power J4 pin1 NTC, pin2 GND. Insulate/bond to selected cell; do not replace by a fixed resistor."
+1,PHR-2,Power J4 thermistor housing,Manufacturer drawing / dimensional specification; procurement approval pending,Additional to the TWO motor/speaker PH housings above.
+2,SPH-002T-P0.5S,Power J4 thermistor crimp contacts,Manufacturer drawing / dimensional specification; procurement approval pending,Use suitable 28 AWG insulated pigtails; check exact wire/insulation and crimp tooling.
+2 x provisional 150 mm,28 AWG insulated thermistor pigtails,NTC lead extensions,Manufacturer drawing / dimensional specification; procurement approval pending,"Insulated splices and strain relief, electrically isolated from cell pouch/can."
+10,0.5 mm nonconductive capacitor supports,Under horizontally mounted electrolytic bodies,Manufacturer drawing / dimensional specification; procurement approval pending,"Material must tolerate assembly/operating temperature, not obstruct vents and not stress seals; sample qualification required."
+1 set,Insulating inter-board barrier and harness retention,Prevent solder-tail and wiring shorts,Manufacturer drawing / dimensional specification; procurement approval pending,Keep RF zone empty; no battery pressed against solder tails. Shape after physical mock-up.
+"1, NOT SELECTED",1S 4.2 V maximum Li-ion/LiPo cell,Battery intentionally not frozen,Manufacturer drawing / dimensional specification; procurement approval pending,"Provisionally >=4 A continuous, >=0.34 A charge allowance. Select documented cell, temperature limits, fit and protection coordination before real-cell testing."

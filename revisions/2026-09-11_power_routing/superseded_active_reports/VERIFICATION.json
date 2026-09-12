@@ -1,0 +1,94 @@
+{
+  "status": "STATIC AUDIT ONLY",
+  "static_connectivity_issues": [],
+  "independent_USB_hole_clearance_issues": [],
+  "component_count": 136,
+  "test_pad_count": 28,
+  "main_interface_match": true,
+  "source_hashes": {
+    "KK_power_module.kicad_sch": "8a544722583fc994f665f53255b7053021f6a8add73af85a513a50f3e8a08506",
+    "KK_power_module.kicad_pcb": "36233b1973132dd5006cd06d59c546c395f8d20f4acbd6d0e8d46eba6b151277",
+    "KK_power_module.kicad_pro": "db2ec4b873d0d42f2de8ab5c1729d80227a7e3fc49c3ae256e2cf8555885e8ef",
+    "KK_power_module.kicad_sym": "f5de9aef56a0bdac8058160eea84fd699d10d4ff6a10d61d69097adef1e46a60",
+    "FS8205.kicad_sym": "5d8e177790f47a6cfbeca96f5a09e6cbc2f6184c77bbe27adce21e034d4a74ab",
+    "fp-lib-table": "d33b8b6eae4fc8f6ed956b72edf3604f981d95c7cda3bed20681a04659844498",
+    "sym-lib-table": "dc66464aa7bca062af0685c09cbe21fbb4b44732ffdffe464e38b114162d45da",
+    "main_pcb": "b840262c37afad89ec5307568ace5b6acb4406f89c44c91f1579771642a89003"
+  },
+  "electrical_screening": {
+    "status": "CALCULATED SCREENING ONLY; NOT POWERED OR BATTERY-SAFETY QUALIFICATION",
+    "temperature": {
+      "cold": {
+        "nominal_C": 4.782237038363746,
+        "screened_min_C": 2.8967248477441387,
+        "screened_max_C": 6.6225365688461295
+      },
+      "hot": {
+        "nominal_C": 39.98374901196564,
+        "screened_min_C": 37.822530469165855,
+        "screened_max_C": 42.22760193318575
+      }
+    },
+    "thermistor": "Semitec 103AT-2, 10k 1%, B25/85 3435K 1%; bonded and electrically insulated at cell",
+    "temperature_method": "Manufacturer nominal R/T table interpolation; first-order R25/B tolerance envelope; comparator and 0.1% resistor corners. Actual thermistor thermal lag and pack limits require bench validation.",
+    "NTC_open_ratio_nominal": 0.3875968992248062,
+    "NTC_short_ratio": 0,
+    "charge_A": {
+      "min": 0.2708176177563933,
+      "nominal": 0.30272108843537415,
+      "max": 0.3319646176789034
+    },
+    "USB_C_internal_limit_A": {
+      "min": 1.1424219345011424,
+      "nominal": 1.2307692307692308,
+      "max": 1.320901320901321
+    },
+    "USB_A_external_limit_A": {
+      "datasheet_min": 0.034,
+      "typ": 0.05,
+      "datasheet_max": 0.066,
+      "note": "At 19.2k programming resistance; resistor tolerance and upstream consumption are additional. No enumeration or suspend support."
+    },
+    "rails_nominal_V": {
+      "MCU_5V": 5.0,
+      "LOGIC_3V3": 3.3,
+      "ACT_3V2": 3.2
+    },
+    "supervisor_nominal_V": {
+      "MCU_5V": 4.64,
+      "LOGIC_3V3": 3.0600000000000005,
+      "ACT_3V2": 2.9960000000000004
+    },
+    "prototype_load_targets_A": {
+      "MCU_5V": 0.6,
+      "LOGIC_3V3": 0.4,
+      "ACT_3V2": 0.5
+    },
+    "battery_minimum_requirements": "1S conventional 4.2V Li-ion/LiPo; >=4A continuous discharge; charge capability >=0.34A; supplier documented 0..45C or wider charging range. Physical size/capacity and protection trip coordination not yet selected.",
+    "power_interface_pin_order": [
+      "MCU_5V",
+      "GND",
+      "LOGIC_3V3",
+      "ACT_3V2"
+    ],
+    "bench_tests_required": [
+      "USB-A current including startup and suspend behavior",
+      "USB-C attach current-mode transitions and weak source behavior",
+      "Battery simulator UVLO, source switchover and rail sequencing",
+      "Output regulation/ripple/transients into actual main-board loads",
+      "Short-circuit and fault recovery on a current-limited battery simulator",
+      "Charger thermal behavior, NTC open/short and temperature thresholds",
+      "Protected battery return isolation; never bond BAT_NEG to GND externally",
+      "Converter/charger/FET/fuse temperatures at minimum battery voltage",
+      "No simultaneous main ESP32 USB power until reverse-feed path is tested"
+    ]
+  },
+  "checked_artifact_sha256": {
+    "design.json": "6ff3bf2052892996646d07dc2cbacd9e264272aeef67fae81ffd290ea9155113",
+    "netlist.xml": "f7ba50bda9ba98c89c111ae938969e3a9e816dbd329d50d8c7d030aaa2dee878",
+    "KK_power_module.kicad_sch": "9fee5198dce2013bfe3b6497cf375df01e327758ebb88dc1134ed695b2cae98d",
+    "KK_power_module.kicad_pcb": "6dd40e3d7d8cf81614834bb4eee5ccee64cde6dd93bdac42e28ee0806bda8a0f",
+    "KK_power_module.kicad_pro": "49b1bc169dcfc2a01afefded567e22c2cbdbc2c8118795234cd59feb53ebca81",
+    "KK_Power.pretty/USB_C_HCTL.kicad_mod": "c7a7b76b6bc8c389fdadc07e5a7081abce85e1ed52c5192324226793ab14ba46"
+  }
+}

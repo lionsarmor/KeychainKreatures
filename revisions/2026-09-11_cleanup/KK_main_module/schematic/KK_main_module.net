@@ -1,0 +1,9108 @@
+(export
+	(version "E")
+	(design
+		(source "/home/legion/Desktop/KeychainKreatures/KK_main_module/schematic/KK_main_module.kicad_sch")
+		(date "2026-09-10T13:45:10")
+		(tool "Eeschema 10.0.6")
+		(textvar
+			(name "DESIGN_STATUS") "C.0 ENGINEERING DRAFT - NOT FOR FABRICATION")
+		(sheet
+			(number "1")
+			(name "/")
+			(tstamps "/")
+			(title_block
+				(title "01 / MCU and external power interface")
+				(company "Keychain Kreatures")
+				(rev "C.0 DRAFT")
+				(date "2026-09-10")
+				(source "KK_main_module.kicad_sch")
+				(comment
+					(number "1")
+					(value "Engineering prototype - no fabrication release")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "2")
+			(name "/02 / Nine soft buttons and GPIO expander/")
+			(tstamps "/1e2135d1-b50f-44d3-a3d6-cbe24a4294bc/")
+			(title_block
+				(title "02 / Nine soft buttons and GPIO expander")
+				(company "Keychain Kreatures")
+				(rev "C.0 DRAFT")
+				(date "2026-09-10")
+				(source "controls.kicad_sch")
+				(comment
+					(number "1")
+					(value "Engineering prototype - no fabrication release")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "3")
+			(name "/03 / Display, microSD and backlight/")
+			(tstamps "/c4d564d8-265c-46fb-a47d-d6b8387680c4/")
+			(title_block
+				(title "03 / Display, microSD and backlight")
+				(company "Keychain Kreatures")
+				(rev "C.0 DRAFT")
+				(date "2026-09-10")
+				(source "display_sd.kicad_sch")
+				(comment
+					(number "1")
+					(value "Engineering prototype - no fabrication release")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "4")
+			(name "/04 / IR transmit / receive and vibration/")
+			(tstamps "/14def3b1-7a61-401a-af44-466b76fc82e3/")
+			(title_block
+				(title "04 / IR transmit / receive and vibration")
+				(company "Keychain Kreatures")
+				(rev "C.0 DRAFT")
+				(date "2026-09-10")
+				(source "ir_motor.kicad_sch")
+				(comment
+					(number "1")
+					(value "Engineering prototype - no fabrication release")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "5")
+			(name "/05 / Filtered PWM, bridge amplifier and speaker/")
+			(tstamps "/6ed8919c-e204-40a5-a3ad-8630a4fab694/")
+			(title_block
+				(title "05 / Filtered PWM, bridge amplifier and speaker")
+				(company "Keychain Kreatures")
+				(rev "C.0 DRAFT")
+				(date "2026-09-10")
+				(source "audio.kicad_sch")
+				(comment
+					(number "1")
+					(value "Engineering prototype - no fabrication release")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+	)
+	(components
+		(comp
+			(ref "C1")
+			(value "100u")
+			(datasheet "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf")
+			(fields
+				(field
+					(name "MPN") "UVR1C101MDD")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "C_Polarized")
+				(description "Polarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "UVR1C101MDD")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "KK_main_module")
+			)
+			(property
+				(name "Sheetfile")
+				(value "KK_main_module.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "CP_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "ab861dc1-70dc-4e43-a24e-45278d3d31a6")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C2")
+			(value "100n")
+			(datasheet "https://yageogroup.com/download/specsheet/C315C104K5R5TA")
+			(fields
+				(field
+					(name "MPN") "C315C104K5R5TA")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://yageogroup.com/download/specsheet/C315C104K5R5TA")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "C315C104K5R5TA")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "KK_main_module")
+			)
+			(property
+				(name "Sheetfile")
+				(value "KK_main_module.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "9685eb76-5661-4a3b-a5f3-1e1bb3c3b550")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C3")
+			(value "100u")
+			(datasheet "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf")
+			(fields
+				(field
+					(name "MPN") "UVR1C101MDD")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "C_Polarized")
+				(description "Polarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "UVR1C101MDD")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "KK_main_module")
+			)
+			(property
+				(name "Sheetfile")
+				(value "KK_main_module.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "CP_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "8a214cef-6d47-4c9a-a724-9b3267218f8f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C4")
+			(value "100n")
+			(datasheet "https://yageogroup.com/download/specsheet/C315C104K5R5TA")
+			(fields
+				(field
+					(name "MPN") "C315C104K5R5TA")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://yageogroup.com/download/specsheet/C315C104K5R5TA")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "C315C104K5R5TA")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "KK_main_module")
+			)
+			(property
+				(name "Sheetfile")
+				(value "KK_main_module.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "08d1623c-441b-45a6-a89f-ce1086354967")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C5")
+			(value "100u")
+			(datasheet "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf")
+			(fields
+				(field
+					(name "MPN") "UVR1C101MDD")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "C_Polarized")
+				(description "Polarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "UVR1C101MDD")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "KK_main_module")
+			)
+			(property
+				(name "Sheetfile")
+				(value "KK_main_module.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "CP_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "1d96682b-db05-4d31-ae0c-e774ccefe039")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C6")
+			(value "100n")
+			(datasheet "https://yageogroup.com/download/specsheet/C315C104K5R5TA")
+			(fields
+				(field
+					(name "MPN") "C315C104K5R5TA")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://yageogroup.com/download/specsheet/C315C104K5R5TA")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "C315C104K5R5TA")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "KK_main_module")
+			)
+			(property
+				(name "Sheetfile")
+				(value "KK_main_module.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "90fce73c-b7c1-44cf-a9bf-1f8c67197651")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J1")
+			(value "SYS_IN / JST-XH")
+			(datasheet "https://www.jst-mfg.com/product/pdf/eng/eXH.pdf")
+			(fields
+				(field
+					(name "MPN") "B4B-XH-A(LF)(SN)")
+				(field
+					(name "Review") "4-rail-interface pins include ground; future supply must sequence rails together")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://www.jst-mfg.com/product/pdf/eng/eXH.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "Header4")
+				(description "")
+			)
+			(property
+				(name "MPN")
+				(value "B4B-XH-A(LF)(SN)")
+			)
+			(property
+				(name "Review")
+				(value "4-rail-interface pins include ground; future supply must sequence rails together")
+			)
+			(property
+				(name "Sheetname")
+				(value "KK_main_module")
+			)
+			(property
+				(name "Sheetfile")
+				(value "KK_main_module.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "493d650d-8d15-401b-aa25-88bb54c2f91f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "MOD1")
+			(value "ESP32-S3 SuperMini")
+			(datasheet "https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf")
+			(fields
+				(field
+					(name "MPN") "Teyleten B0D47HBFDY")
+				(field
+					(name "Review") "Carrier pad numbering/voltage path requires delivered-module qualification")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "SuperMini_ASSUMED")
+				(description "")
+			)
+			(property
+				(name "MPN")
+				(value "Teyleten B0D47HBFDY")
+			)
+			(property
+				(name "Review")
+				(value "Carrier pad numbering/voltage path requires delivered-module qualification")
+			)
+			(property
+				(name "Sheetname")
+				(value "KK_main_module")
+			)
+			(property
+				(name "Sheetfile")
+				(value "KK_main_module.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "2b13822a-4226-437e-ac57-97e341cfe3e5")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "10")
+						)
+						(pin
+							(num "11")
+						)
+						(pin
+							(num "12")
+						)
+						(pin
+							(num "13")
+						)
+						(pin
+							(num "14")
+						)
+						(pin
+							(num "15")
+						)
+						(pin
+							(num "16")
+						)
+						(pin
+							(num "17")
+						)
+						(pin
+							(num "18")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C7")
+			(value "100n")
+			(datasheet "https://yageogroup.com/download/specsheet/C315C104K5R5TA")
+			(fields
+				(field
+					(name "MPN") "C315C104K5R5TA")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://yageogroup.com/download/specsheet/C315C104K5R5TA")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "C315C104K5R5TA")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "02 / Nine soft buttons and GPIO expander")
+			)
+			(property
+				(name "Sheetfile")
+				(value "controls.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/02 / Nine soft buttons and GPIO expander/")
+				(tstamps "/1e2135d1-b50f-44d3-a3d6-cbe24a4294bc/")
+			)
+			(tstamps "f167717f-b2ed-46e7-a422-5dd5b609cd20")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C8")
+			(value "100n")
+			(datasheet "https://yageogroup.com/download/specsheet/C315C104K5R5TA")
+			(fields
+				(field
+					(name "MPN") "C315C104K5R5TA")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://yageogroup.com/download/specsheet/C315C104K5R5TA")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "C315C104K5R5TA")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "02 / Nine soft buttons and GPIO expander")
+			)
+			(property
+				(name "Sheetfile")
+				(value "controls.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/02 / Nine soft buttons and GPIO expander/")
+				(tstamps "/1e2135d1-b50f-44d3-a3d6-cbe24a4294bc/")
+			)
+			(tstamps "f09d8479-566a-4c7c-ab15-6fa8635e4499")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C9")
+			(value "10u")
+			(datasheet "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf")
+			(fields
+				(field
+					(name "MPN") "UVR1C100MDD")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "C_Polarized")
+				(description "Polarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "UVR1C100MDD")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "02 / Nine soft buttons and GPIO expander")
+			)
+			(property
+				(name "Sheetfile")
+				(value "controls.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "CP_*")
+			)
+			(sheetpath
+				(names "/02 / Nine soft buttons and GPIO expander/")
+				(tstamps "/1e2135d1-b50f-44d3-a3d6-cbe24a4294bc/")
+			)
+			(tstamps "2a36848a-8064-4691-a0e2-f3c5b5fcb787")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R1")
+			(value "4.7k")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+			(datasheet "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+			(fields
+				(field
+					(name "MPN") "MFR-25FBF52-4K7")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "MFR-25FBF52-4K7")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "02 / Nine soft buttons and GPIO expander")
+			)
+			(property
+				(name "Sheetfile")
+				(value "controls.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/02 / Nine soft buttons and GPIO expander/")
+				(tstamps "/1e2135d1-b50f-44d3-a3d6-cbe24a4294bc/")
+			)
+			(tstamps "a791366f-6f62-4125-aedc-ac9ec72017b1")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R2")
+			(value "4.7k")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+			(datasheet "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+			(fields
+				(field
+					(name "MPN") "MFR-25FBF52-4K7")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "MFR-25FBF52-4K7")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "02 / Nine soft buttons and GPIO expander")
+			)
+			(property
+				(name "Sheetfile")
+				(value "controls.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/02 / Nine soft buttons and GPIO expander/")
+				(tstamps "/1e2135d1-b50f-44d3-a3d6-cbe24a4294bc/")
+			)
+			(tstamps "d653b016-db1d-48f5-a36f-84a44465e5d6")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R3")
+			(value "10k")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+			(datasheet "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+			(fields
+				(field
+					(name "MPN") "MFR-25FBF52-10K")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "MFR-25FBF52-10K")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "02 / Nine soft buttons and GPIO expander")
+			)
+			(property
+				(name "Sheetfile")
+				(value "controls.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/02 / Nine soft buttons and GPIO expander/")
+				(tstamps "/1e2135d1-b50f-44d3-a3d6-cbe24a4294bc/")
+			)
+			(tstamps "021bbd75-cf65-40bd-a0f4-ab8b131600e0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R4")
+			(value "10k")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+			(datasheet "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+			(fields
+				(field
+					(name "MPN") "MFR-25FBF52-10K")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "MFR-25FBF52-10K")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "02 / Nine soft buttons and GPIO expander")
+			)
+			(property
+				(name "Sheetfile")
+				(value "controls.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/02 / Nine soft buttons and GPIO expander/")
+				(tstamps "/1e2135d1-b50f-44d3-a3d6-cbe24a4294bc/")
+			)
+			(tstamps "ec7e008b-5f4d-45c4-aa53-2426d1d7b7cd")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R5")
+			(value "10k")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+			(datasheet "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+			(fields
+				(field
+					(name "MPN") "MFR-25FBF52-10K")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "MFR-25FBF52-10K")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "02 / Nine soft buttons and GPIO expander")
+			)
+			(property
+				(name "Sheetfile")
+				(value "controls.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/02 / Nine soft buttons and GPIO expander/")
+				(tstamps "/1e2135d1-b50f-44d3-a3d6-cbe24a4294bc/")
+			)
+			(tstamps "d9a37366-a195-42ef-af8c-64a72b24d75e")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R6")
+			(value "10k")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+			(datasheet "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+			(fields
+				(field
+					(name "MPN") "MFR-25FBF52-10K")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "MFR-25FBF52-10K")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "02 / Nine soft buttons and GPIO expander")
+			)
+			(property
+				(name "Sheetfile")
+				(value "controls.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/02 / Nine soft buttons and GPIO expander/")
+				(tstamps "/1e2135d1-b50f-44d3-a3d6-cbe24a4294bc/")
+			)
+			(tstamps "550a92e3-30a8-4fa0-a314-c5bdde5a76c4")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R7")
+			(value "10k")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+			(datasheet "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+			(fields
+				(field
+					(name "MPN") "MFR-25FBF52-10K")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "MFR-25FBF52-10K")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "02 / Nine soft buttons and GPIO expander")
+			)
+			(property
+				(name "Sheetfile")
+				(value "controls.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/02 / Nine soft buttons and GPIO expander/")
+				(tstamps "/1e2135d1-b50f-44d3-a3d6-cbe24a4294bc/")
+			)
+			(tstamps "e74859e6-5cd1-4fc9-a3fb-6132168effe3")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R8")
+			(value "10k")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+			(datasheet "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+			(fields
+				(field
+					(name "MPN") "MFR-25FBF52-10K")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "MFR-25FBF52-10K")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "02 / Nine soft buttons and GPIO expander")
+			)
+			(property
+				(name "Sheetfile")
+				(value "controls.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/02 / Nine soft buttons and GPIO expander/")
+				(tstamps "/1e2135d1-b50f-44d3-a3d6-cbe24a4294bc/")
+			)
+			(tstamps "ec185795-d711-43cd-ab56-63d3a54651c7")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R9")
+			(value "10k")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+			(datasheet "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+			(fields
+				(field
+					(name "MPN") "MFR-25FBF52-10K")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "MFR-25FBF52-10K")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "02 / Nine soft buttons and GPIO expander")
+			)
+			(property
+				(name "Sheetfile")
+				(value "controls.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/02 / Nine soft buttons and GPIO expander/")
+				(tstamps "/1e2135d1-b50f-44d3-a3d6-cbe24a4294bc/")
+			)
+			(tstamps "fed5e5f1-8dae-4b3b-a1e2-65930e7b7809")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R10")
+			(value "10k")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+			(datasheet "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+			(fields
+				(field
+					(name "MPN") "MFR-25FBF52-10K")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "MFR-25FBF52-10K")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "02 / Nine soft buttons and GPIO expander")
+			)
+			(property
+				(name "Sheetfile")
+				(value "controls.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/02 / Nine soft buttons and GPIO expander/")
+				(tstamps "/1e2135d1-b50f-44d3-a3d6-cbe24a4294bc/")
+			)
+			(tstamps "38fea159-d1d7-4d6f-abff-32f5d5b40e72")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R11")
+			(value "10k")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+			(datasheet "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+			(fields
+				(field
+					(name "MPN") "MFR-25FBF52-10K")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "MFR-25FBF52-10K")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "02 / Nine soft buttons and GPIO expander")
+			)
+			(property
+				(name "Sheetfile")
+				(value "controls.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/02 / Nine soft buttons and GPIO expander/")
+				(tstamps "/1e2135d1-b50f-44d3-a3d6-cbe24a4294bc/")
+			)
+			(tstamps "46165daa-97b9-4f17-a4ce-af9de4beae84")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R12")
+			(value "10k")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+			(datasheet "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+			(fields
+				(field
+					(name "MPN") "MFR-25FBF52-10K")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "MFR-25FBF52-10K")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "02 / Nine soft buttons and GPIO expander")
+			)
+			(property
+				(name "Sheetfile")
+				(value "controls.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/02 / Nine soft buttons and GPIO expander/")
+				(tstamps "/1e2135d1-b50f-44d3-a3d6-cbe24a4294bc/")
+			)
+			(tstamps "f0a6cd08-84bf-4e98-a2cc-3b0f561428d0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R13")
+			(value "10k")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+			(datasheet "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+			(fields
+				(field
+					(name "MPN") "MFR-25FBF52-10K")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "MFR-25FBF52-10K")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "02 / Nine soft buttons and GPIO expander")
+			)
+			(property
+				(name "Sheetfile")
+				(value "controls.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/02 / Nine soft buttons and GPIO expander/")
+				(tstamps "/1e2135d1-b50f-44d3-a3d6-cbe24a4294bc/")
+			)
+			(tstamps "7a2eca4d-e16f-40df-a6fe-f9aa946d813d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "SW1")
+			(value "UP")
+			(datasheet "https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png")
+			(fields
+				(field
+					(name "MPN") "Adafruit 3101")
+				(field
+					(name "Review") "200 ohm maximum closed contact resistance; custom footprint pending")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "SoftSwitch3101")
+				(description "")
+			)
+			(property
+				(name "MPN")
+				(value "Adafruit 3101")
+			)
+			(property
+				(name "Review")
+				(value "200 ohm maximum closed contact resistance; custom footprint pending")
+			)
+			(property
+				(name "Sheetname")
+				(value "02 / Nine soft buttons and GPIO expander")
+			)
+			(property
+				(name "Sheetfile")
+				(value "controls.kicad_sch")
+			)
+			(sheetpath
+				(names "/02 / Nine soft buttons and GPIO expander/")
+				(tstamps "/1e2135d1-b50f-44d3-a3d6-cbe24a4294bc/")
+			)
+			(tstamps "e4be7c16-0bb0-4440-a209-62899a4d1883")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "A")
+						)
+						(pin
+							(num "B")
+						)
+						(pin
+							(num "C")
+						)
+						(pin
+							(num "D")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "SW2")
+			(value "DOWN")
+			(datasheet "https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png")
+			(fields
+				(field
+					(name "MPN") "Adafruit 3101")
+				(field
+					(name "Review") "200 ohm maximum closed contact resistance; custom footprint pending")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "SoftSwitch3101")
+				(description "")
+			)
+			(property
+				(name "MPN")
+				(value "Adafruit 3101")
+			)
+			(property
+				(name "Review")
+				(value "200 ohm maximum closed contact resistance; custom footprint pending")
+			)
+			(property
+				(name "Sheetname")
+				(value "02 / Nine soft buttons and GPIO expander")
+			)
+			(property
+				(name "Sheetfile")
+				(value "controls.kicad_sch")
+			)
+			(sheetpath
+				(names "/02 / Nine soft buttons and GPIO expander/")
+				(tstamps "/1e2135d1-b50f-44d3-a3d6-cbe24a4294bc/")
+			)
+			(tstamps "ccd4f612-aa47-4b5b-a870-70a9d1dfc725")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "A")
+						)
+						(pin
+							(num "B")
+						)
+						(pin
+							(num "C")
+						)
+						(pin
+							(num "D")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "SW3")
+			(value "LEFT")
+			(datasheet "https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png")
+			(fields
+				(field
+					(name "MPN") "Adafruit 3101")
+				(field
+					(name "Review") "200 ohm maximum closed contact resistance; custom footprint pending")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "SoftSwitch3101")
+				(description "")
+			)
+			(property
+				(name "MPN")
+				(value "Adafruit 3101")
+			)
+			(property
+				(name "Review")
+				(value "200 ohm maximum closed contact resistance; custom footprint pending")
+			)
+			(property
+				(name "Sheetname")
+				(value "02 / Nine soft buttons and GPIO expander")
+			)
+			(property
+				(name "Sheetfile")
+				(value "controls.kicad_sch")
+			)
+			(sheetpath
+				(names "/02 / Nine soft buttons and GPIO expander/")
+				(tstamps "/1e2135d1-b50f-44d3-a3d6-cbe24a4294bc/")
+			)
+			(tstamps "8a60a141-4e26-4130-adbb-8bf70436fa63")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "A")
+						)
+						(pin
+							(num "B")
+						)
+						(pin
+							(num "C")
+						)
+						(pin
+							(num "D")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "SW4")
+			(value "RIGHT")
+			(datasheet "https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png")
+			(fields
+				(field
+					(name "MPN") "Adafruit 3101")
+				(field
+					(name "Review") "200 ohm maximum closed contact resistance; custom footprint pending")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "SoftSwitch3101")
+				(description "")
+			)
+			(property
+				(name "MPN")
+				(value "Adafruit 3101")
+			)
+			(property
+				(name "Review")
+				(value "200 ohm maximum closed contact resistance; custom footprint pending")
+			)
+			(property
+				(name "Sheetname")
+				(value "02 / Nine soft buttons and GPIO expander")
+			)
+			(property
+				(name "Sheetfile")
+				(value "controls.kicad_sch")
+			)
+			(sheetpath
+				(names "/02 / Nine soft buttons and GPIO expander/")
+				(tstamps "/1e2135d1-b50f-44d3-a3d6-cbe24a4294bc/")
+			)
+			(tstamps "c1d1f051-8525-49d5-ab7d-f56cb6095e18")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "A")
+						)
+						(pin
+							(num "B")
+						)
+						(pin
+							(num "C")
+						)
+						(pin
+							(num "D")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "SW5")
+			(value "A")
+			(datasheet "https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png")
+			(fields
+				(field
+					(name "MPN") "Adafruit 3101")
+				(field
+					(name "Review") "200 ohm maximum closed contact resistance; custom footprint pending")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "SoftSwitch3101")
+				(description "")
+			)
+			(property
+				(name "MPN")
+				(value "Adafruit 3101")
+			)
+			(property
+				(name "Review")
+				(value "200 ohm maximum closed contact resistance; custom footprint pending")
+			)
+			(property
+				(name "Sheetname")
+				(value "02 / Nine soft buttons and GPIO expander")
+			)
+			(property
+				(name "Sheetfile")
+				(value "controls.kicad_sch")
+			)
+			(sheetpath
+				(names "/02 / Nine soft buttons and GPIO expander/")
+				(tstamps "/1e2135d1-b50f-44d3-a3d6-cbe24a4294bc/")
+			)
+			(tstamps "bd124cdf-61d1-4f48-adb9-e6dc986e85e9")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "A")
+						)
+						(pin
+							(num "B")
+						)
+						(pin
+							(num "C")
+						)
+						(pin
+							(num "D")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "SW6")
+			(value "B")
+			(datasheet "https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png")
+			(fields
+				(field
+					(name "MPN") "Adafruit 3101")
+				(field
+					(name "Review") "200 ohm maximum closed contact resistance; custom footprint pending")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "SoftSwitch3101")
+				(description "")
+			)
+			(property
+				(name "MPN")
+				(value "Adafruit 3101")
+			)
+			(property
+				(name "Review")
+				(value "200 ohm maximum closed contact resistance; custom footprint pending")
+			)
+			(property
+				(name "Sheetname")
+				(value "02 / Nine soft buttons and GPIO expander")
+			)
+			(property
+				(name "Sheetfile")
+				(value "controls.kicad_sch")
+			)
+			(sheetpath
+				(names "/02 / Nine soft buttons and GPIO expander/")
+				(tstamps "/1e2135d1-b50f-44d3-a3d6-cbe24a4294bc/")
+			)
+			(tstamps "e18b0a13-3401-4d36-a247-edcdd750d7f6")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "A")
+						)
+						(pin
+							(num "B")
+						)
+						(pin
+							(num "C")
+						)
+						(pin
+							(num "D")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "SW7")
+			(value "X")
+			(datasheet "https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png")
+			(fields
+				(field
+					(name "MPN") "Adafruit 3101")
+				(field
+					(name "Review") "200 ohm maximum closed contact resistance; custom footprint pending")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "SoftSwitch3101")
+				(description "")
+			)
+			(property
+				(name "MPN")
+				(value "Adafruit 3101")
+			)
+			(property
+				(name "Review")
+				(value "200 ohm maximum closed contact resistance; custom footprint pending")
+			)
+			(property
+				(name "Sheetname")
+				(value "02 / Nine soft buttons and GPIO expander")
+			)
+			(property
+				(name "Sheetfile")
+				(value "controls.kicad_sch")
+			)
+			(sheetpath
+				(names "/02 / Nine soft buttons and GPIO expander/")
+				(tstamps "/1e2135d1-b50f-44d3-a3d6-cbe24a4294bc/")
+			)
+			(tstamps "c5253239-7482-425c-aa74-8a81f4f565aa")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "A")
+						)
+						(pin
+							(num "B")
+						)
+						(pin
+							(num "C")
+						)
+						(pin
+							(num "D")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "SW8")
+			(value "Y")
+			(datasheet "https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png")
+			(fields
+				(field
+					(name "MPN") "Adafruit 3101")
+				(field
+					(name "Review") "200 ohm maximum closed contact resistance; custom footprint pending")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "SoftSwitch3101")
+				(description "")
+			)
+			(property
+				(name "MPN")
+				(value "Adafruit 3101")
+			)
+			(property
+				(name "Review")
+				(value "200 ohm maximum closed contact resistance; custom footprint pending")
+			)
+			(property
+				(name "Sheetname")
+				(value "02 / Nine soft buttons and GPIO expander")
+			)
+			(property
+				(name "Sheetfile")
+				(value "controls.kicad_sch")
+			)
+			(sheetpath
+				(names "/02 / Nine soft buttons and GPIO expander/")
+				(tstamps "/1e2135d1-b50f-44d3-a3d6-cbe24a4294bc/")
+			)
+			(tstamps "1d9e6a41-cad2-41a9-a998-76be52c971f2")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "A")
+						)
+						(pin
+							(num "B")
+						)
+						(pin
+							(num "C")
+						)
+						(pin
+							(num "D")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "SW9")
+			(value "FN")
+			(datasheet "https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png")
+			(fields
+				(field
+					(name "MPN") "Adafruit 3101")
+				(field
+					(name "Review") "200 ohm maximum closed contact resistance; custom footprint pending")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "SoftSwitch3101")
+				(description "")
+			)
+			(property
+				(name "MPN")
+				(value "Adafruit 3101")
+			)
+			(property
+				(name "Review")
+				(value "200 ohm maximum closed contact resistance; custom footprint pending")
+			)
+			(property
+				(name "Sheetname")
+				(value "02 / Nine soft buttons and GPIO expander")
+			)
+			(property
+				(name "Sheetfile")
+				(value "controls.kicad_sch")
+			)
+			(sheetpath
+				(names "/02 / Nine soft buttons and GPIO expander/")
+				(tstamps "/1e2135d1-b50f-44d3-a3d6-cbe24a4294bc/")
+			)
+			(tstamps "c2a4cbab-fbba-470e-a4fa-eda8ae203c17")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "A")
+						)
+						(pin
+							(num "B")
+						)
+						(pin
+							(num "C")
+						)
+						(pin
+							(num "D")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U1")
+			(value "MCP23017-E/SP")
+			(footprint "Package_DIP:DIP-28_W7.62mm")
+			(datasheet "https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP23017-Data-Sheet-DS20001952.pdf")
+			(fields
+				(field
+					(name "MPN") "MCP23017-E/SP")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Package_DIP:DIP-28_W7.62mm")
+				(field
+					(name "Datasheet") "https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP23017-Data-Sheet-DS20001952.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "MCP23017_E_SP")
+				(description "")
+			)
+			(property
+				(name "MPN")
+				(value "MCP23017-E/SP")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "02 / Nine soft buttons and GPIO expander")
+			)
+			(property
+				(name "Sheetfile")
+				(value "controls.kicad_sch")
+			)
+			(sheetpath
+				(names "/02 / Nine soft buttons and GPIO expander/")
+				(tstamps "/1e2135d1-b50f-44d3-a3d6-cbe24a4294bc/")
+			)
+			(tstamps "316ca0ef-da62-46d8-a2c1-1d1e20890d22")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "10")
+						)
+						(pin
+							(num "11")
+						)
+						(pin
+							(num "12")
+						)
+						(pin
+							(num "13")
+						)
+						(pin
+							(num "14")
+						)
+						(pin
+							(num "15")
+						)
+						(pin
+							(num "16")
+						)
+						(pin
+							(num "17")
+						)
+						(pin
+							(num "18")
+						)
+						(pin
+							(num "19")
+						)
+						(pin
+							(num "20")
+						)
+						(pin
+							(num "21")
+						)
+						(pin
+							(num "22")
+						)
+						(pin
+							(num "23")
+						)
+						(pin
+							(num "24")
+						)
+						(pin
+							(num "25")
+						)
+						(pin
+							(num "26")
+						)
+						(pin
+							(num "27")
+						)
+						(pin
+							(num "28")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C10")
+			(value "100n")
+			(datasheet "https://yageogroup.com/download/specsheet/C315C104K5R5TA")
+			(fields
+				(field
+					(name "MPN") "C315C104K5R5TA")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://yageogroup.com/download/specsheet/C315C104K5R5TA")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "C315C104K5R5TA")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "03 / Display, microSD and backlight")
+			)
+			(property
+				(name "Sheetfile")
+				(value "display_sd.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/03 / Display, microSD and backlight/")
+				(tstamps "/c4d564d8-265c-46fb-a47d-d6b8387680c4/")
+			)
+			(tstamps "908d7290-0e24-4592-ab58-0e971e603ef2")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C11")
+			(value "10u")
+			(datasheet "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf")
+			(fields
+				(field
+					(name "MPN") "UVR1C100MDD")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "C_Polarized")
+				(description "Polarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "UVR1C100MDD")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "03 / Display, microSD and backlight")
+			)
+			(property
+				(name "Sheetfile")
+				(value "display_sd.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "CP_*")
+			)
+			(sheetpath
+				(names "/03 / Display, microSD and backlight/")
+				(tstamps "/c4d564d8-265c-46fb-a47d-d6b8387680c4/")
+			)
+			(tstamps "22b5894e-02a7-4bb5-aee8-ae7db1fc6f25")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C12")
+			(value "100n")
+			(datasheet "https://yageogroup.com/download/specsheet/C315C104K5R5TA")
+			(fields
+				(field
+					(name "MPN") "C315C104K5R5TA")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://yageogroup.com/download/specsheet/C315C104K5R5TA")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "C315C104K5R5TA")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "03 / Display, microSD and backlight")
+			)
+			(property
+				(name "Sheetfile")
+				(value "display_sd.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/03 / Display, microSD and backlight/")
+				(tstamps "/c4d564d8-265c-46fb-a47d-d6b8387680c4/")
+			)
+			(tstamps "fa70213c-8aaf-4d8f-ad6d-9377a388260e")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C13")
+			(value "100u")
+			(datasheet "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf")
+			(fields
+				(field
+					(name "MPN") "UVR1C101MDD")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "C_Polarized")
+				(description "Polarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "UVR1C101MDD")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "03 / Display, microSD and backlight")
+			)
+			(property
+				(name "Sheetfile")
+				(value "display_sd.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "CP_*")
+			)
+			(sheetpath
+				(names "/03 / Display, microSD and backlight/")
+				(tstamps "/c4d564d8-265c-46fb-a47d-d6b8387680c4/")
+			)
+			(tstamps "6645ca87-da63-46d5-ab2b-8e48f6d382c9")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J2")
+			(value "XIITIA TFT header")
+			(datasheet "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/937/Female_Headers.100_DS.pdf")
+			(fields
+				(field
+					(name "MPN") "PPTC081LFBN-RC")
+				(field
+					(name "Review") "Display module B0DFWL25RB is a separate assembly item")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/937/Female_Headers.100_DS.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "Header8")
+				(description "")
+			)
+			(property
+				(name "MPN")
+				(value "PPTC081LFBN-RC")
+			)
+			(property
+				(name "Review")
+				(value "Display module B0DFWL25RB is a separate assembly item")
+			)
+			(property
+				(name "Sheetname")
+				(value "03 / Display, microSD and backlight")
+			)
+			(property
+				(name "Sheetfile")
+				(value "display_sd.kicad_sch")
+			)
+			(sheetpath
+				(names "/03 / Display, microSD and backlight/")
+				(tstamps "/c4d564d8-265c-46fb-a47d-d6b8387680c4/")
+			)
+			(tstamps "45476306-1e4b-49f9-a261-06dd5417f2dd")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J3")
+			(value "GODIYMODULES SD")
+			(datasheet "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/937/Female_Headers.100_DS.pdf")
+			(fields
+				(field
+					(name "MPN") "PPTC061LFBN-RC")
+				(field
+					(name "Review") "SD module B0F82XWT4F is a separate assembly item")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/937/Female_Headers.100_DS.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "Header6")
+				(description "")
+			)
+			(property
+				(name "MPN")
+				(value "PPTC061LFBN-RC")
+			)
+			(property
+				(name "Review")
+				(value "SD module B0F82XWT4F is a separate assembly item")
+			)
+			(property
+				(name "Sheetname")
+				(value "03 / Display, microSD and backlight")
+			)
+			(property
+				(name "Sheetfile")
+				(value "display_sd.kicad_sch")
+			)
+			(sheetpath
+				(names "/03 / Display, microSD and backlight/")
+				(tstamps "/c4d564d8-265c-46fb-a47d-d6b8387680c4/")
+			)
+			(tstamps "804f4f16-3b25-4494-af41-95b53f30e13c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "Q2")
+			(value "KSP2222ABU")
+			(datasheet "https://www.onsemi.com/pdf/datasheet/ksp2222a-d.pdf")
+			(fields
+				(field
+					(name "MPN") "KSP2222ABU")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://www.onsemi.com/pdf/datasheet/ksp2222a-d.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "KSP2222ABU")
+				(description "NPN bipolar junction transistor")
+			)
+			(property
+				(name "MPN")
+				(value "KSP2222ABU")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "03 / Display, microSD and backlight")
+			)
+			(property
+				(name "Sheetfile")
+				(value "display_sd.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "BJT")
+			)
+			(sheetpath
+				(names "/03 / Display, microSD and backlight/")
+				(tstamps "/c4d564d8-265c-46fb-a47d-d6b8387680c4/")
+			)
+			(tstamps "8845886b-e6cb-4f28-ad18-a66a83d622fd")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "Q3")
+			(value "BC32725BU")
+			(datasheet "https://www.onsemi.com/pub/Collateral/BC327-D.PDF")
+			(fields
+				(field
+					(name "MPN") "BC32725BU")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://www.onsemi.com/pub/Collateral/BC327-D.PDF")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "BC32725BU")
+				(description "PNP bipolar junction transistor")
+			)
+			(property
+				(name "MPN")
+				(value "BC32725BU")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "03 / Display, microSD and backlight")
+			)
+			(property
+				(name "Sheetfile")
+				(value "display_sd.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "BJT")
+			)
+			(sheetpath
+				(names "/03 / Display, microSD and backlight/")
+				(tstamps "/c4d564d8-265c-46fb-a47d-d6b8387680c4/")
+			)
+			(tstamps "9fc58f1a-bf0d-4f13-a609-c7572d4475fd")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R14")
+			(value "10k")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+			(datasheet "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+			(fields
+				(field
+					(name "MPN") "MFR-25FBF52-10K")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "MFR-25FBF52-10K")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "03 / Display, microSD and backlight")
+			)
+			(property
+				(name "Sheetfile")
+				(value "display_sd.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/03 / Display, microSD and backlight/")
+				(tstamps "/c4d564d8-265c-46fb-a47d-d6b8387680c4/")
+			)
+			(tstamps "f01df5b3-5044-465c-ad4f-687ffd9e8b72")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R15")
+			(value "10k")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+			(datasheet "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+			(fields
+				(field
+					(name "MPN") "MFR-25FBF52-10K")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "MFR-25FBF52-10K")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "03 / Display, microSD and backlight")
+			)
+			(property
+				(name "Sheetfile")
+				(value "display_sd.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/03 / Display, microSD and backlight/")
+				(tstamps "/c4d564d8-265c-46fb-a47d-d6b8387680c4/")
+			)
+			(tstamps "71ef1a10-2315-4fd0-a2ce-12804e0ebc03")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R16")
+			(value "10k")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+			(datasheet "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+			(fields
+				(field
+					(name "MPN") "MFR-25FBF52-10K")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "MFR-25FBF52-10K")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "03 / Display, microSD and backlight")
+			)
+			(property
+				(name "Sheetfile")
+				(value "display_sd.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/03 / Display, microSD and backlight/")
+				(tstamps "/c4d564d8-265c-46fb-a47d-d6b8387680c4/")
+			)
+			(tstamps "32c71e5b-9e5d-4535-a66e-879c3179f579")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R17")
+			(value "10k")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+			(datasheet "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+			(fields
+				(field
+					(name "MPN") "MFR-25FBF52-10K")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "MFR-25FBF52-10K")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "03 / Display, microSD and backlight")
+			)
+			(property
+				(name "Sheetfile")
+				(value "display_sd.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/03 / Display, microSD and backlight/")
+				(tstamps "/c4d564d8-265c-46fb-a47d-d6b8387680c4/")
+			)
+			(tstamps "b8c94a38-f7c8-447e-ad12-c83c9d68f1fb")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R18")
+			(value "10k")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+			(datasheet "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+			(fields
+				(field
+					(name "MPN") "MFR-25FBF52-10K")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "MFR-25FBF52-10K")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "03 / Display, microSD and backlight")
+			)
+			(property
+				(name "Sheetfile")
+				(value "display_sd.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/03 / Display, microSD and backlight/")
+				(tstamps "/c4d564d8-265c-46fb-a47d-d6b8387680c4/")
+			)
+			(tstamps "4bcfa70b-aaca-4ae4-a0dc-515864e5c8ee")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R19")
+			(value "4.7k")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+			(datasheet "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+			(fields
+				(field
+					(name "MPN") "MFR-25FBF52-4K7")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "MFR-25FBF52-4K7")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "03 / Display, microSD and backlight")
+			)
+			(property
+				(name "Sheetfile")
+				(value "display_sd.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/03 / Display, microSD and backlight/")
+				(tstamps "/c4d564d8-265c-46fb-a47d-d6b8387680c4/")
+			)
+			(tstamps "9d8856d8-c622-4455-a819-0a48964f7aad")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R20")
+			(value "100k")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+			(datasheet "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+			(fields
+				(field
+					(name "MPN") "MFR-25FBF52-100K")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "MFR-25FBF52-100K")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "03 / Display, microSD and backlight")
+			)
+			(property
+				(name "Sheetfile")
+				(value "display_sd.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/03 / Display, microSD and backlight/")
+				(tstamps "/c4d564d8-265c-46fb-a47d-d6b8387680c4/")
+			)
+			(tstamps "0e9b91ae-8134-492d-ad68-3bda807087ee")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R21")
+			(value "220")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+			(datasheet "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+			(fields
+				(field
+					(name "MPN") "MFR-25FBF52-220R")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "MFR-25FBF52-220R")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "03 / Display, microSD and backlight")
+			)
+			(property
+				(name "Sheetfile")
+				(value "display_sd.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/03 / Display, microSD and backlight/")
+				(tstamps "/c4d564d8-265c-46fb-a47d-d6b8387680c4/")
+			)
+			(tstamps "0670f8ea-5102-4513-afc0-70477d4cdc7c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R22")
+			(value "100k")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+			(datasheet "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+			(fields
+				(field
+					(name "MPN") "MFR-25FBF52-100K")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "MFR-25FBF52-100K")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "03 / Display, microSD and backlight")
+			)
+			(property
+				(name "Sheetfile")
+				(value "display_sd.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/03 / Display, microSD and backlight/")
+				(tstamps "/c4d564d8-265c-46fb-a47d-d6b8387680c4/")
+			)
+			(tstamps "cff91094-9176-4457-af94-18db559257eb")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R23")
+			(value "100")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+			(datasheet "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+			(fields
+				(field
+					(name "MPN") "MFR-25FBF52-100R")
+				(field
+					(name "Review") "Bring-up current limit; bright-screen qualification required")
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "MFR-25FBF52-100R")
+			)
+			(property
+				(name "Review")
+				(value "Bring-up current limit; bright-screen qualification required")
+			)
+			(property
+				(name "Sheetname")
+				(value "03 / Display, microSD and backlight")
+			)
+			(property
+				(name "Sheetfile")
+				(value "display_sd.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/03 / Display, microSD and backlight/")
+				(tstamps "/c4d564d8-265c-46fb-a47d-d6b8387680c4/")
+			)
+			(tstamps "c88159d3-136f-4ab2-a2f0-318d030b5ecc")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C14")
+			(value "100n")
+			(datasheet "https://yageogroup.com/download/specsheet/C315C104K5R5TA")
+			(fields
+				(field
+					(name "MPN") "C315C104K5R5TA")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://yageogroup.com/download/specsheet/C315C104K5R5TA")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "C315C104K5R5TA")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "04 / IR transmit / receive and vibration")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ir_motor.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/04 / IR transmit / receive and vibration/")
+				(tstamps "/14def3b1-7a61-401a-af44-466b76fc82e3/")
+			)
+			(tstamps "fafc2212-18d3-4700-a520-f88d2d25775c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C15")
+			(value "10u")
+			(datasheet "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf")
+			(fields
+				(field
+					(name "MPN") "UVR1C100MDD")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "C_Polarized")
+				(description "Polarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "UVR1C100MDD")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "04 / IR transmit / receive and vibration")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ir_motor.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "CP_*")
+			)
+			(sheetpath
+				(names "/04 / IR transmit / receive and vibration/")
+				(tstamps "/14def3b1-7a61-401a-af44-466b76fc82e3/")
+			)
+			(tstamps "c1f5e527-f9d4-41df-a793-aebe1021a091")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C16")
+			(value "100n")
+			(datasheet "https://yageogroup.com/download/specsheet/C315C104K5R5TA")
+			(fields
+				(field
+					(name "MPN") "C315C104K5R5TA")
+				(field
+					(name "Review") "Suppression physically close to motor leads")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://yageogroup.com/download/specsheet/C315C104K5R5TA")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "C315C104K5R5TA")
+			)
+			(property
+				(name "Review")
+				(value "Suppression physically close to motor leads")
+			)
+			(property
+				(name "Sheetname")
+				(value "04 / IR transmit / receive and vibration")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ir_motor.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/04 / IR transmit / receive and vibration/")
+				(tstamps "/14def3b1-7a61-401a-af44-466b76fc82e3/")
+			)
+			(tstamps "e1d53e4f-418b-4713-aba1-2d5f81b61b31")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C17")
+			(value "100u")
+			(datasheet "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf")
+			(fields
+				(field
+					(name "MPN") "UVR1C101MDD")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "C_Polarized")
+				(description "Polarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "UVR1C101MDD")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "04 / IR transmit / receive and vibration")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ir_motor.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "CP_*")
+			)
+			(sheetpath
+				(names "/04 / IR transmit / receive and vibration/")
+				(tstamps "/14def3b1-7a61-401a-af44-466b76fc82e3/")
+			)
+			(tstamps "aa482ed1-86ee-4527-a77d-7a03619ff5b6")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D1")
+			(value "TSAL6200")
+			(footprint "LED_THT:LED_D5.0mm")
+			(datasheet "https://www.vishay.com/docs/81010/tsal6200.pdf")
+			(fields
+				(field
+					(name "MPN") "TSAL6200")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "LED_THT:LED_D5.0mm")
+				(field
+					(name "Datasheet") "https://www.vishay.com/docs/81010/tsal6200.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "LED")
+				(description "Light emitting diode")
+			)
+			(property
+				(name "MPN")
+				(value "TSAL6200")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "04 / IR transmit / receive and vibration")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ir_motor.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "LED diode")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "LED* LED_SMD:* LED_THT:*")
+			)
+			(sheetpath
+				(names "/04 / IR transmit / receive and vibration/")
+				(tstamps "/14def3b1-7a61-401a-af44-466b76fc82e3/")
+			)
+			(tstamps "33a123e5-d474-48f3-a95a-7c304f171842")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D2")
+			(value "1N5819")
+			(footprint "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal")
+			(datasheet "https://www.vishay.com/docs/88525/1n5817.pdf")
+			(fields
+				(field
+					(name "MPN") "1N5819-E3/54")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://www.vishay.com/docs/88525/1n5817.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "D_Schottky")
+				(description "Schottky diode")
+			)
+			(property
+				(name "MPN")
+				(value "1N5819-E3/54")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "04 / IR transmit / receive and vibration")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ir_motor.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "diode Schottky")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "TO-???* *_Diode_* *SingleDiode* D_*")
+			)
+			(sheetpath
+				(names "/04 / IR transmit / receive and vibration/")
+				(tstamps "/14def3b1-7a61-401a-af44-466b76fc82e3/")
+			)
+			(tstamps "2265f533-6d7b-4037-a5b7-5ace727a6c48")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J4")
+			(value "LCM0827A3038F motor")
+			(datasheet "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf")
+			(fields
+				(field
+					(name "MPN") "S2B-PH-K-S(LF)(SN)")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "Header2")
+				(description "")
+			)
+			(property
+				(name "MPN")
+				(value "S2B-PH-K-S(LF)(SN)")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "04 / IR transmit / receive and vibration")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ir_motor.kicad_sch")
+			)
+			(sheetpath
+				(names "/04 / IR transmit / receive and vibration/")
+				(tstamps "/14def3b1-7a61-401a-af44-466b76fc82e3/")
+			)
+			(tstamps "ea02801a-adb2-4e50-ac4e-29abf2219904")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "Q1")
+			(value "KSP2222ABU")
+			(datasheet "https://www.onsemi.com/pdf/datasheet/ksp2222a-d.pdf")
+			(fields
+				(field
+					(name "MPN") "KSP2222ABU")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://www.onsemi.com/pdf/datasheet/ksp2222a-d.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "KSP2222ABU")
+				(description "NPN bipolar junction transistor")
+			)
+			(property
+				(name "MPN")
+				(value "KSP2222ABU")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "04 / IR transmit / receive and vibration")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ir_motor.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "BJT")
+			)
+			(sheetpath
+				(names "/04 / IR transmit / receive and vibration/")
+				(tstamps "/14def3b1-7a61-401a-af44-466b76fc82e3/")
+			)
+			(tstamps "32d833f3-48ce-477c-acc3-291cc5202137")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "Q4")
+			(value "TN0702N3-G")
+			(datasheet "https://ww1.microchip.com/downloads/en/DeviceDoc/TN0702-N-Channel-Enhancement-Mode-Vertical-DMOS-FET-Data-Sheet-20005941A.pdf")
+			(fields
+				(field
+					(name "MPN") "TN0702N3-G")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://ww1.microchip.com/downloads/en/DeviceDoc/TN0702-N-Channel-Enhancement-Mode-Vertical-DMOS-FET-Data-Sheet-20005941A.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "TN0702N3_G")
+				(description "N-MOSFET transistor")
+			)
+			(property
+				(name "MPN")
+				(value "TN0702N3-G")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "04 / IR transmit / receive and vibration")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ir_motor.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "NMOS N-MOS")
+			)
+			(sheetpath
+				(names "/04 / IR transmit / receive and vibration/")
+				(tstamps "/14def3b1-7a61-401a-af44-466b76fc82e3/")
+			)
+			(tstamps "6866b007-07ab-4854-ab44-bc72fdf9135e")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R24")
+			(value "100")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+			(datasheet "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+			(fields
+				(field
+					(name "MPN") "MFR-25FBF52-100R")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "MFR-25FBF52-100R")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "04 / IR transmit / receive and vibration")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ir_motor.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/04 / IR transmit / receive and vibration/")
+				(tstamps "/14def3b1-7a61-401a-af44-466b76fc82e3/")
+			)
+			(tstamps "5befc57a-956b-4ca3-aaf7-ec72a72f2e1e")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R25")
+			(value "1k")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+			(datasheet "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+			(fields
+				(field
+					(name "MPN") "MFR-25FBF52-1K")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "MFR-25FBF52-1K")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "04 / IR transmit / receive and vibration")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ir_motor.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/04 / IR transmit / receive and vibration/")
+				(tstamps "/14def3b1-7a61-401a-af44-466b76fc82e3/")
+			)
+			(tstamps "dd969507-b8d0-486d-af1b-bb187e6f8bab")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R26")
+			(value "100k")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+			(datasheet "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+			(fields
+				(field
+					(name "MPN") "MFR-25FBF52-100K")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "MFR-25FBF52-100K")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "04 / IR transmit / receive and vibration")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ir_motor.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/04 / IR transmit / receive and vibration/")
+				(tstamps "/14def3b1-7a61-401a-af44-466b76fc82e3/")
+			)
+			(tstamps "b421f113-6593-4b99-a2f0-33312a5f68c9")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R27")
+			(value "100")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+			(datasheet "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+			(fields
+				(field
+					(name "MPN") "MFR-25FBF52-100R")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "MFR-25FBF52-100R")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "04 / IR transmit / receive and vibration")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ir_motor.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/04 / IR transmit / receive and vibration/")
+				(tstamps "/14def3b1-7a61-401a-af44-466b76fc82e3/")
+			)
+			(tstamps "bec894d8-fa64-449c-a0df-88f161c6e37c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R28")
+			(value "100")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+			(datasheet "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+			(fields
+				(field
+					(name "MPN") "MFR-25FBF52-100R")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "MFR-25FBF52-100R")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "04 / IR transmit / receive and vibration")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ir_motor.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/04 / IR transmit / receive and vibration/")
+				(tstamps "/14def3b1-7a61-401a-af44-466b76fc82e3/")
+			)
+			(tstamps "b5602f2a-2895-404f-a1c7-01e8901ba15c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R29")
+			(value "100k")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+			(datasheet "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+			(fields
+				(field
+					(name "MPN") "MFR-25FBF52-100K")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "MFR-25FBF52-100K")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "04 / IR transmit / receive and vibration")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ir_motor.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/04 / IR transmit / receive and vibration/")
+				(tstamps "/14def3b1-7a61-401a-af44-466b76fc82e3/")
+			)
+			(tstamps "0918e383-8017-4fcd-a348-e624fb8acdf5")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U2")
+			(value "TSOP38238")
+			(datasheet "https://www.vishay.com/docs/82491/tsop382.pdf")
+			(fields
+				(field
+					(name "MPN") "TSOP38238")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://www.vishay.com/docs/82491/tsop382.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "TSOP38238")
+				(description "")
+			)
+			(property
+				(name "MPN")
+				(value "TSOP38238")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "04 / IR transmit / receive and vibration")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ir_motor.kicad_sch")
+			)
+			(sheetpath
+				(names "/04 / IR transmit / receive and vibration/")
+				(tstamps "/14def3b1-7a61-401a-af44-466b76fc82e3/")
+			)
+			(tstamps "325a90f3-89d8-431f-accd-8da8b1484442")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C18")
+			(value "10n")
+			(datasheet "https://yageogroup.com/download/specsheet/C315C103J1G5TA")
+			(fields
+				(field
+					(name "MPN") "C315C103J1G5TA")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://yageogroup.com/download/specsheet/C315C103J1G5TA")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "C315C103J1G5TA")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "05 / Filtered PWM, bridge amplifier and speaker")
+			)
+			(property
+				(name "Sheetfile")
+				(value "audio.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/05 / Filtered PWM, bridge amplifier and speaker/")
+				(tstamps "/6ed8919c-e204-40a5-a3ad-8630a4fab694/")
+			)
+			(tstamps "d7cbb6e7-dea7-4fb5-a61d-bc601be60ce7")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C19")
+			(value "10n")
+			(datasheet "https://yageogroup.com/download/specsheet/C315C103J1G5TA")
+			(fields
+				(field
+					(name "MPN") "C315C103J1G5TA")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://yageogroup.com/download/specsheet/C315C103J1G5TA")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "C315C103J1G5TA")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "05 / Filtered PWM, bridge amplifier and speaker")
+			)
+			(property
+				(name "Sheetfile")
+				(value "audio.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/05 / Filtered PWM, bridge amplifier and speaker/")
+				(tstamps "/6ed8919c-e204-40a5-a3ad-8630a4fab694/")
+			)
+			(tstamps "a539dc09-c09c-4538-acdb-dbf86ab700df")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C20")
+			(value "1u")
+			(datasheet "https://yageogroup.com/download/specsheet/C315C105K5R5TA")
+			(fields
+				(field
+					(name "MPN") "C315C105K5R5TA")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://yageogroup.com/download/specsheet/C315C105K5R5TA")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "C315C105K5R5TA")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "05 / Filtered PWM, bridge amplifier and speaker")
+			)
+			(property
+				(name "Sheetfile")
+				(value "audio.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/05 / Filtered PWM, bridge amplifier and speaker/")
+				(tstamps "/6ed8919c-e204-40a5-a3ad-8630a4fab694/")
+			)
+			(tstamps "c9c1dd0d-52c9-4ca4-abeb-6a5871fbf1ee")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C21")
+			(value "10u")
+			(datasheet "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf")
+			(fields
+				(field
+					(name "MPN") "UVR1C100MDD")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "C_Polarized")
+				(description "Polarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "UVR1C100MDD")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "05 / Filtered PWM, bridge amplifier and speaker")
+			)
+			(property
+				(name "Sheetfile")
+				(value "audio.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "CP_*")
+			)
+			(sheetpath
+				(names "/05 / Filtered PWM, bridge amplifier and speaker/")
+				(tstamps "/6ed8919c-e204-40a5-a3ad-8630a4fab694/")
+			)
+			(tstamps "abb23d0d-25cd-446d-a25e-695a4210e983")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C22")
+			(value "10n")
+			(datasheet "https://yageogroup.com/download/specsheet/C315C103J1G5TA")
+			(fields
+				(field
+					(name "MPN") "C315C103J1G5TA")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://yageogroup.com/download/specsheet/C315C103J1G5TA")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "C315C103J1G5TA")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "05 / Filtered PWM, bridge amplifier and speaker")
+			)
+			(property
+				(name "Sheetfile")
+				(value "audio.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/05 / Filtered PWM, bridge amplifier and speaker/")
+				(tstamps "/6ed8919c-e204-40a5-a3ad-8630a4fab694/")
+			)
+			(tstamps "0ee73df9-932d-4156-a0c8-90d336ed4789")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C23")
+			(value "100n")
+			(datasheet "https://yageogroup.com/download/specsheet/C315C104K5R5TA")
+			(fields
+				(field
+					(name "MPN") "C315C104K5R5TA")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://yageogroup.com/download/specsheet/C315C104K5R5TA")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "C315C104K5R5TA")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "05 / Filtered PWM, bridge amplifier and speaker")
+			)
+			(property
+				(name "Sheetfile")
+				(value "audio.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/05 / Filtered PWM, bridge amplifier and speaker/")
+				(tstamps "/6ed8919c-e204-40a5-a3ad-8630a4fab694/")
+			)
+			(tstamps "e377a9bf-7155-478d-ac33-de074234d844")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C24")
+			(value "100n")
+			(datasheet "https://yageogroup.com/download/specsheet/C315C104K5R5TA")
+			(fields
+				(field
+					(name "MPN") "C315C104K5R5TA")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://yageogroup.com/download/specsheet/C315C104K5R5TA")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "C315C104K5R5TA")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "05 / Filtered PWM, bridge amplifier and speaker")
+			)
+			(property
+				(name "Sheetfile")
+				(value "audio.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/05 / Filtered PWM, bridge amplifier and speaker/")
+				(tstamps "/6ed8919c-e204-40a5-a3ad-8630a4fab694/")
+			)
+			(tstamps "133d22d9-8524-4624-ad63-ba05f75cf9ca")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C25")
+			(value "100u")
+			(datasheet "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf")
+			(fields
+				(field
+					(name "MPN") "UVR1C101MDD")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "C_Polarized")
+				(description "Polarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "UVR1C101MDD")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "05 / Filtered PWM, bridge amplifier and speaker")
+			)
+			(property
+				(name "Sheetfile")
+				(value "audio.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "CP_*")
+			)
+			(sheetpath
+				(names "/05 / Filtered PWM, bridge amplifier and speaker/")
+				(tstamps "/6ed8919c-e204-40a5-a3ad-8630a4fab694/")
+			)
+			(tstamps "ae44923e-fec2-4790-a7e0-df0c323baab6")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C26")
+			(value "100n")
+			(datasheet "https://yageogroup.com/download/specsheet/C315C104K5R5TA")
+			(fields
+				(field
+					(name "MPN") "C315C104K5R5TA")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://yageogroup.com/download/specsheet/C315C104K5R5TA")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "MPN")
+				(value "C315C104K5R5TA")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "05 / Filtered PWM, bridge amplifier and speaker")
+			)
+			(property
+				(name "Sheetfile")
+				(value "audio.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/05 / Filtered PWM, bridge amplifier and speaker/")
+				(tstamps "/6ed8919c-e204-40a5-a3ad-8630a4fab694/")
+			)
+			(tstamps "31c65e04-9802-43a6-aa57-f10fc2a403e3")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J5")
+			(value "8 ohm speaker")
+			(datasheet "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf")
+			(fields
+				(field
+					(name "MPN") "S2B-PH-K-S(LF)(SN)")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "Header2")
+				(description "")
+			)
+			(property
+				(name "MPN")
+				(value "S2B-PH-K-S(LF)(SN)")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "05 / Filtered PWM, bridge amplifier and speaker")
+			)
+			(property
+				(name "Sheetfile")
+				(value "audio.kicad_sch")
+			)
+			(sheetpath
+				(names "/05 / Filtered PWM, bridge amplifier and speaker/")
+				(tstamps "/6ed8919c-e204-40a5-a3ad-8630a4fab694/")
+			)
+			(tstamps "085aa91a-4e43-4696-a8f9-aff5d74f485f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "Q5")
+			(value "KSP2222ABU")
+			(datasheet "https://www.onsemi.com/pdf/datasheet/ksp2222a-d.pdf")
+			(fields
+				(field
+					(name "MPN") "KSP2222ABU")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://www.onsemi.com/pdf/datasheet/ksp2222a-d.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "KSP2222ABU")
+				(description "NPN bipolar junction transistor")
+			)
+			(property
+				(name "MPN")
+				(value "KSP2222ABU")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "05 / Filtered PWM, bridge amplifier and speaker")
+			)
+			(property
+				(name "Sheetfile")
+				(value "audio.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "BJT")
+			)
+			(sheetpath
+				(names "/05 / Filtered PWM, bridge amplifier and speaker/")
+				(tstamps "/6ed8919c-e204-40a5-a3ad-8630a4fab694/")
+			)
+			(tstamps "a08c925f-ed8f-4d17-a0d3-a4606109fcc3")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "Q6")
+			(value "BC32725BU")
+			(datasheet "https://www.onsemi.com/pub/Collateral/BC327-D.PDF")
+			(fields
+				(field
+					(name "MPN") "BC32725BU")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://www.onsemi.com/pub/Collateral/BC327-D.PDF")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "BC32725BU")
+				(description "PNP bipolar junction transistor")
+			)
+			(property
+				(name "MPN")
+				(value "BC32725BU")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "05 / Filtered PWM, bridge amplifier and speaker")
+			)
+			(property
+				(name "Sheetfile")
+				(value "audio.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "BJT")
+			)
+			(sheetpath
+				(names "/05 / Filtered PWM, bridge amplifier and speaker/")
+				(tstamps "/6ed8919c-e204-40a5-a3ad-8630a4fab694/")
+			)
+			(tstamps "f8bdff3f-b988-49ea-a918-743b4f18ec5d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R30")
+			(value "1k")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+			(datasheet "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+			(fields
+				(field
+					(name "MPN") "MFR-25FBF52-1K")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "MFR-25FBF52-1K")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "05 / Filtered PWM, bridge amplifier and speaker")
+			)
+			(property
+				(name "Sheetfile")
+				(value "audio.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/05 / Filtered PWM, bridge amplifier and speaker/")
+				(tstamps "/6ed8919c-e204-40a5-a3ad-8630a4fab694/")
+			)
+			(tstamps "5fce6944-684d-4c04-a242-83960a47ecb4")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R31")
+			(value "1k")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+			(datasheet "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+			(fields
+				(field
+					(name "MPN") "MFR-25FBF52-1K")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "MFR-25FBF52-1K")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "05 / Filtered PWM, bridge amplifier and speaker")
+			)
+			(property
+				(name "Sheetfile")
+				(value "audio.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/05 / Filtered PWM, bridge amplifier and speaker/")
+				(tstamps "/6ed8919c-e204-40a5-a3ad-8630a4fab694/")
+			)
+			(tstamps "73f45d74-7cfc-492e-a3bd-145d5701bf1f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R32")
+			(value "100k")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+			(datasheet "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+			(fields
+				(field
+					(name "MPN") "MFR-25FBF52-100K")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "MFR-25FBF52-100K")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "05 / Filtered PWM, bridge amplifier and speaker")
+			)
+			(property
+				(name "Sheetfile")
+				(value "audio.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/05 / Filtered PWM, bridge amplifier and speaker/")
+				(tstamps "/6ed8919c-e204-40a5-a3ad-8630a4fab694/")
+			)
+			(tstamps "c6a5ac65-0ce0-46b9-a9ac-2bb2a20a6971")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R33")
+			(value "1k")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+			(datasheet "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+			(fields
+				(field
+					(name "MPN") "MFR-25FBF52-1K")
+				(field
+					(name "Review") "Conservative fixed attenuation; prototype gain check")
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "MFR-25FBF52-1K")
+			)
+			(property
+				(name "Review")
+				(value "Conservative fixed attenuation; prototype gain check")
+			)
+			(property
+				(name "Sheetname")
+				(value "05 / Filtered PWM, bridge amplifier and speaker")
+			)
+			(property
+				(name "Sheetfile")
+				(value "audio.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/05 / Filtered PWM, bridge amplifier and speaker/")
+				(tstamps "/6ed8919c-e204-40a5-a3ad-8630a4fab694/")
+			)
+			(tstamps "54690252-385d-4cc3-ad5f-8c817ba2928f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R34")
+			(value "4.7")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+			(datasheet "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+			(fields
+				(field
+					(name "MPN") "MFR-25FBF52-4R7")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "MFR-25FBF52-4R7")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "05 / Filtered PWM, bridge amplifier and speaker")
+			)
+			(property
+				(name "Sheetfile")
+				(value "audio.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/05 / Filtered PWM, bridge amplifier and speaker/")
+				(tstamps "/6ed8919c-e204-40a5-a3ad-8630a4fab694/")
+			)
+			(tstamps "7d41eb93-d88e-4f27-a51f-a90493867095")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R35")
+			(value "4.7")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+			(datasheet "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+			(fields
+				(field
+					(name "MPN") "MFR-25FBF52-4R7")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "MFR-25FBF52-4R7")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "05 / Filtered PWM, bridge amplifier and speaker")
+			)
+			(property
+				(name "Sheetfile")
+				(value "audio.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/05 / Filtered PWM, bridge amplifier and speaker/")
+				(tstamps "/6ed8919c-e204-40a5-a3ad-8630a4fab694/")
+			)
+			(tstamps "d22788d2-ada0-40c4-a37c-370b5d4f4c44")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R36")
+			(value "4.7k")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+			(datasheet "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+			(fields
+				(field
+					(name "MPN") "MFR-25FBF52-4K7")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "MFR-25FBF52-4K7")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "05 / Filtered PWM, bridge amplifier and speaker")
+			)
+			(property
+				(name "Sheetfile")
+				(value "audio.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/05 / Filtered PWM, bridge amplifier and speaker/")
+				(tstamps "/6ed8919c-e204-40a5-a3ad-8630a4fab694/")
+			)
+			(tstamps "3d08a870-6b67-4634-a9f4-0474a7cbc21d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R37")
+			(value "100k")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+			(datasheet "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+			(fields
+				(field
+					(name "MPN") "MFR-25FBF52-100K")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "MFR-25FBF52-100K")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "05 / Filtered PWM, bridge amplifier and speaker")
+			)
+			(property
+				(name "Sheetfile")
+				(value "audio.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/05 / Filtered PWM, bridge amplifier and speaker/")
+				(tstamps "/6ed8919c-e204-40a5-a3ad-8630a4fab694/")
+			)
+			(tstamps "2f329117-b330-4deb-a8c0-895f52cac00d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R38")
+			(value "100")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+			(datasheet "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+			(fields
+				(field
+					(name "MPN") "MFR-25FBF52-100R")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "MFR-25FBF52-100R")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "05 / Filtered PWM, bridge amplifier and speaker")
+			)
+			(property
+				(name "Sheetfile")
+				(value "audio.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/05 / Filtered PWM, bridge amplifier and speaker/")
+				(tstamps "/6ed8919c-e204-40a5-a3ad-8630a4fab694/")
+			)
+			(tstamps "558a8955-7568-4578-af93-f3c22536557c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R39")
+			(value "100k")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+			(datasheet "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+			(fields
+				(field
+					(name "MPN") "MFR-25FBF52-100K")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+				(field
+					(name "Datasheet") "https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "MPN")
+				(value "MFR-25FBF52-100K")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "05 / Filtered PWM, bridge amplifier and speaker")
+			)
+			(property
+				(name "Sheetfile")
+				(value "audio.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/05 / Filtered PWM, bridge amplifier and speaker/")
+				(tstamps "/6ed8919c-e204-40a5-a3ad-8630a4fab694/")
+			)
+			(tstamps "747c2983-6510-487d-aa0f-ebb4ffd677fb")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U3")
+			(value "TDA2822L-D08-T")
+			(footprint "Package_DIP:DIP-8_W7.62mm")
+			(datasheet "https://datasheet.lcsc.com/datasheet/pdf/8599ab4088134d37b4be13f0dc390034.pdf")
+			(fields
+				(field
+					(name "MPN") "TDA2822L-D08-T")
+				(field
+					(name "Review")
+				)
+				(field
+					(name "Footprint") "Package_DIP:DIP-8_W7.62mm")
+				(field
+					(name "Datasheet") "https://datasheet.lcsc.com/datasheet/pdf/8599ab4088134d37b4be13f0dc390034.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "KK_Draft")
+				(part "TDA2822_DIP8")
+				(description "")
+			)
+			(property
+				(name "MPN")
+				(value "TDA2822L-D08-T")
+			)
+			(property
+				(name "Review")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "05 / Filtered PWM, bridge amplifier and speaker")
+			)
+			(property
+				(name "Sheetfile")
+				(value "audio.kicad_sch")
+			)
+			(sheetpath
+				(names "/05 / Filtered PWM, bridge amplifier and speaker/")
+				(tstamps "/6ed8919c-e204-40a5-a3ad-8630a4fab694/")
+			)
+			(tstamps "101de8b7-37d2-49bf-a163-3c95ce6e77bb")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+					)
+				)
+			)
+		)
+	)
+	(groups)
+	(variants)
+	(libparts
+		(libpart
+			(lib "KK_Draft")
+			(part "BC32725BU")
+			(description "PNP bipolar junction transistor")
+			(fields
+				(field
+					(name "Reference") "Q")
+				(field
+					(name "Value") "Q_PNP")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "PNP bipolar junction transistor")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "C")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "B")
+					(type "input")
+				)
+				(pin
+					(num "3")
+					(name "E")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "KK_Draft")
+			(part "C")
+			(description "Unpolarized capacitor")
+			(footprints
+				(fp "C_*")
+			)
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "C")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Unpolarized capacitor")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "KK_Draft")
+			(part "C_Polarized")
+			(description "Polarized capacitor")
+			(footprints
+				(fp "CP_*")
+			)
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "C_Polarized")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Polarized capacitor")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "KK_Draft")
+			(part "D_Schottky")
+			(description "Schottky diode")
+			(footprints
+				(fp "TO-???*")
+				(fp "*_Diode_*")
+				(fp "*SingleDiode*")
+				(fp "D_*")
+			)
+			(fields
+				(field
+					(name "Reference") "D")
+				(field
+					(name "Value") "D_Schottky")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Schottky diode")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "K")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "A")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "KK_Draft")
+			(part "Header2")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "Header2")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "P1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "P2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "KK_Draft")
+			(part "Header4")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "Header4")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "P1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "P2")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "P3")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "P4")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "KK_Draft")
+			(part "Header6")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "Header6")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "P1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "P2")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "P3")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "P4")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "P5")
+					(type "passive")
+				)
+				(pin
+					(num "6")
+					(name "P6")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "KK_Draft")
+			(part "Header8")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "Header8")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "P1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "P2")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "P3")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "P4")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "P5")
+					(type "passive")
+				)
+				(pin
+					(num "6")
+					(name "P6")
+					(type "passive")
+				)
+				(pin
+					(num "7")
+					(name "P7")
+					(type "passive")
+				)
+				(pin
+					(num "8")
+					(name "P8")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "KK_Draft")
+			(part "KSP2222ABU")
+			(description "NPN bipolar junction transistor")
+			(fields
+				(field
+					(name "Reference") "Q")
+				(field
+					(name "Value") "Q_NPN")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "NPN bipolar junction transistor")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "E")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "B")
+					(type "input")
+				)
+				(pin
+					(num "3")
+					(name "C")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "KK_Draft")
+			(part "LED")
+			(description "Light emitting diode")
+			(footprints
+				(fp "LED*")
+				(fp "LED_SMD:*")
+				(fp "LED_THT:*")
+			)
+			(fields
+				(field
+					(name "Reference") "D")
+				(field
+					(name "Value") "LED")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Light emitting diode")
+				(field
+					(name "Sim.Pins") "1=K 2=A")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "K")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "A")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "KK_Draft")
+			(part "MCP23017_E_SP")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "MCP23017_E_SP")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "GPB0")
+					(type "bidirectional")
+				)
+				(pin
+					(num "2")
+					(name "GPB1")
+					(type "bidirectional")
+				)
+				(pin
+					(num "3")
+					(name "GPB2")
+					(type "bidirectional")
+				)
+				(pin
+					(num "4")
+					(name "GPB3")
+					(type "bidirectional")
+				)
+				(pin
+					(num "5")
+					(name "GPB4")
+					(type "bidirectional")
+				)
+				(pin
+					(num "6")
+					(name "GPB5")
+					(type "bidirectional")
+				)
+				(pin
+					(num "7")
+					(name "GPB6")
+					(type "bidirectional")
+				)
+				(pin
+					(num "8")
+					(name "GPB7")
+					(type "output")
+				)
+				(pin
+					(num "9")
+					(name "VDD")
+					(type "power_in")
+				)
+				(pin
+					(num "10")
+					(name "VSS")
+					(type "power_in")
+				)
+				(pin
+					(num "11")
+					(name "NC")
+					(type "no_connect")
+				)
+				(pin
+					(num "12")
+					(name "SCL")
+					(type "input")
+				)
+				(pin
+					(num "13")
+					(name "SDA")
+					(type "bidirectional")
+				)
+				(pin
+					(num "14")
+					(name "NC")
+					(type "no_connect")
+				)
+				(pin
+					(num "15")
+					(name "A0")
+					(type "input")
+				)
+				(pin
+					(num "16")
+					(name "A1")
+					(type "input")
+				)
+				(pin
+					(num "17")
+					(name "A2")
+					(type "input")
+				)
+				(pin
+					(num "18")
+					(name "RESET_N")
+					(type "input")
+				)
+				(pin
+					(num "19")
+					(name "INTB")
+					(type "open_collector")
+				)
+				(pin
+					(num "20")
+					(name "INTA")
+					(type "open_collector")
+				)
+				(pin
+					(num "21")
+					(name "GPA0")
+					(type "bidirectional")
+				)
+				(pin
+					(num "22")
+					(name "GPA1")
+					(type "bidirectional")
+				)
+				(pin
+					(num "23")
+					(name "GPA2")
+					(type "bidirectional")
+				)
+				(pin
+					(num "24")
+					(name "GPA3")
+					(type "bidirectional")
+				)
+				(pin
+					(num "25")
+					(name "GPA4")
+					(type "bidirectional")
+				)
+				(pin
+					(num "26")
+					(name "GPA5")
+					(type "bidirectional")
+				)
+				(pin
+					(num "27")
+					(name "GPA6")
+					(type "bidirectional")
+				)
+				(pin
+					(num "28")
+					(name "GPA7")
+					(type "output")
+				)
+			)
+		)
+		(libpart
+			(lib "KK_Draft")
+			(part "R")
+			(description "Resistor")
+			(footprints
+				(fp "R_*")
+			)
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "R")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "KK_Draft")
+			(part "SoftSwitch3101")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "SoftSwitch3101")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "A")
+					(name "A_/_contact_1")
+					(type "passive")
+				)
+				(pin
+					(num "B")
+					(name "B_/_contact_1")
+					(type "passive")
+				)
+				(pin
+					(num "C")
+					(name "C_/_contact_2")
+					(type "passive")
+				)
+				(pin
+					(num "D")
+					(name "D_/_contact_2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "KK_Draft")
+			(part "SuperMini_ASSUMED")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "SuperMini_ASSUMED")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "5V")
+					(type "power_in")
+				)
+				(pin
+					(num "2")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "3")
+					(name "3V3_OUT")
+					(type "power_out")
+				)
+				(pin
+					(num "4")
+					(name "GPIO1")
+					(type "input")
+				)
+				(pin
+					(num "5")
+					(name "GPIO2")
+					(type "input")
+				)
+				(pin
+					(num "6")
+					(name "GPIO3_STRAP")
+					(type "bidirectional")
+				)
+				(pin
+					(num "7")
+					(name "GPIO4")
+					(type "bidirectional")
+				)
+				(pin
+					(num "8")
+					(name "GPIO5")
+					(type "output")
+				)
+				(pin
+					(num "9")
+					(name "GPIO6")
+					(type "input")
+				)
+				(pin
+					(num "10")
+					(name "GPIO7")
+					(type "output")
+				)
+				(pin
+					(num "11")
+					(name "GPIO8")
+					(type "output")
+				)
+				(pin
+					(num "12")
+					(name "GPIO9")
+					(type "output")
+				)
+				(pin
+					(num "13")
+					(name "GPIO10")
+					(type "output")
+				)
+				(pin
+					(num "14")
+					(name "GPIO11")
+					(type "output")
+				)
+				(pin
+					(num "15")
+					(name "GPIO12")
+					(type "input")
+				)
+				(pin
+					(num "16")
+					(name "GPIO13")
+					(type "output")
+				)
+				(pin
+					(num "17")
+					(name "TX_GPIO43")
+					(type "output")
+				)
+				(pin
+					(num "18")
+					(name "RX_GPIO44")
+					(type "output")
+				)
+			)
+		)
+		(libpart
+			(lib "KK_Draft")
+			(part "TDA2822_DIP8")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "TDA2822_DIP8")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "OUT1")
+					(type "output")
+				)
+				(pin
+					(num "2")
+					(name "VCC")
+					(type "power_in")
+				)
+				(pin
+					(num "3")
+					(name "OUT2")
+					(type "output")
+				)
+				(pin
+					(num "4")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "5")
+					(name "NP2")
+					(type "input")
+				)
+				(pin
+					(num "6")
+					(name "IN2")
+					(type "input")
+				)
+				(pin
+					(num "7")
+					(name "IN1")
+					(type "input")
+				)
+				(pin
+					(num "8")
+					(name "NP1")
+					(type "input")
+				)
+			)
+		)
+		(libpart
+			(lib "KK_Draft")
+			(part "TN0702N3_G")
+			(description "N-MOSFET transistor")
+			(fields
+				(field
+					(name "Reference") "Q")
+				(field
+					(name "Value") "Q_NMOS")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "N-MOSFET transistor")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "S")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "G")
+					(type "input")
+				)
+				(pin
+					(num "3")
+					(name "D")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "KK_Draft")
+			(part "TSOP38238")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "TSOP38238")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "OUT")
+					(type "output")
+				)
+				(pin
+					(num "2")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "3")
+					(name "VS")
+					(type "power_in")
+				)
+			)
+		)
+	)
+	(libraries
+		(library
+			(logical "KK_Draft")
+			(uri "${KIPRJMOD}/KK_Draft.kicad_sym")
+		)
+	)
+	(nets
+		(net
+			(code "1")
+			(name "ACT_3V2")
+			(class "Default")
+			(node
+				(ref "C16")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C17")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C5")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C6")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "D2")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J1")
+				(pin "4")
+				(pinfunction "P4_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "1")
+				(pinfunction "P1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q6")
+				(pin "3")
+				(pinfunction "E_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "R39")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "2")
+			(name "AMP_BASE")
+			(class "Default")
+			(node
+				(ref "Q5")
+				(pin "2")
+				(pinfunction "B_2")
+				(pintype "input")
+			)
+			(node
+				(ref "R36")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R37")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "3")
+			(name "AMP_EN")
+			(class "Default")
+			(node
+				(ref "R36")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "5")
+				(pinfunction "GPB4_5")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "4")
+			(name "AMP_IN")
+			(class "Default")
+			(node
+				(ref "R32")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R33")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "7")
+				(pinfunction "IN1_7")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "5")
+			(name "AMP_NP1")
+			(class "Default")
+			(node
+				(ref "C21")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "8")
+				(pinfunction "NP1_8")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "6")
+			(name "AMP_NP2")
+			(class "Default")
+			(node
+				(ref "C21")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C22")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "5")
+				(pinfunction "NP2_5")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "7")
+			(name "AMP_PNP_BASE")
+			(class "Default")
+			(node
+				(ref "Q6")
+				(pin "2")
+				(pinfunction "B_2")
+				(pintype "input")
+			)
+			(node
+				(ref "R38")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R39")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "8")
+			(name "AMP_SINK")
+			(class "Default")
+			(node
+				(ref "Q5")
+				(pin "3")
+				(pinfunction "C_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "R38")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "9")
+			(name "AMP_VCC")
+			(class "Default")
+			(node
+				(ref "C25")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C26")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q6")
+				(pin "1")
+				(pinfunction "C_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "2")
+				(pinfunction "VCC_2")
+				(pintype "power_in")
+			)
+		)
+		(net
+			(code "10")
+			(name "AUDIO_AC")
+			(class "Default")
+			(node
+				(ref "C20")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R32")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "11")
+			(name "AUDIO_LP1")
+			(class "Default")
+			(node
+				(ref "C18")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R30")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R31")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "12")
+			(name "AUDIO_LP2")
+			(class "Default")
+			(node
+				(ref "C19")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C20")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R31")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "13")
+			(name "AUDIO_PWM")
+			(class "Default")
+			(node
+				(ref "MOD1")
+				(pin "11")
+				(pinfunction "GPIO8_11")
+				(pintype "output")
+			)
+			(node
+				(ref "R30")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "14")
+			(name "BLK")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "8")
+				(pinfunction "P8_8")
+				(pintype "passive")
+			)
+			(node
+				(ref "R23")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "15")
+			(name "BL_BASE")
+			(class "Default")
+			(node
+				(ref "Q2")
+				(pin "2")
+				(pinfunction "B_2")
+				(pintype "input")
+			)
+			(node
+				(ref "R19")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R20")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "16")
+			(name "BL_PNP_BASE")
+			(class "Default")
+			(node
+				(ref "Q3")
+				(pin "2")
+				(pinfunction "B_2")
+				(pintype "input")
+			)
+			(node
+				(ref "R21")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R22")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "17")
+			(name "BL_PWM")
+			(class "Default")
+			(node
+				(ref "MOD1")
+				(pin "12")
+				(pinfunction "GPIO9_12")
+				(pintype "output")
+			)
+			(node
+				(ref "R19")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "18")
+			(name "BL_SINK")
+			(class "Default")
+			(node
+				(ref "Q2")
+				(pin "3")
+				(pinfunction "C_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "R21")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "19")
+			(name "BL_SUPPLY")
+			(class "Default")
+			(node
+				(ref "Q3")
+				(pin "1")
+				(pinfunction "C_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R23")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "20")
+			(name "BTN_A_N")
+			(class "Default")
+			(node
+				(ref "R9")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW5")
+				(pin "A")
+				(pinfunction "A_/_contact_1_A")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW5")
+				(pin "B")
+				(pinfunction "B_/_contact_1_B")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "1")
+				(pinfunction "GPB0_1")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "21")
+			(name "BTN_B_N")
+			(class "Default")
+			(node
+				(ref "R10")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW6")
+				(pin "A")
+				(pinfunction "A_/_contact_1_A")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW6")
+				(pin "B")
+				(pinfunction "B_/_contact_1_B")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "2")
+				(pinfunction "GPB1_2")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "22")
+			(name "BTN_DOWN_N")
+			(class "Default")
+			(node
+				(ref "R6")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW2")
+				(pin "A")
+				(pinfunction "A_/_contact_1_A")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW2")
+				(pin "B")
+				(pinfunction "B_/_contact_1_B")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "22")
+				(pinfunction "GPA1_22")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "23")
+			(name "BTN_LEFT_N")
+			(class "Default")
+			(node
+				(ref "R7")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW3")
+				(pin "A")
+				(pinfunction "A_/_contact_1_A")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW3")
+				(pin "B")
+				(pinfunction "B_/_contact_1_B")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "23")
+				(pinfunction "GPA2_23")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "24")
+			(name "BTN_RIGHT_N")
+			(class "Default")
+			(node
+				(ref "R8")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW4")
+				(pin "A")
+				(pinfunction "A_/_contact_1_A")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW4")
+				(pin "B")
+				(pinfunction "B_/_contact_1_B")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "24")
+				(pinfunction "GPA3_24")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "25")
+			(name "BTN_UP_N")
+			(class "Default")
+			(node
+				(ref "R5")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW1")
+				(pin "A")
+				(pinfunction "A_/_contact_1_A")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW1")
+				(pin "B")
+				(pinfunction "B_/_contact_1_B")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "21")
+				(pinfunction "GPA0_21")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "26")
+			(name "BTN_X_N")
+			(class "Default")
+			(node
+				(ref "R11")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW7")
+				(pin "A")
+				(pinfunction "A_/_contact_1_A")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW7")
+				(pin "B")
+				(pinfunction "B_/_contact_1_B")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "3")
+				(pinfunction "GPB2_3")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "27")
+			(name "BTN_Y_N")
+			(class "Default")
+			(node
+				(ref "R12")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW8")
+				(pin "A")
+				(pinfunction "A_/_contact_1_A")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW8")
+				(pin "B")
+				(pinfunction "B_/_contact_1_B")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "4")
+				(pinfunction "GPB3_4")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "28")
+			(name "BUTTON_FN_N")
+			(class "Default")
+			(node
+				(ref "MOD1")
+				(pin "5")
+				(pinfunction "GPIO2_5")
+				(pintype "input")
+			)
+			(node
+				(ref "R13")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW9")
+				(pin "A")
+				(pinfunction "A_/_contact_1_A")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW9")
+				(pin "B")
+				(pinfunction "B_/_contact_1_B")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "29")
+			(name "BUTTON_INT_N")
+			(class "Default")
+			(node
+				(ref "MOD1")
+				(pin "4")
+				(pinfunction "GPIO1_4")
+				(pintype "input")
+			)
+			(node
+				(ref "R3")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "20")
+				(pinfunction "INTA_20")
+				(pintype "open_collector")
+			)
+		)
+		(net
+			(code "30")
+			(name "EXP_RESET_N")
+			(class "Default")
+			(node
+				(ref "C7")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R4")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "18")
+				(pinfunction "RESET_N_18")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "31")
+			(name "GND")
+			(class "Default")
+			(node
+				(ref "C1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C10")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C11")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C12")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C13")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C14")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C15")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C17")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C18")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C19")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C2")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C22")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C25")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C26")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C3")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C4")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C5")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C6")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C7")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C8")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C9")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J1")
+				(pin "2")
+				(pinfunction "P2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
+				(pin "1")
+				(pinfunction "P1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J3")
+				(pin "6")
+				(pinfunction "P6_6")
+				(pintype "passive")
+			)
+			(node
+				(ref "MOD1")
+				(pin "2")
+				(pinfunction "GND_2")
+				(pintype "power_in")
+			)
+			(node
+				(ref "Q1")
+				(pin "1")
+				(pinfunction "E_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q2")
+				(pin "1")
+				(pinfunction "E_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q4")
+				(pin "1")
+				(pinfunction "S_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q5")
+				(pin "1")
+				(pinfunction "E_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R20")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R26")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R29")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R33")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R34")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R35")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R37")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW1")
+				(pin "C")
+				(pinfunction "C_/_contact_2_C")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW1")
+				(pin "D")
+				(pinfunction "D_/_contact_2_D")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW2")
+				(pin "C")
+				(pinfunction "C_/_contact_2_C")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW2")
+				(pin "D")
+				(pinfunction "D_/_contact_2_D")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW3")
+				(pin "C")
+				(pinfunction "C_/_contact_2_C")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW3")
+				(pin "D")
+				(pinfunction "D_/_contact_2_D")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW4")
+				(pin "C")
+				(pinfunction "C_/_contact_2_C")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW4")
+				(pin "D")
+				(pinfunction "D_/_contact_2_D")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW5")
+				(pin "C")
+				(pinfunction "C_/_contact_2_C")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW5")
+				(pin "D")
+				(pinfunction "D_/_contact_2_D")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW6")
+				(pin "C")
+				(pinfunction "C_/_contact_2_C")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW6")
+				(pin "D")
+				(pinfunction "D_/_contact_2_D")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW7")
+				(pin "C")
+				(pinfunction "C_/_contact_2_C")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW7")
+				(pin "D")
+				(pinfunction "D_/_contact_2_D")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW8")
+				(pin "C")
+				(pinfunction "C_/_contact_2_C")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW8")
+				(pin "D")
+				(pinfunction "D_/_contact_2_D")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW9")
+				(pin "C")
+				(pinfunction "C_/_contact_2_C")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW9")
+				(pin "D")
+				(pinfunction "D_/_contact_2_D")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "10")
+				(pinfunction "VSS_10")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U1")
+				(pin "15")
+				(pinfunction "A0_15")
+				(pintype "input")
+			)
+			(node
+				(ref "U1")
+				(pin "16")
+				(pinfunction "A1_16")
+				(pintype "input")
+			)
+			(node
+				(ref "U1")
+				(pin "17")
+				(pinfunction "A2_17")
+				(pintype "input")
+			)
+			(node
+				(ref "U2")
+				(pin "2")
+				(pinfunction "GND_2")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U3")
+				(pin "4")
+				(pinfunction "GND_4")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U3")
+				(pin "6")
+				(pinfunction "IN2_6")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "32")
+			(name "I2C_SCL")
+			(class "Default")
+			(node
+				(ref "MOD1")
+				(pin "8")
+				(pinfunction "GPIO5_8")
+				(pintype "output")
+			)
+			(node
+				(ref "R2")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "12")
+				(pinfunction "SCL_12")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "33")
+			(name "I2C_SDA")
+			(class "Default")
+			(node
+				(ref "MOD1")
+				(pin "7")
+				(pinfunction "GPIO4_7")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "R1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "13")
+				(pinfunction "SDA_13")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "34")
+			(name "IR_BASE")
+			(class "Default")
+			(node
+				(ref "Q1")
+				(pin "2")
+				(pinfunction "B_2")
+				(pintype "input")
+			)
+			(node
+				(ref "R25")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R26")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "35")
+			(name "IR_LED_A")
+			(class "Default")
+			(node
+				(ref "D1")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R24")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "36")
+			(name "IR_LED_K")
+			(class "Default")
+			(node
+				(ref "D1")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q1")
+				(pin "3")
+				(pinfunction "C_3")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "37")
+			(name "IR_RX")
+			(class "Default")
+			(node
+				(ref "MOD1")
+				(pin "9")
+				(pinfunction "GPIO6_9")
+				(pintype "input")
+			)
+			(node
+				(ref "U2")
+				(pin "1")
+				(pinfunction "OUT_1")
+				(pintype "output")
+			)
+		)
+		(net
+			(code "38")
+			(name "IR_RX_3V3")
+			(class "Default")
+			(node
+				(ref "C14")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C15")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R27")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "3")
+				(pinfunction "VS_3")
+				(pintype "power_in")
+			)
+		)
+		(net
+			(code "39")
+			(name "IR_TX")
+			(class "Default")
+			(node
+				(ref "MOD1")
+				(pin "10")
+				(pinfunction "GPIO7_10")
+				(pintype "output")
+			)
+			(node
+				(ref "R25")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "40")
+			(name "LOGIC_3V3")
+			(class "Default")
+			(node
+				(ref "C10")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C11")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C12")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C13")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C3")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C4")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C8")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C9")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J1")
+				(pin "3")
+				(pinfunction "P3_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
+				(pin "2")
+				(pinfunction "P2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J3")
+				(pin "1")
+				(pinfunction "P1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q3")
+				(pin "3")
+				(pinfunction "E_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "R1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R10")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R11")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R12")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R13")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R14")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R15")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R16")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R17")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R18")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R22")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R24")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R27")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R3")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R4")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R5")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R6")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R7")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R8")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R9")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "9")
+				(pinfunction "VDD_9")
+				(pintype "power_in")
+			)
+		)
+		(net
+			(code "41")
+			(name "MCU_5V")
+			(class "Default")
+			(node
+				(ref "C1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J1")
+				(pin "1")
+				(pinfunction "P1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "MOD1")
+				(pin "1")
+				(pinfunction "5V_1")
+				(pintype "power_in")
+			)
+		)
+		(net
+			(code "42")
+			(name "MOTOR_EN")
+			(class "Default")
+			(node
+				(ref "R28")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "6")
+				(pinfunction "GPB5_6")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "43")
+			(name "MOTOR_GATE")
+			(class "Default")
+			(node
+				(ref "Q4")
+				(pin "2")
+				(pinfunction "G_2")
+				(pintype "input")
+			)
+			(node
+				(ref "R28")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R29")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "44")
+			(name "MOTOR_RETURN")
+			(class "Default")
+			(node
+				(ref "C16")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "D2")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "2")
+				(pinfunction "P2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q4")
+				(pin "3")
+				(pinfunction "D_3")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "45")
+			(name "SD_CS")
+			(class "Default")
+			(node
+				(ref "J3")
+				(pin "2")
+				(pinfunction "P2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "MOD1")
+				(pin "13")
+				(pinfunction "GPIO10_13")
+				(pintype "output")
+			)
+			(node
+				(ref "R15")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "46")
+			(name "SPI_MISO")
+			(class "Default")
+			(node
+				(ref "J3")
+				(pin "5")
+				(pinfunction "P5_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "MOD1")
+				(pin "15")
+				(pinfunction "GPIO12_15")
+				(pintype "input")
+			)
+			(node
+				(ref "R18")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "47")
+			(name "SPI_MOSI")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "4")
+				(pinfunction "P4_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "J3")
+				(pin "3")
+				(pinfunction "P3_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "MOD1")
+				(pin "14")
+				(pinfunction "GPIO11_14")
+				(pintype "output")
+			)
+			(node
+				(ref "R17")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "48")
+			(name "SPI_SCK")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "3")
+				(pinfunction "P3_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "J3")
+				(pin "4")
+				(pinfunction "P4_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "MOD1")
+				(pin "16")
+				(pinfunction "GPIO13_16")
+				(pintype "output")
+			)
+		)
+		(net
+			(code "49")
+			(name "SPK_N")
+			(class "Default")
+			(node
+				(ref "C24")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J5")
+				(pin "2")
+				(pinfunction "P2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "3")
+				(pinfunction "OUT2_3")
+				(pintype "output")
+			)
+		)
+		(net
+			(code "50")
+			(name "SPK_P")
+			(class "Default")
+			(node
+				(ref "C23")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J5")
+				(pin "1")
+				(pinfunction "P1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "1")
+				(pinfunction "OUT1_1")
+				(pintype "output")
+			)
+		)
+		(net
+			(code "51")
+			(name "TFT_CS")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "7")
+				(pinfunction "P7_7")
+				(pintype "passive")
+			)
+			(node
+				(ref "MOD1")
+				(pin "18")
+				(pinfunction "RX_GPIO44_18")
+				(pintype "output")
+			)
+			(node
+				(ref "R14")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "52")
+			(name "TFT_DC")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "6")
+				(pinfunction "P6_6")
+				(pintype "passive")
+			)
+			(node
+				(ref "MOD1")
+				(pin "17")
+				(pinfunction "TX_GPIO43_17")
+				(pintype "output")
+			)
+		)
+		(net
+			(code "53")
+			(name "TFT_RST_N")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "5")
+				(pinfunction "P5_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "R16")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "7")
+				(pinfunction "GPB6_7")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "54")
+			(name "ZOBEL_N")
+			(class "Default")
+			(node
+				(ref "C24")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R35")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "55")
+			(name "ZOBEL_P")
+			(class "Default")
+			(node
+				(ref "C23")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R34")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "56")
+			(name "unconnected-(MOD1-3V3_OUT-Pad3)")
+			(class "Default")
+			(node
+				(ref "MOD1")
+				(pin "3")
+				(pinfunction "3V3_OUT_3")
+				(pintype "power_out+no_connect")
+			)
+		)
+		(net
+			(code "57")
+			(name "unconnected-(MOD1-GPIO3_STRAP-Pad6)")
+			(class "Default")
+			(node
+				(ref "MOD1")
+				(pin "6")
+				(pinfunction "GPIO3_STRAP_6")
+				(pintype "bidirectional+no_connect")
+			)
+		)
+		(net
+			(code "58")
+			(name "unconnected-(U1-GPA4-Pad25)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "25")
+				(pinfunction "GPA4_25")
+				(pintype "bidirectional+no_connect")
+			)
+		)
+		(net
+			(code "59")
+			(name "unconnected-(U1-GPA5-Pad26)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "26")
+				(pinfunction "GPA5_26")
+				(pintype "bidirectional+no_connect")
+			)
+		)
+		(net
+			(code "60")
+			(name "unconnected-(U1-GPA6-Pad27)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "27")
+				(pinfunction "GPA6_27")
+				(pintype "bidirectional+no_connect")
+			)
+		)
+		(net
+			(code "61")
+			(name "unconnected-(U1-GPA7-Pad28)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "28")
+				(pinfunction "GPA7_28")
+				(pintype "output+no_connect")
+			)
+		)
+		(net
+			(code "62")
+			(name "unconnected-(U1-GPB7-Pad8)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "8")
+				(pinfunction "GPB7_8")
+				(pintype "output+no_connect")
+			)
+		)
+		(net
+			(code "63")
+			(name "unconnected-(U1-INTB-Pad19)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "19")
+				(pinfunction "INTB_19")
+				(pintype "open_collector+no_connect")
+			)
+		)
+		(net
+			(code "64")
+			(name "unconnected-(U1-NC-Pad11)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "11")
+				(pinfunction "NC_11")
+				(pintype "no_connect")
+			)
+		)
+		(net
+			(code "65")
+			(name "unconnected-(U1-NC-Pad14)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "14")
+				(pinfunction "NC_14")
+				(pintype "no_connect")
+			)
+		)
+	)
+)

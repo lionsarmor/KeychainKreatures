@@ -1,0 +1,1168 @@
+{
+  "result": "PASS",
+  "reference_count": 127,
+  "before": {
+    "SW5": {
+      "A": "Net-(U1-GPB0_{slash}_A)",
+      "B": "Net-(U1-GPB0_{slash}_A)",
+      "C": "/GND",
+      "D": "/GND"
+    },
+    "SW3": {
+      "A": "Net-(U1-GPA2_{slash}_LEFT)",
+      "B": "Net-(U1-GPA2_{slash}_LEFT)",
+      "C": "/GND",
+      "D": "/GND"
+    },
+    "SW8": {
+      "A": "Net-(U1-GPB3_{slash}_Y)",
+      "B": "Net-(U1-GPB3_{slash}_Y)",
+      "C": "/GND",
+      "D": "/GND"
+    },
+    "SW7": {
+      "A": "Net-(U1-GPB2_{slash}_X)",
+      "B": "Net-(U1-GPB2_{slash}_X)",
+      "C": "/GND",
+      "D": "/GND"
+    },
+    "D3": {
+      "1": "Net-(D3-RED_K)",
+      "2": "/MCU_5V",
+      "3": "Net-(D3-BLUE_K)",
+      "4": "Net-(D3-GREEN_K)"
+    },
+    "J2": {
+      "1": "/GND",
+      "2": "/LOGIC_3V3",
+      "3": "/SPI_SCK",
+      "4": "/SPI_MOSI",
+      "5": "/TFT_RST_N",
+      "6": "/TFT_DC",
+      "7": "/TFT_CS",
+      "8": "Net-(J2-BLK)"
+    },
+    "SW4": {
+      "A": "Net-(U1-GPA3_{slash}_RIGHT)",
+      "B": "Net-(U1-GPA3_{slash}_RIGHT)",
+      "C": "/GND",
+      "D": "/GND"
+    },
+    "SW2": {
+      "A": "Net-(U1-GPA1_{slash}_DOWN)",
+      "B": "Net-(U1-GPA1_{slash}_DOWN)",
+      "C": "/GND",
+      "D": "/GND"
+    },
+    "SW9": {
+      "A": "/BUTTON_FN_N",
+      "B": "/BUTTON_FN_N",
+      "C": "/GND",
+      "D": "/GND"
+    },
+    "SW6": {
+      "A": "Net-(U1-GPB1_{slash}_B)",
+      "B": "Net-(U1-GPB1_{slash}_B)",
+      "C": "/GND",
+      "D": "/GND"
+    },
+    "SW1": {
+      "A": "Net-(U1-GPA0_{slash}_UP)",
+      "B": "Net-(U1-GPA0_{slash}_UP)",
+      "C": "/GND",
+      "D": "/GND"
+    },
+    "TP6": {
+      "1": "/GND"
+    },
+    "TP17": {
+      "1": "/TFT_CS"
+    },
+    "R43": {
+      "1": "/RGB_CLK",
+      "2": "/GND"
+    },
+    "H1": {
+      "": ""
+    },
+    "R38": {
+      "1": "Net-(Q6-G)",
+      "2": "Net-(Q5-D)"
+    },
+    "C2": {
+      "1": "/MCU_5V",
+      "2": "/GND"
+    },
+    "MOD1": {
+      "1": "/BUTTON_INT_N",
+      "2": "/BUTTON_FN_N",
+      "3": "unconnected-(MOD1-GPIO3_{slash}_STRAP-Pad3)",
+      "3V3": "unconnected-(MOD1-3V3_OUT-Pad3V3)",
+      "4": "/I2C_SDA",
+      "5": "/I2C_SCL",
+      "5V": "/MCU_5V",
+      "6": "/IR_RX",
+      "7": "/IR_TX",
+      "8": "/AUDIO_PWM",
+      "9": "/BL_PWM",
+      "10": "/SD_CS",
+      "11": "/SPI_MOSI",
+      "12": "/SPI_MISO",
+      "13": "/SPI_SCK",
+      "GND": "/GND",
+      "RX": "/TFT_CS",
+      "TX": "/TFT_DC"
+    },
+    "TP32": {
+      "1": "Net-(U2-VS)"
+    },
+    "Q2": {
+      "1": "/GND",
+      "2": "Net-(Q2-B)",
+      "3": "Net-(Q2-C)"
+    },
+    "TP31": {
+      "1": "/IR_RX"
+    },
+    "TP2": {
+      "1": "/LOGIC_3V3"
+    },
+    "C17": {
+      "1": "/ACT_3V2",
+      "2": "/GND"
+    },
+    "C22": {
+      "1": "Net-(U3-NP2)",
+      "2": "/GND"
+    },
+    "J5": {
+      "1": "Net-(J5-+)",
+      "2": "Net-(J5--)"
+    },
+    "R22": {
+      "1": "/LOGIC_3V3",
+      "2": "Net-(Q3-B)"
+    },
+    "TP12": {
+      "1": "/BUTTON_FN_N"
+    },
+    "Q4": {
+      "1": "/GND",
+      "2": "Net-(Q4-G)",
+      "3": "Net-(D2-A)"
+    },
+    "C21": {
+      "1": "Net-(U3-NP1)",
+      "2": "Net-(U3-NP2)"
+    },
+    "C18": {
+      "1": "Net-(C18-Pad1)",
+      "2": "/GND"
+    },
+    "TP18": {
+      "1": "/TFT_DC"
+    },
+    "R36": {
+      "1": "/AMP_EN",
+      "2": "Net-(Q5-G)"
+    },
+    "R30": {
+      "1": "/AUDIO_PWM",
+      "2": "Net-(C18-Pad1)"
+    },
+    "H4": {
+      "": ""
+    },
+    "C8": {
+      "1": "/LOGIC_3V3",
+      "2": "/GND"
+    },
+    "R10": {
+      "1": "/LOGIC_3V3",
+      "2": "Net-(U1-GPB1_{slash}_B)"
+    },
+    "Q6": {
+      "1": "/ACT_3V2",
+      "2": "Net-(Q6-G)",
+      "3": "Net-(Q6-D)"
+    },
+    "R35": {
+      "1": "Net-(C24-Pad2)",
+      "2": "/GND"
+    },
+    "C15": {
+      "1": "Net-(U2-VS)",
+      "2": "/GND"
+    },
+    "R7": {
+      "1": "/LOGIC_3V3",
+      "2": "Net-(U1-GPA2_{slash}_LEFT)"
+    },
+    "R5": {
+      "1": "/LOGIC_3V3",
+      "2": "Net-(U1-GPA0_{slash}_UP)"
+    },
+    "R8": {
+      "1": "/LOGIC_3V3",
+      "2": "Net-(U1-GPA3_{slash}_RIGHT)"
+    },
+    "U2": {
+      "1": "/IR_RX",
+      "2": "/GND",
+      "3": "Net-(U2-VS)"
+    },
+    "R33": {
+      "1": "Net-(U3-IN1)",
+      "2": "/GND"
+    },
+    "U3": {
+      "1": "Net-(J5-+)",
+      "2": "Net-(Q6-D)",
+      "3": "Net-(J5--)",
+      "4": "/GND",
+      "5": "Net-(U3-NP2)",
+      "6": "/GND",
+      "7": "Net-(U3-IN1)",
+      "8": "Net-(U3-NP1)"
+    },
+    "R26": {
+      "1": "Net-(Q1-B)",
+      "2": "/GND"
+    },
+    "R39": {
+      "1": "/ACT_3V2",
+      "2": "Net-(Q6-G)"
+    },
+    "J1": {
+      "1": "/MCU_5V",
+      "2": "/GND",
+      "3": "/LOGIC_3V3",
+      "4": "/ACT_3V2"
+    },
+    "R40": {
+      "1": "Net-(U4-R-EXT)",
+      "2": "/GND"
+    },
+    "TP22": {
+      "1": "/AUDIO_PWM"
+    },
+    "D1": {
+      "1": "Net-(D1-K)",
+      "2": "Net-(D1-A)"
+    },
+    "Q1": {
+      "1": "/GND",
+      "2": "Net-(Q1-B)",
+      "3": "Net-(D1-K)"
+    },
+    "R41": {
+      "1": "/LOGIC_3V3",
+      "2": "/RGB_OE_N"
+    },
+    "R16": {
+      "1": "/LOGIC_3V3",
+      "2": "/TFT_RST_N"
+    },
+    "TP11": {
+      "1": "/BUTTON_INT_N"
+    },
+    "C27": {
+      "1": "/LOGIC_3V3",
+      "2": "/GND"
+    },
+    "C25": {
+      "1": "Net-(Q6-D)",
+      "2": "/GND"
+    },
+    "TP33": {
+      "1": "Net-(U1-RESET_N)"
+    },
+    "TP1": {
+      "1": "/MCU_5V"
+    },
+    "R4": {
+      "1": "/LOGIC_3V3",
+      "2": "Net-(U1-RESET_N)"
+    },
+    "D2": {
+      "1": "/ACT_3V2",
+      "2": "Net-(D2-A)"
+    },
+    "C10": {
+      "1": "/LOGIC_3V3",
+      "2": "/GND"
+    },
+    "C16": {
+      "1": "/ACT_3V2",
+      "2": "Net-(D2-A)"
+    },
+    "H3": {
+      "": ""
+    },
+    "R28": {
+      "1": "/MOTOR_EN",
+      "2": "Net-(Q4-G)"
+    },
+    "C7": {
+      "1": "Net-(U1-RESET_N)",
+      "2": "/GND"
+    },
+    "C23": {
+      "1": "Net-(J5-+)",
+      "2": "Net-(C23-Pad2)"
+    },
+    "R14": {
+      "1": "/LOGIC_3V3",
+      "2": "/TFT_CS"
+    },
+    "J4": {
+      "1": "/ACT_3V2",
+      "2": "Net-(D2-A)"
+    },
+    "TP14": {
+      "1": "/SPI_MOSI"
+    },
+    "R18": {
+      "1": "/LOGIC_3V3",
+      "2": "/SPI_MISO"
+    },
+    "C13": {
+      "1": "/LOGIC_3V3",
+      "2": "/GND"
+    },
+    "TP29": {
+      "1": "Net-(D2-A)"
+    },
+    "TP9": {
+      "1": "/I2C_SDA"
+    },
+    "TP10": {
+      "1": "/I2C_SCL"
+    },
+    "TP13": {
+      "1": "/SPI_SCK"
+    },
+    "C11": {
+      "1": "/LOGIC_3V3",
+      "2": "/GND"
+    },
+    "C6": {
+      "1": "/ACT_3V2",
+      "2": "/GND"
+    },
+    "TP21": {
+      "1": "Net-(J2-BLK)"
+    },
+    "TP16": {
+      "1": "/SD_CS"
+    },
+    "TP8": {
+      "1": "/GND"
+    },
+    "R42": {
+      "1": "/RGB_DATA",
+      "2": "/GND"
+    },
+    "R24": {
+      "1": "/LOGIC_3V3",
+      "2": "Net-(D1-A)"
+    },
+    "C14": {
+      "1": "Net-(U2-VS)",
+      "2": "/GND"
+    },
+    "R6": {
+      "1": "/LOGIC_3V3",
+      "2": "Net-(U1-GPA1_{slash}_DOWN)"
+    },
+    "R20": {
+      "1": "Net-(Q2-B)",
+      "2": "/GND"
+    },
+    "R32": {
+      "1": "Net-(C20-Pad2)",
+      "2": "Net-(U3-IN1)"
+    },
+    "R2": {
+      "1": "/LOGIC_3V3",
+      "2": "/I2C_SCL"
+    },
+    "C3": {
+      "1": "/LOGIC_3V3",
+      "2": "/GND"
+    },
+    "TP3": {
+      "1": "/ACT_3V2"
+    },
+    "C5": {
+      "1": "/ACT_3V2",
+      "2": "/GND"
+    },
+    "R17": {
+      "1": "/LOGIC_3V3",
+      "2": "/SPI_MOSI"
+    },
+    "C19": {
+      "1": "Net-(C19-Pad1)",
+      "2": "/GND"
+    },
+    "R3": {
+      "1": "/LOGIC_3V3",
+      "2": "/BUTTON_INT_N"
+    },
+    "C24": {
+      "1": "Net-(J5--)",
+      "2": "Net-(C24-Pad2)"
+    },
+    "R1": {
+      "1": "/LOGIC_3V3",
+      "2": "/I2C_SDA"
+    },
+    "TP30": {
+      "1": "/IR_TX"
+    },
+    "R9": {
+      "1": "/LOGIC_3V3",
+      "2": "Net-(U1-GPB0_{slash}_A)"
+    },
+    "TP19": {
+      "1": "/TFT_RST_N"
+    },
+    "R12": {
+      "1": "/LOGIC_3V3",
+      "2": "Net-(U1-GPB3_{slash}_Y)"
+    },
+    "U1": {
+      "1": "Net-(U1-GPB0_{slash}_A)",
+      "2": "Net-(U1-GPB1_{slash}_B)",
+      "3": "Net-(U1-GPB2_{slash}_X)",
+      "4": "Net-(U1-GPB3_{slash}_Y)",
+      "5": "/AMP_EN",
+      "6": "/MOTOR_EN",
+      "7": "/TFT_RST_N",
+      "8": "unconnected-(U1-GPB7-Pad8)",
+      "9": "/LOGIC_3V3",
+      "10": "/GND",
+      "11": "unconnected-(U1-NC-Pad11)",
+      "12": "/I2C_SCL",
+      "13": "/I2C_SDA",
+      "14": "unconnected-(U1-NC-Pad14)",
+      "15": "/GND",
+      "16": "/GND",
+      "17": "/GND",
+      "18": "Net-(U1-RESET_N)",
+      "19": "unconnected-(U1-INTB-Pad19)",
+      "20": "/BUTTON_INT_N",
+      "21": "Net-(U1-GPA0_{slash}_UP)",
+      "22": "Net-(U1-GPA1_{slash}_DOWN)",
+      "23": "Net-(U1-GPA2_{slash}_LEFT)",
+      "24": "Net-(U1-GPA3_{slash}_RIGHT)",
+      "25": "/RGB_DATA",
+      "26": "/RGB_CLK",
+      "27": "/RGB_LATCH",
+      "28": "/RGB_OE_N"
+    },
+    "J3": {
+      "1": "/LOGIC_3V3",
+      "2": "/SD_CS",
+      "3": "/SPI_MOSI",
+      "4": "/SPI_SCK",
+      "5": "/SPI_MISO",
+      "6": "/GND"
+    },
+    "R11": {
+      "1": "/LOGIC_3V3",
+      "2": "Net-(U1-GPB2_{slash}_X)"
+    },
+    "C1": {
+      "1": "/MCU_5V",
+      "2": "/GND"
+    },
+    "Q5": {
+      "1": "/GND",
+      "2": "Net-(Q5-G)",
+      "3": "Net-(Q5-D)"
+    },
+    "H2": {
+      "": ""
+    },
+    "TP4": {
+      "1": "/GND"
+    },
+    "R13": {
+      "1": "/LOGIC_3V3",
+      "2": "/BUTTON_FN_N"
+    },
+    "C9": {
+      "1": "/LOGIC_3V3",
+      "2": "/GND"
+    },
+    "R31": {
+      "1": "Net-(C18-Pad1)",
+      "2": "Net-(C19-Pad1)"
+    },
+    "R15": {
+      "1": "/LOGIC_3V3",
+      "2": "/SD_CS"
+    },
+    "TP23": {
+      "1": "Net-(C19-Pad1)"
+    },
+    "C12": {
+      "1": "/LOGIC_3V3",
+      "2": "/GND"
+    },
+    "U4": {
+      "1": "/GND",
+      "2": "/RGB_DATA",
+      "3": "/RGB_CLK",
+      "4": "/RGB_LATCH",
+      "5": "Net-(D3-RED_K)",
+      "6": "Net-(D3-GREEN_K)",
+      "7": "Net-(D3-BLUE_K)",
+      "8": "unconnected-(U4-UNUSED-Pad8)",
+      "9": "unconnected-(U4-UNUSED-Pad9)",
+      "10": "unconnected-(U4-UNUSED-Pad10)",
+      "11": "unconnected-(U4-UNUSED-Pad11)",
+      "12": "unconnected-(U4-UNUSED-Pad12)",
+      "13": "/RGB_OE_N",
+      "14": "unconnected-(U4-SDO-Pad14)",
+      "15": "Net-(U4-R-EXT)",
+      "16": "/LOGIC_3V3"
+    },
+    "Q3": {
+      "1": "Net-(Q3-C)",
+      "2": "Net-(Q3-B)",
+      "3": "/LOGIC_3V3"
+    },
+    "C26": {
+      "1": "Net-(Q6-D)",
+      "2": "/GND"
+    },
+    "C20": {
+      "1": "Net-(C19-Pad1)",
+      "2": "Net-(C20-Pad2)"
+    },
+    "R27": {
+      "1": "/LOGIC_3V3",
+      "2": "Net-(U2-VS)"
+    },
+    "R29": {
+      "1": "Net-(Q4-G)",
+      "2": "/GND"
+    },
+    "R21": {
+      "1": "Net-(Q3-B)",
+      "2": "Net-(Q2-C)"
+    },
+    "R25": {
+      "1": "/IR_TX",
+      "2": "Net-(Q1-B)"
+    },
+    "TP20": {
+      "1": "/BL_PWM"
+    },
+    "R37": {
+      "1": "Net-(Q5-G)",
+      "2": "/GND"
+    },
+    "R19": {
+      "1": "/BL_PWM",
+      "2": "Net-(Q2-B)"
+    },
+    "R23": {
+      "1": "Net-(Q3-C)",
+      "2": "Net-(J2-BLK)"
+    },
+    "R34": {
+      "1": "Net-(C23-Pad2)",
+      "2": "/GND"
+    },
+    "C4": {
+      "1": "/LOGIC_3V3",
+      "2": "/GND"
+    }
+  },
+  "after": {
+    "R43": {
+      "1": "/RGB_CLK",
+      "2": "/GND"
+    },
+    "R38": {
+      "1": "Net-(Q6-G)",
+      "2": "Net-(Q5-D)"
+    },
+    "Q2": {
+      "1": "/GND",
+      "2": "Net-(Q2-B)",
+      "3": "Net-(Q2-C)"
+    },
+    "C17": {
+      "1": "/ACT_3V2",
+      "2": "/GND"
+    },
+    "SW5": {
+      "A": "Net-(U1-GPB0_{slash}_A)",
+      "B": "Net-(U1-GPB0_{slash}_A)",
+      "C": "/GND",
+      "D": "/GND"
+    },
+    "SW3": {
+      "A": "Net-(U1-GPA2_{slash}_LEFT)",
+      "B": "Net-(U1-GPA2_{slash}_LEFT)",
+      "C": "/GND",
+      "D": "/GND"
+    },
+    "R22": {
+      "1": "/LOGIC_3V3",
+      "2": "Net-(Q3-B)"
+    },
+    "Q4": {
+      "1": "/GND",
+      "2": "Net-(Q4-G)",
+      "3": "Net-(D2-A)"
+    },
+    "C21": {
+      "1": "Net-(U3-NP1)",
+      "2": "Net-(U3-NP2)"
+    },
+    "R36": {
+      "1": "/AMP_EN",
+      "2": "Net-(Q5-G)"
+    },
+    "R30": {
+      "1": "/AUDIO_PWM",
+      "2": "Net-(C18-Pad1)"
+    },
+    "R10": {
+      "1": "/LOGIC_3V3",
+      "2": "Net-(U1-GPB1_{slash}_B)"
+    },
+    "Q6": {
+      "1": "/ACT_3V2",
+      "2": "Net-(Q6-G)",
+      "3": "Net-(Q6-D)"
+    },
+    "R35": {
+      "1": "Net-(C24-Pad2)",
+      "2": "/GND"
+    },
+    "SW8": {
+      "A": "Net-(U1-GPB3_{slash}_Y)",
+      "B": "Net-(U1-GPB3_{slash}_Y)",
+      "C": "/GND",
+      "D": "/GND"
+    },
+    "C15": {
+      "1": "Net-(U2-VS)",
+      "2": "/GND"
+    },
+    "R7": {
+      "1": "/LOGIC_3V3",
+      "2": "Net-(U1-GPA2_{slash}_LEFT)"
+    },
+    "R5": {
+      "1": "/LOGIC_3V3",
+      "2": "Net-(U1-GPA0_{slash}_UP)"
+    },
+    "SW7": {
+      "A": "Net-(U1-GPB2_{slash}_X)",
+      "B": "Net-(U1-GPB2_{slash}_X)",
+      "C": "/GND",
+      "D": "/GND"
+    },
+    "R8": {
+      "1": "/LOGIC_3V3",
+      "2": "Net-(U1-GPA3_{slash}_RIGHT)"
+    },
+    "R33": {
+      "1": "Net-(U3-IN1)",
+      "2": "/GND"
+    },
+    "R26": {
+      "1": "Net-(Q1-B)",
+      "2": "/GND"
+    },
+    "R39": {
+      "1": "/ACT_3V2",
+      "2": "Net-(Q6-G)"
+    },
+    "R40": {
+      "1": "Net-(U4-R-EXT)",
+      "2": "/GND"
+    },
+    "D3": {
+      "1": "Net-(D3-RED_K)",
+      "2": "/MCU_5V",
+      "3": "Net-(D3-BLUE_K)",
+      "4": "Net-(D3-GREEN_K)"
+    },
+    "Q1": {
+      "1": "/GND",
+      "2": "Net-(Q1-B)",
+      "3": "Net-(D1-K)"
+    },
+    "J2": {
+      "1": "/GND",
+      "2": "/LOGIC_3V3",
+      "3": "/SPI_SCK",
+      "4": "/SPI_MOSI",
+      "5": "/TFT_RST_N",
+      "6": "/TFT_DC",
+      "7": "/TFT_CS",
+      "8": "Net-(J2-BLK)"
+    },
+    "R41": {
+      "1": "/LOGIC_3V3",
+      "2": "/RGB_OE_N"
+    },
+    "R16": {
+      "1": "/LOGIC_3V3",
+      "2": "/TFT_RST_N"
+    },
+    "SW4": {
+      "A": "Net-(U1-GPA3_{slash}_RIGHT)",
+      "B": "Net-(U1-GPA3_{slash}_RIGHT)",
+      "C": "/GND",
+      "D": "/GND"
+    },
+    "C25": {
+      "1": "Net-(Q6-D)",
+      "2": "/GND"
+    },
+    "R4": {
+      "1": "/LOGIC_3V3",
+      "2": "Net-(U1-RESET_N)"
+    },
+    "R28": {
+      "1": "/MOTOR_EN",
+      "2": "Net-(Q4-G)"
+    },
+    "R14": {
+      "1": "/LOGIC_3V3",
+      "2": "/TFT_CS"
+    },
+    "R18": {
+      "1": "/LOGIC_3V3",
+      "2": "/SPI_MISO"
+    },
+    "SW2": {
+      "A": "Net-(U1-GPA1_{slash}_DOWN)",
+      "B": "Net-(U1-GPA1_{slash}_DOWN)",
+      "C": "/GND",
+      "D": "/GND"
+    },
+    "C13": {
+      "1": "/LOGIC_3V3",
+      "2": "/GND"
+    },
+    "SW9": {
+      "A": "/BUTTON_FN_N",
+      "B": "/BUTTON_FN_N",
+      "C": "/GND",
+      "D": "/GND"
+    },
+    "C11": {
+      "1": "/LOGIC_3V3",
+      "2": "/GND"
+    },
+    "R42": {
+      "1": "/RGB_DATA",
+      "2": "/GND"
+    },
+    "R24": {
+      "1": "/LOGIC_3V3",
+      "2": "Net-(D1-A)"
+    },
+    "R6": {
+      "1": "/LOGIC_3V3",
+      "2": "Net-(U1-GPA1_{slash}_DOWN)"
+    },
+    "R20": {
+      "1": "Net-(Q2-B)",
+      "2": "/GND"
+    },
+    "R32": {
+      "1": "Net-(C20-Pad2)",
+      "2": "Net-(U3-IN1)"
+    },
+    "SW6": {
+      "A": "Net-(U1-GPB1_{slash}_B)",
+      "B": "Net-(U1-GPB1_{slash}_B)",
+      "C": "/GND",
+      "D": "/GND"
+    },
+    "R2": {
+      "1": "/LOGIC_3V3",
+      "2": "/I2C_SCL"
+    },
+    "C3": {
+      "1": "/LOGIC_3V3",
+      "2": "/GND"
+    },
+    "C5": {
+      "1": "/ACT_3V2",
+      "2": "/GND"
+    },
+    "R17": {
+      "1": "/LOGIC_3V3",
+      "2": "/SPI_MOSI"
+    },
+    "R3": {
+      "1": "/LOGIC_3V3",
+      "2": "/BUTTON_INT_N"
+    },
+    "R1": {
+      "1": "/LOGIC_3V3",
+      "2": "/I2C_SDA"
+    },
+    "R9": {
+      "1": "/LOGIC_3V3",
+      "2": "Net-(U1-GPB0_{slash}_A)"
+    },
+    "R12": {
+      "1": "/LOGIC_3V3",
+      "2": "Net-(U1-GPB3_{slash}_Y)"
+    },
+    "R11": {
+      "1": "/LOGIC_3V3",
+      "2": "Net-(U1-GPB2_{slash}_X)"
+    },
+    "C1": {
+      "1": "/MCU_5V",
+      "2": "/GND"
+    },
+    "Q5": {
+      "1": "/GND",
+      "2": "Net-(Q5-G)",
+      "3": "Net-(Q5-D)"
+    },
+    "R13": {
+      "1": "/LOGIC_3V3",
+      "2": "/BUTTON_FN_N"
+    },
+    "C9": {
+      "1": "/LOGIC_3V3",
+      "2": "/GND"
+    },
+    "R31": {
+      "1": "Net-(C18-Pad1)",
+      "2": "Net-(C19-Pad1)"
+    },
+    "R15": {
+      "1": "/LOGIC_3V3",
+      "2": "/SD_CS"
+    },
+    "SW1": {
+      "A": "Net-(U1-GPA0_{slash}_UP)",
+      "B": "Net-(U1-GPA0_{slash}_UP)",
+      "C": "/GND",
+      "D": "/GND"
+    },
+    "Q3": {
+      "1": "Net-(Q3-C)",
+      "2": "Net-(Q3-B)",
+      "3": "/LOGIC_3V3"
+    },
+    "R27": {
+      "1": "/LOGIC_3V3",
+      "2": "Net-(U2-VS)"
+    },
+    "R29": {
+      "1": "Net-(Q4-G)",
+      "2": "/GND"
+    },
+    "R21": {
+      "1": "Net-(Q3-B)",
+      "2": "Net-(Q2-C)"
+    },
+    "R25": {
+      "1": "/IR_TX",
+      "2": "Net-(Q1-B)"
+    },
+    "R37": {
+      "1": "Net-(Q5-G)",
+      "2": "/GND"
+    },
+    "R19": {
+      "1": "/BL_PWM",
+      "2": "Net-(Q2-B)"
+    },
+    "R23": {
+      "1": "Net-(Q3-C)",
+      "2": "Net-(J2-BLK)"
+    },
+    "R34": {
+      "1": "Net-(C23-Pad2)",
+      "2": "/GND"
+    },
+    "TP6": {
+      "1": "/GND"
+    },
+    "TP17": {
+      "1": "/TFT_CS"
+    },
+    "H1": {
+      "": ""
+    },
+    "C2": {
+      "1": "/MCU_5V",
+      "2": "/GND"
+    },
+    "MOD1": {
+      "1": "/BUTTON_INT_N",
+      "2": "/BUTTON_FN_N",
+      "3": "unconnected-(MOD1-GPIO3_{slash}_STRAP-Pad3)",
+      "3V3": "unconnected-(MOD1-3V3_OUT-Pad3V3)",
+      "4": "/I2C_SDA",
+      "5": "/I2C_SCL",
+      "5V": "/MCU_5V",
+      "6": "/IR_RX",
+      "7": "/IR_TX",
+      "8": "/AUDIO_PWM",
+      "9": "/BL_PWM",
+      "10": "/SD_CS",
+      "11": "/SPI_MOSI",
+      "12": "/SPI_MISO",
+      "13": "/SPI_SCK",
+      "GND": "/GND",
+      "RX": "/TFT_CS",
+      "TX": "/TFT_DC"
+    },
+    "TP32": {
+      "1": "Net-(U2-VS)"
+    },
+    "TP31": {
+      "1": "/IR_RX"
+    },
+    "TP2": {
+      "1": "/LOGIC_3V3"
+    },
+    "C22": {
+      "1": "Net-(U3-NP2)",
+      "2": "/GND"
+    },
+    "J5": {
+      "1": "Net-(J5-+)",
+      "2": "Net-(J5--)"
+    },
+    "TP12": {
+      "1": "/BUTTON_FN_N"
+    },
+    "C18": {
+      "1": "Net-(C18-Pad1)",
+      "2": "/GND"
+    },
+    "TP18": {
+      "1": "/TFT_DC"
+    },
+    "H4": {
+      "": ""
+    },
+    "C8": {
+      "1": "/LOGIC_3V3",
+      "2": "/GND"
+    },
+    "U2": {
+      "1": "/IR_RX",
+      "2": "/GND",
+      "3": "Net-(U2-VS)"
+    },
+    "U3": {
+      "1": "Net-(J5-+)",
+      "2": "Net-(Q6-D)",
+      "3": "Net-(J5--)",
+      "4": "/GND",
+      "5": "Net-(U3-NP2)",
+      "6": "/GND",
+      "7": "Net-(U3-IN1)",
+      "8": "Net-(U3-NP1)"
+    },
+    "J1": {
+      "1": "/MCU_5V",
+      "2": "/GND",
+      "3": "/LOGIC_3V3",
+      "4": "/ACT_3V2"
+    },
+    "TP22": {
+      "1": "/AUDIO_PWM"
+    },
+    "D1": {
+      "1": "Net-(D1-K)",
+      "2": "Net-(D1-A)"
+    },
+    "TP11": {
+      "1": "/BUTTON_INT_N"
+    },
+    "C27": {
+      "1": "/LOGIC_3V3",
+      "2": "/GND"
+    },
+    "TP33": {
+      "1": "Net-(U1-RESET_N)"
+    },
+    "TP1": {
+      "1": "/MCU_5V"
+    },
+    "D2": {
+      "1": "/ACT_3V2",
+      "2": "Net-(D2-A)"
+    },
+    "C10": {
+      "1": "/LOGIC_3V3",
+      "2": "/GND"
+    },
+    "C16": {
+      "1": "/ACT_3V2",
+      "2": "Net-(D2-A)"
+    },
+    "H3": {
+      "": ""
+    },
+    "C7": {
+      "1": "Net-(U1-RESET_N)",
+      "2": "/GND"
+    },
+    "C23": {
+      "1": "Net-(J5-+)",
+      "2": "Net-(C23-Pad2)"
+    },
+    "J4": {
+      "1": "/ACT_3V2",
+      "2": "Net-(D2-A)"
+    },
+    "TP14": {
+      "1": "/SPI_MOSI"
+    },
+    "TP29": {
+      "1": "Net-(D2-A)"
+    },
+    "TP9": {
+      "1": "/I2C_SDA"
+    },
+    "TP10": {
+      "1": "/I2C_SCL"
+    },
+    "TP13": {
+      "1": "/SPI_SCK"
+    },
+    "C6": {
+      "1": "/ACT_3V2",
+      "2": "/GND"
+    },
+    "TP21": {
+      "1": "Net-(J2-BLK)"
+    },
+    "TP16": {
+      "1": "/SD_CS"
+    },
+    "TP8": {
+      "1": "/GND"
+    },
+    "C14": {
+      "1": "Net-(U2-VS)",
+      "2": "/GND"
+    },
+    "TP3": {
+      "1": "/ACT_3V2"
+    },
+    "C19": {
+      "1": "Net-(C19-Pad1)",
+      "2": "/GND"
+    },
+    "C24": {
+      "1": "Net-(J5--)",
+      "2": "Net-(C24-Pad2)"
+    },
+    "TP30": {
+      "1": "/IR_TX"
+    },
+    "TP19": {
+      "1": "/TFT_RST_N"
+    },
+    "U1": {
+      "1": "Net-(U1-GPB0_{slash}_A)",
+      "2": "Net-(U1-GPB1_{slash}_B)",
+      "3": "Net-(U1-GPB2_{slash}_X)",
+      "4": "Net-(U1-GPB3_{slash}_Y)",
+      "5": "/AMP_EN",
+      "6": "/MOTOR_EN",
+      "7": "/TFT_RST_N",
+      "8": "unconnected-(U1-GPB7-Pad8)",
+      "9": "/LOGIC_3V3",
+      "10": "/GND",
+      "11": "unconnected-(U1-NC-Pad11)",
+      "12": "/I2C_SCL",
+      "13": "/I2C_SDA",
+      "14": "unconnected-(U1-NC-Pad14)",
+      "15": "/GND",
+      "16": "/GND",
+      "17": "/GND",
+      "18": "Net-(U1-RESET_N)",
+      "19": "unconnected-(U1-INTB-Pad19)",
+      "20": "/BUTTON_INT_N",
+      "21": "Net-(U1-GPA0_{slash}_UP)",
+      "22": "Net-(U1-GPA1_{slash}_DOWN)",
+      "23": "Net-(U1-GPA2_{slash}_LEFT)",
+      "24": "Net-(U1-GPA3_{slash}_RIGHT)",
+      "25": "/RGB_DATA",
+      "26": "/RGB_CLK",
+      "27": "/RGB_LATCH",
+      "28": "/RGB_OE_N"
+    },
+    "J3": {
+      "1": "/LOGIC_3V3",
+      "2": "/SD_CS",
+      "3": "/SPI_MOSI",
+      "4": "/SPI_SCK",
+      "5": "/SPI_MISO",
+      "6": "/GND"
+    },
+    "H2": {
+      "": ""
+    },
+    "TP4": {
+      "1": "/GND"
+    },
+    "TP23": {
+      "1": "Net-(C19-Pad1)"
+    },
+    "C12": {
+      "1": "/LOGIC_3V3",
+      "2": "/GND"
+    },
+    "U4": {
+      "1": "/GND",
+      "2": "/RGB_DATA",
+      "3": "/RGB_CLK",
+      "4": "/RGB_LATCH",
+      "5": "Net-(D3-RED_K)",
+      "6": "Net-(D3-GREEN_K)",
+      "7": "Net-(D3-BLUE_K)",
+      "8": "unconnected-(U4-UNUSED-Pad8)",
+      "9": "unconnected-(U4-UNUSED-Pad9)",
+      "10": "unconnected-(U4-UNUSED-Pad10)",
+      "11": "unconnected-(U4-UNUSED-Pad11)",
+      "12": "unconnected-(U4-UNUSED-Pad12)",
+      "13": "/RGB_OE_N",
+      "14": "unconnected-(U4-SDO-Pad14)",
+      "15": "Net-(U4-R-EXT)",
+      "16": "/LOGIC_3V3"
+    },
+    "C26": {
+      "1": "Net-(Q6-D)",
+      "2": "/GND"
+    },
+    "C20": {
+      "1": "Net-(C19-Pad1)",
+      "2": "Net-(C20-Pad2)"
+    },
+    "TP20": {
+      "1": "/BL_PWM"
+    },
+    "C4": {
+      "1": "/LOGIC_3V3",
+      "2": "/GND"
+    }
+  }
+}

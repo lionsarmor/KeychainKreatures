@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "FS8205")(type "KiCad")(uri "${KIPRJMOD}/FS8205.pretty")(options "")(descr "Project-local FS8205 footprint recovered with the design"))
+)

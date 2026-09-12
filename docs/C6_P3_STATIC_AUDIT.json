@@ -1,0 +1,154 @@
+{
+  "scope": "Static flat-part/stack/width checks only; no powered or delivered-component qualification",
+  "boards": {
+    "KK_main_module": {
+      "pcb_sha256": "c7dc3028d36d8b80aca6357518118377b29c746b93822521c5e1624194e7dc07",
+      "schematic_sha256": "104eb7410e0ab1c02d0f4165e05dfe0b5cb877af682d92bae5d93ed3ea8294cf",
+      "project_sha256": "185931477ba1d0fbd3b95b6b7e53d36276e4c2e65f3632a730628156dd6dabf9",
+      "outline_mm": [
+        96,
+        105
+      ],
+      "holes": {
+        "H1": {
+          "xy_mm": [
+            4.0,
+            4.0
+          ],
+          "drill_mm": [
+            2.2,
+            2.2
+          ]
+        },
+        "H4": {
+          "xy_mm": [
+            92.0,
+            101.0
+          ],
+          "drill_mm": [
+            2.2,
+            2.2
+          ]
+        },
+        "H3": {
+          "xy_mm": [
+            4.0,
+            101.0
+          ],
+          "drill_mm": [
+            2.2,
+            2.2
+          ]
+        },
+        "H2": {
+          "xy_mm": [
+            92.0,
+            4.0
+          ],
+          "drill_mm": [
+            2.2,
+            2.2
+          ]
+        }
+      },
+      "copper_layers": 2,
+      "track_segments": 1052,
+      "vias": 35,
+      "native_DRC_violations": 0,
+      "native_ERC_violations": 0,
+      "native_opens": 0,
+      "native_parity_issues": 0,
+      "baseline_preserved": true,
+      "fitted_parts_with_resolving_3d_models": 98
+    },
+    "KK_power_module": {
+      "pcb_sha256": "74cb2db7b740393391b8dd44e8d08ae518aa7f0c30e6ec798ab1123e056adbce",
+      "schematic_sha256": "d00c806dd6ff8be1ed24c51810f73974d369f2ff1ae1c66696304b85e0c0b545",
+      "project_sha256": "49b1bc169dcfc2a01afefded567e22c2cbdbc2c8118795234cd59feb53ebca81",
+      "outline_mm": [
+        96,
+        105
+      ],
+      "holes": {
+        "H3": {
+          "xy_mm": [
+            4.0,
+            101.0
+          ],
+          "drill_mm": [
+            2.2,
+            2.2
+          ]
+        },
+        "H4": {
+          "xy_mm": [
+            92.0,
+            101.0
+          ],
+          "drill_mm": [
+            2.2,
+            2.2
+          ]
+        },
+        "H2": {
+          "xy_mm": [
+            92.0,
+            4.0
+          ],
+          "drill_mm": [
+            2.2,
+            2.2
+          ]
+        },
+        "H1": {
+          "xy_mm": [
+            4.0,
+            4.0
+          ],
+          "drill_mm": [
+            2.2,
+            2.2
+          ]
+        }
+      },
+      "copper_layers": 4,
+      "track_segments": 3515,
+      "vias": 260,
+      "native_DRC_violations": 0,
+      "native_ERC_violations": 0,
+      "native_opens": 0,
+      "native_parity_issues": 0,
+      "baseline_preserved": true,
+      "fitted_parts_with_resolving_3d_models": 108
+    }
+  },
+  "physical_holds": [
+    "20mm standoff and JST wire-bend fit",
+    "Seller screen, ESP32 and SD module dimensions",
+    "Horizontal capacitor lead forming and ripple performance",
+    "Battery location / case depth / RF test",
+    "Factory DFM / component supply approval before ordering"
+  ],
+  "interboard_harness": {
+    "power": "J3",
+    "main": "J1",
+    "wiring": "pin 1 to pin 1, keyed four-wire harness; never infer order from a mirrored rear drawing",
+    "pins": {
+      "1": "MCU_5V",
+      "2": "GND",
+      "3": "LOGIC_3V3",
+      "4": "ACT_3V2"
+    }
+  },
+  "main_flat_parts": {
+    "horizontal_resistors": 43,
+    "horizontal_electrolytics": 10,
+    "horizontal_TO92": 6,
+    "fitted_THT_components": 98,
+    "components_with_model_attachments": 98,
+    "pin_net_mapping_unchanged": true,
+    "explicit_width_audit": "PASS independent of KiCad netclass assignment",
+    "model_note": "Attachment coverage is not measurement or delivered-part certification."
+  },
+  "status": "STATIC CAD CHECKS PASS - PROTOTYPE OUTPUTS REQUIRE SEPARATE HASH-BOUND RELEASE AUDIT; PHYSICAL / BENCH QUALIFICATION PENDING"
+}

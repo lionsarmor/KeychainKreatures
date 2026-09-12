@@ -1,0 +1,8 @@
+{
+  "status": "PASS: component identities and all pin-to-pin net partitions preserved",
+  "components": 91,
+  "pin_records": 267,
+  "nets": 65,
+  "before_sha256": "5712a1d7536793497577345f3f4f522fbb347c4a0967a88e3af9946909a5adb6",
+  "after_sha256": "6b08e112e6e15acbf91aeeee514edda4e414203eaa76533363ae956e691d64b5"
+}

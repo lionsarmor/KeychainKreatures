@@ -1,0 +1,8 @@
+# Keep source/manufacturing bytes exact: release manifests hash raw file contents.
+* -text
+*.zip binary
+*.pdf binary
+*.png binary
+*.jpg binary
+*.docx binary
+*.odt binary

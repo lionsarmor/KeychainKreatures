@@ -1,0 +1,1 @@
+Exact KiCad library models, when available. Models are nominal visualization aids, not enclosure approval. Source and hashes in MANIFEST.json. KiCad library assets use CC-BY-SA-4.0 with its library exception: https://www.kicad.org/libraries/license/ . Missing models are explicitly recorded. FS8205 uses the SOT-23-6 family body model, not a vendor-specific marking model.

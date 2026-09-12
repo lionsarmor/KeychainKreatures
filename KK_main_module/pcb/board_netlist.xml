@@ -1,0 +1,3460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/legion/Desktop/KeychainKreatures/KK_main_module/KK_main_module.kicad_sch</source>
+    <date>2026-09-10T19:53:17</date>
+    <tool>Eeschema 10.0.6</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Main board - grouped wired schematic</title>
+        <company>Keychain Kreatures</company>
+        <rev>C.2 / MOSFET audio switch</rev>
+        <date>2026-09-10</date>
+        <source>KK_main_module.kicad_sch</source>
+        <comment number="1" value="Engineering prototype; bench qualification required"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>100u</value>
+      <footprint>KK_Main:Nichicon_UVR_D5_P2</footprint>
+      <datasheet>https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf</datasheet>
+      <fields>
+        <field name="MPN">UVR1C101MDD</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:Nichicon_UVR_D5_P2</field>
+        <field name="Datasheet">https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="MPN" value="UVR1C101MDD"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="CP_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a0efc99e-ff53-4d3d-ab90-5c6f4ae4149b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>100n</value>
+      <footprint>KK_Main:KEMET_C315_P2p54</footprint>
+      <datasheet>https://yageogroup.com/download/specsheet/C315C104K5R5TA</datasheet>
+      <fields>
+        <field name="MPN">C315C104K5R5TA</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:KEMET_C315_P2p54</field>
+        <field name="Datasheet">https://yageogroup.com/download/specsheet/C315C104K5R5TA</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="C315C104K5R5TA"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cfbcb451-ad8c-440d-a232-7eeee2fccf6e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C3">
+      <value>100u</value>
+      <footprint>KK_Main:Nichicon_UVR_D5_P2</footprint>
+      <datasheet>https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf</datasheet>
+      <fields>
+        <field name="MPN">UVR1C101MDD</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:Nichicon_UVR_D5_P2</field>
+        <field name="Datasheet">https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="MPN" value="UVR1C101MDD"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="CP_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>51a7c288-d965-44de-a40f-01d0edb4c354</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4">
+      <value>100n</value>
+      <footprint>KK_Main:KEMET_C315_P2p54</footprint>
+      <datasheet>https://yageogroup.com/download/specsheet/C315C104K5R5TA</datasheet>
+      <fields>
+        <field name="MPN">C315C104K5R5TA</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:KEMET_C315_P2p54</field>
+        <field name="Datasheet">https://yageogroup.com/download/specsheet/C315C104K5R5TA</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="C315C104K5R5TA"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>04e7b2fd-4b7b-4ca4-a3ce-f9e2d4f41462</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C5">
+      <value>100u</value>
+      <footprint>KK_Main:Nichicon_UVR_D5_P2</footprint>
+      <datasheet>https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf</datasheet>
+      <fields>
+        <field name="MPN">UVR1C101MDD</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:Nichicon_UVR_D5_P2</field>
+        <field name="Datasheet">https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="MPN" value="UVR1C101MDD"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="CP_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0fcaa245-05a4-42f9-aab9-7e23284c1949</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C6">
+      <value>100n</value>
+      <footprint>KK_Main:KEMET_C315_P2p54</footprint>
+      <datasheet>https://yageogroup.com/download/specsheet/C315C104K5R5TA</datasheet>
+      <fields>
+        <field name="MPN">C315C104K5R5TA</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:KEMET_C315_P2p54</field>
+        <field name="Datasheet">https://yageogroup.com/download/specsheet/C315C104K5R5TA</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="C315C104K5R5TA"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>786c5576-127f-415d-a40b-ff1962513781</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C7">
+      <value>100n</value>
+      <footprint>KK_Main:KEMET_C315_P2p54</footprint>
+      <datasheet>https://yageogroup.com/download/specsheet/C315C104K5R5TA</datasheet>
+      <fields>
+        <field name="MPN">C315C104K5R5TA</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:KEMET_C315_P2p54</field>
+        <field name="Datasheet">https://yageogroup.com/download/specsheet/C315C104K5R5TA</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="C315C104K5R5TA"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dac9362e-1d27-453f-aeef-8fe274115838</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C8">
+      <value>100n</value>
+      <footprint>KK_Main:KEMET_C315_P2p54</footprint>
+      <datasheet>https://yageogroup.com/download/specsheet/C315C104K5R5TA</datasheet>
+      <fields>
+        <field name="MPN">C315C104K5R5TA</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:KEMET_C315_P2p54</field>
+        <field name="Datasheet">https://yageogroup.com/download/specsheet/C315C104K5R5TA</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="C315C104K5R5TA"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fe1eb94a-79f9-497f-a4fe-65845614968b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C9">
+      <value>10u</value>
+      <footprint>KK_Main:Nichicon_UVR_D5_P2</footprint>
+      <datasheet>https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf</datasheet>
+      <fields>
+        <field name="MPN">UVR1C100MDD</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:Nichicon_UVR_D5_P2</field>
+        <field name="Datasheet">https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="MPN" value="UVR1C100MDD"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="CP_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a31e38a5-d07b-43db-a039-192b7f87abb4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C10">
+      <value>100n</value>
+      <footprint>KK_Main:KEMET_C315_P2p54</footprint>
+      <datasheet>https://yageogroup.com/download/specsheet/C315C104K5R5TA</datasheet>
+      <fields>
+        <field name="MPN">C315C104K5R5TA</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:KEMET_C315_P2p54</field>
+        <field name="Datasheet">https://yageogroup.com/download/specsheet/C315C104K5R5TA</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="C315C104K5R5TA"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b8ad9c27-4450-49e5-af67-4eb5e8d31685</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C11">
+      <value>10u</value>
+      <footprint>KK_Main:Nichicon_UVR_D5_P2</footprint>
+      <datasheet>https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf</datasheet>
+      <fields>
+        <field name="MPN">UVR1C100MDD</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:Nichicon_UVR_D5_P2</field>
+        <field name="Datasheet">https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="MPN" value="UVR1C100MDD"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="CP_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e68bfc08-3c34-41b2-a06f-fcacc8f63555</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C12">
+      <value>100n</value>
+      <footprint>KK_Main:KEMET_C315_P2p54</footprint>
+      <datasheet>https://yageogroup.com/download/specsheet/C315C104K5R5TA</datasheet>
+      <fields>
+        <field name="MPN">C315C104K5R5TA</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:KEMET_C315_P2p54</field>
+        <field name="Datasheet">https://yageogroup.com/download/specsheet/C315C104K5R5TA</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="C315C104K5R5TA"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3ba0fc2d-e4b1-40b0-a23e-e60fded3d1dd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C13">
+      <value>100u</value>
+      <footprint>KK_Main:Nichicon_UVR_D5_P2</footprint>
+      <datasheet>https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf</datasheet>
+      <fields>
+        <field name="MPN">UVR1C101MDD</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:Nichicon_UVR_D5_P2</field>
+        <field name="Datasheet">https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="MPN" value="UVR1C101MDD"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="CP_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1dadfd91-99c1-4fa5-a28c-c4092c223748</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C14">
+      <value>100n</value>
+      <footprint>KK_Main:KEMET_C315_P2p54</footprint>
+      <datasheet>https://yageogroup.com/download/specsheet/C315C104K5R5TA</datasheet>
+      <fields>
+        <field name="MPN">C315C104K5R5TA</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:KEMET_C315_P2p54</field>
+        <field name="Datasheet">https://yageogroup.com/download/specsheet/C315C104K5R5TA</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="C315C104K5R5TA"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8212759b-6974-4b16-a149-1637ce1aa579</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C15">
+      <value>10u</value>
+      <footprint>KK_Main:Nichicon_UVR_D5_P2</footprint>
+      <datasheet>https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf</datasheet>
+      <fields>
+        <field name="MPN">UVR1C100MDD</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:Nichicon_UVR_D5_P2</field>
+        <field name="Datasheet">https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="MPN" value="UVR1C100MDD"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="CP_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f3227859-02f9-46ca-a955-e4b500786014</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C16">
+      <value>100n</value>
+      <footprint>KK_Main:KEMET_C315_P2p54</footprint>
+      <datasheet>https://yageogroup.com/download/specsheet/C315C104K5R5TA</datasheet>
+      <fields>
+        <field name="MPN">C315C104K5R5TA</field>
+        <field name="Review">Suppression physically close to motor leads</field>
+        <field name="Footprint">KK_Main:KEMET_C315_P2p54</field>
+        <field name="Datasheet">https://yageogroup.com/download/specsheet/C315C104K5R5TA</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="C315C104K5R5TA"/>
+      <property name="Review" value="Suppression physically close to motor leads"/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>feb505da-5525-4043-a802-045862ddc570</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C17">
+      <value>100u</value>
+      <footprint>KK_Main:Nichicon_UVR_D5_P2</footprint>
+      <datasheet>https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf</datasheet>
+      <fields>
+        <field name="MPN">UVR1C101MDD</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:Nichicon_UVR_D5_P2</field>
+        <field name="Datasheet">https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="MPN" value="UVR1C101MDD"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="CP_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>530aab4c-be9e-4e2f-aa8f-0481a19119e4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C18">
+      <value>10n</value>
+      <footprint>KK_Main:KEMET_C315_P2p54</footprint>
+      <datasheet>https://yageogroup.com/download/specsheet/C315C103J1G5TA</datasheet>
+      <fields>
+        <field name="MPN">C315C103J1G5TA</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:KEMET_C315_P2p54</field>
+        <field name="Datasheet">https://yageogroup.com/download/specsheet/C315C103J1G5TA</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="C315C103J1G5TA"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>83169de5-e355-4425-ac8b-71a9f26bc3ac</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C19">
+      <value>10n</value>
+      <footprint>KK_Main:KEMET_C315_P2p54</footprint>
+      <datasheet>https://yageogroup.com/download/specsheet/C315C103J1G5TA</datasheet>
+      <fields>
+        <field name="MPN">C315C103J1G5TA</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:KEMET_C315_P2p54</field>
+        <field name="Datasheet">https://yageogroup.com/download/specsheet/C315C103J1G5TA</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="C315C103J1G5TA"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8952a570-bfe8-42ce-a65e-e9438701acf5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C20">
+      <value>1u</value>
+      <footprint>KK_Main:KEMET_C315_P2p54</footprint>
+      <datasheet>https://yageogroup.com/download/specsheet/C315C105K5R5TA</datasheet>
+      <fields>
+        <field name="MPN">C315C105K5R5TA</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:KEMET_C315_P2p54</field>
+        <field name="Datasheet">https://yageogroup.com/download/specsheet/C315C105K5R5TA</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="C315C105K5R5TA"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2e9b72b9-f180-443d-aef5-d0bd11ecd890</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C21">
+      <value>10u</value>
+      <footprint>KK_Main:Nichicon_UVR_D5_P2</footprint>
+      <datasheet>https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf</datasheet>
+      <fields>
+        <field name="MPN">UVR1C100MDD</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:Nichicon_UVR_D5_P2</field>
+        <field name="Datasheet">https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="MPN" value="UVR1C100MDD"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="CP_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b451cb6c-b8f8-4a53-a98a-1f0fc7bb93d5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C22">
+      <value>10n</value>
+      <footprint>KK_Main:KEMET_C315_P2p54</footprint>
+      <datasheet>https://yageogroup.com/download/specsheet/C315C103J1G5TA</datasheet>
+      <fields>
+        <field name="MPN">C315C103J1G5TA</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:KEMET_C315_P2p54</field>
+        <field name="Datasheet">https://yageogroup.com/download/specsheet/C315C103J1G5TA</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="C315C103J1G5TA"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>aa401147-7493-401c-acb9-63432a1d86c6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C23">
+      <value>100n</value>
+      <footprint>KK_Main:KEMET_C315_P2p54</footprint>
+      <datasheet>https://yageogroup.com/download/specsheet/C315C104K5R5TA</datasheet>
+      <fields>
+        <field name="MPN">C315C104K5R5TA</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:KEMET_C315_P2p54</field>
+        <field name="Datasheet">https://yageogroup.com/download/specsheet/C315C104K5R5TA</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="C315C104K5R5TA"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b66c4be1-6fb5-424b-a2a5-f742b8678702</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C24">
+      <value>100n</value>
+      <footprint>KK_Main:KEMET_C315_P2p54</footprint>
+      <datasheet>https://yageogroup.com/download/specsheet/C315C104K5R5TA</datasheet>
+      <fields>
+        <field name="MPN">C315C104K5R5TA</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:KEMET_C315_P2p54</field>
+        <field name="Datasheet">https://yageogroup.com/download/specsheet/C315C104K5R5TA</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="C315C104K5R5TA"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dd9f6b0f-9ef1-4259-a78c-8b7cbc25b024</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C25">
+      <value>100u</value>
+      <footprint>KK_Main:Nichicon_UVR_D5_P2</footprint>
+      <datasheet>https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf</datasheet>
+      <fields>
+        <field name="MPN">UVR1C101MDD</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:Nichicon_UVR_D5_P2</field>
+        <field name="Datasheet">https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uvr.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="MPN" value="UVR1C101MDD"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="CP_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d944840b-9e2e-4f13-a415-8bbf70ff0f1e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C26">
+      <value>100n</value>
+      <footprint>KK_Main:KEMET_C315_P2p54</footprint>
+      <datasheet>https://yageogroup.com/download/specsheet/C315C104K5R5TA</datasheet>
+      <fields>
+        <field name="MPN">C315C104K5R5TA</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:KEMET_C315_P2p54</field>
+        <field name="Datasheet">https://yageogroup.com/download/specsheet/C315C104K5R5TA</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="C315C104K5R5TA"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6ec003f4-6405-438d-a6a2-4549db8f4c46</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D1">
+      <value>TSAL6200</value>
+      <footprint>KK_Main:TSAL6200_LED5</footprint>
+      <datasheet>https://www.vishay.com/docs/81010/tsal6200.pdf</datasheet>
+      <fields>
+        <field name="MPN">TSAL6200</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:TSAL6200_LED5</field>
+        <field name="Datasheet">https://www.vishay.com/docs/81010/tsal6200.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="TSAL6200"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7f9942cf-fec8-4611-a75d-de9e8e0dd171</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D2">
+      <value>1N5819</value>
+      <footprint>KK_Main:1N5819_DO41</footprint>
+      <datasheet>https://www.vishay.com/docs/88525/1n5817.pdf</datasheet>
+      <fields>
+        <field name="MPN">1N5819-E3/54</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:1N5819_DO41</field>
+        <field name="Datasheet">https://www.vishay.com/docs/88525/1n5817.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="D_Schottky" description="Schottky diode"/>
+      <property name="MPN" value="1N5819-E3/54"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="diode Schottky"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>225f2e3f-06dd-4eba-ac93-42c17a7368c4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J1">
+      <value>SYS_IN / JST-XH</value>
+      <footprint>KK_Main:JST_XH_B4B_4</footprint>
+      <datasheet>https://www.jst-mfg.com/product/pdf/eng/eXH.pdf</datasheet>
+      <fields>
+        <field name="MPN">B4B-XH-A(LF)(SN)</field>
+        <field name="Review">4-rail-interface pins include ground; future supply must sequence rails together</field>
+        <field name="Footprint">KK_Main:JST_XH_B4B_4</field>
+        <field name="Datasheet">https://www.jst-mfg.com/product/pdf/eng/eXH.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="Power_Header" description=""/>
+      <property name="MPN" value="B4B-XH-A(LF)(SN)"/>
+      <property name="Review" value="4-rail-interface pins include ground; future supply must sequence rails together"/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>79308faf-ab7f-4c86-a41c-40e92b2b847a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J2">
+      <value>XIITIA TFT header</value>
+      <footprint>KK_Main:Sullins_PPTC081_LFB</footprint>
+      <datasheet>https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/937/Female_Headers.100_DS.pdf</datasheet>
+      <fields>
+        <field name="MPN">PPTC081LFBN-RC</field>
+        <field name="Review">Display module B0DFWL25RB is a separate assembly item</field>
+        <field name="Footprint">KK_Main:Sullins_PPTC081_LFB</field>
+        <field name="Datasheet">https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/937/Female_Headers.100_DS.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="TFT_Header" description=""/>
+      <property name="MPN" value="PPTC081LFBN-RC"/>
+      <property name="Review" value="Display module B0DFWL25RB is a separate assembly item"/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7fb2acbf-b81e-4ad9-a9a5-c6158b8f124a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J3">
+      <value>GODIYMODULES SD</value>
+      <footprint>KK_Main:Sullins_PPTC061_LFB</footprint>
+      <datasheet>https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/937/Female_Headers.100_DS.pdf</datasheet>
+      <fields>
+        <field name="MPN">PPTC061LFBN-RC</field>
+        <field name="Review">SD module B0F82XWT4F is a separate assembly item</field>
+        <field name="Footprint">KK_Main:Sullins_PPTC061_LFB</field>
+        <field name="Datasheet">https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/937/Female_Headers.100_DS.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="SD_Header" description=""/>
+      <property name="MPN" value="PPTC061LFBN-RC"/>
+      <property name="Review" value="SD module B0F82XWT4F is a separate assembly item"/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>de7b95c8-c254-477f-ae53-f25e05610efd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J4">
+      <value>LCM0827A3038F motor</value>
+      <footprint>KK_Main:JST_PH_S2B_2</footprint>
+      <datasheet>https://www.jst-mfg.com/product/pdf/eng/ePH.pdf</datasheet>
+      <fields>
+        <field name="MPN">S2B-PH-K-S(LF)(SN)</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:JST_PH_S2B_2</field>
+        <field name="Datasheet">https://www.jst-mfg.com/product/pdf/eng/ePH.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="Motor_Header" description=""/>
+      <property name="MPN" value="S2B-PH-K-S(LF)(SN)"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>867158ba-d965-4bfd-a728-d14cf52a0157</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J5">
+      <value>8 ohm speaker</value>
+      <footprint>KK_Main:JST_PH_S2B_2</footprint>
+      <datasheet>https://www.jst-mfg.com/product/pdf/eng/ePH.pdf</datasheet>
+      <fields>
+        <field name="MPN">S2B-PH-K-S(LF)(SN)</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:JST_PH_S2B_2</field>
+        <field name="Datasheet">https://www.jst-mfg.com/product/pdf/eng/ePH.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="Speaker_Header" description=""/>
+      <property name="MPN" value="S2B-PH-K-S(LF)(SN)"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>256b1704-9a4e-40d7-ab7d-527701035825</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="MOD1">
+      <value>ESP32-S3 SuperMini</value>
+      <footprint>KK_Main:ESP32-S3-SuperMini</footprint>
+      <datasheet>https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf</datasheet>
+      <fields>
+        <field name="MPN">Teyleten B0D47HBFDY</field>
+        <field name="Review">Carrier pad numbering/voltage path requires delivered-module qualification</field>
+        <field name="Footprint">KK_Main:ESP32-S3-SuperMini</field>
+        <field name="Datasheet">https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="SuperMini_Header" description=""/>
+      <property name="MPN" value="Teyleten B0D47HBFDY"/>
+      <property name="Review" value="Carrier pad numbering/voltage path requires delivered-module qualification"/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fa75b2bb-afb2-4fc6-a5c1-4348f533eb6c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="5V"/>
+            <pin num="GND"/>
+            <pin num="3V3"/>
+            <pin num="3"/>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="TX"/>
+            <pin num="RX"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q1">
+      <value>KSP2222ABU</value>
+      <footprint>KK_Main:TO92_LeadFormed_P2p54</footprint>
+      <datasheet>https://www.onsemi.com/pdf/datasheet/ksp2222a-d.pdf</datasheet>
+      <fields>
+        <field name="MPN">KSP2222ABU</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:TO92_LeadFormed_P2p54</field>
+        <field name="Datasheet">https://www.onsemi.com/pdf/datasheet/ksp2222a-d.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="KSP2222ABU" description="NPN bipolar junction transistor"/>
+      <property name="MPN" value="KSP2222ABU"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="BJT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>48ac45c5-e0d4-46cc-aecf-5eab4ffa4146</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q2">
+      <value>KSP2222ABU</value>
+      <footprint>KK_Main:TO92_LeadFormed_P2p54</footprint>
+      <datasheet>https://www.onsemi.com/pdf/datasheet/ksp2222a-d.pdf</datasheet>
+      <fields>
+        <field name="MPN">KSP2222ABU</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:TO92_LeadFormed_P2p54</field>
+        <field name="Datasheet">https://www.onsemi.com/pdf/datasheet/ksp2222a-d.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="KSP2222ABU" description="NPN bipolar junction transistor"/>
+      <property name="MPN" value="KSP2222ABU"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="BJT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>67532b25-d8e3-4e3f-a40f-7a9b907724a8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q3">
+      <value>BC32725BU</value>
+      <footprint>KK_Main:TO92_LeadFormed_P2p54</footprint>
+      <datasheet>https://www.onsemi.com/pub/Collateral/BC327-D.PDF</datasheet>
+      <fields>
+        <field name="MPN">BC32725BU</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:TO92_LeadFormed_P2p54</field>
+        <field name="Datasheet">https://www.onsemi.com/pub/Collateral/BC327-D.PDF</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="BC32725BU" description="PNP bipolar junction transistor"/>
+      <property name="MPN" value="BC32725BU"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="BJT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>23473bf0-4864-4fac-a17d-ebc299899984</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q4">
+      <value>TN0702N3-G</value>
+      <footprint>KK_Main:TO92_LeadFormed_P2p54</footprint>
+      <datasheet>https://ww1.microchip.com/downloads/en/DeviceDoc/TN0702-N-Channel-Enhancement-Mode-Vertical-DMOS-FET-Data-Sheet-20005941A.pdf</datasheet>
+      <fields>
+        <field name="MPN">TN0702N3-G</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:TO92_LeadFormed_P2p54</field>
+        <field name="Datasheet">https://ww1.microchip.com/downloads/en/DeviceDoc/TN0702-N-Channel-Enhancement-Mode-Vertical-DMOS-FET-Data-Sheet-20005941A.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="TN0702N3_G" description="N-MOSFET transistor"/>
+      <property name="MPN" value="TN0702N3-G"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="NMOS N-MOS"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d01a73e1-4ebb-4d61-a648-b37b9b7aaf95</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q5">
+      <value>TN0702N3-G</value>
+      <footprint>KK_Main:TO92_LeadFormed_P2p54</footprint>
+      <datasheet>https://ww1.microchip.com/downloads/en/DeviceDoc/TN0702-N-Channel-Enhancement-Mode-Vertical-DMOS-FET-Data-Sheet-20005941A.pdf</datasheet>
+      <fields>
+        <field name="MPN">TN0702N3-G</field>
+        <field name="Review">C.2: NMOS gate driver, S-G-D pins 1-2-3.</field>
+        <field name="Footprint">KK_Main:TO92_LeadFormed_P2p54</field>
+        <field name="Datasheet">https://ww1.microchip.com/downloads/en/DeviceDoc/TN0702-N-Channel-Enhancement-Mode-Vertical-DMOS-FET-Data-Sheet-20005941A.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="TN0702N3_G" description="N-MOSFET transistor"/>
+      <property name="MPN" value="TN0702N3-G"/>
+      <property name="Review" value="C.2: NMOS gate driver, S-G-D pins 1-2-3."/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="NMOS N-MOS"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>99d5e002-0c60-4190-adaa-39520af0f0e8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q6">
+      <value>LP0701N3-G</value>
+      <footprint>KK_Main:TO92_LeadFormed_P2p54</footprint>
+      <datasheet>https://ww1.microchip.com/downloads/en/DeviceDoc/LP0701-P-Channel-Enhancement-Mode-Lateral-MOSFET-Data-Sheet-20005447A.pdf</datasheet>
+      <fields>
+        <field name="MPN">LP0701N3-G</field>
+        <field name="Review">C.2: PMOS S-G-D pins 1-2-3. Do not fit former BC327 here.</field>
+        <field name="Footprint">KK_Main:TO92_LeadFormed_P2p54</field>
+        <field name="Datasheet">https://ww1.microchip.com/downloads/en/DeviceDoc/LP0701-P-Channel-Enhancement-Mode-Lateral-MOSFET-Data-Sheet-20005447A.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="LP0701N3_G" description="P-MOSFET transistor"/>
+      <property name="MPN" value="LP0701N3-G"/>
+      <property name="Review" value="C.2: PMOS S-G-D pins 1-2-3. Do not fit former BC327 here."/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="PMOS P-MOS"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>58aa900f-344f-44d1-a0c3-62d61256dd2b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>4.7k</value>
+      <footprint>KK_Main:MFR25_10p16</footprint>
+      <datasheet>https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</datasheet>
+      <fields>
+        <field name="MPN">MFR-25FBF52-4K7</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:MFR25_10p16</field>
+        <field name="Datasheet">https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="R" description="Resistor"/>
+      <property name="MPN" value="MFR-25FBF52-4K7"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>93639b9f-5cab-4434-aa86-95cd5bf18c80</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>4.7k</value>
+      <footprint>KK_Main:MFR25_10p16</footprint>
+      <datasheet>https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</datasheet>
+      <fields>
+        <field name="MPN">MFR-25FBF52-4K7</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:MFR25_10p16</field>
+        <field name="Datasheet">https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="R" description="Resistor"/>
+      <property name="MPN" value="MFR-25FBF52-4K7"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>582f8c1a-efd8-4f7f-af76-15cb453929e9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R3">
+      <value>10k</value>
+      <footprint>KK_Main:MFR25_10p16</footprint>
+      <datasheet>https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</datasheet>
+      <fields>
+        <field name="MPN">MFR-25FBF52-10K</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:MFR25_10p16</field>
+        <field name="Datasheet">https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="R" description="Resistor"/>
+      <property name="MPN" value="MFR-25FBF52-10K"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>896d2c51-1ee9-4739-a9fe-b1858afa6498</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R4">
+      <value>10k</value>
+      <footprint>KK_Main:MFR25_10p16</footprint>
+      <datasheet>https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</datasheet>
+      <fields>
+        <field name="MPN">MFR-25FBF52-10K</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:MFR25_10p16</field>
+        <field name="Datasheet">https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="R" description="Resistor"/>
+      <property name="MPN" value="MFR-25FBF52-10K"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2314afb1-d238-4322-ad3f-b2caf1939117</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R5">
+      <value>10k</value>
+      <footprint>KK_Main:MFR25_10p16</footprint>
+      <datasheet>https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</datasheet>
+      <fields>
+        <field name="MPN">MFR-25FBF52-10K</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:MFR25_10p16</field>
+        <field name="Datasheet">https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="R" description="Resistor"/>
+      <property name="MPN" value="MFR-25FBF52-10K"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>de73e5e3-7ece-475d-a20d-ed00262ba386</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R6">
+      <value>10k</value>
+      <footprint>KK_Main:MFR25_10p16</footprint>
+      <datasheet>https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</datasheet>
+      <fields>
+        <field name="MPN">MFR-25FBF52-10K</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:MFR25_10p16</field>
+        <field name="Datasheet">https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="R" description="Resistor"/>
+      <property name="MPN" value="MFR-25FBF52-10K"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>74680b79-182a-41f2-ab15-127d5a3eacd1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R7">
+      <value>10k</value>
+      <footprint>KK_Main:MFR25_10p16</footprint>
+      <datasheet>https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</datasheet>
+      <fields>
+        <field name="MPN">MFR-25FBF52-10K</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:MFR25_10p16</field>
+        <field name="Datasheet">https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="R" description="Resistor"/>
+      <property name="MPN" value="MFR-25FBF52-10K"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2221815a-3a2f-43bf-a387-cc6c34f20c83</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R8">
+      <value>10k</value>
+      <footprint>KK_Main:MFR25_10p16</footprint>
+      <datasheet>https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</datasheet>
+      <fields>
+        <field name="MPN">MFR-25FBF52-10K</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:MFR25_10p16</field>
+        <field name="Datasheet">https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="R" description="Resistor"/>
+      <property name="MPN" value="MFR-25FBF52-10K"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4ae4be69-04ad-4024-a662-629c1eb73146</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R9">
+      <value>10k</value>
+      <footprint>KK_Main:MFR25_10p16</footprint>
+      <datasheet>https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</datasheet>
+      <fields>
+        <field name="MPN">MFR-25FBF52-10K</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:MFR25_10p16</field>
+        <field name="Datasheet">https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="R" description="Resistor"/>
+      <property name="MPN" value="MFR-25FBF52-10K"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>588f7133-1611-48a0-a6cc-4ef143fb8a73</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R10">
+      <value>10k</value>
+      <footprint>KK_Main:MFR25_10p16</footprint>
+      <datasheet>https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</datasheet>
+      <fields>
+        <field name="MPN">MFR-25FBF52-10K</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:MFR25_10p16</field>
+        <field name="Datasheet">https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="R" description="Resistor"/>
+      <property name="MPN" value="MFR-25FBF52-10K"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e434b42a-7ea1-4016-a7d2-d27acdda6f22</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R11">
+      <value>10k</value>
+      <footprint>KK_Main:MFR25_10p16</footprint>
+      <datasheet>https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</datasheet>
+      <fields>
+        <field name="MPN">MFR-25FBF52-10K</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:MFR25_10p16</field>
+        <field name="Datasheet">https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="R" description="Resistor"/>
+      <property name="MPN" value="MFR-25FBF52-10K"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7c3fa614-58a4-4b51-abb2-49c041bd56a0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R12">
+      <value>10k</value>
+      <footprint>KK_Main:MFR25_10p16</footprint>
+      <datasheet>https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</datasheet>
+      <fields>
+        <field name="MPN">MFR-25FBF52-10K</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:MFR25_10p16</field>
+        <field name="Datasheet">https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="R" description="Resistor"/>
+      <property name="MPN" value="MFR-25FBF52-10K"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>669a4a8b-3287-467f-aadb-87df80c151c8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R13">
+      <value>10k</value>
+      <footprint>KK_Main:MFR25_10p16</footprint>
+      <datasheet>https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</datasheet>
+      <fields>
+        <field name="MPN">MFR-25FBF52-10K</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:MFR25_10p16</field>
+        <field name="Datasheet">https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="R" description="Resistor"/>
+      <property name="MPN" value="MFR-25FBF52-10K"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1267df32-9632-4acb-ad9b-62b245e3901b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R14">
+      <value>10k</value>
+      <footprint>KK_Main:MFR25_10p16</footprint>
+      <datasheet>https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</datasheet>
+      <fields>
+        <field name="MPN">MFR-25FBF52-10K</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:MFR25_10p16</field>
+        <field name="Datasheet">https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="R" description="Resistor"/>
+      <property name="MPN" value="MFR-25FBF52-10K"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>af29942a-1d9d-4392-a815-c52c80f4d0eb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R15">
+      <value>10k</value>
+      <footprint>KK_Main:MFR25_10p16</footprint>
+      <datasheet>https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</datasheet>
+      <fields>
+        <field name="MPN">MFR-25FBF52-10K</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:MFR25_10p16</field>
+        <field name="Datasheet">https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="R" description="Resistor"/>
+      <property name="MPN" value="MFR-25FBF52-10K"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3b1d6e83-c56c-4398-a706-4770305533f3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R16">
+      <value>10k</value>
+      <footprint>KK_Main:MFR25_10p16</footprint>
+      <datasheet>https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</datasheet>
+      <fields>
+        <field name="MPN">MFR-25FBF52-10K</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:MFR25_10p16</field>
+        <field name="Datasheet">https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="R" description="Resistor"/>
+      <property name="MPN" value="MFR-25FBF52-10K"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d39802eb-dfbc-4f10-a646-f1fcae9c623c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R17">
+      <value>10k</value>
+      <footprint>KK_Main:MFR25_10p16</footprint>
+      <datasheet>https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</datasheet>
+      <fields>
+        <field name="MPN">MFR-25FBF52-10K</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:MFR25_10p16</field>
+        <field name="Datasheet">https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="R" description="Resistor"/>
+      <property name="MPN" value="MFR-25FBF52-10K"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>21265a64-4b90-4dc0-aeb5-72f4eba2487d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R18">
+      <value>10k</value>
+      <footprint>KK_Main:MFR25_10p16</footprint>
+      <datasheet>https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</datasheet>
+      <fields>
+        <field name="MPN">MFR-25FBF52-10K</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:MFR25_10p16</field>
+        <field name="Datasheet">https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="R" description="Resistor"/>
+      <property name="MPN" value="MFR-25FBF52-10K"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2d0b594f-a408-4ee3-aef3-5c27943d4f4f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R19">
+      <value>4.7k</value>
+      <footprint>KK_Main:MFR25_10p16</footprint>
+      <datasheet>https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</datasheet>
+      <fields>
+        <field name="MPN">MFR-25FBF52-4K7</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:MFR25_10p16</field>
+        <field name="Datasheet">https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="R" description="Resistor"/>
+      <property name="MPN" value="MFR-25FBF52-4K7"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6f369124-a485-45d8-a078-5e4eafaa8079</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R20">
+      <value>100k</value>
+      <footprint>KK_Main:MFR25_10p16</footprint>
+      <datasheet>https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</datasheet>
+      <fields>
+        <field name="MPN">MFR-25FBF52-100K</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:MFR25_10p16</field>
+        <field name="Datasheet">https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="R" description="Resistor"/>
+      <property name="MPN" value="MFR-25FBF52-100K"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2c9088f2-2765-44e6-a238-98e20b37b0cc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R21">
+      <value>220</value>
+      <footprint>KK_Main:MFR25_10p16</footprint>
+      <datasheet>https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</datasheet>
+      <fields>
+        <field name="MPN">MFR-25FBF52-220R</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:MFR25_10p16</field>
+        <field name="Datasheet">https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="R" description="Resistor"/>
+      <property name="MPN" value="MFR-25FBF52-220R"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>906422c5-fb53-4aeb-a154-bad65f0eba7d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R22">
+      <value>100k</value>
+      <footprint>KK_Main:MFR25_10p16</footprint>
+      <datasheet>https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</datasheet>
+      <fields>
+        <field name="MPN">MFR-25FBF52-100K</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:MFR25_10p16</field>
+        <field name="Datasheet">https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="R" description="Resistor"/>
+      <property name="MPN" value="MFR-25FBF52-100K"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a7231d03-d21c-411e-a741-4e39faaf902d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R23">
+      <value>100</value>
+      <footprint>KK_Main:MFR25_10p16</footprint>
+      <datasheet>https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</datasheet>
+      <fields>
+        <field name="MPN">MFR-25FBF52-100R</field>
+        <field name="Review">Bring-up current limit; bright-screen qualification required</field>
+        <field name="Footprint">KK_Main:MFR25_10p16</field>
+        <field name="Datasheet">https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="R" description="Resistor"/>
+      <property name="MPN" value="MFR-25FBF52-100R"/>
+      <property name="Review" value="Bring-up current limit; bright-screen qualification required"/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>03b7ba4c-453f-491c-a0b3-d8a770a39e2a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R24">
+      <value>100</value>
+      <footprint>KK_Main:MFR25_10p16</footprint>
+      <datasheet>https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</datasheet>
+      <fields>
+        <field name="MPN">MFR-25FBF52-100R</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:MFR25_10p16</field>
+        <field name="Datasheet">https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="R" description="Resistor"/>
+      <property name="MPN" value="MFR-25FBF52-100R"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c0d9ff11-dc38-4eac-ac5d-ca93d635cf70</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R25">
+      <value>1k</value>
+      <footprint>KK_Main:MFR25_10p16</footprint>
+      <datasheet>https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</datasheet>
+      <fields>
+        <field name="MPN">MFR-25FBF52-1K</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:MFR25_10p16</field>
+        <field name="Datasheet">https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="R" description="Resistor"/>
+      <property name="MPN" value="MFR-25FBF52-1K"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ee746b08-04c5-4569-a873-ad75de955ef9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R26">
+      <value>100k</value>
+      <footprint>KK_Main:MFR25_10p16</footprint>
+      <datasheet>https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</datasheet>
+      <fields>
+        <field name="MPN">MFR-25FBF52-100K</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:MFR25_10p16</field>
+        <field name="Datasheet">https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="R" description="Resistor"/>
+      <property name="MPN" value="MFR-25FBF52-100K"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c7eb3e3f-4cf9-40de-a125-ad87a9757bab</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R27">
+      <value>100</value>
+      <footprint>KK_Main:MFR25_10p16</footprint>
+      <datasheet>https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</datasheet>
+      <fields>
+        <field name="MPN">MFR-25FBF52-100R</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:MFR25_10p16</field>
+        <field name="Datasheet">https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="R" description="Resistor"/>
+      <property name="MPN" value="MFR-25FBF52-100R"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>03d72a8f-1b16-4129-a8db-7fe869592025</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R28">
+      <value>100</value>
+      <footprint>KK_Main:MFR25_10p16</footprint>
+      <datasheet>https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</datasheet>
+      <fields>
+        <field name="MPN">MFR-25FBF52-100R</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:MFR25_10p16</field>
+        <field name="Datasheet">https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="R" description="Resistor"/>
+      <property name="MPN" value="MFR-25FBF52-100R"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5761bb42-2472-4225-a72f-df49f67d6afa</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R29">
+      <value>100k</value>
+      <footprint>KK_Main:MFR25_10p16</footprint>
+      <datasheet>https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</datasheet>
+      <fields>
+        <field name="MPN">MFR-25FBF52-100K</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:MFR25_10p16</field>
+        <field name="Datasheet">https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="R" description="Resistor"/>
+      <property name="MPN" value="MFR-25FBF52-100K"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6b9c08ff-5b73-4eb4-a79b-8ba44857fa18</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R30">
+      <value>1k</value>
+      <footprint>KK_Main:MFR25_10p16</footprint>
+      <datasheet>https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</datasheet>
+      <fields>
+        <field name="MPN">MFR-25FBF52-1K</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:MFR25_10p16</field>
+        <field name="Datasheet">https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="R" description="Resistor"/>
+      <property name="MPN" value="MFR-25FBF52-1K"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9b6eed1f-ef7a-4ec8-a182-2a20717a7007</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R31">
+      <value>1k</value>
+      <footprint>KK_Main:MFR25_10p16</footprint>
+      <datasheet>https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</datasheet>
+      <fields>
+        <field name="MPN">MFR-25FBF52-1K</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:MFR25_10p16</field>
+        <field name="Datasheet">https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="R" description="Resistor"/>
+      <property name="MPN" value="MFR-25FBF52-1K"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>efaa2d9d-3477-46b4-a801-af7d1e05ecb4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R32">
+      <value>100k</value>
+      <footprint>KK_Main:MFR25_10p16</footprint>
+      <datasheet>https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</datasheet>
+      <fields>
+        <field name="MPN">MFR-25FBF52-100K</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:MFR25_10p16</field>
+        <field name="Datasheet">https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="R" description="Resistor"/>
+      <property name="MPN" value="MFR-25FBF52-100K"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b843955c-2185-4114-a3c7-fca2353ada80</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R33">
+      <value>1k</value>
+      <footprint>KK_Main:MFR25_10p16</footprint>
+      <datasheet>https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</datasheet>
+      <fields>
+        <field name="MPN">MFR-25FBF52-1K</field>
+        <field name="Review">Conservative fixed attenuation; prototype gain check</field>
+        <field name="Footprint">KK_Main:MFR25_10p16</field>
+        <field name="Datasheet">https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="R" description="Resistor"/>
+      <property name="MPN" value="MFR-25FBF52-1K"/>
+      <property name="Review" value="Conservative fixed attenuation; prototype gain check"/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>06967610-1db8-4157-ac7c-3789b3031b13</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R34">
+      <value>4.7</value>
+      <footprint>KK_Main:MFR25_10p16</footprint>
+      <datasheet>https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</datasheet>
+      <fields>
+        <field name="MPN">MFR-25FBF52-4R7</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:MFR25_10p16</field>
+        <field name="Datasheet">https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="R" description="Resistor"/>
+      <property name="MPN" value="MFR-25FBF52-4R7"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>33b2cc22-e2ec-43d2-a025-7ea57cca494e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R35">
+      <value>4.7</value>
+      <footprint>KK_Main:MFR25_10p16</footprint>
+      <datasheet>https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</datasheet>
+      <fields>
+        <field name="MPN">MFR-25FBF52-4R7</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:MFR25_10p16</field>
+        <field name="Datasheet">https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="R" description="Resistor"/>
+      <property name="MPN" value="MFR-25FBF52-4R7"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c43f06fd-651b-4126-ae1d-4d9304075ef8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R36">
+      <value>1k</value>
+      <footprint>KK_Main:MFR25_10p16</footprint>
+      <datasheet>https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</datasheet>
+      <fields>
+        <field name="MPN">MFR-25FBF52-1K</field>
+        <field name="Review">C.2 gate series resistor; no bipolar base current.</field>
+        <field name="Footprint">KK_Main:MFR25_10p16</field>
+        <field name="Datasheet">https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="R" description="Resistor"/>
+      <property name="MPN" value="MFR-25FBF52-1K"/>
+      <property name="Review" value="C.2 gate series resistor; no bipolar base current."/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>73184fd1-9f6a-41ef-a2d3-94d05c49224f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R37">
+      <value>100k</value>
+      <footprint>KK_Main:MFR25_10p16</footprint>
+      <datasheet>https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</datasheet>
+      <fields>
+        <field name="MPN">MFR-25FBF52-100K</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:MFR25_10p16</field>
+        <field name="Datasheet">https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="R" description="Resistor"/>
+      <property name="MPN" value="MFR-25FBF52-100K"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dd574d4f-089b-4b5d-a89e-566c221da249</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R38">
+      <value>1k</value>
+      <footprint>KK_Main:MFR25_10p16</footprint>
+      <datasheet>https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</datasheet>
+      <fields>
+        <field name="MPN">MFR-25FBF52-1K</field>
+        <field name="Review">C.2 gate series resistor; no bipolar base current.</field>
+        <field name="Footprint">KK_Main:MFR25_10p16</field>
+        <field name="Datasheet">https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="R" description="Resistor"/>
+      <property name="MPN" value="MFR-25FBF52-1K"/>
+      <property name="Review" value="C.2 gate series resistor; no bipolar base current."/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>12a71345-eba4-4bb4-a3ad-5fc2df085451</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R39">
+      <value>100k</value>
+      <footprint>KK_Main:MFR25_10p16</footprint>
+      <datasheet>https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</datasheet>
+      <fields>
+        <field name="MPN">MFR-25FBF52-100K</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:MFR25_10p16</field>
+        <field name="Datasheet">https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="R" description="Resistor"/>
+      <property name="MPN" value="MFR-25FBF52-100K"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>39a8a7f8-bab7-4fa1-a087-573697599774</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW1">
+      <value>UP</value>
+      <footprint>KK_Main:Adafruit3101_ABCD</footprint>
+      <datasheet>https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png</datasheet>
+      <fields>
+        <field name="MPN">Adafruit 3101</field>
+        <field name="Review">200 ohm maximum closed contact resistance; custom footprint pending</field>
+        <field name="Footprint">KK_Main:Adafruit3101_ABCD</field>
+        <field name="Datasheet">https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="SoftSwitch" description=""/>
+      <property name="MPN" value="Adafruit 3101"/>
+      <property name="Review" value="200 ohm maximum closed contact resistance; custom footprint pending"/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bc2f4c55-fdf7-4d45-af2c-1f81a950e23b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="A"/>
+            <pin num="B"/>
+            <pin num="C"/>
+            <pin num="D"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW2">
+      <value>DOWN</value>
+      <footprint>KK_Main:Adafruit3101_ABCD</footprint>
+      <datasheet>https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png</datasheet>
+      <fields>
+        <field name="MPN">Adafruit 3101</field>
+        <field name="Review">200 ohm maximum closed contact resistance; custom footprint pending</field>
+        <field name="Footprint">KK_Main:Adafruit3101_ABCD</field>
+        <field name="Datasheet">https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="SoftSwitch" description=""/>
+      <property name="MPN" value="Adafruit 3101"/>
+      <property name="Review" value="200 ohm maximum closed contact resistance; custom footprint pending"/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dc9386f2-c571-4791-ae1d-7d53ec3f818d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="A"/>
+            <pin num="B"/>
+            <pin num="C"/>
+            <pin num="D"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW3">
+      <value>LEFT</value>
+      <footprint>KK_Main:Adafruit3101_ABCD</footprint>
+      <datasheet>https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png</datasheet>
+      <fields>
+        <field name="MPN">Adafruit 3101</field>
+        <field name="Review">200 ohm maximum closed contact resistance; custom footprint pending</field>
+        <field name="Footprint">KK_Main:Adafruit3101_ABCD</field>
+        <field name="Datasheet">https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="SoftSwitch" description=""/>
+      <property name="MPN" value="Adafruit 3101"/>
+      <property name="Review" value="200 ohm maximum closed contact resistance; custom footprint pending"/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>de33e2f7-302e-459e-a0c0-567e81f9e867</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="A"/>
+            <pin num="B"/>
+            <pin num="C"/>
+            <pin num="D"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW4">
+      <value>RIGHT</value>
+      <footprint>KK_Main:Adafruit3101_ABCD</footprint>
+      <datasheet>https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png</datasheet>
+      <fields>
+        <field name="MPN">Adafruit 3101</field>
+        <field name="Review">200 ohm maximum closed contact resistance; custom footprint pending</field>
+        <field name="Footprint">KK_Main:Adafruit3101_ABCD</field>
+        <field name="Datasheet">https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="SoftSwitch" description=""/>
+      <property name="MPN" value="Adafruit 3101"/>
+      <property name="Review" value="200 ohm maximum closed contact resistance; custom footprint pending"/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>200acf60-d6f7-4e65-a065-7a337737cdaf</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="A"/>
+            <pin num="B"/>
+            <pin num="C"/>
+            <pin num="D"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW5">
+      <value>A</value>
+      <footprint>KK_Main:Adafruit3101_ABCD</footprint>
+      <datasheet>https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png</datasheet>
+      <fields>
+        <field name="MPN">Adafruit 3101</field>
+        <field name="Review">200 ohm maximum closed contact resistance; custom footprint pending</field>
+        <field name="Footprint">KK_Main:Adafruit3101_ABCD</field>
+        <field name="Datasheet">https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="SoftSwitch" description=""/>
+      <property name="MPN" value="Adafruit 3101"/>
+      <property name="Review" value="200 ohm maximum closed contact resistance; custom footprint pending"/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>30404e73-e4b3-462d-adcf-9d4bc3b8b035</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="A"/>
+            <pin num="B"/>
+            <pin num="C"/>
+            <pin num="D"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW6">
+      <value>B</value>
+      <footprint>KK_Main:Adafruit3101_ABCD</footprint>
+      <datasheet>https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png</datasheet>
+      <fields>
+        <field name="MPN">Adafruit 3101</field>
+        <field name="Review">200 ohm maximum closed contact resistance; custom footprint pending</field>
+        <field name="Footprint">KK_Main:Adafruit3101_ABCD</field>
+        <field name="Datasheet">https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="SoftSwitch" description=""/>
+      <property name="MPN" value="Adafruit 3101"/>
+      <property name="Review" value="200 ohm maximum closed contact resistance; custom footprint pending"/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>68cce614-07b6-4db8-ad13-ceb99748b2dd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="A"/>
+            <pin num="B"/>
+            <pin num="C"/>
+            <pin num="D"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW7">
+      <value>X</value>
+      <footprint>KK_Main:Adafruit3101_ABCD</footprint>
+      <datasheet>https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png</datasheet>
+      <fields>
+        <field name="MPN">Adafruit 3101</field>
+        <field name="Review">200 ohm maximum closed contact resistance; custom footprint pending</field>
+        <field name="Footprint">KK_Main:Adafruit3101_ABCD</field>
+        <field name="Datasheet">https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="SoftSwitch" description=""/>
+      <property name="MPN" value="Adafruit 3101"/>
+      <property name="Review" value="200 ohm maximum closed contact resistance; custom footprint pending"/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d2eb9fa2-2c9c-44cb-a5dd-e5289671f603</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="A"/>
+            <pin num="B"/>
+            <pin num="C"/>
+            <pin num="D"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW8">
+      <value>Y</value>
+      <footprint>KK_Main:Adafruit3101_ABCD</footprint>
+      <datasheet>https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png</datasheet>
+      <fields>
+        <field name="MPN">Adafruit 3101</field>
+        <field name="Review">200 ohm maximum closed contact resistance; custom footprint pending</field>
+        <field name="Footprint">KK_Main:Adafruit3101_ABCD</field>
+        <field name="Datasheet">https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="SoftSwitch" description=""/>
+      <property name="MPN" value="Adafruit 3101"/>
+      <property name="Review" value="200 ohm maximum closed contact resistance; custom footprint pending"/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>99d0ffbc-4790-41a6-a3c1-1322b4dd9eb9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="A"/>
+            <pin num="B"/>
+            <pin num="C"/>
+            <pin num="D"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW9">
+      <value>FN</value>
+      <footprint>KK_Main:Adafruit3101_ABCD</footprint>
+      <datasheet>https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png</datasheet>
+      <fields>
+        <field name="MPN">Adafruit 3101</field>
+        <field name="Review">200 ohm maximum closed contact resistance; custom footprint pending</field>
+        <field name="Footprint">KK_Main:Adafruit3101_ABCD</field>
+        <field name="Datasheet">https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="SoftSwitch" description=""/>
+      <property name="MPN" value="Adafruit 3101"/>
+      <property name="Review" value="200 ohm maximum closed contact resistance; custom footprint pending"/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5c3662d1-7efe-456e-a7fc-07c04ff40de0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="A"/>
+            <pin num="B"/>
+            <pin num="C"/>
+            <pin num="D"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>MCP23017-E/SP</value>
+      <footprint>KK_Main:ED281DT_DIP28_Socket</footprint>
+      <datasheet>https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP23017-Data-Sheet-DS20001952.pdf</datasheet>
+      <fields>
+        <field name="MPN">MCP23017-E/SP</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:ED281DT_DIP28_Socket</field>
+        <field name="Datasheet">https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP23017-Data-Sheet-DS20001952.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="MCP23017_Functional" description=""/>
+      <property name="MPN" value="MCP23017-E/SP"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2b43ee71-0769-4213-a74f-d757d66d170f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="20"/>
+            <pin num="18"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="8"/>
+            <pin num="11"/>
+            <pin num="14"/>
+            <pin num="19"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="25"/>
+            <pin num="26"/>
+            <pin num="27"/>
+            <pin num="28"/>
+            <pin num="21"/>
+            <pin num="22"/>
+            <pin num="23"/>
+            <pin num="24"/>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U2">
+      <value>TSOP38238</value>
+      <footprint>KK_Main:TSOP38238_Vertical</footprint>
+      <datasheet>https://www.vishay.com/docs/82491/tsop382.pdf</datasheet>
+      <fields>
+        <field name="MPN">TSOP38238</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:TSOP38238_Vertical</field>
+        <field name="Datasheet">https://www.vishay.com/docs/82491/tsop382.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="IR_Receiver" description=""/>
+      <property name="MPN" value="TSOP38238"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>be2bab2a-47e4-46ef-a436-0174a87cb072</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="3"/>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U3">
+      <value>TDA2822L-D08-T</value>
+      <footprint>KK_Main:ED08DT_DIP8_Socket</footprint>
+      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/8599ab4088134d37b4be13f0dc390034.pdf</datasheet>
+      <fields>
+        <field name="MPN">TDA2822L-D08-T</field>
+        <field name="Review"/>
+        <field name="Footprint">KK_Main:ED08DT_DIP8_Socket</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/8599ab4088134d37b4be13f0dc390034.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="KK_Main" part="TDA2822_Bridge" description=""/>
+      <property name="MPN" value="TDA2822L-D08-T"/>
+      <property name="Review" value=""/>
+      <property name="Sheetname" value="KK_main_module"/>
+      <property name="Sheetfile" value="KK_main_module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>923c7bb2-8e7d-4f59-adf0-d8a0c52c104d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="7"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="1"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="KK_Main" part="BC32725BU">
+      <description>PNP bipolar junction transistor</description>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_PNP</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">PNP bipolar junction transistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="C" type="passive"/>
+        <pin num="2" name="B" type="input"/>
+        <pin num="3" name="E" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="KK_Main" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="KK_Main" part="C_Polarized">
+      <description>Polarized capacitor</description>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Polarized</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Polarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="KK_Main" part="D_Schottky">
+      <description>Schottky diode</description>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Schottky diode</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="KK_Main" part="IR_Receiver">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">IR_Receiver</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="OUT" type="output"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="VS" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="KK_Main" part="KSP2222ABU">
+      <description>NPN bipolar junction transistor</description>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_NPN</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">NPN bipolar junction transistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="E" type="passive"/>
+        <pin num="2" name="B" type="input"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="KK_Main" part="LED">
+      <description>Light emitting diode</description>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Light emitting diode</field>
+        <field name="Sim.Pins">1=K 2=A</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="KK_Main" part="LP0701N3_G">
+      <description>P-MOSFET transistor</description>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">LP0701N3-G</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">P-MOSFET transistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="S" type="passive"/>
+        <pin num="2" name="G" type="input"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="KK_Main" part="MCP23017_Functional">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MCP23017_Functional</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GPB0_/_A" type="bidirectional"/>
+        <pin num="2" name="GPB1_/_B" type="bidirectional"/>
+        <pin num="3" name="GPB2_/_X" type="bidirectional"/>
+        <pin num="4" name="GPB3_/_Y" type="bidirectional"/>
+        <pin num="5" name="GPB4_/_AMP_EN" type="bidirectional"/>
+        <pin num="6" name="GPB5_/_MOTOR_EN" type="bidirectional"/>
+        <pin num="7" name="GPB6_/_TFT_RESET" type="bidirectional"/>
+        <pin num="8" name="GPB7" type="output"/>
+        <pin num="9" name="VDD" type="power_in"/>
+        <pin num="10" name="VSS" type="power_in"/>
+        <pin num="11" name="NC" type="no_connect"/>
+        <pin num="12" name="SCL" type="input"/>
+        <pin num="13" name="SDA" type="bidirectional"/>
+        <pin num="14" name="NC" type="no_connect"/>
+        <pin num="15" name="A0" type="input"/>
+        <pin num="16" name="A1" type="input"/>
+        <pin num="17" name="A2" type="input"/>
+        <pin num="18" name="RESET_N" type="input"/>
+        <pin num="19" name="INTB" type="open_collector"/>
+        <pin num="20" name="INTA" type="open_collector"/>
+        <pin num="21" name="GPA0_/_UP" type="bidirectional"/>
+        <pin num="22" name="GPA1_/_DOWN" type="bidirectional"/>
+        <pin num="23" name="GPA2_/_LEFT" type="bidirectional"/>
+        <pin num="24" name="GPA3_/_RIGHT" type="bidirectional"/>
+        <pin num="25" name="GPA4" type="bidirectional"/>
+        <pin num="26" name="GPA5" type="bidirectional"/>
+        <pin num="27" name="GPA6" type="bidirectional"/>
+        <pin num="28" name="GPA7" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="KK_Main" part="Motor_Header">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Motor_Header</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="KK_Main" part="Power_Header">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Power_Header</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="5V_MCU" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="3V3" type="passive"/>
+        <pin num="4" name="3V2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="KK_Main" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="KK_Main" part="SD_Header">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SD_Header</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="3V3" type="passive"/>
+        <pin num="2" name="CS" type="passive"/>
+        <pin num="3" name="MOSI" type="passive"/>
+        <pin num="4" name="CLK" type="passive"/>
+        <pin num="5" name="MISO" type="passive"/>
+        <pin num="6" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="KK_Main" part="SoftSwitch">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SoftSwitch</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="A" name="" type="passive"/>
+        <pin num="B" name="" type="passive"/>
+        <pin num="C" name="" type="passive"/>
+        <pin num="D" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="KK_Main" part="Speaker_Header">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Speaker_Header</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="KK_Main" part="SuperMini_Header">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SuperMini_Header</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GPIO1_/_BUTTON_INT" type="input"/>
+        <pin num="2" name="GPIO2_/_FUNCTION" type="input"/>
+        <pin num="3" name="GPIO3_/_STRAP" type="bidirectional"/>
+        <pin num="3V3" name="3V3_OUT" type="power_out"/>
+        <pin num="4" name="GPIO4_/_SDA" type="bidirectional"/>
+        <pin num="5" name="GPIO5_/_SCL" type="output"/>
+        <pin num="5V" name="5V" type="power_in"/>
+        <pin num="6" name="GPIO6_/_IR_RX" type="input"/>
+        <pin num="7" name="GPIO7_/_IR_TX" type="output"/>
+        <pin num="8" name="GPIO8_/_AUDIO" type="output"/>
+        <pin num="9" name="GPIO9_/_BACKLIGHT" type="output"/>
+        <pin num="10" name="GPIO10_/_SD_CS" type="output"/>
+        <pin num="11" name="GPIO11_/_MOSI" type="output"/>
+        <pin num="12" name="GPIO12_/_MISO" type="input"/>
+        <pin num="13" name="GPIO13_/_SCK" type="output"/>
+        <pin num="GND" name="GND" type="power_in"/>
+        <pin num="RX" name="GPIO44_/_TFT_CS" type="output"/>
+        <pin num="TX" name="GPIO43_/_TFT_DC" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="KK_Main" part="TDA2822_Bridge">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TDA2822_Bridge</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="OUT1" type="output"/>
+        <pin num="2" name="VCC" type="power_in"/>
+        <pin num="3" name="OUT2" type="output"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="NP2" type="input"/>
+        <pin num="6" name="IN2" type="input"/>
+        <pin num="7" name="IN1" type="input"/>
+        <pin num="8" name="NP1" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="KK_Main" part="TFT_Header">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TFT_Header</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="passive"/>
+        <pin num="2" name="VCC" type="passive"/>
+        <pin num="3" name="SCL" type="passive"/>
+        <pin num="4" name="SDA" type="passive"/>
+        <pin num="5" name="RES" type="passive"/>
+        <pin num="6" name="DC" type="passive"/>
+        <pin num="7" name="CS" type="passive"/>
+        <pin num="8" name="BLK" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="KK_Main" part="TN0702N3_G">
+      <description>N-MOSFET transistor</description>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_NMOS</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">N-MOSFET transistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="S" type="passive"/>
+        <pin num="2" name="G" type="input"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="KK_Main">
+      <uri>${KIPRJMOD}/KK_Main.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/ACT_3V2" class="Power">
+      <node ref="C16" pin="1" pintype="passive"/>
+      <node ref="C17" pin="1" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="D2" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="J1" pin="4" pinfunction="3V2_4" pintype="passive"/>
+      <node ref="J4" pin="1" pinfunction="+_1" pintype="passive"/>
+      <node ref="Q6" pin="1" pinfunction="S_1" pintype="passive"/>
+      <node ref="R39" pin="1" pintype="passive"/>
+    </net>
+    <net code="2" name="/AMP_EN" class="Default">
+      <node ref="R36" pin="1" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="GPB4_/_AMP_EN_5" pintype="bidirectional"/>
+    </net>
+    <net code="3" name="/AUDIO_PWM" class="Default">
+      <node ref="MOD1" pin="8" pinfunction="GPIO8_/_AUDIO_8" pintype="output"/>
+      <node ref="R30" pin="1" pintype="passive"/>
+    </net>
+    <net code="4" name="/BL_PWM" class="Default">
+      <node ref="MOD1" pin="9" pinfunction="GPIO9_/_BACKLIGHT_9" pintype="output"/>
+      <node ref="R19" pin="1" pintype="passive"/>
+    </net>
+    <net code="5" name="/BUTTON_FN_N" class="Default">
+      <node ref="MOD1" pin="2" pinfunction="GPIO2_/_FUNCTION_2" pintype="input"/>
+      <node ref="R13" pin="2" pintype="passive"/>
+      <node ref="SW9" pin="A" pintype="passive"/>
+      <node ref="SW9" pin="B" pintype="passive"/>
+    </net>
+    <net code="6" name="/BUTTON_INT_N" class="Default">
+      <node ref="MOD1" pin="1" pinfunction="GPIO1_/_BUTTON_INT_1" pintype="input"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="U1" pin="20" pinfunction="INTA_20" pintype="open_collector"/>
+    </net>
+    <net code="7" name="/GND" class="Ground">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="C13" pin="2" pintype="passive"/>
+      <node ref="C14" pin="2" pintype="passive"/>
+      <node ref="C15" pin="2" pintype="passive"/>
+      <node ref="C17" pin="2" pintype="passive"/>
+      <node ref="C18" pin="2" pintype="passive"/>
+      <node ref="C19" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C22" pin="2" pintype="passive"/>
+      <node ref="C25" pin="2" pintype="passive"/>
+      <node ref="C26" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="GND_2" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="GND_1" pintype="passive"/>
+      <node ref="J3" pin="6" pinfunction="GND_6" pintype="passive"/>
+      <node ref="MOD1" pin="GND" pinfunction="GND_GND" pintype="power_in"/>
+      <node ref="Q1" pin="1" pinfunction="E_1" pintype="passive"/>
+      <node ref="Q2" pin="1" pinfunction="E_1" pintype="passive"/>
+      <node ref="Q4" pin="1" pinfunction="S_1" pintype="passive"/>
+      <node ref="Q5" pin="1" pinfunction="S_1" pintype="passive"/>
+      <node ref="R20" pin="2" pintype="passive"/>
+      <node ref="R26" pin="2" pintype="passive"/>
+      <node ref="R29" pin="2" pintype="passive"/>
+      <node ref="R33" pin="2" pintype="passive"/>
+      <node ref="R34" pin="2" pintype="passive"/>
+      <node ref="R35" pin="2" pintype="passive"/>
+      <node ref="R37" pin="2" pintype="passive"/>
+      <node ref="SW1" pin="C" pintype="passive"/>
+      <node ref="SW1" pin="D" pintype="passive"/>
+      <node ref="SW2" pin="C" pintype="passive"/>
+      <node ref="SW2" pin="D" pintype="passive"/>
+      <node ref="SW3" pin="C" pintype="passive"/>
+      <node ref="SW3" pin="D" pintype="passive"/>
+      <node ref="SW4" pin="C" pintype="passive"/>
+      <node ref="SW4" pin="D" pintype="passive"/>
+      <node ref="SW5" pin="C" pintype="passive"/>
+      <node ref="SW5" pin="D" pintype="passive"/>
+      <node ref="SW6" pin="C" pintype="passive"/>
+      <node ref="SW6" pin="D" pintype="passive"/>
+      <node ref="SW7" pin="C" pintype="passive"/>
+      <node ref="SW7" pin="D" pintype="passive"/>
+      <node ref="SW8" pin="C" pintype="passive"/>
+      <node ref="SW8" pin="D" pintype="passive"/>
+      <node ref="SW9" pin="C" pintype="passive"/>
+      <node ref="SW9" pin="D" pintype="passive"/>
+      <node ref="U1" pin="10" pinfunction="VSS_10" pintype="power_in"/>
+      <node ref="U1" pin="15" pinfunction="A0_15" pintype="input"/>
+      <node ref="U1" pin="16" pinfunction="A1_16" pintype="input"/>
+      <node ref="U1" pin="17" pinfunction="A2_17" pintype="input"/>
+      <node ref="U2" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U3" pin="4" pinfunction="GND_4" pintype="power_in"/>
+      <node ref="U3" pin="6" pinfunction="IN2_6" pintype="input"/>
+    </net>
+    <net code="8" name="/I2C_SCL" class="Default">
+      <node ref="MOD1" pin="5" pinfunction="GPIO5_/_SCL_5" pintype="output"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="U1" pin="12" pinfunction="SCL_12" pintype="input"/>
+    </net>
+    <net code="9" name="/I2C_SDA" class="Default">
+      <node ref="MOD1" pin="4" pinfunction="GPIO4_/_SDA_4" pintype="bidirectional"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="U1" pin="13" pinfunction="SDA_13" pintype="bidirectional"/>
+    </net>
+    <net code="10" name="/IR_RX" class="Default">
+      <node ref="MOD1" pin="6" pinfunction="GPIO6_/_IR_RX_6" pintype="input"/>
+      <node ref="U2" pin="1" pinfunction="OUT_1" pintype="output"/>
+    </net>
+    <net code="11" name="/IR_TX" class="Default">
+      <node ref="MOD1" pin="7" pinfunction="GPIO7_/_IR_TX_7" pintype="output"/>
+      <node ref="R25" pin="1" pintype="passive"/>
+    </net>
+    <net code="12" name="/LOGIC_3V3" class="Power">
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="C13" pin="1" pintype="passive"/>
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="J1" pin="3" pinfunction="3V3_3" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="VCC_2" pintype="passive"/>
+      <node ref="J3" pin="1" pinfunction="3V3_1" pintype="passive"/>
+      <node ref="Q3" pin="3" pinfunction="E_3" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="R12" pin="1" pintype="passive"/>
+      <node ref="R13" pin="1" pintype="passive"/>
+      <node ref="R14" pin="1" pintype="passive"/>
+      <node ref="R15" pin="1" pintype="passive"/>
+      <node ref="R16" pin="1" pintype="passive"/>
+      <node ref="R17" pin="1" pintype="passive"/>
+      <node ref="R18" pin="1" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="R22" pin="1" pintype="passive"/>
+      <node ref="R24" pin="1" pintype="passive"/>
+      <node ref="R27" pin="1" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="U1" pin="9" pinfunction="VDD_9" pintype="power_in"/>
+    </net>
+    <net code="13" name="/MCU_5V" class="Power">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="5V_MCU_1" pintype="passive"/>
+      <node ref="MOD1" pin="5V" pinfunction="5V_5V" pintype="power_in"/>
+    </net>
+    <net code="14" name="/MOTOR_EN" class="Default">
+      <node ref="R28" pin="1" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="GPB5_/_MOTOR_EN_6" pintype="bidirectional"/>
+    </net>
+    <net code="15" name="/SD_CS" class="Default">
+      <node ref="J3" pin="2" pinfunction="CS_2" pintype="passive"/>
+      <node ref="MOD1" pin="10" pinfunction="GPIO10_/_SD_CS_10" pintype="output"/>
+      <node ref="R15" pin="2" pintype="passive"/>
+    </net>
+    <net code="16" name="/SPI_MISO" class="Default">
+      <node ref="J3" pin="5" pinfunction="MISO_5" pintype="passive"/>
+      <node ref="MOD1" pin="12" pinfunction="GPIO12_/_MISO_12" pintype="input"/>
+      <node ref="R18" pin="2" pintype="passive"/>
+    </net>
+    <net code="17" name="/SPI_MOSI" class="Default">
+      <node ref="J2" pin="4" pinfunction="SDA_4" pintype="passive"/>
+      <node ref="J3" pin="3" pinfunction="MOSI_3" pintype="passive"/>
+      <node ref="MOD1" pin="11" pinfunction="GPIO11_/_MOSI_11" pintype="output"/>
+      <node ref="R17" pin="2" pintype="passive"/>
+    </net>
+    <net code="18" name="/SPI_SCK" class="Default">
+      <node ref="J2" pin="3" pinfunction="SCL_3" pintype="passive"/>
+      <node ref="J3" pin="4" pinfunction="CLK_4" pintype="passive"/>
+      <node ref="MOD1" pin="13" pinfunction="GPIO13_/_SCK_13" pintype="output"/>
+    </net>
+    <net code="19" name="/TFT_CS" class="Default">
+      <node ref="J2" pin="7" pinfunction="CS_7" pintype="passive"/>
+      <node ref="MOD1" pin="RX" pinfunction="GPIO44_/_TFT_CS_RX" pintype="output"/>
+      <node ref="R14" pin="2" pintype="passive"/>
+    </net>
+    <net code="20" name="/TFT_DC" class="Default">
+      <node ref="J2" pin="6" pinfunction="DC_6" pintype="passive"/>
+      <node ref="MOD1" pin="TX" pinfunction="GPIO43_/_TFT_DC_TX" pintype="output"/>
+    </net>
+    <net code="21" name="/TFT_RST_N" class="Default">
+      <node ref="J2" pin="5" pinfunction="RES_5" pintype="passive"/>
+      <node ref="R16" pin="2" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="GPB6_/_TFT_RESET_7" pintype="bidirectional"/>
+    </net>
+    <net code="22" name="Net-(C18-Pad1)" class="Audio">
+      <node ref="C18" pin="1" pintype="passive"/>
+      <node ref="R30" pin="2" pintype="passive"/>
+      <node ref="R31" pin="1" pintype="passive"/>
+    </net>
+    <net code="23" name="Net-(C19-Pad1)" class="Audio">
+      <node ref="C19" pin="1" pintype="passive"/>
+      <node ref="C20" pin="1" pintype="passive"/>
+      <node ref="R31" pin="2" pintype="passive"/>
+    </net>
+    <net code="24" name="Net-(C20-Pad2)" class="Audio">
+      <node ref="C20" pin="2" pintype="passive"/>
+      <node ref="R32" pin="1" pintype="passive"/>
+    </net>
+    <net code="25" name="Net-(C23-Pad2)" class="Audio">
+      <node ref="C23" pin="2" pintype="passive"/>
+      <node ref="R34" pin="1" pintype="passive"/>
+    </net>
+    <net code="26" name="Net-(C24-Pad2)" class="Audio">
+      <node ref="C24" pin="2" pintype="passive"/>
+      <node ref="R35" pin="1" pintype="passive"/>
+    </net>
+    <net code="27" name="Net-(D1-A)" class="AuxLoad">
+      <node ref="D1" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="R24" pin="2" pintype="passive"/>
+    </net>
+    <net code="28" name="Net-(D1-K)" class="AuxLoad">
+      <node ref="D1" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="Q1" pin="3" pinfunction="C_3" pintype="passive"/>
+    </net>
+    <net code="29" name="Net-(D2-A)" class="Motor">
+      <node ref="C16" pin="2" pintype="passive"/>
+      <node ref="D2" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="J4" pin="2" pinfunction="-_2" pintype="passive"/>
+      <node ref="Q4" pin="3" pinfunction="D_3" pintype="passive"/>
+    </net>
+    <net code="30" name="Net-(J2-BLK)" class="AuxLoad">
+      <node ref="J2" pin="8" pinfunction="BLK_8" pintype="passive"/>
+      <node ref="R23" pin="2" pintype="passive"/>
+    </net>
+    <net code="31" name="Net-(J5-+)" class="Speaker">
+      <node ref="C23" pin="1" pintype="passive"/>
+      <node ref="J5" pin="1" pinfunction="+_1" pintype="passive"/>
+      <node ref="U3" pin="1" pinfunction="OUT1_1" pintype="output"/>
+    </net>
+    <net code="32" name="Net-(J5--)" class="Speaker">
+      <node ref="C24" pin="1" pintype="passive"/>
+      <node ref="J5" pin="2" pinfunction="-_2" pintype="passive"/>
+      <node ref="U3" pin="3" pinfunction="OUT2_3" pintype="output"/>
+    </net>
+    <net code="33" name="Net-(Q1-B)" class="Default">
+      <node ref="Q1" pin="2" pinfunction="B_2" pintype="input"/>
+      <node ref="R25" pin="2" pintype="passive"/>
+      <node ref="R26" pin="1" pintype="passive"/>
+    </net>
+    <net code="34" name="Net-(Q2-B)" class="Default">
+      <node ref="Q2" pin="2" pinfunction="B_2" pintype="input"/>
+      <node ref="R19" pin="2" pintype="passive"/>
+      <node ref="R20" pin="1" pintype="passive"/>
+    </net>
+    <net code="35" name="Net-(Q2-C)" class="Default">
+      <node ref="Q2" pin="3" pinfunction="C_3" pintype="passive"/>
+      <node ref="R21" pin="2" pintype="passive"/>
+    </net>
+    <net code="36" name="Net-(Q3-B)" class="Default">
+      <node ref="Q3" pin="2" pinfunction="B_2" pintype="input"/>
+      <node ref="R21" pin="1" pintype="passive"/>
+      <node ref="R22" pin="2" pintype="passive"/>
+    </net>
+    <net code="37" name="Net-(Q3-C)" class="AuxLoad">
+      <node ref="Q3" pin="1" pinfunction="C_1" pintype="passive"/>
+      <node ref="R23" pin="1" pintype="passive"/>
+    </net>
+    <net code="38" name="Net-(Q4-G)" class="Default">
+      <node ref="Q4" pin="2" pinfunction="G_2" pintype="input"/>
+      <node ref="R28" pin="2" pintype="passive"/>
+      <node ref="R29" pin="1" pintype="passive"/>
+    </net>
+    <net code="39" name="Net-(Q5-D)" class="Default">
+      <node ref="Q5" pin="3" pinfunction="D_3" pintype="passive"/>
+      <node ref="R38" pin="2" pintype="passive"/>
+    </net>
+    <net code="40" name="Net-(Q5-G)" class="Default">
+      <node ref="Q5" pin="2" pinfunction="G_2" pintype="input"/>
+      <node ref="R36" pin="2" pintype="passive"/>
+      <node ref="R37" pin="1" pintype="passive"/>
+    </net>
+    <net code="41" name="Net-(Q6-D)" class="Power">
+      <node ref="C25" pin="1" pintype="passive"/>
+      <node ref="C26" pin="1" pintype="passive"/>
+      <node ref="Q6" pin="3" pinfunction="D_3" pintype="passive"/>
+      <node ref="U3" pin="2" pinfunction="VCC_2" pintype="power_in"/>
+    </net>
+    <net code="42" name="Net-(Q6-G)" class="Default">
+      <node ref="Q6" pin="2" pinfunction="G_2" pintype="input"/>
+      <node ref="R38" pin="1" pintype="passive"/>
+      <node ref="R39" pin="2" pintype="passive"/>
+    </net>
+    <net code="43" name="Net-(U1-GPA0_{slash}_UP)" class="Default">
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="SW1" pin="A" pintype="passive"/>
+      <node ref="SW1" pin="B" pintype="passive"/>
+      <node ref="U1" pin="21" pinfunction="GPA0_/_UP_21" pintype="bidirectional"/>
+    </net>
+    <net code="44" name="Net-(U1-GPA1_{slash}_DOWN)" class="Default">
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="SW2" pin="A" pintype="passive"/>
+      <node ref="SW2" pin="B" pintype="passive"/>
+      <node ref="U1" pin="22" pinfunction="GPA1_/_DOWN_22" pintype="bidirectional"/>
+    </net>
+    <net code="45" name="Net-(U1-GPA2_{slash}_LEFT)" class="Default">
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="SW3" pin="A" pintype="passive"/>
+      <node ref="SW3" pin="B" pintype="passive"/>
+      <node ref="U1" pin="23" pinfunction="GPA2_/_LEFT_23" pintype="bidirectional"/>
+    </net>
+    <net code="46" name="Net-(U1-GPA3_{slash}_RIGHT)" class="Default">
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="SW4" pin="A" pintype="passive"/>
+      <node ref="SW4" pin="B" pintype="passive"/>
+      <node ref="U1" pin="24" pinfunction="GPA3_/_RIGHT_24" pintype="bidirectional"/>
+    </net>
+    <net code="47" name="Net-(U1-GPB0_{slash}_A)" class="Default">
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="SW5" pin="A" pintype="passive"/>
+      <node ref="SW5" pin="B" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="GPB0_/_A_1" pintype="bidirectional"/>
+    </net>
+    <net code="48" name="Net-(U1-GPB1_{slash}_B)" class="Default">
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="SW6" pin="A" pintype="passive"/>
+      <node ref="SW6" pin="B" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="GPB1_/_B_2" pintype="bidirectional"/>
+    </net>
+    <net code="49" name="Net-(U1-GPB2_{slash}_X)" class="Default">
+      <node ref="R11" pin="2" pintype="passive"/>
+      <node ref="SW7" pin="A" pintype="passive"/>
+      <node ref="SW7" pin="B" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="GPB2_/_X_3" pintype="bidirectional"/>
+    </net>
+    <net code="50" name="Net-(U1-GPB3_{slash}_Y)" class="Default">
+      <node ref="R12" pin="2" pintype="passive"/>
+      <node ref="SW8" pin="A" pintype="passive"/>
+      <node ref="SW8" pin="B" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="GPB3_/_Y_4" pintype="bidirectional"/>
+    </net>
+    <net code="51" name="Net-(U1-RESET_N)" class="Default">
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="U1" pin="18" pinfunction="RESET_N_18" pintype="input"/>
+    </net>
+    <net code="52" name="Net-(U2-VS)" class="Default">
+      <node ref="C14" pin="1" pintype="passive"/>
+      <node ref="C15" pin="1" pintype="passive"/>
+      <node ref="R27" pin="2" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="VS_3" pintype="power_in"/>
+    </net>
+    <net code="53" name="Net-(U3-IN1)" class="Audio">
+      <node ref="R32" pin="2" pintype="passive"/>
+      <node ref="R33" pin="1" pintype="passive"/>
+      <node ref="U3" pin="7" pinfunction="IN1_7" pintype="input"/>
+    </net>
+    <net code="54" name="Net-(U3-NP1)" class="Audio">
+      <node ref="C21" pin="1" pintype="passive"/>
+      <node ref="U3" pin="8" pinfunction="NP1_8" pintype="input"/>
+    </net>
+    <net code="55" name="Net-(U3-NP2)" class="Audio">
+      <node ref="C21" pin="2" pintype="passive"/>
+      <node ref="C22" pin="1" pintype="passive"/>
+      <node ref="U3" pin="5" pinfunction="NP2_5" pintype="input"/>
+    </net>
+    <net code="56" name="unconnected-(MOD1-3V3_OUT-Pad3V3)" class="Default">
+      <node ref="MOD1" pin="3V3" pinfunction="3V3_OUT_3V3" pintype="power_out+no_connect"/>
+    </net>
+    <net code="57" name="unconnected-(MOD1-GPIO3_{slash}_STRAP-Pad3)" class="Default">
+      <node ref="MOD1" pin="3" pinfunction="GPIO3_/_STRAP_3" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="58" name="unconnected-(U1-GPA4-Pad25)" class="Default">
+      <node ref="U1" pin="25" pinfunction="GPA4_25" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="59" name="unconnected-(U1-GPA5-Pad26)" class="Default">
+      <node ref="U1" pin="26" pinfunction="GPA5_26" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="60" name="unconnected-(U1-GPA6-Pad27)" class="Default">
+      <node ref="U1" pin="27" pinfunction="GPA6_27" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="61" name="unconnected-(U1-GPA7-Pad28)" class="Default">
+      <node ref="U1" pin="28" pinfunction="GPA7_28" pintype="output+no_connect"/>
+    </net>
+    <net code="62" name="unconnected-(U1-GPB7-Pad8)" class="Default">
+      <node ref="U1" pin="8" pinfunction="GPB7_8" pintype="output+no_connect"/>
+    </net>
+    <net code="63" name="unconnected-(U1-INTB-Pad19)" class="Default">
+      <node ref="U1" pin="19" pinfunction="INTB_19" pintype="open_collector+no_connect"/>
+    </net>
+    <net code="64" name="unconnected-(U1-NC-Pad11)" class="Default">
+      <node ref="U1" pin="11" pinfunction="NC_11" pintype="no_connect"/>
+    </net>
+    <net code="65" name="unconnected-(U1-NC-Pad14)" class="Default">
+      <node ref="U1" pin="14" pinfunction="NC_14" pintype="no_connect"/>
+    </net>
+  </nets>
+</export>

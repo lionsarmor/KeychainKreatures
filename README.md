@@ -1,484 +1,75 @@
-# 🐣 Keychain Kreatures
+# Keychain Kreatures
 
-> **A tiny open-source virtual pet, handheld game system, and embedded learning platform powered by the ESP32-C3.**
+An ESP32-S3 virtual-pet and small handheld-game hardware project, designed around a repairable through-hole main-board kit and a separate factory-assembled power board.
 
-![Status](https://img.shields.io/badge/Status-Active-success)
-![License](https://img.shields.io/badge/License-Open%20Source-blue)
-![Platform](https://img.shields.io/badge/Platform-ESP32--C3-orange)
-![IDE](https://img.shields.io/badge/IDE-Arduino-blue)
+**Current hardware: main C.6 + power P.3. Engineering prototypes—not a tested, certified or production-ready toy.** Both boards are 96 × 105 × 1.6 mm with matching mounting holes for a removable stack. Physical component fit, battery/case selection, factory DFM approval and powered qualification remain open.
 
----
+## Current projects and downloads
 
-# 🌟 About
+| Board | Editable KiCad 10 project | Five-prototype review package | Gerbers and drills |
+|---|---|---|---|
+| Main C.6 · 2 copper layers | [Open main project](KK_main_module/C6_flat_stack/KK_main_module.kicad_pro) | [Full main ZIP](KK_main_module/manufacturing/KK_MAIN_C6_5_PROTOTYPE_REVIEW_2026-09-12.zip) | [Main fabrication ZIP](KK_main_module/manufacturing/KK_MAIN_C6_GERBERS.zip) |
+| Power P.3 · 4 copper layers | [Open power project](KK_power_module/P3_matching_stack/KK_power_module.kicad_pro) | [Full power ZIP](KK_power_module/manufacturing/KK_POWER_P3_5_PROTOTYPE_REVIEW_2026-09-12.zip) | [Power fabrication ZIP](KK_power_module/manufacturing/KK_POWER_P3_GERBERS.zip) |
 
-**Keychain Kreatures** is an open hardware and open source handheld designed to bring together the nostalgia of classic virtual pets with modern electronics.
+Download the repository or a **full review ZIP** to open a project with its local libraries, models and documentation. Install the KiCad 10 standard footprint and 3D libraries as well. For GitHub ZIP downloads, use the file page's download/raw action. The full review packages include fabrication files, BOMs, placement and test-point maps, schematic/assembly PDFs, source CAD, datasheets and verification evidence. The separate fabrication ZIPs do not replace the assembler's full review package.
 
-Rather than being a closed toy, Keychain Kreatures is designed to be:
+[Start here](START_HERE.md) · [Documentation index](docs/README.md) · [Release notes](CHANGELOG.md) · [Release hashes](docs/C6_P3_RELEASE_INDEX.json)
 
-- 🐣 A Virtual Pet
-- 🎮 A Tiny Game Console
-- 💻 A Programming Platform
-- 📚 A Learning Tool
-- 🛠️ Completely Hackable
+## Hardware in this revision
 
-The project is intended for makers, students, hobbyists, and anyone interested in learning embedded systems.
+- Socketed **ESP32-S3 SuperMini**. Confirm the delivered seller revision, pinout and actual flash/PSRAM; do not infer N16R8 specifications from the SuperMini name.
+- Existing ST7789V2 screen in landscape, **280 × 240 pixels**, and a separate socketed 3.3 V microSD reader. SD storage is not extra executable RAM.
+- Nine soft controls: D-pad left, four action buttons right, one center function button, all below the screen. MCP23017 GPIO expansion.
+- PWM audio with a TDA2822L amplifier, speaker connector and switched amplifier supply; vibration motor output with suppression.
+- TSAL6200 infrared transmitter and TSOP38238 receiver, aimed toward the case opening. No sub-GHz radio.
+- Separate socketed common-anode RGB LED and TLC5916 driver.
+- Main board: **98 fitted through-hole positions**, all **43 resistors horizontal**, ten horizontal low-profile electrolytics, six flat-mounted TO-92 devices, removable IC/module sockets, JST connectors and **25 bare debug holes**.
+- Power board: **108 fitted positions**, 28 rear test pads, USB-C charging input, battery protection, temperature interlock and three regulated output rails. This board is a **factory SMT subassembly**, not a student SMT soldering exercise.
 
----
+All fitted electrical positions have resolving 3D model links. Some module and connector envelopes remain provisional; model coverage does not prove fit. Sockets, buttons and optical components necessarily retain height. The proposed 20 mm inter-board spacing is for a mock-up, not an approved enclosure dimension.
 
-# ✨ Features
+## Assembly and first power-up
 
-- 🧠 ESP32-C3 Super Mini
-- 🖥️ 1.69" 240×280 IPS Display
-- 🔊 MAX98357A I²S Audio
-- 🔈 Speaker Output
-- 🎮 Six-Button Game Controls
-- 📡 Infrared Transmitter
-- 📡 Infrared Receiver
-- 📳 Vibration Feedback
-- 🔋 Rechargeable LiPo Battery
-- 🔌 USB Charging
-- 🛠️ Open Hardware
-- 💻 Open Source Firmware
+Read these before buying parts, soldering or powering a board:
 
----
+1. [Main BOM and assembly/wiring guide](KK_main_module/C6_flat_stack/assembly/ASSEMBLY_GUIDE.md), [reference BOM](KK_main_module/C6_flat_stack/assembly/C6_BOM_BY_REFERENCE.csv), and [complete paired-kit extras](KK_main_module/C6_flat_stack/assembly/C6_COMPLETE_KIT_EXTRAS.csv). Extras cover sockets, modules, mating plugs, wiring and provisional hardware; count them once per main+power pair.
+2. [Print the stack review at actual size](docs/C6_P3_STACK_REVIEW.pdf), [front fit sheet](KK_main_module/C6_flat_stack/assembly/C6_front_FIT_100_PERCENT.pdf) and [rear fit sheet](KK_main_module/C6_flat_stack/assembly/C6_back_FIT_100_PERCENT.pdf). Measure the calibration line and dry-fit actual parts and plugged harnesses.
+3. [Power fabrication/assembly requirements](KK_power_module/P3_matching_stack/FABRICATION_REQUIREMENTS.md). Obtain manufacturer approval of the 0.4 mm WCSP, fine-pitch packages and **filled/capped/planarized via-in-pad** process. Ordinary via tenting is not equivalent.
+4. [Power electrical review and current-limited first-power-up procedure](KK_power_module/P3_matching_stack/assembly/P3_REVIEW_AND_TEST.md). Qualify power independently before attaching the populated main board. Real-cell testing requires a selected, documented cell and bonded thermistor.
 
-# 📦 Hardware
+Power **J3 → main J1**, keyed pin-for-pin:
 
-## 🧠 Microcontroller
+| Pin | Rail |
+|---|---|
+| 1 | MCU_5V |
+| 2 | GND |
+| 3 | LOGIC_3V3 |
+| 4 | ACT_3V2 |
 
-- ESP32-C3 Super Mini
-- RISC-V CPU
-- Wi-Fi
-- Bluetooth LE
-- USB Programming
-- 4 MB Flash
+**Never connect raw battery voltage to main J1. Power TP3/BAT_NEG is not TP4/GND; do not bypass battery protection with test-equipment grounds. Neither speaker output is ground.**
 
----
+Charger USB carries **no data** to the ESP32. Do not combine ESP32 USB power and external main rails until exact-module reverse-feed behavior is qualified. Program the removable MCU separately for recovery. USB-A/default charging is deliberately slow and may not cover a running toy's load.
 
-## 🖥️ Display
+## Verification and remaining work
 
-- 1.69" IPS LCD
-- ST7789 Controller
-- Resolution: **240 × 280**
-- SPI Interface
+The issued C.6/P.3 sources passed fresh native ERC/DRC, connectivity and schematic-parity checks with **zero reported violations or opens**. [Static audit](docs/C6_P3_STATIC_AUDIT.json), [matching drill audit](docs/C6_P3_DRILL_ALIGNMENT_AUDIT.json) and package manifests identify exactly what was checked. Existing ignored-check settings are included in the native reports; clean reports are not a claim that every possible check was performed.
 
----
+Run this lightweight saved-release consistency check from the repository root:
 
-## 🔊 Audio
-
-- MAX98357A Digital I²S Amplifier
-- Mono Speaker
-- Sound Effects
-- Music Playback
-
----
-
-## 🎮 Controls
-
-Buttons are connected using a **PCF8574 I²C GPIO Expander**.
-
-| Button | PCF8574 Pin |
-|---------|-------------|
-| ⬆️ UP | P0 |
-| ⬇️ DOWN | P1 |
-| ⬅️ LEFT | P2 |
-| ➡️ RIGHT | P3 |
-| 🅰️ A | P4 |
-| 🅱️ B | P5 |
-| ⭐ Spare | P6 |
-| 📡 IR Receiver | P7 |
-
----
-
-## 📳 Haptic Feedback
-
-A vibration module provides feedback for:
-
-- Battle hits
-- Menu selection
-- Notifications
-- Creature reactions
-
----
-
-## 📡 Infrared
-
-### 📤 Transmitter
-
-GPIO1
-
-### 📥 Receiver
-
-Connected to:
-
-PCF8574 P7
-
-Future firmware will support:
-
-- Creature Battles
-- Creature Trading
-- Multiplayer
-- Secret Codes
-- Mini Games
-
----
-
-# 🔌 Wiring
-
-## 🖥️ ST7789 Display
-
-| Display Pin | ESP32-C3 |
-|--------------|-----------|
-| GND | GND |
-| VCC | 3V3 |
-| BLK | 3V3 |
-| SCL | GPIO4 |
-| SDA | GPIO6 |
-| RES | GPIO7 |
-| DC | GPIO2 |
-| CS | GPIO10 |
-
----
-
-## 🔊 MAX98357A Audio
-
-| Amplifier Pin | ESP32-C3 |
-|---------------|-----------|
-| VIN | 3.3V |
-| GND | GND |
-| DIN | GPIO20 |
-| BCLK | GPIO21 |
-| LRC / WS | GPIO0 |
-| SD | GPIO5 |
-| GAIN | NC |
-
----
-
-## 🎮 PCF8574
-
-| PCF8574 Pin | ESP32-C3 |
-|--------------|-----------|
-| VCC | 3.3V |
-| GND | GND |
-| SDA | GPIO8 |
-| SCL | GPIO9 |
-
----
-
-## 📡 IR Transmitter
-
-| Pin | Connect To |
-|------|------------|
-| VCC | 3.3V |
-| GND | GND |
-| DATA | GPIO1 |
-
----
-
-## 📡 IR Receiver
-
-| Pin | Connect To |
-|------|------------|
-| VCC | 3.3V |
-| GND | GND |
-| OUT | PCF8574 P7 |
-
----
-
-## 📳 Vibration Module
-
-| Pin | Connect To |
-|------|------------|
-| VCC | 3.3V |
-| GND | GND |
-| IN | GPIO3 |
-
----
-
-# 🔋 Power
-
-The device is powered from a single-cell LiPo battery.
-
-```
-🔋 Battery
-      │
-      ▼
-⚡ Charger Board
-      │
-      ▼
-🔘 Power Switch
-      │
-      ▼
-🧠 ESP32-C3
+```sh
+node tools/check_project.mjs
 ```
 
----
+It verifies current source/package hashes, local assets, saved netlists and the inter-board interface. It does **not** rerun KiCad checks or simulate the circuit. See [tool instructions](tools/README.md) before running anything else. Do not rerun historical placement/route generators on finished CAD.
 
-# 📌 GPIO Assignment
+Remaining qualification includes physical socket/plug/case fit, battery/NTC selection, speaker power rating, simultaneous-load capacity, capacitor transient/ripple behavior, regulator/charger temperatures, USB behavior, rail sequencing, GPIO back-powering, RF performance and applicable product safety/EMC review. In particular, the older main 3.3 V reservation was 0.5 A while power screening used 0.4 A; reconcile measured peak demand and margin before approving the complete toy. Screening targets are not measured ratings.
 
-| GPIO | Function |
-|------|----------|
-| GPIO0 | Audio LRC |
-| GPIO1 | IR Transmitter |
-| GPIO2 | TFT DC |
-| GPIO3 | Vibration Motor |
-| GPIO4 | TFT Clock |
-| GPIO5 | Amplifier Shutdown |
-| GPIO6 | TFT MOSI |
-| GPIO7 | TFT Reset |
-| GPIO8 | I²C SDA |
-| GPIO9 | I²C SCL |
-| GPIO10 | TFT Chip Select |
-| GPIO20 | Audio DIN |
-| GPIO21 | Audio BCLK |
+## Firmware status
 
----
+The planned virtual pet, games/apps, browser/Wi-Fi uploads, trading, save recovery and OTA workflow are **not implemented or validated by this hardware release**. Follow the current schematic and assembly guide for bring-up firmware. The historical ESP32-C3/MAX98357A/PCF8574 test sketch from earlier Git history is not compatible with this S3/MCP23017/TDA2822L board and must not be used as its factory test.
 
-# 🧪 Factory Test Firmware
+## History, contributions and licensing
 
-Every assembled board should first run the **Factory Test**.
+The unversioned main CAD, C5_relayout, P2_compact and [revisions](revisions/README.md) preserve earlier work. They are not current fabrication sources. Archived reports retain their original findings and must not be read as today's status. See [contribution guidance](CONTRIBUTING.md).
 
-The test verifies:
-
-✅ Display
-
-✅ Speaker
-
-✅ Audio Amplifier
-
-✅ Buttons
-
-✅ PCF8574
-
-✅ IR Transmitter
-
-✅ IR Receiver Activity
-
-✅ Vibration Motor
-
-✅ GPIO Operation
-
-All events are displayed on the LCD and logged to the Serial Monitor.
-
----
-
-## 🎮 Factory Test Controls
-
-| Button | Action |
-|---------|--------|
-| ⬆️ UP | Button Test |
-| ⬇️ DOWN | Button Test |
-| ⬅️ LEFT | Button Test |
-| ➡️ RIGHT | Button Test |
-| 🅰️ A | Vibration Test |
-| 🅱️ B | IR Transmission Test |
-
----
-
-# 🚀 Quick Start
-
-## 1️⃣ Install Arduino IDE
-
-Download the latest version:
-
-https://www.arduino.cc/en/software
-
----
-
-## 2️⃣ Install ESP32 Support
-
-Open:
-
-```
-Tools
-    ↓
-Board
-    ↓
-Boards Manager
-```
-
-Search for:
-
-```
-ESP32
-by Espressif Systems
-```
-
-Install the latest version.
-
----
-
-## 3️⃣ Install Required Libraries
-
-Open:
-
-```
-Sketch
-    ↓
-Include Library
-    ↓
-Manage Libraries...
-```
-
-Install:
-
-✅ Adafruit GFX Library
-
-✅ Adafruit ST7735 and ST7789 Library
-
-These are the **only external libraries** currently required.
-
----
-
-## 4️⃣ Select Your Board
-
-```
-ESP32C3 Dev Module
-```
-
----
-
-## 5️⃣ Open
-
-```
-factory_test.ino
-```
-
----
-
-## 6️⃣ Upload
-
-Click:
-
-```
-➡ Upload
-```
-
-Wait for the upload to finish.
-
-Done! 🎉
-
----
-
-## 📺 Serial Monitor
-
-Set the Serial Monitor to:
-
-```
-115200 baud
-```
-
----
-
-
-# 🛣️ Roadmap
-
-## 🟢 Phase 1
-
-- ✅ Factory Test
-- ✅ Display
-- ✅ Audio
-- ✅ Buttons
-- ✅ IR
-- ✅ Vibration
-
----
-
-## 🟡 Phase 2
-
-- Creature Engine
-- Save Files
-- Animation System
-- Menus
-- Sound Engine
-
----
-
-## 🔵 Phase 3
-
-- Creature Trading
-- Creature Battles
-- IR Multiplayer
-- OTA Updates
-- Sleep Mode
-- Battery Monitoring
-
----
-
-## 🟣 Future Ideas
-
-- 💾 SD Card Support
-- 📶 Bluetooth Multiplayer
-- 🌈 RGB Status LED
-- 🌡️ Temperature Sensor
-- ☀️ Light Sensor
-- 🎲 Mini Games
-- 🧩 Puzzle Games
-- 🐉 Creature Evolution
-- 📚 WonderBasic Mini Runtime
-
----
-
-# 🎯 Project Goals
-
-Keychain Kreatures is designed to be:
-
-- 🎮 Fun
-- 📚 Educational
-- 🔓 Open Source
-- 🛠️ Repairable
-- 💰 Affordable
-- 👨‍💻 Beginner Friendly
-- 🧠 Easy to Learn From
-- 🔧 Easy to Modify
-
----
-
-# 🤝 Contributing
-
-Contributions are always welcome!
-
-Ideas include:
-
-- Firmware
-- Games
-- New Creatures
-- PCB Improvements
-- Documentation
-- Artwork
-- Sound Effects
-- Bug Fixes
-
-If you build your own Keychain Kreatures, we'd love to see it!
-
----
-
-# ❤️ Acknowledgements
-
-Special thanks to the amazing open-source communities behind:
-
-- Espressif
-- Arduino
-- Adafruit
-- KiCad
-- GitHub
-
-Without these projects, Keychain Kreatures would not exist.
-
----
-
-# 📜 License
-
-This project is intended to be released under an open-source license.
-
-License selection is currently in progress.
-
----
-
-# 🐣 Build One. Learn Something. Make It Your Own.
-
-Keychain Kreatures isn't just another virtual pet.
-
-It's a tiny computer designed to teach programming, electronics, hardware design, and creativity—all while being fun to play.
-
-**Hack it. Improve it. Share it.**
+The project is intended for open development, but a project-wide license has **not yet been selected**. The OSHW silkscreen logo is not a certification or a substitute for license terms. Third-party KiCad assets and manufacturer documents retain their respective terms; do not assume this repository relicenses them. Thanks to the KiCad, Espressif and component-library communities.

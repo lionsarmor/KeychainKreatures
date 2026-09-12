@@ -1,0 +1,370 @@
+(footprint "SOT95P280X145-6N"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "Q1"
+		(at -0.205 -2.7 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "a5ab9ed4-1e15-47e6-8783-72d28cdda66c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "FS8205"
+		(at 0 0 90)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a2665878-06bb-4c8c-b6d5-cc03f6915519")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "107e5af9-359d-4d67-a734-d0cbdd50d461")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Dual N-Channel Enhancement Mode Power MOSFET"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b6b1fe36-d38d-441b-bb0e-7c149640fde9")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MF" "Fortune Semiconductor"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a40e4b63-a2e1-4d08-9465-0b7b4639a09c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MAXIMUM_PACKAGE_HEIGHT" "1.45mm"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6228bed4-8f75-4d0a-88f6-7c6089fcc7ee")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Package" "Package"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e61d4a59-6966-4720-8344-531a1bab76af")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Price" "None"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "be9c3ca1-d72e-4a82-8976-49fd19ddb3ac")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Check_prices" "https://www.snapeda.com/parts/FS8205/Fortune+Semiconductor/view-part/?ref=eda"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ea2c24c1-14ba-4c19-a504-5552fb245c45")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "STANDARD" "IPC-7351B"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "da2d37fe-7a4a-485a-b844-ca39e86fb625")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "PARTREV" "1.9"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4b3bf719-5920-41f5-9354-a093aefbe94b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "SnapEDA_Link" "https://www.snapeda.com/parts/FS8205/Fortune+Semiconductor/view-part/?ref=snap"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4d1637c8-b188-4395-ad05-a086037bc9c7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MP" "FS8205"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a27b6476-3b2d-4627-98bc-41ea34a5ae35")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Availability" "In Stock"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ee1d0509-8b82-49d5-8320-287d6f013409")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MANUFACTURER" "Fortune"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f85b5811-018c-40da-9d69-84e3a6034cfa")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(sheetname "/")
+	(sheetfile "KK_power_module.kicad_sch")
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.8 -1.6)
+		(end 0.8 -1.6)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "01f17a57-eed3-48b5-99af-34e53e9fefff")
+	)
+	(fp_line
+		(start -0.8 1.6)
+		(end 0.8 1.6)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ccad88e7-d503-4223-83f1-d3bd61558829")
+	)
+	(fp_circle
+		(center -2.428 -0.945)
+		(end -2.328 -0.945)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "9e531f06-ca8c-434b-bdb1-2fe1992fb874")
+	)
+	(fp_line
+		(start -2.11 -1.7)
+		(end -2.11 1.7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "18c84a8f-7e95-41d2-ab2a-0d029d005f3d")
+	)
+	(fp_line
+		(start -2.11 1.7)
+		(end 2.11 1.7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "9505528b-911b-4d08-8943-5eea0f4250fb")
+	)
+	(fp_line
+		(start 2.11 -1.7)
+		(end -2.11 -1.7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "355c16ad-9343-4d30-9a7c-cb9a0191b5b7")
+	)
+	(fp_line
+		(start 2.11 1.7)
+		(end 2.11 -1.7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "889900ff-c721-401a-937c-9284491d0c08")
+	)
+	(fp_line
+		(start -0.8 -1.45)
+		(end 0.8 -1.45)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f685f01f-abc4-4ed2-baad-8e8d44e84355")
+	)
+	(fp_line
+		(start -0.8 1.45)
+		(end -0.8 -1.45)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c7ceb8d2-7f83-4527-a94d-fb483e32962f")
+	)
+	(fp_line
+		(start 0.8 -1.45)
+		(end 0.8 1.45)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "3949638a-e5c6-4ecd-b520-c910328ad62d")
+	)
+	(fp_line
+		(start 0.8 1.45)
+		(end -0.8 1.45)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "91535dea-7e43-4991-a6fc-6de3d440932c")
+	)
+	(fp_circle
+		(center -2.428 -0.945)
+		(end -2.328 -0.945)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "0e5431b2-0b60-45a3-ae70-e9f97fc3fd97")
+	)
+	(pad "1" smd roundrect
+		(at -1.255 -0.95)
+		(size 1.21 0.59)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(solder_mask_margin 0.102)
+		(uuid "a41c8a69-7101-48c3-8880-59d27172f5b7")
+	)
+	(pad "2" smd roundrect
+		(at -1.255 0)
+		(size 1.21 0.59)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(solder_mask_margin 0.102)
+		(uuid "cfaa0165-9906-428a-b5c8-02ad0a60500d")
+	)
+	(pad "3" smd roundrect
+		(at -1.255 0.95)
+		(size 1.21 0.59)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(solder_mask_margin 0.102)
+		(uuid "1f4608cb-2516-45ba-9e7a-cec1f641bc8c")
+	)
+	(pad "4" smd roundrect
+		(at 1.255 0.95)
+		(size 1.21 0.59)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(solder_mask_margin 0.102)
+		(uuid "201ea1ff-06f1-4686-b624-ed7501a24df6")
+	)
+	(pad "5" smd roundrect
+		(at 1.255 0)
+		(size 1.21 0.59)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(solder_mask_margin 0.102)
+		(uuid "f22c281d-7b6d-47dd-b8ce-9b8552ab8d13")
+	)
+	(pad "6" smd roundrect
+		(at 1.255 -0.95)
+		(size 1.21 0.59)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(solder_mask_margin 0.102)
+		(uuid "8defb648-3410-40e2-ba91-47bb817231a3")
+	)
+	(embedded_fonts no)
+)

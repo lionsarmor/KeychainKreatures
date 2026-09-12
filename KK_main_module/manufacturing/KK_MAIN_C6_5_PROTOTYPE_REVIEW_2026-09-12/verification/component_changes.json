@@ -1,0 +1,258 @@
+{
+  "C1": {
+    "Footprint": "KK_Main:KA_100u_Flat",
+    "MPN": "ECEA1CKA101",
+    "Datasheet": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1050.pdf",
+    "Assembly": "16V Panasonic KA-A, body horizontal on 0.5mm insulating support. Form leads with support at seal. Square pad 1 = positive. Maximum can envelope D6.8 x L8mm (100u) or D4.5 x L8mm (10u)."
+  },
+  "C3": {
+    "Footprint": "KK_Main:KA_100u_Flat",
+    "MPN": "ECEA1CKA101",
+    "Datasheet": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1050.pdf",
+    "Assembly": "16V Panasonic KA-A, body horizontal on 0.5mm insulating support. Form leads with support at seal. Square pad 1 = positive. Maximum can envelope D6.8 x L8mm (100u) or D4.5 x L8mm (10u)."
+  },
+  "C5": {
+    "Footprint": "KK_Main:KA_100u_Flat",
+    "MPN": "ECEA1CKA101",
+    "Datasheet": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1050.pdf",
+    "Assembly": "16V Panasonic KA-A, body horizontal on 0.5mm insulating support. Form leads with support at seal. Square pad 1 = positive. Maximum can envelope D6.8 x L8mm (100u) or D4.5 x L8mm (10u)."
+  },
+  "C9": {
+    "Footprint": "KK_Main:KA_10u_Flat",
+    "MPN": "ECEA1CKA100",
+    "Datasheet": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1050.pdf",
+    "Assembly": "16V Panasonic KA-A, body horizontal on 0.5mm insulating support. Form leads with support at seal. Square pad 1 = positive. Maximum can envelope D6.8 x L8mm (100u) or D4.5 x L8mm (10u)."
+  },
+  "C11": {
+    "Footprint": "KK_Main:KA_10u_Flat",
+    "MPN": "ECEA1CKA100",
+    "Datasheet": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1050.pdf",
+    "Assembly": "16V Panasonic KA-A, body horizontal on 0.5mm insulating support. Form leads with support at seal. Square pad 1 = positive. Maximum can envelope D6.8 x L8mm (100u) or D4.5 x L8mm (10u)."
+  },
+  "C13": {
+    "Footprint": "KK_Main:KA_100u_Flat",
+    "MPN": "ECEA1CKA101",
+    "Datasheet": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1050.pdf",
+    "Assembly": "16V Panasonic KA-A, body horizontal on 0.5mm insulating support. Form leads with support at seal. Square pad 1 = positive. Maximum can envelope D6.8 x L8mm (100u) or D4.5 x L8mm (10u)."
+  },
+  "C15": {
+    "Footprint": "KK_Main:KA_10u_Flat",
+    "MPN": "ECEA1CKA100",
+    "Datasheet": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1050.pdf",
+    "Assembly": "16V Panasonic KA-A, body horizontal on 0.5mm insulating support. Form leads with support at seal. Square pad 1 = positive. Maximum can envelope D6.8 x L8mm (100u) or D4.5 x L8mm (10u)."
+  },
+  "C17": {
+    "Footprint": "KK_Main:KA_100u_Flat",
+    "MPN": "ECEA1CKA101",
+    "Datasheet": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1050.pdf",
+    "Assembly": "16V Panasonic KA-A, body horizontal on 0.5mm insulating support. Form leads with support at seal. Square pad 1 = positive. Maximum can envelope D6.8 x L8mm (100u) or D4.5 x L8mm (10u)."
+  },
+  "C21": {
+    "Footprint": "KK_Main:KA_10u_Flat",
+    "MPN": "ECEA1CKA100",
+    "Datasheet": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1050.pdf",
+    "Assembly": "16V Panasonic KA-A, body horizontal on 0.5mm insulating support. Form leads with support at seal. Square pad 1 = positive. Maximum can envelope D6.8 x L8mm (100u) or D4.5 x L8mm (10u)."
+  },
+  "C25": {
+    "Footprint": "KK_Main:KA_100u_Flat",
+    "MPN": "ECEA1CKA101",
+    "Datasheet": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1050.pdf",
+    "Assembly": "16V Panasonic KA-A, body horizontal on 0.5mm insulating support. Form leads with support at seal. Square pad 1 = positive. Maximum can envelope D6.8 x L8mm (100u) or D4.5 x L8mm (10u)."
+  },
+  "Q1": {
+    "Footprint": "KK_Main:TO92_Flat_P2p54",
+    "Assembly": "Horizontal TO-92, flat marked face up; formed 2.54mm lead spacing. Check actual device pinout; no pin swaps."
+  },
+  "Q2": {
+    "Footprint": "KK_Main:TO92_Flat_P2p54",
+    "Assembly": "Horizontal TO-92, flat marked face up; formed 2.54mm lead spacing. Check actual device pinout; no pin swaps."
+  },
+  "Q3": {
+    "Footprint": "KK_Main:TO92_Flat_P2p54",
+    "Assembly": "Horizontal TO-92, flat marked face up; formed 2.54mm lead spacing. Check actual device pinout; no pin swaps."
+  },
+  "Q4": {
+    "Footprint": "KK_Main:TO92_Flat_P2p54",
+    "Assembly": "Horizontal TO-92, flat marked face up; formed 2.54mm lead spacing. Check actual device pinout; no pin swaps."
+  },
+  "Q5": {
+    "Footprint": "KK_Main:TO92_Flat_P2p54",
+    "Assembly": "Horizontal TO-92, flat marked face up; formed 2.54mm lead spacing. Check actual device pinout; no pin swaps."
+  },
+  "Q6": {
+    "Footprint": "KK_Main:TO92_Flat_P2p54",
+    "Assembly": "Horizontal TO-92, flat marked face up; formed 2.54mm lead spacing. Check actual device pinout; no pin swaps."
+  },
+  "R1": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R2": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R3": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R4": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R5": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R6": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R7": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R8": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R9": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R10": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R11": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R12": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R13": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R14": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R15": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R16": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R17": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R18": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R19": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R20": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R21": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R22": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R23": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R24": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R25": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R26": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R27": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R28": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R29": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R30": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R31": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R32": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R33": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R34": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R35": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R36": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R37": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R38": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R39": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R40": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R41": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R42": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  },
+  "R43": {
+    "Footprint": "KK_Main:MFR25_10p16",
+    "Assembly": "Horizontal axial body; 10.16mm pitch. No upright resistors."
+  }
+}

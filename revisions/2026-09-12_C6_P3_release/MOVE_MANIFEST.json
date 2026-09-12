@@ -1,0 +1,977 @@
+{
+  "scope": "Superseded manufacturing moved; preflight release ZIPs and previous desktop sheet copied for recovery. Baseline CAD untouched.",
+  "files": [
+    {
+      "from": "KK_main_module/manufacturing/KK_MAIN_C6_5_PROTOTYPE_REVIEW_2026-09-12.zip",
+      "to": "revisions/2026-09-12_C6_P3_release/preflight_packages/KK_MAIN_C6_5_PROTOTYPE_REVIEW_2026-09-12.zip",
+      "sha256": "382ce3fe01068e724cd42f99fed03e7f68128f1eb4c5a95fd2d9c32853612c94",
+      "operation": "copy"
+    },
+    {
+      "from": "KK_main_module/manufacturing/KK_MAIN_C6_5_PROTOTYPE_REVIEW_2026-09-12/SHA256_MANIFEST.json",
+      "to": "revisions/2026-09-12_C6_P3_release/preflight_packages/C6_SHA256_MANIFEST.json",
+      "sha256": "cc31f63db81518fc42b07b20021e483270f5bcdeddae184413bf5cc19e9c0abe",
+      "operation": "copy"
+    },
+    {
+      "from": "KK_power_module/manufacturing/KK_POWER_P3_5_PROTOTYPE_REVIEW_2026-09-12.zip",
+      "to": "revisions/2026-09-12_C6_P3_release/preflight_packages/KK_POWER_P3_5_PROTOTYPE_REVIEW_2026-09-12.zip",
+      "sha256": "63ebe0d625ec0c3e20d2125f1ff2963589ac66f548219da42ec24f44da3e897e",
+      "operation": "copy"
+    },
+    {
+      "from": "KK_power_module/manufacturing/KK_POWER_P3_5_PROTOTYPE_REVIEW_2026-09-12/SHA256_MANIFEST.json",
+      "to": "revisions/2026-09-12_C6_P3_release/preflight_packages/P3_SHA256_MANIFEST.json",
+      "sha256": "9124896165c6af4e37e0be47f937d0e8652d9c317ef4135422e12a3f8eed56ab",
+      "operation": "copy"
+    },
+    {
+      "from": "KK_main_module/manufacturing/DRC.json",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_main_module/manufacturing/DRC.json",
+      "sha256": "894c72053f6a808ed582e6677fd22911843b8deb74f59d7c7043af4ba7fc296f",
+      "operation": "move"
+    },
+    {
+      "from": "KK_main_module/manufacturing/DRILL_REPORT.txt",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_main_module/manufacturing/DRILL_REPORT.txt",
+      "sha256": "6d837eaee32c4631fdc7c209367e6cd0569466bb2e51688666c473049bca8c63",
+      "operation": "move"
+    },
+    {
+      "from": "KK_main_module/manufacturing/ERC.json",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_main_module/manufacturing/ERC.json",
+      "sha256": "6ca0a418ef3c3eea748a4ca90d87d5c7856da8cde43e7fb9fc570d54ec742181",
+      "operation": "move"
+    },
+    {
+      "from": "KK_main_module/manufacturing/KK_MAIN_C5_PROTOTYPE_FAB.zip",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_main_module/manufacturing/KK_MAIN_C5_PROTOTYPE_FAB.zip",
+      "sha256": "9d83f7f41ce4507ccef55e936e66ce172d3ac5dca190a19ee5c125e1014cf9a0",
+      "operation": "move"
+    },
+    {
+      "from": "KK_main_module/manufacturing/MANIFEST.json",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_main_module/manufacturing/MANIFEST.json",
+      "sha256": "b32d647e8f2922fb387943bc8b0a32a9f1c3b306bd311190d71de1e7700127ef",
+      "operation": "move"
+    },
+    {
+      "from": "KK_main_module/manufacturing/ORDER_HOLD_FLAT_STACK.md",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_main_module/manufacturing/ORDER_HOLD_FLAT_STACK.md",
+      "sha256": "4c08c2913a1b866fa8fbcd7c4807301565b98465152342a7b9bef86da5ba7e47",
+      "operation": "move"
+    },
+    {
+      "from": "KK_main_module/manufacturing/README.md",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_main_module/manufacturing/README.md",
+      "sha256": "98ea003e5c45371a973966e0ddcba1f8664cc6199bca5d16354a4258855cea71",
+      "operation": "move"
+    },
+    {
+      "from": "KK_main_module/manufacturing/gerbers/KK_main_module-B_Cu.gbl",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_main_module/manufacturing/gerbers/KK_main_module-B_Cu.gbl",
+      "sha256": "2247c9e720eae5ff9a1fa06931615c5a23ad5ea26e501e44d44418a81a926840",
+      "operation": "move"
+    },
+    {
+      "from": "KK_main_module/manufacturing/gerbers/KK_main_module-B_Mask.gbs",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_main_module/manufacturing/gerbers/KK_main_module-B_Mask.gbs",
+      "sha256": "1632d0f230bd1df80ae0c9c1ebef039ab077ff85dfe3311da9936a16b663b23b",
+      "operation": "move"
+    },
+    {
+      "from": "KK_main_module/manufacturing/gerbers/KK_main_module-B_Silkscreen.gbo",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_main_module/manufacturing/gerbers/KK_main_module-B_Silkscreen.gbo",
+      "sha256": "e6a048b4ebdb6974e7fa8edf3086c2ebdce31095327ad95cf66a284db77cf160",
+      "operation": "move"
+    },
+    {
+      "from": "KK_main_module/manufacturing/gerbers/KK_main_module-Edge_Cuts.gm1",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_main_module/manufacturing/gerbers/KK_main_module-Edge_Cuts.gm1",
+      "sha256": "85ef75cbb68d152a6da43dad1c172d3014b12bdb754e7a67acec49c342685a09",
+      "operation": "move"
+    },
+    {
+      "from": "KK_main_module/manufacturing/gerbers/KK_main_module-F_Cu.gtl",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_main_module/manufacturing/gerbers/KK_main_module-F_Cu.gtl",
+      "sha256": "937d283702eb6396c42963adacaab948de9b843d740dcd8ab8acef7c0980aa7e",
+      "operation": "move"
+    },
+    {
+      "from": "KK_main_module/manufacturing/gerbers/KK_main_module-F_Mask.gts",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_main_module/manufacturing/gerbers/KK_main_module-F_Mask.gts",
+      "sha256": "e1a8ae6d0125a416a6548d749cfdca2a3a770667cd55e23e8431dc0e3bb77c88",
+      "operation": "move"
+    },
+    {
+      "from": "KK_main_module/manufacturing/gerbers/KK_main_module-F_Silkscreen.gto",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_main_module/manufacturing/gerbers/KK_main_module-F_Silkscreen.gto",
+      "sha256": "84b9b189342b4ba87d6b97b918eb36a8705760bf072f9eeb3f5d5836498fdcfb",
+      "operation": "move"
+    },
+    {
+      "from": "KK_main_module/manufacturing/gerbers/KK_main_module-NPTH-drl_map.pdf",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_main_module/manufacturing/gerbers/KK_main_module-NPTH-drl_map.pdf",
+      "sha256": "c547cf139512e10ed68c487e260455869889763ad843dcb3219924510ff1f617",
+      "operation": "move"
+    },
+    {
+      "from": "KK_main_module/manufacturing/gerbers/KK_main_module-NPTH.drl",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_main_module/manufacturing/gerbers/KK_main_module-NPTH.drl",
+      "sha256": "372d53e6e7c6a91b2f2cdadf4e5657d1d431d544d838599dfde38fafad867ba7",
+      "operation": "move"
+    },
+    {
+      "from": "KK_main_module/manufacturing/gerbers/KK_main_module-PTH-drl_map.pdf",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_main_module/manufacturing/gerbers/KK_main_module-PTH-drl_map.pdf",
+      "sha256": "82ab411175259d15e9c237f130dd68d15299f5e7ae8452c80d1ba277f466cd60",
+      "operation": "move"
+    },
+    {
+      "from": "KK_main_module/manufacturing/gerbers/KK_main_module-PTH.drl",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_main_module/manufacturing/gerbers/KK_main_module-PTH.drl",
+      "sha256": "b700cb0ad8f5fcdb8e4a9ef412e5c8235cf5d23f1b94379da1b8aad00d86e8a7",
+      "operation": "move"
+    },
+    {
+      "from": "KK_main_module/manufacturing/gerbers/KK_main_module-job.gbrjob",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_main_module/manufacturing/gerbers/KK_main_module-job.gbrjob",
+      "sha256": "5576f5d431b4942aa747bb8dc21a63164ca732702be5f593297f82c5fbe1bc0d",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/ORDER_HOLD_MATCHING_STACK.md",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/ORDER_HOLD_MATCHING_STACK.md",
+      "sha256": "adac028590e534718c9124fb50511527ee6a415096d61cbb55c44e6838a5d03b",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/BOM_AND_PLACEMENT.csv",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/BOM_AND_PLACEMENT.csv",
+      "sha256": "19238c3786e4e835f7b1fba0d4d36335d56cd9bc8aae8aea5328c8bec790afbc",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/BOM_GROUPED_5_BOARDS.csv",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/BOM_GROUPED_5_BOARDS.csv",
+      "sha256": "7605f1915da3147b9c79785f0137c96a0859561c2f66b6eb34cd5590ae97fcff",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/CAD_AUDIT.json",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/CAD_AUDIT.json",
+      "sha256": "55e73879246225fd1e307eca459416bcf2996c566e483bf9fb440816a06e33a2",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/FABRICATION_REQUIREMENTS.md",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/FABRICATION_REQUIREMENTS.md",
+      "sha256": "fe0f08bb2591940d02b647a7f9227f54bd452dd77e2ae4c42451e21a76214fb5",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/FINAL_SCAN.md",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/FINAL_SCAN.md",
+      "sha256": "72ae1e8fbf9a29b60f96145c6ec4a0dcd2429adc7c65aaa9c762e99dedaf8047",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/POSITIONS_NATIVE.csv",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/POSITIONS_NATIVE.csv",
+      "sha256": "9d3c68c8a38996f8428a190757cd67e4c1a4af8a0d6e88a507464fbdff1210f7",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/READ_FIRST_REVIEW_AND_TEST.md",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/READ_FIRST_REVIEW_AND_TEST.md",
+      "sha256": "a64f80c33b00d066258281cd959a322d039bf16dc6c0ed5f6f3d8623f54f0501",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/SHA256_MANIFEST.json",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/SHA256_MANIFEST.json",
+      "sha256": "f5f7830f677d2923d5d3db70c170f8ba8a12861616739212ebd13ac956614d0f",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/TEST_PAD_GUIDE.md",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/TEST_PAD_GUIDE.md",
+      "sha256": "b7f8f2083c3c63d0db58f8902e11d776a08d4fcd78b1a0714b7d5fe77bbb6d8c",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/TEST_POINTS.csv",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/TEST_POINTS.csv",
+      "sha256": "40982fb157388e715a4e35971daba926a9939d5d0efccf232fac4476f4c389ad",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/VIA_IN_PAD_REVIEW.csv",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/VIA_IN_PAD_REVIEW.csv",
+      "sha256": "36dff8a51a5da4fd807bbe718576e6d050421fb454cab8ebaebc2f2e1bc3a7ee",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/3dmodels/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/3dmodels/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/3dmodels/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/3dmodels/Connector_JST.3dshapes/JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical.step",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/3dmodels/Connector_JST.3dshapes/JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical.step",
+      "sha256": "cab512a9b16c7568ed6e0047c17de04c4dd11893cdee71cb33fb51768543f927",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/3dmodels/Connector_JST.3dshapes/JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical.step",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/3dmodels/Connector_JST.3dshapes/JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical.step",
+      "sha256": "7eb17ded8ec4a3216753a234254e22a2d8e07826f0816045bfb803a19cac75ea",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x05_P2.54mm_Vertical.step",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/3dmodels/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x05_P2.54mm_Vertical.step",
+      "sha256": "f03b716e453f6d4f2a111a227c671d96f92708e72a5a663cd4889296d021f4c3",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/3dmodels/Diode_SMD.3dshapes/D_SMA.step",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/3dmodels/Diode_SMD.3dshapes/D_SMA.step",
+      "sha256": "1cfddd4e3b1bf22b8fc6ee3258c2aade882ed7b85b528e23b9db42437775a1db",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/3dmodels/Fuse.3dshapes/Fuse_1206_3216Metric.step",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/3dmodels/Fuse.3dshapes/Fuse_1206_3216Metric.step",
+      "sha256": "5e6dcbe286696143d35a8ea37d91eef4b54ff3d1bd7c2c2b4dedda83d3f8e203",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/3dmodels/LED_SMD.3dshapes/LED_1206_3216Metric.step",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/3dmodels/LED_SMD.3dshapes/LED_1206_3216Metric.step",
+      "sha256": "9de47a5de5d40bcdc5dcc40d5b9d41fc41af90bbd37d25c17d211285e1c63a6e",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/3dmodels/MANIFEST.json",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/3dmodels/MANIFEST.json",
+      "sha256": "96fa699d19f5958f40533f2675a0dcb1140ab3813b0e773386b951dd50a9bc72",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
+      "sha256": "720a6eab0024069bbee68e7cb4c3ff1149468a34611225cdc852662c5d0ec2b7",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+      "sha256": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+      "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/3dmodels/README.md",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/3dmodels/README.md",
+      "sha256": "752e200e1bfef2771676b488a9358847f2432b297b6f2fd8d519dc85a269d669",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/3dmodels/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.kicad_sym",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.kicad_sym",
+      "sha256": "e62bbc490891ae1f922a358ec94bca9607b65fbc3ea021bc84b67729e24923e2",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/C_0603_1608Metric.kicad_mod",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/C_0603_1608Metric.kicad_mod",
+      "sha256": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/C_0805_2012Metric.kicad_mod",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/C_0805_2012Metric.kicad_mod",
+      "sha256": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/D_SMA.kicad_mod",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/D_SMA.kicad_mod",
+      "sha256": "f7cba3b52ed8b34dce89170722de58324eac04e9e61a095e0eab37b9ca93cb7f",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/FS8205.kicad_mod",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/FS8205.kicad_mod",
+      "sha256": "7bb6e225d44c8f4a9eb4d7df22c8ab1db67ad1d3982db4543327034300fcac7b",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/Fuse_1206_3216Metric.kicad_mod",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/Fuse_1206_3216Metric.kicad_mod",
+      "sha256": "8f4307d8c771db71526ed8ccf7c762824636660adec3635905932cc5e1d02280",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical.kicad_mod",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical.kicad_mod",
+      "sha256": "dd59286748b9a6fa9174237072608f811cf3169dddf00eab54a5c196fcb6f7e8",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/JST_VH_B2P-VH_1x02_P3.96mm_Vertical.kicad_mod",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/JST_VH_B2P-VH_1x02_P3.96mm_Vertical.kicad_mod",
+      "sha256": "db267aa991d5a9d6f37a7118ea3649762027773687cf65df88339d984a25edb3",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical.kicad_mod",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical.kicad_mod",
+      "sha256": "fa93a9f49b03c4caad76b643da2473903ee645833aa1d0ae65afd97740431d86",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/KiCad-Logo_6mm_SilkScreen.kicad_mod",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/KiCad-Logo_6mm_SilkScreen.kicad_mod",
+      "sha256": "051ad5f202e6935d283400b542986aebd64a55240eac8bbd88f52926b7e7e66c",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/LED_1206_3216Metric.kicad_mod",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/LED_1206_3216Metric.kicad_mod",
+      "sha256": "c33a71d97035dd5335a65c4f68a595a18526b89a94756de0ed764f5ccdea961d",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/L_Coilcraft_XxL4020.kicad_mod",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/L_Coilcraft_XxL4020.kicad_mod",
+      "sha256": "58bbe508cee2d928b1645cec09fc191db48328b3f9f47dd75cecaea5e746ffb1",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/MountingHole_2.2mm_M2.kicad_mod",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/MountingHole_2.2mm_M2.kicad_mod",
+      "sha256": "1b38bd9b2279c528f6e6bd4cf43f4aea04facae04f4afb1649dae640330a7178",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/OSHW-Logo_5.7x6mm_SilkScreen.kicad_mod",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/OSHW-Logo_5.7x6mm_SilkScreen.kicad_mod",
+      "sha256": "55408093e653cde05cf2ab9b609c7adfd326bcfd8408a893ea162724a683ca44",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/PinHeader_1x05_P2.54mm_Vertical.kicad_mod",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/PinHeader_1x05_P2.54mm_Vertical.kicad_mod",
+      "sha256": "4b62e226ec163657a79acde1229c1fca2b2453ff75fddcbc038fc7484bbc2711",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/R_0603_1608Metric.kicad_mod",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/R_0603_1608Metric.kicad_mod",
+      "sha256": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/SOT-23-5.kicad_mod",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/SOT-23-5.kicad_mod",
+      "sha256": "455a3f7c3e5eb5b8847eaa5df23e18651e78ab9f75afd09a0883758a0d901761",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/SOT-23-6.kicad_mod",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/SOT-23-6.kicad_mod",
+      "sha256": "f341c73aac9dcb553456f68bf3fee3d26eb14acf6d8a1cae82b50418fe1d71ca",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/SOT-23.kicad_mod",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/SOT-23.kicad_mod",
+      "sha256": "0d88c86c1b6d8c1aae4aa8c09386264c089d4451a128b6ccd63ed253f4300b15",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/SW_SPDT_CK_JS102011SAQN.kicad_mod",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/SW_SPDT_CK_JS102011SAQN.kicad_mod",
+      "sha256": "95c91aa5cb5fb730cf4db077b512c0fa02725edbe92ccc85350d819e56eabc28",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/TPS22950_YBH.kicad_mod",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/TPS22950_YBH.kicad_mod",
+      "sha256": "3a9f5f7a225a3fa63cbd413128a2bb91f42c09f979678a9bcfef9615240909e1",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/TestPoint_Pad_D1.5mm.kicad_mod",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/TestPoint_Pad_D1.5mm.kicad_mod",
+      "sha256": "d7ae230b69d8c3dad5082515a51aac9e4840360c8f4324a00673353676d43042",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm.kicad_mod",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm.kicad_mod",
+      "sha256": "8beb57ce756ebcab32109aa9aa075151b42ebfd5f490614407832d761d1a314d",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/Texas_RGP0020D_VQFN-20-1EP_4x4mm_P0.5mm_EP2.7x2.7mm.kicad_mod",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/Texas_RGP0020D_VQFN-20-1EP_4x4mm_P0.5mm_EP2.7x2.7mm.kicad_mod",
+      "sha256": "13a18db10d0ba88c72a15e938c5549dacfb5893c5636f44d2fcc1b2555543694",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/Texas_S-PWSON-N10.kicad_mod",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/Texas_S-PWSON-N10.kicad_mod",
+      "sha256": "e290ad4082535e8d7affcc9a567c0a24072f6540f42df8fe64a0f75021ce79ba",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/Texas_S-PWSON-N10_ThermalVias.kicad_mod",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/Texas_S-PWSON-N10_ThermalVias.kicad_mod",
+      "sha256": "d74c436ce7f2f4653e6e3ba8706d8c2f18c52fdc26951b81c42fe158e41a791f",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/Texas_X2QFN-12_1.6x1.6mm_P0.4mm.kicad_mod",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/Texas_X2QFN-12_1.6x1.6mm_P0.4mm.kicad_mod",
+      "sha256": "ea89ce5e84cfea79eeccc18b0b7b704402a1584d2bb3227d1a9471c96a109771",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/USB_C_HCTL.kicad_mod",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/USB_C_HCTL.kicad_mod",
+      "sha256": "c7a7b76b6bc8c389fdadc07e5a7081abce85e1ed52c5192324226793ab14ba46",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm.kicad_mod",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_Power.pretty/VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm.kicad_mod",
+      "sha256": "7fdab49c7dbcf0fb228d3ce4dbedf954d48674111b621f75a0885c56fe3855fc",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_power_module.kicad_pcb",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_power_module.kicad_pcb",
+      "sha256": "839d8741c2216db98f9ec57497ce1cea194b21feef1c5f35c01dc377655d2540",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_power_module.kicad_pro",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_power_module.kicad_pro",
+      "sha256": "4686f8fadaadc3940c43beb52b4d06a29e0cbd1d7ebbd8e124cd7b7f6b689ca3",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_power_module.kicad_sch",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/KK_power_module.kicad_sch",
+      "sha256": "064e30e6751f75dcc967ce15bc210325a30fea53b031fc53b5e3d44c9ca6bc26",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/103AT-2.pdf",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/103AT-2.pdf",
+      "sha256": "389dc527ed8d783cbbf94db460504e26d17993020d8d3627056499a9264b3262",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/103AT-2.txt",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/103AT-2.txt",
+      "sha256": "6298f00c2adb6fafdd34ed785ad24ebe0f7a4c1df5fbf4665aa7229c86b06f39",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/AO3400A.pdf",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/AO3400A.pdf",
+      "sha256": "9c60d0b6c1ddc7609a4b788a91181468d8ffe6c3e9ba425c3d8ffc5ba88c5033",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/AO3400A.txt",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/AO3400A.txt",
+      "sha256": "39f205116896b7e2c2a6eb092f80fd848b2e93c0e64a3eea659df3803d5f7aa8",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/BQ24074RGTR.pdf",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/BQ24074RGTR.pdf",
+      "sha256": "3c8a0a906dc305bccc4eb5f83f27a9df7d8db441ee304e204650f5e7b43c4e56",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/BQ24074RGTR.txt",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/BQ24074RGTR.txt",
+      "sha256": "6cf18cdb860c04a8bea8e65cc1a419ce850645b79819506036799f3765101e20",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/BQ24075TRGTR.pdf",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/BQ24075TRGTR.pdf",
+      "sha256": "6f09e139e13a7bca407b4e8608ed0c387e43ba8c1d3705b4f9872b82495ea71c",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/BQ24075TRGTR.txt",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/BQ24075TRGTR.txt",
+      "sha256": "a82f06dbf09a0d371530033ae4d7f0aca6a0f24d29da2129b5c75d43bf82a9a3",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/DW01A.pdf",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/DW01A.pdf",
+      "sha256": "cdba0ec05698cf629e4a23269f8c0371a0583cc132ec6730ef204aa04e886569",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/DW01A.txt",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/DW01A.txt",
+      "sha256": "d67959ee74ad4eef78c4fde2264480749d642d5ea4338c516f69a958c029bdaf",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/FS8205-pinout.png",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/FS8205-pinout.png",
+      "sha256": "06e09204462e7e2078ae994cf0d108f42357ddb77194fb52bd5e8afc88b7b89e",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/FS8205_rev1_7.pdf",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/FS8205_rev1_7.pdf",
+      "sha256": "73b88824e7a65b233f1e5c9b5c226baa753aa4224bb12b5464a09f60c2c0e7e4",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/HC-TYPE-C-16P-01A.pdf",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/HC-TYPE-C-16P-01A.pdf",
+      "sha256": "04ab3e90eaf6e0b58f40b96a7c19856537c8b04eb55f401a877d2633fc6bfc5b",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/JST_VH-header.png",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/JST_VH-header.png",
+      "sha256": "886dc1fe0af209eaa4b58f98251a461f5b27f6dc91839ed1b9e3f4e275164228",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/JST_VH.pdf",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/JST_VH.pdf",
+      "sha256": "d51e669c597988b20c0963daf5bef7356cbd2104c1f867e9107c6fa6cd2b899c",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/JST_VH.txt",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/JST_VH.txt",
+      "sha256": "9d315dec55a94ab8a37c2bf4f22ff751396adf9eb66020b9b6b4b25f881cc6f5",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/SN74AUP1G17DBVR.pdf",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/SN74AUP1G17DBVR.pdf",
+      "sha256": "b59bfa5c4d9d6b4cd91efd46edec046b94670ebe894f3a46ce8089801ac3f36a",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/SN74AUP1G17DBVR.txt",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/SN74AUP1G17DBVR.txt",
+      "sha256": "d5433b08e8588fcfe6afabdf0ad860f3325ff34a0e01ca2c7bc4b02ce704c485",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/TLV75533PDBVR.pdf",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/TLV75533PDBVR.pdf",
+      "sha256": "7eb7bc6935bf6c1d247b2fce62c9e5a49a474fd94359ddc390a4baf0ac1f5293",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/TLV75533PDBVR.txt",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/TLV75533PDBVR.txt",
+      "sha256": "e1f39efec463d3b5781f730978d71b5b6b462e9b6a833817219978d53d92cd40",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/TPS22918DBVR.pdf",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/TPS22918DBVR.pdf",
+      "sha256": "1b28eb58003d28b18bf919a15734056f296a499bebee2bd493a1e4358c4dfb1c",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/TPS22918DBVR.txt",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/TPS22918DBVR.txt",
+      "sha256": "8db8efa4d2e82d6ffd8017f94d0865baeefe4affba7cb120a9396a580b713fc8",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/TPS22950YBHR.pdf",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/TPS22950YBHR.pdf",
+      "sha256": "e0f4f5766ba30309af96287e20345b34b38986da59bb0e644bf5401e009c0c66",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/TPS22950YBHR.txt",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/TPS22950YBHR.txt",
+      "sha256": "00a1d59af4d06ceb9ad1913815e51af8210f900f7ab9edfa66a0b4f1c122e37c",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/TPS259530DSGR.pdf",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/TPS259530DSGR.pdf",
+      "sha256": "6a8b67ad925b6fa88d7f3fccd94a3fc4f7c8d3f8a22abecbdfdc3c33f63f0d25",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/TPS259530DSGR.txt",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/TPS259530DSGR.txt",
+      "sha256": "d39df42a2eb3280f6d1280d0d32a6efd547d154589b25cb873ce405f9d070500",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/TPS386000RGPR.pdf",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/TPS386000RGPR.pdf",
+      "sha256": "02e788626e1d8d546ada465dc63703635834e41ee109d6c9fc6970a26fb62e98",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/TPS386000RGPR.txt",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/TPS386000RGPR.txt",
+      "sha256": "7f449ba7ba8e5f68c9e53f6c4dedb6037c4f7cdd07e486332443195ae29c5127",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/TPS63060DSCR.pdf",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/TPS63060DSCR.pdf",
+      "sha256": "d2818015ba4b0d7c384e8a0b8a9ad04ebbabe9092aee89643715bcb88cd5af20",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/TPS63060DSCR.txt",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/TPS63060DSCR.txt",
+      "sha256": "87b1dae18d94802cd0f07261ed3bf6bfec26cff662e3df8ba23f804b77f36b25",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/TUSB320LAIRWBR.pdf",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/TUSB320LAIRWBR.pdf",
+      "sha256": "62f7b3f65338e25ebd6fd46ef04474ba806b06b1cc04bc0b3d7b8191b01ca87d",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/TUSB320LAIRWBR.txt",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/TUSB320LAIRWBR.txt",
+      "sha256": "61baf4ef955b9fdb2e5345464d86a7c1385b39e7842ef11b392841fa7b4e07c8",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/USB-drawing.png",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/USB-drawing.png",
+      "sha256": "7f988147b204f81249b809988b0369a2a7a66efb7b8a3bbb7e20adada8df5973",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/XFL4020-102MEC.pdf",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/XFL4020-102MEC.pdf",
+      "sha256": "6dca915ac1daa47210f7708a7540221ffef4f34a88a8621c94bd50cdf48647e6",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/XFL4020-102MEC.txt",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/XFL4020-102MEC.txt",
+      "sha256": "cf0d9d0f192f474bcd66b205a0d303fb464a07dfa3fa8aaef59dcac9ee9fd61d",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/download_log.json",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/download_log.json",
+      "sha256": "15838891883169549062665080b1c05a85453f9ff723a0d1f0697819abd5b770",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/sources.json",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/datasheets/sources.json",
+      "sha256": "b835a70996fa6a1a86b752e85ed7ca1985a79c54cc7aa7943d8e9aba7508c174",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/fp-lib-table",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/fp-lib-table",
+      "sha256": "fa870f73861b1dad2491facecd591a570b7140d125c4c0526b708a21f85f2f38",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/netlist.xml",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/netlist.xml",
+      "sha256": "cbd2b7d27bca840be8a35ab24b3a4e86c250b4845975229c657744d9e7ed6aab",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/sym-lib-table",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/cad/sym-lib-table",
+      "sha256": "a135110f2c1dd61cbbf5ead3089cdcffea757296f4de5de6883bd2a5b267764d",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/drawings/KK_power_module-assembly_bottom.pdf",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/drawings/KK_power_module-assembly_bottom.pdf",
+      "sha256": "21d8ffeee01d85a7b83a41fd6ba0975aef959d835409a061cd5b01b15560fe96",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/drawings/KK_power_module-assembly_bottom.svg",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/drawings/KK_power_module-assembly_bottom.svg",
+      "sha256": "f054b7fa7619a756aac0063639cacf160c03fc75c93a32c5333db1ed0a191c02",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/drawings/KK_power_module-assembly_top.pdf",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/drawings/KK_power_module-assembly_top.pdf",
+      "sha256": "98d3f099daa1aa68a9b72d884ea5047ff312df82c1384b6872ffc540af4ac72f",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/drawings/KK_power_module-assembly_top.svg",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/drawings/KK_power_module-assembly_top.svg",
+      "sha256": "77f5eb258a85be35a5337bb40589611e7a31c5dd3e28bd4460309275837044f4",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/drawings/KK_power_module-component_bodies_bottom.pdf",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/drawings/KK_power_module-component_bodies_bottom.pdf",
+      "sha256": "d0b041506553f2c5eaab0724daf8219145884c42f5a6c810df31554759698367",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/drawings/KK_power_module-component_bodies_bottom.svg",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/drawings/KK_power_module-component_bodies_bottom.svg",
+      "sha256": "d1935fd54d9057ea5527110d12fa0b4d947de516f5b707c282cdbe014154e11c",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/drawings/KK_power_module-component_bodies_top.pdf",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/drawings/KK_power_module-component_bodies_top.pdf",
+      "sha256": "fc1dd53e0daec4bdb8ace5e9084fde01d9d01d0e39858c72fbbcbf3236b827c8",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/drawings/KK_power_module-component_bodies_top.svg",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/drawings/KK_power_module-component_bodies_top.svg",
+      "sha256": "e9a5dbfa77e7581a757fe77f349aad5139e84e17526c596b00df6de9d9a684cb",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/drawings/KK_power_module-copper_back.svg",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/drawings/KK_power_module-copper_back.svg",
+      "sha256": "9f0853658a73e0ae204f290654bc84fb4feb87f1a0f0e081fd0121efb24c2164",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/drawings/KK_power_module-copper_front.svg",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/drawings/KK_power_module-copper_front.svg",
+      "sha256": "3b8ce43fbded72f41d1dc39af469fce9e3251e2a283c522148d059d3a4b39cfd",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/drawings/KK_power_module-copper_inner1.svg",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/drawings/KK_power_module-copper_inner1.svg",
+      "sha256": "8552360d6fd7c6d7f8ee8e6e86c7bc99324628ab302f9684baa8149cc3f3c160",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/drawings/KK_power_module-copper_inner2.svg",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/drawings/KK_power_module-copper_inner2.svg",
+      "sha256": "ce9ef62bdbe46c6f84cf641541fa1d3204e170b873d15bc258bdf6cb1a76c2e5",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/drawings/assembly_bottom.png",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/drawings/assembly_bottom.png",
+      "sha256": "2b9bcc78107bbde97b97e0468c4a950509676b069cdfec8eff936b7a71848ab2",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/fabrication/KK_power_module-B_Cu.gbl",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/fabrication/KK_power_module-B_Cu.gbl",
+      "sha256": "aa73f291b60557d0b76e7c67e47e32ca565dd5f66dae97c6b95bd89d8df426a2",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/fabrication/KK_power_module-B_Mask.gbs",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/fabrication/KK_power_module-B_Mask.gbs",
+      "sha256": "3538ee7b534b95037ce7c7bec881b47559e3431a2616ada9abe9e58bad7f2eb4",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/fabrication/KK_power_module-B_Paste.gbp",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/fabrication/KK_power_module-B_Paste.gbp",
+      "sha256": "ab22c4db466ea7e5c82df4d4e30a3c79d5b01a443daccb3389dc890aee644da1",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/fabrication/KK_power_module-B_Silkscreen.gbo",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/fabrication/KK_power_module-B_Silkscreen.gbo",
+      "sha256": "c78d477d13ab5c9c847caa01f62e27a5bf1c760f9ca853bf9a2fbaf9124e6005",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/fabrication/KK_power_module-Edge_Cuts.gm1",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/fabrication/KK_power_module-Edge_Cuts.gm1",
+      "sha256": "3bebc98c93d7a829bd248ce5d1c35e1f22d7da6031433cda2e0be9b438e0126e",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/fabrication/KK_power_module-F_Cu.gtl",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/fabrication/KK_power_module-F_Cu.gtl",
+      "sha256": "7cc1f135a2a9b4b2da61a2834526f66487fba125d63a84a4e05b3d0c129193cc",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/fabrication/KK_power_module-F_Mask.gts",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/fabrication/KK_power_module-F_Mask.gts",
+      "sha256": "767dd76e372e164807a68cf6e1127b2c1123fcff6079d818ee0c0065886c1367",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/fabrication/KK_power_module-F_Paste.gtp",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/fabrication/KK_power_module-F_Paste.gtp",
+      "sha256": "96bec21720a21ae68da8ee6f1177050079c8cc75cbecabee600f76c72ed86bf0",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/fabrication/KK_power_module-F_Silkscreen.gto",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/fabrication/KK_power_module-F_Silkscreen.gto",
+      "sha256": "9c25152ceec7bf1fd974e2b51f559c7ac18dd9750ace63886611c2b7e6ff9a48",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/fabrication/KK_power_module-In1_Cu.g1",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/fabrication/KK_power_module-In1_Cu.g1",
+      "sha256": "5158e37fe187fa840d6c00d35f4d3aa9089f807481ecf2e1e164ae8699626f7d",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/fabrication/KK_power_module-In2_Cu.g2",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/fabrication/KK_power_module-In2_Cu.g2",
+      "sha256": "7182962f1217cac148dc74e478b5ceeae60c7ac2f4401c7f6add65ccce0b9fcf",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/fabrication/KK_power_module-NPTH-drl_map.pdf",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/fabrication/KK_power_module-NPTH-drl_map.pdf",
+      "sha256": "772085a94586bf4c68b7f1eca07ccb5af19b7b4d700400876ff1bf2c495100cb",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/fabrication/KK_power_module-NPTH.drl",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/fabrication/KK_power_module-NPTH.drl",
+      "sha256": "b0a3b9c0453b4fb2f566737fb676c55eb9077cb2d14203b01a10985879d2fafe",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/fabrication/KK_power_module-PTH-drl_map.pdf",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/fabrication/KK_power_module-PTH-drl_map.pdf",
+      "sha256": "82243f4df6d0abbbcc9328eff47ccd63141659ce7f7baac399703478aff5ce6d",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/fabrication/KK_power_module-PTH.drl",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/fabrication/KK_power_module-PTH.drl",
+      "sha256": "c78f51d93b56adfb33852a568c5ff50519cede1ca09875f994c90e3e2dcc584b",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/fabrication/KK_power_module-drill.rpt",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/fabrication/KK_power_module-drill.rpt",
+      "sha256": "984fa516e5b84eed39a9da8d7b65e72a9ce7b9cef09abc175ca0232d715744f4",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/fabrication/KK_power_module-job.gbrjob",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/fabrication/KK_power_module-job.gbrjob",
+      "sha256": "0e7315e22fbfb170c1a2616298a2b89d288938c17a595b8ce3384820c0bafb91",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/fabrication/KK_power_module.ipc",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/fabrication/KK_power_module.ipc",
+      "sha256": "8367b6d21f9e571086c9bb68ea2a3cc12e8aaec0a9beb8c8c4afbafa40e2b13d",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/schematic.pdf",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/schematic.pdf",
+      "sha256": "ef1f03cb82cb6b8a6fa6d39b517bfe587bf0966acb633658946a376dbbad868e",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/verification/LOGO_CHANGE_AUDIT.json",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/verification/LOGO_CHANGE_AUDIT.json",
+      "sha256": "e59f437e4262021598433d40b8e21dd26de59e84537cb45af64f68c23850c160",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/verification/PLANE_AUDIT_POWER_WIDTH.json",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/verification/PLANE_AUDIT_POWER_WIDTH.json",
+      "sha256": "8c31afab6a56a34a8f91a0ba1fe2af8a0a55c56a0ce8617777e6642b723cbd0d",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/verification/VERIFICATION.json",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/verification/VERIFICATION.json",
+      "sha256": "bcef3dd402b5b5b4b046279121f7e87cd3a05c64843439b7d8dbe3a44883f83e",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/verification/electrical_screening.json",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/verification/electrical_screening.json",
+      "sha256": "0346dd3e6d3d49d21b4b397c910130685987fad865f95a72d56bc03c1ec4da4f",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/verification/final_erc.json",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/verification/final_erc.json",
+      "sha256": "9dfe783b580c29bb6dd7d7ac0354af714b68ce1ae387727b251a42bdbd440df2",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/verification/review_drc.json",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12/verification/review_drc.json",
+      "sha256": "6500ca161ef1d10aac7dfe259d060cd741697d8346859a2635b13feb5f501d5f",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12.zip",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12.zip",
+      "sha256": "8c4ded12475b038767dac8addebfbb8e4e69e2f188b733c6eb908bc53612db4c",
+      "operation": "move"
+    },
+    {
+      "from": "KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12.zip.sha256",
+      "to": "revisions/2026-09-12_C6_P3_release/KK_power_module/manufacturing/P2_5_SAMPLE_REVIEW_2026-09-12.zip.sha256",
+      "sha256": "0ef9df7f35eb550ab1b5d54c26aa711df8465c9142e3629caaead550458d6a3f",
+      "operation": "move"
+    },
+    {
+      "from": "/home/legion/Desktop/PRINT THIS.pdf",
+      "to": "revisions/2026-09-12_C6_P3_release/desktop/PRINT_THIS_before_C6_P3.pdf",
+      "sha256": "0e236238b6d577fecdb9c0ea2ac566244483ded1113fd7223e56a2b1e11b9950",
+      "operation": "copy"
+    }
+  ]
+}
