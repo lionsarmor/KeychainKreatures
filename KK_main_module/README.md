@@ -1,5 +1,7 @@
 # Main board — C.6, all resistors flat
 
+[Student troubleshooting PDF](assembly/TROUBLESHOOTING_MAIN_C6.pdf) · [Guide and worksheets](../docs/troubleshooting/README.md)
+
 Open [KK_main_module.kicad_pro](KK_main_module.kicad_pro) or [KK_main_module.kicad_pcb](KK_main_module.kicad_pcb) directly from this folder. **This is now the current C.6 board, not the old C.5 root.**
 
 96 × 105 × 1.6 mm, two copper layers, R4 rounded corners and its own mounting pattern. Compact power P.4 is 50 × 50 mm and needs separate supports. All 43 resistors are horizontal; ten electrolytics and six TO-92 bodies lie flat. There are 98 fitted through-hole electrical positions and 25 bare debug holes. Sockets, optical parts and buttons retain their functional height.

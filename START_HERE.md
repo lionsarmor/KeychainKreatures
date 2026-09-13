@@ -11,6 +11,8 @@ These are **engineering prototype review files, not a qualified finished toy**. 
 
 ## Assembly and verification
 
+- [Student/instructor troubleshooting guides for both boards, measurement sheets and factory fault report](docs/troubleshooting/README.md)
+
 - [Main assembly/wiring guide](KK_main_module/assembly/ASSEMBLY_GUIDE.md) · [Main reference BOM](KK_main_module/assembly/C6_BOM_BY_REFERENCE.csv) · [Complete paired-kit extras](KK_main_module/assembly/C6_COMPLETE_KIT_EXTRAS.csv)
 - [Power assembly and current-limited first-power-up](KK_power_module/assembly/P4_REVIEW_AND_TEST.md) · [Power reference BOM/placement](KK_power_module/release_checks/BOM_AND_PLACEMENT.csv)
 - [Printable stack review](docs/C6_P4_MECHANICAL_REVIEW.pdf) · [Main front actual-size fit](KK_main_module/assembly/C6_front_FIT_100_PERCENT.pdf) · [Main back actual-size fit](KK_main_module/assembly/C6_back_FIT_100_PERCENT.pdf)

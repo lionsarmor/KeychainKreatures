@@ -1,5 +1,7 @@
 # Power board — current P.4 compact module
 
+[Troubleshooting PDF](assembly/TROUBLESHOOTING_POWER_P4.pdf) · [Guide and worksheets](../docs/troubleshooting/README.md). Live power tests require a qualified instructor/technician.
+
 Open [KK_power_module.kicad_pro](KK_power_module.kicad_pro) or [KK_power_module.kicad_pcb](KK_power_module.kicad_pcb) directly from this folder. P2_compact and old work directories are archived.
 
 50 × 50 × 1.6 mm, four copper layers, R3 corners, four 2.2 mm holes at (3,3), (47,3), (3,47), (47,47) mm. It needs independent case supports; main C.6 remains 96 × 105 mm. The routed electrical core is preserved. There are 108 fitted parts, 14 ICs and 28 rear bare test pads. Power remains a factory SMT subassembly, not a student SMT soldering kit.

@@ -30,6 +30,8 @@ All fitted electrical positions have resolving 3D model links. Some module and c
 
 ## Assembly and first power-up
 
+New to electronics, or investigating a board that will not start? Use the [board-by-board troubleshooting guides and recording sheets](docs/troubleshooting/README.md). Begin with safety and unpowered checks; power-module live tests need a qualified instructor.
+
 Read these before buying parts, soldering or powering a board:
 
 1. [Main BOM and assembly/wiring guide](KK_main_module/assembly/ASSEMBLY_GUIDE.md), [reference BOM](KK_main_module/assembly/C6_BOM_BY_REFERENCE.csv), and [complete paired-kit extras](KK_main_module/assembly/C6_COMPLETE_KIT_EXTRAS.csv). Extras cover sockets, modules, mating plugs, wiring and provisional hardware; count them once per main+power pair.

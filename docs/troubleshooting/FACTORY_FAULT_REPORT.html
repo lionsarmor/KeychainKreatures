@@ -1,0 +1,156 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Factory fault report</title><style>
+@page { size: A4; margin: 15mm 14mm 17mm; }
+* { box-sizing: border-box; }
+body { font-family: Arial, sans-serif; font-size: 11pt; line-height: 1.4; color:#17202a; max-width: 185mm; margin: 0 auto; }
+h1 { font-size: 24pt; line-height:1.15; border-bottom:3px solid #176b71; padding-bottom:5mm; }
+h2 { font-size:16pt; color:#13585d; border-top:1px solid #bbc7cb; padding-top:4mm; margin-top:7mm; break-after:avoid; }
+h3 { font-size:12pt; break-after:avoid; }
+p,li { orphans:3; widows:3; }
+li { margin-bottom:2mm; }
+table { border-collapse:collapse; width:100%; font-size:9.5pt; line-height:1.3; margin:4mm 0; table-layout:auto; }
+thead { display:table-header-group; background:#e6f1f2; }
+tr { break-inside:avoid; }
+th,td { border:1px solid #adbac2; padding:2mm; text-align:left; vertical-align:top; overflow-wrap:anywhere; }
+td:first-child { min-width:15mm; }
+code { font-family:monospace; background:#f0f2f3; overflow-wrap:anywhere; }
+a { color:#13585d; overflow-wrap:anywhere; }
+blockquote { border-left:4px solid #b86916; padding-left:4mm; margin-left:0; }
+.printnote { background:#e6f1f2; padding:3mm; font-size:10pt; }
+@media screen { body { padding:8mm; } }
+</style></head><body><h1>Keychain Kreatures — one-board fault report</h1>
+<p>Complete one copy per board. Photograph before repair. Do not attach a real battery just to fill in this form. Mark unavailable tests BLOCKED or NOT RUN.</p>
+<h2>Identification</h2>
+<ul>
+<li>Board: MAIN C.6 / POWER P.4 (circle one).</li>
+<li>Serial, supplier, order and batch/lot: ____________________</li>
+<li>Date received / tester / instructor: ____________________</li>
+<li>Bare PCB, partly assembled or fully assembled: ____________________</li>
+<li>Exact release ZIP name and SHA-256: ____________________</li>
+<li>Factory-approved BOM substitutions: ____________________</li>
+<li>Main: ESP32, display and SD-reader markings: ____________________</li>
+<li>Main: diagnostic firmware version/hash and known-good evidence: ____________________</li>
+</ul>
+<h2>First failure</h2>
+<ul>
+<li>What was expected; what actually happened? ____________________</li>
+<li>First failed guide step and preceding passing step: ____________________</li>
+<li>Repeatable or intermittent? ____________________</li>
+<li>Did another unit pass the identical setup? Its serial: ____________________</li>
+<li>Smoke, smell, abnormal heat or current-limit event? ____________________</li>
+<li>Was a real cell connected? Approved part and condition: ____________________</li>
+<li>Any rework, reflash/erasure, jumper, substitution or forced connector? ____________________</li>
+</ul>
+<h2>Setup — attach a labeled photograph/diagram</h2>
+<ul>
+<li>Source model, voltage, current limit and isolation: ____________________</li>
+<li>Attached cables, loads, modules and instruments: ____________________</li>
+<li>Where does every instrument ground/earth connect? ____________________</li>
+<li>Power: how is BAT_NEG kept free of an external bypass to GND? ____________________</li>
+<li>Ambient temperature and temperature-measurement method: ____________________</li>
+<li>Meter/scope model, ranges, probe attenuation and test state: ____________________</li>
+</ul>
+<p>Write both probe points. A number without its operating state or reference is not enough.</p>
+<table>
+<thead>
+<tr>
+<th>Test / signal</th>
+<th>Red / reference points</th>
+<th>Source, switch, load, firmware state</th>
+<th>Expected context</th>
+<th>Reading / units</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Attach the completed checklist and measurement CSV. Scope captures must show channel scales, timebase, trigger, probe setup and board identity. Do not include Wi-Fi passwords or unrelated personal data.</p>
+<h2>Requested factory response</h2>
+<ul>
+<li>Compare the first failing stage with the exact schematic, BOM and Gerbers.</li>
+<li>Supply bare-board electrical-test results, assembly/hidden-joint inspection images and all substitutions for the lot.</li>
+<li>Power: confirm the approved via-in-pad process and WCSP/QFN assembly details.</li>
+<li>Identify the cause before proposing a part swap or undocumented jumper.</li>
+<li>Advise whether to preserve the unit untouched for return; obtain approval before rework.</li>
+<li>Provide corrective action, affected lot scope and post-repair test results.</li>
+</ul>
+<h2>Repair and retest</h2>
+<table>
+<thead>
+<tr>
+<th>Date / person</th>
+<th>Confirmed cause</th>
+<th>Approved repair / part and lot</th>
+<th>Retested steps</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Final status: PASS AT RECORDED CONDITIONS / FAIL / BLOCKED / NOT RUN.</p>
+<p>Instructor signature/date: ____________________</p>
+<p>Passing is not production, battery-safety, USB, EMC or toy certification. Coordinate damaged-battery handling/return with the responsible lab and supplier; do not put it in an ordinary PCB return parcel.</p>
+</body></html>

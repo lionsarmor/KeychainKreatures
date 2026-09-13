@@ -1,0 +1,41 @@
+{
+  "scope": "Documentation-only supplement; no tests on physical boards performed",
+  "guide_version": 1,
+  "revisions": [
+    "C6",
+    "P4"
+  ],
+  "source_and_issued_packages_unchanged": {
+    "KK_main_module/KK_main_module.kicad_pcb": "c7dc3028d36d8b80aca6357518118377b29c746b93822521c5e1624194e7dc07",
+    "KK_main_module/KK_main_module.kicad_sch": "104eb7410e0ab1c02d0f4165e05dfe0b5cb877af682d92bae5d93ed3ea8294cf",
+    "KK_main_module/KK_main_module.kicad_pro": "185931477ba1d0fbd3b95b6b7e53d36276e4c2e65f3632a730628156dd6dabf9",
+    "KK_main_module/KK_main_module.kicad_dru": "f544636423516c8c05f5399654630d77f2ec453178de82013a0b123c81491fb4",
+    "KK_main_module/manufacturing/KK_MAIN_C6_P4_PAIRING_5_PROTOTYPE_REVIEW_2026-09-12.zip": "3a419d9ed5ec409cfccd5ea537457f98064b4e4847b842b42e5cba28de1f9899",
+    "KK_main_module/manufacturing/KK_MAIN_C6_P4_PAIRING_GERBERS.zip": "0e20721f1b9dd93fa9872e8770663052af3e6fb9d4ef51760ed3f45f7a24aa0f",
+    "KK_power_module/KK_power_module.kicad_pcb": "2bf55f274d53abceba51ad69a39672ddb952e40c5613faa7b570f134483f0f21",
+    "KK_power_module/KK_power_module.kicad_sch": "a8fb8cb2a3d619cd94b0367ab6ad416a7ec38160e30f5b99ce595e49d9b1bafe",
+    "KK_power_module/KK_power_module.kicad_pro": "49b1bc169dcfc2a01afefded567e22c2cbdbc2c8118795234cd59feb53ebca81",
+    "KK_power_module/manufacturing/KK_POWER_P4_5_PROTOTYPE_REVIEW_2026-09-12.zip": "eeb500a9f16e0b33849d8635b79cf56f14dbb78e71e7443c065c047be822fdb2",
+    "KK_power_module/manufacturing/KK_POWER_P4_GERBERS.zip": "c26ffe5b434c95e099c544f12a72fde63b2852fb8af8b48b0badc250ee6ad155"
+  },
+  "critical_pin_net_assertions": 50,
+  "test_points_cross_checked": {
+    "main": 25,
+    "power": 28
+  },
+  "artifacts": {
+    "KK_main_module/assembly/TROUBLESHOOTING_MAIN_C6.md": "97aace2fbe0d8f31bf799f82e62e7cd54f901ec0989f8b2ace9db427f82aa58b",
+    "KK_main_module/assembly/TROUBLESHOOTING_MAIN_C6.html": "f7e1178e569d4fdd43ef035e977e9fd3363134948d51281e804bde0fdab2502f",
+    "KK_main_module/assembly/TROUBLESHOOTING_MAIN_C6.pdf": "b70a10bb5fd8ba35b60fb446f4d868071539ebf5f2933e906b5b7bb89ced1a08",
+    "KK_main_module/assembly/TROUBLESHOOTING_C6_MEASUREMENTS.csv": "833c37b69f80d574123e00d9c0d7f6ad28bc9e2ddcd72612a3d34bf15bf088ef",
+    "KK_main_module/assembly/TROUBLESHOOTING_C6_CHECKLIST.csv": "fd332d0c919b5fb46704456683ff3e7238dd6b198786023ea364284bc25e5b8f",
+    "KK_power_module/assembly/TROUBLESHOOTING_POWER_P4.md": "75f01615e8214667b5d295501059f3b929ec455b9441d51da52bb81b4c2afb06",
+    "KK_power_module/assembly/TROUBLESHOOTING_POWER_P4.html": "d1ed31b8cc377d6c41eb76c367c0bacbe0cb89bbd41a829c4a3a851cd43cd855",
+    "KK_power_module/assembly/TROUBLESHOOTING_POWER_P4.pdf": "e1097b253c511f69d07f393e3abbd72296e67178e5a499a24fea82fd589f4265",
+    "KK_power_module/assembly/TROUBLESHOOTING_P4_MEASUREMENTS.csv": "874159b4d181d0364761bbe4aad4006d039d5835c6531633d9ed51628baf3c4f",
+    "KK_power_module/assembly/TROUBLESHOOTING_P4_CHECKLIST.csv": "127a00cbd55f3117007ac44771d975fec8ff062c1ee6fec7842e8a21e9b2913b"
+  },
+  "physical_tests_performed": false,
+  "diagnostic_firmware_supplied": false,
+  "status": "PASS \u2014 documentation generation and source-reference checks only"
+}

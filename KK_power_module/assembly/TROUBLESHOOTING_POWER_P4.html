@@ -1,0 +1,604 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>P4 power board troubleshooting</title><style>
+@page { size: A4; margin: 15mm 14mm 17mm; }
+* { box-sizing: border-box; }
+body { font-family: Arial, sans-serif; font-size: 11pt; line-height: 1.4; color:#17202a; max-width: 185mm; margin: 0 auto; }
+h1 { font-size: 24pt; line-height:1.15; border-bottom:3px solid #176b71; padding-bottom:5mm; }
+h2 { font-size:16pt; color:#13585d; border-top:1px solid #bbc7cb; padding-top:4mm; margin-top:7mm; break-after:avoid; }
+h3 { font-size:12pt; break-after:avoid; }
+p,li { orphans:3; widows:3; }
+li { margin-bottom:2mm; }
+table { border-collapse:collapse; width:100%; font-size:9.5pt; line-height:1.3; margin:4mm 0; table-layout:auto; }
+thead { display:table-header-group; background:#e6f1f2; }
+tr { break-inside:avoid; }
+th,td { border:1px solid #adbac2; padding:2mm; text-align:left; vertical-align:top; overflow-wrap:anywhere; }
+td:first-child { min-width:15mm; }
+code { font-family:monospace; background:#f0f2f3; overflow-wrap:anywhere; }
+a { color:#13585d; overflow-wrap:anywhere; }
+blockquote { border-left:4px solid #b86916; padding-left:4mm; margin-left:0; }
+.printnote { background:#e6f1f2; padding:3mm; font-size:10pt; }
+@media screen { body { padding:8mm; } }
+</style></head><body><p class="printnote">Student/instructor engineering-prototype guide. Follow the safety gates; record unperformed tests as NOT RUN or BLOCKED.</p><h1>Power P.4 — troubleshooting and factory-return guide</h1>
+<p>For the compact <strong>50 × 50 mm, four-layer</strong> Keychain Kreatures power module, paired with C.6 main. Guide version 1, 2026-09-12. Work from the first failed stage, not from a guessed bad component.</p>
+<p><strong>Students begin with identification and unpowered inspection. All powered power-module tests are instructor/qualified-technician work.</strong> Students may observe and record results. This board contains fine-pitch surface-mount parts and lithium-battery charging/protection circuitry; it is not the student through-hole soldering exercise.</p>
+<p>This is a proposed test procedure for engineering samples, not a record of completed testing or a battery-safety certification. If the required equipment or qualified supervision is missing, mark the test <strong>BLOCKED</strong> and ask the factory to perform it.</p>
+<h2>1. What should a factory-delivered board do?</h2>
+<table>
+<thead>
+<tr>
+<th>Delivered item</th>
+<th>Correct expectation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bare P.4 PCB</td>
+<td>Cannot regulate or charge until its parts are assembled. Do not connect power.</td>
+</tr>
+<tr>
+<td>Factory-assembled P.4</td>
+<td>Can be tested independently with the approved fixture. It does not need ESP32 firmware.</td>
+</tr>
+<tr>
+<td>P.4 without a battery/thermistor</td>
+<td>Not a complete rechargeable product. Missing charge indications do not by themselves prove failure.</td>
+</tr>
+<tr>
+<td>P.4 attached to a blank main board</td>
+<td>Does not create game software or prove the main is assembled correctly.</td>
+</tr>
+</tbody>
+</table>
+<p>There are 108 fitted electrical positions and 28 rear bare test pads. The four mounting holes do <strong>not</strong> align with main C.6. Use independent supports; do not force a common four-standoff stack. Some inherited BOM value text says <code>C.5 SYS_IN / XH</code>; J3's actual four-wire interface remains the one below. Identify the power revision from the PCB/title and current release files, not that inherited connector description.</p>
+<p>Before rework, collect photographs, serial/lot numbers, factory inspection/X-ray reports, approved BOM substitutions and bare-board electrical-test results. Preserve one untouched failing unit when possible. “DRC passed” means the design files passed the reported CAD checks; it does not mean every fabricated joint and IC works.</p>
+<h2>2. Stop conditions and prohibited shortcuts</h2>
+<p>Stop for smoke, unusual smell, rapid temperature rise, reversed polarity, swelling/leaking cell, oscillating startup or unexplained current limiting. Turn off external supplies if safe and alert the instructor. Do not touch hot parts, move a damaged cell by hand or continue cycling power. Follow the lab's emergency procedure.</p>
+<ul>
+<li>Never short or jumper a fuse, protection FET, eFuse, rail gate, regulator enable or thermistor input to make the board start.</li>
+<li>Never replace F1 with a higher rating, bypass the USB current limiter, or substitute a “similar” charging IC without design review.</li>
+<li>Never connect an unspecified battery. The eventual pack is conventional <strong>1S, 4.2 V maximum</strong> Li-ion/LiPo; chemistry, current, temperature limits, connector polarity and protection coordination still need approval.</li>
+<li>Never place a multimeter in A/mA mode directly across a rail or cell. Never short a real cell for a protection test.</li>
+<li>Never connect external sources to J3 outputs. J3 is an <strong>output</strong>, not a battery or USB input.</li>
+<li>Never plug ESP32 USB in while the main receives this board's external rails.</li>
+<li>Never lift equipment protective earth to solve a grounding problem. Use the right isolated/floating fixture and rated measurement equipment.</li>
+<li>No student hot-air rework of QFN/WCSP packages. Preserve factory return evidence before any technician repair.</li>
+</ul>
+<h2>3. The two returns: the most important wiring rule</h2>
+<p><strong>J2 pin 2 / TP3 is BAT_NEG. J3 pin 2 / J4 pin 2 / TP4 is system GND. They are different nets.</strong> The protection FETs control the connection between them. An external wire or test-equipment earth connection between them can bypass protection.</p>
+<p>A small voltage difference or low resistance between BAT_NEG and GND does <strong>not</strong> automatically prove a solder bridge: the protection FETs may be conducting normally, and meter polarity can affect semiconductor readings. Never demand an open-circuit reading in every operating state. The technician must distinguish intended conduction through Q1–Q3 from an unintended copper/solder/fixture bypass, using the schematic and controlled emulator tests.</p>
+<p>Before power, draw the grounding of the <strong>source, oscilloscope, electronic load, USB host, USB meter and computer-connected instruments</strong>. If the source's negative terminal at BAT_NEG is tied to earth and a scope/load ties GND to earth, the protection is bypassed. Use a verified floating source/fixture or appropriately isolated measurements that do not create this return connection. A battery-powered meter can also become grounded through its USB logging cable. Do not assume “USB disconnected from main” eliminates every earth path.</p>
+<p>System rail measurements below use <strong>TP4 GND</strong> unless explicitly stated otherwise. Cell-side voltage is measured across <strong>J2 pin 1 and J2 pin 2</strong>. Do not move a ground clip between those domains while powered.</p>
+<h2>4. Equipment and record keeping</h2>
+<p>Unpowered student station: printed current drawings, magnifier, nonconductive holder and supervised multimeter. Black lead in COM, red in V/Ω. Continuity/resistance only with all sources disconnected and capacitors discharged; verify the meter on shorted/separated probes first. A brief rail beep can be capacitor charging. Record settled resistance and probe direction rather than inventing one pass/fail resistance for all circuits.</p>
+<p>Instructor powered station: current-limited, correctly isolated battery simulator; voltage/current readback; approved load fixture; fine insulated test clips; temperature measurement; scope/differential measurement; verified USB-C advertisement/source fixtures and cables. For <strong>charging while a battery emulator is connected</strong>, the emulator must be <strong>sink-capable/bidirectional</strong> and configured for the expected current. An ordinary bench supply generally cannot absorb charging current and is not acceptable in that state.</p>
+<p>Keep the real cell and populated main disconnected until their prerequisite checks pass. Use the actual Semitec 103AT-2 in the bench fixture as appropriate; real-cell work requires a bonded, electrically insulated sensor on the selected cell. A loose sensor on the bench does not protect a real battery's temperature.</p>
+<p>Record board serial, lot, setup photograph, equipment model, isolation arrangement, current limits, ambient temperature, load conditions, probe reference and actual readings. PASS means a performed test met its stated criterion. FAIL means an observed mismatch. BLOCKED means equipment/approved limits are missing. NOT RUN is not PASS.</p>
+<h2>5. P1 — unpowered incoming inspection</h2>
+<p>Check the 50 × 50 mm/R3 outline, four 2.2 mm mounting holes, intact board edges and P.4 revision. Inspect USB shell anchors, connector latches, switch and both copper faces. Look for missing components, wrong orientation, displaced tiny parts, solder beads, damaged pads or scratches. Use the <a href="https://github.com/lionsarmor/KeychainKreatures/blob/52bfa1ec090cb6baee13dd3303d0df844ae71aad/KK_power_module/release_checks/BOM_AND_PLACEMENT.csv">reference BOM/placement</a> and <a href="https://github.com/lionsarmor/KeychainKreatures/blob/52bfa1ec090cb6baee13dd3303d0df844ae71aad/KK_power_module/assembly/SCHEMATIC.pdf">schematic</a>, not an older revision's coordinates.</p>
+<p>The assembler must confirm these particularly important parts, not just that a package fits:</p>
+<table>
+<thead>
+<tr>
+<th>Position</th>
+<th>Required part / reason to check</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>U1</td>
+<td><strong>BQ24075TRGTR</strong> charger; the T variant matters.</td>
+</tr>
+<tr>
+<td>U13</td>
+<td><strong>TPS22950YBHR</strong>, base variant, 0.4 mm WCSP; C/L variants are not automatic substitutes.</td>
+</tr>
+<tr>
+<td>U2 and Q1–Q3</td>
+<td>DW01A and three FS8205 banks; protection pinout/orientation matters.</td>
+</tr>
+<tr>
+<td>U4</td>
+<td>TPS259530 eFuse and its programming resistors.</td>
+</tr>
+<tr>
+<td>U5–U7</td>
+<td>TPS63060 regulators; L1–L3 and feedback/output capacitors must match the BOM.</td>
+</tr>
+<tr>
+<td>U8–U10 / U11 / U12</td>
+<td>Output gates / buffer / independent voltage supervisor. Do not omit them to get output.</td>
+</tr>
+<tr>
+<td>F1</td>
+<td>4 A fast fuse, exact BOM part; do not bridge it.</td>
+</tr>
+<tr>
+<td>J2/J3/J4</td>
+<td>Battery VH / four-wire XH / thermistor PH families; polarity is not guaranteed by wire color.</td>
+</tr>
+</tbody>
+</table>
+<p>Confirm the factory approved <strong>filled, capped, planarized via-in-pad</strong>, fine-pitch assembly and hidden-joint inspection. Ordinary tenting is not equivalent. The release lists 74 via centers inside SMD pads; partial overlaps also need review. Hidden WCSP/QFN joints cannot be cleared by looking only at the board's top. If assembly process or part substitution is undocumented, hold powered testing and obtain the factory response.</p>
+<h2>6. P2 — verify the connectors and fuse without power</h2>
+<table>
+<thead>
+<tr>
+<th>Connector</th>
+<th>Exact numbered functions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>J1 USB-C</td>
+<td>Charging input only. D+/D− and SBU are intentionally not connected.</td>
+</tr>
+<tr>
+<td>J2 battery, VH</td>
+<td>1 CELL_PLUS; 2 BAT_NEG.</td>
+</tr>
+<tr>
+<td>J3 to main, XH</td>
+<td>1 MCU_5V; 2 GND; 3 LOGIC_3V3; 4 ACT_3V2.</td>
+</tr>
+<tr>
+<td>J4 thermistor, PH</td>
+<td>1 NTC; 2 GND.</td>
+</tr>
+</tbody>
+</table>
+<p>Check the disconnected four-wire harness end-to-end: power J3 1→main J1 1, 2→2, 3→3, 4→4; no cross-connections. Inspect crimps and gently flex the disconnected harness during continuity testing. Verify battery-harness polarity independently before any future cell connection. Connector mirroring in rear drawings is a common source of mistakes.</p>
+<p>Technician: check F1 end-to-end for continuity using its identified pads and compare the meter's lead resistance. An open fuse is a <strong>symptom</strong>; determine the reason before replacing it. Confirm J2 pin 1 reaches F1's CELL_PLUS side and the other side reaches VBAT/TP2. Check VBUS, SYS_RAW, SYS_SW and all six pre-/post-gate rails for unresolved short indications to system GND and one another. Compare only with a verified board in the same unpowered state. Do not bypass protection to make a continuity test simpler.</p>
+<p><strong>Pass:</strong> correct mapping, no physical damage or unexplained short, fuse intact, approved test fixture grounding. Otherwise stop at this stage.</p>
+<h2>7. Understand the stages before chasing an output</h2>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Function and accessible checkpoints</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cell path</td>
+<td>J2 → F1 → VBAT TP2 → charger power path → SYS_RAW TP5; low-side protection is U2/Q1–Q3.</td>
+</tr>
+<tr>
+<td>USB path</td>
+<td>J1 → VBUS TP1 → U13 current limiter → USB_CHG TP22 → U1 → SYS_RAW TP5. U14/U3/Q4/Q5 select the permitted input-current mode.</td>
+</tr>
+<tr>
+<td>User switch / eFuse</td>
+<td>SW1/RUN_CTL TP7 and U4 create SYS_SW TP6 from SYS_RAW.</td>
+</tr>
+<tr>
+<td>Regulation</td>
+<td>U5/U6/U7 produce REG_5V TP13, REG_3V3 TP14 and REG_3V2 TP15.</td>
+</tr>
+<tr>
+<td>Supervision</td>
+<td>U12 evaluates the rails; VOLTAGES_OK TP28 → U11 → RAILS_EN TP12. PG_ALL TP11 is a separate regulator-status node.</td>
+</tr>
+<tr>
+<td>Gated outputs</td>
+<td>U8/U9/U10 → MCU_5V TP16, LOGIC_3V3 TP17, ACT_3V2 TP18 → J3.</td>
+</tr>
+</tbody>
+</table>
+<p>When all outputs disappear together, first check shared upstream power and supervision. Do not assume three regulators independently failed. Never jump across a gate or pull its enable high to defeat a failed prerequisite.</p>
+<h2>8. P3 — battery-simulator startup, USB disconnected</h2>
+<p>Instructor only. Disconnect main J3, USB J1 and any real battery. Connect the reviewed floating current-limited simulator to <strong>J2 positive pin 1, negative pin 2</strong>. Confirm the voltage at the disconnected fixture plug before inserting it. Start at <strong>3.7 V with SW1 OFF</strong> and an initial current limit around <strong>50 mA</strong>, as in the existing review procedure. This is a cautious off-state inspection setting, <strong>not</strong> a claim that an enabled three-regulator board will start at 50 mA.</p>
+<p>Measure and record off-state input current. There is no validated quiescent-current acceptance number yet; compare with approved calculations/verified samples and investigate unexpected current or heat. USB status LEDs may be dark during battery-only operation. Check cell-side voltage, then the protected system path with the correct reference. If protection is latched, follow the selected protection devices' documented recovery sequence using the qualified fixture; do not bypass them.</p>
+<p>Switch off the fixture before moving clips. The instructor then selects a bounded startup current limit justified by expected no-load inrush and equipment limits, records it, and enables the board. Increase only after determining that current limiting—not a short—is preventing startup. Watch voltage and current together; repeatedly increasing the limit is not troubleshooting.</p>
+<h3>Locate the first missing stage</h3>
+<table>
+<thead>
+<tr>
+<th>Probe, relative to TP4</th>
+<th>Expected qualitative state with a valid 3.7 V source and SW1 ON</th>
+<th>If not present</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TP2 VBAT</td>
+<td>Battery-derived voltage when the protected return conducts; compare with cell-side measurement.</td>
+<td>Check simulator, F1 and protection/return path; do not assume GND=BAT_NEG.</td>
+</tr>
+<tr>
+<td>TP5 SYS_RAW</td>
+<td>Battery-derived system supply, allowing power-path drop.</td>
+<td>U1 power path, source/protection and assembly.</td>
+</tr>
+<tr>
+<td>TP7 RUN_CTL</td>
+<td>Close to SYS_RAW when ON; near GND when OFF.</td>
+<td>SW1 mapping/joints and control path.</td>
+</tr>
+<tr>
+<td>TP6 SYS_SW</td>
+<td>Close to SYS_RAW after valid enable/UVLO and ramp.</td>
+<td>U4, UVLO/divider, load fault or source sag.</td>
+</tr>
+<tr>
+<td>TP13 / TP14 / TP15</td>
+<td>Approximately 5.0 / 3.3 / 3.2 V after startup.</td>
+<td>Corresponding U5/U6/U7, shared REG_ENABLE, inductor, feedback/output path.</td>
+</tr>
+<tr>
+<td>TP28 VOLTAGES_OK</td>
+<td>High near REG_3V3 after required rails are valid and supervisor delay.</td>
+<td>Find the rail below threshold, sensing network, U12 supply/reset or fault.</td>
+</tr>
+<tr>
+<td>TP12 RAILS_EN</td>
+<td>Follows a valid high through U11.</td>
+<td>Check U11 supply and signal path; do not force it.</td>
+</tr>
+<tr>
+<td>TP16 / TP17 / TP18</td>
+<td>Approximately 5.0 / 3.3 / 3.2 V at the gated outputs.</td>
+<td>Compare pre-gate rail and enable, then U8/U9/U10 or downstream short.</td>
+</tr>
+</tbody>
+</table>
+<p>TP11 PG_ALL is pulled toward REG_3V3 when the tied regulator status outputs release it. A low value while a regulator is starting is not surprising; a high does <strong>not</strong> substitute for measuring all rails or the independent supervisor. State timing and scope capture matter.</p>
+<p>These are steady-state diagnostic expectations, not permission to force power onto an unpowered control pin. Probe small IC pins only if a dedicated pad is insufficient and the technician has a safe method. Do not probe regulator switch-node/inductor pads casually; a slip there can destroy the converter.</p>
+<h2>9. P4 — qualify the outputs with no main attached</h2>
+<p>Measure each pre-gate rail, post-gate rail and J3 pin under the same settled condition. A correct test pad but bad connector pin points toward an open pad/trace/joint. Correct pre-gate voltage and missing post-gate voltage points toward gating, enable or a downstream load, not automatically the regulator.</p>
+<table>
+<thead>
+<tr>
+<th>Rail</th>
+<th>Nominal</th>
+<th>Initial investigation window</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>REG_5V / MCU_5V</td>
+<td>5.0 V</td>
+<td>4.75–5.25 V.</td>
+</tr>
+<tr>
+<td>REG_3V3 / LOGIC_3V3</td>
+<td>3.3 V</td>
+<td>3.135–3.465 V.</td>
+</tr>
+<tr>
+<td>REG_3V2 / ACT_3V2</td>
+<td>3.2 V</td>
+<td>3.04–3.30 V.</td>
+</tr>
+</tbody>
+</table>
+<p>These windows are conservative prototype checks, <strong>not qualified production limits</strong>. ACT_3V2's upper bound is deliberately below +5%; reject unexplained excursions above the design's 3.3 V target ceiling before connecting main loads. Scope startup, shutdown and load transitions: a meter can miss dangerous spikes or short dropouts. Do not approve ripple or temperatures without defining limits for the actual attached components.</p>
+<p>The calculated supervisor low thresholds are approximately 4.64 / 3.06 / 3.00 V. Therefore, “VOLTAGES_OK high” does <strong>not</strong> mean the rails meet the tighter investigation windows. A supervisor fault may correctly turn off all outputs when only one rail is low.</p>
+<p>Switch OFF and check outputs decay without remaining powered by the load fixture. Record decay time and any residual voltage; an unloaded high-impedance meter can show leakage/charge. Do not use a wire to pull it down. Confirm the no-backfeed fixture state before declaring a gate stuck on.</p>
+<h2>10. P5 — controlled loads and low-voltage behavior</h2>
+<p>Instructor only, with correctly referenced rated loads and temperature measurement. Keep main and the real cell disconnected. Begin at no load, increase <strong>one rail at a time</strong> in reviewed steps, then test combined loads only after individual results are acceptable. Do not connect an earth-referenced electronic load in a way that bypasses BAT_NEG protection. Resistor loads can become burn hazards; calculate power rating and provide safe mounting if used.</p>
+<p>The design's unvalidated screening targets are <strong>5 V at 0.6 A, 3.3 V at 0.4 A and 3.2 V at 0.5 A</strong>. They are not guaranteed delivered ratings. Record actual load/current, cell-side input power, rail minima/maxima, ambient and component temperatures at each step. Stop on unexpected heat, oscillation, current limit or rail excursions. Establish acceptable temperatures from component ratings and the intended enclosure/ambient before a prolonged run; “comfortable to touch” is not a thermal qualification.</p>
+<p>Using the simulator, check startup/shutdown and a controlled voltage ramp around the system cutoff. Calculated SYS_RAW eFuse UVLO is about <strong>3.38 V rising / 3.10 V falling</strong>, with tolerances and source sag. It is not a fixed guaranteed trip at the cell connector. Record the observed SYS_RAW thresholds, recovery and hysteresis. Do not deliberately overdischarge a real cell to perform this test.</p>
+<p>Hard shorts, fuse opening and protection-trip validation require a separately approved technician test fixture/procedure and emulator. They are <strong>not student exercises</strong> and not accomplished by touching output pins together. Do not intentionally blow F1 as a routine incoming test. If fault-injection equipment or safe test limits are unavailable, record BLOCKED and obtain factory/design-lab testing.</p>
+<p>Main's historical 3.3 V reservation was 0.5 A; this power screening used 0.4 A. Resolve actual combined peak demand and margin before approving integration. A failure at an unqualified combined load may expose a design limit, not a manufacturing defect.</p>
+<h2>11. P6 — USB input and current selection</h2>
+<p>Instructor only. First remove the non-sinking ordinary supply, if one was used for battery-only checks. Any emulator remaining at J2 during charging must absorb the charge current safely. Keep main disconnected. Use verified sources/cables and measure total USB input current with a reviewed fixture; an inline USB meter that changes CC behavior can invalidate the test.</p>
+<p>Check TP1 VBUS for nominal 5 V when a compatible source is attached. Check TP25 CC_3V3 near 3.3 V, then TP22 USB_CHG. Voltage absent at TP1 suggests cable/source/connector; present at TP1 but absent at TP22 suggests U13, current-limit/fault conditions or a short downstream. A valid USB input does not guarantee the three toy outputs are on.</p>
+<table>
+<thead>
+<tr>
+<th>Verified source advertisement</th>
+<th>TP20 CC_DEFAULT_N</th>
+<th>TP21 USB_HIGH_CURRENT</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>USB-A/default or USB-C default</td>
+<td>High near CC_3V3</td>
+<td>Low</td>
+<td>Default low-current path intended.</td>
+</tr>
+<tr>
+<td>USB-C advertising 1.5 A or 3 A</td>
+<td>Low</td>
+<td>High near CC_3V3</td>
+<td>Higher-current path permitted by this design.</td>
+</tr>
+<tr>
+<td>No USB source</td>
+<td>CC supply may be absent</td>
+<td>Not a meaningful normal logic test</td>
+<td>Do not demand powered logic levels.</td>
+</tr>
+</tbody>
+</table>
+<p>This follows TUSB320 GPIO OUT1 and the Q4 inverter in the current netlist. The design does not distinguish 1.5 A from 3 A for its mode selection. A source's advertisement is an available limit, not the current the board must draw. See <a href="https://www.ti.com/lit/ds/symlink/tusb320lai.pdf">TI's TUSB320 GPIO truth table</a>.</p>
+<p>The default limiter is calculated near <strong>50 mA</strong>, with a datasheet screening range of roughly <strong>34–66 mA</strong>, plus upstream consumption and resistor tolerance. A USB-A connection may charge very slowly or fail to sustain a running toy; that behavior is not automatically a broken charger. This design has no USB enumeration, suspend detection or BC1.2 negotiation; do not claim universal computer-port compliance. Initial fault investigation should use controlled test sources, not risk a student's laptop port.</p>
+<p>On a suitable USB-C source, U1's programmed input limit is approximately 1.23 A, screened up to about 1.32 A. This is not the battery charge current. A 3 A charger does not command 3 A charging. Check default, 1.5 A and 3 A advertised modes, both cable orientations, attach/unplug, weak-source behavior and switchover, recording overshoot/current. Do not force the higher-current mode when a source advertises only default current.</p>
+<h2>12. P7 — charging and the temperature sensor</h2>
+<p>Use a correctly configured sink-capable battery emulator and known sensor/test fixture, or a <strong>previously approved</strong> cell with its bonded/insulated sensor. No battery has been finalized by this hardware release. Charge tests with an unselected cell are BLOCKED.</p>
+<p>At an appropriate simulated battery voltage and normal sensor temperature, check TP22 USB_CHG, TP19 NTC, input status and actual battery current. Record current direction: emulator sinking current indicates charge; the same connection may source current into the toy under other conditions. An LED alone does not prove charge current reaches the battery.</p>
+<table>
+<thead>
+<tr>
+<th>Indicator/checkpoint</th>
+<th>What it tells you—and what it does not</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LED1 POWER GOOD / TP26 PGOOD_N</td>
+<td>Charger recognizes a valid input when status is asserted low. Does not certify J3 output rails.</td>
+</tr>
+<tr>
+<td>LED2 CHARGING / TP27 CHARGE_N</td>
+<td>Low generally indicates charging. Off may mean complete, disabled, invalid source, temperature inhibit or another condition; flashing can indicate a timer fault. Measure and consult U1's status definitions.</td>
+</tr>
+<tr>
+<td>TP19 NTC</td>
+<td>Analog temperature-sense voltage, not a digital on/off flag. Depends on USB_CHG, R74/R75 and sensor resistance.</td>
+</tr>
+</tbody>
+</table>
+<p>PGOOD_N and CHARGE_N are open-drain indicators connected through their LED/resistor paths to VBUS, not guaranteed 3.3 V logic outputs. Use an appropriately rated meter/probe. Do not connect them directly to an ESP32 or a 3.3 V-only logic analyzer.</p>
+<p>The nominal full charge-current setting is about <strong>0.303 A</strong>, screened <strong>0.271–0.332 A</strong> under the reviewed conditions. Precharge, near-full taper, thermal regulation, input limits or system load can legitimately lower it. Do not demand 0.303 A at every battery voltage. Verify termination and recharge behavior against <a href="https://github.com/lionsarmor/KeychainKreatures/blob/52bfa1ec090cb6baee13dd3303d0df844ae71aad/KK_power_module/datasheets/BQ24075TRGTR.pdf">BQ24075T's datasheet</a>, recording source, battery voltage, temperature and load conditions.</p>
+<p>Sensor check with <strong>all power off and sensor unplugged</strong>: measure the actual 103AT-2 resistance at a recorded temperature; nominal is 10 kΩ at 25°C, not at every room temperature. Inspect J4 and its lead continuity. An instructor may gently change the detached sensor's ambient temperature in a controlled setup; do not heat/chill a real cell to provoke faults.</p>
+<p>Temperature-threshold screening gave roughly 4.8°C cold and 40.0°C hot nominal, with screened corners about 2.9–42.2°C. These are calculations, not certified pack limits. Instructor-only open/short/temperature simulations use a purpose-built fixture and emulator, changing connections with power off. Confirm charging inhibits as specified and recovers properly; never leave a short or fixed resistor installed as a replacement for a real pack sensor. Do not bypass a temperature inhibit to finish a test.</p>
+<h2>13. P8 — reverse feed, sequencing and final integration</h2>
+<p>Before attaching main, the technician checks rail rise/fall ordering, load-gate behavior and absence of damaging GPIO/module back-powering using the exact SuperMini revision. Equal timing capacitors do not prove safe sequencing. Do not power one output separately as an improvised test; use a reviewed fixture for controlled backfeed analysis.</p>
+<p>Measure USB reverse feed with an approved breakout/isolation test arrangement, not by shorting VBUS or returning power to a laptop. Record current as well as voltage: residual voltage on a high-impedance meter can be stored charge or leakage, not necessarily damaging backfeed. Validate source transitions with the actual planned load. If the fixture or acceptance limits are missing, record BLOCKED.</p>
+<p>Only after P1–P7 and sequencing/backfeed checks pass, connect the verified pin-for-pin harness to an unpowered main at its minimal approved population. No ESP32 USB cable. Recheck rails at both ends before adding loads in the main guide's order. Stop when the first added function causes a fault; power off, remove that load and compare with the last passing stage. Do not use a known-good main as a sacrificial dummy load for an unqualified power board.</p>
+<p>For each sample, record repeated cold-start behavior and a supervised representative-load run after temperature/current limits are approved. Keep battery and power PCB clear of the main antenna and solder tails; separate support height, plug access and final case fit remain unqualified. Passing a bench test in open air is not proof of enclosed thermal safety.</p>
+<h2>14. Quick symptom route</h2>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>First investigation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Board appears dead from the factory</td>
+<td>Confirm assembled vs bare; P1/P2; source polarity and protected return; P3 first missing stage. No firmware is needed by power itself.</td>
+</tr>
+<tr>
+<td>Input immediately current-limits</td>
+<td>Stop; source/fixture setting, polarity, bridges and the first shorted stage. Never just increase the limit.</td>
+</tr>
+<tr>
+<td>Battery-only works; USB does not</td>
+<td>P6 VBUS → CC_3V3 → USB_CHG, cable orientation/source mode; then charger status.</td>
+</tr>
+<tr>
+<td>USB works; battery-only does not</td>
+<td>P2 fuse/harness; P3 protection and U1 battery power path; emulator recovery state.</td>
+</tr>
+<tr>
+<td>SYS_RAW present, SYS_SW absent</td>
+<td>SW1/RUN_CTL, UVLO and U4/fault/load condition.</td>
+</tr>
+<tr>
+<td>All three outputs absent</td>
+<td>Measure pre-gate rails, TP28 and TP12; one low rail may correctly gate all outputs off.</td>
+</tr>
+<tr>
+<td>One regulator output wrong</td>
+<td>That U5/U6/U7 channel's input/enable, inductor, feedback values, capacitor/joint and load.</td>
+</tr>
+<tr>
+<td>Regulator output correct, J3 rail missing</td>
+<td>Enable plus U8/U9/U10 gate path and connector continuity.</td>
+</tr>
+<tr>
+<td>LEDs lit, main dead</td>
+<td>LED1/2 describe charger status, not main rails. Measure J3 and the harness.</td>
+</tr>
+<tr>
+<td>Charges on USB-C but slowly on USB-A</td>
+<td>May be intended default-current behavior; verify P6 mode and measured current before calling it a defect.</td>
+</tr>
+<tr>
+<td>Charging never starts</td>
+<td>Source, emulator/cell state, actual current direction, NTC/sensor, status; P7.</td>
+</tr>
+<tr>
+<td>Repeated on/off or ticking</td>
+<td>Source sag/current limiting, UVLO, load transients, unstable regulator or supervisor cycling; scope first failed stage.</td>
+</tr>
+<tr>
+<td>Works on bench, fails in case</td>
+<td>Support shorts, wire stress, connector access, cooling and antenna/cell placement; do not keep operating closed.</td>
+</tr>
+</tbody>
+</table>
+<h2>15. Complete test-point reference</h2>
+<p>All 28 test points are on <strong>B.Cu, the rear copper face</strong>. Coordinate values below are native front-view CAD coordinates, X right/Y down; rear drawings are mirrored. Use the reference label and <a href="https://github.com/lionsarmor/KeychainKreatures/tree/52bfa1ec090cb6baee13dd3303d0df844ae71aad/KK_power_module/release_checks/drawings">assembly drawings</a> to locate the actual pad. Attach clips with power off, support the board and do not bridge adjacent pads.</p>
+<p><strong>TP numbers are board-specific.</strong> Power TP3 is BAT_NEG; main TP3 is ACT_3V2. Never carry a remembered TP number from one board to the other.</p>
+<table>
+<thead>
+<tr>
+<th>TP</th>
+<th>Signal</th>
+<th>What to expect / use</th>
+<th>CAD X, Y mm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TP1</td>
+<td><code>VBUS</code></td>
+<td>Raw USB VBUS; nominal 5 V when attached.</td>
+<td>5.0, 29.0</td>
+</tr>
+<tr>
+<td>TP2</td>
+<td><code>VBAT</code></td>
+<td>Fused battery positive; interpret with protection state/reference.</td>
+<td>8.5, 29.0</td>
+</tr>
+<tr>
+<td>TP3</td>
+<td><code>BAT_NEG</code></td>
+<td>BAT_NEG, cell-side return. Never use as a spare system GND.</td>
+<td>12.0, 29.0</td>
+</tr>
+<tr>
+<td>TP4</td>
+<td><code>GND</code></td>
+<td>System GND; usual rail-measurement reference.</td>
+<td>15.8, 28.5</td>
+</tr>
+<tr>
+<td>TP5</td>
+<td><code>SYS_RAW</code></td>
+<td>Charger/system power path output; varies with source and operating state.</td>
+<td>20.0, 29.0</td>
+</tr>
+<tr>
+<td>TP6</td>
+<td><code>SYS_SW</code></td>
+<td>After eFuse; near SYS_RAW when enabled and healthy.</td>
+<td>23.0, 29.0</td>
+</tr>
+<tr>
+<td>TP7</td>
+<td><code>RUN_CTL</code></td>
+<td>User run command; OFF near GND, ON near SYS_RAW.</td>
+<td>26.5, 29.0</td>
+</tr>
+<tr>
+<td>TP8</td>
+<td><code>EF_UVLO</code></td>
+<td>eFuse analog undervoltage divider; do not drive externally.</td>
+<td>30.0, 29.0</td>
+</tr>
+<tr>
+<td>TP9</td>
+<td><code>EF_ILIM</code></td>
+<td>eFuse current-programming node; no universal digital level.</td>
+<td>34.0, 29.0</td>
+</tr>
+<tr>
+<td>TP10</td>
+<td><code>EF_FAULT_N</code></td>
+<td>Active-low eFuse fault; pull-up is to SYS_RAW, not fixed 3.3 V.</td>
+<td>44.0, 40.0</td>
+</tr>
+<tr>
+<td>TP11</td>
+<td><code>PG_ALL</code></td>
+<td>Regulator status, pulled toward REG_3V3; not independent supervisor output.</td>
+<td>41.0, 29.0</td>
+</tr>
+<tr>
+<td>TP12</td>
+<td><code>RAILS_EN</code></td>
+<td>Common output-gate enable; high after valid supervision.</td>
+<td>44.5, 29.0</td>
+</tr>
+<tr>
+<td>TP13</td>
+<td><code>REG_5V</code></td>
+<td>Pre-gate 5 V regulator output.</td>
+<td>5.0, 32.5</td>
+</tr>
+<tr>
+<td>TP14</td>
+<td><code>REG_3V3</code></td>
+<td>Pre-gate 3.3 V regulator output.</td>
+<td>8.5, 32.5</td>
+</tr>
+<tr>
+<td>TP15</td>
+<td><code>REG_3V2</code></td>
+<td>Pre-gate 3.2 V regulator output.</td>
+<td>12.0, 32.5</td>
+</tr>
+<tr>
+<td>TP16</td>
+<td><code>MCU_5V</code></td>
+<td>Gated MCU_5V to J3 pin 1.</td>
+<td>16.0, 32.5</td>
+</tr>
+<tr>
+<td>TP17</td>
+<td><code>LOGIC_3V3</code></td>
+<td>Gated LOGIC_3V3 to J3 pin 3.</td>
+<td>19.5, 32.5</td>
+</tr>
+<tr>
+<td>TP18</td>
+<td><code>ACT_3V2</code></td>
+<td>Gated ACT_3V2 to J3 pin 4.</td>
+<td>29.0, 47.0</td>
+</tr>
+<tr>
+<td>TP19</td>
+<td><code>NTC</code></td>
+<td>Analog thermistor node; depends on source and sensor. No forced logic levels.</td>
+<td>22.0, 41.0</td>
+</tr>
+<tr>
+<td>TP20</td>
+<td><code>CC_DEFAULT_N</code></td>
+<td>CC-mode OUT1: high for default, low for 1.5/3 A attached advertisement.</td>
+<td>30.0, 32.5</td>
+</tr>
+<tr>
+<td>TP21</td>
+<td><code>USB_HIGH_CURRENT</code></td>
+<td>Inverted mode control: low default, high for 1.5/3 A advertisement.</td>
+<td>34.0, 32.5</td>
+</tr>
+<tr>
+<td>TP22</td>
+<td><code>USB_CHG</code></td>
+<td>USB supply after U13 current limiter, before charger.</td>
+<td>37.5, 32.5</td>
+</tr>
+<tr>
+<td>TP23</td>
+<td><code>USB_PORT_ILIM</code></td>
+<td>USB current-limit programming node; do not drive externally.</td>
+<td>41.0, 32.5</td>
+</tr>
+<tr>
+<td>TP24</td>
+<td><code>USB_LIMIT_FAULT_N</code></td>
+<td>Active-low U13 fault; pull-up to VBUS. Use voltage-rated probe.</td>
+<td>44.5, 32.5</td>
+</tr>
+<tr>
+<td>TP25</td>
+<td><code>CC_3V3</code></td>
+<td>Dedicated CC supply, nominal 3.3 V with USB input.</td>
+<td>5.0, 39.0</td>
+</tr>
+<tr>
+<td>TP26</td>
+<td><code>PGOOD_N</code></td>
+<td>Charger input-good status, active-low via VBUS LED path; not 3.3 V logic.</td>
+<td>8.0, 39.0</td>
+</tr>
+<tr>
+<td>TP27</td>
+<td><code>CHARGE_N</code></td>
+<td>Charge status, active-low via VBUS LED path; read with charge conditions.</td>
+<td>14.0, 39.0</td>
+</tr>
+<tr>
+<td>TP28</td>
+<td><code>VOLTAGES_OK</code></td>
+<td>Independent supervisor result; high after valid rails and delay.</td>
+<td>17.0, 39.0</td>
+</tr>
+</tbody>
+</table>
+<p>TP8 EF_UVLO, TP9 EF_ILIM, TP19 NTC and TP23 USB_PORT_ILIM are analog programming/sense nodes, not places to inject a logic level. TP10 EF_FAULT_N and TP24 USB_LIMIT_FAULT_N have pull-ups to their associated power domains; TP26/27 use VBUS indicator paths. “High” is not always 3.3 V. Only use voltage-rated probes, and evaluate status when that circuit is actually powered.</p>
+<h2>16. When to send it back instead of repairing it</h2>
+<p>Contact the factory/designer for a wrong/undocumented IC substitution, open internal trace/via, damaged pad, suspected hidden-joint defect, incorrect via-in-pad process, persistent rail error or multiple boards failing identically. Fine-pitch rework and protection changes belong to a qualified technician; repeated failures can be a design/fixture problem, not five bad ICs.</p>
+<p>Send the exact C6/P4 release identification, serial/lot, both-side photographs, unmodified as-received evidence, setup/isolation diagram, source and load settings, ambient temperature, first failed step and a table of measurements with references. Attach scope traces with scales/trigger/probe setup, the factory's X-ray/electrical-test records and approved substitutions. State whether a real cell was connected and whether any rework occurred. Do not send a damaged battery through ordinary return shipping; coordinate the appropriate process with the responsible lab/supplier.</p>
+<p>After an approved repair, repeat incoming inspection, unpowered checks, every power stage and the relevant charging/protection/integration tests. Keep all five board records separate. A completed worksheet reports only the conditions actually tested; battery, product/EMC and student-use approval are separate responsibilities.</p>
+<p>Sources: <a href="https://github.com/lionsarmor/KeychainKreatures/blob/52bfa1ec090cb6baee13dd3303d0df844ae71aad/KK_power_module/assembly/P4_REVIEW_AND_TEST.md">P.4 electrical review</a>, <a href="https://github.com/lionsarmor/KeychainKreatures/blob/52bfa1ec090cb6baee13dd3303d0df844ae71aad/KK_power_module/release_checks/TEST_POINTS.csv">test-point map</a>, <a href="https://github.com/lionsarmor/KeychainKreatures/blob/52bfa1ec090cb6baee13dd3303d0df844ae71aad/KK_power_module/release_checks/CONNECTOR_PIN_MAP.csv">connector map</a>, <a href="https://github.com/lionsarmor/KeychainKreatures/blob/52bfa1ec090cb6baee13dd3303d0df844ae71aad/KK_power_module/electrical_screening.json">calculated screening</a>, <a href="https://github.com/lionsarmor/KeychainKreatures/blob/52bfa1ec090cb6baee13dd3303d0df844ae71aad/KK_power_module/datasheets/DW01A.pdf">DW01A</a>, <a href="https://github.com/lionsarmor/KeychainKreatures/blob/52bfa1ec090cb6baee13dd3303d0df844ae71aad/KK_power_module/datasheets/FS8205_rev1_7.pdf">FS8205</a>, <a href="https://github.com/lionsarmor/KeychainKreatures/blob/52bfa1ec090cb6baee13dd3303d0df844ae71aad/KK_power_module/datasheets/TPS259530DSGR.pdf">TPS259530</a>, <a href="https://github.com/lionsarmor/KeychainKreatures/blob/52bfa1ec090cb6baee13dd3303d0df844ae71aad/KK_power_module/datasheets/TPS63060DSCR.pdf">TPS63060</a>, <a href="https://github.com/lionsarmor/KeychainKreatures/blob/52bfa1ec090cb6baee13dd3303d0df844ae71aad/KK_power_module/datasheets/TPS386000RGPR.pdf">TPS386000</a>, <a href="https://github.com/lionsarmor/KeychainKreatures/blob/52bfa1ec090cb6baee13dd3303d0df844ae71aad/KK_power_module/datasheets/TPS22950YBHR.pdf">TPS22950</a>, <a href="https://github.com/lionsarmor/KeychainKreatures/blob/52bfa1ec090cb6baee13dd3303d0df844ae71aad/KK_power_module/datasheets/103AT-2.pdf">103AT-2</a>. This supplement does not alter CAD or previously issued manufacturing ZIPs.</p>
+</body></html>

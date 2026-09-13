@@ -1,0 +1,20 @@
+{
+  "scope": "Troubleshooting documentation only; not new manufacturing files or physical test results",
+  "files": {
+    "KK_main_module/assembly/TROUBLESHOOTING_MAIN_C6.md": "97aace2fbe0d8f31bf799f82e62e7cd54f901ec0989f8b2ace9db427f82aa58b",
+    "KK_main_module/assembly/TROUBLESHOOTING_MAIN_C6.html": "f7e1178e569d4fdd43ef035e977e9fd3363134948d51281e804bde0fdab2502f",
+    "KK_main_module/assembly/TROUBLESHOOTING_MAIN_C6.pdf": "b70a10bb5fd8ba35b60fb446f4d868071539ebf5f2933e906b5b7bb89ced1a08",
+    "KK_main_module/assembly/TROUBLESHOOTING_C6_MEASUREMENTS.csv": "833c37b69f80d574123e00d9c0d7f6ad28bc9e2ddcd72612a3d34bf15bf088ef",
+    "KK_main_module/assembly/TROUBLESHOOTING_C6_CHECKLIST.csv": "fd332d0c919b5fb46704456683ff3e7238dd6b198786023ea364284bc25e5b8f",
+    "KK_power_module/assembly/TROUBLESHOOTING_POWER_P4.md": "75f01615e8214667b5d295501059f3b929ec455b9441d51da52bb81b4c2afb06",
+    "KK_power_module/assembly/TROUBLESHOOTING_POWER_P4.html": "d1ed31b8cc377d6c41eb76c367c0bacbe0cb89bbd41a829c4a3a851cd43cd855",
+    "KK_power_module/assembly/TROUBLESHOOTING_POWER_P4.pdf": "e1097b253c511f69d07f393e3abbd72296e67178e5a499a24fea82fd589f4265",
+    "KK_power_module/assembly/TROUBLESHOOTING_P4_MEASUREMENTS.csv": "874159b4d181d0364761bbe4aad4006d039d5835c6531633d9ed51628baf3c4f",
+    "KK_power_module/assembly/TROUBLESHOOTING_P4_CHECKLIST.csv": "127a00cbd55f3117007ac44771d975fec8ff062c1ee6fec7842e8a21e9b2913b",
+    "docs/troubleshooting/FACTORY_FAULT_REPORT.md": "8bc21b4b3bbdab914f2a965f59a95c6cfdc035c34dd8b6a0f9b87cb7b8fe7426",
+    "docs/troubleshooting/FACTORY_FAULT_REPORT.html": "4a8aa0e17141f28585580414e86be2c8d62e864f9bd2a4ed8dbbaa62a3dfae3a",
+    "docs/troubleshooting/FACTORY_FAULT_REPORT.pdf": "f4936dbedae85463a663b901c041cbb702d737dd0cf02644979a1a613da6e5bc",
+    "docs/troubleshooting/README.md": "3dd352b5c2ce16c422deaf36098c100b15045ba522f34c9829b33fef8d3d14f9",
+    "docs/troubleshooting/GUIDE_VERIFICATION.json": "c61dea7d0298b23560da640c41d85946a567a22b75e7e5a546c4476d1ca63fb7"
+  }
+}

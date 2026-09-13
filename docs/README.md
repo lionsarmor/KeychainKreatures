@@ -4,6 +4,8 @@ Start with the [repository overview](../README.md) and [project/file map](../STA
 
 ## Current build and release documents
 
+For first-time students and incoming factory failures, use the [separate main/power troubleshooting guides and worksheets](troubleshooting/README.md). They separate supervised student checks from technician-only tests and include all 53 test pads.
+
 | Topic | Current document |
 |---|---|
 | Main assembly, orientation and wiring | [C.6 assembly guide](../KK_main_module/assembly/ASSEMBLY_GUIDE.md) |
@@ -16,7 +18,7 @@ Start with the [repository overview](../README.md) and [project/file map](../STA
 | Actual-size main fitting | [Front PDF](../KK_main_module/assembly/C6_front_FIT_100_PERCENT.pdf) · [Back PDF](../KK_main_module/assembly/C6_back_FIT_100_PERCENT.pdf) |
 | Design changes and unresolved limits | [Flat-stack review](FLAT_STACK_REWORK.md) |
 | Source and release integrity | [Release index/hashes](CURRENT_RELEASE_INDEX.json) · [Static audit](CURRENT_STATIC_AUDIT.json) |
-| Prototype test record | [C.6 acceptance worksheet](../KK_main_module/assembly/C6_BENCH_TEST_RECORD.csv) |
+| Current troubleshooting records | [C.6 checklist](../KK_main_module/assembly/TROUBLESHOOTING_C6_CHECKLIST.csv) · [P.4 checklist](../KK_power_module/assembly/TROUBLESHOOTING_P4_CHECKLIST.csv) · [Measurement sheets and factory report](troubleshooting/README.md) |
 | Safe project tooling | [Tools](../tools/README.md) · [Contributing](../CONTRIBUTING.md) |
 
 Current releases and ZIPs are immutable snapshots. Later documentation updates at the repository root do not change the hash-verified snapshot contents or imply another electrical review. After any CAD edit, repeat native checks and issue a new source-bound manufacturing revision.

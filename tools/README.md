@@ -1,5 +1,9 @@
 # Current-project tools
 
+- `troubleshooting_guides.py`: generates the student/instructor HTML/PDF guides and blank CSV worksheets from their Markdown sources; checks pin/net references and released test-pad maps, and verifies CAD/issued ZIPs remain unchanged. Uses existing MarkdownIt and an isolated LibreOffice profile. Run sequentially with `nice -n 15 taskset -c 0`. It does not supply diagnostic firmware or perform physical tests.
+- `print_guide_pdf.py`: private-profile LibreOffice PDF helper; adds page numbers and prevents table rows splitting across pages.
+- `package_troubleshooting.py`: generates the printable factory fault form and a separate, hash-inventoried troubleshooting packet. Run after guide generation. It never replaces the issued fabrication packages.
+
 Current native CAD is directly in KK_main_module and KK_power_module. These folders are C.6/P.4; all older designs and one-off generators are in [the cleanup archive](../revisions/2026-09-12_current_only/).
 
 - `node tools/check_project.mjs`: read-only source/package hashes, saved netlist/interface checks, local assets, protected cleanup files and archive recovery integrity. Not a new powered or native CAD test.
