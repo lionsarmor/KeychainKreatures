@@ -1,0 +1,128 @@
+[
+  {
+    "model": "Button_Switch_SMD.3dshapes/SW_SPDT_CK_JS102011SAQN.step",
+    "source": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Button_Switch_SMD.3dshapes/SW_SPDT_CK_JS102011SAQN.step",
+    "saved": false,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "model": "Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+    "source": "Installed KiCad Packages3D library: Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+    "saved": true,
+    "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+  },
+  {
+    "model": "Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+    "source": "Installed KiCad Packages3D library: Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+    "saved": true,
+    "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+  },
+  {
+    "model": "Connector_JST.3dshapes/JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical.step",
+    "source": "Installed KiCad Packages3D library: Connector_JST.3dshapes/JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical.step",
+    "saved": true,
+    "sha256": "cab512a9b16c7568ed6e0047c17de04c4dd11893cdee71cb33fb51768543f927"
+  },
+  {
+    "model": "Connector_JST.3dshapes/JST_VH_B2P-VH_1x02_P3.96mm_Vertical.step",
+    "source": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Connector_JST.3dshapes/JST_VH_B2P-VH_1x02_P3.96mm_Vertical.step",
+    "saved": false,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "model": "Connector_JST.3dshapes/JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical.step",
+    "source": "Installed KiCad Packages3D library: Connector_JST.3dshapes/JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical.step",
+    "saved": true,
+    "sha256": "7eb17ded8ec4a3216753a234254e22a2d8e07826f0816045bfb803a19cac75ea"
+  },
+  {
+    "model": "Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x05_P2.54mm_Vertical.step",
+    "source": "Installed KiCad Packages3D library: Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x05_P2.54mm_Vertical.step",
+    "saved": true,
+    "sha256": "f03b716e453f6d4f2a111a227c671d96f92708e72a5a663cd4889296d021f4c3"
+  },
+  {
+    "model": "Connector_USB.3dshapes/USB_C_Receptacle_HCTL_HC-TYPE-C-16P-01A.step",
+    "source": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Connector_USB.3dshapes/USB_C_Receptacle_HCTL_HC-TYPE-C-16P-01A.step",
+    "saved": false,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "model": "Diode_SMD.3dshapes/D_SMA.step",
+    "source": "Installed KiCad Packages3D library: Diode_SMD.3dshapes/D_SMA.step",
+    "saved": true,
+    "sha256": "1cfddd4e3b1bf22b8fc6ee3258c2aade882ed7b85b528e23b9db42437775a1db"
+  },
+  {
+    "model": "Fuse.3dshapes/Fuse_1206_3216Metric.step",
+    "source": "Installed KiCad Packages3D library: Fuse.3dshapes/Fuse_1206_3216Metric.step",
+    "saved": true,
+    "sha256": "5e6dcbe286696143d35a8ea37d91eef4b54ff3d1bd7c2c2b4dedda83d3f8e203"
+  },
+  {
+    "model": "Inductor_SMD.3dshapes/L_Coilcraft_XxL4020.step",
+    "source": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Inductor_SMD.3dshapes/L_Coilcraft_XxL4020.step",
+    "saved": false,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "model": "LED_SMD.3dshapes/LED_1206_3216Metric.step",
+    "source": "Installed KiCad Packages3D library: LED_SMD.3dshapes/LED_1206_3216Metric.step",
+    "saved": true,
+    "sha256": "9de47a5de5d40bcdc5dcc40d5b9d41fc41af90bbd37d25c17d211285e1c63a6e"
+  },
+  {
+    "model": "Package_DFN_QFN.3dshapes/Texas_RGP0020D_VQFN-20-1EP_4x4mm_P0.5mm_EP2.7x2.7mm.step",
+    "source": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Package_DFN_QFN.3dshapes/Texas_RGP0020D_VQFN-20-1EP_4x4mm_P0.5mm_EP2.7x2.7mm.step",
+    "saved": false,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "model": "Package_DFN_QFN.3dshapes/Texas_X2QFN-12_1.6x1.6mm_P0.4mm.step",
+    "source": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Package_DFN_QFN.3dshapes/Texas_X2QFN-12_1.6x1.6mm_P0.4mm.step",
+    "saved": false,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "model": "Package_DFN_QFN.3dshapes/VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm.step",
+    "source": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Package_DFN_QFN.3dshapes/VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm.step",
+    "saved": false,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "model": "Package_SON.3dshapes/Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm.step",
+    "source": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Package_SON.3dshapes/Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm.step",
+    "saved": false,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "model": "Package_SON.3dshapes/Texas_S-PWSON-N10.step",
+    "source": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Package_SON.3dshapes/Texas_S-PWSON-N10.step",
+    "saved": false,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "model": "Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
+    "source": "Installed KiCad Packages3D library: Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
+    "saved": true,
+    "sha256": "720a6eab0024069bbee68e7cb4c3ff1149468a34611225cdc852662c5d0ec2b7"
+  },
+  {
+    "model": "Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+    "source": "Installed KiCad Packages3D library: Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+    "saved": true,
+    "sha256": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635"
+  },
+  {
+    "model": "Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+    "source": "Installed KiCad Packages3D library: Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+    "saved": true,
+    "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0"
+  },
+  {
+    "model": "Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+    "source": "Installed KiCad Packages3D library: Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+    "saved": true,
+    "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+  }
+]

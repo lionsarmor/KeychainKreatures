@@ -1,0 +1,37 @@
+{
+  "status": "PASS \u2014 electrical pad/net/trace/via geometry preserved; native DRC and physical fit still required",
+  "source_p3_sha256": "74cb2db7b740393391b8dd44e8d08ae518aa7f0c30e6ec798ab1123e056adbce",
+  "candidate_sha256": "2bf55f274d53abceba51ad69a39672ddb952e40c5613faa7b570f134483f0f21",
+  "reference_p2_sha256": "839d8741c2216db98f9ec57497ce1cea194b21feef1c5f35c01dc377655d2540",
+  "main_unchanged_sha256": "c7dc3028d36d8b80aca6357518118377b29c746b93822521c5e1624194e7dc07",
+  "transform": "x = 51 - P3_x, y = 104 - P3_y; rotate 180 degrees; layers unchanged",
+  "outline_mm": [
+    50,
+    50,
+    1.6
+  ],
+  "corner_radius_mm": 3,
+  "holes_mm": {
+    "H3": [
+      3.0,
+      47.0
+    ],
+    "H4": [
+      47.0,
+      47.0
+    ],
+    "H2": [
+      47.0,
+      3.0
+    ],
+    "H1": [
+      3.0,
+      3.0
+    ]
+  },
+  "electrical_geometry_matches_original_compact_core": true,
+  "tracks_and_vias": 3775,
+  "pads": 487,
+  "removed_oversize_objects": 13,
+  "current_root_not_modified": true
+}

@@ -1,14 +1,15 @@
-"""Read-only C6/P3 release audit, assembly plots and coordinate tables.
+"""C6/P4 release audit, assembly plots and coordinate tables; no CAD writes.
 Run in KiCad Flatpak Python, one CPU. Never alters routed CAD.
 """
 from pathlib import Path
 import pcbnew as k
-import csv, json, hashlib, sys
+import csv, json, hashlib, sys, os
 
 ROOT = Path(__file__).resolve().parent.parent
 kind = sys.argv[1]
 assert kind in ('main', 'power')
-src = ROOT / ('KK_main_module/C6_flat_stack' if kind == 'main' else 'KK_power_module/P3_matching_stack')
+src = ROOT / os.environ.get('KK_RELEASE_SOURCE', 'KK_main_module' if kind == 'main' else 'KK_power_module')
+assert src.resolve().is_relative_to(ROOT), 'Review source must be inside this workspace'
 stem = 'KK_' + kind + '_module'
 out = src / 'release_checks'
 out.mkdir(exist_ok=True)
@@ -77,7 +78,11 @@ for name, layers in [('assembly_top', [k.Edge_Cuts, k.F_SilkS]), ('assembly_bott
     po.SetMirror(name.endswith('_bottom')); pc.SetLayer(layers[0]); assert pc.OpenPlotfile(name, k.PLOT_FORMAT_SVG, name)
     for layer in layers: pc.SetLayer(layer); pc.PlotLayer()
     pc.ClosePlot()
-audit = {'source_sha256': {stem + '.' + ext: sha(src / (stem + '.' + ext)) for ext in ['kicad_pcb', 'kicad_sch', 'kicad_pro']}, 'fitted': len(rows), 'test_pads': len(tests), 'copper_layers': b.GetCopperLayerCount(), 'tracks': sum(t.GetClass() != 'PCB_VIA' for t in b.GetTracks()), 'vias': len(vias), 'models': models, 'via_centers_in_smd_pads': len(via_pads), 'holes': {r: {'xy_mm': xy(f.GetPosition()), 'drill_mm': xy(next(iter(f.Pads())).GetDrillSize())} for r, f in fps.items() if r.startswith('H')}, 'outline_mm': [96, 105], 'status': 'PASS; static geometry/BOM/net checks, not physical or powered qualification'}
+dimensions = [96, 105] if kind == 'main' else design['mechanical']['outline_mm']
+edge_bounds = b.GetBoardEdgesBoundingBox()  # Retain SWIG owner while reading its size.
+actual_dimensions = xy(edge_bounds.GetSize())
+assert all(abs(a-z)<.06 for a,z in zip(actual_dimensions,dimensions)), ('Outline differs from declared dimensions',actual_dimensions,dimensions)
+audit = {'source_sha256': {stem + '.' + ext: sha(src / (stem + '.' + ext)) for ext in ['kicad_pcb', 'kicad_sch', 'kicad_pro']}, 'fitted': len(rows), 'test_pads': len(tests), 'copper_layers': b.GetCopperLayerCount(), 'tracks': sum(t.GetClass() != 'PCB_VIA' for t in b.GetTracks()), 'vias': len(vias), 'models': models, 'via_centers_in_smd_pads': len(via_pads), 'holes': {r: {'xy_mm': xy(f.GetPosition()), 'drill_mm': xy(next(iter(f.Pads())).GetDrillSize())} for r, f in fps.items() if r.startswith('H')}, 'outline_mm': dimensions, 'status': 'PASS; static geometry/BOM/net checks, not physical or powered qualification'}
 assert len(rows) == (98 if kind == 'main' else 108)
 assert len(tests) == (25 if kind == 'main' else 28)
 (out / 'CAD_AUDIT.json').write_text(json.dumps(audit, indent=2) + '\n')

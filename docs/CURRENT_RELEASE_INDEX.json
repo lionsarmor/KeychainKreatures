@@ -1,0 +1,36 @@
+{
+  "boards": [
+    {
+      "kind": "main",
+      "revision": "C6",
+      "label": "C6_P4_PAIRING",
+      "source": "KK_main_module",
+      "directory": "KK_main_module/manufacturing/KK_MAIN_C6_P4_PAIRING_5_PROTOTYPE_REVIEW_2026-09-12",
+      "zip": "KK_main_module/manufacturing/KK_MAIN_C6_P4_PAIRING_5_PROTOTYPE_REVIEW_2026-09-12.zip",
+      "zip_sha256": "3a419d9ed5ec409cfccd5ea537457f98064b4e4847b842b42e5cba28de1f9899",
+      "file_count": 172,
+      "gerbers_zip": "KK_main_module/manufacturing/KK_MAIN_C6_P4_PAIRING_GERBERS.zip",
+      "gerbers_sha256": "0e20721f1b9dd93fa9872e8770663052af3e6fb9d4ef51760ed3f45f7a24aa0f"
+    },
+    {
+      "kind": "power",
+      "revision": "P4",
+      "label": "P4",
+      "source": "KK_power_module",
+      "directory": "KK_power_module/manufacturing/KK_POWER_P4_5_PROTOTYPE_REVIEW_2026-09-12",
+      "zip": "KK_power_module/manufacturing/KK_POWER_P4_5_PROTOTYPE_REVIEW_2026-09-12.zip",
+      "zip_sha256": "eeb500a9f16e0b33849d8635b79cf56f14dbb78e71e7443c065c047be822fdb2",
+      "file_count": 166,
+      "gerbers_zip": "KK_power_module/manufacturing/KK_POWER_P4_GERBERS.zip",
+      "gerbers_sha256": "c26ffe5b434c95e099c544f12a72fde63b2852fb8af8b48b0badc250ee6ad155"
+    }
+  ],
+  "matching_outline_gerber_geometry": false,
+  "matching_mounting_holes": false,
+  "pairing": "C6/P4",
+  "main_CAD_unchanged": true,
+  "main_fabrication_geometry_unchanged": true,
+  "order_placed": false,
+  "qualified_product": false,
+  "promotion_manifest": "revisions/2026-09-12_power_compact/PROMOTION.json"
+}

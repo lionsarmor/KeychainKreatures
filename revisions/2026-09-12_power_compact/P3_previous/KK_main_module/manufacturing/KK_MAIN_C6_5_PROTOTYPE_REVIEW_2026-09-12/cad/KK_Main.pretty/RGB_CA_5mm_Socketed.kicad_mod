@@ -1,0 +1,159 @@
+(footprint "RGB_CA_5mm_Socketed"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Kingbright RGB in Sullins PPTC041LFBN-RC socket. Confirm actual LED contact retention. Pin1 R,2 A+,3 B,4 G.")
+	(property "Reference" "D3"
+		(at 3.81 -4 0)
+		(layer "F.SilkS")
+		(uuid "a71e02dd-06ec-4af9-9e08-a899571ca4f9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "RGB CA / FORMED LEADS"
+		(at 3.81 4 0)
+		(layer "F.Fab")
+		(uuid "7b598fc7-2232-4f23-8e7b-12715e8d5402")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "823e9e56-be20-4096-8328-821daba85d41")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6502c342-29cb-452e-8e85-c567a7e49633")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.525 -1.5)
+		(end -1.525 1.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7b1a9dd6-1684-4d25-b2b4-872f15aa683e")
+	)
+	(fp_line
+		(start -1.525 -1.5)
+		(end 9.145 -1.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "995c2134-2be5-4da4-939a-4e6891ea0909")
+	)
+	(fp_line
+		(start 9.145 -1.5)
+		(end 9.145 1.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c2b2557b-04f3-4fe2-94aa-65f6b21b928d")
+	)
+	(fp_line
+		(start 9.145 1.5)
+		(end -1.525 1.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "62b87fb8-d00e-4231-9705-163bd3f65bb0")
+	)
+	(fp_rect
+		(start -1.8 -1.775)
+		(end 9.42 1.775)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "53be8d04-02a5-438e-8830-a71170a63a8a")
+	)
+	(fp_circle
+		(center 3.81 0)
+		(end 6.76 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "9046c0af-0a9e-4925-88c6-c1a5d6416f52")
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.85 1.85)
+		(drill 1.05)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "d92f9719-4f0e-4d1a-9ed0-fdcab4857c8e")
+	)
+	(pad "2" thru_hole circle
+		(at 2.54 0)
+		(size 1.85 1.85)
+		(drill 1.05)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "842584c7-bbee-4926-9c4f-878a9dd90546")
+	)
+	(pad "3" thru_hole circle
+		(at 5.08 0)
+		(size 1.85 1.85)
+		(drill 1.05)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "5c6e5746-7a9e-45b6-8357-ac8339b23324")
+	)
+	(pad "4" thru_hole circle
+		(at 7.62 0)
+		(size 1.85 1.85)
+		(drill 1.05)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "12b1fdcf-b00c-4fbf-a33e-db017b35ea01")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/Kingbright_RGB_socketed.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

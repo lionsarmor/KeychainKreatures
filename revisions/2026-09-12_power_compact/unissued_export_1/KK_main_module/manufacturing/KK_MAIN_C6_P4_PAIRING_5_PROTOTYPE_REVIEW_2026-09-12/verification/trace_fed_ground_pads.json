@@ -1,0 +1,39 @@
+[
+  {
+    "pad": "SW7:C",
+    "explicit_ground_tracks": 2,
+    "reason": "Trace-fed pad; omit ineffective local pour thermal only; no DRC suppression."
+  },
+  {
+    "pad": "C18:2",
+    "explicit_ground_tracks": 1,
+    "reason": "Trace-fed pad; omit ineffective local pour thermal only; no DRC suppression."
+  },
+  {
+    "pad": "C12:2",
+    "explicit_ground_tracks": 1,
+    "reason": "Trace-fed pad; omit ineffective local pour thermal only; no DRC suppression."
+  },
+  {
+    "pad": "R34:2",
+    "explicit_ground_tracks": 1,
+    "reason": "Trace-fed pad; omit ineffective local pour thermal only; no DRC suppression."
+  },
+  {
+    "pad": "SW8:C",
+    "explicit_ground_tracks": 2,
+    "reason": "Trace-fed pad; omit ineffective local pour thermal only; no DRC suppression."
+  },
+  {
+    "pad": "TP6:1",
+    "reason": "Bare ground probe pad, no fitted component: solid ground-plane connection rather than thermal spokes."
+  },
+  {
+    "pad": "TP8:1",
+    "reason": "Bare ground probe pad, no fitted component: solid ground-plane connection rather than thermal spokes."
+  },
+  {
+    "pad": "TP4:1",
+    "reason": "Bare ground probe pad, no fitted component: solid ground-plane connection rather than thermal spokes."
+  }
+]

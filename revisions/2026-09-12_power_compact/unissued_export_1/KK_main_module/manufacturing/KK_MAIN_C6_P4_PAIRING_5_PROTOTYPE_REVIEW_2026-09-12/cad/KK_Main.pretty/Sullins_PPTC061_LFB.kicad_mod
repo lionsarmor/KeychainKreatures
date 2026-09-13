@@ -1,0 +1,135 @@
+(footprint "Sullins_PPTC061_LFB"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Sullins PPTC061LFBN-RC: one row 2.54 mm pitch; 8.5 mm housing height. Pin1 marked square. Module orientation still requires sample check.")
+	(property "Reference" "REF**"
+		(at 0 -2.77 0)
+		(layer "F.SilkS")
+		(uuid "c11c104e-1b65-4649-8071-d3e3b4097b3e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Sullins_PPTC061_LFB"
+		(at 0 15.47 0)
+		(layer "F.Fab")
+		(uuid "e09835f5-0356-4961-b991-d3bf9b4dedad")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e50fe4ee-f596-40fb-8fab-dbfe214d04b4")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f4afb66d-ba70-4c57-a7ef-a3b13ed9ef58")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -1.77 -1.77)
+		(end 1.77 14.47)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "563d951e-f344-4e61-8058-705df070a090")
+	)
+	(fp_rect
+		(start -1.27 -1.27)
+		(end 1.27 13.97)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "200d42e9-dc7e-4b99-a3e8-02d132cdf117")
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.85 1.85)
+		(drill 1.05)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "ace2df87-7e88-4279-8aed-90c85d460514")
+	)
+	(pad "2" thru_hole circle
+		(at 0 2.54)
+		(size 1.85 1.85)
+		(drill 1.05)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "a04fb14c-cf3f-49b1-9537-12524b560183")
+	)
+	(pad "3" thru_hole circle
+		(at 0 5.08)
+		(size 1.85 1.85)
+		(drill 1.05)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "89505766-404b-44a0-99f3-947b8b3720bf")
+	)
+	(pad "4" thru_hole circle
+		(at 0 7.62)
+		(size 1.85 1.85)
+		(drill 1.05)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "b7c59ca1-afaa-4338-87e5-3646ed6dbdb0")
+	)
+	(pad "5" thru_hole circle
+		(at 0 10.16)
+		(size 1.85 1.85)
+		(drill 1.05)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "d73c2a31-bb01-4d1d-a7c5-ebcebe75a726")
+	)
+	(pad "6" thru_hole circle
+		(at 0 12.7)
+		(size 1.85 1.85)
+		(drill 1.05)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "540293fc-c106-43ed-af57-fadf4a465ac6")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/GODIYMODULES_SD_socketed_envelope.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

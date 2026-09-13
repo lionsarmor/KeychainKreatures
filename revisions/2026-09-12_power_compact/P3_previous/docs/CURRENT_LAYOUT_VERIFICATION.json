@@ -1,0 +1,35 @@
+{
+  "scope": "Current-only relocation; exact CAD/issued ZIP hashes preserved; fresh native checks at new paths",
+  "sources": {
+    "main": "KK_main_module/KK_main_module.kicad_pro",
+    "power": "KK_power_module/KK_power_module.kicad_pro"
+  },
+  "archive": "revisions/2026-09-12_current_only",
+  "checks": {
+    "main": {
+      "erc": 0,
+      "drc": 0,
+      "opens": 0,
+      "parity": 0,
+      "pcb_sha256": "c7dc3028d36d8b80aca6357518118377b29c746b93822521c5e1624194e7dc07",
+      "drc_report_sha256": "e8ba2012c86a3dfabce1c55f5c133b82f0d6337b2637f540977dd2a622a02aa2",
+      "erc_report_sha256": "86a6fc7a209248bb94b512403626b5a644cde04545e85ed47f302e92f2b20d7a"
+    },
+    "power": {
+      "erc": 0,
+      "drc": 0,
+      "opens": 0,
+      "parity": 0,
+      "pcb_sha256": "74cb2db7b740393391b8dd44e8d08ae518aa7f0c30e6ec798ab1123e056adbce",
+      "drc_report_sha256": "0a931890f6237fcbbb88e2b613bc2d95aa94fa9c1aded1803b6198cdb454a26b",
+      "erc_report_sha256": "98c69eab350e0b69a8d299d6965bcb1e99b4216312488f610b6a652a9ff57737"
+    }
+  },
+  "no_circuit_edits": true,
+  "no_git_commit_or_push": true,
+  "protected_file_count": 11,
+  "print_sheet": "/home/legion/Desktop/PRINT THIS.pdf",
+  "print_sheet_sha256": "657be5d640da8f1a1b16e5646a9e99e1d7408149053c9564365ffe5097179b28",
+  "current_links_checked": 97,
+  "preserved_archive_files": 781
+}

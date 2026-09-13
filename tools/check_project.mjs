@@ -1,4 +1,4 @@
-// Current C6/P3 read-only check. No native CAD generation, routing or writes.
+// Current C6/P4 read-only check. No native CAD generation, routing or writes.
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
@@ -9,6 +9,8 @@ const read=p=>fs.readFileSync(full(p),'utf8');
 const json=p=>JSON.parse(read(p));
 const sha=p=>crypto.createHash('sha256').update(fs.readFileSync(full(p))).digest('hex');
 const errors=[];
+const localEditorState=p=>/(^|\/)\.history\/|\.kicad_prl$|\.lck$|(^|\/)__pycache__\/|\.pyc$/.test(p);
+let unpublishedEditorFiles=0;
 function check(test,message){if(!test)errors.push(message);}
 function nets(p){
   const out=new Map();
@@ -17,8 +19,12 @@ function nets(p){
       out.set(`${pin[1]}.${pin[2]}`,n[1].replaceAll('&amp;','&').replace(/^\//,''));
   check(out.size>0,'Empty netlist '+p); return out;
 }
-const index=json('docs/C6_P3_RELEASE_INDEX.json');
-const staticAudit=json('docs/C6_P3_STATIC_AUDIT.json');
+const index=json('docs/CURRENT_RELEASE_INDEX.json');
+const staticAudit=json('docs/CURRENT_STATIC_AUDIT.json');
+const promotion=json('revisions/2026-09-12_power_compact/PROMOTION.json');
+check(promotion.state==='complete','Compact promotion/release incomplete');
+check(sha(promotion.release_index)===promotion.release_index_sha256,'Changed compact release index');
+for(const row of promotion.files)check(sha(row.to)===row.sha256,'Compact archive changed: '+row.to);
 const boards={}; let verifiedFiles=0;
 for(const item of index.boards){
   const stem=`KK_${item.kind}_module`, dir=item.directory, src=item.source;
@@ -57,5 +63,24 @@ for(const pin of ['A6','A7','B6','B7','A8','B8']){
 }
 const archive='revisions/2026-09-12_C6_P3_release/MOVE_MANIFEST.json';
 if(fs.existsSync(full(archive)))for(const row of json(archive).files)check(sha(row.to)===row.sha256,'Archive changed '+row.to);
-console.log(JSON.stringify({scope:'Saved release integrity and netlist/interface check; NOT fresh native checks or powered testing',verified_package_files:verifiedFiles,boards:Object.fromEntries(Object.entries(boards).map(([k,{nets,...v}])=>[k,v])),harness:pins,errors,manufacturer_approved:false,physical_fit_qualified:false,powered_tested:false,status:errors.length?'FAIL':'PASS — prototype files consistent; physical/DFM/bench qualifications remain'},null,2));
+const cleanup='revisions/2026-09-12_current_only/MOVE_MANIFEST.json';
+if(fs.existsSync(full(cleanup))){
+  const moved=json(cleanup);
+  check(moved.state==='complete','Current-root cleanup was not completed');
+  for(const [p,h] of Object.entries(moved.protected_current_files)){
+    const preserved=promotion.files.find(row=>row.from===p&&row.sha256===h);
+    check(preserved?sha(preserved.to)===h:sha(p)===h,'Cleanup baseline not preserved through compact promotion: '+p);
+  }
+  for(const row of moved.files.filter(r=>r.to.startsWith('revisions/2026-09-12_current_only/'))){
+    // The recovery map also inventories local editor state, deliberately excluded
+    // from Git. Verify it when present locally; do not require it in a checkout.
+    if(localEditorState(row.to)&&(process.argv.includes('--published')||!fs.existsSync(full(row.to)))){unpublishedEditorFiles++;continue;}
+    if(row.type==='symlink')check(fs.readlinkSync(full(row.to))===row.target,'Archived link changed: '+row.to);
+    else check(sha(row.to)===row.sha256,'Cleanup archive changed: '+row.to);
+  }
+}
+check(JSON.stringify(staticAudit.boards.KK_main_module.outline_mm)==='[96,105]','Wrong main dimensions');
+check(JSON.stringify(staticAudit.boards.KK_power_module.outline_mm)==='[50,50]','Wrong compact power dimensions');
+check(index.matching_mounting_holes===false,'Obsolete common-mounting claim');
+console.log(JSON.stringify({scope:'Saved release integrity and netlist/interface check; NOT fresh native checks or powered testing',verified_package_files:verifiedFiles,unpublished_editor_files_omitted:unpublishedEditorFiles,boards:Object.fromEntries(Object.entries(boards).map(([k,{nets,...v}])=>[k,v])),harness:pins,errors,manufacturer_approved:false,physical_fit_qualified:false,powered_tested:false,status:errors.length?'FAIL':'PASS — prototype files consistent; physical/DFM/bench qualifications remain'},null,2));
 if(errors.length)process.exitCode=1;

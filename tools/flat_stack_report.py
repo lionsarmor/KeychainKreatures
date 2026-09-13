@@ -1,11 +1,11 @@
 """Small, printable mechanical review sheet; no manufacturing output."""
 from pathlib import Path
-import json, hashlib, csv, html, base64, subprocess
+import json, hashlib, csv, html, base64, subprocess, tempfile
 # Dependency-free SVG pages; existing Inkscape/Poppler tools produce the PDF.
 mm=1;A4=(210,297)
 class Canvas:
     def __init__(self,path,pagesize):
-        self.path=Path(path);self.parts=[];self.pdfs=[];self.font=10;self.color='black';self.stroke=.2;self.dash=''
+        self.path=Path(path);self.parts=[];self.pdfs=[];self.font=10;self.color='black';self.stroke=.2;self.dash='';self.work=tempfile.TemporaryDirectory(prefix='kk-stack-report-')
     def setFont(self,name,size):self.font=size*.352778
     def drawString(self,x,y,t):self.parts.append(f'<text x="{x}" y="{297-y}" font-family="sans-serif" font-size="{self.font}" fill="black">{html.escape(t)}</text>')
     def setLineWidth(self,w):self.stroke=w
@@ -21,45 +21,52 @@ class Canvas:
         self.parts.append(f'<image x="{x}" y="{297-y-height}" width="{width}" height="{height}" href="data:image/png;base64,{data}"/>')
     def showPage(self):
         if not self.parts:return
-        stem=self.path.with_name(self.path.stem+f'-{len(self.pdfs)+1}')
+        stem=Path(self.work.name)/(self.path.stem+f'-{len(self.pdfs)+1}')
         svg=stem.with_suffix('.svg');pdf=stem.with_suffix('.pdf')
         svg.write_text('<svg xmlns="http://www.w3.org/2000/svg" width="210mm" height="297mm" viewBox="0 0 210 297">'+'\n'.join(self.parts)+'</svg>')
         subprocess.run(['inkscape',str(svg),'--export-type=pdf','--export-filename='+str(pdf)],check=True,capture_output=True)
         self.pdfs.append(pdf);self.parts=[]
     def save(self):
-        self.showPage();subprocess.run(['pdfunite',*[str(p) for p in self.pdfs],str(self.path)],check=True)
+        self.showPage();subprocess.run(['pdfunite',*[str(p) for p in self.pdfs],str(self.path)],check=True);self.work.cleanup()
 
 ROOT=Path(__file__).resolve().parent.parent
-MAIN=ROOT/'KK_main_module/C6_flat_stack';POWER=ROOT/'KK_power_module/P3_matching_stack'
-OUT=ROOT/'docs/C6_P3_STACK_REVIEW.pdf'
+MAIN=ROOT/'KK_main_module';POWER=ROOT/'KK_power_module'
+OUT=ROOT/'docs/C6_P4_MECHANICAL_REVIEW.pdf'
 c=Canvas(str(OUT),pagesize=A4)
 def line(t,x,y,size=10):
     c.setFont('Helvetica',size);c.drawString(x*mm,y*mm,t)
 def page(title):
-    line(title,12,284,15);line('C.6 / P.3 PROTOTYPE REVIEW - PHYSICAL / BENCH QUALIFICATION PENDING',12,276,9)
+    line(title,12,284,15);line('C.6 / P.4 PROTOTYPE REVIEW - PHYSICAL / BENCH QUALIFICATION PENDING',12,276,9)
 
-page('Keychain Kreatures - flat, removable board stack')
-line('Shared outline: 96 x 105 mm; 4 mm corner radius; 1.6 mm PCB.',12,265)
-line('Four 2.2 mm clearance holes: (4,4), (92,4), (4,101), (92,101) mm.',12,259)
-line('Coordinates below: top-left origin, X right, Y down. Both boards use this pattern.',12,253,9)
-x0,y0=55*mm,131*mm
+page('Keychain Kreatures - separate mounting templates')
+line('Main C.6: 96 x 105 mm, R4. Power P.4: 50 x 50 mm, R3. Both 1.6 mm thick.',12,265,9)
+line('Each board has four 2.2 mm M2 holes. The mounting patterns DO NOT MATCH.',12,259,9)
+line('Coordinates: each board has its own top-left origin, X right, Y down.',12,253,9)
+x0,y0=12*mm,131*mm
 c.setLineWidth(.2*mm);c.roundRect(x0,y0,96*mm,105*mm,4*mm,stroke=1,fill=0)
 for x,y in [(4,4),(92,4),(4,101),(92,101)]:c.circle(x0+x*mm,y0+(105-y)*mm,1.1*mm,stroke=1,fill=0)
 c.setStrokeColorRGB(.7,.1,.1);c.setDash(2,2)
 c.rect(x0+18*mm,y0+(105-38)*mm,60*mm,38*mm,stroke=1,fill=0)
 c.setDash();c.setStrokeColorRGB(0,0,0)
-line('ANTENNA: NO METAL / CELL / WIRES',77,218,7)
-line('Common mounting template - 1:1',70,174,9)
+line('ANTENNA: NO METAL / CELL / WIRES',32,218,6)
+line('Main C.6 - 1:1',38,174,9)
+c.roundRect(139,181,50,50,3)
+for x,y in [(3,3),(47,3),(3,47),(47,47)]:c.circle(139+x,181+50-y,1.1)
+line('Power P.4 - 1:1',143,202,8)
+line('Main holes: (4,4), (92,4),',118,169,8)
+line('(4,101), (92,101) mm.',118,163,8)
+line('Power holes: (3,3), (47,3),',118,152,8)
+line('(3,47), (47,47) mm.',118,146,8)
 line('100 mm calibration line:',12,121,9)
 c.line(12*mm,116*mm,112*mm,116*mm)
 c.line(12*mm,114*mm,12*mm,118*mm);c.line(112*mm,114*mm,112*mm,118*mm)
 line('PRINT AT 100% / ACTUAL SIZE. Disable fit-to-page. Measure the line first.',12,107,9)
 for i,t in enumerate([
- 'Stack orientation: main display/buttons outward at the front of the case.',
- 'Power component side faces the rear cover; its test-pad face points toward main.',
- 'Power-board front view is X-mirrored relative to main-front physical coordinates.',
- 'Start a fit mock-up with FOUR 20 mm M2 insulating standoffs between PCB faces.',
- 'This spacing is provisional: check plugged JST bodies, cable bends and solder tails.',
+ 'Main display/buttons face the user. Smaller power PCB fits behind on its own supports.',
+ 'These templates show individual board geometry, NOT an approved stack placement.',
+ 'Keep the entire power PCB, cell, harness and supports clear of the main antenna zone.',
+ 'There is no shared four-standoff mounting pattern or approved board spacing.',
+ 'Check actual components, plugged JST bodies, wire bends and solder tails on both sides.',
  'Clip solder tails to <=2.5 mm, inspect every joint, and keep loose wires restrained.',
  'Unscrew and unplug the rear power board to expose the student main-board parts.',
  'Do not trap a battery between solder tails and components. Cell position is not frozen.',
@@ -102,13 +109,13 @@ page('Main-board rear - populated mechanical preview')
 preview=MAIN/'reports/main_back.png'
 if preview.exists():c.drawImage(str(preview),10*mm,57*mm,width=190*mm,height=190*mm,preserveAspectRatio=True)
 line('Preview is not a powered test. Seller-module envelopes and formed leads need sample checks.',12,43,9)
-line('Use C6_flat_stack and P3_matching_stack, not the old manufacturing ZIPs.',12,36,9)
+line('Current projects: KK_main_module (C.6) and KK_power_module (P.4).',12,36,9)
 c.showPage()
-page('Power-board rear-cover side - matching outline')
-preview=POWER/'reports/power_front.png'
+page('Compact power board - 50 x 50 mm, separate supports')
+preview=POWER/'reports/power_compact_front.png'
 if preview.exists():c.drawImage(str(preview),10*mm,57*mm,width=190*mm,height=190*mm,preserveAspectRatio=True)
-line('Routed power core preserved. Empty upper antenna region must stay clear of metal.',12,49,9)
+line('Routed power core preserved. USB at top and switch at right in this native front view.',12,49,9)
 line('Power J3 -> main J1: 1=5V, 2=GND, 3=3.3V, 4=3.2V. Keyed pin-to-pin harness.',12,42,9)
-line('This is the power FRONT view; mirror X to compare with the main FRONT in the stack.',12,35,9)
+line('Case placement and board spacing are NOT frozen. Never overlap the main antenna zone.',12,35,9)
 c.save()
 print(OUT)

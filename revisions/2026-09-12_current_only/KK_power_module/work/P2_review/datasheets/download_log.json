@@ -1,0 +1,90 @@
+[
+  {
+    "mpn": "BQ24074RGTR",
+    "url": "https://www.ti.com/lit/ds/symlink/bq24074.pdf",
+    "saved": true
+  },
+  {
+    "mpn": "TUSB320LAIRWBR",
+    "url": "https://www.ti.com/lit/ds/symlink/tusb320lai.pdf",
+    "saved": true
+  },
+  {
+    "mpn": "TPS259530DSGR",
+    "url": "https://www.ti.com/lit/ds/symlink/tps2595.pdf",
+    "saved": true
+  },
+  {
+    "mpn": "TPS63060DSCR",
+    "url": "https://www.ti.com/lit/ds/symlink/tps63060.pdf",
+    "saved": true
+  },
+  {
+    "mpn": "TPS22918DBVR",
+    "url": "https://www.ti.com/lit/ds/symlink/tps22918.pdf",
+    "saved": true
+  },
+  {
+    "mpn": "SN74AUP1G17DBVR",
+    "url": "https://www.ti.com/lit/ds/symlink/sn74aup1g17.pdf",
+    "saved": true
+  },
+  {
+    "mpn": "TPS386000RGPR",
+    "url": "https://www.ti.com/lit/ds/symlink/tps386000.pdf",
+    "saved": true
+  },
+  {
+    "mpn": "TPS22950YBHR",
+    "url": "https://www.ti.com/lit/ds/symlink/tps22950.pdf",
+    "saved": true
+  },
+  {
+    "mpn": "TLV75533PDBVR",
+    "url": "https://www.ti.com/lit/ds/symlink/tlv755p.pdf",
+    "saved": true
+  },
+  {
+    "mpn": "AO3400A",
+    "url": "https://www.aosmd.com/sites/default/files/res/datasheets/AO3400A.pdf",
+    "saved": true
+  },
+  {
+    "mpn": "DW01A",
+    "url": "https://hmsemi.com/downfile/DW01A.PDF",
+    "saved": true
+  },
+  {
+    "mpn": "FS8205",
+    "url": "https://www.ic-fortune.com/upload/Download/FS8205-DS-19_EN.pdf",
+    "saved": false,
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+  },
+  {
+    "mpn": "XFL4020-102MEC",
+    "url": "https://www.coilcraft.com/getmedia/50632d43-da1b-4cdb-8ab4-3029cab51df3/xfl4020.pdf",
+    "saved": true
+  },
+  {
+    "mpn": "JS102011SAQN",
+    "url": "https://www.ckswitches.com/media/1422/js.pdf",
+    "saved": false,
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "mpn": "HC-TYPE-C-16P-01A",
+    "url": "https://datasheet.lcsc.com/lcsc/2211161000_HCTL-HC-TYPE-C-16P-01A_C2894897.pdf",
+    "saved": false,
+    "error": "Not a PDF"
+  },
+  {
+    "mpn": "BQ24075TRGTR",
+    "url": "https://www.ti.com/lit/ds/symlink/bq24075t.pdf",
+    "saved": true
+  },
+  {
+    "mpn": "103AT-2",
+    "url": "https://www.semitec-global.com/uploads/2022/01/P12-13-AT-Thermistor.pdf",
+    "saved": true
+  }
+]

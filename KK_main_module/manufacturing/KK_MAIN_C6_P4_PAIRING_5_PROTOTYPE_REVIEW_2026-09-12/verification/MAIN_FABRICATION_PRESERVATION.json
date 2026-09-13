@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "native_source_hashes_unchanged": true,
+  "files_compared_ignoring_generation_metadata": [
+    "KK_main_module-F_Cu.gtl",
+    "KK_main_module-F_Silkscreen.gto",
+    "KK_main_module-B_Cu.gbl",
+    "KK_main_module-B_Mask.gbs",
+    "KK_main_module-NPTH.drl",
+    "KK_main_module-B_Silkscreen.gbo",
+    "KK_main_module-PTH.drl",
+    "KK_main_module-F_Mask.gts",
+    "KK_main_module-Edge_Cuts.gm1"
+  ],
+  "old_package": "revisions/2026-09-12_power_compact/P3_previous/KK_main_module/manufacturing/KK_MAIN_C6_5_PROTOTYPE_REVIEW_2026-09-12",
+  "new_package": "KK_main_module/manufacturing/KK_MAIN_C6_P4_PAIRING_5_PROTOTYPE_REVIEW_2026-09-12"
+}

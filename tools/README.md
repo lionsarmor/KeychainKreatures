@@ -1,17 +1,24 @@
-# Current project tools — C.6 / P.3
+# Current-project tools
 
-Native CAD in C6_flat_stack and P3_matching_stack is authoritative. Do not rerun old generators over routed boards.
+Current native CAD is directly in KK_main_module and KK_power_module. These folders are C.6/P.4; all older designs and one-off generators are in [the cleanup archive](../revisions/2026-09-12_current_only/).
 
-- `node tools/check_project.mjs`: lightweight read-only current CAD/package/report/archive hashes, local assets, saved netlists and four-wire interface. Does not perform fresh native checks or powered qualification.
-- `node tools/github_preflight.mjs`: read-only staged-publication check for required release/archive paths, current documentation links, oversized files, accidentally staged editor state and common credential patterns. Run after staging; it does not prove the absence of every possible secret or alter Git/GitHub.
-- `flat_stack_audit.py`: read-only native two-board outline/hole, pin/net, horizontal-part and independent trace-width audit. Also refreshes the power reference placement CSV. Run inside KiCad Flatpak Python.
-- `stack_release_prepare.py`: produces C.6/P.3 assembly/BOM support docs from preserved electrical reviews, without editing CAD.
-- `stack_release_native.py`: native read-only BOM/pin/net/model checks, debug/connector maps and assembly plots.
-- `stack_release.py`: sequential fresh ERC/DRC/parity, Gerber/drill/IPC/placement export and complete five-prototype packages. Refuses to overwrite an issued release. Review/update explicit revision paths before a future revision.
-- `stack_release_finish.py`: guarded one-time preflight documentation seal and superseded-output archival for this C.6/P.3 release.
-- `flat_stack_report.py`, `flat_stack_fit.py`: printable mechanical review and actual-size fit drawings.
-- `check_project_legacy.mjs`, older power_* and flat placement/routing scripts: historical/one-shot evidence. Some overwrite working copper or rely on archived scratch inputs. Not general rebuild commands.
+- `node tools/check_project.mjs`: read-only source/package hashes, saved netlist/interface checks, local assets, protected cleanup files and archive recovery integrity. Not a new powered or native CAD test.
+- `node tools/github_preflight.mjs`: staged-publication checks for release/archive paths, documentation links, large files and common accidental credential/editor-state inclusions. Run after staging the intended changes, not during an unstaged move.
+- `flat_stack_audit.py`: native static outline/mounting, flat-part/model, pad/net and independent track-width checks. Refreshes the current audit and power placement table, never routed CAD.
+- `flat_stack_fit.py`: actual-size main front/back fitting PDFs generated from a temporary board copy.
+- `flat_stack_report.py`: printable four-page review with separate actual-size mounting templates.
+- `stack_release_native.py main|power`: native BOM/pad/net/model checks and assembly/connector/debug maps; it rewrites generated review tables/plots, not CAD.
+- `current_only_cleanup.mjs`: completed one-time move script, retained as recovery evidence. It refuses to run again once its archive exists.
 
-Use `nice -n 15 taskset -c 0` for heavy work; run native checks sequentially, no competing routers. With KiCad Flatpak, use `flatpak run --command=python3 org.kicad.KiCad /absolute/path/to/script.py`. Global KiCad 10 library models are checked natively, not by the lightweight host checker.
+Run heavy tools sequentially with `nice -n 15 taskset -c 0`. Native Python tools use `flatpak run --command=python3 org.kicad.KiCad /absolute/path/to/tool.py`. Fit/report documents are generated artifacts; do not confuse updating a print sheet with issuing new manufacturing files.
 
-Current full and fabrication-only ZIP paths and hashes are in docs/C6_P3_RELEASE_INDEX.json. Never describe a saved hash check as a new electrical/thermal test. No tool here orders boards.
+The recovery manifest includes local-only editor history, KiCad preferences/locks and Python caches. These remain archived locally but are deliberately excluded from Git. The checker verifies them when present; `node tools/check_project.mjs --published` checks the publishable subset. All CAD, manufacturing packages and material recovery files are required in either mode.
+
+Historical placement, route-import, power generation and release scripts have been packed away. They retain their original source assumptions and are not supported commands from their relocated paths. Restore a complete historical scratch workspace using the move map if needed; never run them over current CAD.
+
+New C6/P4 review/Gerber ZIPs are hash-bound snapshots. Main C.6 CAD and fabrication geometry are unchanged; power P.4 is compact. docs/CURRENT_RELEASE_INDEX.json lists the new packages; old snapshots are archived intact. Any future circuit edit needs a new checked release, not merely updated hashes. No tool here orders boards.
+
+- `promote_compact_power.py`: completed guarded one-time promotion; refuses to overwrite its archive.
+- `compact_release_docs.py`: generates current guides from preserved pre-promotion text; run only before sealing a release.
+- `current_release.py`: fresh sequential native checks and immutable C6/P4 packages; refuses existing outputs.
+- `power_compact_candidate.py`: historical one-shot candidate builder, not a current routing command. Its source assumptions refer to the pre-promotion P.3 root.

@@ -1,0 +1,99 @@
+Reference,Quantity,Value,MPN,Footprint,Side,Datasheet,Notes
+C1,1,100u,ECEA1CKA101,KK_Main:KA_100u_Flat,back,https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1050.pdf,"16V Panasonic KA-A, body horizontal on 0.5mm insulating support. Form leads with support at seal. Square pad 1 = positive. Maximum can envelope D6.8 x L8mm (100u) or D4.5 x L8mm (10u)."
+C2,1,100n,C315C104K5R5TA,KK_Main:KEMET_C315_P2p54,back,https://yageogroup.com/download/specsheet/C315C104K5R5TA,
+C3,1,100u,ECEA1CKA101,KK_Main:KA_100u_Flat,back,https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1050.pdf,"16V Panasonic KA-A, body horizontal on 0.5mm insulating support. Form leads with support at seal. Square pad 1 = positive. Maximum can envelope D6.8 x L8mm (100u) or D4.5 x L8mm (10u)."
+C4,1,100n,C315C104K5R5TA,KK_Main:KEMET_C315_P2p54,back,https://yageogroup.com/download/specsheet/C315C104K5R5TA,
+C5,1,100u,ECEA1CKA101,KK_Main:KA_100u_Flat,back,https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1050.pdf,"16V Panasonic KA-A, body horizontal on 0.5mm insulating support. Form leads with support at seal. Square pad 1 = positive. Maximum can envelope D6.8 x L8mm (100u) or D4.5 x L8mm (10u)."
+C6,1,100n,C315C104K5R5TA,KK_Main:KEMET_C315_P2p54,back,https://yageogroup.com/download/specsheet/C315C104K5R5TA,
+C7,1,100n,C315C104K5R5TA,KK_Main:KEMET_C315_P2p54,back,https://yageogroup.com/download/specsheet/C315C104K5R5TA,
+C8,1,100n,C315C104K5R5TA,KK_Main:KEMET_C315_P2p54,back,https://yageogroup.com/download/specsheet/C315C104K5R5TA,
+C9,1,10u,ECEA1CKA100,KK_Main:KA_10u_Flat,back,https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1050.pdf,"16V Panasonic KA-A, body horizontal on 0.5mm insulating support. Form leads with support at seal. Square pad 1 = positive. Maximum can envelope D6.8 x L8mm (100u) or D4.5 x L8mm (10u)."
+C10,1,100n,C315C104K5R5TA,KK_Main:KEMET_C315_P2p54,back,https://yageogroup.com/download/specsheet/C315C104K5R5TA,
+C11,1,10u,ECEA1CKA100,KK_Main:KA_10u_Flat,back,https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1050.pdf,"16V Panasonic KA-A, body horizontal on 0.5mm insulating support. Form leads with support at seal. Square pad 1 = positive. Maximum can envelope D6.8 x L8mm (100u) or D4.5 x L8mm (10u)."
+C12,1,100n,C315C104K5R5TA,KK_Main:KEMET_C315_P2p54,back,https://yageogroup.com/download/specsheet/C315C104K5R5TA,
+C13,1,100u,ECEA1CKA101,KK_Main:KA_100u_Flat,back,https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1050.pdf,"16V Panasonic KA-A, body horizontal on 0.5mm insulating support. Form leads with support at seal. Square pad 1 = positive. Maximum can envelope D6.8 x L8mm (100u) or D4.5 x L8mm (10u)."
+C14,1,100n,C315C104K5R5TA,KK_Main:KEMET_C315_P2p54,back,https://yageogroup.com/download/specsheet/C315C104K5R5TA,
+C15,1,10u,ECEA1CKA100,KK_Main:KA_10u_Flat,back,https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1050.pdf,"16V Panasonic KA-A, body horizontal on 0.5mm insulating support. Form leads with support at seal. Square pad 1 = positive. Maximum can envelope D6.8 x L8mm (100u) or D4.5 x L8mm (10u)."
+C16,1,100n,C315C104K5R5TA,KK_Main:KEMET_C315_P2p54,back,https://yageogroup.com/download/specsheet/C315C104K5R5TA,Suppression physically close to motor leads
+C17,1,100u,ECEA1CKA101,KK_Main:KA_100u_Flat,back,https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1050.pdf,"16V Panasonic KA-A, body horizontal on 0.5mm insulating support. Form leads with support at seal. Square pad 1 = positive. Maximum can envelope D6.8 x L8mm (100u) or D4.5 x L8mm (10u)."
+C18,1,10n,C315C103J1G5TA,KK_Main:KEMET_C315_P2p54,back,https://yageogroup.com/download/specsheet/C315C103J1G5TA,
+C19,1,10n,C315C103J1G5TA,KK_Main:KEMET_C315_P2p54,back,https://yageogroup.com/download/specsheet/C315C103J1G5TA,
+C20,1,1u,C315C105K5R5TA,KK_Main:KEMET_C315_P2p54,back,https://yageogroup.com/download/specsheet/C315C105K5R5TA,
+C21,1,10u,ECEA1CKA100,KK_Main:KA_10u_Flat,back,https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1050.pdf,"16V Panasonic KA-A, body horizontal on 0.5mm insulating support. Form leads with support at seal. Square pad 1 = positive. Maximum can envelope D6.8 x L8mm (100u) or D4.5 x L8mm (10u)."
+C22,1,10n,C315C103J1G5TA,KK_Main:KEMET_C315_P2p54,back,https://yageogroup.com/download/specsheet/C315C103J1G5TA,
+C23,1,100n,C315C104K5R5TA,KK_Main:KEMET_C315_P2p54,back,https://yageogroup.com/download/specsheet/C315C104K5R5TA,
+C24,1,100n,C315C104K5R5TA,KK_Main:KEMET_C315_P2p54,back,https://yageogroup.com/download/specsheet/C315C104K5R5TA,
+C25,1,100u,ECEA1CKA101,KK_Main:KA_100u_Flat,back,https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1050.pdf,"16V Panasonic KA-A, body horizontal on 0.5mm insulating support. Form leads with support at seal. Square pad 1 = positive. Maximum can envelope D6.8 x L8mm (100u) or D4.5 x L8mm (10u)."
+C26,1,100n,C315C104K5R5TA,KK_Main:KEMET_C315_P2p54,back,https://yageogroup.com/download/specsheet/C315C104K5R5TA,
+C27,1,100n,C315C104K5R5TA,KK_Main:KEMET_C315_P2p54,back,https://yageogroup.com/download/specsheet/C315C104K5R5TA,C.5 local U4 bypass.
+D1,1,TSAL6200,TSAL6200,KK_Main:TSAL6200_C5_EdgeFormed,back,https://www.vishay.com/docs/81010/tsal6200.pdf,C.5 rear top-facing formed leads: nominal lens axis 5mm off rear PCB. Verify optical direction and lead form.
+D2,1,1N5819,1N5819-E3/54,KK_Main:1N5819_DO41,back,https://www.vishay.com/docs/88525/1n5817.pdf,
+D3,1,RGB mood / common anode,WP154A4SEJ3VBDZGW/CA,KK_Main:RGB_CA_5mm_Socketed,front,https://www.kingbrightusa.com/images/catalog/SPEC/WP154A4SEJ3VBDZGW-CA.pdf,"C.6: Sullins PPTC041LFBN-RC socket, formed LED leads at 2.54mm. Actual lead retention qualification required. 1=R, 2=A+, 3=B, 4=G."
+J1,1,SYS_IN / JST-XH,B4B-XH-A(LF)(SN),KK_Main:JST_XH_B4B_4,back,https://www.jst-mfg.com/product/pdf/eng/eXH.pdf,4-rail-interface pins include ground; future supply must sequence rails together
+J2,1,XIITIA TFT header,PPTC081LFBN-RC,KK_Main:Sullins_PPTC081_LFB,front,https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/937/Female_Headers.100_DS.pdf,Display module B0DFWL25RB is a separate assembly item
+J3,1,GODIYMODULES SD,PPTC061LFBN-RC,KK_Main:Sullins_PPTC061_LFB,back,https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/937/Female_Headers.100_DS.pdf,SD module B0F82XWT4F is a separate assembly item
+J4,1,LCM0827A3038F motor,B2B-PH-K-S(LF)(SN),KK_Main:JST_PH_B2B_2,back,https://www.jst-mfg.com/product/pdf/eng/ePH.pdf,C.5 top-entry connector: mating plug inserts perpendicular to rear PCB.
+J5,1,8 ohm speaker,B2B-PH-K-S(LF)(SN),KK_Main:JST_PH_B2B_2,back,https://www.jst-mfg.com/product/pdf/eng/ePH.pdf,C.5 top-entry connector: mating plug inserts perpendicular to rear PCB.
+MOD1,1,ESP32-S3 SuperMini,Teyleten B0D47HBFDY,KK_Main:ESP32-S3-SuperMini,back,https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf,Carrier pad numbering/voltage path requires delivered-module qualification
+Q1,1,KSP2222ABU,KSP2222ABU,KK_Main:TO92_Flat_P2p54,back,https://www.onsemi.com/pdf/datasheet/ksp2222a-d.pdf,"Horizontal TO-92, flat marked face up; formed 2.54mm lead spacing. Check actual device pinout; no pin swaps."
+Q2,1,KSP2222ABU,KSP2222ABU,KK_Main:TO92_Flat_P2p54,back,https://www.onsemi.com/pdf/datasheet/ksp2222a-d.pdf,"Horizontal TO-92, flat marked face up; formed 2.54mm lead spacing. Check actual device pinout; no pin swaps."
+Q3,1,BC32725BU,BC32725BU,KK_Main:TO92_Flat_P2p54,back,https://www.onsemi.com/pub/Collateral/BC327-D.PDF,"Horizontal TO-92, flat marked face up; formed 2.54mm lead spacing. Check actual device pinout; no pin swaps."
+Q4,1,TN0702N3-G,TN0702N3-G,KK_Main:TO92_Flat_P2p54,back,https://ww1.microchip.com/downloads/en/DeviceDoc/TN0702-N-Channel-Enhancement-Mode-Vertical-DMOS-FET-Data-Sheet-20005941A.pdf,"Horizontal TO-92, flat marked face up; formed 2.54mm lead spacing. Check actual device pinout; no pin swaps."
+Q5,1,TN0702N3-G,TN0702N3-G,KK_Main:TO92_Flat_P2p54,back,https://ww1.microchip.com/downloads/en/DeviceDoc/TN0702-N-Channel-Enhancement-Mode-Vertical-DMOS-FET-Data-Sheet-20005941A.pdf,"Horizontal TO-92, flat marked face up; formed 2.54mm lead spacing. Check actual device pinout; no pin swaps."
+Q6,1,LP0701N3-G,LP0701N3-G,KK_Main:TO92_Flat_P2p54,back,https://ww1.microchip.com/downloads/en/DeviceDoc/LP0701-P-Channel-Enhancement-Mode-Lateral-MOSFET-Data-Sheet-20005447A.pdf,"Horizontal TO-92, flat marked face up; formed 2.54mm lead spacing. Check actual device pinout; no pin swaps."
+R1,1,4.7k,MFR-25FBF52-4K7,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R2,1,4.7k,MFR-25FBF52-4K7,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R3,1,10k,MFR-25FBF52-10K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R4,1,10k,MFR-25FBF52-10K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R5,1,10k,MFR-25FBF52-10K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R6,1,10k,MFR-25FBF52-10K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R7,1,10k,MFR-25FBF52-10K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R8,1,10k,MFR-25FBF52-10K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R9,1,10k,MFR-25FBF52-10K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R10,1,10k,MFR-25FBF52-10K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R11,1,10k,MFR-25FBF52-10K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R12,1,10k,MFR-25FBF52-10K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R13,1,10k,MFR-25FBF52-10K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R14,1,10k,MFR-25FBF52-10K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R15,1,10k,MFR-25FBF52-10K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R16,1,10k,MFR-25FBF52-10K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R17,1,10k,MFR-25FBF52-10K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R18,1,10k,MFR-25FBF52-10K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R19,1,4.7k,MFR-25FBF52-4K7,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R20,1,100k,MFR-25FBF52-100K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R21,1,220,MFR-25FBF52-220R,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R22,1,100k,MFR-25FBF52-100K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R23,1,100,MFR-25FBF52-100R,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R24,1,100,MFR-25FBF52-100R,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R25,1,1k,MFR-25FBF52-1K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R26,1,100k,MFR-25FBF52-100K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R27,1,100,MFR-25FBF52-100R,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R28,1,100,MFR-25FBF52-100R,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R29,1,100k,MFR-25FBF52-100K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R30,1,1k,MFR-25FBF52-1K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R31,1,1k,MFR-25FBF52-1K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R32,1,100k,MFR-25FBF52-100K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R33,1,1k,MFR-25FBF52-1K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R34,1,4.7,MFR-25FBF52-4R7,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R35,1,4.7,MFR-25FBF52-4R7,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R36,1,1k,MFR-25FBF52-1K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R37,1,100k,MFR-25FBF52-100K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R38,1,1k,MFR-25FBF52-1K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R39,1,100k,MFR-25FBF52-100K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R40,1,1.8k,MFR-25FBF52-1K8,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R41,1,10k,MFR-25FBF52-10K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R42,1,100k,MFR-25FBF52-100K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+R43,1,100k,MFR-25FBF52-100K,KK_Main:MFR25_10p16,back,https://yageogroup.com/content/Resource%20Library/Datasheet/YAGEO-MFR_DATASHEET.pdf,Horizontal axial body; 10.16mm pitch. No upright resistors.
+SW1,1,UP,Adafruit 3101,KK_Main:Adafruit3101_ABCD,front,https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png,200 ohm maximum closed contact resistance; custom footprint included; verify delivered switch fit and A/B versus C/D continuity
+SW2,1,DOWN,Adafruit 3101,KK_Main:Adafruit3101_ABCD,front,https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png,200 ohm maximum closed contact resistance; custom footprint included; verify delivered switch fit and A/B versus C/D continuity
+SW3,1,LEFT,Adafruit 3101,KK_Main:Adafruit3101_ABCD,front,https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png,200 ohm maximum closed contact resistance; custom footprint included; verify delivered switch fit and A/B versus C/D continuity
+SW4,1,RIGHT,Adafruit 3101,KK_Main:Adafruit3101_ABCD,front,https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png,200 ohm maximum closed contact resistance; custom footprint included; verify delivered switch fit and A/B versus C/D continuity
+SW5,1,A,Adafruit 3101,KK_Main:Adafruit3101_ABCD,front,https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png,200 ohm maximum closed contact resistance; custom footprint included; verify delivered switch fit and A/B versus C/D continuity
+SW6,1,B,Adafruit 3101,KK_Main:Adafruit3101_ABCD,front,https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png,200 ohm maximum closed contact resistance; custom footprint included; verify delivered switch fit and A/B versus C/D continuity
+SW7,1,X,Adafruit 3101,KK_Main:Adafruit3101_ABCD,front,https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png,200 ohm maximum closed contact resistance; custom footprint included; verify delivered switch fit and A/B versus C/D continuity
+SW8,1,Y,Adafruit 3101,KK_Main:Adafruit3101_ABCD,front,https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png,200 ohm maximum closed contact resistance; custom footprint included; verify delivered switch fit and A/B versus C/D continuity
+SW9,1,FN,Adafruit 3101,KK_Main:Adafruit3101_ABCD,front,https://cdn-shop.adafruit.com/product-files/3101/C4817-001+datasheet.png,200 ohm maximum closed contact resistance; custom footprint included; verify delivered switch fit and A/B versus C/D continuity
+U1,1,MCP23017-E/SP,MCP23017-E/SP,KK_Main:ED281DT_DIP28_Socket,back,https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP23017-Data-Sheet-DS20001952.pdf,
+U2,1,TSOP38238,TSOP38238,KK_Main:TSOP38238_Vertical,back,https://www.vishay.com/docs/82491/tsop382.pdf,
+U3,1,TDA2822L-D08-T,TDA2822L-D08-T,KK_Main:ED08DT_DIP8_Socket,back,https://datasheet.lcsc.com/datasheet/pdf/8599ab4088134d37b4be13f0dc390034.pdf,
+U4,1,TLC5916IN,TLC5916IN,KK_Main:ED16DT_DIP16_Socket,back,https://www.ti.com/lit/ds/symlink/tlc5916.pdf,"C.6: 3.3 V logic, 5 V common-anode LED. OE high until zero data is latched."

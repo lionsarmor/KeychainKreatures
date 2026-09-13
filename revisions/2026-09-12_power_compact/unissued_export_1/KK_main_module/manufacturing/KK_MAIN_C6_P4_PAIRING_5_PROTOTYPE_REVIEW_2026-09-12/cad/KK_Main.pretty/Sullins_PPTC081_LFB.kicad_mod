@@ -1,0 +1,151 @@
+(footprint "Sullins_PPTC081_LFB"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Sullins PPTC081LFBN-RC: one row 2.54 mm pitch; 8.5 mm housing height. Pin1 marked square. Module orientation still requires sample check.")
+	(property "Reference" "REF**"
+		(at 0 -2.77 0)
+		(layer "F.SilkS")
+		(uuid "66ea2ebc-c00a-43c2-bc54-117884add183")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Sullins_PPTC081_LFB"
+		(at 0 20.55 0)
+		(layer "F.Fab")
+		(uuid "cef8a365-8c24-49dd-b33f-cd4423d4f18a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d5e5e5be-3fdf-4f36-8c20-2af0408e9170")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bb7cd372-6f8c-44b8-a41e-681d46f5ce03")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -1.77 -1.77)
+		(end 1.77 19.55)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "c7e92e20-c341-42a8-be99-e938572a21b2")
+	)
+	(fp_rect
+		(start -1.27 -1.27)
+		(end 1.27 19.05)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "5ee0054f-84e7-45f8-ade1-4a0171f52bb5")
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.85 1.85)
+		(drill 1.05)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "b82e99c8-86fe-499a-8605-07287e49a654")
+	)
+	(pad "2" thru_hole circle
+		(at 0 2.54)
+		(size 1.85 1.85)
+		(drill 1.05)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "0cc6e0d0-1360-4d58-8901-2a92be6caef1")
+	)
+	(pad "3" thru_hole circle
+		(at 0 5.08)
+		(size 1.85 1.85)
+		(drill 1.05)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "a3615e02-ca07-4fb1-9bb1-a6fb94c19ed7")
+	)
+	(pad "4" thru_hole circle
+		(at 0 7.62)
+		(size 1.85 1.85)
+		(drill 1.05)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "c0c09ab1-9080-4e55-8ccd-7f4fc899ca97")
+	)
+	(pad "5" thru_hole circle
+		(at 0 10.16)
+		(size 1.85 1.85)
+		(drill 1.05)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "9dfa1568-c63e-4863-ad5b-05e23c07e975")
+	)
+	(pad "6" thru_hole circle
+		(at 0 12.7)
+		(size 1.85 1.85)
+		(drill 1.05)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "487782ba-2692-4e8b-a833-f9f5fc187287")
+	)
+	(pad "7" thru_hole circle
+		(at 0 15.24)
+		(size 1.85 1.85)
+		(drill 1.05)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "dd1a2900-b8ea-4837-b8a9-0c9808f7f21d")
+	)
+	(pad "8" thru_hole circle
+		(at 0 17.78)
+		(size 1.85 1.85)
+		(drill 1.05)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "96f8bdd6-f3fc-4c08-84dd-f2bb9b9e08f3")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/XIITIA_screen_socketed_envelope.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

@@ -31,14 +31,19 @@ for(const e of entries){
 // A fresh checkout must include all files referenced by the active integrity check.
 const read=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
 const need=p=>{required++;check(indexed.has(p),'Required release/audit file is not staged: '+p);};
-for(const b of read('docs/C6_P3_RELEASE_INDEX.json').boards){
+const localEditorState=p=>/(^|\/)\.history\/|\.kicad_prl$|\.lck$|(^|\/)__pycache__\/|\.pyc$/.test(p);
+for(const b of read('docs/CURRENT_RELEASE_INDEX.json').boards){
   need(b.zip);need(b.gerbers_zip);need(b.directory+'/SHA256_MANIFEST.json');
   for(const p of Object.keys(read(b.directory+'/SHA256_MANIFEST.json').files))need(b.directory+'/'+p);
   for(const p of Object.keys(read(b.source+'/SOURCE_BASELINE.json')))need(p);
   need(b.source+'/netlist.xml');need(b.source+'/SOURCE_BASELINE.json');
 }
 for(const p of read('revisions/2026-09-12_C6_P3_release/MOVE_MANIFEST.json').files)need(p.to);
-const docs=['README.md','START_HERE.md','CHANGELOG.md','CONTRIBUTING.md','docs/README.md','docs/FLAT_STACK_REWORK.md','KK_main_module/README.md','KK_power_module/CURRENT_STATUS.md','KK_main_module/assembly/README.md','KK_main_module/routing/README.md','KK_main_module/pcb/README.md','revisions/README.md'];
+for(const p of read('revisions/2026-09-12_power_compact/PROMOTION.json').files)need(p.to);
+for(const p of read('revisions/2026-09-12_current_only/MOVE_MANIFEST.json').files)
+  if(p.to.startsWith('revisions/2026-09-12_current_only/')&&!localEditorState(p.to))need(p.to);
+for(const p of ['docs/CURRENT_RELEASE_INDEX.json','docs/CURRENT_STATIC_AUDIT.json','revisions/2026-09-12_power_compact/PROMOTION.json'])need(p);
+const docs=['README.md','START_HERE.md','CHANGELOG.md','CONTRIBUTING.md','docs/README.md','docs/FLAT_STACK_REWORK.md','KK_main_module/README.md','KK_power_module/README.md','tools/README.md','revisions/README.md'];
 let links=0;
 for(const d of docs){
   need(d);const text=fs.readFileSync(path.join(root,d),'utf8');

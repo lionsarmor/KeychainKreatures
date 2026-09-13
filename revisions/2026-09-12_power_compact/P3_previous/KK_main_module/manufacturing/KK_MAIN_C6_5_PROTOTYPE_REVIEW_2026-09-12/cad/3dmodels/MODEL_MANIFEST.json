@@ -1,0 +1,290 @@
+[
+  {
+    "name": "KEMET_C315_max",
+    "source": "component_review/datasheets/kemet-100nf.pdf; kemet-10nf.pdf; kemet-1uf.pdf",
+    "confidence": "manufacturer body envelope",
+    "notes": "3.81 x 2.54 x 3.14 max body; illustrative 1mm board standoff and trimmed tails.",
+    "local_bounds_mm": [
+      -0.635,
+      -1.27,
+      -2.5,
+      3.175,
+      1.27,
+      4.140000000000001
+    ],
+    "sha256": {
+      ".wrl": "a1cea38487b84022b1abbc18d3e1dc88fcb740ebeb77b7493d9c7fe0691b53c7",
+      ".step": "93f486cd29056d4c0bdb46adc25fb7b9873cf70d6076a5a6292addf27cae35db"
+    }
+  },
+  {
+    "name": "Nichicon_UVR_D5_H11",
+    "source": "component_review/datasheets/nichicon-uvr.pdf",
+    "confidence": "manufacturer nominal envelope",
+    "notes": "5mm body diameter, 11mm body length; illustrative 0.5mm seating gap.",
+    "local_bounds_mm": [
+      -1.5,
+      -2.4992229550020406,
+      -2.5,
+      3.515,
+      2.499222955002041,
+      11.55
+    ],
+    "sha256": {
+      ".wrl": "9dfaa55e9b8d77d08750b2783cbd4c755f7c3511fb2982cf7771200b9138a0b7",
+      ".step": "4b8891d2a9644be02abe376546216931ceed87ac6cef8716323386a6acc09375"
+    }
+  },
+  {
+    "name": "Adafruit3101_soft",
+    "source": "component_review/datasheets/soft-buttons.png",
+    "confidence": "manufacturer drawing nominal",
+    "notes": "7.8mm square body; 5.5mm total height from drawing. Seller 4.9mm conflicts; sample required. Leads simplified.",
+    "local_bounds_mm": [
+      -4.15,
+      -3.9,
+      -2.5,
+      4.15,
+      3.9,
+      5.5
+    ],
+    "sha256": {
+      ".wrl": "1aeb6a14e54c620b04f8b97a3eb9a04af564c327e317ef901b9a02147adca22a",
+      ".step": "f2683de6e6004914a15022d0ab3bb2d10430a89baf0bf74bd243d001b3f0fd3f"
+    }
+  },
+  {
+    "name": "Sullins_LFB_6",
+    "source": "component_review/datasheets/sullins-female-headers.pdf",
+    "confidence": "manufacturer housing envelope",
+    "notes": "8.50mm housing; cavities/contact detail and trimmed tail length illustrative.",
+    "local_bounds_mm": [
+      -1.27,
+      -1.5250000000000004,
+      -2.5,
+      1.27,
+      14.225,
+      8.5
+    ],
+    "sha256": {
+      ".wrl": "af69bb5a01a4e7bdfe91d5ecb9047be23754fb7e8a4ed8e7791cff0f98464207",
+      ".step": "08a813184a4adf4ad821e7a67c2a235c1bf7a0f4974afc6855ccee702fb32746"
+    }
+  },
+  {
+    "name": "Sullins_LFB_8",
+    "source": "component_review/datasheets/sullins-female-headers.pdf",
+    "confidence": "manufacturer housing envelope",
+    "notes": "8.50mm housing; cavities/contact detail and trimmed tail length illustrative.",
+    "local_bounds_mm": [
+      -1.27,
+      -1.5249999999999986,
+      -2.5,
+      1.27,
+      19.305000000000003,
+      8.5
+    ],
+    "sha256": {
+      ".wrl": "9b94ec56970be2c7cbc0386af7761a136c338339bb06712963995c13a4a54cac",
+      ".step": "58ad5fad5c7f981023d90331fe3f49722ffe2d93bfe7d0f4eb06caf55ead5edc"
+    }
+  },
+  {
+    "name": "Sullins_LFB_9",
+    "source": "component_review/datasheets/sullins-female-headers.pdf",
+    "confidence": "manufacturer housing envelope",
+    "notes": "8.50mm housing; cavities/contact detail and trimmed tail length illustrative.",
+    "local_bounds_mm": [
+      -1.27,
+      -1.5249999999999986,
+      -2.5,
+      1.27,
+      21.845000000000002,
+      8.5
+    ],
+    "sha256": {
+      ".wrl": "06a4f03228ed3919f36250846450ea7363f6a63e2bed690be32d17635a1e86bd",
+      ".step": "0817f6aceeb25729501e1b6058028ec08a10654796546b00d1a7f8b118c36e7c"
+    }
+  },
+  {
+    "name": "Socketed_DIP8",
+    "source": "component_review/datasheets/dip-sockets.pdf; IC package drawings",
+    "confidence": "nominal socket + generic DIP family",
+    "notes": "On Shore socket envelope; generic IC detail and illustrative seated height 9mm. Not vendor mating-stack certification.",
+    "local_bounds_mm": [
+      -1.27,
+      -1.2699999999999996,
+      -2.5,
+      8.89,
+      8.89,
+      9.02
+    ],
+    "sha256": {
+      ".wrl": "975bb63615623d14baf3fc9eeb2a5b33b4a2d844097762390f216eca8f983ee2",
+      ".step": "32f58f54492b1fdc3f60d3875cb99d0504daa3f2b160e7296c3889e8028ade51"
+    }
+  },
+  {
+    "name": "Socketed_DIP16",
+    "source": "component_review/datasheets/dip-sockets.pdf; IC package drawings",
+    "confidence": "nominal socket + generic DIP family",
+    "notes": "On Shore socket envelope; generic IC detail and illustrative seated height 9mm. Not vendor mating-stack certification.",
+    "local_bounds_mm": [
+      -1.27,
+      -1.2699999999999996,
+      -2.5,
+      8.89,
+      19.05,
+      9.02
+    ],
+    "sha256": {
+      ".wrl": "8e7bf320098ca8a7d2e8cf13a6968df5dc7570097b602052d57eb074f46c4dd9",
+      ".step": "9d0223aa1ded3f3a175ae9c797084c96bb403b5d41b769989de9249551cbec5c"
+    }
+  },
+  {
+    "name": "Socketed_DIP28",
+    "source": "component_review/datasheets/dip-sockets.pdf; IC package drawings",
+    "confidence": "nominal socket + generic DIP family",
+    "notes": "On Shore socket envelope; generic IC detail and illustrative seated height 9mm. Not vendor mating-stack certification.",
+    "local_bounds_mm": [
+      -1.27,
+      -1.2700000000000031,
+      -2.5,
+      8.89,
+      34.29,
+      9.02
+    ],
+    "sha256": {
+      ".wrl": "14e9ac92c7992531885869daad1df57106d6729e0f8bd0ad7977fa877c3cd196",
+      ".step": "613f13b16705988b72815d3826c6108303f18d8d3b8fb91484e11a27e6d040b6"
+    }
+  },
+  {
+    "name": "TSOP38238",
+    "source": "component_review/datasheets/tsop382.pdf",
+    "confidence": "manufacturer body envelope",
+    "notes": "5 x 4.8 x 8.25mm body/lens envelope; selected 2mm seating gap; lead shape simplified.",
+    "local_bounds_mm": [
+      -0.3,
+      -1.4,
+      -2.5,
+      5.38,
+      3.4,
+      10.25
+    ],
+    "sha256": {
+      ".wrl": "b96226b4039634f4979d368f232217afae1b445fdb6a65b6e7314cfa0dcaa591",
+      ".step": "6c180cecfcbed8518813c934ae21c50751f6c758a35dd990cb11c20d573244d8"
+    }
+  },
+  {
+    "name": "TSAL6200_IR",
+    "source": "component_review/datasheets/tsal6200.pdf",
+    "confidence": "manufacturer nominal envelope",
+    "notes": "5mm IR lens, 5.8mm flange, 8.7mm height; grey unpowered appearance, not visible red emission.",
+    "local_bounds_mm": [
+      -1.63,
+      -2.899098627802367,
+      -2.5,
+      4.17,
+      2.899098627802368,
+      9.7
+    ],
+    "sha256": {
+      ".wrl": "f9fac9924ad109f19218dc7fc8c1855f18b4e1a4ec8833b2f5a3c738931083d8",
+      ".step": "398d1be077d4cf6b447c5c64ae943ded88ffa5a73433e8e08af55e57e8086abb"
+    }
+  },
+  {
+    "name": "Kingbright_RGB_formed",
+    "source": "component_review/datasheets/rgb-wp154a4sej3vbdzgw-ca.pdf",
+    "confidence": "manufacturer lens + proposed formed leads",
+    "notes": "White-diffused 5mm lens, 5.9mm flange, 8.6mm height. 5mm standoff reserves straight lead below body before forming; fixture/sample qualification required.",
+    "local_bounds_mm": [
+      -0.25,
+      -2.9490830869024083,
+      -2.5,
+      7.87,
+      2.9490830869024087,
+      13.6
+    ],
+    "sha256": {
+      ".wrl": "cbe913072c98fc7c1d1270c3d0aa9b7dacd3e922b552219b9fb308d6efa3673b",
+      ".step": "6b5a700da74abc310e34429615b3c93e429bde87fc6c207c31e03088ba125828"
+    }
+  },
+  {
+    "name": "Kingbright_RGB_socketed",
+    "source": "Kingbright PDF + Sullins LFB drawing",
+    "confidence": "nominal assembly; CONTACT FIT PENDING",
+    "notes": "Sullins PPTC041LFBN-RC 8.5mm housing under formed LED; lens top 22.1mm. Actual LED lead fit/retention must be verified; do not force or tin mating portions.",
+    "local_bounds_mm": [
+      -1.5250000000000006,
+      -2.9490830869024083,
+      -2.5,
+      9.145,
+      2.9490830869024087,
+      22.1
+    ],
+    "sha256": {
+      ".wrl": "eabfbbe253cefd2e262c5b873096b190467606fcf1cd325f2c6d8ae4663688bf",
+      ".step": "8f202f2bcfa445460b12da4d215ee7f00f4a5d46130a9f10a2a1645ab4e4a4ad"
+    }
+  },
+  {
+    "name": "SuperMini_socketed_envelope",
+    "source": "User footprint + seller photo; component_review/MODULE_SOURCE_NOTES.md",
+    "confidence": "PROVISIONAL seller-module envelope",
+    "notes": "18 x 23.5mm outline from user footprint; 1mm PCB assumed, SMD detail approximate. Socket 8.5mm + header 2.54mm; USB at -Y local. Verify delivered revision and engagement.",
+    "local_bounds_mm": [
+      -9.0,
+      -13.0,
+      -2.5,
+      9.0,
+      11.75,
+      15.239999999999998
+    ],
+    "sha256": {
+      ".wrl": "f0db703419367502298a92bb03fe5049402a18ce6acc1dc14b5422d6efd519eb",
+      ".step": "dc09bc87c8f3c2ac35985628e585c4cfcc0d9eed675d2703b872735cd51546ba"
+    }
+  },
+  {
+    "name": "XIITIA_screen_socketed_envelope",
+    "source": "component_review/MODULE_SOURCE_NOTES.md",
+    "confidence": "PROVISIONAL seller-module envelope",
+    "notes": "31 x 48mm seller board; header-to-edge 2mm, PCB/panel thickness and optical aperture provisional. No display image implies running firmware. Includes actual nominal socket/header stack.",
+    "local_bounds_mm": [
+      -46.0,
+      -6.609999999999999,
+      -2.5,
+      2.0,
+      24.39,
+      13.94
+    ],
+    "sha256": {
+      ".wrl": "835ac6094206874c1417a0a1ee31a25ae01366821eb63f115de277802b7ee0df",
+      ".step": "eaff8d2e5a5045b3d0e983ec8d415618d0e5cf783e8003e6bf6fe7d84e1dffa8"
+    }
+  },
+  {
+    "name": "GODIYMODULES_SD_socketed_envelope",
+    "source": "component_review/source_evidence/sd-pinout.jpg; sd-dimensions.jpg",
+    "confidence": "PROVISIONAL seller-module envelope",
+    "notes": "17.9mm square seller outline. Header offset, thickness and socket height approximate. Card extends +X for insertion access; verify actual orientation before soldering.",
+    "local_bounds_mm": [
+      -1.5,
+      -2.5999999999999996,
+      -2.5,
+      17.0,
+      15.299999999999999,
+      13.74
+    ],
+    "sha256": {
+      ".wrl": "be79f82721f0f3fd2f78dde88573782026216d14c512e305fb9550b5d00babb3",
+      ".step": "0e4df62393fdee5d24b77c96428bc5742045d2654bf2169dfd897f802b069509"
+    }
+  }
+]

@@ -1,0 +1,73 @@
+{
+  "revision": "C6",
+  "pairing": "C6/P4",
+  "created_utc": "2026-09-13T03:34:29.303703+00:00",
+  "source_project": "KK_main_module",
+  "source_sha256": {
+    "KK_main_module.kicad_pcb": "c7dc3028d36d8b80aca6357518118377b29c746b93822521c5e1624194e7dc07",
+    "KK_main_module.kicad_sch": "104eb7410e0ab1c02d0f4165e05dfe0b5cb877af682d92bae5d93ed3ea8294cf",
+    "KK_main_module.kicad_pro": "185931477ba1d0fbd3b95b6b7e53d36276e4c2e65f3632a730628156dd6dabf9",
+    "KK_main_module.kicad_dru": "f544636423516c8c05f5399654630d77f2ec453178de82013a0b123c81491fb4"
+  },
+  "native_checks": {
+    "ERC": 0,
+    "DRC": 0,
+    "opens": 0,
+    "schematic_parity": 0,
+    "ignored_DRC_checks": [
+      {
+        "description": "Footprint has no courtyard defined",
+        "key": "missing_courtyard"
+      },
+      {
+        "description": "Track endpoint not centered on via",
+        "key": "track_not_centered_on_via"
+      },
+      {
+        "description": "Tuning profile track geometries",
+        "key": "tuning_profile_track_geometries"
+      },
+      {
+        "description": "Footprint doesn't match symbol's footprint filters",
+        "key": "footprint_filters_mismatch"
+      },
+      {
+        "description": "Footprint component type doesn't match footprint pads",
+        "key": "footprint_type_mismatch"
+      }
+    ]
+  },
+  "cad_audit_sha256": "a21776872ab8a446c38ad4d9254fe54ae05fc3be64f3cecc6ca0e7b75a2b9da8",
+  "reports_sha256": {
+    "DRC.json": "8396e472310a1e1b4fce964e99aeb73540fae4d4b59028bb6bfca054fce707bf",
+    "ERC.json": "eb96642f93aab8eedadc96e5e08ebf49910ed1b77f67536879fb21deaa42b9e8"
+  },
+  "fabrication_sha256": {
+    "DRILL_REPORT.txt": "32731a9c68c8a47e10934a9b65352165df18771887f7eb811550e75159c079f4",
+    "KK_main_module-B_Cu.gbl": "a4f2aa328a14b3f86b586b016cbeb38b107ea7f72265a5c4dfc0e2edd5f6f218",
+    "KK_main_module-B_Mask.gbs": "e1992d7062cebb161b168986d2b6c9abc10ced073761c205f30315c07b26217a",
+    "KK_main_module-B_Silkscreen.gbo": "b00320dabcf5f65529c70c35aac7be0e05de3907a85b47b99a2f3dc7cf2dfc03",
+    "KK_main_module-Edge_Cuts.gm1": "f31948c9d47e261fe081f6ebe5708e72bb0dc04ae37c11d21059691dd257e777",
+    "KK_main_module-F_Cu.gtl": "eb460ac27f63513de75899cbc07de7af0a41565b361fb9f157e279fff0075bc7",
+    "KK_main_module-F_Mask.gts": "ad5bf329d0a8f4701a0d06a15c01187b69ddbf57c49b6916a4fcb343eac95382",
+    "KK_main_module-F_Silkscreen.gto": "c2539fbd5eaedf5ee966339129d1ec7efcf8081976df80d4a3d54673388bab73",
+    "KK_main_module-NPTH-drl_map.pdf": "69f0d77bc7d092ddce859e59cb43e0a39f25cf8b8906d5ddf1d46b2e6f5bc58c",
+    "KK_main_module-NPTH.drl": "f60ea4227af702c45dfb02927c5dfbcd74ac7d1306acae994b34d7e462698e19",
+    "KK_main_module-PTH-drl_map.pdf": "976055a4a346d6ae5f3dd4db8f0b52ad9f4d11b4d30218290f42791fe727e050",
+    "KK_main_module-PTH.drl": "4f05bd6a580448d8f64cd57776bc4d4b7d95e6037be4cd743444bfb5da96286e",
+    "KK_main_module-job.gbrjob": "86487b914734666cb503aca65de29e2c1c3855b3e310920e4878a73ca61bed8a",
+    "KK_main_module.ipc": "3abbc1206afbc3f2caff6334ac840b914e2b63ebeab9a4ee9d51f548141481c0"
+  },
+  "board_mm": [
+    96,
+    105,
+    1.6
+  ],
+  "copper_layers": 2,
+  "fitted": 98,
+  "bare_debug_points": 25,
+  "manufacturer_approved": false,
+  "physical_fit_qualified": false,
+  "powered_tested": false,
+  "status": "PROTOTYPE DFM REVIEW; physical, process, supply and bench qualification pending"
+}

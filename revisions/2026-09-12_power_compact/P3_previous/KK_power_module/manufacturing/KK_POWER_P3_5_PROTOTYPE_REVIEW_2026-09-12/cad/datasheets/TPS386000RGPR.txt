@@ -1,0 +1,2311 @@
+                                     Product                   Order           Technical                   Tools &                    Support &                       Reference
+                                     Folder                    Now             Documents                   Software                   Community                       Design
+
+
+
+                                                                                                                                                           TPS386000, TPS386040
+                                                                                                              SBVS105F – SEPTEMBER 2009 – REVISED OCTOBER 2018
+
+
+                    TPS386000 and TPS386040 Quad Supply Voltage Supervisors
+                           With Adjustable Delay and Watchdog Timer
+1 Features                                                                                        3 Description
+•
+1   Four Independent Voltage Supervisors                                                          The TPS3860x0 family of supply voltage supervisors
+                                                                                                  (SVSs) can monitor four power rails that are greater
+•   Channel 1:                                                                                    than 0.4 V and one power rail less than 0.4 V
+    – Adjustable Threshold Down to 0.4 V                                                          (including negative voltage) with a 0.25% (typical)
+    – Manual Reset (MR) Input                                                                     threshold accuracy. Each of the four supervisory
+                                                                                                  circuits (SVS-n) assert a RESETn or RESETn output
+•   Channels 2, 3:
+                                                                                                  signal when the SENSEm input voltage drops below
+    – Adjustable Threshold Down to 0.4 V                                                          the programmed threshold. With external resistors,
+•   Channel 4:                                                                                    the threshold of each SVS-n can be programmed
+    – Adjustable Threshold at Any Positive or                                                     (where n = 1, 2, 3, 4 and m = 1, 2, 3, 4L, 4H).
+       Negative Voltage                                                                           Each SVS-n has a programmable delay before
+    – Window Comparator                                                                           releasing RESETn or RESETn. The delay time can
+                                                                                                  be set independently for each SVS from 1.4 ms to 10
+•   Adjustable Delay Time: 1.4 ms to 10 s
+                                                                                                  s through the CTn pin connection. Only SVS-1 has an
+•   Threshold Accuracy: 0.25% Typical                                                             active-low manual reset (MR) input; a logic-low input
+•   Very Low Quiescent Current: 11 μA Typical                                                     to MR asserts RESET1 or RESET1.
+•   Watchdog Timer With Dedicated Output                                                          SVS-4 monitors the threshold window using two
+•   Well-Controlled Output During Power Up                                                        comparators. The extra comparator can be
+                                                                                                  configured as a fifth SVS to monitor negative voltage
+•   TPS386000: Open-Drain RESETn and WDO
+                                                                                                  with voltage reference output VREF.
+•   TPS386040: Push-Pull RESETn and WDO
+                                                                                                  The TPS3860x0 has a very low quiescent current of
+•   Package: 4-mm × 4-mm, 20-Pin VQFN
+                                                                                                  11 μA (typical) and is available in a small, 4-mm x 4-
+                                                                                                  mm, VQFN-20 package.
+2 Applications
+•   All DSP and Microcontroller Applications                                                                            Device Information(1)
+•   All FPGA and ASIC Applications                                                                    PART NUMBER                     PACKAGE                        BODY SIZE (NOM)
+
+•   Telecom and Wireless Infrastructure                                                           TPS3860x0                  VQFN (20)                               4.00 mm × 4.00 mm
+
+•   Industrial Equipment                                                                          (1) For all available packages, see the orderable addendum at
+                                                                                                      the end of the data sheet.
+•   Analog Sequencing
+                                                        TPS386000 Typical Application Circuit:
+                                                          Monitoring Supplies for an FPGA
+                                                                                                                                       VMON(2)
+
+                                                                                                                                                 VMON(3)
+
+                                                                                                                                                           VMON(4)
+
+
+
+
+                                              VMON(1)
+
+
+
+
+                                                        RS1H
+                                                                                VDD
+
+
+
+
+                                                                                            MR
+
+
+
+
+                                                                                                                               VDD1
+
+                                                                                                                                       VDD2
+
+                                                                                                                                                 VDD3
+
+                                                                                                                                                           VDD4
+
+
+
+
+                                                                                TPS386000
+
+                                                                       SENSE1                     RESET1              RST
+                                            RS2H
+                   VMON(2)                                             SENSE2                     RESET2
+                                     RS3H                                                                                         Microprocessor
+                   VMON(3)                                             SENSE3                     RESET3                               DSP
+                             RS4H                                                                                                     FPGA
+                   VMON(4)                                             SENSE4L                    RESET4
+
+                                                        RS1L           SENSE4H                      WDO
+
+                                              RS2L
+                                                                       VREF                          WDI              GPIO
+                                       RS3L
+                                                                         GND
+
+                                                                                CT1
+
+                                                                                      CT2
+
+                                                                                            CT3
+
+                                                                                                    CT4
+
+
+
+
+                              RS4L
+
+
+
+
+1
+
+
+
+
+      An IMPORTANT NOTICE at the end of this data sheet addresses availability, warranty, changes, use in safety-critical applications,
+      intellectual property matters and other important disclaimers. PRODUCTION DATA.
+TPS386000, TPS386040
+SBVS105F – SEPTEMBER 2009 – REVISED OCTOBER 2018                                                                                                                      www.ti.com
+
+
+                                                                           Table of Contents
+    1   Features .................................................................. 1               8.3 Feature Description................................................. 22
+    2   Applications ........................................................... 1                  8.4 Device Functional Modes........................................ 23
+    3   Description ............................................................. 1           9    Application and Implementation ........................ 25
+    4   Revision History..................................................... 2                     9.1 Application Information............................................ 25
+                                                                                                    9.2 Typical Application .................................................. 28
+    5   Pin Configuration and Functions ......................... 4
+    6   Specifications......................................................... 6             10 Power Supply Recommendations ..................... 29
+         6.1    Absolute Maximum Ratings ..................................... 6              11 Layout................................................................... 30
+         6.2    ESD Ratings.............................................................. 6         11.1 Layout Guidelines ................................................. 30
+         6.3    Recommended Operating Conditions....................... 6                           11.2 Layout Example .................................................... 30
+         6.4    Thermal Information .................................................. 6      12 Device and Documentation Support ................. 31
+         6.5    Electrical Characteristics........................................... 7             12.1    Device Support .................................................... 31
+         6.6    Timing Requirements ................................................ 8              12.2    Documentation Support ....................................... 31
+         6.7    Switching Characteristics .......................................... 8              12.3    Related Links ........................................................ 31
+         6.8    Typical Characteristics ............................................ 14             12.4    Community Resources.......................................... 32
+    7   Parameter Measurement Information ................ 18                                       12.5    Trademarks ........................................................... 32
+                                                                                                    12.6    Electrostatic Discharge Caution ............................ 32
+    8   Detailed Description ............................................ 19
+                                                                                                    12.7    Glossary ................................................................ 32
+         8.1 Overview ................................................................. 19
+         8.2 Functional Block Diagrams ..................................... 20               13 Mechanical, Packaging, and Orderable
+                                                                                                 Information ........................................................... 32
+
+
+
+4 Revision History
+NOTE: Page numbers for previous revisions may differ from page numbers in the current version.
+
+Changes from Revision E (October 2015) to Revision F                                                                                                                           Page
+
+•   Changed the text in the Power Supply Recommendations section from: This power supply should be less than 1.8 V
+    in normal operation to: This power supply should not be less than 1.8 V in normal operation............................................ 29
+
+
+Changes from Revision D (September 2013) to Revision E                                                                                                                         Page
+
+•   Added ESD Ratings table, Feature Description section, Device Functional Modes, Application and Implementation
+    section, Power Supply Recommendations section, Layout section, Device and Documentation Support section, and
+    Mechanical, Packaging, and Orderable Information section ................................................................................................. 1
+•   Changed Features bullets about Channel 1, 2, 3, and 4 ...................................................................................................... 1
+•   Changed all references of VCC (and ICC) to VDD ( and IDD) throughout the document ............................................................ 4
+•   Changed the description of SENSE4L pin function ............................................................................................................... 4
+•   Changed the description of SENSE4H pin function .............................................................................................................. 4
+•   Changed the description of MR pin function ......................................................................................................................... 4
+•   Changed the description of WDI pin function ........................................................................................................................ 4
+•   Moved ESD ratings from the Absolute Maximum Ratings table to the ESD Ratings table.................................................... 6
+•   Deleted the Dissipation Ratings table and added the Thermal Information table ................................................................. 6
+•   Moved timing and switching parameters (tW, tD, tWDT) from the Electrical Characteristics table to the respective
+    Timing Requirements and Switching Characteristics tables .................................................................................................. 8
+•   Changed the x-axis title notation from CT to CTn in the TPS386040 RESETn Time-out Period vs CTn graph ................. 14
+•   Changed the Watchdog Timer (WDT) Truth Table; deleted RESET condition column heading ........................................ 24
+•   Changed title of SENSE INPUT section to Undervoltage Detection ................................................................................... 25
+•   Changed Equation 1, Equation 2, and Equation 3 VCC notations to VMON.......................................................................... 25
+•   Changed title of Window Comparator section to Undervoltage and Overvoltage Detection ............................................... 25
+•   Changed VCC4 reference in first paragraph of Undervoltage and Overvoltage Detection section to VMON(4) .................... 25
+•   Changed Equation 4 and Equation 5 VCC4 references to VMON(4)....................................................................................... 25
+
+2        Submit Documentation Feedback                                                                         Copyright © 2009–2018, Texas Instruments Incorporated
+
+                                                              Product Folder Links: TPS386000 TPS386040
+                                                                                                                                                 TPS386000, TPS386040
+www.ti.com                                                                                                        SBVS105F – SEPTEMBER 2009 – REVISED OCTOBER 2018
+
+
+•   Changed the SVS-4: Window Comparator image ............................................................................................................... 25
+•   Added VCC to VMON(4) in the Window Comparator Operation image ................................................................................... 26
+•   Changed title of Sensing Voltage Less Than 0.4 V to Sensing a Negative Voltage............................................................ 26
+•   Changed Equation 6 and Equation 7 references to VCC4 to VMON(4)................................................................................... 26
+•   Changed the SVS4: Negative Voltage Sensing image ........................................................................................................ 26
+
+
+Changes from Revision C (August 2011) to Revision D                                                                                                                              Page
+
+•   Deleted TPS386020 and TPS386060 devices from data sheet............................................................................................. 1
+
+
+Changes from Revision B (March 2011) to Revision C                                                                                                                               Page
+
+•   Changed Figure 31............................................................................................................................................................... 21
+
+
+Changes from Revision A (January 2010) to Revision B                                                                                                                             Page
+
+•   Changed data sheet title......................................................................................................................................................... 1
+•   Changed Features bullets ...................................................................................................................................................... 1
+•   Changed Applications bullets ................................................................................................................................................. 1
+•   Changed first sentence of second paragraph in Description text........................................................................................... 1
+•   Changed low quiescent current value in last paragraph of Description text from 12µA to 11µA........................................... 1
+•   Changed front-page typical application circuit figure.............................................................................................................. 1
+•   Added sentence to pin 6 description in Pin Assignments table.............................................................................................. 4
+•   Changed last sentence of pin 13 description in Pin Assignments table................................................................................. 4
+•   Added text to first sentence of first paragraph of General Description section. ................................................................... 22
+•   Changed link in Window Comparator section to new Figure 32 .......................................................................................... 25
+•   Deleted typo in Equation 4 and moved Equation 4 to Window Comparator section............................................................ 25
+•   Deleted typo in Equation 5 and moved Equation 5 to Window Comparator section............................................................ 25
+•   Added Figure 32 ................................................................................................................................................................... 25
+•   Changed link in Sensing Voltage Less Than 0.4V section to new Figure 34....................................................................... 26
+•   Added Figure 34 ................................................................................................................................................................... 26
+•   Changed caption for Figure 35 ............................................................................................................................................. 28
+
+
+
+
+Copyright © 2009–2018, Texas Instruments Incorporated                                                                             Submit Documentation Feedback                         3
+                                                             Product Folder Links: TPS386000 TPS386040
+TPS386000, TPS386040
+SBVS105F – SEPTEMBER 2009 – REVISED OCTOBER 2018                                                                                                          www.ti.com
+
+
+5 Pin Configuration and Functions
+
+                                                                 RGP Package
+                                                                 20-Pin VQFN
+                                                                   Top View
+
+
+
+
+                                                                           RESET4
+
+                                                                                    RESET3
+
+                                                                                             RESET2
+                                                                 WDO
+                                                      WDI
+                                                      20
+
+                                                                 19
+
+                                                                           18
+
+                                                                                    17
+
+                                                                                             16
+                                          MR    1                                                     15    RESET1
+
+                                         CT4    2                                                     14    VDD
+
+                                         CT3    3                Thermal Pad                          13    VREF
+
+                                         CT2    4                                                     12    GND
+
+                                         CT1    5                                                     11    NC
+
+
+
+
+                                                                                             10
+                                                      6
+
+                                                                 7
+
+                                                                           8
+
+                                                                                    9
+                                                      SENSE4H
+
+                                                                 SENSE4L
+
+                                                                           SENSE3
+
+                                                                                    SENSE2
+
+                                                                                             SENSE1
+
+                                                                Pin Functions
+            PIN
+                               I/O                                                                         DESCRIPTION
+NAME                NO.
+VDD                 14           I     Supply voltage. TI recommends connecting a 0.1-μF ceramic capacitor close to this pin.
+GND                 12          —      Ground
+                                                                                                             When the voltage at this terminal drops below the
+SENSE1              10           I     Monitor voltage input to SVS-1
+                                                                                                             threshold voltage (VITN), RESET1 is asserted.
+                                                                                                             When the voltage at this terminal drops below the
+SENSE2               9           I     Monitor voltage input to SVS-2
+                                                                                                             threshold voltage (VITN), RESET2 is asserted.
+                                                                                                             When the voltage at this terminal drops below the
+SENSE3               8           I     Monitor voltage input to SVS-3
+                                                                                                             threshold voltage (VITN), RESET3 is asserted.
+                                       Falling monitor voltage input to SVS-4. When the voltage at this terminal drops below the
+SENSE4L              7           I
+                                       threshold voltage (VITN), RESET4 is asserted.
+                                       Rising monitor voltage input to SVS-4. When the voltage at this terminal exceeds the threshold
+SENSE4H              6           I     voltage (VITP), RESET4 is asserted. This pin can also be used to monitor the negative voltage
+                                       rail in combination with VREF pin. Connect to GND if not being used.
+CT1                  5          —      Reset delay programming pin for SVS-1                                 Connecting this pin to VDD through a 40-kΩ to
+                                                                                                             200-kΩ resistor, or leaving it open, selects a fixed
+CT2                  4          —      Reset delay programming pin for SVS-2
+                                                                                                             delay time (see the Electrical Characteristics).
+CT3                  3          —      Reset delay programming pin for SVS-3                                 Connecting a capacitor > 220 pF between this pin
+                                                                                                             and GND selects the programmable delay time (see
+CT4                  2          —      Reset delay programming pin for SVS-4                                 the Reset Delay Time section).
+                                       Reference voltage output. By connecting a resistor network between this pin and the negative
+                                       power rail, SENSE4H can monitor the negative power rail. This pin is intended to only source
+VREF                13          O
+                                       current into resistor(s). Do not connect resistor(s) to a voltage higher than 1.2 V. Do not connect
+                                       only a capacitor.
+MR                   1           I     Manual reset input for SVS-1. Logic low level of this pin asserts RESET1.
+                                       Watchdog timer (WDT) trigger input. Inputting either a positive or negative logic edge every
+WDI                 20           I     610 ms (typical) prevents WDT time out at the WDO or WDO pin. Timer starts from releasing
+                                       event of RESET1.
+                                       Not internal connection. TI recommends connecting this pin to the GND pin (pin 12), which is
+NC                  11          —
+                                       next to this pin.
+                                       This pad is the IC substrate. This pad must be connected only to GND or to the floating thermal
+Thermal Pad        PAD          —
+                                       pattern on the printed-circuit board (PCB).
+
+
+
+
+4      Submit Documentation Feedback                                                                              Copyright © 2009–2018, Texas Instruments Incorporated
+
+                                         Product Folder Links: TPS386000 TPS386040
+                                                                                                                TPS386000, TPS386040
+www.ti.com                                                                               SBVS105F – SEPTEMBER 2009 – REVISED OCTOBER 2018
+
+
+                                                        Pin Functions (continued)
+              PIN
+                                      I/O                                             DESCRIPTION
+NAME                    NO.
+TPS386000
+RESET1                   15           O        Active low reset output of SVS-1           RESETn is an open-drain output pin. When
+                                                                                          RESETn is asserted, this pin remains in a low-
+RESET2                   16           O        Active low reset output of SVS-2
+                                                                                          impedance state. When RESETn is released, this
+RESET3                   17           O        Active low reset output of SVS-3           pin goes to a high-impedance state after the delay
+                                                                                          time programmed by CTn. A pullup resistor to VDD
+RESET4                   18           O        Active low reset output of SVS-4           or another voltage source is required.
+                                               Watchdog timer output. This is an open-drain output pin. When WDT times out, this pin goes to
+WDO                      19           O        a low-impedance state to GND. If there is no WDT time-out, this pin stays in a high-impedance
+                                               state.
+TPS386040
+RESET1                   15           O        Active low reset output of SVS-1
+                                                                                          RESETn is a push-pull logic buffer output pin.
+RESET2                   16           O        Active low reset output of SVS-2           When RESETn is asserted, this pin remains logic
+RESET3                   17           O        Active low reset output of SVS-3           low. When RESETn is released, this pin goes to
+                                                                                          logic high after the delay time programmed by CTn.
+RESET4                   18           O        Active low reset output of SVS-4
+                                               Watchdog timer output. This is a push-pull output pin. When WDT times out, this pin goes to
+WDO                      19           O
+                                               logic low. If there is no WDT time-out, this pin stays in logic high.
+
+
+
+
+Copyright © 2009–2018, Texas Instruments Incorporated                                                Submit Documentation Feedback             5
+                                                  Product Folder Links: TPS386000 TPS386040
+TPS386000, TPS386040
+SBVS105F – SEPTEMBER 2009 – REVISED OCTOBER 2018                                                                                  www.ti.com
+
+
+6 Specifications
+6.1 Absolute Maximum Ratings
+Over operating junction temperature range, unless otherwise noted. (1)
+                                                                                                 MIN              MAX             UNIT
+                            Input, VDD                                                          –0.3               7
+                            CT pin, VCT1, VCT2, VCT3, VCT4                                      –0.3          VDD + 0.3
+Voltage                                                                                                                             V
+                            VRESET1, VRESET2, VRESET3, VRESET4, VMR, VSENSE1, VSENSE2,
+                                                                                                –0.3               7
+                            VSENSE3, VSENSE4L, VSENSE4H, VWDI, VWDO
+Current                     RESETn , RESETn, WDO, WDO, VREF pin                                                    5               mA
+Power dissipation           Continuous total                                              See Thermal Information table
+                            Operating virtual junction, TJ (2)                                   –40              150
+Temperature                 Operating ambient, TA                                                –40              125              °C
+                            Storage, Tstg                                                        –65              150
+
+(1)   Stresses beyond those listed under Absolute Maximum Ratings may cause permanent damage to the device. These are stress ratings
+      only, which do not imply functional operation of the device at these or any other conditions beyond those indicated under Recommended
+      Operating Conditions. Exposure to absolute-maximum-rated conditions for extended periods may affect device reliability.
+(2)   As a result of the low dissipated power in this device, it is assumed that TJ = TA.
+
+6.2 ESD Ratings
+                                                                                                                        VALUE        UNIT
+                                            Human-body model (HBM), per ANSI/ESDA/JEDEC JS-001 (1)                      ±2000
+V(ESD)       Electrostatic discharge        Charged-device model (CDM), per JEDEC specification JESD22-                                 V
+                                                                                                                        ±500
+                                            C101 (2)
+
+(1)   JEDEC document JEP155 states that 500-V HBM allows safe manufacturing with a standard ESD control process.
+(2)   JEDEC document JEP157 states that 250-V CDM allows safe manufacturing with a standard ESD control process.
+
+6.3 Recommended Operating Conditions
+Over operating junction temperature range (unless otherwise noted).
+                                                                                            MIN           NOM              MAX      UNIT
+VDD                                                                                            1.8                          6.5         V
+VSENSE (1)                                                                                       0                         VDD          V
+WDI(HI)                                                                                  0.7VDD                            VDD          V
+WDI(LO)                                                                                          0                       0.3VDD         V
+VMR                                                                                              0                         VDD          V
+CTn                                                                                         0.22                           1000         nF
+RPULL-UP                                                                                       6.5          100           10000         kΩ
+TJ                                                                                             –40           25             125         °C
+
+(1)   All sense inputs.
+
+6.4 Thermal Information
+                                                                                                           TPS3860x0
+                                                                 (1)
+                                            THERMAL METRIC                                                RGP (VQFN)               UNIT
+                                                                                                             20 PINS
+RθJA               Junction-to-ambient thermal resistance                                                         46               °C/W
+RθJC(top)          Junction-to-case (top) thermal resistance                                                   52.8                °C/W
+RθJB               Junction-to-board thermal resistance                                                        22.4                °C/W
+ψJT                Junction-to-top characterization parameter                                                     1.3              °C/W
+ψJB                Junction-to-board characterization parameter                                                22.4                °C/W
+RθJC(bot)          Junction-to-case (bottom) thermal resistance                                                   4.3              °C/W
+
+(1)   For more information about traditional and new thermal metrics, see the Semiconductor and IC Package Thermal Metrics application
+      report (SPRA953).
+
+6         Submit Documentation Feedback                                                   Copyright © 2009–2018, Texas Instruments Incorporated
+
+                                                   Product Folder Links: TPS386000 TPS386040
+                                                                                                                   TPS386000, TPS386040
+www.ti.com                                                                                   SBVS105F – SEPTEMBER 2009 – REVISED OCTOBER 2018
+
+
+6.5 Electrical Characteristics
+Over the operating temperature range of TJ = –40°C to 125°C, 1.8 V < VDD < 6.5 V, RRESETn (n = 1, 2, 3, 4) = 100 kΩ to VDD
+(TPS386000 only), CRESETn (n = 1, 2, 3, 4L, 4H) = 50 pF to GND, RWDO = 100 kΩ to VDD, CWDO = 50 pF to GND, VMR = 100 kΩ
+to VDD, WDI = GND, and CTn (n = 1, 2, 3, 4) = open, unless otherwise noted. Typical values are at TJ = 25°C.
+                    PARAMETER                                        TEST CONDITIONS                        MIN      TYP         MAX     UNIT
+VDD          Input supply range                                                                              1.8                   6.5     V
+                                                        VDD = 3.3 V, RESETn or RESETn not
+                                                        asserted, WDI toggling (1), no output load,                    11          19
+                                                        and VREF open
+IDD          Supply current (current into VDD pin)                                                                                        μA
+                                                        VDD = 6.5 V, RESETn or RESETn not
+                                                        asserted, WDI toggling (1), no output load,                    13          22
+                                                        and VREF open
+             Power-up reset voltage (2) (3)             VOL (max) = 0.2 V, IRESETn = 15 μA                                         0.9     V
+VITN         Negative-going input threshold voltage SENSE1, SENSE2, SENSE3, SENSE4L                         396      400          404     mV
+VITP         Positive-going input threshold voltage     SENSE4H                                             396      400          404     mV
+VHYSN        Hysteresis (positive-going) on VITN        SENSE1, SENSE2, SENSE3, SENSE4L                               3.5          10     mV
+VHYSP        Hysteresis (negative-going) on VITP        SENSE4H                                                       3.5          10     mV
+ISENSE       Input current at SENSEm pin                VSENSEm = 0.42 V                                    –25        ±1         +25     nA
+                                                                                      (4)
+             CTn pin charging        CT1                CCT1 > 220 pF, VCT1 = 0.5 V                         245      300          355
+ICT                                                                                                                                       nA
+             current                 CT2, CT3, CT4      CCTn > 220 pF, VCTn = 0.5 V (4)                     235      300          365
+VTH(CTn)     CTn pin threshold                          CCTn > 220 pF                                       1.18    1.238       1.299      V
+VIL          MR and WDI logic low input                                                                       0                0.3VDD      V
+VIH          MR and WDI logic high input                                                                 0.7VDD                            V
+                                                        IOL = 1 mA                                                                 0.4     V
+             Low-level RESETn or RESETn output
+             voltage                                    SENSEn = 0 V, 1.3 V < VDD < 1.8 V,
+VOL                                                                                                                                0.3
+                                                        IOL = 0.4 mA (2)                                                                   V
+             Low-level WDO output voltage               IOL = 1 mA                                                                 0.4
+             High-level RESETn
+                                     TPS386040
+             or RESETn output                           IOL = –1 mA                                    VDD – 0.4                           V
+                                     only
+             voltage
+VOH
+                                                        IOL = –1 mA                                    VDD – 0.4
+             High-level WDO          TPS386040
+                                                        SENSEn = 0 V, 1.3 V < VDD < 1.8 V,                                                 V
+             output voltage          only                                                              VDD – 0.3
+                                                        IOL = –0.4 mA (2)
+             RESETn, RESETn,
+                                     TPS386000          VRESETn = 6.5 V, RESETn, RESETn, WDO,
+ILKG         WDO, and WDO                                                                                  –300                   300     nA
+                                     only               and WDO are logic high
+             leakage current
+                                                        1 μA < IVREF < 0.2 mA (source only, no
+VREF         Reference voltage output                                                                       1.18      1.2        1.22      V
+                                                        sink)
+CIN          Input pin capacitance                      CTn: 0 V to VDD, other pins: 0 V to 6.5 V                       5                 pF
+
+(1)    Toggling WDI for a period less than tWDT negatively affects IDD.
+(2)    These specifications are beyond the recommended VDD range, and only define RESETn or RESETn output performance during VDD
+       ramp up.
+(3)    The lowest supply voltage (VDD) at which RESETn or RESETn becomes active; tRISE(VDD) ≥ 15 μs/V.
+(4)    CTn (where n = 1, 2, 3, or 4) are constant current charging sources working from a range of 0 V to VTH(CTn), and the device is tested at
+       VCTn = 0.5 V. For ICT performance between 0 V and VTH(CTn), see Figure 28.
+
+
+
+
+Copyright © 2009–2018, Texas Instruments Incorporated                                                  Submit Documentation Feedback              7
+                                                   Product Folder Links: TPS386000 TPS386040
+TPS386000, TPS386040
+SBVS105F – SEPTEMBER 2009 – REVISED OCTOBER 2018                                                                               www.ti.com
+
+
+6.6 Timing Requirements
+Over the operating temperature range of TJ = –40°C to 125°C, 1.8 V < VDD < 6.5 V, RRESETn (n = 1, 2, 3, 4) = 100 kΩ to VDD
+(TPS386000 only), CRESETn (n = 1, 2, 3, 4L, 4H) = 50 pF to GND, RWDO = 100 kΩ to VDD, CWDO = 50 pF to GND, VMR = 100 kΩ
+to VDD, WDI = GND, and CTn (n = 1, 2, 3, 4) = open, unless otherwise noted. Nominal values are at TJ = 25°C.
+                                                                                         MIN            TYP           MAX        UNIT
+                                           SENSEm: 1.05 VITN → 0.95 VITN or
+               Input pulse width to                                                                        4                       μs
+tW                                         0.95 VITP → 1.05 VITP
+               SENSEm and MR pins
+                                           MR: 0.7 VDD → 0.3 VDD                                           1                       ns
+
+
+6.7 Switching Characteristics
+Over the operating temperature range of TJ = –40°C to 125°C, 1.8 V < VDD < 6.5 V, RRESETn (n = 1, 2, 3, 4) = 100 kΩ to VDD
+(TPS386000 only), CRESETn (n = 1, 2, 3, 4L, 4H) = 50 pF to GND, RWDO = 100 kΩ to VDD, CWDO = 50 pF to GND, VMR = 100 kΩ
+to VDD, WDI = GND, and CTn (n = 1, 2, 3, 4) = open, unless otherwise noted. Typical values are at TJ = 25°C.
+              PARAMETER                                   TEST CONDITIONS                MIN            TYP           MAX        UNIT
+               RESETn or RESETn            CTn = Open                                         14          20             24
+tD                                                                                                                                ms
+               delay time                  CTn = VDD                                         225         300            375
+tWDT           Watchdog timer time-out period (1)                                            450         600            750       ms
+
+(1)   Start from RESET1 or RESET1 release or last WDI transition.
+
+                                           VDD
+
+
+
+                                        0.9 V
+
+
+
+
+                                                                                                   t
+
+                                        SENSE1
+
+
+                                                  Vhys–
+                                                                                               VIT–
+
+
+
+
+                                                                                                   t
+
+
+                                            MR
+
+
+
+
+                                                                                                   t
+
+
+                                        RESET1
+
+
+
+                                                             td                  td
+
+
+
+
+                                                                                                   t
+                                                    Figure 1. SVS-1 Timing Diagram
+
+
+
+
+8        Submit Documentation Feedback                                                 Copyright © 2009–2018, Texas Instruments Incorporated
+
+                                                 Product Folder Links: TPS386000 TPS386040
+                                                                                                              TPS386000, TPS386040
+www.ti.com                                                                                SBVS105F – SEPTEMBER 2009 – REVISED OCTOBER 2018
+
+
+
+                                            VCC
+
+
+
+                                        0.9 V
+
+
+
+                                                                                                        t
+
+                                        SENSE2
+
+
+                                                   Vhys–
+                                                                                                     VIT–
+
+
+
+
+                                                                                                        t
+
+                                        RESET2
+
+
+
+                                                             td
+
+
+
+
+                                                                                                        t
+                                                      Figure 2. SVS-2 Timing Diagram
+
+                                            VDD
+
+
+
+                                        0.9 V
+
+
+
+
+                                                                                                       t
+
+                                        SENSE3
+
+
+                                                  Vhys–
+                                                                                                     VIT–
+
+
+
+
+                                                                                                       t
+
+                                        RESET3
+
+
+
+                                                            td                       td
+
+
+
+
+                                                                                                       t
+                                                      Figure 3. SVS-3 Timing Diagram
+
+
+
+
+Copyright © 2009–2018, Texas Instruments Incorporated                                               Submit Documentation Feedback       9
+                                                    Product Folder Links: TPS386000 TPS386040
+TPS386000, TPS386040
+SBVS105F – SEPTEMBER 2009 – REVISED OCTOBER 2018                                                                          www.ti.com
+
+
+
+                                  VDD
+
+
+
+
+                               0.9 V
+
+
+
+
+                                                                                                 t
+
+                               SENSE4L
+
+
+
+
+                                        VHYS–
+                                                                                             VIT–
+
+
+
+
+                                                                                                 t
+
+                               SENSE4H
+
+
+
+                                                     VIT+                                VHYS+
+
+
+
+
+                                                                                                 t
+
+                               RESET4
+
+
+
+
+                                                                             tD
+
+
+
+
+                                                                                                 t
+                                                Figure 4. SVS-4 Timing Diagram
+
+
+
+
+10     Submit Documentation Feedback                                              Copyright © 2009–2018, Texas Instruments Incorporated
+
+                                           Product Folder Links: TPS386000 TPS386040
+                                                                                                           TPS386000, TPS386040
+www.ti.com                                                                           SBVS105F – SEPTEMBER 2009 – REVISED OCTOBER 2018
+
+
+
+                                       MR
+
+
+
+
+                                                                                                  t
+                                  RESET1
+
+
+
+
+                                                                                                  t
+                                      WDI
+
+
+
+
+                                                                                                  t
+                                     (Internal timer)
+
+                                                                                                 Timeout
+                                                                          tWDT
+
+
+
+                                                                                                 Zero
+
+                                                                                                  t
+                                     WDO
+
+
+
+
+                                                                                                  t
+
+                                                    Figure 5. WDT Timing Diagram
+
+
+
+
+Copyright © 2009–2018, Texas Instruments Incorporated                                          Submit Documentation Feedback      11
+                                                  Product Folder Links: TPS386000 TPS386040
+TPS386000, TPS386040
+SBVS105F – SEPTEMBER 2009 – REVISED OCTOBER 2018                                                                          www.ti.com
+
+
+
+                                  WDI               Event 1    Event 2          Event 3
+
+
+
+
+                                                                                                t
+                               RESET1
+
+
+
+
+                                                                                                t
+                                 MR = WDO
+
+
+                                                                         tWDT
+
+
+
+
+                                                                                                t
+                                 (Internal timer)
+
+
+
+
+                                                                                                t
+
+                               Figure 6. Legacy WDT Configuration Timing Diagram
+
+
+
+
+12     Submit Documentation Feedback                                              Copyright © 2009–2018, Texas Instruments Incorporated
+
+                                         Product Folder Links: TPS386000 TPS386040
+                                                                                                         TPS386000, TPS386040
+www.ti.com                                                                           SBVS105F – SEPTEMBER 2009 – REVISED OCTOBER 2018
+
+
+
+                                                WDI
+                                                                     Event 1
+
+
+
+
+                                                RESET1
+
+
+
+
+                                                MR = WDO                   tD
+
+
+
+
+                                                (Internal timer)
+
+
+
+
+                                        Figure 7. Enlarged View of Event 1 from Figure 6
+
+
+
+
+Copyright © 2009–2018, Texas Instruments Incorporated                                          Submit Documentation Feedback      13
+                                                  Product Folder Links: TPS386000 TPS386040
+TPS386000, TPS386040
+SBVS105F – SEPTEMBER 2009 – REVISED OCTOBER 2018                                                                                                                                                             www.ti.com
+
+
+6.8 Typical Characteristics
+At TA = 25°C, and VDD = 3.3 V, with both options (TPS386000 and TPS386040) having the same characteristics, unless
+otherwise noted.
+
+                                 20                                                                                                      10000
+                                                                                              +125°C
+                                 18
+                                                                      +85°C       +105°C
+                                 16
+                                                                                                                                          1000
+
+
+
+
+                                                                                                                     RESETn Delay (ms)
+                                 14
+                                 12                                                                                                                                                                         +85°C
+             IDD (mA)
+
+
+
+
+                                 10                                                                                                        100                                                           +25°C
+                                                                                                  0°C    +25°C
+                                  8                                                                                                                        +125°C                                  0°C
+                                                                                 -40°C
+                                  6
+                                                                                                                                            10
+                                  4
+                                  2                                                                                                                                                  -40°C
+                                                        NOTE: UVLO released at approximately 1.5V.
+                                  0                                                                                                            1
+                                       0          1          2           3          4         5          6       7                             0.0001          0.001              0.01              0.1               1
+                                                                             VDD (V)                                                                                            CTn (mF)
+
+
+
+                                 Figure 8. TPS386040 Supply Current vs Supply Voltage                                                     Figure 9. TPS386040 RESETn Time-out Period vs CTn
+                                 25                                                                                                      360
+
+                                                      CT1              CT3
+                                                                                                                                         340
+                                 20
+             RESETn Delay (ms)
+
+
+
+
+                                                                                                                     RESETn Delay (ms)
+
+
+
+
+                                                              CT2                CT4                                                     320
+                                 15                                                                                                                                          CT1           CT3
+                                                                                                                                         300
+                                 10                                                                                                                                                 CT2             CT4
+                                                                                                                                         280
+
+                                  5
+                                                                                                                                         260
+
+                                  0                                                                                                      240
+                                      -50     -30     -10        10      30      50      70       90     110   130                             -50   -30     -10     10       30    50       70      90     110   130
+                                                                      Temperature (°C)                                                                                    Temperature (°C)
+
+
+
+                                 Figure 10. TPS386040 (CTn = Open) RESETn Time-out                                                 Figure 11. TPS386040 (CTn = VDD) RESETn Time-out Period
+                                                Period vs Temperature                                                                                  vs Temperature
+                                 550                                                                                                     700
+                                                                                                                                         680
+                                 500                                                                                                     660
+     RESETn Delay (ms)
+
+
+
+
+                                                                                                                                         640
+                                                                                                                     WDO Delay (ms)
+
+
+
+
+                                 450                                                                                                                                VDD = 3.3 V           VDD = 1.8 V
+                                                                         CT3                       CT4                                   620
+                                 400                                                                                                     600
+                                                        CT1                      CT2                                                     580
+                                 350                                                                                                                                 VDD = 6.5 V
+                                                                                                                                         560
+                                                                                                                                         540
+                                 300
+                                            NOTE: These curves contain variance of capacitor values.                                     520
+                                 250                                                                                                     500
+                                       -50     -30     -10       10       30      50     70        90    110   130                             -50   -30     -10      10      30    50        70     90     110     130
+                                                                      Temperature (°C)                                                                                     Temperature (°C)
+
+
+
+                                 Figure 12. TPS386040 (CTn = 0.1 µF) RESETn Time-out                                           Figure 13. TPS386040 WDO Time-out Period vs Temperature
+                                                Period vs Temperature
+
+
+
+
+14                               Submit Documentation Feedback                                                                                             Copyright © 2009–2018, Texas Instruments Incorporated
+
+                                                                                           Product Folder Links: TPS386000 TPS386040
+                                                                                                                                                                                           TPS386000, TPS386040
+www.ti.com                                                                                                                                                  SBVS105F – SEPTEMBER 2009 – REVISED OCTOBER 2018
+
+
+Typical Characteristics (continued)
+At TA = 25°C, and VDD = 3.3 V, with both options (TPS386000 and TPS386040) having the same characteristics, unless
+otherwise noted.
+                                    100                                                                                                       408
+
+
+                                                                                                                                              406
+          SENSEn Pulse Width (ms)
+
+
+
+
+                                                                                                                  VITN, (VITN + VHYSN) (mV)
+                                                                                                                                                                                       VITN + VHYSN, VDD = 6.5 V
+                                                                                              SENSE4H
+                                     10                                                                                                       404
+                                            SENSE4L                                                                                                                                       VITN + VHYSN, VDD = 1.8 V
+                                                                                              SENSE2                                          402
+                                                        SENSE1                                                                                                  VITN + VHYSN, VDD = 3.3 V
+                                                                                                    SENSE3                                                                                       VITN, VDD = 6.5 V
+                                      1                                                                                                       400
+                                                                                                                                                          VITN, VDD = 1.8 V                VITN, VDD = 3.3 V
+                                                                                                                                              398
+
+
+                                    0.1                                                                                                       396
+                                          0.1                    1                      10                  100                                     -50      -30      -10    10      30     50       70     90    110   130
+                                                                       Overdrive (%)                                                                                              Temperature (°C)
+                                                See Figure 29 for measurement technique
+
+                                     Figure 14. TPS386040 SENSEn Minimum Pulse Width                                                           Figure 15. TPS386040 SENSE1 Threshold Voltage vs
+                                           vs SENSEn Threshold Overdrive Voltage                                                                                  Temperature
+                                    408                                                                                                       408
+
+
+                                    406                                                                                                       406
+    VITN, (VITN + VHYSN) (mV)
+
+
+
+
+                                                                                                                  VITN, (VITN + VHYSN) (mV)
+
+
+                                                                           VITN + VHYSN, VDD = 6.5 V                                                                                    VITN + VHYSN, VDD = 6.5 V
+                                                                                                                                                      VITN + VHYSN, VDD = 3.3 V
+                                    404                                                                                                       404
+                                                                              VITN + VHYSN, VDD = 1.8 V                                                                                    VITN + VHYSN, VDD = 1.8 V
+                                    402                                                                                                       402
+                                                            VITN + VHYSN, VDD = 3.3 V
+                                                                                                                                                                                        VITN, VDD = 3.3 V
+                                    400                                                                                                       400
+                                                           VITN, VDD = 1.8 V      VITN, VDD = 3.3 V                                                                                              VITN, VDD = 6.5 V
+                                    398                                                                                                       398
+                                                    VITN, VDD = 6.5 V                                                                                              VITN, VDD = 1.8 V
+                                    396                                                                                                       396
+                                          -50     -30    -10     10      30     50       70    90     110   130                                     -50      -30      -10    10      30     50       70     90    110   130
+                                                                      Temperature (°C)                                                                                            Temperature (°C)
+
+
+
+                                      Figure 16. TPS386040 SENSE2 Threshold Voltage vs                                                         Figure 17. TPS386040 SENSE3 Threshold Voltage vs
+                                                         Temperature                                                                                              Temperature
+                                    408                                                                                                       404
+
+
+                                    406                                                                                                       402
+                                                                                                                                                          VITP + VHYSP, VDD = 3.3 V
+    VITN, (VITN + VHYSN) (mV)
+
+
+
+
+                                                                                                                  VITP, (VITP + VHYSP) (mV)
+
+
+
+
+                                                                            VITN + VHYSN, VDD = 6.5 V
+                                            VITN + VHYSN, VDD = 3.3 V                                                                                                                     VITP + VHYSP, VDD = 6.5 V
+                                    404                                                                                                       400
+                                                                              VITN + VHYSN, VDD = 1.8 V                                                            VITP, VDD = 1.8 V          VITP + VHYSP, VDD = 1.8 V
+                                    402                                                                                                       398
+                                                            VITN, VDD = 1.8 V
+                                    400                                                                                                       396
+                                                          VITN, VDD = 3.3 V          VITN, VDD = 6.5 V                                                             VITP, VDD = 6.5 V
+                                    398                                                                                                       394
+                                                                                                                                                                                              VITP, VDD = 3.3 V
+                                    396                                                                                                       392
+                                          -50     -30    -10     10      30     50       70    90     110   130                                     -50      -30      -10    10      30     50       70     90    110   130
+                                                                      Temperature (°C)                                                                                            Temperature (°C)
+
+
+
+                                     Figure 18. TPS386040 SENSE4L Threshold Voltage vs                                                         Figure 19. TPS386040 SENSE4H Threshold Voltage vs
+                                                        Temperature                                                                                               Temperature
+
+
+
+
+Copyright © 2009–2018, Texas Instruments Incorporated                                                                                                                        Submit Documentation Feedback                    15
+                                                                                         Product Folder Links: TPS386000 TPS386040
+TPS386000, TPS386040
+SBVS105F – SEPTEMBER 2009 – REVISED OCTOBER 2018                                                                                                                                                                                          www.ti.com
+
+
+Typical Characteristics (continued)
+At TA = 25°C, and VDD = 3.3 V, with both options (TPS386000 and TPS386040) having the same characteristics, unless
+otherwise noted.
+                                       0.200                                                                                                                     0.200
+                                       0.180                                                                                                                     0.180
+
+
+
+
+                                                                                                                                  Low-Level Output Voltage (V)
+        Low-Level Output Voltage (V)
+
+
+
+
+                                       0.160                                                                                                                     0.160
+                                                                                                                                                                                 VDD = 1.8 V
+                                       0.140                                                                                                                     0.140
+                                                                                  VDD = 1.8 V, 25°C                                                                                                                        VDD = 3.3 V
+                                       0.120                                                                                                                     0.120
+                                       0.100                                                                                                                     0.100
+                                                              VDD = 3.3 V, 25°C
+                                       0.080                                                                                                                     0.080
+                                       0.060                                                                                                                     0.060
+                                                                                                                                                                                                                                   VDD = 6.5 V
+                                       0.040                                                                                                                     0.040
+                                       0.020                                                                                                                     0.020
+                                                                                         VDD = 6.5 V, 25°C
+                                           0                                                                                                                         0
+                                                0    0.1    0.2    0.3     0.4     0.5    0.6      0.7   0.8      0.9    1.0                                             -50   -30      -10    10       30      50     70         90      110    130
+                                                                    Output Sink Current (mA)                                                                                                        Temperature (°C)
+
+
+
+                                            Figure 20. Output Voltage Low vs Output Current                                                                       Figure 21. Output Voltage Low at 1 mA vs Temperature
+                                           0                                                                                                                         0
+                                                                                                   VDD = 6.5 V, 25°C
+                                                                                                                                                                                                                                      VDD = 6.5 V
+                                       -0.050                                                                                                                    -0.05
+
+                                                    VDD = 1.8 V, 25°C
+     VDD - VOH (V)
+
+
+
+
+                                                                                                                                VDD - VOH (V)
+
+
+
+
+                                       -0.100                                                                                                                    -0.10
+                                                                    VDD = 3.3 V, 25°C
+                                                                                                                                                                                                                     VDD = 3.3 V
+                                       -0.150                                                                                                                    -0.15
+
+                                                                                                                                                                                        VDD = 1.8 V
+                                       -0.200                                                                                                                    -0.20
+
+
+                                       -0.250                                                                                                                    -0.25
+                                                0     0.1   0.2     0.3     0.4    0.5      0.6    0.7     0.8     0.9    1.0                                            -50   -30      -10    10       30      50         70      90     110    130
+                                                                   Output Source Current (mA)                                                                                                       Temperature (°C)
+
+
+
+                                           Figure 22. Output Voltage High vs Output Current                                                                       Figure 23. Output Voltage High at 1 mA vs Temperature
+                                       1.200                                                                                                                     1.200
+                                                                                                                 0°C
+
+                                       1.198                                                                                                                     1.198
+                                                                                                                                                                               0°C
+                                       1.196                                                                                                                     1.196
+                                                            25°C         -40°C                                                                                                   25°C                     85°C
+        VREF (V)
+
+
+
+
+                                                                                                                                   VREF (V)
+
+
+
+
+                                                                                         85°C        105°C                                                                                 40°C                                 105°C
+                                       1.194                                                                                                                     1.194
+                                                                                                            125°C                                                                                                                125°C
+                                       1.192                                                                                                                     1.192
+
+
+                                       1.190                                                                                                                     1.190
+
+
+                                       1.188                                                                                                                     1.188
+                                                0      50     100         150     200       250      300         350     400                                             0      50       100      150     200        250        300      350     400
+                                                                                Load (μA)                                                                                                               Load (μA)
+
+
+
+                                          Figure 24. TPS386040 VREF Output Load Regulation                                                                          Figure 25. TPS386040 VREF Output Load Regulation
+                                                            (VDD = 1.8 V)                                                                                                             (VDD = 3.3 V)
+
+
+
+
+16                                      Submit Documentation Feedback                                                                                                                Copyright © 2009–2018, Texas Instruments Incorporated
+
+                                                                                                  Product Folder Links: TPS386000 TPS386040
+                                                                                                                                                                                 TPS386000, TPS386040
+www.ti.com                                                                                                                                       SBVS105F – SEPTEMBER 2009 – REVISED OCTOBER 2018
+
+
+Typical Characteristics (continued)
+At TA = 25°C, and VDD = 3.3 V, with both options (TPS386000 and TPS386040) having the same characteristics, unless
+otherwise noted.
+               1.207                                                                                                               1.207
+
+               1.205                                                                                                               1.205
+                                                                                       0°C
+
+
+
+
+                                                                                                           Reference Voltage (V)
+                                                                                                                                                                                            VDD = 6.5 V
+               1.203                                                                                                               1.203
+    VREF (V)
+
+
+
+
+               1.201                                                                                                               1.201
+                                                                                                                                                                                       VDD = 3.3 V
+               1.199                                                                                                               1.199
+                            25°C         -40°C      85°C
+                                                                           105°C                                                                           VDD = 1.8 V
+               1.197                                                                                                               1.197
+                                                                               125°C
+               1.195
+                                                                                                                                   1.195
+                       0   50      100   150     200               250         300     350    400
+                                                                                                                                           -50      -30    -10      10      30    50        70    90      110   130
+                                               Load (μA)
+                                                                                                                                                                         Temperature (°C)
+
+
+                  Figure 26. TPS386040 VREF Output Load Regulation
+                                                                                                                                       Figure 27. TPS386040 VREF at 0 µA vs Temperature
+                                    (VDD = 6.5 V)
+                                                                  0.33
+
+
+                                                                  0.32
+                                                                                                                                                       0.1 V
+                                                                  0.31
+                                                   Current (μA)
+
+
+
+
+                                                                                                                                            0V         0.3 V
+                                                                                                                                                            0.5 V
+                                                                  0.30
+
+                                                                                                                                            1.1 V
+                                                                  0.29
+                                                                                                                                                 0.9 V
+                                                                                                                                                      0.7 V
+                                                                  0.28
+
+
+                                                                  0.27
+                                                                         -50    -30     -10   10       30    50      70                           90      110    130
+                                                                                                    Temperature (°C)
+
+
+
+                                Figure 28. TPS386040 CT1 to CT4 Pin Charging Current vs Temperature Over CT Pin Voltage
+
+
+
+
+Copyright © 2009–2018, Texas Instruments Incorporated                                                                                                               Submit Documentation Feedback                     17
+                                                                         Product Folder Links: TPS386000 TPS386040
+TPS386000, TPS386040
+SBVS105F – SEPTEMBER 2009 – REVISED OCTOBER 2018                                                                                    www.ti.com
+
+
+7 Parameter Measurement Information
+
+                                                                                                Z1
+         VITN = 0.42V                                                                    X1 =       ´ 100 (%)
+                                                                                                0.4
+          VITN = 0.4V                                                                           Z2
+                                                                                                    ´ 100 (%)
+                        SENSEn Voltage (V)
+                                                                                         X2 =
+                                              Y1             Y2                                 0.4
+                                                       Z1
+                                                                                         X1 and X2 are overdrive (%) values calculated
+                                                                                         from actual SENSEn voltage amplitudes
+                                                                  Z2                     measured as Z1 and Z2.
+                                                                                         YN is the minimum pulse width that gives
+                                                                                         RESETn or RESETn transition.
+                                                                                         Greater ZN produces shorter YN.
+
+                                                                                         For SENSE4H, this graph should be inverted
+                                                                                         180 degrees on the voltage axis.
+                                                      Time
+
+                                             Figure 29. Overdrive Measurement Method
+
+
+
+
+18     Submit Documentation Feedback                                                     Copyright © 2009–2018, Texas Instruments Incorporated
+
+                                                   Product Folder Links: TPS386000 TPS386040
+                                                                                                         TPS386000, TPS386040
+www.ti.com                                                                           SBVS105F – SEPTEMBER 2009 – REVISED OCTOBER 2018
+
+
+8 Detailed Description
+
+8.1 Overview
+The TPS3860x0 multi-channel supervisory family of devices combines four complete SVS function sets into one
+IC, along with a watchdog timer, a window comparator, and negative voltage sensing. The design of each SVS
+channel is based on the single-channel supervisory device series, TPS3808. The TPS3860x0 is designed to
+assert RESETn or RESETn signals, as shown in Table 1, Table 2, Table 3, and Table 4. The RESETn or
+RESETn outputs remain asserted during a user-configurable delay time after the event of reset release (see the
+Reset Delay Time section).
+The TPS3860x0 has a very low quiescent current of 11 μA (typical) and is available in a small, 4-mm × 4-mm,
+20-Pin VQFN package.
+
+
+
+
+Copyright © 2009–2018, Texas Instruments Incorporated                                          Submit Documentation Feedback      19
+                                                  Product Folder Links: TPS386000 TPS386040
+TPS386000, TPS386040
+SBVS105F – SEPTEMBER 2009 – REVISED OCTOBER 2018                                                                          www.ti.com
+
+
+8.2 Functional Block Diagrams
+
+                                                                           VDD
+
+                                                                                                           WDO
+
+
+                     WDI
+                                                  WDT
+
+
+
+                                                                                                           VREF
+                                                                                VREF
+
+
+                  SENSE1                                                                                   RESET1
+
+
+                                                                        Delay
+
+
+
+                                           0.4V
+
+
+
+                     MR
+
+
+
+
+                     CT1
+                                                                                                           RESET2
+                 SENSE2
+                                                              Delay
+
+
+
+
+                                           0.4V
+
+
+
+                     CT2
+                                                                                                           RESET3
+                 SENSE3
+                                                              Delay
+
+
+
+
+                                           0.4V
+
+
+
+                     CT3
+
+
+                 SENSE4L                                                                                   RESET4
+
+
+                                                              Delay
+
+
+
+                                 0.4V
+
+
+
+                SENSE4H
+
+
+                     CT4
+
+
+
+
+                                                                          GND
+
+
+                                        Figure 30. TPS386000 Block Diagram
+
+
+
+
+20     Submit Documentation Feedback                                              Copyright © 2009–2018, Texas Instruments Incorporated
+
+                                         Product Folder Links: TPS386000 TPS386040
+                                                                                                                TPS386000, TPS386040
+www.ti.com                                                                                  SBVS105F – SEPTEMBER 2009 – REVISED OCTOBER 2018
+
+
+Functional Block Diagrams (continued)
+
+                                                                                           VDD
+
+
+
+
+                         WDI                                                                                        WDO
+                                                              WDT
+
+
+
+                                                                                                                    VREF
+                                                                                             VREF
+
+
+                     SENSE1
+
+
+                                                                                   Delay
+                                                                                                                    RESET1
+
+
+                                               0.4V
+
+
+
+                         MR
+
+
+
+
+                         CT1
+
+
+                     SENSE2
+                                                                           Delay
+                                                                                                                    RESET2
+
+
+
+
+                                                       0.4V
+
+
+
+                         CT2
+
+
+                     SENSE3
+                                                                           Delay
+                                                                                                                    RESET3
+
+
+
+
+                                                       0.4V
+
+
+
+                         CT3
+
+
+                    SENSE4L
+
+                                                                           Delay
+                                                                                                                    RESET4
+
+
+                                        0.4V
+
+
+
+                    SENSE4H
+
+
+                         CT4
+
+
+
+
+                                                                                           GND
+
+
+                                                  Figure 31. TPS386040 Block Diagram
+
+
+
+
+Copyright © 2009–2018, Texas Instruments Incorporated                                                 Submit Documentation Feedback      21
+                                                      Product Folder Links: TPS386000 TPS386040
+TPS386000, TPS386040
+SBVS105F – SEPTEMBER 2009 – REVISED OCTOBER 2018                                                                       www.ti.com
+
+
+8.3 Feature Description
+8.3.1 Voltage Monitoring
+Each SENSEm (m = 1, 2, 3, 4L) pin can be set to monitor any voltage threshold above 0.4 V using an external
+resistor divider. The SENSE4H pin can be used for any overvoltage detection greater than 0.4 V, or for negative
+voltage detection using an external resistor divider (see the Sensing a Negative Voltage section). A broad range
+of voltage threshold and reset delay time adjustments can be supported, allowing these devices to be used in a
+wide array of applications.
+The TPS3860x0 is relatively immune to short negative transients on the SENSEn pin. Sensitivity to transients
+depends on threshold overdrive, as shown in (Figure 14).
+
+8.3.2 Manual Reset
+The manual reset (MR) input allows external logic signal from other processors, logic circuits, and/or discrete
+sensors to initiate a device reset. Because MR is connected to SVS-1, the RESET1 or RESET1 pin is intended
+to be connected to processor(s) as a primary reset source. A logic low at MR causes RESET1 or RESET1 to
+assert. After MR returns to a logic high and SENSE1 is above its reset threshold, RESET1 or RESET1 is
+released after the user-configured reset delay time. Unlike the TPS3808 series, the TPS3860x0 does not
+integrate an internal pullup resistor between MR and VDD.
+To control the MR function from more than one logic signal, the logic signals can be combined by wired-OR into
+the MR pin using multiple NMOS transistors and one pullup resistor.
+
+8.3.3 Watchdog Timer
+The TPS3860x0 provides a watchdog timer with a dedicated watchdog error output, WDO or WDO. The WDO or
+WDO output enables application board designers to easily detect and resolve the hang-up status of a processor.
+As with MR, the watchdog timer function of the device is also tied to SVS-1. Figure 5 shows the timing diagram
+of the WDT function. Once RESET1 or RESET1 is released, the internal watchdog timer starts its countdown.
+Inputting a logic level transition at WDI resets the internal timer count and the timer restarts the countdown. If the
+TPS3860x0 fails to receive any WDI rising or falling edge within the WDT period, the WDT times out and asserts
+WDO or WDO. After WDO or WDO is asserted, the device holds the status with the internal latch circuit. To clear
+this time-out status, a reset assertion of RESET1 or RESET is required. That is, a negative pulse to MR, a
+SENSE1 voltage less than VITN, or a VDD power down is required.
+To reset the processor by WDT time-out, WDO can be combined with RESET1 by using the wired-OR with the
+TPS386000 option.
+For legacy applications where the watchdog timer time-out causes RESET1 to assert, connect WDO to MR; see
+Figure 35 for the connections and see Figure 6 and Figure 7 for the timing diagrams.
+
+
+
+
+22     Submit Documentation Feedback                                           Copyright © 2009–2018, Texas Instruments Incorporated
+
+                                         Product Folder Links: TPS386000 TPS386040
+                                                                                                             TPS386000, TPS386040
+www.ti.com                                                                            SBVS105F – SEPTEMBER 2009 – REVISED OCTOBER 2018
+
+
+Feature Description (continued)
+8.3.4 Reset Output
+In a typical TPS3860x0 application, RESETn or RESETn outputs are connected to the reset input of a processor
+(DSP, CPU, FPGA, ASIC, and so forth), or connected to the enable input of a voltage regulator (DC-DC, LDO,
+and so forth).
+The TPS386000 provides open-drain reset outputs. Pullup resistors must be used to hold these lines high when
+RESETn is not asserted, or when RESETn is asserted. By connecting pullup resistors to the proper voltage rails
+(up to 6.5 V), RESETn or RESETn output nodes can be connected to the other devices at the correct interface
+voltage levels. The pullup resistor should be no smaller than 10 kΩ to ensure the safe operation of the output
+transistors. By using wired-OR logic, any combination of RESETn can be merged into one logic signal.
+The TPS386040 provides pushpull reset outputs. The logic high level of the outputs is determined by the VDD
+voltage. With this configuration, pullup resistors are not required and some board area can be saved. However,
+all the interface logic levels should be examined. All RESETn or RESETn connections must be compatible with
+the VDD logic level.
+The RESETn or RESETn outputs are defined for VDD voltage higher than 0.9 V. To ensure that the target
+processor(s) are properly reset, the VDD supply input should be fed by the available power rail as early as
+possible in application circuits. Table 1, Table 2, Table 3, and Table 4 are truth tables that describe how the
+outputs are asserted or released. Figure 1, Figure 2, Figure 3, and Figure 4 show the SVS-n timing diagrams.
+When the conditions are met, the device changes the state of SVS-n from asserted to released after a user-
+configurable delay time. However, the transitions from released-state to asserted-state are performed almost
+immediately with minimal propagation delay. Figure 3 describes the relationship between threshold voltages (VITN
+and VHYSN) and SENSEm voltage; and all SVS-1, SVS-2, SVS-3, and SVS-4 have the same behavior of
+Figure 3.
+
+8.4 Device Functional Modes
+The following tables show the state of the output and the status of the part under various conditions.
+
+                                                        Table 1. SVS-1 Truth Table
+                                       CONDITION                               OUTPUT                     STATUS
+                          MR = Low                  SENSE1 < VITN            RESET1 = Low              Reset asserted
+                          MR = Low                  SENSE1 > VITN            RESET1 = Low              Reset asserted
+                          MR = High                 SENSE1 < VITN            RESET1 = Low              Reset asserted
+                                                                                                    Reset released after
+                          MR = High                 SENSE1 > VITN            RESET1 = High
+                                                                                                           delay
+
+
+                                                        Table 2. SVS-2 Truth Table
+                              CONDITION                             OUTPUT                           STATUS
+                            SENSE2 < VITN                      RESET2 = Low                       Reset asserted
+                            SENSE2 > VITN                      RESET2 = High                 Reset released after delay
+
+
+                                                        Table 3. SVS-3 Truth Table
+                              CONDITION                             OUTPUT                           STATUS
+                            SENSE3 < VITN                      RESET3 = Low                       Reset asserted
+                            SENSE3 > VITN                      RESET3 = High                 Reset released after delay
+
+
+
+
+Copyright © 2009–2018, Texas Instruments Incorporated                                              Submit Documentation Feedback   23
+                                                  Product Folder Links: TPS386000 TPS386040
+TPS386000, TPS386040
+SBVS105F – SEPTEMBER 2009 – REVISED OCTOBER 2018                                                                               www.ti.com
+
+
+                                                  Table 4. SVS-4 Truth Table
+                                 CONDITION                                 OUTPUT                      STATUS
+                   SENSE4L < VITN           SENSE4H > VITP            RESET4 = Low                 Reset asserted
+                   SENSE4L < VITN           SENSE4H < VITP            RESET4 = Low                 Reset asserted
+                   SENSE4L > VITN           SENSE4H > VITP            RESET4 = Low                 Reset asserted
+                                                                                                Reset released after
+                   SENSE4L > VITN           SENSE4H < VITP            RESET4 = High
+                                                                                                       delay
+
+
+                                       Table 5. Watchdog Timer (WDT) Truth Table
+                                    CONDITION
+     WDO              WDO              RESET1              WDI PULSE INPUT                    OUTPUT                    STATUS
+      Low             High             Asserted                 Toggling                     WDO = low         Remains in WDT time-out
+      Low             High             Asserted       610 ms after last WDI↑ or WDI↓         WDO = low         Remains in WDT time-out
+      Low             High           Released                   Toggling                     WDO = low         Remains in WDT time-out
+      Low             High           Released         610 ms after last WDI↑ or WDI↓         WDO = low         Remains in WDT time-out
+      High            Low              Asserted                 Toggling                     WDO = high            Normal operation
+      High            Low              Asserted       610 ms after last WDI↑ or WDI↓         WDO = high            Normal operation
+      High            Low            Released                   Toggling                     WDO = high            Normal operation
+      High            Low            Released         610 ms after last WDI↑ or WDI↓         WDO = low            Enters WDT timeout
+
+
+
+
+24     Submit Documentation Feedback                                                   Copyright © 2009–2018, Texas Instruments Incorporated
+
+                                           Product Folder Links: TPS386000 TPS386040
+                                                                                                              TPS386000, TPS386040
+www.ti.com                                                                           SBVS105F – SEPTEMBER 2009 – REVISED OCTOBER 2018
+
+
+9 Application and Implementation
+
+                                                             NOTE
+                 Information in the following applications sections is not part of the TI component
+                 specification, and TI does not warrant its accuracy or completeness. TI’s customers are
+                 responsible for determining suitability of components for their purposes. Customers should
+                 validate and test their design implementation to confirm system functionality.
+
+
+9.1 Application Information
+9.1.1 Undervoltage Detection
+The SENSEm inputs are pins that allow any system voltages to be monitored. If the voltage at the SENSE1,
+SENSE2, SENSE3, or SENSE4L pins drops below VITN, then the corresponding reset outputs are asserted. If the
+voltage at the SENSE4H pin exceeds VITP, then RESET4 or RESET4 is asserted. The comparators have a built-
+in hysteresis to ensure smooth reset output assertions and deassertions. In noisy applications, it is good analog
+design practice to place a 1-nF to 10-nF bypass capacitor at the SENSEm input to reduce sensitivity to
+transients, layout parasitics, and interference between power rails monitored by this device. A typical connection
+of resistor dividers are shown in Figure 35. All the SENSEm pins can be used to monitor voltage rails down to
+0.4 V. Threshold voltages can be calculated using Equation 1 to Equation 3.
+       VMON(1) = (1 + RS1H/RS1L) × 0.4 (V)                                                                                           (1)
+       VMON(2) = (1 + RS2H/RS2L) × 0.4 (V)                                                                                           (2)
+       VMON(3) = (1 + RS3H/RS3L) × 0.4 (V)                                                                                           (3)
+
+9.1.2 Undervoltage and Overvoltage Detection
+The comparator at the SENSE4H pin has the opposite comparison polarity to the other SENSEm pins. In the
+configuration shown in Figure 32, this comparator monitors overvoltage of the VMON(4) node; combined with the
+comparator at SENSE4L, SVS-4 forms a window comparator.
+       VMON(4, UV) = {1+ RS4H/(RS4M + RS4L)} × 0.4 (V)                                                                               (4)
+       VMON(4, OV) = {1+ (RS4H + RS4M)/RS4L} × 0.4 (V)
+       where
+             •     VMON(4, UV) is the undervoltage threshold.
+             •     VMON(4, OV) is the overvoltage threshold.                                                                         (5)
+                                                                                           VDD
+                                            VMON(4)
+                                                                                           (1.8V to 6.5V)
+                                        (3.0V to 3.6V)
+
+                                                                                     RP4
+                                                 RS41H              VDD
+                                                 316kΩ
+                                                          SENSE4L         RESET4
+                                                 RS41M
+                                                 8.06kΩ                      CT4
+
+                                                          SENSE4H
+                                                 RS41L
+                                                 40.2kΩ             GND
+
+
+
+
+                                               Figure 32. SVS-4: Window Comparator
+
+
+
+
+Copyright © 2009–2018, Texas Instruments Incorporated                                                Submit Documentation Feedback   25
+                                                  Product Folder Links: TPS386000 TPS386040
+TPS386000, TPS386040
+SBVS105F – SEPTEMBER 2009 – REVISED OCTOBER 2018                                                                                 www.ti.com
+
+
+Application Information (continued)
+
+                                 VMON(4)_target2
+                  Overvoltage
+                        Limit    VMON(4)_target2(HYSP)
+
+                     VDD4
+
+                 Undervoltage    VMON(4)_target1(HYSN)
+                        Limit    VMON(4)_target1
+
+
+
+
+                       RESET4
+
+
+                                           Figure 33. Window Comparator Operation
+
+9.1.3 Sensing a Negative Voltage
+By using voltage reference output VREF, the SVS-4 comparator can monitor negative voltage or positive voltage
+lower than 0.4V. Figure 34 shows this usage in an application circuit. SVS-4 monitors the positive and negative
+voltage power rail (for example, 15-V and –15-V supply to an op amp) and the RESET4 or RESET4 output status
+continues to be as described in Table 4. RS42H is located at higher voltage position than RS42L. The threshold
+voltage calculations are shown in Equation 6 and Equation 7.
+     VMON(4, NEG) = (1+RS41H/RS41L) × 0.4 (V)                                                                                             (6)
+     VMON(4, POS) = (1+RS42L/RS42H) × 0.4 – RS42L/RS42H × VREF = 0.4 – [RS42L/RS42H × 0.8 (V)]                                            (7)
+
+                                                                                                VDD
+                                VMON(4, NEG) VMON(4, POS)
+                                                                                                (1.8V to 6.5V)
+                                  (–15V)       (+15V)
+
+                                                                         VDD              RP4
+                                                      RS41H
+                                                      7.32MΩ
+                                                               SENSE4L         RESET4
+                                        RS42L         RS41L
+                                        3.83MΩ        200kΩ                       CT4
+
+                                                               SENSE4H          VREF
+                                        RS42H
+                                        200kΩ                            GND
+
+
+
+
+                                          Figure 34. SVS4: Negative Voltage Sensing
+
+
+
+
+26     Submit Documentation Feedback                                                     Copyright © 2009–2018, Texas Instruments Incorporated
+
+                                                   Product Folder Links: TPS386000 TPS386040
+                                                                                                           TPS386000, TPS386040
+www.ti.com                                                                           SBVS105F – SEPTEMBER 2009 – REVISED OCTOBER 2018
+
+
+Application Information (continued)
+9.1.4 Reset Delay Time
+Each of the SVS-n channels can be configured independently in one of three modes. Table 6 describes the delay
+time settings.
+
+                                                    Table 6. Delay Timing Selection
+                                            CTn CONNECTION                      DELAY TIME
+                                                Pullup to VDD                  300 ms (typical)
+                                                    Open                        20 ms (typical)
+                                              Capacitor to GND                  Programmable
+
+To select the 300-ms fixed delay time, the CTn pin should be pulled up to VDD using a resistor from 40 kΩ to 200
+kΩ. There is a pulldown transistor from CTn to GND that turns on every time the device powers on to determine
+and confirm CTn pin status; therefore, a direct connection of CTn to VDD causes a large current flow. To select
+the 20-ms fixed delay time, the CTn pin should be left open. To program a user-defined adjustable delay time, an
+external capacitor must be connected between CTn and GND. The adjustable delay time can be calculated by
+the following equation:
+       CCT (nF) = [tDELAY (ms) – 0.5 (ms)] × 0.242                                                                                (8)
+Using this equation, a delay time can be set to between 1.4 ms to 10 s. The external capacitor should be greater
+than 220 pF (nominal) so that the TPS3860x0 can distinguish it from an open CT pin. The reset delay time is
+determined by the time it takes an on-chip, precision 300-nA current source to charge the external capacitor to
+1.24 V. When the RESETn or RESETn outputs are asserted, the corresponding capacitors are discharged.
+When the condition to release RESETn or RESETn occurs, the internal current sources are enabled and begin to
+charge the external capacitors. When the CTn voltage on a capacitor reaches 1.24 V, the corresponding
+RESETn or RESETn pins are released. A low leakage type capacitor (such as ceramic) should be used, and that
+stray capacitance around this pin may cause errors in the reset delay time.
+
+
+
+
+Copyright © 2009–2018, Texas Instruments Incorporated                                             Submit Documentation Feedback   27
+                                                  Product Folder Links: TPS386000 TPS386040
+TPS386000, TPS386040
+SBVS105F – SEPTEMBER 2009 – REVISED OCTOBER 2018                                                                                                                                     www.ti.com
+
+
+9.2 Typical Application
+Figure 35 shows a typical application circuit.
+                         Sequence: VIN          VMON(4)     VMON(3)    VMON(2)   VMON(1)
+
+
+
+     VIN         DC-DC                                                             VMON(4)
+
+                  LDO                                                              VMON(3)
+
+                                                                                   VMON(2)
+
+           EN4   DC-DC                                                             VMON(1)
+
+                  LDO
+
+                                                                                                                                                   RP5 RP4 RP3 RP2 RP1
+                                                                                                                  VDD
+           EN3   DC-DC                                                                       MR                                     VREF
+                  LDO                                                                                                                                                    VDD1 VDD2   VDD3 VDD4
+                                                                                             WDI                                    WDO
+                                                                                                                                                                                  DSP
+                                                 RS4H        RS3H      RS2H      RS1H        SENSE1                               RESET1                                 RESET    CPU      CLK
+           EN2   DC-DC                                                                       SENSE2                                                                              FPGA
+                                                                                                               TPS386000          RESET2
+                  LDO
+                                                                                             SENSE3                               RESET3
+
+                                                                                             SENSE4L                              RESET4
+
+                                                                                             SENSE4H
+                                                                                              CT1        CT2     CT3      CT4      GND
+                                         RS4M
+
+                                                                                                   CT1     CT2      CT3     CT4
+
+
+
+                                         RS4L      RS3L        RS2L      RS1L
+
+
+
+
+                                                                  Figure 35. Typical Application Circuit
+
+9.2.1 Design Requirements
+This design is intended to monitor the voltage rails for an FPGA. Table 7 summarizes the design requirements.
+
+                                                                         Table 7. Design Requirements
+                                                                 PARAMETER                                       DESIGN REQUIREMENT
+                                                                         VDD                                                    5V
+                                                                       VMON(1)                                            1.8 V –5%
+                                                                       VMON(2)                                            1.5 V –5%
+                                                                       VMON(3)                                            1.2 V –5%
+                                                                       VMON(4)                                             1 V ±5%
+                                                          Approximate start-up time                                         100 ms
+
+
+
+
+28         Submit Documentation Feedback                                                                                              Copyright © 2009–2018, Texas Instruments Incorporated
+
+                                                                      Product Folder Links: TPS386000 TPS386040
+                                                                                                                                                                 TPS386000, TPS386040
+www.ti.com                                                                                                                              SBVS105F – SEPTEMBER 2009 – REVISED OCTOBER 2018
+
+
+9.2.2 Detailed Design Procedure
+Select the pullup resistors to be 100 kΩ to ensure that VOL ≤ 0.4 V.
+Use Equation 8 to set CT = 22 nF for all channels to obtain an approximate start-up delay of 100 ms.
+Select RSnL = 10 kΩ for all channels to ensure DC accuracy.
+Use Equation 1 through Equation 5 to determine the values of RSnH and RS4M. Using standard 1% resistors,
+Table 8 shows the results.
+
+                                                                                    Table 8. Design Results
+                                                                         RESISTOR                                                  VALUE (kΩ)
+                                                                              RS1H                                                      32.4
+                                                                              RS2H                                                      25.5
+                                                                              RS3H                                                      18.7
+                                                                              RS4H                                                      14.3
+                                                                              RS4M                                                       1
+
+The FPGA does not have a separate watchdog failure input, so a legacy connection is used by connecting WDO
+to MR.
+
+9.2.3 Application Curves
+
+                          25                                                                                                100
+
+                                           CT1         CT3
+                          20
+                                                                                                  SENSEn Pulse Width (ms)
+      RESETn Delay (ms)
+
+
+
+
+                                                                                                                                                                               SENSE4H
+                                                 CT2           CT4                                                           10
+                          15                                                                                                        SENSE4L
+                                                                                                                                                                               SENSE2
+                          10                                                                                                                 SENSE1
+                                                                                                                                                                                   SENSE3
+                                                                                                                              1
+                           5
+
+
+                           0
+                                                                                                                            0.1
+                               -50   -30   -10   10      30    50        70    90    110   130
+                                                                                                                                  0.1                 1                   10             100
+                                                      Temperature (°C)
+                                                                                                                                                          Overdrive (%)
+                                                                                                 See Figure 29 for measurement technique
+
+
+                          Figure 36. TPS386040 (CTn = Open) RESETn Time-Out                                                   Figure 37. TPS386040 SENSEn Minimum Pulse Width
+                                         Period vs Temperature                                                                      vs SENSEn Threshold Overdrive Voltage
+
+
+
+10 Power Supply Recommendations
+The TPS386000 can operate from a 1.8-V to a 6.5-V input supply. TI recommends placing a 0.1-µF capacitor
+placed next to the VDD pin to the GND node. This power supply should not be less than 1.8 V in normal operation
+to ensure that the internal UVLO circuit does not assert reset.
+
+
+
+
+Copyright © 2009–2018, Texas Instruments Incorporated                                                                                                 Submit Documentation Feedback            29
+                                                                          Product Folder Links: TPS386000 TPS386040
+TPS386000, TPS386040
+SBVS105F – SEPTEMBER 2009 – REVISED OCTOBER 2018                                                                                                       www.ti.com
+
+
+11 Layout
+
+11.1 Layout Guidelines
+Follow these guidelines to lay out the printed-circuit board (PCB) that is used for the TPS3860x family of devices.
+• Keep the traces to the timer capacitors as short as possible to optimize accuracy.
+• Avoid long traces from the SENSE pin to the resistor divider. Instead, run the long traces from the RSnH to
+    VMON(n).
+• Place the VDD decoupling capacitor (CVDD) close to the device.
+• Avoid using long traces for the VDD supply node. The VDD capacitor (CVDD), along with parasitic inductance
+    from the supply to the capacitor, can form an LC tank and create ringing with peak voltages above the
+    maximum VDD voltage.
+
+11.2 Layout Example
+
+
+
+
+                                                                                   RESET4
+
+                                                                                            RESET3
+
+                                                                                                      RESET2
+                                                                         WDO
+                                                               WDI
+
+
+
+
+                                                               20        19        18       17       16
+
+
+                                              MR           1                                                   15     RESET1
+
+                                              CT4          2                                                   14       VDD
+
+                                              CT3          3                                                   13      VREF
+                                                                         Thermal Pad
+                                              CT2          4                                                   12       GND
+
+                                              CT1          5                                                   11        NC
+
+
+                                                               6         7         8        9        10
+                                                               SENSE4H
+
+                                                                         SENSE4L
+
+                                                                                   SENSE3
+
+                                                                                            SENSE2
+
+                                                                                                     SENSE1
+
+
+
+
+                   Denotes vias for application purposes
+
+
+
+
+                                         Figure 38. Example Layout (RGP Package)
+
+
+
+
+30     Submit Documentation Feedback                                                                           Copyright © 2009–2018, Texas Instruments Incorporated
+
+                                               Product Folder Links: TPS386000 TPS386040
+                                                                                                              TPS386000, TPS386040
+www.ti.com                                                                             SBVS105F – SEPTEMBER 2009 – REVISED OCTOBER 2018
+
+
+12 Device and Documentation Support
+
+12.1 Device Support
+12.1.1 Development Support
+
+12.1.1.1 Evaluation Modules
+Two evaluation modules (EVMs) are available to assist in the initial circuit performance evaluation using the
+TPS3860x0. The TPS386000EVM-736 evaluation module and TPS386040EVM evaluation module can each be
+requested at the Texas Instruments website through the device product folders or purchased directly from the TI
+eStore.
+
+12.1.1.2 Spice Models
+Computer simulation of circuit performance using SPICE is often useful when analyzing the performance of
+analog circuits and systems. A SPICE model for the TPS3860x0 is available through the device product folders
+under Simulation Models.
+
+12.1.2 Device Nomenclature
+
+                                                    Table 9. Device Nomenclature (1)
+                                                 PRODUCT                         DESCRIPTION
+                                              TPS3860x0yyyz            x is device configuration option
+                                                                       xxx = 0: Open-drain, active low
+                                                                       xxx = 4: Push-pull, active low
+                                                                       yyy is package designator
+                                                                       z is package quantity
+
+                                   (1)   For the most current package and ordering information see the
+                                         Package Option Addendum at the end of this document, or see the
+                                         TI website at www.ti.com.
+
+12.2 Documentation Support
+12.2.1 Related Documentation
+For related documentation see the following:
+• TPS3860xxEVM-736 User's Guide, SLVU450
+• User's Guide for the TPS386000 and TPS386040 EVM, SLVU341
+
+12.3 Related Links
+Table 10 lists quick access links. Categories include technical documents, support and community resources,
+tools and software, and quick access to sample or buy.
+
+                                                            Table 10. Related Links
+                                                                           TECHNICAL                TOOLS &            SUPPORT &
+        PARTS             PRODUCT FOLDER                SAMPLE & BUY
+                                                                           DOCUMENTS               SOFTWARE            COMMUNITY
+      TPS386000                 Click here                Click here         Click here              Click here         Click here
+      TPS386040                 Click here                Click here         Click here              Click here         Click here
+
+
+
+
+Copyright © 2009–2018, Texas Instruments Incorporated                                              Submit Documentation Feedback     31
+                                                  Product Folder Links: TPS386000 TPS386040
+TPS386000, TPS386040
+SBVS105F – SEPTEMBER 2009 – REVISED OCTOBER 2018                                                                               www.ti.com
+
+
+12.4 Community Resources
+The following links connect to TI community resources. Linked contents are provided "AS IS" by the respective
+contributors. They do not constitute TI specifications and do not necessarily reflect TI's views; see TI's Terms of
+Use.
+TI E2E™ Online Community TI's Engineer-to-Engineer (E2E) Community. Created to foster collaboration
+           among engineers. At e2e.ti.com, you can ask questions, share knowledge, explore ideas and help
+           solve problems with fellow engineers.
+Design Support TI's Design Support Quickly find helpful E2E forums along with design support tools and
+           contact information for technical support.
+
+12.5 Trademarks
+E2E is a trademark of Texas Instruments.
+All other trademarks are the property of their respective owners.
+12.6 Electrostatic Discharge Caution
+        These devices have limited built-in ESD protection. The leads should be shorted together or the device placed in conductive foam
+        during storage or handling to prevent electrostatic damage to the MOS gates.
+
+
+12.7 Glossary
+SLYZ022 — TI Glossary.
+   This glossary lists and explains terms, acronyms, and definitions.
+
+13 Mechanical, Packaging, and Orderable Information
+The following pages include mechanical, packaging, and orderable information. This information is the most
+current data available for the designated devices. This data is subject to change without notice and revision of
+this document. For browser-based versions of this data sheet, refer to the left-hand navigation.
+
+
+
+
+32     Submit Documentation Feedback                                                   Copyright © 2009–2018, Texas Instruments Incorporated
+
+                                            Product Folder Links: TPS386000 TPS386040
+                                                                                                                                                                    PACKAGE OPTION ADDENDUM
+
+       www.ti.com                                                                                                                                                                                                   10-Nov-2025
+
+
+
+
+PACKAGING INFORMATION
+
+       Orderable part number          Status     Material type      Package | Pins     Package qty | Carrier       RoHS             Lead finish/             MSL rating/             Op temp (°C)               Part marking
+                                        (1)            (2)                                                            (3)           Ball material            Peak reflow                                              (6)
+                                                                                                                                          (4)                      (5)
+
+          TPS386000RGPR               Active      Production        QFN (RGP) | 20      3000 | LARGE T&R             Yes               NIPDAU           Level-2-260C-1 YEAR            -40 to 125                   TPS
+                                                                                                                                                                                                                   386000
+         TPS386000RGPR.A              Active      Production        QFN (RGP) | 20      3000 | LARGE T&R             Yes               NIPDAU           Level-2-260C-1 YEAR            -40 to 125                   TPS
+                                                                                                                                                                                                                   386000
+        TPS386000RGPRG4               Active      Production        QFN (RGP) | 20      3000 | LARGE T&R             Yes               NIPDAU           Level-2-260C-1 YEAR            -40 to 125                   TPS
+                                                                                                                                                                                                                   386000
+       TPS386000RGPRG4.A              Active      Production        QFN (RGP) | 20      3000 | LARGE T&R             Yes               NIPDAU           Level-2-260C-1 YEAR            -40 to 125                   TPS
+                                                                                                                                                                                                                   386000
+          TPS386000RGPT               Active      Production        QFN (RGP) | 20       250 | SMALL T&R             Yes               NIPDAU           Level-2-260C-1 YEAR            -40 to 125                   TPS
+                                                                                                                                                                                                                   386000
+         TPS386000RGPT.A              Active      Production        QFN (RGP) | 20       250 | SMALL T&R             Yes               NIPDAU           Level-2-260C-1 YEAR            -40 to 125                   TPS
+                                                                                                                                                                                                                   386000
+          TPS386040RGPR               Active      Production        QFN (RGP) | 20      3000 | LARGE T&R             Yes               NIPDAU           Level-2-260C-1 YEAR            -40 to 125                   TPS
+                                                                                                                                                                                                                   386040
+         TPS386040RGPR.A              Active      Production        QFN (RGP) | 20      3000 | LARGE T&R             Yes               NIPDAU           Level-2-260C-1 YEAR            -40 to 125                   TPS
+                                                                                                                                                                                                                   386040
+          TPS386040RGPT               Active      Production        QFN (RGP) | 20       250 | SMALL T&R             Yes               NIPDAU           Level-2-260C-1 YEAR            -40 to 125                   TPS
+                                                                                                                                                                                                                   386040
+         TPS386040RGPT.A              Active      Production        QFN (RGP) | 20       250 | SMALL T&R             Yes               NIPDAU           Level-2-260C-1 YEAR            -40 to 125                   TPS
+                                                                                                                                                                                                                   386040
+
+(1)
+      Status: For more details on status, see our product life cycle.
+
+(2)
+   Material type: When designated, preproduction parts are prototypes/experimental devices, and are not yet approved or released for full production. Testing and final process, including without limitation quality assurance,
+reliability performance testing, and/or process qualification, may not yet be complete, and this item is subject to further changes or possible discontinuation. If available for ordering, purchases will be subject to an additional
+waiver at checkout, and are intended for early internal evaluation purposes only. These items are sold without warranties of any kind.
+
+(3)
+      RoHS values: Yes, No, RoHS Exempt. See the TI RoHS Statement for additional information and value definition.
+
+(4)
+   Lead finish/Ball material: Parts may have multiple material finish options. Finish options are separated by a vertical ruled line. Lead finish/Ball material values may wrap to two lines if the finish value exceeds the maximum
+column width.
+
+
+
+
+                                                                                                         Addendum-Page 1
+                                                                                                                                                                      PACKAGE OPTION ADDENDUM
+
+       www.ti.com                                                                                                                                                                                                10-Nov-2025
+
+
+
+
+(5)
+  MSL rating/Peak reflow: The moisture sensitivity level ratings and peak solder (reflow) temperatures. In the event that a part has multiple moisture sensitivity ratings, only the lowest level per JEDEC standards is shown.
+Refer to the shipping label for the actual reflow temperature that will be used to mount the part to the printed circuit board.
+
+(6)
+      Part marking: There may be an additional marking, which relates to the logo, the lot trace code information, or the environmental category of the part.
+
+Multiple part markings will be inside parentheses. Only one part marking contained in parentheses and separated by a "~" will appear on a part. If a line is indented then it is a continuation of the previous line and the two
+combined represent the entire part marking for that device.
+
+Important Information and Disclaimer:The information provided on this page represents TI's knowledge and belief as of the date that it is provided. TI bases its knowledge and belief on information provided by third parties, and
+makes no representation or warranty as to the accuracy of such information. Efforts are underway to better integrate information from third parties. TI has taken and continues to take reasonable steps to provide representative
+and accurate information but may not have conducted destructive testing or chemical analysis on incoming materials and chemicals. TI and TI suppliers consider certain information to be proprietary, and thus CAS numbers
+and other limited information may not be available for release.
+
+In no event shall TI's liability arising out of such information exceed the total purchase price of the TI part(s) at issue in this document sold by TI to Customer on an annual basis.
+
+OTHER QUALIFIED VERSIONS OF TPS386000 :
+
+• Automotive : TPS386000-Q1
+
+NOTE: Qualified Version Definitions:
+
+           • Automotive - Q100 devices qualified for high-reliability automotive applications targeting zero defects
+
+
+
+
+                                                                                                            Addendum-Page 2
+                                                                              PACKAGE MATERIALS INFORMATION
+
+www.ti.com                                                                                                                                       24-Jul-2025
+
+
+
+TAPE AND REEL INFORMATION
+
+       REEL DIMENSIONS                                                                     TAPE DIMENSIONS
+                                                                                      K0       P1
+
+
+
+                                                                                                                      B0 W
+                                       Reel
+                                     Diameter
+                                                                                   Cavity           A0
+                                                               A0   Dimension designed to accommodate the component width
+                                                               B0   Dimension designed to accommodate the component length
+                                                               K0   Dimension designed to accommodate the component thickness
+                                                               W    Overall width of the carrier tape
+                                                               P1   Pitch between successive cavity centers
+
+
+                                      Reel Width (W1)
+                              QUADRANT ASSIGNMENTS FOR PIN 1 ORIENTATION IN TAPE
+
+                                                                                                     Sprocket Holes
+
+
+                                                Q1        Q2          Q1    Q2
+
+                                                Q3        Q4          Q3    Q4                  User Direction of Feed
+
+
+
+                                                           Pocket Quadrants
+
+
+*All dimensions are nominal
+             Device           Package Package Pins             SPQ        Reel   Reel   A0                  B0         K0     P1     W     Pin1
+                               Type Drawing                             Diameter Width (mm)                (mm)       (mm)   (mm)   (mm) Quadrant
+                                                                          (mm) W1 (mm)
+    TPS386000RGPR              QFN     RGP           20        3000        330.0        12.4        4.25   4.25       1.15   8.0    12.0    Q2
+   TPS386000RGPRG4             QFN     RGP           20        3000        330.0        12.4        4.25   4.25       1.15   8.0    12.0    Q2
+    TPS386000RGPT              QFN     RGP           20         250        180.0        12.4        4.25   4.25       1.15   8.0    12.0    Q2
+    TPS386040RGPR              QFN     RGP           20        3000        330.0        12.4        4.25   4.25       1.15   8.0    12.0    Q2
+    TPS386040RGPT              QFN     RGP           20         250        180.0        12.4        4.25   4.25       1.15   8.0    12.0    Q2
+
+
+
+
+                                                                      Pack Materials-Page 1
+                                                                PACKAGE MATERIALS INFORMATION
+
+www.ti.com                                                                                                              24-Jul-2025
+
+
+
+ TAPE AND REEL BOX DIMENSIONS
+
+
+
+
+                                                               Width (mm)
+                                                                              H
+                      W
+
+
+
+
+                                                          L
+
+
+
+
+*All dimensions are nominal
+             Device           Package Type   Package Drawing   Pins         SPQ    Length (mm)   Width (mm)   Height (mm)
+     TPS386000RGPR                QFN             RGP           20          3000      353.0        353.0         32.0
+   TPS386000RGPRG4                QFN             RGP           20          3000      353.0        353.0         32.0
+     TPS386000RGPT                QFN             RGP           20          250       213.0        191.0         35.0
+     TPS386040RGPR                QFN             RGP           20          3000      353.0        353.0         32.0
+     TPS386040RGPT                QFN             RGP           20          250       213.0        191.0         35.0
+
+
+
+
+                                                        Pack Materials-Page 2
+                                                                  GENERIC PACKAGE VIEW
+RGP 20                                                                     VQFN - 1 mm max height
+4 x 4, 0.5 mm pitch                                                                VERY THIN QUAD FLATPACK
+
+
+
+
+      Images above are just a representation of the package family, actual package may vary.
+      Refer to the product data sheet for package details.
+
+                                                                                                   4224735/A
+
+
+
+
+                                                    www.ti.com
+                                         IMPORTANT NOTICE AND DISCLAIMER
+TI PROVIDES TECHNICAL AND RELIABILITY DATA (INCLUDING DATASHEETS), DESIGN RESOURCES (INCLUDING REFERENCE
+DESIGNS), APPLICATION OR OTHER DESIGN ADVICE, WEB TOOLS, SAFETY INFORMATION, AND OTHER RESOURCES “AS IS”
+AND WITH ALL FAULTS, AND DISCLAIMS ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION ANY
+IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD
+PARTY INTELLECTUAL PROPERTY RIGHTS.
+These resources are intended for skilled developers designing with TI products. You are solely responsible for (1) selecting the appropriate
+TI products for your application, (2) designing, validating and testing your application, and (3) ensuring your application meets applicable
+standards, and any other safety, security, regulatory or other requirements.
+These resources are subject to change without notice. TI grants you permission to use these resources only for development of an
+application that uses the TI products described in the resource. Other reproduction and display of these resources is prohibited. No license
+is granted to any other TI intellectual property right or to any third party intellectual property right. TI disclaims responsibility for, and you fully
+indemnify TI and its representatives against any claims, damages, costs, losses, and liabilities arising out of your use of these resources.
+TI’s products are provided subject to TI’s Terms of Sale, TI’s General Quality Guidelines, or other applicable terms available either on
+ti.com or provided in conjunction with such TI products. TI’s provision of these resources does not expand or otherwise alter TI’s applicable
+warranties or warranty disclaimers for TI products. Unless TI explicitly designates a product as custom or customer-specified, TI products
+are standard, catalog, general purpose devices.
+TI objects to and rejects any additional or different terms you may propose.
+IMPORTANT NOTICE
+
+                                                Copyright © 2025, Texas Instruments Incorporated
+                                                                Last updated 10/2025
+

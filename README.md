@@ -2,18 +2,18 @@
 
 An ESP32-S3 virtual-pet and small handheld-game hardware project, designed around a repairable through-hole main-board kit and a separate factory-assembled power board.
 
-**Current hardware: main C.6 + power P.3. Engineering prototypes—not a tested, certified or production-ready toy.** Both boards are 96 × 105 × 1.6 mm with matching mounting holes for a removable stack. Physical component fit, battery/case selection, factory DFM approval and powered qualification remain open.
+**Current hardware: main C.6 + power P.4. Engineering prototypes—not a tested, certified or production-ready toy.** Main is 96 × 105 × 1.6 mm; power is now 50 × 50 × 1.6 mm. The power board needs independent removable case supports; mounting patterns do not match. Physical component fit, battery/case selection, factory DFM approval and powered qualification remain open.
 
 ## Current projects and downloads
 
 | Board | Editable KiCad 10 project | Five-prototype review package | Gerbers and drills |
 |---|---|---|---|
-| Main C.6 · 2 copper layers | [Open main project](KK_main_module/C6_flat_stack/KK_main_module.kicad_pro) | [Full main ZIP](KK_main_module/manufacturing/KK_MAIN_C6_5_PROTOTYPE_REVIEW_2026-09-12.zip) | [Main fabrication ZIP](KK_main_module/manufacturing/KK_MAIN_C6_GERBERS.zip) |
-| Power P.3 · 4 copper layers | [Open power project](KK_power_module/P3_matching_stack/KK_power_module.kicad_pro) | [Full power ZIP](KK_power_module/manufacturing/KK_POWER_P3_5_PROTOTYPE_REVIEW_2026-09-12.zip) | [Power fabrication ZIP](KK_power_module/manufacturing/KK_POWER_P3_GERBERS.zip) |
+| Main C.6 · 2 copper layers | [Open main project](KK_main_module/KK_main_module.kicad_pro) | [Full main ZIP](KK_main_module/manufacturing/KK_MAIN_C6_P4_PAIRING_5_PROTOTYPE_REVIEW_2026-09-12.zip) | [Main fabrication ZIP](KK_main_module/manufacturing/KK_MAIN_C6_P4_PAIRING_GERBERS.zip) |
+| Power P.4 · 4 copper layers | [Open power project](KK_power_module/KK_power_module.kicad_pro) | [Full power ZIP](KK_power_module/manufacturing/KK_POWER_P4_5_PROTOTYPE_REVIEW_2026-09-12.zip) | [Power fabrication ZIP](KK_power_module/manufacturing/KK_POWER_P4_GERBERS.zip) |
 
 Download the repository or a **full review ZIP** to open a project with its local libraries, models and documentation. Install the KiCad 10 standard footprint and 3D libraries as well. For GitHub ZIP downloads, use the file page's download/raw action. The full review packages include fabrication files, BOMs, placement and test-point maps, schematic/assembly PDFs, source CAD, datasheets and verification evidence. The separate fabrication ZIPs do not replace the assembler's full review package.
 
-[Start here](START_HERE.md) · [Documentation index](docs/README.md) · [Release notes](CHANGELOG.md) · [Release hashes](docs/C6_P3_RELEASE_INDEX.json)
+[Start here](START_HERE.md) · [Documentation index](docs/README.md) · [Release notes](CHANGELOG.md) · [Release hashes](docs/CURRENT_RELEASE_INDEX.json)
 
 ## Hardware in this revision
 
@@ -26,16 +26,16 @@ Download the repository or a **full review ZIP** to open a project with its loca
 - Main board: **98 fitted through-hole positions**, all **43 resistors horizontal**, ten horizontal low-profile electrolytics, six flat-mounted TO-92 devices, removable IC/module sockets, JST connectors and **25 bare debug holes**.
 - Power board: **108 fitted positions**, 28 rear test pads, USB-C charging input, battery protection, temperature interlock and three regulated output rails. This board is a **factory SMT subassembly**, not a student SMT soldering exercise.
 
-All fitted electrical positions have resolving 3D model links. Some module and connector envelopes remain provisional; model coverage does not prove fit. Sockets, buttons and optical components necessarily retain height. The proposed 20 mm inter-board spacing is for a mock-up, not an approved enclosure dimension.
+All fitted electrical positions have resolving 3D model links. Some module and connector envelopes remain provisional; model coverage does not prove fit. Sockets, buttons and optical components necessarily retain height. The previous common-hole 20 mm spacer plan is superseded. Power placement, antenna clearance and independent support heights need a physical mock-up.
 
 ## Assembly and first power-up
 
 Read these before buying parts, soldering or powering a board:
 
-1. [Main BOM and assembly/wiring guide](KK_main_module/C6_flat_stack/assembly/ASSEMBLY_GUIDE.md), [reference BOM](KK_main_module/C6_flat_stack/assembly/C6_BOM_BY_REFERENCE.csv), and [complete paired-kit extras](KK_main_module/C6_flat_stack/assembly/C6_COMPLETE_KIT_EXTRAS.csv). Extras cover sockets, modules, mating plugs, wiring and provisional hardware; count them once per main+power pair.
-2. [Print the stack review at actual size](docs/C6_P3_STACK_REVIEW.pdf), [front fit sheet](KK_main_module/C6_flat_stack/assembly/C6_front_FIT_100_PERCENT.pdf) and [rear fit sheet](KK_main_module/C6_flat_stack/assembly/C6_back_FIT_100_PERCENT.pdf). Measure the calibration line and dry-fit actual parts and plugged harnesses.
-3. [Power fabrication/assembly requirements](KK_power_module/P3_matching_stack/FABRICATION_REQUIREMENTS.md). Obtain manufacturer approval of the 0.4 mm WCSP, fine-pitch packages and **filled/capped/planarized via-in-pad** process. Ordinary via tenting is not equivalent.
-4. [Power electrical review and current-limited first-power-up procedure](KK_power_module/P3_matching_stack/assembly/P3_REVIEW_AND_TEST.md). Qualify power independently before attaching the populated main board. Real-cell testing requires a selected, documented cell and bonded thermistor.
+1. [Main BOM and assembly/wiring guide](KK_main_module/assembly/ASSEMBLY_GUIDE.md), [reference BOM](KK_main_module/assembly/C6_BOM_BY_REFERENCE.csv), and [complete paired-kit extras](KK_main_module/assembly/C6_COMPLETE_KIT_EXTRAS.csv). Extras cover sockets, modules, mating plugs, wiring and provisional hardware; count them once per main+power pair.
+2. [Print the stack review at actual size](docs/C6_P4_MECHANICAL_REVIEW.pdf), [front fit sheet](KK_main_module/assembly/C6_front_FIT_100_PERCENT.pdf) and [rear fit sheet](KK_main_module/assembly/C6_back_FIT_100_PERCENT.pdf). Measure the calibration line and dry-fit actual parts and plugged harnesses.
+3. [Power fabrication/assembly requirements](KK_power_module/FABRICATION_REQUIREMENTS.md). Obtain manufacturer approval of the 0.4 mm WCSP, fine-pitch packages and **filled/capped/planarized via-in-pad** process. Ordinary via tenting is not equivalent.
+4. [Power electrical review and current-limited first-power-up procedure](KK_power_module/assembly/P4_REVIEW_AND_TEST.md). Qualify power independently before attaching the populated main board. Real-cell testing requires a selected, documented cell and bonded thermistor.
 
 Power **J3 → main J1**, keyed pin-for-pin:
 
@@ -52,7 +52,7 @@ Charger USB carries **no data** to the ESP32. Do not combine ESP32 USB power and
 
 ## Verification and remaining work
 
-The issued C.6/P.3 sources passed fresh native ERC/DRC, connectivity and schematic-parity checks with **zero reported violations or opens**. [Static audit](docs/C6_P3_STATIC_AUDIT.json), [matching drill audit](docs/C6_P3_DRILL_ALIGNMENT_AUDIT.json) and package manifests identify exactly what was checked. Existing ignored-check settings are included in the native reports; clean reports are not a claim that every possible check was performed.
+The issued C.6/P.4 sources passed fresh native ERC/DRC, connectivity and schematic-parity checks with **zero reported violations or opens**. [Static audit](docs/CURRENT_STATIC_AUDIT.json), [individual outline/hole audit](docs/CURRENT_STATIC_AUDIT.json) and package manifests identify exactly what was checked. Existing ignored-check settings are included in the native reports; clean reports are not a claim that every possible check was performed.
 
 Run this lightweight saved-release consistency check from the repository root:
 
@@ -70,6 +70,6 @@ The planned virtual pet, games/apps, browser/Wi-Fi uploads, trading, save recove
 
 ## History, contributions and licensing
 
-The unversioned main CAD, C5_relayout, P2_compact and [revisions](revisions/README.md) preserve earlier work. They are not current fabrication sources. Archived reports retain their original findings and must not be read as today's status. See [contribution guidance](CONTRIBUTING.md).
+The files directly inside **KK_main_module are now C.6**, and those directly inside **KK_power_module are P.4**. Older C.5/P.2 projects, intermediate routes, obsolete documents and one-off generators have been moved into [the cleanup archive](revisions/2026-09-12_current_only/). Use [revisions](revisions/README.md) for recovery; archived reports retain their original findings and are not current instructions. See [contribution guidance](CONTRIBUTING.md).
 
 The project is intended for open development, but a project-wide license has **not yet been selected**. The OSHW silkscreen logo is not a certification or a substitute for license terms. Third-party KiCad assets and manufacturer documents retain their respective terms; do not assume this repository relicenses them. Thanks to the KiCad, Espressif and component-library communities.

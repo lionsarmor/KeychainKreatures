@@ -1,7 +1,7 @@
 """Actual-size, unrouted-pad/body fit PDFs from C6; never moves saved design."""
 from pathlib import Path
 import pcbnew as k,subprocess,tempfile
-ROOT=Path(__file__).resolve().parent.parent;OUT=ROOT/'KK_main_module/C6_flat_stack'
+ROOT=Path(__file__).resolve().parent.parent;OUT=ROOT/'KK_main_module'
 b=k.LoadBoard(str(OUT/'KK_main_module.kicad_pcb'))
 removed=list(b.GetTracks())
 for t in removed:b.Remove(t)

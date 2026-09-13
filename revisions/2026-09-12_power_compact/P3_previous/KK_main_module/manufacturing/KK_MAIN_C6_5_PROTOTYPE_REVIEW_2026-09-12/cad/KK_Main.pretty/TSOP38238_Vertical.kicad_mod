@@ -1,0 +1,122 @@
+(footprint "TSOP38238_Vertical"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Vishay TSOP382 package drawing: 2.54 mm lead spacing, OUT-GND-VS order when facing lens; body 5 x 4.8 mm. Lens faces +Y")
+	(property "Reference" "REF**"
+		(at 0 -2.9 0)
+		(layer "F.SilkS")
+		(uuid "d5e0f2df-b558-4a81-9e03-e43c65897abd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "TSOP38238_Vertical"
+		(at 0 4.9 0)
+		(layer "F.Fab")
+		(uuid "4eeb7295-a34e-4829-9d42-df7316fe408e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3ea13ebf-cbc9-4c7e-92a2-09a163e3b8f3")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "94775d6b-1f8c-44c6-92e5-99ab47f73538")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -1.1 -1.9)
+		(end 6.2 3.9)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "bae892b4-c360-40a2-932f-68412834ab4a")
+	)
+	(fp_rect
+		(start -0.6 -1.4)
+		(end 5.7 3.4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "dd22055f-fbbb-4636-b1c9-30dd471d010c")
+	)
+	(fp_text user "LENS"
+		(at 2.54 4.3 0)
+		(layer "F.Fab")
+		(uuid "953d8a8f-60e3-425a-8e94-0f620e8dcfa2")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.9 1.9)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "da5f0571-6402-46d6-aabe-c9cc390d5b20")
+	)
+	(pad "2" thru_hole circle
+		(at 2.54 0)
+		(size 1.9 1.9)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "11557aba-3fb1-4df7-9c0f-de0aab3b1d06")
+	)
+	(pad "3" thru_hole circle
+		(at 5.08 0)
+		(size 1.9 1.9)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "c867eeb6-9f12-4303-a58d-8fb0ff0030b4")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/TSOP38238.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

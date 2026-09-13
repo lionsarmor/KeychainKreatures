@@ -1,0 +1,182 @@
+[
+  {
+    "name": "P3_USB_HCTL_envelope",
+    "source": "datasheets/HC-TYPE-C-16P-01A.pdf",
+    "confidence": "manufacturer MAX shell + simplified contacts",
+    "notes": "9.09 x 7.5 x 3.36mm shell envelope includes tolerance. Mouth local +Y. Tabs and cavities simplified; trimmed tails 2.5mm. Check actual mating cable and case recess.",
+    "local_bounds_mm": [
+      -4.545,
+      -3.75,
+      -2.5,
+      4.545,
+      3.75,
+      3.36
+    ],
+    "sha256": {
+      ".wrl": "cd0fe216bc53b0bbbdeddd4ee03256112e18f20f77123bf94fd466bd668b0596",
+      ".step": "1d88efbada3fcc01a678719fb66bce010c3d11aac617b623bca2fca09bf210a7"
+    }
+  },
+  {
+    "name": "P3_JST_VH2_envelope",
+    "source": "datasheets/JST_VH.pdf, header drawing page3",
+    "confidence": "manufacturer nominal header envelope",
+    "notes": "B2P-VH top-entry; pin1 at local(0,0), pin2(3.96,0). Housing/latch/contact detail simplified. 10.9mm header height DOES NOT include mating plug or wire bend. Trimmed tails2.5mm.",
+    "local_bounds_mm": [
+      -1.95,
+      -3.7,
+      -2.5,
+      5.91,
+      4.8,
+      10.9
+    ],
+    "sha256": {
+      ".wrl": "8e90533306409cfdc6b5af23718f254964e01f1e9dda65de1b1658e4eca7a615",
+      ".step": "66e9838143921abe36a6c469462ce67725bb5bc0e4fef74e6f596575dfa0d016"
+    }
+  },
+  {
+    "name": "P3_JS102_envelope",
+    "source": "https://www.littelfuse.com/assetdocs/littelfuse-ck-slide-js-series-datasheet?assetguid=aba42b08-0d2c-423b-813d-a2faa5a3bb14, page4",
+    "confidence": "manufacturer nominal envelope",
+    "notes": "JS102011SAQN: 9 x3.6 x3.5mm body, 2mm side actuator/travel area. Actuator illustrated in one position; retain full sweep and finger/case clearance.",
+    "local_bounds_mm": [
+      -4.5,
+      -1.8,
+      0.0,
+      4.5,
+      3.8,
+      3.5
+    ],
+    "sha256": {
+      ".wrl": "b6cbf7b2bbdee837d472f50108345ad2500aa0ea773c92300207ae9e322036ff",
+      ".step": "b66c32a375bdce8692adcbc3ccc2546d2d69cb207a577b812a8a5bac74828831"
+    }
+  },
+  {
+    "name": "P3_XFL4020_max",
+    "source": "datasheets/XFL4020-102MEC.pdf, drawing document745-3",
+    "confidence": "manufacturer maximum body envelope",
+    "notes": "4.0 +/-0.3mm square; 2.10mm maximum mounted height. Winding and terminal detail simplified; not a substitute inductor.",
+    "local_bounds_mm": [
+      -2.15,
+      -2.15,
+      0.0,
+      2.15,
+      2.15,
+      2.1
+    ],
+    "sha256": {
+      ".wrl": "930f7d2418f9c3e44bd25ae16bb02f68b1f8f9e82843daa8f2a64148be5806ee",
+      ".step": "bf4a1366cccca9e6aeb7ebfc7079f4504378e125f84e89c8037ed59abcedeebd"
+    }
+  },
+  {
+    "name": "P3_RGT16_max",
+    "source": "datasheets/BQ24075TRGTR.pdf",
+    "confidence": "manufacturer maximum body",
+    "notes": "Package body +0.05mm solder stand-off. Pin1 dot illustrative; use footprint/pad1 and manufacturer pinout for orientation. Contacts/thermal pad omitted from model; electrical pads unchanged.",
+    "local_bounds_mm": [
+      -1.55,
+      -1.55,
+      0.05,
+      1.55,
+      1.55,
+      1.06
+    ],
+    "sha256": {
+      ".wrl": "4bef0258606a42b2170e2d3dbc0c01512ff124eb2172ed4960e40ad1b8ffde1f",
+      ".step": "0f5f17b56d944b5d73877df64b3a33c41cc89e8b128c9d0dec3be85b591949b3"
+    }
+  },
+  {
+    "name": "P3_DSG8_max",
+    "source": "datasheets/TPS259530DSGR.pdf",
+    "confidence": "manufacturer maximum body",
+    "notes": "Package body +0.05mm solder stand-off. Pin1 dot illustrative; use footprint/pad1 and manufacturer pinout for orientation. Contacts/thermal pad omitted from model; electrical pads unchanged.",
+    "local_bounds_mm": [
+      -1.05,
+      -1.05,
+      0.05,
+      1.05,
+      1.05,
+      0.8600000000000001
+    ],
+    "sha256": {
+      ".wrl": "09bbc43b7331aa9f4e393fdf206ecdb47035b98594cfc7b464695d1b744adb24",
+      ".step": "14d448ab02f1e6085a3511697621630a355b2e3cfce6c15eeb7ad4a6513f2254"
+    }
+  },
+  {
+    "name": "P3_RWB12_max",
+    "source": "datasheets/TUSB320LAIRWBR.pdf",
+    "confidence": "manufacturer maximum body",
+    "notes": "Package body +0.05mm solder stand-off. Pin1 dot illustrative; use footprint/pad1 and manufacturer pinout for orientation. Contacts/thermal pad omitted from model; electrical pads unchanged.",
+    "local_bounds_mm": [
+      -0.825,
+      -0.825,
+      0.05,
+      0.825,
+      0.825,
+      0.46
+    ],
+    "sha256": {
+      ".wrl": "1ed6e4143e9583592f5e23bbd135cb5d7f747352a4171ae09a17fe661c7dce2e",
+      ".step": "64542732c38c9bf197aa459382baab4a3571c71644dc78ed86d2ffc6e19cf0ad"
+    }
+  },
+  {
+    "name": "P3_DSC10_envelope",
+    "source": "datasheets/TPS63060DSCR.pdf",
+    "confidence": "conservative package envelope",
+    "notes": "Package body +0.05mm solder stand-off. Pin1 dot illustrative; use footprint/pad1 and manufacturer pinout for orientation. Contacts/thermal pad omitted from model; electrical pads unchanged.",
+    "local_bounds_mm": [
+      -1.575,
+      -1.575,
+      0.05,
+      1.575,
+      1.575,
+      1.1600000000000001
+    ],
+    "sha256": {
+      ".wrl": "e9bf11355ab417ab035bbbfd1f36cbdd30ad30986db5a96a1c47a313575dd1ff",
+      ".step": "6285e7d4268c2afbaf3269450689f17e6b8850931fa2824121a360a04892a54e"
+    }
+  },
+  {
+    "name": "P3_RGP20_envelope",
+    "source": "datasheets/TPS386000RGPR.pdf",
+    "confidence": "conservative package envelope",
+    "notes": "Package body +0.05mm solder stand-off. Pin1 dot illustrative; use footprint/pad1 and manufacturer pinout for orientation. Contacts/thermal pad omitted from model; electrical pads unchanged.",
+    "local_bounds_mm": [
+      -2.05,
+      -2.05,
+      0.05,
+      2.05,
+      2.05,
+      1.1600000000000001
+    ],
+    "sha256": {
+      ".wrl": "efab442d1b320e6b74f4e69e717b4f3e5dcbd9e0ba2bbb576db1e0d0134d4b45",
+      ".step": "124a4c89a43dee2599e46a45bdf5eac082743019ae79bf079caeb014d475f888"
+    }
+  },
+  {
+    "name": "P3_YBH6_max",
+    "source": "datasheets/TPS22950YBHR.pdf, drawing4226594/A",
+    "confidence": "manufacturer maximum body envelope",
+    "notes": "0.726 x1.126 x0.4mm DSBGA envelope, six0.4mm-pitch balls. Ball detail nominal; A1 marker agrees with footprint. Factory assembly only.",
+    "local_bounds_mm": [
+      -0.363,
+      -0.563,
+      0.0,
+      0.363,
+      0.563,
+      0.405
+    ],
+    "sha256": {
+      ".wrl": "131e6dcdecc70c778772c08dbb11f065c2ba0ea865ff3d07363363ea3399c9cc",
+      ".step": "0da00e6dec4560aa59e258c88cfb8f93627f37ef19911751664186f08ff556d9"
+    }
+  }
+]

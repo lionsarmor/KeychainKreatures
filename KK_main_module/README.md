@@ -1,13 +1,14 @@
-# Main board — current C.6
+# Main board — C.6, all resistors flat
 
-Open [C6_flat_stack/KK_main_module.kicad_pro](C6_flat_stack/KK_main_module.kicad_pro). **Unversioned CAD files in this folder are preserved C.5 baselines, not the current project.**
+Open [KK_main_module.kicad_pro](KK_main_module.kicad_pro) or [KK_main_module.kicad_pcb](KK_main_module.kicad_pcb) directly from this folder. **This is now the current C.6 board, not the old C.5 root.**
 
-C.6 is 96 × 105 × 1.6 mm, two layers, R4 corners, matching P.3 mounting holes. All 43 resistors are horizontal, ten electrolytics and six TO-92 bodies lie flat. There are 98 fitted through-hole electrical positions and 25 bare debugging holes. All fitted positions have resolving 3D model links; actual module/socket/plug fit remains unqualified.
+96 × 105 × 1.6 mm, two copper layers, R4 rounded corners and its own mounting pattern. Compact power P.4 is 50 × 50 mm and needs separate supports. All 43 resistors are horizontal; ten electrolytics and six TO-92 bodies lie flat. There are 98 fitted through-hole electrical positions and 25 bare debug holes. Sockets, optical parts and buttons retain their functional height.
 
-- [Current assembly/wiring](C6_flat_stack/assembly/ASSEMBLY_GUIDE.md)
-- [Reference BOM](C6_flat_stack/assembly/C6_BOM_BY_REFERENCE.csv) · [Complete paired-kit extras](C6_flat_stack/assembly/C6_COMPLETE_KIT_EXTRAS.csv)
-- [Full review ZIP](manufacturing/KK_MAIN_C6_5_PROTOTYPE_REVIEW_2026-09-12.zip) · [Gerbers/drills](manufacturing/KK_MAIN_C6_GERBERS.zip)
-- [Fresh checks, BOM/placement and debugging maps](C6_flat_stack/release_checks/)
-- [Both projects](../START_HERE.md) · [Printable fit review](../docs/C6_P3_STACK_REVIEW.pdf)
+- [Assembly/wiring](assembly/ASSEMBLY_GUIDE.md) · [Reference BOM](assembly/C6_BOM_BY_REFERENCE.csv) · [Complete paired-kit extras](assembly/C6_COMPLETE_KIT_EXTRAS.csv)
+- [Front actual-size fit](assembly/C6_front_FIT_100_PERCENT.pdf) · [Rear actual-size fit](assembly/C6_back_FIT_100_PERCENT.pdf)
+- [Manufacturing packages](manufacturing/README.md) · [Verification and maps](release_checks/)
+- [Both current projects](../START_HERE.md) · [Archived old designs](../revisions/2026-09-12_current_only/)
 
-Prototype only. Use with P.3 regulated power, never raw battery. Do not combine ESP32 USB and external rails until exact-module backfeed is checked. Physical fit, cell/case selection, speaker rating, firmware and integrated electrical/thermal qualification remain open. Historical C.5 assembly/fit documents do not apply to this flat-part revision.
+Local libraries, models and datasheets sit alongside the project. Install KiCad 10 standard libraries too. Use the current schematic and pin labels for orientation. The prior C5_relayout and old assembly/component-review files are archived, not mixed into this directory.
+
+Prototype only: physical part/plug fit, battery/case selection, peak-load/thermal behavior, firmware and powered safety qualification remain pending. Do not connect raw battery to main J1 or combine ESP32 USB and external rails until backfeed is qualified.
