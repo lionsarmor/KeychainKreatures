@@ -1,0 +1,13 @@
+{
+  "fitted_per_board": 108,
+  "SMT": 104,
+  "THT_mixed": 4,
+  "THT_mixed_refs": [
+    "J1",
+    "J2",
+    "J3",
+    "J4"
+  ],
+  "coordinate_transform": "NONE; original native mm/Y-up/origin/rotation retained",
+  "status": "PASS reference sets and exact native field preservation; NOT machine calibration"
+}

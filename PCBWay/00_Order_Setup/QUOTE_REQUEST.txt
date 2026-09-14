@@ -1,0 +1,19 @@
+Subject: DFM and quote request — 5 C.6 bare main PCBs + 5 P.4 assembled power modules
+
+Please quote two separate jobs for Keychain Kreatures engineering prototypes:
+1) MAIN C.6: five bare 96 x 105 mm, 1.6 mm, TWO-layer boards.
+2) POWER P.4: five assembled 50 x 50 mm, 1.6 mm, FOUR-layer boards, with 108 fitted positions per board. Quote assembly attrition and extra fabrication quantity separately.
+
+These files are for engineering review and quotation only. Do not fabricate, order substitute parts or change CAD without my written approval.
+
+For POWER, please explicitly approve filled/capped/planarized via-in-pad processing (ordinary tenting is not equivalent), the 0.4 mm-pitch six-ball TPS22950YBHR WCSP, other fine-pitch QFN/WSON devices, suitable finish, stencil, reflow, and hidden-joint inspection. Do not substitute TPS22950 C/L variants or another package.
+
+Please review supplied BOM/MPNs and confirm actual manufacturers/orderable parts, availability and any proposed substitutions individually. Grouped quantities include five boards but no attrition. There are 104 SMT positions in the filtered centroid and four additional mixed/THT connector positions J1-J4; all 108 positions must be included in assembly. J1 USB-C has mixed assembly requirements; decide its SMT/secondary handling explicitly.
+
+Native coordinates are mm with Y-up and may be negative. Reference BOM/placement tables use CAD Y-down. Validate origin, polarity and rotations against component drawings before machine programming.
+
+Please provide DFM/CAM questions, approved finished stackup/copper, process and sourcing quote, bare-board electrical test scope, assembly inspection scope, and lead time. Use the supplied IPC-D-356 files for net-test comparison. Please quote X-ray/hidden-joint inspection and any functional testing separately.
+
+No unspecified battery, shell, firmware programming or main-board assembly is requested. Do not attach a real cell. Powered testing, if offered, requires an agreed safe test procedure and equipment first. Nothing in the package claims a tested or certified toy.
+
+Please hold production until I approve the final response and quote.

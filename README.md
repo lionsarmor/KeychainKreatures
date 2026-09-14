@@ -15,6 +15,8 @@ Download the repository or a **full review ZIP** to open a project with its loca
 
 [Start here](START_HERE.md) · [Documentation index](docs/README.md) · [Release notes](CHANGELOG.md) · [Release hashes](docs/CURRENT_RELEASE_INDEX.json)
 
+Ordering the five engineering samples? Use the [PCBWay step-by-step submission folder](PCBWay/README.md): separate main/power Gerber uploads, power BOM/centroid, DFM questions, approval checklist and delivery/testing documents. This is a local preparation packet, not an order or manufacturing approval.
+
 ## Hardware in this revision
 
 - Socketed **ESP32-S3 SuperMini**. Confirm the delivered seller revision, pinout and actual flash/PSRAM; do not infer N16R8 specifications from the SuperMini name.

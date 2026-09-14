@@ -1,0 +1,10 @@
+Job,Step,File relative to PCBWay,Notes
+Main PCB quote,Gerber upload,01_Main_C6/01_Gerber_Upload/UPLOAD_MAIN_C6_GERBERS.zip,Five bare main boards only
+Power PCB + assembly quote,Gerber upload,02_Power_P4/01_Gerber_Upload/UPLOAD_POWER_P4_GERBERS.zip,Five assembled power boards; four layers
+Power assembly,BOM upload,02_Power_P4/02_BOM_Upload/UPLOAD_POWER_P4_BOM.csv,Per-board and five-board quantities; no attrition
+Power assembly,Centroid upload,02_Power_P4/03_Pick_and_Place_Upload/UPLOAD_SMT_CENTROID_MM.csv,104 SMT; native mm/Y-up
+Power assembly,Supplemental operations,02_Power_P4/03_Pick_and_Place_Upload/ATTACH_THT_MIXED_OPERATIONS_MM.csv,J1-J4 still fitted; J1 mixed SMT contacts
+Power DFM,Special requirements,02_Power_P4/01_Gerber_Upload/FABRICATION_REQUIREMENTS.md,Required process approval
+Main review,Supplemental engineering attachment,01_Main_C6/05_Full_Review_Package/FULL_MAIN_C6_REVIEW.zip,Not another order or Gerber upload
+Power review,Supplemental engineering attachment,02_Power_P4/05_Full_Review_Package/FULL_POWER_P4_REVIEW.zip,Not another order or Gerber upload
+Both jobs,Message / correspondence,00_Order_Setup/QUOTE_REQUEST.txt,"Request review only, hold production"

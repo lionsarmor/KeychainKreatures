@@ -1,0 +1,38 @@
+{
+  "scope": "Saved release integrity and netlist/interface check; NOT fresh native checks or powered testing",
+  "verified_package_files": 336,
+  "unpublished_editor_files_omitted": 29,
+  "boards": {
+    "main": {
+      "revision": "C6",
+      "native_ERC": 0,
+      "native_DRC": 0,
+      "opens": 0,
+      "parity": 0,
+      "source": "KK_main_module",
+      "fitted": 98,
+      "debug_points": 25
+    },
+    "power": {
+      "revision": "P4",
+      "native_ERC": 0,
+      "native_DRC": 0,
+      "opens": 0,
+      "parity": 0,
+      "source": "KK_power_module",
+      "fitted": 108,
+      "debug_points": 28
+    }
+  },
+  "harness": [
+    "MCU_5V",
+    "GND",
+    "LOGIC_3V3",
+    "ACT_3V2"
+  ],
+  "errors": [],
+  "manufacturer_approved": false,
+  "physical_fit_qualified": false,
+  "powered_tested": false,
+  "status": "PASS \u2014 prototype files consistent; physical/DFM/bench qualifications remain"
+}

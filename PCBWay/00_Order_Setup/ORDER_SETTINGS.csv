@@ -1,0 +1,16 @@
+Field,Main C6,Power P4,Notes
+Job scope,5 bare PCBs,5 assembled boards,Confirm fabrication attrition separately for power
+Revision,C.6,P.4,Do not mix older revisions
+Dimensions mm,96 x 105,50 x 50,Preserve actual Gerber outline; do not scale
+Copper layers,2,4,Power F.Cu/In1.Cu/In2.Cu/B.Cu
+Thickness mm,1.6 nominal,1.6 nominal,Confirm final stackup
+Material,FR-4,FR-4,Confirm manufacturer grade and process
+Copper,35 um CAD nominal,35 um CAD nominal layers,Confirm finished copper/plating; not a fabricated stackup approval
+Mask/silkscreen,Green / white proposed,Green / white proposed,Cosmetic proposal; both supplied silk sides retained
+Finish,Lead-free HASL proposed,ENIG proposed,Power flatness must suit 0.4 mm WCSP; assembler approval required
+Via process,Review normal vias against files,Filled capped planarized component-pad vias REQUIRED,Tenting is not a substitute on power
+Assembly,NO,YES: 108 positions per board,Power 104 SMT + 4 mixed/THT connectors
+Stencil,Not requested,Assembler to quote/approve,Do not guess stencil thickness
+Electrical test,Request bare-board net test,Request bare-board net test and assembly inspection,Functional testing is separate agreed scope
+Battery / firmware / case,Not included,Not included,Do not attach an unspecified cell
+Release status,Hold pending DFM/customer approval,Hold pending DFM/customer approval,No purchase or factory submission performed

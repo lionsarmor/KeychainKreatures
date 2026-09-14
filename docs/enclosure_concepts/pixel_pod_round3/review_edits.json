@@ -1,0 +1,15 @@
+{
+  "mode": "built-in image_gen",
+  "edits": [
+    {
+      "id": "07_pixel_pod_simple_exterior",
+      "source": "/home/legion/.codex/generated_images/01a08939-c3cc-74e1-a8ed-6caa026729c1/exec-c8732d87-fc23-4107-9939-e2ed633b34b7.png",
+      "prompt": "Edit target: this Pixel Pod SIMPLE SHELL exterior sheet. Make one functional correction: ADD the missing existing power-board slide switch opening on the exposed RIGHT SIDEWALL near the bottom in the large FRONT/TOP/RIGHT hero view. A small recessed yellow slide actuator, NO rear switch. Charging USB is on the BOTTOM edge of the same shell near this lower power-board region, not on rear door; add a small BOTTOM EDGE detail inset if the underside is hidden, showing exactly one USB-C. All labels correct: SIDE POWER SWITCH and BOTTOM USB-C. Preserve the simple cream front / green rear shell, exact nine buttons, color screen, one RGB, actual top-facing IR window with exactly two optics, battery door and safe battery-only access, substantial case depth and all other artwork. Do not add extra panels, new electronics or new ports. Retain CONCEPT ONLY - FIT CHECK REQUIRED."
+    },
+    {
+      "id": "08_pixel_pod_simple_assembly",
+      "source": "/home/legion/.codex/generated_images/01a08939-c3cc-74e1-a8ed-6caa026729c1/exec-bb287982-c7c6-46dc-839f-9bc54010cc81.png",
+      "prompt": "Edit target: this PIXEL POD INSIDE sheet. Correct ONLY the rear power/battery module and port depiction consistently across its panels; preserve front shell, FULL main PCB with screen and all nine controls, two main shells, top-edge IR and overall style. The 50x50 POWER BOARD must sit in depth IN FRONT OF the battery pocket, closer to main board, and the battery is BEHIND it toward rear hatch, with insulating separation. Draw the power board as a simple square green PCB schematic envelope with no invented detailed chips if needed; do not make it a thin wide strip below the battery. In lower battery-access inset, looking FROM OUTSIDE REAR after removing only the hatch, show ONLY battery in an insulating pocket plus pull tab and reachable connector, NO bare power PCB visible at all. Power board stays hidden beneath pocket in depth, not below battery in image vertical direction. In lower-right closed rear thumbnail REMOVE USB from rear face; USB is on actual bottom sidewall, and power slide switch is on LEFT sidewall near bottom when viewed from REAR. Add a small clear port detail if needed showing bottom USB and adjacent SIDE switch of same board. Retain same panel count and battery hatch, no extra exterior parts. Do not invent room by shrinking main board. Update labels to ILLUSTRATIVE INTERNALS and CONCEPT ONLY - FIT CHECK REQUIRED. The revised artwork must show an access pocket that actually separates battery from circuit board."
+    }
+  ]
+}

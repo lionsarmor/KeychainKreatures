@@ -1,0 +1,7 @@
+# Keep future supplier correspondence / order records local by default.
+03_Factory_DFM_and_Questions/Supplier_Responses/*
+!03_Factory_DFM_and_Questions/Supplier_Responses/README.md
+04_Approval_and_Payment/Receipts_and_Approvals/*
+!04_Approval_and_Payment/Receipts_and_Approvals/README.md
+05_Delivery_and_Testing/Inspection_Reports/*
+!05_Delivery_and_Testing/Inspection_Reports/README.md
